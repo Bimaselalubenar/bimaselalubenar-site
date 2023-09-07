@@ -1,0 +1,687 @@
+.header-materisocmed-header {
+  top: 0px;
+  left: auto;
+  right: auto;
+  width: 100%;
+  bottom: auto;
+  display: flex;
+  z-index: 3;
+  position: fixed;
+  max-width: 1320px;
+  padding-left: var(--dl-space-space-unitandahalfunit);
+  padding-right: var(--dl-space-space-unitandahalfunit);
+  flex-direction: column;
+  justify-content: center;
+}
+.header-materisocmed-nav {
+  flex: 0 0 auto;
+  color: var(--dl-color-secondary-600);
+  width: 100%;
+  height: 60px;
+  display: flex;
+  flex-wrap: wrap;
+  align-self: center;
+  box-shadow: 0 .25rem .375rem -.0625rem hsla(0,0%,8%,.12),0 .125rem .25rem -.0625rem hsla(0,0%,8%,.07)!important;
+  margin-top: var(--dl-space-space-unit);
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unitandahalfunit);
+  border-radius: var(--dl-radius-radius-radius40);
+  padding-right: var(--dl-space-space-unitandahalfunit);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-halfunit);
+  backdrop-filter: saturate(200%) blur(30px);
+  justify-content: center;
+  background-color: hsla(0,0%,100%,.8)!important;
+}
+.header-materisocmed-container {
+  color: var(--dl-color-gray-black);
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-materisocmed-navlink {
+  display: contents;
+}
+.header-materisocmed-image {
+  width: 52px;
+  height: 41px;
+  object-fit: cover;
+  text-decoration: none;
+}
+.header-materisocmed-menu {
+  flex: 0 0 auto;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-materisocmed-navlink01 {
+  font-size: 0.875rem;
+  align-self: center;
+  margin-top: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  font-family: Poppins;
+  font-weight: 400;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-transform: none;
+  text-decoration: none;
+}
+.header-materisocmed-navlink02 {
+  font-size: 0.875rem;
+  align-self: center;
+  margin-top: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  font-family: Poppins;
+  font-weight: 400;
+  margin-left: var(--dl-space-space-unit);
+  margin-right: var(--dl-space-space-unit);
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-transform: none;
+  text-decoration: none;
+}
+.header-materisocmed-thq-dropdown {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: 2px;
+}
+.header-materisocmed-dropdown-toggle {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  height: auto;
+  display: inline-flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: 2px;
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: space-between;
+}
+.header-materisocmed-text {
+  color: var(--dl-color-gray-black);
+  width: 100%;
+  height: 100%;
+  align-self: center;
+  font-style: normal;
+  text-align: center;
+  margin-right: 4px;
+  vertical-align: middle;
+}
+.header-materisocmed-dropdown-arrow {
+  transition: 0.3s;
+}
+.header-materisocmed-icon {
+  fill: #000000;
+  width: 18px;
+  height: 18px;
+  margin-top: auto;
+  transition: 0.3s;
+  margin-bottom: auto;
+}
+.header-materisocmed-dropdown-list {
+  left: 0%;
+  width: 235px;
+  display: none;
+  z-index: 1;
+  position: absolute;
+  min-width: 100%;
+  margin-top: 0px;
+  transition: 0.3s;
+  align-items: stretch;
+  border-color: rgba(0, 0, 0, 0.17);
+  border-width: 2px;
+  border-radius: 10px;
+  flex-direction: column;
+  list-style-type: none;
+  background-color: #ffffff;
+  list-style-position: inside;
+}
+.header-materisocmed-dropdown {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: 2px;
+}
+.header-materisocmed-dropdown-toggle1 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 4px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.header-materisocmed-dropdown-toggle1:hover {
+  fill: #fff;
+  color: #ffffff;
+  background-image: radial-gradient(circle at left, rgba(254, 172, 94, 0.5) 0.00%,rgba(199, 121, 208, 0.5) 49.00%,rgba(75, 192, 200, 0.5) 98.00%);
+}
+.header-materisocmed-text01 {
+  color: #000000;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-style: normal;
+  text-align: left;
+  align-items: center;
+}
+.header-materisocmed-dropdown-toggle2 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 4px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.header-materisocmed-dropdown-toggle2:hover {
+  fill: #fff;
+  color: #ffffff;
+  background-image: radial-gradient(circle at left, rgba(254, 172, 94, 0.5) 0.00%,rgba(199, 121, 208, 0.5) 49.00%,rgba(75, 192, 200, 0.5) 98.00%);
+}
+.header-materisocmed-text02 {
+  color: #000000;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-style: normal;
+  text-align: left;
+  align-items: center;
+}
+.header-materisocmed-image1 {
+  width: 47px;
+  height: 47px;
+  object-fit: cover;
+}
+.header-materisocmed-dropdown-toggle3 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 4px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.header-materisocmed-dropdown-toggle3:hover {
+  fill: #fff;
+  color: #ffffff;
+  background-image: radial-gradient(circle at left, rgba(254, 172, 94, 0.5) 0.00%,rgba(199, 121, 208, 0.5) 49.00%,rgba(75, 192, 200, 0.5) 98.00%);
+}
+.header-materisocmed-text03 {
+  color: #000000;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-style: normal;
+  text-align: left;
+  align-items: center;
+}
+.header-materisocmed-dropdown-toggle4 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 4px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.header-materisocmed-dropdown-toggle4:hover {
+  fill: #fff;
+  color: #ffffff;
+  background-image: radial-gradient(circle at left, rgba(254, 172, 94, 0.5) 0.00%,rgba(199, 121, 208, 0.5) 49.00%,rgba(75, 192, 200, 0.5) 98.00%);
+}
+.header-materisocmed-text04 {
+  color: #000000;
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-style: normal;
+  text-align: left;
+  align-items: center;
+}
+.header-materisocmed-image2 {
+  width: 47px;
+  height: 47px;
+  object-fit: cover;
+}
+.header-materisocmed-dropdown-toggle5 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 4px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: space-between;
+  text-decoration: none;
+}
+.header-materisocmed-dropdown-toggle5:hover {
+  fill: #fff;
+  color: #ffffff;
+  background-image: radial-gradient(circle at left, rgba(254, 172, 94, 0.5) 0.00%,rgba(199, 121, 208, 0.5) 49.00%,rgba(75, 192, 200, 0.5) 98.00%);
+}
+.header-materisocmed-text05 {
+  color: #000000;
+  width: auto;
+  cursor: pointer;
+  display: flex;
+  font-style: normal;
+  text-align: left;
+  align-items: center;
+}
+.header-materisocmed-image3 {
+  width: 47px;
+  height: 47px;
+  object-fit: cover;
+}
+.header-materisocmed-dropdown-toggle6 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.3s;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 4px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: space-between;
+  text-decoration: none;
+}
+.header-materisocmed-dropdown-toggle6:hover {
+  fill: #fff;
+  color: #ffffff;
+  background-image: radial-gradient(circle at left, rgba(254, 172, 94, 0.5) 0.00%,rgba(199, 121, 208, 0.5) 49.00%,rgba(75, 192, 200, 0.5) 98.00%);
+}
+.header-materisocmed-text06 {
+  color: #000000;
+  width: auto;
+  cursor: pointer;
+  display: flex;
+  font-style: normal;
+  text-align: left;
+  align-items: center;
+}
+.header-materisocmed-image4 {
+  width: auto;
+  height: 47px;
+  object-fit: cover;
+}
+.header-materisocmed-dropdown1 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: 2px;
+}
+.header-materisocmed-dropdown2 {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  border-radius: 2px;
+}
+.header-materisocmed-container1 {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-materisocmed-burger-menu {
+  display: none;
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-materisocmed-burger-menu:hover {
+  background-image: radial-gradient(circle at left, rgb(254, 172, 94) 0.00%,rgb(199, 121, 208) 50.00%,rgb(75, 192, 200) 100.00%);
+}
+.header-materisocmed-icon2 {
+  width: 24px;
+  height: 24px;
+}
+.header-materisocmed-mobile-menu {
+  top: 0px;
+  flex: 0 0 auto;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  padding: var(--dl-space-space-unitandahalfunit);
+  z-index: 100;
+  position: absolute;
+  align-items: flex-start;
+  flex-direction: column;
+  background-color: var(--dl-color-gray-white);
+}
+.header-materisocmed-top {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-materisocmed-image5 {
+  width: 61px;
+  height: 48px;
+  object-fit: cover;
+}
+.header-materisocmed-close-menu {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius75);
+  flex-direction: column;
+  background-image: linear-gradient(225deg, rgb(254, 172, 94) 0.00%,rgb(199, 121, 208) 50.00%,rgb(75, 192, 200) 100.00%);
+}
+.header-materisocmed-icon4 {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  margin: var(--dl-space-space-unit);
+}
+.header-materisocmed-mid {
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.header-materisocmed-menu1 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.header-materisocmed-navlink06 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+}
+.header-materisocmed-navlink07 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-decoration: none;
+}
+.header-materisocmed-menu2 {
+  flex: 0 0 auto;
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.header-materisocmed-navlink08 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+}
+.header-materisocmed-navlink08:hover {
+  color: var(--dl-color-gray-500);
+}
+.header-materisocmed-text07 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.header-materisocmed-text07:hover {
+  color: var(--dl-color-gray-500);
+}
+.header-materisocmed-link3 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-decoration: none;
+}
+.header-materisocmed-link4 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-decoration: none;
+}
+.header-materisocmed-link5 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-decoration: none;
+}
+.header-materisocmed-navlink09 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-decoration: none;
+}
+.header-materisocmed-navlink10 {
+  transition: 0.3s;
+  margin-bottom: var(--dl-space-space-halfunit);
+  letter-spacing: -0.025rem;
+  text-decoration: none;
+}
+.header-materisocmed-bot {
+  flex: 0 0 auto;
+  width: 200px;
+  display: flex;
+  margin-top: auto;
+  flex-direction: column;
+}
+.header-materisocmed-navlink11 {
+  display: contents;
+}
+.header-materisocmed-container2 {
+  width: auto;
+  height: 36px;
+  display: flex;
+  margin-top: 0px;
+  transition: 0.3s;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius40);
+  justify-content: flex-start;
+  text-decoration: none;
+  background-image: linear-gradient(225deg, rgb(254, 172, 94) 0.00%,rgb(199, 121, 208) 50.00%,rgb(75, 192, 200) 100.00%);
+}
+.header-materisocmed-container2:hover {
+  background-image: radial-gradient(circle at left, rgb(254, 172, 94) 0.00%,rgb(199, 121, 208) 50.00%,rgb(75, 192, 200) 100.00%);
+}
+.header-materisocmed-text09 {
+  color: #ffffff;
+  font-style: normal;
+  margin-left: var(--dl-space-space-unitandahalfunit);
+  margin-right: var(--dl-space-space-unitandahalfunit);
+}
+
+
+
+
+@media(max-width: 1200px) {
+  .header-materisocmed-navlink01 {
+    text-transform: none;
+  }
+  .header-materisocmed-navlink02 {
+    text-transform: none;
+  }
+  .header-materisocmed-mobile-menu {
+    display: none;
+  }
+}
+@media(max-width: 991px) {
+  .header-materisocmed-nav {
+    max-width: 960px;
+  }
+  .header-materisocmed-menu {
+    display: none;
+  }
+  .header-materisocmed-burger-menu {
+    display: flex;
+    margin-left: 29px;
+    border-radius: var(--dl-radius-radius-radius75);
+    background-image: linear-gradient(225deg, rgb(254, 172, 94) 0.00%,rgb(199, 121, 208) 50.00%,rgb(75, 192, 200) 100.00%);
+  }
+  .header-materisocmed-icon2 {
+    fill: #ffffff;
+    margin: var(--dl-space-space-halfunit);
+    padding-top: 0px;
+  }
+  .header-materisocmed-mobile-menu {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: 431px;
+    margin: auto;
+    display: none;
+    box-shadow: 5px 5px 20px 0px #827e7e;
+    margin-top: auto;
+    align-items: flex-start;
+    border-radius: var(--dl-radius-radius-round);
+    background-color: #ffffff;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: var(--dl-radius-radius-radius40);
+    border-bottom-right-radius: var(--dl-radius-radius-radius40);
+  }
+  .header-materisocmed-top {
+    height: 43px;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+  .header-materisocmed-image5 {
+    width: 50px;
+    height: 39px;
+    margin-left: 11px;
+  }
+  .header-materisocmed-close-menu {
+    width: 39px;
+    height: 39px;
+    align-self: center;
+    align-items: center;
+    margin-right: 8px;
+    justify-content: center;
+  }
+  .header-materisocmed-icon4 {
+    margin: 0px;
+    align-self: center;
+  }
+  .header-materisocmed-mid {
+    width: 808px;
+    flex-wrap: wrap;
+    align-self: center;
+    margin-top: 22px;
+    align-items: flex-start;
+    padding-left: 0px;
+    padding-right: 0px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .header-materisocmed-menu1 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .header-materisocmed-menu2 {
+    margin-left: 20px;
+    margin-bottom: 20px;
+  }
+  .header-materisocmed-bot {
+    width: 100%;
+    height: 33px;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-materisocmed-container2 {
+    width: 100%;
+    height: 100%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media(max-width: 767px) {
+  .header-materisocmed-burger-menu {
+    display: flex;
+  }
+  .header-materisocmed-mobile-menu {
+    width: 100%;
+    display: none;
+  }
+  .header-materisocmed-close-menu {
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .header-materisocmed-mid {
+    width: 576px;
+  }
+}
+@media(max-width: 414px) {
+  .header-materisocmed-header {
+    flex-direction: column;
+  }
+  .header-materisocmed-nav {
+    align-items: center;
+    justify-content: center;
+  }
+  .header-materisocmed-burger-menu {
+    border-radius: var(--dl-radius-radius-radius75);
+    background-image: linear-gradient(225deg, rgb(254, 172, 94) 0.00%,rgb(199, 121, 208) 50.00%,rgb(75, 192, 200) 100.00%);
+  }
+  .header-materisocmed-icon2 {
+    margin: var(--dl-space-space-halfunit);
+    padding: 0px;
+  }
+  .header-materisocmed-mobile-menu {
+    width: 100%;
+    display: none;
+  }
+  .header-materisocmed-mid {
+    width: 319px;
+  }
+  .header-materisocmed-menu1 {
+    margin-left: 35px;
+  }
+  .header-materisocmed-menu2 {
+    margin-left: 30px;
+  }
+  .header-materisocmed-navlink08 {
+    text-decoration: none;
+  }
+  .header-materisocmed-link5 {
+    letter-spacing: -0.025rem;
+    text-transform: none;
+  }
+}
