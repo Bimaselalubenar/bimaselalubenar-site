@@ -1,0 +1,125 @@
+.aset-pribadi-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  justify-content: center;
+}
+.aset-pribadi-container1 {
+  width: 100%;
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aset-pribadi-bima-profil {
+  width: 196px;
+  height: 196px;
+  margin: var(--dl-space-space-unit);
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
+  object-position: right;
+  border-bottom-left-radius: 10rem;
+}
+.aset-pribadi-text {
+  color: var(--dl-color-secondary-700);
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: var(--dl-space-space-halfunit);
+  text-transform: none;
+  text-decoration: none;
+}
+.aset-pribadi-text1 {
+  color: var(--dl-color-secondary-700);
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: var(--dl-space-space-unitandahalfunit);
+  text-transform: none;
+  text-decoration: none;
+}
+.aset-pribadi-container2 {
+  width: 100%;
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.aset-pribadi-image {
+  width: 90px;
+  height: 90px;
+  object-fit: cover;
+  margin-right: var(--dl-space-space-halfunit);
+}
+.aset-pribadi-container3 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.aset-pribadi-text2 {
+  color: var(--dl-color-secondary-700);
+  font-size: 12px;
+  font-style: normal;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 1.3;
+  margin-bottom: var(--dl-space-space-halfunit);
+  text-transform: none;
+  text-decoration: none;
+}
+.aset-pribadi-text3 {
+  color: var(--dl-color-secondary-700);
+  font-size: 12px;
+  font-style: normal;
+  text-align: left;
+  font-family: Poppins;
+  font-weight: 300;
+  line-height: 1.3;
+  margin-bottom: var(--dl-space-space-halfunit);
+  text-transform: none;
+  text-decoration: none;
+}
+.aset-pribadi-container4 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+.aset-pribadi-icon {
+  fill: var(--dl-color-secondary-700);
+  width: 24px;
+  height: 24px;
+}
+.aset-pribadi-icon2 {
+  fill: var(--dl-color-secondary-700);
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 414px) {
+  .aset-pribadi-container {
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    justify-content: flex-start;
+  }
+  .aset-pribadi-image {
+    width: 132px;
+    height: 132px;
+  }
+}
