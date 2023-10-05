@@ -3,80 +3,55 @@ module.exports = {
     "extend": {
       "colors": {
         "Primary": {
-          "100": "#c172d5ff",
-          "500": "#ac43c7ff",
-          "700": "#9534adff"
+          "100": "#003EB3",
+          "300": "#0074F0",
+          "500": "#14A9FF",
+          "700": "#85DCFF"
+        },
+        "Danger": {
+          "300": "#A22020",
+          "500": "#BF2626",
+          "700": "#E14747"
         },
         "Gray": {
-          "300": "#d9dbe1ff",
           "500": "#595959",
           "700": "#999999",
-          "800": "#D9D9D9",
-          "900": "#f8f9faff",
+          "900": "#D9D9D9",
           "Black": "#000000",
           "White": "#FFFFFF"
         },
-        "Blue": {
-          "500": "#17c1e8ff"
+        "Success": {
+          "300": "#199033",
+          "500": "#32A94C",
+          "700": "#4CC366"
         },
-        "Secondary": {
-          "100": "#d2d6daff",
-          "200": "#8392abff",
-          "300": "#808fbfff",
-          "400": "#67748eff",
-          "500": "#344767ff",
-          "600": "#252f40ff",
-          "700": "#20273fff"
-        },
-        "scheme": {
-          "white": "#FFFFFF",
-          "darkgray": "#9095a7ff"
-        },
-        "Pink": {
-          "100": "#eea9cdff",
-          "200": "#e293d3ff",
-          "300": "#e370abff",
-          "500": "#dd559bff",
-          "700": "#cb0c9fff"
-        },
-        "foreground": "#67748eff",
+        "foreground": "#000000",
         "background": "#FFFFFF"
       },
       "spacing": {
-        "oneandhalfunits": "24px",
-        "HalfUnit": "0.5rem",
-        "TripleQuarterUnit": "0.75rem",
-        "SixUnits": "6rem",
-        "Unit": "1rem",
-        "fiveunits": "80px",
-        "unit": "16px",
-        "halfunit": "8px",
-        "FourUnits": "4rem",
-        "TwelveUnits": "12rem",
-        "twounits": "32px",
-        "sevenunits": "112px",
-        "UnitAndAHalfUnit": "1.5rem",
-        "threeunits": "48px",
-        "TripleUnit": "3rem",
-        "DoubleUnit": "2rem"
+        "FiveUnits": "80px",
+        "FourUnits": "64px",
+        "OneAndHalfUnits": "24px",
+        "TwoUnits": "32px",
+        "HalfUnit": "8px",
+        "ThreeUnits": "48px",
+        "Unit": "16px",
+        "SixUnits": "96px"
       },
       "borderRadius": {
-        "Radius40": "40px",
-        "Radius75": "0.75rem",
-        "Radius1": "1rem",
-        "Radius5": "0.5rem",
+        "Radius4": "4px",
+        "Radius2": "2px",
+        "Radius8": "8px",
         "Round": "50%"
       },
       "scale": {
-        "small": "48px",
-        "Unit": "1rem",
-        "TripleUnit": "3rem",
-        "TripleQuarterUnit": "0.75rem",
-        "maxwidth": "1158px",
-        "DoubleUnit": "2rem",
-        "large": "144px",
-        "UnitAndAHalf": "1.5rem",
-        "HalfUnit": "0.5rem"
+        "Small": "48px",
+        "MaxWidth": "1400px",
+        "XXLarge": "288px",
+        "Medium": "96px",
+        "XLarge": "192px",
+        "XSmall": "16px",
+        "Large": "144px"
       }
     }
   },

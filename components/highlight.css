@@ -1,0 +1,31 @@
+.highlight-highlight {
+  gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  position: relative;
+  transition: 0.3s;
+  align-items: flex-start;
+  border-radius: 20px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.highlight-highlight:hover {
+  box-shadow: 5px 5px 15px 0px rgba(124, 124, 124, 0.4);
+}
+.highlight-text {
+  font-size: 18px;
+  max-width: 535px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.highlight-text1 {
+  max-width: 535px;
+  font-family: Poppins;
+  line-height: 24px;
+}
