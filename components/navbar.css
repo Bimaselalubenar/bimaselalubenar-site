@@ -269,18 +269,10 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.navbar-branding {
-  width: auto;
-  display: flex;
-  align-items: center;
-  margin-right: 219px;
-  flex-direction: row;
-  justify-content: center;
-}
 .navbar-navlink {
   display: contents;
 }
-.navbar-finbest {
+.navbar-bimaselalubenar {
   width: 60px;
   height: 48px;
   text-decoration: none;
@@ -289,6 +281,7 @@
   gap: var(--dl-space-space-threeunits);
   display: flex;
   align-items: flex-start;
+  margin-left: 220px;
   padding-top: 12px;
   border-radius: 6px;
   flex-direction: row;
@@ -676,10 +669,7 @@
     padding-left: var(--dl-space-space-oneandhalfunits);
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
-  .navbar-branding {
-    margin-right: 0px;
-  }
-  .navbar-finbest {
+  .navbar-bimaselalubenar {
     margin-right: 0px;
   }
   .navbar-links {

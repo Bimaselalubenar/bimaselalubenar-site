@@ -8,20 +8,24 @@
   position: fixed;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.2);
   align-items: center;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-twounits);
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: 20px;
   border-radius: 20px;
-  padding-right: var(--dl-space-space-twounits);
+  padding-right: 20px;
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
   justify-content: center;
   background-color: #ffffff;
 }
 .popmenu-caption {
+  font-size: 12px;
   font-style: normal;
   font-family: Poppins;
   font-weight: 500;
+  line-height: 1.15;
   margin-right: 0px;
+  text-transform: none;
+  text-decoration: none;
 }
 .popmenu-container1 {
   gap: var(--dl-space-space-unit);
@@ -57,4 +61,12 @@
 }
 .popmenu-root-class-name {
   margin-bottom: var(--dl-space-space-halfunit);
+}
+@media(max-width: 479px) {
+  .popmenu-container {
+    width: auto;
+    height: auto;
+    align-items: center;
+    flex-direction: column;
+  }
 }
