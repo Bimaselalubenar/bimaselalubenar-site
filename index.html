@@ -59,6 +59,10 @@
     <!--This is the head section-->
     <!-- <style> ... </style> -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+    <!-- Google Tag Manager -->
+
+    <!-- End Google Tag Manager -->
     <style>
       [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
           display: flex;
@@ -68,6 +72,13 @@
           transform: rotate(90deg);
         }
     </style>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PRJDS8CS');
+    </script>
   </head>
   <body>
     <link rel="stylesheet" href="./style.css" />
@@ -115,13 +126,10 @@
               </a>
               <div class="navbar-links">
                 <a href="index.html" class="navbar-link"><span>Home</span></a>
-                <a href="sukses-kirim.html" class="navbar-link1">
+                <a href="portofolio.html" class="navbar-link1">
                   <span>Portofolio</span>
                 </a>
                 <a href="sukses-kirim.html" class="navbar-link2">
-                  <span>Project</span>
-                </a>
-                <a href="sukses-kirim.html" class="navbar-link3">
                   <span>Contact</span>
                 </a>
                 <div
@@ -243,11 +251,16 @@
                   <a href="index.html" class="links-link H4-16px">
                     <span>Home</span>
                   </a>
-                  <span class="links-link01 H4-16px">
+                  <a href="portofolio.html" class="links-link01 H4-16px">
                     <span>Portofolio</span>
-                  </span>
-                  <span class="links-link02 H4-16px"><span>Project</span></span>
-                  <span class="links-link03 H4-16px"><span>Contact</span></span>
+                  </a>
+                  <span class="links-link02 H4-16px"><span>Contact</span></span>
+                  <a
+                    href="produk-bimaselalubenar.html"
+                    class="links-link03 H4-16px"
+                  >
+                    <span>Store</span>
+                  </a>
                   <span class="links-link04 H4-16px">
                     <span>Login Git</span>
                   </span>
@@ -412,7 +425,11 @@
               <br />
             </span>
             <div class="home-hero-buttons">
-              <div data-aos="zoom-in-down" class="home-ios-btn">
+              <div
+                id="Lihatportofolio"
+                data-aos="zoom-in-down"
+                class="home-ios-btn"
+              >
                 <span class="home-caption1">Lihat Portofolio</span>
                 <svg viewBox="0 0 1024 1024" class="home-icon">
                   <path
@@ -430,9 +447,9 @@
         </div>
         <div class="home-video">
           <div class="home-content1">
-            <div data-aos="zoom-in-down" class="home-header1">
-              <h2 class="home-text04">Project</h2>
-              <div class="home-container02"></div>
+            <div class="home-header1">
+              <h2 data-aos="zoom-in-up" class="home-text04">Project</h2>
+              <div data-aos="fade-left" class="home-container02"></div>
             </div>
             <div data-aos="zoom-in-down" class="home-container03">
               <div class="home-stat">
@@ -471,63 +488,126 @@
             </div>
           </div>
         </div>
+        <div class="home-banner">
+          <div class="home-container05">
+            <h1 class="home-text09">
+              <span class="home-text10">Belanja Lebih Mudah Dengan</span>
+              <span></span>
+              <span class="home-text12">Tokopedia</span>
+            </h1>
+            <span class="home-text13">
+              Langganan untuk notifikasi produk menarik lainnya
+            </span>
+            <form
+              name="SubscribeStore"
+              method="POST"
+              data-netlify="true"
+              action="produk-bimaselalubenar"
+              class="home-form"
+            >
+              <input
+                type="email"
+                required=""
+                placeholder="Email kamu"
+                name="Email-subs"
+                class="home-textinput input"
+              />
+              <button class="home-button1 button">Ikuti</button>
+            </form>
+          </div>
+          <img
+            alt="image"
+            src="https://ecs7.tokopedia.net/assets-tokopedia-lite/v2/zeus/production/e5b8438b.svg"
+            loading="lazy"
+            class="home-image2"
+          />
+        </div>
         <div class="home-sections">
           <div class="home-section">
-            <div class="home-image2"></div>
+            <div class="home-image3"></div>
             <div class="home-content2">
-              <h2 data-aos="zoom-in-down" class="home-text09">
+              <h2 data-aos="zoom-in-down" class="home-text14">
                 Bagaimana Saya Hidup di Era Digital?
               </h2>
-              <div data-aos="zoom-in-down" class="highlight-highlight">
-                <span class="highlight-text"><span>Animasi 3D</span></span>
-                <span class="highlight-text1">
-                  <span>
-                    Pembuatan animasi Film 3D mencakup semua langkah dalam alur
-                    animasi dari scripting untuk rendering dan pengomposisian.
+              <div data-aos="fade-left" class="highlight-highlight">
+                <svg viewBox="0 0 1024 1024" class="highlight-icon">
+                  <path
+                    d="M512 470q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM512 704q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"
+                  ></path>
+                </svg>
+                <div class="highlight-container">
+                  <span class="highlight-text"><span>Animasi 3D</span></span>
+                  <span class="highlight-text1">
+                    <span>
+                      Pembuatan animasi Film 3D mencakup semua langkah dalam
+                      alur animasi dari scripting untuk rendering dan
+                      pengomposisian.
+                    </span>
                   </span>
-                </span>
+                </div>
               </div>
-              <div data-aos="zoom-in-down" class="highlight-highlight">
-                <span class="highlight-text">
-                  <span>Virtual &amp; Augmented Realitas</span>
-                </span>
-                <span class="highlight-text1">
-                  <span>
-                    Membuat benda-benda benda menjadi hidup? Anda dapat
-                    membuatnya dengan Augmented Realitas, itu sangat bagus untuk
-                    yang baru fitur dalam pembelajaran.
+              <div data-aos="fade-left" class="highlight-highlight">
+                <svg viewBox="0 0 1024 1024" class="highlight-icon">
+                  <path
+                    d="M512 470q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM512 704q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"
+                  ></path>
+                </svg>
+                <div class="highlight-container">
+                  <span class="highlight-text">
+                    <span>Virtual &amp; Augmented Realitas</span>
                   </span>
-                </span>
+                  <span class="highlight-text1">
+                    <span>
+                      Membuat benda-benda benda menjadi hidup? Anda dapat
+                      membuatnya dengan Augmented Realitas, itu sangat bagus
+                      untuk yang baru fitur dalam pembelajaran.
+                    </span>
+                  </span>
+                </div>
               </div>
-              <div data-aos="zoom-in-down" class="highlight-highlight">
-                <span class="highlight-text">
-                  <span>Pengembang Game / Tur Virtual</span>
-                </span>
-                <span class="highlight-text1">
-                  <span>
-                    Buat dunia virtual kustom Anda sendiri. Sekarang tren
-                    Metaverse sedang bergejolak. Kami membuat beberapa tur
-                    virtual untuk beberapa acara seperti permainan.
+              <div data-aos="fade-left" class="highlight-highlight">
+                <svg viewBox="0 0 1024 1024" class="highlight-icon">
+                  <path
+                    d="M512 470q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM512 704q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"
+                  ></path>
+                </svg>
+                <div class="highlight-container">
+                  <span class="highlight-text">
+                    <span>Pengembang Game / Tur Virtual</span>
                   </span>
-                </span>
+                  <span class="highlight-text1">
+                    <span>
+                      Buat dunia virtual kustom Anda sendiri. Sekarang tren
+                      Metaverse sedang bergejolak. Kami membuat beberapa tur
+                      virtual untuk beberapa acara seperti permainan.
+                    </span>
+                  </span>
+                </div>
               </div>
-              <div data-aos="zoom-in-down" class="highlight-highlight">
-                <span class="highlight-text">
-                  <span>Desain Grafis 3D</span>
-                </span>
-                <span class="highlight-text1">
-                  <span>
-                    Kami juga menerima yang kecil proyek untuk membuat model 3D
-                    objek apa pun untuk kebutuhan UI Anda atau bumper logo.
+              <div data-aos="fade-left" class="highlight-highlight">
+                <svg viewBox="0 0 1024 1024" class="highlight-icon">
+                  <path
+                    d="M512 470q18 0 30 12t12 30-12 30-30 12-30-12-12-30 12-30 30-12zM512 704q80 0 136-56t56-136-56-136-136-56-136 56-56 136 56 136 136 56zM512 86q176 0 301 125t125 301-125 301-301 125-301-125-125-301 125-301 301-125z"
+                  ></path>
+                </svg>
+                <div class="highlight-container">
+                  <span class="highlight-text">
+                    <span>Desain Grafis 3D</span>
                   </span>
-                </span>
+                  <span class="highlight-text1">
+                    <span>
+                      Kami juga menerima yang kecil proyek untuk membuat model
+                      3D objek apa pun untuk kebutuhan UI Anda atau bumper logo.
+                    </span>
+                  </span>
+                </div>
               </div>
             </div>
           </div>
           <div class="home-section1">
             <div data-aos="zoom-in-down" class="home-content3">
               <div class="home-heading2">
-                <h2 class="home-text10">Creative +</h2>
+                <h2 class="home-text15">Creative +</h2>
               </div>
               <div class="home-content4">
                 <div class="home-points">
@@ -584,100 +664,93 @@
                 </svg>
               </div>
             </div>
-            <div class="home-container05">
-              <div data-aos="zoom-in-down" class="home-container06">
+            <div class="home-container06">
+              <div id="1" class="home-container07">
                 <img
                   alt="pf"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Portofolio/serverbima-portofolio-WilkerLKS.png?updatedAt=1696243183436"
                   loading="lazy"
-                  class="home-image3"
+                  class="home-image4"
                 />
                 <div class="home-highlight">
-                  <span class="home-text11">Wilker LKS - 2020</span>
-                  <span class="home-text12">
+                  <span class="home-text16">Wilker LKS - 2020</span>
+                  <span class="home-text17">
                     Berkesempatan mengikuti dan sekaligus koordinator di acara
                     Wilker 5 Bidang Aimasi 3D dan
                   </span>
-                  <div class="home-button1">
-                    <span class="home-text13">Selengkapnya</span>
-                    <span class="home-text14">-&gt;</span>
+                  <div class="home-button2">
+                    <span class="home-text18">Selengkapnya</span>
+                    <span class="home-text19">-&gt;</span>
                   </div>
                 </div>
               </div>
-              <div data-aos="zoom-in-down" class="home-container07">
+              <div class="home-container08">
                 <img
                   alt="pf"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Portofolio/serverbima-myskill-advanceprogramer.jpg?updatedAt=1696242909133"
                   loading="lazy"
-                  class="home-image4"
+                  class="home-image5"
                 />
                 <div class="home-highlight1">
-                  <span class="home-text15">Advance Beginner Programmer</span>
-                  <span class="home-text16">
+                  <span class="home-text20">Advance Beginner Programmer</span>
+                  <span class="home-text21">
                     Saya belajar pemrograman python sejak 2013, dan melanjutkan
                     beberapa pemrograman
                   </span>
-                  <div class="home-button2">
-                    <span class="home-text17">Selengkapnya</span>
-                    <span class="home-text18">-&gt;</span>
+                  <div class="home-button3">
+                    <span class="home-text22">Selengkapnya</span>
+                    <span class="home-text23">-&gt;</span>
                   </div>
                 </div>
               </div>
-              <div data-aos="zoom-in-down" class="home-container08">
+              <div class="home-container09">
                 <img
                   alt="pf"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Portofolio/serverbima-portofolio-helofest.jpg?updatedAt=1696242919461"
                   loading="lazy"
-                  class="home-image5"
+                  class="home-image6"
                 />
                 <div class="home-highlight2">
-                  <span class="home-text19">Helofest - 2020</span>
-                  <span class="home-text20">
+                  <span class="home-text24">Helofest - 2020</span>
+                  <span class="home-text25">
                     Living leaf Studio menjadi penyalur film terpendek terbaik
                     tingkat Nasional yang di selenggarakan oleh Helofest, dengan
                     tema
                   </span>
-                  <div class="home-button3">
-                    <span class="home-text21">Selengkapnya</span>
-                    <span class="home-text22">-&gt;</span>
-                  </div>
-                </div>
-              </div>
-              <div data-aos="zoom-in-down" class="home-container09">
-                <img
-                  alt="pf"
-                  src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Portofolio/serverbima-portofolio-metanesia.png?updatedAt=1696242914438"
-                  loading="lazy"
-                  class="home-image6"
-                />
-                <div class="home-highlight3">
-                  <span class="home-text23">Metanesia - 2022</span>
-                  <span class="home-text24">
-                    Ikut serta terlibat dalam pengembangan Metanesia verse milik
-                    PT. Telkom Indonesia serta 24 peserta lainnya. .Ikut serta
-                    pembuatan project masjid
-                  </span>
                   <div class="home-button4">
-                    <span class="home-text25">Selengkapnya</span>
-                    <span class="home-text26">-&gt;</span>
+                    <span class="home-text26">Selengkapnya</span>
+                    <span class="home-text27">-&gt;</span>
                   </div>
                 </div>
               </div>
               <div class="home-container10">
-                <svg viewBox="0 0 1024 1024" class="home-icon4">
-                  <path
-                    d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM341.333 554.667h238.336l-97.835 97.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l170.667-170.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-170.667-170.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l97.835 97.835h-238.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                  ></path>
-                </svg>
+                <img
+                  alt="pf"
+                  src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Portofolio/serverbima-portofolio-metanesia.png?updatedAt=1696242914438"
+                  loading="lazy"
+                  class="home-image7"
+                />
+                <div class="home-highlight3">
+                  <span class="home-text28">Metanesia - 2022</span>
+                  <span class="home-text29">
+                    Ikut serta terlibat dalam pengembangan Metanesia verse milik
+                    PT. Telkom Indonesia serta 24 peserta lainnya. .Ikut serta
+                    pembuatan project masjid
+                  </span>
+                  <div class="home-button5">
+                    <span class="home-text30">Selengkapnya</span>
+                    <span class="home-text31">-&gt;</span>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
         <div class="home-banner-container">
-          <div class="home-banner">
-            <div data-aos="zoom-in-down" class="home-overlay">
+          <div data-aos="flip-right" class="home-banner1">
+            <div class="home-overlay">
               <div class="home-container11">
-                <span class="home-text27">
+                <span class="home-text32">
                   <span>Mulai Kerjakan</span>
                   <br />
                   <span>Proyek Digital Mu</span>
@@ -691,7 +764,7 @@
                 >
                   <div class="home-ios-btn2">
                     <span class="home-caption6">Mulai</span>
-                    <svg viewBox="0 0 1024 1024" class="home-icon6">
+                    <svg viewBox="0 0 1024 1024" class="home-icon4">
                       <path
                         d="M981.333 512c0-129.579-52.565-246.997-137.472-331.861s-202.283-137.472-331.861-137.472-246.997 52.565-331.861 137.472-137.472 202.283-137.472 331.861 52.565 246.997 137.472 331.861 202.283 137.472 331.861 137.472 246.997-52.565 331.861-137.472 137.472-202.283 137.472-331.861zM896 512c0 106.069-42.923 201.984-112.469 271.531s-165.461 112.469-271.531 112.469-201.984-42.923-271.531-112.469-112.469-165.461-112.469-271.531 42.923-201.984 112.469-271.531 165.461-112.469 271.531-112.469 201.984 42.923 271.531 112.469 112.469 165.461 112.469 271.531zM341.333 554.667h238.336l-97.835 97.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l170.667-170.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-170.667-170.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l97.835 97.835h-238.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
                       ></path>
@@ -703,7 +776,7 @@
                 alt="Austronut"
                 src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Portofolio/astronot%20(1).gif?updatedAt=1696297502089"
                 loading="lazy"
-                class="home-image7"
+                class="home-image8"
               />
             </div>
           </div>
@@ -711,11 +784,11 @@
         <div class="home-features">
           <div data-aos="zoom-in-down" class="home-header2">
             <div class="home-tag">
-              <span class="home-text32">Skill Software Multi Tasking</span>
+              <span class="home-text37">Skill Software Multi Tasking</span>
             </div>
             <div class="home-heading3">
-              <h2 class="home-text33">Software Support</h2>
-              <span class="home-text34 H4-16px">Software yang saya kuasai</span>
+              <h2 class="home-text38">Software Support</h2>
+              <span class="home-text39 H4-16px">Software yang saya kuasai</span>
             </div>
           </div>
           <div class="home-feature-list">
@@ -1076,13 +1149,13 @@
           <div class="home-content5">
             <div data-aos="zoom-in-down" class="home-header3">
               <div class="home-tag1">
-                <span class="home-text35">
+                <span class="home-text40">
                   <span>QnA</span>
                   <br />
                 </span>
               </div>
               <div class="home-heading4">
-                <h2 class="home-text38">Tanya Jawab</h2>
+                <h2 class="home-text43">Tanya Jawab</h2>
               </div>
             </div>
             <div class="home-rows">
@@ -1149,11 +1222,16 @@
                 <a href="index.html" class="links-link H4-16px">
                   <span>Home</span>
                 </a>
-                <span class="links-link01 H4-16px">
+                <a href="portofolio.html" class="links-link01 H4-16px">
                   <span>Portofolio</span>
-                </span>
-                <span class="links-link02 H4-16px"><span>Project</span></span>
-                <span class="links-link03 H4-16px"><span>Contact</span></span>
+                </a>
+                <span class="links-link02 H4-16px"><span>Contact</span></span>
+                <a
+                  href="produk-bimaselalubenar.html"
+                  class="links-link03 H4-16px"
+                >
+                  <span>Store</span>
+                </a>
                 <span class="links-link04 H4-16px"><span>Login Git</span></span>
               </div>
               <div class="links-column1">
@@ -1260,6 +1338,13 @@
               gtag('js', new Date());
               gtag('config', 'G-ZHMFRWD45H');
     </script>
+    <script type="text/javascript">
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PRJDS8CS');
+    </script>
     <script
       async=""
       src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H"
@@ -1275,12 +1360,10 @@
     <script>
       AOS.init();
     </script>
-
     <script>
       AOS.init({
         duration: 1000
       });
     </script>
-
   </body>
 </html>

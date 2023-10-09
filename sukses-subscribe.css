@@ -1,4 +1,4 @@
-.eror-container {
+.sukses-subscribe-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -7,7 +7,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.eror-container1 {
+.sukses-subscribe-container1 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   display: flex;
@@ -19,14 +19,14 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
-  background-image: linear-gradient(180deg, rgb(70, 70, 70) 0.00%,rgb(0, 0, 0) 100.00%);
+  background-image: linear-gradient(180deg, rgb(66, 255, 46) 0.00%,rgb(0, 121, 19) 100.00%);
 }
-.eror-icon {
+.sukses-subscribe-icon {
   fill: #ffffff;
   width: 24px;
   height: 24px;
 }
-.eror-text {
+.sukses-subscribe-text {
   color: rgb(255, 255, 255);
   font-size: 18px;
   font-style: normal;
@@ -36,14 +36,10 @@
   text-transform: none;
   text-decoration: none;
 }
-.eror-text1 {
-  color: #000000;
-  margin-top: var(--dl-space-space-unit);
-}
-.eror-navlink {
+.sukses-subscribe-navlink {
   display: contents;
 }
-.eror-text2 {
+.sukses-subscribe-text3 {
   color: #000000;
   margin-top: var(--dl-space-space-twounits);
   text-decoration: none;

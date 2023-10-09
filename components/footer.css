@@ -38,6 +38,7 @@
   color: #000000;
   cursor: pointer;
   transition: 0.5s;
+  text-decoration: none;
 }
 .links-link01:hover {
   fill: #ffffff;
@@ -58,6 +59,7 @@
   color: #000000;
   cursor: pointer;
   transition: 0.5s;
+  text-decoration: none;
 }
 .links-link03:hover {
   fill: #ffffff;
@@ -295,6 +297,8 @@
   line-height: 21px;
   text-decoration: none;
 }
+
+
 
 @media(max-width: 991px) {
   .footer-footer {

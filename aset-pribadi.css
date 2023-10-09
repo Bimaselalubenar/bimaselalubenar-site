@@ -1,0 +1,169 @@
+.aset-pribadi-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.aset-pribadi-content {
+  gap: var(--dl-space-space-oneandhalfunits);
+  width: 100%;
+  display: flex;
+  z-index: 20;
+  max-width: 1000px;
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+}
+.aset-pribadi-image {
+  width: 200px;
+  object-fit: cover;
+}
+.aset-pribadi-container1 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.aset-pribadi-container2 {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+.aset-pribadi-text {
+  font-size: 22px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.aset-pribadi-text1 {
+  color: rgb(0, 38, 255);
+  font-size: 22px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 700;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.aset-pribadi-caption {
+  font-size: 16px;
+  font-style: normal;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.aset-pribadi-hero-buttons {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  z-index: 15;
+  margin-top: 0px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.aset-pribadi-link {
+  display: contents;
+}
+.aset-pribadi-ios-btn {
+  gap: 5px;
+  fill: white;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  transition: 0.7s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: flex-start;
+  text-decoration: none;
+  background-color: #000000;
+}
+.aset-pribadi-ios-btn:hover {
+  gap: 15px;
+  background-color: #333333;
+}
+.aset-pribadi-caption1 {
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 500;
+  margin-right: var(--dl-space-space-halfunit);
+}
+.aset-pribadi-icon {
+  width: 24px;
+  height: 24px;
+}
+@media(max-width: 991px) {
+  .aset-pribadi-content {
+    gap: var(--dl-space-space-unit);
+    flex: 0;
+    width: 490px;
+    padding: var(--dl-space-space-unit);
+    align-items: flex-start;
+  }
+  .aset-pribadi-text2 {
+    font-size: 16px;
+  }
+  .aset-pribadi-hero-buttons {
+    width: auto;
+    justify-content: flex-start;
+  }
+  .aset-pribadi-ios-btn {
+    flex: 1;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+}
+@media(max-width: 767px) {
+  .aset-pribadi-content {
+    width: 100%;
+  }
+  .aset-pribadi-text2 {
+    font-size: 16px;
+    line-height: 24px;
+  }
+}
+@media(max-width: 479px) {
+  .aset-pribadi-content {
+    flex: 0;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    padding-left: var(--dl-space-space-oneandhalfunits);
+    padding-right: var(--dl-space-space-oneandhalfunits);
+    flex-direction: column;
+    padding-bottom: var(--dl-space-space-oneandhalfunits);
+  }
+  .aset-pribadi-image {
+    width: 306px;
+    height: 306px;
+    margin-bottom: var(--dl-space-space-twounits);
+  }
+  .aset-pribadi-hero-buttons {
+    width: 100%;
+    align-self: center;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .aset-pribadi-ios-btn {
+    width: auto;
+  }
+}
