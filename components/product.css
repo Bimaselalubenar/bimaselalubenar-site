@@ -1,6 +1,6 @@
 .product-product {
   width: auto;
-  height: 350px;
+  height: 319px;
   display: flex;
   padding: var(--dl-space-space-halfunit);
   position: relative;
@@ -23,7 +23,7 @@
 }
 .product-text {
   color: #000000;
-  font-size: 16px;
+  font-size: 12px;
   max-width: 230px;
   align-self: flex-start;
   font-style: normal;
@@ -33,7 +33,7 @@
   font-weight: 600;
   line-height: 1.15;
   margin-bottom: var(--dl-space-space-halfunit);
-  text-transform: capitalize;
+  text-transform: none;
   text-decoration: none;
 }
 .product-container {
@@ -111,6 +111,10 @@
     height: 362px;
     border-radius: 10px;
     background-color: #ffffff;
+  }
+  .product-image {
+    width: 150px;
+    height: 150px;
   }
   .product-link {
     width: 100%;

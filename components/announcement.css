@@ -21,8 +21,6 @@
   align-self: center;
   align-items: flex-start;
   padding-top: 16px;
-  padding-left: var(--dl-space-space-sixunits);
-  padding-right: var(--dl-space-space-sixunits);
   flex-direction: row;
   padding-bottom: 12px;
   justify-content: center;
@@ -88,13 +86,15 @@
   }
   .announcement-un-hide {
     align-items: flex-start;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
+    padding-left: 0px;
+    padding-right: 0px;
     flex-direction: row;
     justify-content: center;
   }
   .announcement-container {
+    width: 100%;
     align-self: center;
-    justify-content: flex-end;
+    align-items: flex-start;
+    justify-content: center;
   }
 }
