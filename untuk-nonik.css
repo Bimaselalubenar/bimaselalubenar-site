@@ -1,0 +1,410 @@
+.untuk-nonik-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.untuk-nonik-container1 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  max-width: 479px;
+  align-items: center;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  background-size: auto,cover;
+  justify-content: center;
+  background-image: linear-gradient(180deg, rgba(252, 0, 255, 0.81) 0.00%,rgba(144, 0, 222, 0.74) 100.00%),url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Nonik/387269341_851688562953175_3657240227045545255_n.jpg?updatedAt=1698187201062');
+  background-repeat: repeat,no-repeat;
+  background-position: top left;
+}
+.untuk-nonik-text {
+  color: #ffffff;
+  font-size: 46px;
+  font-family: "Birthstone";
+}
+.untuk-nonik-text02 {
+  font-weight: 700;
+}
+.untuk-nonik-text03 {
+  font-style: normal;
+  font-weight: 400;
+}
+.untuk-nonik-text04 {
+  font-style: normal;
+  font-weight: 400;
+}
+.untuk-nonik-text05 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-family: "Inter";
+}
+.untuk-nonik-container2 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  max-width: 479px;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  background-size: auto,cover;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgb(255, 255, 255) 57.00%,rgb(229, 229, 229) 100.00%);
+  background-repeat: auto;
+  background-position: top left;
+}
+.untuk-nonik-text06 {
+  color: #171717;
+  font-size: 46px;
+  font-family: "Birthstone";
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.untuk-nonik-text07 {
+  color: #171717;
+  font-size: 12px;
+  font-family: "Inter";
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.untuk-nonik-text08 {
+  color: #171717;
+  font-size: 20px;
+  font-family: "Oooh Baby";
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.untuk-nonik-image {
+  width: 132px;
+  height: 172px;
+  align-self: center;
+  object-fit: cover;
+}
+.untuk-nonik-container3 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  max-width: 479px;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  background-size: auto,cover;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgb(255, 255, 255) 0.00%,rgb(255, 255, 255) 100.00%);
+  background-repeat: repeat;
+  background-position: top left;
+}
+.untuk-nonik-text09 {
+  color: rgb(23, 23, 23);
+  font-size: 46px;
+  font-family: "Birthstone";
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.untuk-nonik-text10 {
+  color: #171717;
+  font-size: 12px;
+  font-family: "Inter";
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.untuk-nonik-text11 {
+  color: rgb(23, 23, 23);
+  font-size: 20px;
+  font-family: "Oooh Baby";
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.untuk-nonik-image1 {
+  width: auto;
+  height: 89px;
+  align-self: flex-start;
+  box-shadow: 5px 5px 10px 0px rgba(212, 212, 212, 0.5);
+  object-fit: cover;
+  border-radius: 15px;
+}
+.untuk-nonik-image2 {
+  width: 208px;
+  height: 112px;
+  align-self: flex-end;
+  box-shadow: 5px 5px 10px 0px rgba(212, 212, 212, 0.5);
+  object-fit: cover;
+  border-radius: 15px;
+}
+.untuk-nonik-container4 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  max-width: 479px;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  background-size: auto,cover;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgb(255, 255, 255) 0.00%,rgb(255, 255, 255) 100.00%);
+  background-repeat: repeat;
+  background-position: top left;
+}
+.untuk-nonik-text20 {
+  color: rgb(23, 23, 23);
+  font-size: 46px;
+  font-family: "Birthstone";
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.untuk-nonik-text21 {
+  color: rgb(23, 23, 23);
+  font-size: 12px;
+  font-family: "Inter";
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.untuk-nonik-text22 {
+  color: rgb(23, 23, 23);
+  font-size: 20px;
+  font-family: "Oooh Baby";
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.untuk-nonik-image3 {
+  width: 100%;
+  height: 144px;
+  align-self: flex-start;
+  box-shadow: 5px 5px 10px 0px rgba(212, 212, 212, 0.5);
+  object-fit: cover;
+  border-radius: 15px;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.untuk-nonik-image4 {
+  width: 252px;
+  height: 144px;
+  align-self: flex-start;
+  box-shadow: 5px 5px 10px 0px rgba(212, 212, 212, 0.5);
+  object-fit: cover;
+  border-radius: 15px;
+}
+.untuk-nonik-container5 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  max-width: 479px;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  background-size: auto,cover;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgb(255, 255, 255) 0.00%,rgb(255, 255, 255) 100.00%);
+  background-repeat: repeat;
+  background-position: top left;
+}
+.untuk-nonik-text25 {
+  color: rgb(23, 23, 23);
+  font-size: 46px;
+  font-family: "Birthstone";
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.untuk-nonik-text26 {
+  color: rgb(23, 23, 23);
+  font-size: 12px;
+  font-family: "Inter";
+  margin-bottom: var(--dl-space-space-twounits);
+}
+.untuk-nonik-text27 {
+  color: rgb(23, 23, 23);
+  font-size: 20px;
+  font-family: "Oooh Baby";
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.untuk-nonik-text33 {
+  color: rgb(23, 23, 23);
+  font-size: 20px;
+  font-family: "Oooh Baby";
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: var(--dl-space-space-sixunits);
+}
+.untuk-nonik-container6 {
+  display: flex;
+  align-self: flex-end;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.untuk-nonik-text36 {
+  color: rgb(23, 23, 23);
+  font-size: 30px;
+  font-family: "Oooh Baby";
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.untuk-nonik-text39 {
+  color: rgb(23, 23, 23);
+  font-size: 12px;
+  font-family: "Oooh Baby";
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: var(--dl-space-space-unit);
+}
+.untuk-nonik-container7 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  max-width: 479px;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  background-size: auto,cover;
+  justify-content: center;
+  background-image: linear-gradient(0deg, rgb(255, 255, 255) 0.00%,rgb(255, 255, 255) 100.00%);
+  background-repeat: repeat;
+  background-position: top left;
+}
+.untuk-nonik-text42 {
+  color: rgb(23, 23, 23);
+  font-size: 46px;
+  font-family: "Birthstone";
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.untuk-nonik-video {
+  width: 205px;
+  height: 365px;
+  transform: rotate(-90deg);
+  align-self: center;
+  box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.73);
+  border-radius: 15px;
+}
+@media(max-width: 479px) {
+  .untuk-nonik-text {
+    font-size: 30px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .untuk-nonik-text05 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Inter;
+  }
+  .untuk-nonik-text06 {
+    font-size: 35px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .untuk-nonik-text07 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Inter;
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .untuk-nonik-text08 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-image {
+    align-self: center;
+  }
+  .untuk-nonik-text09 {
+    font-size: 35px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .untuk-nonik-text10 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Inter;
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .untuk-nonik-text11 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text12 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text13 {
+    color: #ffffff;
+    font-size: 30px;
+    font-family: Oooh Baby;
+  }
+  .untuk-nonik-text14 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text15 {
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text20 {
+    font-size: 35px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .untuk-nonik-text21 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Inter;
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .untuk-nonik-text22 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text25 {
+    font-size: 35px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .untuk-nonik-text26 {
+    color: rgb(255, 255, 255);
+    font-size: 16px;
+    font-family: Inter;
+    margin-bottom: var(--dl-space-space-threeunits);
+  }
+  .untuk-nonik-text27 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text33 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text36 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text39 {
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-unit);
+  }
+  .untuk-nonik-text42 {
+    font-size: 35px;
+    font-family: Oooh Baby;
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+}
