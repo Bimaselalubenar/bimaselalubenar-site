@@ -653,7 +653,7 @@
     color: #00a6ff;
   }
   .tips-generate-link-whats-app-text14 {
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-family: Poppins;
     font-weight: 400;
@@ -664,7 +664,7 @@
     color: #00a6ff;
   }
   .tips-generate-link-whats-app-text21 {
-    font-size: 20px;
+    font-size: 16px;
     font-style: normal;
     font-family: Poppins;
     font-weight: 400;
@@ -674,5 +674,8 @@
   .tips-generate-link-whats-app-link3 {
     color: #00a6ff;
     text-decoration: inherit;
+  }
+  .tips-generate-link-whats-app-text29 {
+    font-size: 16px;
   }
 }
