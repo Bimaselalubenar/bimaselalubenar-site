@@ -398,7 +398,7 @@
 .tips-generate-link-whats-app-image {
   width: 100%;
   height: auto;
-  max-width: auto;
+  max-width: 1000px;
   object-fit: cover;
   margin-bottom: var(--dl-space-space-unit);
 }
@@ -451,7 +451,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.tips-generate-link-whats-app-text12 {
+.tips-generate-link-whats-app-link1 {
+  color: #00a6ff;
+}
+.tips-generate-link-whats-app-text09 {
+  color: #00a6ff;
+}
+.tips-generate-link-whats-app-text13 {
   color: #ffffff;
   width: 100%;
   font-size: 20px;
@@ -469,7 +475,7 @@
   text-decoration: none;
   background-image: linear-gradient(135deg, rgb(192, 36, 37) 0.00%,rgb(240, 203, 53) 100.00%);
 }
-.tips-generate-link-whats-app-text13 {
+.tips-generate-link-whats-app-text14 {
   width: 100%;
   font-size: 20px;
   align-self: flex-start;
@@ -479,13 +485,17 @@
   line-height: 1.4;
   text-transform: none;
 }
+.tips-generate-link-whats-app-link2 {
+  color: #00a6ff;
+  text-decoration: underline;
+}
 .tips-generate-link-whats-app-image1 {
   width: 100%;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
   object-fit: cover;
   border-radius: 20px;
 }
-.tips-generate-link-whats-app-text20 {
+.tips-generate-link-whats-app-text21 {
   width: 100%;
   font-size: 20px;
   max-width: 1000px;
@@ -496,7 +506,8 @@
   line-height: 1.4;
   text-transform: none;
 }
-.tips-generate-link-whats-app-link2 {
+.tips-generate-link-whats-app-link3 {
+  color: #00a6ff;
   text-decoration: underline;
 }
 .tips-generate-link-whats-app-image2 {
@@ -506,7 +517,7 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.tips-generate-link-whats-app-text27 {
+.tips-generate-link-whats-app-text28 {
   color: rgb(255, 255, 255);
   width: 100%;
   font-size: 20px;
@@ -530,7 +541,7 @@
   box-shadow: 5px 5px 10px 0px #d4d4d4;
   border-radius: 20px;
 }
-.tips-generate-link-whats-app-text28 {
+.tips-generate-link-whats-app-text29 {
   width: 100%;
   font-size: 20px;
   max-width: 1000px;
@@ -555,7 +566,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.tips-generate-link-whats-app-text39 {
+.tips-generate-link-whats-app-text40 {
   font-size: 18px;
   font-style: normal;
   font-family: "Poppins";
@@ -631,5 +642,37 @@
     font-weight: 600;
     text-transform: none;
     text-decoration: none;
+  }
+  .tips-generate-link-whats-app-text03 {
+    text-transform: none;
+  }
+  .tips-generate-link-whats-app-link1 {
+    color: #00a6ff;
+  }
+  .tips-generate-link-whats-app-text09 {
+    color: #00a6ff;
+  }
+  .tips-generate-link-whats-app-text14 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: none;
+  }
+  .tips-generate-link-whats-app-link2 {
+    color: #00a6ff;
+  }
+  .tips-generate-link-whats-app-text21 {
+    font-size: 20px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.4;
+    text-transform: none;
+  }
+  .tips-generate-link-whats-app-link3 {
+    color: #00a6ff;
+    text-decoration: inherit;
   }
 }
