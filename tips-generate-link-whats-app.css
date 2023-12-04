@@ -337,6 +337,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .footer-footer {
     padding-top: var(--dl-space-space-fourunits);
@@ -490,7 +491,9 @@
   text-decoration: underline;
 }
 .tips-generate-link-whats-app-image1 {
-  width: 100%;
+  width: auto;
+  height: 265px;
+  align-self: center;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
   object-fit: cover;
   border-radius: 20px;
@@ -511,8 +514,9 @@
   text-decoration: underline;
 }
 .tips-generate-link-whats-app-image2 {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 357px;
+  align-self: center;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
   object-fit: cover;
   border-radius: 20px;
@@ -536,8 +540,9 @@
   background-image: linear-gradient(135deg, rgb(192, 36, 37) 0%, rgb(240, 203, 53) 100%);
 }
 .tips-generate-link-whats-app-video {
-  width: 100%;
+  width: auto;
   height: 671px;
+  align-self: center;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
   border-radius: 20px;
 }
@@ -636,12 +641,7 @@
     align-items: flex-start;
   }
   .tips-generate-link-whats-app-text {
-    font-size: 30px;
-    font-style: normal;
-    font-family: Poppins;
-    font-weight: 600;
     text-transform: none;
-    text-decoration: none;
   }
   .tips-generate-link-whats-app-text03 {
     text-transform: none;

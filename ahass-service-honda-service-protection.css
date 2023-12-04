@@ -753,3 +753,272 @@
     justify-content: flex-start;
   }
 }
+
+.footer-footer {
+  gap: var(--dl-space-space-threeunits);
+  color: white;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: var(--dl-space-space-sixunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-sixunits);
+  background-color: #dedede;
+}
+.footer-content {
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.footer-information {
+  gap: var(--dl-space-space-unit);
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.footer-heading {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  max-width: 265px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.footer-pasted-image {
+  width: 150px;
+}
+.footer-text {
+  color: #000000;
+}
+.footer-link {
+  color: #000000;
+  width: 100%;
+  font-size: 14px;
+  max-width: 1200px;
+  line-height: 21px;
+  text-decoration: none;
+}
+
+
+
+
+
+@media(max-width: 991px) {
+  .footer-footer {
+    padding-top: var(--dl-space-space-fourunits);
+    padding-left: var(--dl-space-space-threeunits);
+    padding-right: var(--dl-space-space-threeunits);
+    padding-bottom: var(--dl-space-space-fourunits);
+  }
+}
+@media(max-width: 767px) {
+  .footer-footer {
+    gap: var(--dl-space-space-twounits);
+  }
+  .footer-content {
+    gap: var(--dl-space-space-threeunits);
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .footer-information {
+    gap: var(--dl-space-space-oneandhalfunits);
+  }
+  .footer-heading {
+    gap: var(--dl-space-space-halfunit);
+  }
+  .footer-pasted-image {
+    width: 100px;
+  }
+  .footer-text {
+    font-size: 12px;
+    line-height: 18px;
+  }
+}
+@media(max-width: 479px) {
+  .footer-content {
+    align-self: flex-start;
+    align-items: center;
+  }
+}
+
+.ahass-service-honda-service-protection-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.ahass-service-honda-service-protection-promo {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  height: auto;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 1000px;
+  transition: 0.5s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #ffffff;
+  border-width: 3px;
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: 20px;
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.ahass-service-honda-service-protection-promo:hover {
+  transform: scale(102%);
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.19);
+  border-color: #ebebeb;
+}
+.ahass-service-honda-service-protection-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.ahass-service-honda-service-protection-container1 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.ahass-service-honda-service-protection-text {
+  color: rgb(0, 0, 0);
+  font-size: 20px;
+  font-style: normal;
+  margin-top: var(--dl-space-space-unit);
+  text-align: left;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: var(--dl-space-space-unit);
+  text-transform: none;
+  text-decoration: none;
+}
+.ahass-service-honda-service-protection-text01 {
+  color: rgb(0, 0, 0);
+  margin-top: 0px;
+  text-align: center;
+  margin-left: 0px;
+  padding-top: var(--dl-space-space-halfunit);
+  margin-right: 0px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-image: linear-gradient(to right, #fc00ff 0%, #00dbde 100%);
+}
+.ahass-service-honda-service-protection-text04 {
+  color: rgb(0, 0, 0);
+  margin-top: 0px;
+  text-align: left;
+  margin-bottom: var(--dl-space-space-unit);
+}
+.ahass-service-honda-service-protection-link {
+  display: contents;
+}
+.ahass-service-honda-service-protection-button {
+  gap: 5px;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  margin-top: var(--dl-space-space-unit);
+  transition: 0.7s;
+  align-items: center;
+  border-color: rgba(255, 255, 255, 0);
+  border-width: 0px;
+  border-radius: 10px;
+  flex-direction: row;
+  text-decoration: none;
+  background-color: #fff942;
+  border-bottom-width: 1px;
+}
+.ahass-service-honda-service-protection-button:hover {
+  gap: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  border-color: #ffffff;
+  border-bottom-width: 1px;
+}
+.ahass-service-honda-service-protection-text27 {
+  color: #000000;
+  width: Size-XSmall;
+}
+.ahass-service-honda-service-protection-text28 {
+  color: #000000;
+  width: Size-XSmall;
+}
+@media(max-width: 991px) {
+  .ahass-service-honda-service-protection-text {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.15;
+    text-transform: none;
+    text-decoration: none;
+  }
+}
+@media(max-width: 767px) {
+  .ahass-service-honda-service-protection-container1 {
+    width: 100%;
+    max-width: 1000px;
+  }
+}
+@media(max-width: 479px) {
+  .ahass-service-honda-service-protection-promo {
+    width: 100%;
+    padding: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
+  .ahass-service-honda-service-protection-image {
+    border-radius: 9px;
+  }
+  .ahass-service-honda-service-protection-container1 {
+    width: 100%;
+  }
+  .ahass-service-honda-service-protection-text {
+    font-size: 20px;
+  }
+  .ahass-service-honda-service-protection-text01 {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    text-align: left;
+    font-family: Poppins;
+    line-height: 1.15;
+    text-transform: none;
+    text-decoration: none;
+  }
+  .ahass-service-honda-service-protection-text03 {
+    font-style: inherit;
+    font-family: Inter;
+    font-weight: 600;
+  }
+  .ahass-service-honda-service-protection-text04 {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    text-align: left;
+  }
+  .ahass-service-honda-service-protection-button {
+    padding: var(--dl-space-space-halfunit);
+    margin-top: var(--dl-space-space-unit);
+  }
+}
