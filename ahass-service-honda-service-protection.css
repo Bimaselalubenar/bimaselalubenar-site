@@ -867,7 +867,6 @@
   overflow: hidden;
   position: relative;
   max-width: 1000px;
-  transition: 0.5s;
   align-items: center;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #ffffff;
@@ -880,11 +879,6 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: flex-start;
   background-color: #ffffff;
-}
-.ahass-service-honda-service-protection-promo:hover {
-  transform: scale(102%);
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.19);
-  border-color: #ebebeb;
 }
 .ahass-service-honda-service-protection-image {
   width: 100%;
@@ -913,8 +907,12 @@
 }
 .ahass-service-honda-service-protection-text01 {
   color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-style: normal;
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
+  font-family: "Inter";
+  font-weight: 400;
   margin-left: 0px;
   padding-top: var(--dl-space-space-halfunit);
   margin-right: 0px;
@@ -923,12 +921,15 @@
   margin-bottom: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-halfunit);
-  background-image: linear-gradient(to right, #fc00ff 0%, #00dbde 100%);
+  background-image: linear-gradient(to right, rgb(252, 0, 255) 0%, rgb(0, 219, 222) 100%);
 }
 .ahass-service-honda-service-protection-text04 {
   color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-style: normal;
   margin-top: 0px;
   text-align: left;
+  font-weight: 400;
   margin-bottom: var(--dl-space-space-unit);
 }
 .ahass-service-honda-service-protection-link {
