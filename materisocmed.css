@@ -304,40 +304,6 @@
   object-fit: cover;
   text-decoration: none;
 }
-.links-link12 {
-  display: contents;
-}
-.links-sign-up-btn {
-  width: auto;
-  cursor: pointer;
-  display: flex;
-  transition: 0.9s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-halfunit);
-  justify-content: center;
-  text-decoration: none;
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 0.00%,rgb(0, 219, 222) 100.00%);
-  transition-duration: 1s;
-}
-.links-sign-up-btn:hover {
-  background-color: rgba(173, 226, 223, 0.5);
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 100.00%,rgb(0, 219, 222) 100.00%);
-}
-.links-sign-up {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Poppins";
-  font-weight: 400;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
 
 
 
@@ -388,11 +354,11 @@
   max-width: auto;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
   align-items: flex-start;
-  padding-top: var(--dl-space-space-twounits);
+  padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-halfunit);
   justify-content: center;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -711,40 +677,6 @@
   flex-direction: row;
   justify-content: center;
 }
-.navbar-link5 {
-  display: contents;
-}
-.navbar-sign-up-btn {
-  width: auto;
-  cursor: pointer;
-  display: flex;
-  transition: 0.9s;
-  align-items: flex-start;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-unit);
-  justify-content: center;
-  text-decoration: none;
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 0.00%,rgb(0, 219, 222) 100.00%);
-  transition-duration: 1s;
-}
-.navbar-sign-up-btn:hover {
-  background-color: rgba(173, 226, 223, 0.5);
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 100.00%,rgb(0, 219, 222) 100.00%);
-}
-.navbar-sign-up {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Poppins";
-  font-weight: 500;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
 .navbar-hamburger-menu {
   width: 20px;
   height: 12px;
@@ -804,9 +736,6 @@
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
   .navbar-links {
-    display: none;
-  }
-  .navbar-sign-up-btn {
     display: none;
   }
   .navbar-hamburger-menu {
@@ -1355,7 +1284,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-link1 {
+.materisocmed-link01 {
   display: contents;
 }
 .materisocmed-button01 {
@@ -1442,7 +1371,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-link2 {
+.materisocmed-link02 {
   display: contents;
 }
 .materisocmed-button02 {
@@ -1529,7 +1458,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-link3 {
+.materisocmed-link03 {
   display: contents;
 }
 .materisocmed-button03 {
@@ -1575,6 +1504,7 @@
   padding-top: var(--dl-space-space-halfunit);
   padding-left: 52px;
   padding-right: 52px;
+  flex-direction: column;
   padding-bottom: var(--dl-space-space-threeunits);
   justify-content: center;
 }
@@ -1624,7 +1554,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-link4 {
+.materisocmed-link04 {
   display: contents;
 }
 .materisocmed-button04 {
@@ -1667,6 +1597,46 @@
   object-fit: cover;
 }
 .materisocmed-container13 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: row;
+  justify-content: center;
+}
+.materisocmed-text32 {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-style: normal;
+  margin-top: 0px;
+  text-align: left;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0px;
+  text-transform: none;
+  text-decoration: none;
+}
+.materisocmed-link05 {
+  display: contents;
+}
+.materisocmed-icon {
+  fill: #000000;
+  width: 35px;
+  height: 35px;
+  padding: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-round);
+  text-decoration: none;
+}
+.materisocmed-container14 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -1674,54 +1644,51 @@
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
+  align-self: center;
   align-items: center;
   padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  padding-right: var(--dl-space-space-oneandhalfunits);
+  padding-left: 52px;
+  padding-right: 52px;
   flex-direction: row;
   padding-bottom: var(--dl-space-space-threeunits);
-  justify-content: center;
+  justify-content: flex-start;
 }
-.materisocmed-text32 {
+.materisocmed-text33 {
   font-size: 18px;
   font-style: normal;
+  text-align: left;
   font-family: "Poppins";
   font-weight: 600;
   line-height: 1.15;
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-container14 {
+.materisocmed-container15 {
   gap: var(--dl-space-space-unit);
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: center;
-}
-.materisocmed-promo {
-  gap: var(--dl-space-space-twounits);
-  width: 237px;
+  width: 100%;
   height: auto;
   display: flex;
-  overflow: hidden;
-  position: relative;
-  transition: 0.5s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-width: 3px;
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  padding-right: var(--dl-space-space-halfunit);
+  overflow-x: scroll;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.materisocmed-promo {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 305px;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: var(--dl-space-space-halfunit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
   justify-content: flex-start;
   background-color: #ffffff;
 }
 .materisocmed-promo:hover {
-  transform: scale(102%);
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.19);
-  border-color: #ebebeb;
+  box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.69);
 }
 .materisocmed-image08 {
   width: 100%;
@@ -1729,18 +1696,17 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container15 {
+.materisocmed-container16 {
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text33 {
+.materisocmed-text34 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
-  margin-top: var(--dl-space-space-unit);
-  text-align: center;
+  margin-top: 0px;
   font-family: "Poppins";
   font-weight: 600;
   line-height: 1.15;
@@ -1748,13 +1714,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text34 {
+.materisocmed-text35 {
   color: rgb(0, 0, 0);
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--dl-space-space-unit);
 }
-.materisocmed-link5 {
+.materisocmed-link06 {
   display: contents;
 }
 .materisocmed-button05 {
@@ -1780,38 +1746,31 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text35 {
-  color: #000000;
-  width: Size-XSmall;
-}
 .materisocmed-text36 {
   color: #000000;
   width: Size-XSmall;
 }
+.materisocmed-text37 {
+  color: #000000;
+  width: Size-XSmall;
+}
 .materisocmed-promo1 {
-  gap: var(--dl-space-space-twounits);
-  width: 237px;
-  height: auto;
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 305px;
+  height: 100%;
   display: flex;
-  overflow: hidden;
-  position: relative;
-  transition: 0.5s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-width: 3px;
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  padding-right: var(--dl-space-space-halfunit);
+  padding: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: var(--dl-space-space-halfunit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
   justify-content: flex-start;
   background-color: #ffffff;
 }
 .materisocmed-promo1:hover {
-  transform: scale(102%);
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.19);
-  border-color: #ebebeb;
+  box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.69);
 }
 .materisocmed-image09 {
   width: 100%;
@@ -1819,18 +1778,17 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container16 {
+.materisocmed-container17 {
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text37 {
+.materisocmed-text38 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
-  margin-top: var(--dl-space-space-unit);
-  text-align: center;
+  margin-top: 0px;
   font-family: "Poppins";
   font-weight: 600;
   line-height: 1.15;
@@ -1838,13 +1796,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text38 {
+.materisocmed-text39 {
   color: rgb(0, 0, 0);
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--dl-space-space-unit);
 }
-.materisocmed-link6 {
+.materisocmed-link07 {
   display: contents;
 }
 .materisocmed-button06 {
@@ -1870,38 +1828,31 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text39 {
-  color: #000000;
-  width: Size-XSmall;
-}
 .materisocmed-text40 {
   color: #000000;
   width: Size-XSmall;
 }
+.materisocmed-text41 {
+  color: #000000;
+  width: Size-XSmall;
+}
 .materisocmed-promo2 {
-  gap: var(--dl-space-space-twounits);
-  width: 237px;
-  height: auto;
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 305px;
+  height: 100%;
   display: flex;
-  overflow: hidden;
-  position: relative;
-  transition: 0.5s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-width: 3px;
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  padding-right: var(--dl-space-space-halfunit);
+  padding: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: var(--dl-space-space-halfunit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
   justify-content: flex-start;
   background-color: #ffffff;
 }
 .materisocmed-promo2:hover {
-  transform: scale(102%);
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.19);
-  border-color: #ebebeb;
+  box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.69);
 }
 .materisocmed-image10 {
   width: 100%;
@@ -1909,18 +1860,17 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container17 {
+.materisocmed-container18 {
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text41 {
+.materisocmed-text42 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
-  margin-top: var(--dl-space-space-unit);
-  text-align: left;
+  margin-top: 0px;
   font-family: "Poppins";
   font-weight: 600;
   line-height: 1.15;
@@ -1928,13 +1878,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text42 {
+.materisocmed-text43 {
   color: rgb(0, 0, 0);
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--dl-space-space-unit);
 }
-.materisocmed-link7 {
+.materisocmed-link08 {
   display: contents;
 }
 .materisocmed-button07 {
@@ -1960,38 +1910,31 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text43 {
-  color: #000000;
-  width: Size-XSmall;
-}
 .materisocmed-text44 {
   color: #000000;
   width: Size-XSmall;
 }
+.materisocmed-text45 {
+  color: #000000;
+  width: Size-XSmall;
+}
 .materisocmed-promo3 {
-  gap: var(--dl-space-space-twounits);
-  width: 237px;
-  height: auto;
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 305px;
+  height: 100%;
   display: flex;
-  overflow: hidden;
-  position: relative;
-  transition: 0.5s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-width: 3px;
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  padding-right: var(--dl-space-space-halfunit);
+  padding: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: var(--dl-space-space-halfunit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
   justify-content: flex-start;
   background-color: #ffffff;
 }
 .materisocmed-promo3:hover {
-  transform: scale(102%);
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.19);
-  border-color: #ebebeb;
+  box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.69);
 }
 .materisocmed-image11 {
   width: 100%;
@@ -1999,18 +1942,18 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container18 {
+.materisocmed-container19 {
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text45 {
+.materisocmed-text46 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
-  margin-top: var(--dl-space-space-unit);
-  text-align: center;
+  margin-top: 0px;
+  text-align: left;
   font-family: "Poppins";
   font-weight: 600;
   line-height: 1.15;
@@ -2018,13 +1961,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text46 {
+.materisocmed-text47 {
   color: rgb(0, 0, 0);
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--dl-space-space-unit);
 }
-.materisocmed-link8 {
+.materisocmed-link09 {
   display: contents;
 }
 .materisocmed-button08 {
@@ -2050,38 +1993,31 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text47 {
-  color: #000000;
-  width: Size-XSmall;
-}
 .materisocmed-text48 {
   color: #000000;
   width: Size-XSmall;
 }
+.materisocmed-text49 {
+  color: #000000;
+  width: Size-XSmall;
+}
 .materisocmed-promo4 {
-  gap: var(--dl-space-space-twounits);
-  width: 237px;
-  height: auto;
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 305px;
+  height: 100%;
   display: flex;
-  overflow: hidden;
-  position: relative;
-  transition: 0.5s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-width: 3px;
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 20px;
-  padding-right: var(--dl-space-space-halfunit);
+  padding: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  margin-bottom: var(--dl-space-space-halfunit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
   justify-content: flex-start;
   background-color: #ffffff;
 }
 .materisocmed-promo4:hover {
-  transform: scale(102%);
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.19);
-  border-color: #ebebeb;
+  box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.69);
 }
 .materisocmed-image12 {
   width: 100%;
@@ -2089,17 +2025,17 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container19 {
+.materisocmed-container20 {
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text49 {
+.materisocmed-text50 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
-  margin-top: var(--dl-space-space-unit);
+  margin-top: 0px;
   text-align: left;
   font-family: "Poppins";
   font-weight: 600;
@@ -2108,10 +2044,10 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text50 {
+.materisocmed-text51 {
   color: rgb(0, 0, 0);
   margin-top: 0px;
-  text-align: center;
+  text-align: left;
   margin-bottom: var(--dl-space-space-unit);
 }
 .materisocmed-navlink {
@@ -2140,86 +2076,13 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text51 {
-  color: #000000;
-  width: Size-XSmall;
-}
 .materisocmed-text52 {
   color: #000000;
   width: Size-XSmall;
 }
-.materisocmed-container20 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  height: auto;
-  display: none;
-  align-items: center;
-  padding-top: var(--dl-space-space-twounits);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-twounits);
-  justify-content: center;
-  background-color: #000000;
-}
 .materisocmed-text53 {
-  color: #ffffff;
-  font-size: 12px;
-  align-self: center;
-  font-style: normal;
-  font-family: Poppins;
-  font-weight: 500;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
-.materisocmed-icon {
-  fill: #ffffff;
-  width: 24px;
-  height: 24px;
-}
-.materisocmed-container21 {
-  gap: var(--dl-space-space-unit);
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 1000px;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-threeunits);
-  justify-content: center;
-}
-.materisocmed-text54 {
-  font-size: 18px;
-  font-style: normal;
-  font-family: "Poppins";
-  font-weight: 600;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
-.materisocmed-container22 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  justify-content: center;
-}
-.materisocmed-container23 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.materisocmed-container24 {
-  width: 976px;
-  height: 572px;
-}
-.materisocmed-container25 {
-  display: contents;
+  color: #000000;
+  width: Size-XSmall;
 }
 .materisocmed-form {
   gap: var(--dl-space-space-halfunit);
@@ -2235,7 +2098,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.materisocmed-text55 {
+.materisocmed-text54 {
   font-size: 18px;
   font-style: normal;
   font-family: "Poppins";
@@ -2245,7 +2108,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-container26 {
+.materisocmed-container21 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -2313,13 +2176,20 @@
     top: -57px;
     right: -75px;
   }
-  .materisocmed-container13 {
-    flex-wrap: wrap;
+  .materisocmed-text32 {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.15;
+    text-transform: none;
+    text-decoration: none;
   }
   .materisocmed-container14 {
     flex-wrap: wrap;
   }
-  .materisocmed-text41 {
+  .materisocmed-text42 {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-style: normal;
@@ -2329,7 +2199,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text45 {
+  .materisocmed-text46 {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-style: normal;
@@ -2339,7 +2209,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text49 {
+  .materisocmed-text50 {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-style: normal;
@@ -2348,11 +2218,6 @@
     line-height: 1.15;
     text-transform: none;
     text-decoration: none;
-  }
-  .materisocmed-container21 {
-    flex-wrap: wrap;
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-halfunit);
   }
 }
 @media(max-width: 767px) {
@@ -2399,13 +2264,10 @@
     top: -63px;
     right: -93px;
   }
-  .materisocmed-container13 {
+  .materisocmed-container14 {
     flex-wrap: wrap;
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-halfunit);
-  }
-  .materisocmed-container15 {
-    width: 151px;
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
   }
   .materisocmed-container16 {
     width: 151px;
@@ -2420,13 +2282,7 @@
     width: 151px;
   }
   .materisocmed-container20 {
-    display: flex;
-  }
-  .materisocmed-container21 {
-    display: none;
-    flex-wrap: wrap;
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-halfunit);
+    width: 151px;
   }
 }
 @media(max-width: 479px) {
@@ -2581,7 +2437,10 @@
     height: 273px;
     display: none;
   }
-  .materisocmed-container13 {
+  .materisocmed-text32 {
+    font-size: 12px;
+  }
+  .materisocmed-container14 {
     gap: var(--dl-space-space-halfunit);
     flex-wrap: wrap;
     align-items: center;
@@ -2591,25 +2450,19 @@
     padding-bottom: var(--dl-space-space-threeunits);
     justify-content: center;
   }
-  .materisocmed-container14 {
-    gap: var(--dl-space-space-halfunit);
-    flex-wrap: wrap;
-  }
-  .materisocmed-promo {
-    width: 100%;
-    padding: var(--dl-space-space-unit);
-    flex-direction: column;
+  .materisocmed-container15 {
+    margin-bottom: 0px;
   }
   .materisocmed-image08 {
     border-radius: 9px;
   }
-  .materisocmed-container15 {
+  .materisocmed-container16 {
     width: 100%;
   }
-  .materisocmed-text33 {
+  .materisocmed-text34 {
     font-size: 12px;
   }
-  .materisocmed-text34 {
+  .materisocmed-text35 {
     font-size: 12px;
     text-align: left;
   }
@@ -2617,21 +2470,16 @@
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-promo1 {
-    width: 100%;
-    padding: var(--dl-space-space-unit);
-    flex-direction: column;
-  }
   .materisocmed-image09 {
     border-radius: 9px;
   }
-  .materisocmed-container16 {
+  .materisocmed-container17 {
     width: 100%;
   }
-  .materisocmed-text37 {
+  .materisocmed-text38 {
     font-size: 12px;
   }
-  .materisocmed-text38 {
+  .materisocmed-text39 {
     font-size: 12px;
     text-align: left;
   }
@@ -2639,21 +2487,16 @@
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-promo2 {
-    width: 100%;
-    padding: var(--dl-space-space-unit);
-    flex-direction: column;
-  }
   .materisocmed-image10 {
     border-radius: 9px;
   }
-  .materisocmed-container17 {
+  .materisocmed-container18 {
     width: 100%;
   }
-  .materisocmed-text41 {
+  .materisocmed-text42 {
     font-size: 12px;
   }
-  .materisocmed-text42 {
+  .materisocmed-text43 {
     font-size: 12px;
     text-align: left;
   }
@@ -2661,21 +2504,16 @@
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-promo3 {
-    width: 100%;
-    padding: var(--dl-space-space-unit);
-    flex-direction: column;
-  }
   .materisocmed-image11 {
     border-radius: 9px;
   }
-  .materisocmed-container18 {
+  .materisocmed-container19 {
     width: 100%;
   }
-  .materisocmed-text45 {
+  .materisocmed-text46 {
     font-size: 12px;
   }
-  .materisocmed-text46 {
+  .materisocmed-text47 {
     font-size: 12px;
     text-align: left;
   }
@@ -2683,37 +2521,21 @@
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-promo4 {
-    width: 100%;
-    padding: var(--dl-space-space-unit);
-    flex-direction: column;
-  }
   .materisocmed-image12 {
     border-radius: 9px;
   }
-  .materisocmed-container19 {
+  .materisocmed-container20 {
     width: 100%;
   }
-  .materisocmed-text49 {
+  .materisocmed-text50 {
     font-size: 12px;
   }
-  .materisocmed-text50 {
+  .materisocmed-text51 {
     font-size: 12px;
     text-align: left;
   }
   .materisocmed-button09 {
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
-  }
-  .materisocmed-container21 {
-    gap: var(--dl-space-space-halfunit);
-    display: none;
-    flex-wrap: wrap;
-    align-items: center;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
-    flex-direction: row;
-    padding-bottom: var(--dl-space-space-threeunits);
-    justify-content: center;
   }
 }

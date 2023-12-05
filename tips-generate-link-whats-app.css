@@ -202,40 +202,6 @@
   object-fit: cover;
   text-decoration: none;
 }
-.links-link12 {
-  display: contents;
-}
-.links-sign-up-btn {
-  width: auto;
-  cursor: pointer;
-  display: flex;
-  transition: 0.9s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-halfunit);
-  justify-content: center;
-  text-decoration: none;
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 0.00%,rgb(0, 219, 222) 100.00%);
-  transition-duration: 1s;
-}
-.links-sign-up-btn:hover {
-  background-color: rgba(173, 226, 223, 0.5);
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 100.00%,rgb(0, 219, 222) 100.00%);
-}
-.links-sign-up {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Poppins";
-  font-weight: 400;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
 
 
 
@@ -389,12 +355,26 @@
   justify-content: flex-start;
 }
 .tips-generate-link-whats-app-header {
-  gap: var(--dl-space-space-unit);
+  gap: var(--dl-space-space-twounits);
   width: 100%;
+  height: auto;
   display: flex;
+  overflow: hidden;
+  position: relative;
+  max-width: 1000px;
+  margin-top: var(--dl-space-space-twounits);
   align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  border-color: #ffffff;
+  border-width: 3px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
   justify-content: flex-start;
+  background-color: #ffffff;
 }
 .tips-generate-link-whats-app-image {
   width: 100%;
@@ -632,7 +612,24 @@
 .tips-generate-link-whats-app-button:hover {
   background-color: #46cc06;
 }
+@media(max-width: 991px) {
+  .tips-generate-link-whats-app-header {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+}
+@media(max-width: 767px) {
+  .tips-generate-link-whats-app-header {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
+}
 @media(max-width: 479px) {
+  .tips-generate-link-whats-app-header {
+    width: 100%;
+    padding: var(--dl-space-space-unit);
+    flex-direction: column;
+  }
   .tips-generate-link-whats-app-image {
     width: 100%;
   }

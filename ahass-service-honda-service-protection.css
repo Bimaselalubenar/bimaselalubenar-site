@@ -202,40 +202,6 @@
   object-fit: cover;
   text-decoration: none;
 }
-.links-link12 {
-  display: contents;
-}
-.links-sign-up-btn {
-  width: auto;
-  cursor: pointer;
-  display: flex;
-  transition: 0.9s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-halfunit);
-  justify-content: center;
-  text-decoration: none;
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 0.00%,rgb(0, 219, 222) 100.00%);
-  transition-duration: 1s;
-}
-.links-sign-up-btn:hover {
-  background-color: rgba(173, 226, 223, 0.5);
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 100.00%,rgb(0, 219, 222) 100.00%);
-}
-.links-sign-up {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Poppins";
-  font-weight: 400;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
 
 
 
@@ -286,11 +252,11 @@
   max-width: auto;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
   align-items: flex-start;
-  padding-top: var(--dl-space-space-twounits);
+  padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-halfunit);
   justify-content: center;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
@@ -609,40 +575,6 @@
   flex-direction: row;
   justify-content: center;
 }
-.navbar-link5 {
-  display: contents;
-}
-.navbar-sign-up-btn {
-  width: auto;
-  cursor: pointer;
-  display: flex;
-  transition: 0.9s;
-  align-items: flex-start;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-oneandhalfunits);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-oneandhalfunits);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-unit);
-  justify-content: center;
-  text-decoration: none;
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 0.00%,rgb(0, 219, 222) 100.00%);
-  transition-duration: 1s;
-}
-.navbar-sign-up-btn:hover {
-  background-color: rgba(173, 226, 223, 0.5);
-  background-image: linear-gradient(135deg, rgb(252, 0, 255) 100.00%,rgb(0, 219, 222) 100.00%);
-}
-.navbar-sign-up {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Poppins";
-  font-weight: 500;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
 .navbar-hamburger-menu {
   width: 20px;
   height: 12px;
@@ -702,9 +634,6 @@
     padding-right: var(--dl-space-space-oneandhalfunits);
   }
   .navbar-links {
-    display: none;
-  }
-  .navbar-sign-up-btn {
     display: none;
   }
   .navbar-hamburger-menu {
@@ -867,14 +796,15 @@
   overflow: hidden;
   position: relative;
   max-width: 1000px;
+  margin-top: var(--dl-space-space-twounits);
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-color: #ffffff;
   border-width: 3px;
-  padding-left: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
   border-radius: 20px;
   margin-bottom: var(--dl-space-space-twounits);
-  padding-right: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
   justify-content: flex-start;
@@ -883,6 +813,7 @@
 .ahass-service-honda-service-protection-image {
   width: 100%;
   height: auto;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
   object-fit: cover;
   border-radius: 20px;
 }
@@ -906,7 +837,7 @@
   text-decoration: none;
 }
 .ahass-service-honda-service-protection-text01 {
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   font-size: 12px;
   font-style: normal;
   margin-top: 0px;
@@ -921,7 +852,7 @@
   margin-bottom: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-halfunit);
-  background-image: linear-gradient(to right, rgb(252, 0, 255) 0%, rgb(0, 219, 222) 100%);
+  background-image: linear-gradient(to right, #c02425 0%, #f0cb35 100%);
 }
 .ahass-service-honda-service-protection-text04 {
   color: rgb(0, 0, 0);
@@ -966,7 +897,124 @@
   color: #000000;
   width: Size-XSmall;
 }
+.ahass-service-honda-service-protection-container2 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  max-width: 1000px;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+}
+.ahass-service-honda-service-protection-text29 {
+  color: rgb(0, 0, 0);
+  font-size: 12px;
+  font-style: normal;
+  margin-top: 0px;
+  text-align: left;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 0px;
+  text-transform: none;
+  text-decoration: none;
+}
+.ahass-service-honda-service-protection-link1 {
+  display: contents;
+}
+.ahass-service-honda-service-protection-icon {
+  fill: #000000;
+  width: 35px;
+  height: 35px;
+  padding: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  border-radius: var(--dl-radius-radius-round);
+  text-decoration: none;
+}
+.ahass-service-honda-service-protection-form {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  max-width: 1000px;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: center;
+}
+.ahass-service-honda-service-protection-text30 {
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: var(--dl-space-space-unit);
+  text-transform: none;
+  text-decoration: none;
+}
+.ahass-service-honda-service-protection-container3 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.ahass-service-honda-service-protection-textinput {
+  width: 100%;
+  padding: var(--dl-space-space-unit);
+  border-width: 0px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #f5f5f5;
+}
+.ahass-service-honda-service-protection-textinput1 {
+  width: 100%;
+  padding: var(--dl-space-space-unit);
+  border-width: 0px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #f5f5f5;
+}
+.ahass-service-honda-service-protection-textarea {
+  width: 100%;
+  height: 86px;
+  padding: var(--dl-space-space-unit);
+  border-width: 0px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #f5f5f5;
+}
+.ahass-service-honda-service-protection-button1 {
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+  padding: var(--dl-space-space-unit);
+  font-size: 12px;
+  align-self: flex-start;
+  font-style: normal;
+  transition: 0.3s;
+  font-family: Poppins;
+  font-weight: 600;
+  line-height: 1.15;
+  border-width: 0px;
+  border-radius: var(--dl-radius-radius-radius8);
+  text-transform: none;
+  text-decoration: none;
+  background-color: #fbea00;
+}
+.ahass-service-honda-service-protection-button1:hover {
+  background-color: #46cc06;
+}
 @media(max-width: 991px) {
+  .ahass-service-honda-service-protection-promo {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
   .ahass-service-honda-service-protection-text {
     color: rgb(0, 0, 0);
     font-size: 20px;
@@ -977,8 +1025,22 @@
     text-transform: none;
     text-decoration: none;
   }
+  .ahass-service-honda-service-protection-text29 {
+    color: rgb(0, 0, 0);
+    font-size: 12px;
+    font-style: normal;
+    font-family: Inter;
+    font-weight: 600;
+    line-height: 1.15;
+    text-transform: none;
+    text-decoration: none;
+  }
 }
 @media(max-width: 767px) {
+  .ahass-service-honda-service-protection-promo {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
   .ahass-service-honda-service-protection-container1 {
     width: 100%;
     max-width: 1000px;
@@ -1000,7 +1062,7 @@
     font-size: 20px;
   }
   .ahass-service-honda-service-protection-text01 {
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     font-size: 12px;
     text-align: left;
     font-family: Poppins;
@@ -1021,5 +1083,8 @@
   .ahass-service-honda-service-protection-button {
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
+  }
+  .ahass-service-honda-service-protection-text29 {
+    font-size: 12px;
   }
 }
