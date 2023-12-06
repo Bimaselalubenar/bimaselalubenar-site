@@ -79,6 +79,7 @@
 .announcement-root-class-name2 {
   flex: 0;
 }
+
 @media(max-width: 479px) {
   .announcement-announcement {
     align-items: flex-start;

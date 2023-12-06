@@ -79,6 +79,7 @@
 .announcement-root-class-name2 {
   flex: 0;
 }
+
 @media(max-width: 479px) {
   .announcement-announcement {
     align-items: flex-start;
@@ -1347,7 +1348,7 @@
 .home-caption2 {
   font-size: 24px;
   font-style: normal;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-weight: 600;
   line-height: 1.15;
   text-transform: none;
@@ -1382,7 +1383,7 @@
 .home-caption3 {
   font-size: 24px;
   font-style: normal;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-weight: 600;
   line-height: 1.15;
   text-transform: none;
@@ -1417,7 +1418,7 @@
 .home-caption4 {
   font-size: 24px;
   font-style: normal;
-  font-family: Poppins;
+  font-family: "Poppins";
   font-weight: 600;
   line-height: 1.15;
   text-transform: none;
