@@ -627,6 +627,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .navbar-navbar {
     align-items: center;
@@ -684,7 +685,7 @@
 }
 
 .blog-post-card2-blog-post-card {
-  width: 350px;
+  width: 288px;
   height: 100%;
   display: flex;
   overflow: hidden;
@@ -702,13 +703,14 @@
 }
 .blog-post-card2-image {
   width: 350px;
-  height: auto;
+  height: 332px;
   object-fit: cover;
   flex-shrink: 0;
   border-radius: 0px;
 }
 .blog-post-card2-container {
   display: flex;
+  padding: var(--dl-space-space-unit);
   align-items: flex-start;
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-twounits);
@@ -721,7 +723,7 @@
   width: 100%;
   display: flex;
   align-items: flex-start;
-  margin-bottom: var(--dl-space-space-halfunit);
+  margin-bottom: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: space-between;
 }
@@ -871,6 +873,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .footer-footer {
     padding-top: var(--dl-space-space-fourunits);
@@ -935,6 +938,13 @@
 .portofolio-container1 {
   width: 100%;
   display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.portofolio-container2 {
+  width: 100%;
+  display: flex;
   max-width: 1000px;
   align-items: flex-start;
   flex-direction: column;
@@ -996,11 +1006,13 @@
   position: absolute;
   object-fit: cover;
 }
-.portofolio-container2 {
-  top: 657px;
-  right: -3px;
+.portofolio-container3 {
+  top: 602px;
+  left: 0px;
+  right: 0px;
   width: 100%;
   height: 262px;
+  margin: auto;
   display: flex;
   z-index: 5;
   position: absolute;
@@ -1014,42 +1026,12 @@
   display: flex;
   padding: var(--dl-space-space-threeunits);
   flex-wrap: wrap;
-  max-width: var(--dl-size-size-maxwidth);
+  max-width: auto;
   align-items: flex-start;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: flex-start;
 }
-.portofolio-text05 {
-  color: rgb(0, 0, 0);
-  width: 100%;
-  font-size: 32px;
-  max-width: 490px;
-  font-style: normal;
-  font-family: "Poppins";
-  font-weight: 700;
-  margin-bottom: var(--dl-space-space-twounits);
-}
-.portofolio-container3 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.portofolio-blog1 {
-  gap: 0;
-  width: 100%;
-  display: flex;
-  padding: var(--dl-space-space-threeunits);
-  flex-wrap: wrap;
-  max-width: var(--dl-size-size-maxwidth);
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.portofolio-text08 {
+.portofolio-text5 {
   color: rgb(0, 0, 0);
   width: 100%;
   font-size: 32px;
@@ -1064,86 +1046,41 @@
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  max-width: 1000px;
   align-items: flex-start;
   flex-direction: row;
   justify-content: flex-start;
 }
-.portofolio-banner1 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-self: center;
-  align-items: center;
-  padding-top: var(--dl-space-space-twounits);
-  padding-left: var(--dl-space-space-fiveunits);
-  padding-right: var(--dl-space-space-fiveunits);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-twounits);
-  justify-content: center;
-  background-image: linear-gradient(180deg, rgb(8, 16, 162) 0.00%,rgb(64, 146, 191) 100.00%);
-}
-.portofolio-container5 {
+.portofolio-blog1 {
+  gap: 0;
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-oneandhalfunits);
-  max-width: 1000px;
+  padding: var(--dl-space-space-threeunits);
+  flex-wrap: wrap;
+  max-width: auto;
   align-items: flex-start;
-  border-radius: 20px;
   flex-direction: column;
-  justify-content: space-between;
-  background-color: rgba(0, 0, 0, 0.21);
+  justify-content: flex-start;
 }
-.portofolio-text09 {
-  color: rgb(255, 255, 255);
+.portofolio-text8 {
+  color: rgb(0, 0, 0);
   width: 100%;
   font-size: 32px;
   max-width: 490px;
   font-style: normal;
-  text-align: left;
   font-family: "Poppins";
   font-weight: 700;
   margin-bottom: var(--dl-space-space-twounits);
 }
-.portofolio-caption1 {
-  color: rgb(255, 255, 255);
-  margin-bottom: var(--dl-space-space-twounits);
-}
-.portofolio-link1 {
-  display: contents;
-}
-.portofolio-ios-btn1 {
-  gap: 5px;
-  fill: white;
-  color: white;
-  cursor: pointer;
+.portofolio-container5 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
   display: flex;
-  transition: 0.7s;
-  align-items: center;
-  padding-top: var(--dl-space-space-oneandhalfunits);
-  padding-left: var(--dl-space-space-twounits);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-twounits);
+  flex-wrap: wrap;
+  max-width: 1000px;
+  align-items: flex-start;
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-oneandhalfunits);
   justify-content: flex-start;
-  text-decoration: none;
-  background-color: #000000;
-}
-.portofolio-ios-btn1:hover {
-  gap: 15px;
-  background-color: #333333;
-}
-.portofolio-caption2 {
-  font-style: normal;
-  font-family: "Poppins";
-  font-weight: 500;
-  margin-right: var(--dl-space-space-halfunit);
-}
-.portofolio-icon2 {
-  width: 24px;
-  height: 24px;
 }
 @media(max-width: 991px) {
   .portofolio-ios-btn {
@@ -1154,15 +1091,6 @@
   }
   .portofolio-image {
     right: -117px;
-  }
-  .portofolio-text12 {
-    font-size: 16px;
-  }
-  .portofolio-ios-btn1 {
-    flex: 1;
-    width: auto;
-    flex-direction: row;
-    justify-content: flex-start;
   }
 }
 @media(max-width: 767px) {
@@ -1176,7 +1104,7 @@
     padding-bottom: var(--dl-space-space-threeunits);
     justify-content: center;
   }
-  .portofolio-container1 {
+  .portofolio-container2 {
     z-index: 1;
   }
   .portofolio-text {
@@ -1189,46 +1117,22 @@
     top: -13px;
     right: -143px;
   }
-  .portofolio-container2 {
+  .portofolio-container3 {
     z-index: 1;
   }
   .portofolio-blog {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .portofolio-text05 {
+  .portofolio-text5 {
     font-size: 32px;
   }
   .portofolio-blog1 {
     padding-left: var(--dl-space-space-twounits);
     padding-right: var(--dl-space-space-twounits);
   }
-  .portofolio-text08 {
+  .portofolio-text8 {
     font-size: 32px;
-  }
-  .portofolio-banner1 {
-    gap: var(--dl-space-space-oneandhalfunits);
-    height: auto;
-    z-index: 50;
-    padding-top: var(--dl-space-space-threeunits);
-    padding-left: var(--dl-space-space-oneandhalfunits);
-    padding-right: var(--dl-space-space-oneandhalfunits);
-    flex-direction: column;
-    padding-bottom: var(--dl-space-space-threeunits);
-    justify-content: center;
-  }
-  .portofolio-container5 {
-    z-index: 1;
-  }
-  .portofolio-text09 {
-    font-size: 32px;
-  }
-  .portofolio-text12 {
-    font-size: 16px;
-    line-height: 24px;
-  }
-  .portofolio-ios-btn1 {
-    width: auto;
   }
 }
 @media(max-width: 479px) {
@@ -1237,7 +1141,7 @@
     align-items: center;
     justify-content: flex-start;
   }
-  .portofolio-container1 {
+  .portofolio-container2 {
     align-items: center;
     justify-content: flex-end;
   }
@@ -1260,7 +1164,7 @@
     margin-bottom: 0px;
     padding-right: 0px;
   }
-  .portofolio-container2 {
+  .portofolio-container3 {
     z-index: 1;
   }
   .portofolio-blog {
@@ -1269,10 +1173,10 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .portofolio-text05 {
+  .portofolio-text5 {
     text-align: center;
   }
-  .portofolio-container3 {
+  .portofolio-container4 {
     align-items: center;
     justify-content: center;
   }
@@ -1282,25 +1186,10 @@
     padding-right: var(--dl-space-space-unit);
     padding-bottom: var(--dl-space-space-twounits);
   }
-  .portofolio-text08 {
+  .portofolio-text8 {
     text-align: center;
   }
-  .portofolio-container4 {
-    justify-content: center;
-  }
-  .portofolio-banner1 {
-    height: auto;
-    align-items: center;
-    justify-content: flex-start;
-  }
   .portofolio-container5 {
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .portofolio-text09 {
-    text-align: left;
-  }
-  .portofolio-ios-btn1 {
-    width: auto;
+    justify-content: center;
   }
 }

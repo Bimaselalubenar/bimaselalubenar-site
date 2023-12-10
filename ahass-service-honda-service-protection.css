@@ -41,6 +41,9 @@
   font-weight: 500;
   line-height: 21px;
 }
+.announcement-navlink {
+  display: contents;
+}
 .announcement-button {
   gap: var(--dl-space-space-halfunit);
   display: flex;
@@ -49,6 +52,7 @@
   border-color: #8AEDE8;
   flex-direction: row;
   padding-bottom: 4px;
+  text-decoration: none;
   border-bottom-width: 1px;
 }
 .announcement-button:hover {
@@ -79,6 +83,7 @@
 .announcement-root-class-name2 {
   flex: 0;
 }
+
 
 @media(max-width: 479px) {
   .announcement-announcement {
@@ -730,6 +735,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .navbar-navbar {
     align-items: center;
@@ -840,6 +846,7 @@
   line-height: 21px;
   text-decoration: none;
 }
+
 
 
 
