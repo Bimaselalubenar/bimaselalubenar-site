@@ -736,6 +736,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .navbar-navbar {
     align-items: center;
@@ -1111,6 +1112,9 @@
 
 
 
+.footer-root-class-name6 {
+  margin-top: var(--dl-space-space-twounits);
+}
 @media(max-width: 991px) {
   .footer-footer {
     padding-top: var(--dl-space-space-fourunits);
@@ -1146,6 +1150,9 @@
   .footer-content {
     align-self: flex-start;
     align-items: center;
+  }
+  .footer-root-class-name6 {
+    margin-top: var(--dl-space-space-twounits);
   }
 }
 
