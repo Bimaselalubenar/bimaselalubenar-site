@@ -697,6 +697,41 @@
       src="//code.tidio.co/mmkfn3on64zyr217bmkwy8c30a4zufkr.js"
       async=""
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function() {
+          $("form").submit(function() {
+              // Ambil data dari form
+              var nama = $("#nama").val();
+              var pesan = $("#pesan").val();
+
+              // Kirim data ke API WhatsApp
+              $.ajax({
+                  url: "/api/whatsapp/send",
+                  type: "post",
+                  data: {
+                      nama: nama,
+                      nomor: $("#nomor").val(),
+                      pesan: pesan
+                  },
+                  dataType: "json",
+                  success: function(data) {
+                      // Cek apakah pengiriman pesan berhasil
+                      if (data.success) {
+                          // Tampilkan pesan sukses
+                          alert("Pesan berhasil dikirim!");
+                      } else {
+                          // Tampilkan pesan gagal
+                          alert("Pesan gagal dikirim!");
+                      }
+                  }
+              });
+
+              // Batalkan pengiriman form
+              return false;
+          });
+      });
+    </script>
     <script
       defer=""
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"

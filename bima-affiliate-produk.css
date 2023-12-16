@@ -687,75 +687,88 @@
 
 .produk-afiliate-container {
   width: 100%;
-  height: 100px;
+  height: auto;
   display: flex;
   position: relative;
   max-width: 479px;
   margin-top: 20px;
-  transition: 0.3s;
   align-items: center;
   margin-left: 0px;
   margin-right: 0px;
-  padding-left: var(--dl-space-space-unit);
+  padding-left: 0px;
   margin-bottom: 0px;
-  padding-right: var(--dl-space-space-unit);
-  justify-content: flex-start;
-}
-.produk-afiliate-container:hover {
-  transform: scale(104%);
-}
-.produk-afiliate-image {
-  width: 99px;
-  height: 99px;
-  object-fit: cover;
-  border-radius: var(--dl-radius-radius-radius8);
-  border-top-left-radius: var(--dl-radius-radius-radius8);
-  border-top-right-radius: 0;
-  border-bottom-left-radius: var(--dl-radius-radius-radius8);
-  border-bottom-right-radius: 0;
+  padding-right: 0px;
+  justify-content: center;
 }
 .produk-afiliate-container1 {
   gap: var(--dl-space-space-halfunit);
-  flex: 0 0 auto;
-  width: 347px;
-  height: 100%;
+  flex: 1;
+  width: 351px;
+  height: auto;
   display: flex;
   position: relative;
-  align-items: flex-start;
+  max-width: 479%;
+  align-self: center;
+  transition: 0.3s;
+  align-items: center;
   padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-unit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: flex-start;
+}
+.produk-afiliate-container1:hover {
+  transform: scale(102%);
+}
+.produk-afiliate-container2 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  transition: 0.9s;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: row;
   justify-content: flex-start;
   background-color: #ffffff;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 0px;
+}
+.produk-afiliate-container2:hover {
+  box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.23);
+}
+.produk-afiliate-image {
+  width: 99px;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius8);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 0px;
+}
+.produk-afiliate-container3 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .produk-afiliate-text {
-  top: -14px;
-  right: 8px;
-  position: absolute;
-  font-size: 8px;
-  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.12);
-  font-style: normal;
-  text-align: right;
-  font-weight: 600;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-image: linear-gradient(90deg, rgb(255, 255, 255) 0.00%,rgb(242, 249, 255) 100.00%);
-}
-.produk-afiliate-text1 {
   font-size: 14px;
   font-style: normal;
   font-weight: 600;
   text-transform: capitalize;
 }
-.produk-afiliate-text2 {
+.produk-afiliate-text1 {
   font-size: 12px;
 }
-.produk-afiliate-container2 {
-  gap: var(--dl-space-space-fiveunits);
+.produk-afiliate-container4 {
+  gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
   flex-direction: row;
@@ -774,7 +787,7 @@
   text-decoration: none;
   background-image: linear-gradient(135deg, rgb(36, 192, 59) 0.00%,rgb(253, 207, 0) 100.00%);
 }
-.produk-afiliate-text3 {
+.produk-afiliate-text2 {
   color: #ffffff;
   font-size: 10px;
   font-style: normal;
@@ -786,7 +799,25 @@
   padding-bottom: 5px;
   background-image: linear-gradient(135deg, rgb(192, 36, 37) 0.00%,rgb(240, 203, 53) 100.00%);
 }
-
+.produk-afiliate-text3 {
+  top: 77px;
+  right: 27px;
+  position: absolute;
+  font-size: 8px;
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.12);
+  font-style: normal;
+  text-align: right;
+  font-weight: 600;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-image: linear-gradient(90deg, rgb(255, 255, 255) 0.00%,rgb(242, 249, 255) 100.00%);
+}
+.produk-afiliate-root-class-name {
+  margin-top: 20px;
+}
 
 
 
@@ -794,7 +825,7 @@
 
 
 @media(max-width: 991px) {
-  .produk-afiliate-text3 {
+  .produk-afiliate-text2 {
     background-image: linear-gradient(135deg, rgb(192, 36, 37) 0.00%,rgb(240, 203, 53) 100.00%);
   }
 }
@@ -802,34 +833,47 @@
   .produk-afiliate-container {
     height: auto;
     margin: 0px;
+    padding: 0px;
     align-items: center;
-    padding-top: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
-    padding-bottom: 0px;
-    justify-content: flex-start;
-    background-color: #ffffff;
+    padding-top: var(--dl-space-space-halfunit);
+    padding-left: var(--dl-space-space-halfunit);
+    padding-right: var(--dl-space-space-halfunit);
+    padding-bottom: var(--dl-space-space-halfunit);
+    justify-content: center;
+  }
+  .produk-afiliate-container1 {
+    flex: 1;
+    width: 100%;
+    height: auto;
+    max-width: 479px;
+    align-items: center;
+    padding-top: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    flex-direction: row;
+    padding-bottom: var(--dl-space-space-unit);
+    justify-content: center;
+    background-color: transparent;
+  }
+  .produk-afiliate-container2 {
+    gap: var(--dl-space-space-unit);
   }
   .produk-afiliate-image {
     width: 99px;
-    height: 99px;
+    height: 100%;
   }
-  .produk-afiliate-container1 {
-    width: 376px;
-    height: auto;
-    padding-top: var(--dl-space-space-unit);
-    padding-right: 0px;
-    padding-bottom: var(--dl-space-space-unit);
+  .produk-afiliate-container3 {
+    gap: var(--dl-space-space-halfunit);
+    height: 100%;
     justify-content: center;
   }
-  .produk-afiliate-text {
-    top: -14px;
-    right: 11px;
-    font-size: 8px;
-  }
-  .produk-afiliate-container2 {
-    gap: var(--dl-space-space-twounits);
+  .produk-afiliate-container4 {
+    gap: var(--dl-space-space-unit);
     flex-direction: row;
+  }
+  .produk-afiliate-text3 {
+    top: 76px;
+    right: 28px;
+    font-size: 8px;
   }
 }
 
@@ -948,7 +992,7 @@
 }
 .bima-affiliate-produk-slider {
   width: 100%;
-  height: 235px;
+  height: 203px;
   display: inline-block;
   max-width: 479px;
   margin-top: var(--dl-space-space-unit);
@@ -959,16 +1003,36 @@
   width: 100%;
   height: auto;
   display: flex;
-  background-size: 100%;
+  position: relative;
+  align-items: center;
+  background-size: auto;
+  justify-content: center;
   background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Software/Frame%2084.png?updatedAt=1702650097972');
+  background-repeat: no-repeat;
   background-position: center;
+}
+.bima-affiliate-produk-navlink {
+  left: 17px;
+  bottom: 18px;
+  position: absolute;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 600;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+  background-color: rgb(234, 255, 0);
 }
 .bima-affiliate-produk-slider-slide1 {
   width: 100%;
   height: auto;
   display: flex;
-  background-size: 100%;
+  background-size: auto;
   background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Software/Frame%2085.png?updatedAt=1702650097653');
+  background-repeat: no-repeat;
   background-position: center;
 }
 .bima-affiliate-produk-slider-pagination {
@@ -992,6 +1056,16 @@
   justify-content: flex-start;
 }
 @media(max-width: 479px) {
+  .bima-affiliate-produk-slider-slide {
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  .bima-affiliate-produk-navlink {
+    left: 17px;
+    bottom: 20px;
+    position: absolute;
+  }
   .bima-affiliate-produk-container1 {
     gap: var(--dl-space-space-unit);
   }
