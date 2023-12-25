@@ -12,10 +12,11 @@
 .untuk-nonik-container01 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
-  width: 479px;
+  width: 100%;
   height: auto;
   display: flex;
   position: relative;
+  max-width: 479px;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
   flex-direction: column;
@@ -79,7 +80,6 @@
   padding: var(--dl-space-space-unit);
   font-size: 30px;
   align-self: center;
-  margin-top: 0px;
   text-align: left;
   transition: 0.3s;
   font-family: "Over the Rainbow";
@@ -1111,10 +1111,7 @@
     font-weight: 400;
   }
   .untuk-nonik-link {
-    top: 87px;
-    left: 8px;
     color: rgb(255, 255, 255);
-    position: absolute;
     font-size: 18px;
     font-family: Over the Rainbow;
     background-color: rgb(189, 28, 196);
