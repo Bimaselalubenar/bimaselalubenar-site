@@ -554,23 +554,6 @@
   border-radius: 15px;
 }
 .untuk-nonik-text27 {
-  top: 716px;
-  color: rgb(255, 255, 255);
-  right: 28px;
-  width: auto;
-  height: auto;
-  position: absolute;
-  font-size: 18px;
-  text-align: center;
-  font-family: "Over the Rainbow";
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgb(0, 0, 0);
-}
-.untuk-nonik-text28 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
@@ -597,7 +580,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.untuk-nonik-text29 {
+.untuk-nonik-text28 {
   color: rgb(255, 255, 255);
   width: auto;
   height: auto;
@@ -611,7 +594,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: rgb(189, 28, 196);
 }
-.untuk-nonik-text30 {
+.untuk-nonik-text29 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
@@ -627,7 +610,7 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.untuk-nonik-text31 {
+.untuk-nonik-text30 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
@@ -643,9 +626,25 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.untuk-nonik-text33 {
+.untuk-nonik-text32 {
   font-family: "Courier New";
   text-decoration: underline;
+}
+.untuk-nonik-text33 {
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: auto;
+  padding: 0px;
+  font-size: 16px;
+  font-style: normal;
+  text-align: right;
+  font-family: "Courier New";
+  font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .untuk-nonik-text34 {
   color: rgb(0, 0, 0);
@@ -654,7 +653,7 @@
   padding: 0px;
   font-size: 16px;
   font-style: normal;
-  text-align: right;
+  text-align: left;
   font-family: "Courier New";
   font-weight: 400;
   padding-top: var(--dl-space-space-halfunit);
@@ -670,7 +669,7 @@
   padding: 0px;
   font-size: 16px;
   font-style: normal;
-  text-align: left;
+  text-align: right;
   font-family: "Courier New";
   font-weight: 400;
   padding-top: var(--dl-space-space-halfunit);
@@ -686,22 +685,6 @@
   padding: 0px;
   font-size: 16px;
   font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-text37 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
   text-align: left;
   font-family: "Courier New";
   font-weight: 400;
@@ -711,7 +694,7 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.untuk-nonik-text38 {
+.untuk-nonik-text37 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
@@ -738,7 +721,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.untuk-nonik-text39 {
+.untuk-nonik-text38 {
   color: rgb(255, 255, 255);
   width: auto;
   height: auto;
@@ -752,7 +735,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: rgb(189, 28, 196);
 }
-.untuk-nonik-text40 {
+.untuk-nonik-text39 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
@@ -792,23 +775,23 @@
   background-repeat: repeat,no-repeat;
   background-position: top left;
 }
-.untuk-nonik-text41 {
+.untuk-nonik-text40 {
   color: #ffffff;
   font-size: 46px;
   font-family: "Birthstone";
 }
-.untuk-nonik-text43 {
+.untuk-nonik-text42 {
   font-weight: 700;
+}
+.untuk-nonik-text43 {
+  font-style: normal;
+  font-weight: 400;
 }
 .untuk-nonik-text44 {
   font-style: normal;
   font-weight: 400;
 }
 .untuk-nonik-text45 {
-  font-style: normal;
-  font-weight: 400;
-}
-.untuk-nonik-text46 {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-family: "Inter";
@@ -829,7 +812,7 @@
   background-repeat: auto;
   background-position: top left;
 }
-.untuk-nonik-text47 {
+.untuk-nonik-text46 {
   color: #171717;
   font-size: 30px;
   font-style: normal;
@@ -842,13 +825,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-text48 {
+.untuk-nonik-text47 {
   color: #171717;
   font-size: 12px;
   font-family: "Inter";
   margin-bottom: var(--dl-space-space-twounits);
 }
-.untuk-nonik-text49 {
+.untuk-nonik-text48 {
   color: #171717;
   font-size: 20px;
   font-family: "Spectral";
@@ -878,7 +861,7 @@
   background-repeat: repeat;
   background-position: top left;
 }
-.untuk-nonik-text52 {
+.untuk-nonik-text51 {
   color: #171717;
   font-size: 30px;
   font-style: normal;
@@ -891,13 +874,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-text53 {
+.untuk-nonik-text52 {
   color: #171717;
   font-size: 12px;
   font-family: "Inter";
   margin-bottom: var(--dl-space-space-twounits);
 }
-.untuk-nonik-text54 {
+.untuk-nonik-text53 {
   color: #171717;
   font-size: 20px;
   font-family: "Spectral";
@@ -937,7 +920,7 @@
   background-repeat: repeat;
   background-position: top left;
 }
-.untuk-nonik-text63 {
+.untuk-nonik-text62 {
   color: #171717;
   font-size: 30px;
   font-style: normal;
@@ -950,13 +933,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-text64 {
+.untuk-nonik-text63 {
   color: rgb(23, 23, 23);
   font-size: 12px;
   font-family: "Inter";
   margin-bottom: var(--dl-space-space-twounits);
 }
-.untuk-nonik-text65 {
+.untuk-nonik-text64 {
   color: #171717;
   font-size: 20px;
   font-family: "Spectral";
@@ -997,7 +980,7 @@
   background-repeat: repeat;
   background-position: top left;
 }
-.untuk-nonik-text68 {
+.untuk-nonik-text67 {
   color: #171717;
   font-size: 30px;
   font-style: normal;
@@ -1010,13 +993,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-text69 {
+.untuk-nonik-text68 {
   color: rgb(23, 23, 23);
   font-size: 12px;
   font-family: "Inter";
   margin-bottom: var(--dl-space-space-twounits);
 }
-.untuk-nonik-text70 {
+.untuk-nonik-text69 {
   color: #171717;
   font-size: 20px;
   font-family: "Spectral";
@@ -1024,7 +1007,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-unit);
 }
-.untuk-nonik-text76 {
+.untuk-nonik-text75 {
   color: rgb(23, 23, 23);
   font-size: 20px;
   font-family: "Spectral";
@@ -1039,7 +1022,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.untuk-nonik-text79 {
+.untuk-nonik-text78 {
   color: rgb(23, 23, 23);
   font-size: 30px;
   font-family: "Spectral";
@@ -1047,7 +1030,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.untuk-nonik-text82 {
+.untuk-nonik-text81 {
   color: rgb(23, 23, 23);
   font-size: 16px;
   font-family: "Spectral";
@@ -1071,7 +1054,7 @@
   background-repeat: repeat;
   background-position: top left;
 }
-.untuk-nonik-text85 {
+.untuk-nonik-text84 {
   color: rgb(23, 23, 23);
   font-size: 30px;
   font-style: normal;
@@ -1094,8 +1077,18 @@
   flex-direction: column;
 }
 @media(max-width: 479px) {
+  .untuk-nonik-container {
+    background-size: auto;
+    background-position: left;
+  }
+  .untuk-nonik-container01 {
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
   .untuk-nonik-container02 {
     position: relative;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .untuk-nonik-text {
     color: rgb(255, 255, 255);
@@ -1104,7 +1097,7 @@
     background-color: rgb(189, 28, 196);
   }
   .untuk-nonik-text01 {
-    color: rgb(0, 0, 0);
+    color: #ffffff;
     font-size: 16px;
     font-style: normal;
     font-family: Courier New;
@@ -1122,7 +1115,7 @@
   .untuk-nonik-text26 {
     color: rgb(0, 0, 0);
   }
-  .untuk-nonik-text28 {
+  .untuk-nonik-text27 {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-style: normal;
@@ -1132,94 +1125,103 @@
   .untuk-nonik-container14 {
     position: relative;
   }
+  .untuk-nonik-text29 {
+    color: rgb(0, 0, 0);
+  }
   .untuk-nonik-text30 {
     color: rgb(0, 0, 0);
   }
-  .untuk-nonik-text31 {
+  .untuk-nonik-text33 {
     color: rgb(0, 0, 0);
+    font-size: 16px;
+    font-style: normal;
+    font-family: Courier New;
+    font-weight: 400;
   }
   .untuk-nonik-text34 {
     color: rgb(0, 0, 0);
-    font-size: 16px;
-    font-style: normal;
-    font-family: Courier New;
-    font-weight: 400;
   }
   .untuk-nonik-text35 {
     color: rgb(0, 0, 0);
-  }
-  .untuk-nonik-text36 {
-    color: rgb(0, 0, 0);
     font-size: 16px;
     font-style: normal;
     font-family: Courier New;
     font-weight: 400;
   }
-  .untuk-nonik-text37 {
+  .untuk-nonik-text36 {
     color: rgb(0, 0, 0);
   }
-  .untuk-nonik-text38 {
+  .untuk-nonik-text37 {
     color: rgb(0, 0, 0);
   }
   .untuk-nonik-container15 {
     position: relative;
   }
-  .untuk-nonik-text40 {
+  .untuk-nonik-text38 {
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    font-family: Over the Rainbow;
+    background-color: rgb(189, 28, 196);
+  }
+  .untuk-nonik-text39 {
     color: rgb(0, 0, 0);
+    padding: 0px;
+    font-size: 5px;
+    margin-bottom: var(--dl-space-space-twounits);
   }
   .untuk-nonik-container16 {
     display: none;
   }
-  .untuk-nonik-text41 {
+  .untuk-nonik-text40 {
     font-size: 30px;
     font-family: Oooh Baby;
     margin-bottom: var(--dl-space-space-halfunit);
   }
-  .untuk-nonik-text46 {
+  .untuk-nonik-text45 {
     color: rgb(255, 255, 255);
   }
-  .untuk-nonik-text48 {
+  .untuk-nonik-text47 {
     color: #000000;
     font-size: 16px;
     font-family: Inter;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .untuk-nonik-text49 {
+  .untuk-nonik-text48 {
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: Spectral;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text51 {
+  .untuk-nonik-text50 {
     font-weight: 700;
   }
   .untuk-nonik-image2 {
     align-self: center;
   }
-  .untuk-nonik-text53 {
+  .untuk-nonik-text52 {
     color: #000000;
     font-size: 16px;
     font-family: Inter;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .untuk-nonik-text54 {
+  .untuk-nonik-text53 {
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: Spectral;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text55 {
+  .untuk-nonik-text54 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text56 {
+  .untuk-nonik-text55 {
     color: #ffffff;
     font-size: 30px;
     font-family: Oooh Baby;
   }
-  .untuk-nonik-text57 {
+  .untuk-nonik-text56 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text58 {
+  .untuk-nonik-text57 {
     margin-bottom: var(--dl-space-space-unit);
   }
   .untuk-nonik-image3 {
@@ -1230,13 +1232,13 @@
     height: 118px;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text64 {
+  .untuk-nonik-text63 {
     color: #000000;
     font-size: 16px;
     font-family: Inter;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .untuk-nonik-text65 {
+  .untuk-nonik-text64 {
     color: #000000;
     font-size: 25px;
     font-family: Spectral;
@@ -1245,22 +1247,22 @@
   .untuk-nonik-image6 {
     align-self: center;
   }
-  .untuk-nonik-text69 {
+  .untuk-nonik-text68 {
     color: #000000;
     font-size: 16px;
     font-family: Inter;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .untuk-nonik-text70 {
+  .untuk-nonik-text69 {
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: Spectral;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text74 {
+  .untuk-nonik-text73 {
     font-weight: 700;
   }
-  .untuk-nonik-text76 {
+  .untuk-nonik-text75 {
     color: rgb(255, 255, 255);
     font-size: 30px;
     align-self: center;
@@ -1272,7 +1274,7 @@
     align-items: center;
     justify-content: center;
   }
-  .untuk-nonik-text79 {
+  .untuk-nonik-text78 {
     color: #000000;
     font-size: 25px;
     font-style: normal;
@@ -1280,7 +1282,7 @@
     font-weight: 600;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text82 {
+  .untuk-nonik-text81 {
     color: #000000;
     font-size: 16px;
     font-family: Spectral;
