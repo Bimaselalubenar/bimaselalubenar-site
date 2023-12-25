@@ -914,11 +914,12 @@
 
 
 .footer-root-class-name5 {
-  margin-top: var(--dl-space-space-unit);
+  margin-top: 0px;
 }
 .footer-root-class-name6 {
   margin-top: var(--dl-space-space-twounits);
 }
+
 @media(max-width: 991px) {
   .footer-footer {
     padding-top: var(--dl-space-space-fourunits);
