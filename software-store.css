@@ -1045,7 +1045,7 @@
 
 @media(max-width: 479px) {
   .produk-swr-container {
-    width: 128px;
+    width: 161px;
     background-color: #f7f7f7;
   }
   .produk-swr-image {
@@ -1251,7 +1251,7 @@
   height: 571px;
   display: inline-block;
   max-width: auto;
-  margin-top: var(--dl-space-space-twounits);
+  margin-top: 0px;
   border-radius: var(--dl-radius-radius-radius8);
 }
 .software-store-slider-slide {
@@ -1300,11 +1300,14 @@
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-threeunits);
   flex-wrap: wrap;
   max-width: 1200px;
   align-items: flex-start;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
   flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
 .software-store-container1 {
@@ -1349,6 +1352,7 @@
   .software-store-slider {
     width: 100%;
     height: 461px;
+    margin-top: 0px;
   }
   .software-store-slider-pagination {
     height: 4px;
@@ -1360,6 +1364,7 @@
     width: 35px;
   }
   .software-store-blog {
+    padding: var(--dl-space-space-unit);
     align-items: flex-start;
     justify-content: center;
   }
