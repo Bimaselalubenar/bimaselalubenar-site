@@ -157,6 +157,7 @@
   color: #000000;
   cursor: pointer;
   transition: 0.5s;
+  text-decoration: none;
 }
 .links-link02:hover {
   fill: #ffffff;
@@ -627,13 +628,51 @@
   text-transform: none;
   text-decoration: none;
 }
+.navbar-dropdown-toggle4 {
+  fill: #595959;
+  color: #595959;
+  width: 100%;
+  display: inline-flex;
+  transition: 0.5s;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-decoration: none;
+}
+.navbar-dropdown-toggle4:hover {
+  fill: #fff;
+  color: #ffffff;
+  padding-left: var(--dl-space-space-oneandhalfunits);
+  border-radius: 0px;
+  padding-right: var(--dl-space-space-unit);
+  background-color: rgba(227, 227, 227, 0.43);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.navbar-text4 {
+  color: rgb(0, 0, 0);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 500;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
 .navbar-dropdown3 {
   cursor: pointer;
   display: inline-block;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
-.navbar-dropdown-toggle4 {
+.navbar-dropdown-toggle5 {
   fill: #595959;
   color: #595959;
   width: 100%;
@@ -651,7 +690,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.navbar-dropdown-toggle4:hover {
+.navbar-dropdown-toggle5:hover {
   fill: #fff;
   color: #ffffff;
   padding-left: var(--dl-space-space-oneandhalfunits);
@@ -663,7 +702,7 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
-.navbar-text4 {
+.navbar-text5 {
   color: rgb(0, 0, 0);
   width: 100%;
   cursor: pointer;
@@ -852,7 +891,9 @@
 
 
 
-
+.footer-root-class-name5 {
+  margin-top: var(--dl-space-space-unit);
+}
 .footer-root-class-name6 {
   margin-top: var(--dl-space-space-twounits);
 }

@@ -49,6 +49,7 @@
   color: #000000;
   cursor: pointer;
   transition: 0.5s;
+  text-decoration: none;
 }
 .links-link02:hover {
   fill: #ffffff;
@@ -304,7 +305,9 @@
 
 
 
-
+.footer-root-class-name5 {
+  margin-top: var(--dl-space-space-unit);
+}
 .footer-root-class-name6 {
   margin-top: var(--dl-space-space-twounits);
 }
