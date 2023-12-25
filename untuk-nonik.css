@@ -18,9 +18,9 @@
   position: relative;
   max-width: 479px;
   align-items: center;
-  padding-top: var(--dl-space-space-twounits);
+  padding-top: 0px;
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-twounits);
+  padding-bottom: 0px;
   justify-content: flex-start;
 }
 .untuk-nonik-container02 {
@@ -117,10 +117,11 @@
   background-color: #000000;
 }
 .untuk-nonik-container03 {
-  gap: var(--dl-space-space-halfunit);
+  gap: var(--dl-space-space-twounits);
   width: 100%;
   display: flex;
-  align-items: flex-start;
+  position: relative;
+  align-items: flex-end;
   padding-left: var(--dl-space-space-halfunit);
   padding-right: var(--dl-space-space-halfunit);
   flex-direction: column;
@@ -131,7 +132,7 @@
   width: auto;
   height: auto;
   font-size: 18px;
-  text-align: left;
+  text-align: right;
   font-family: "Over the Rainbow";
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-halfunit);
@@ -147,6 +148,22 @@
   padding: 0px;
   font-size: 16px;
   font-style: normal;
+  text-align: right;
+  font-family: "Courier New";
+  font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.untuk-nonik-text05 {
+  color: rgb(0, 0, 0);
+  width: auto;
+  height: auto;
+  padding: 0px;
+  font-size: 16px;
+  font-style: normal;
   text-align: left;
   font-family: "Courier New";
   font-weight: 400;
@@ -156,70 +173,9 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.untuk-nonik-container04 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  display: flex;
-  align-items: flex-end;
-  padding-left: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.untuk-nonik-text05 {
-  color: rgb(255, 255, 255);
-  width: auto;
-  height: auto;
-  font-size: 18px;
-  text-align: right;
-  font-family: "Over the Rainbow";
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgb(189, 28, 196);
-}
-.untuk-nonik-text06 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
 .untuk-nonik-text07 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
   font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-image {
-  width: 100%;
-  height: auto;
-  box-shadow: 5px 5px 5px 0px #d4d4d4;
-  border-color: #f1f1f1;
-  border-style: dotted;
-  border-width: 5px;
-  border-radius: 15px;
+  text-decoration: underline;
 }
 .untuk-nonik-text08 {
   color: rgb(0, 0, 0);
@@ -244,7 +200,7 @@
   padding: 0px;
   font-size: 16px;
   font-style: normal;
-  text-align: right;
+  text-align: left;
   font-family: "Courier New";
   font-weight: 400;
   padding-top: var(--dl-space-space-halfunit);
@@ -253,489 +209,172 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.untuk-nonik-container05 {
+.untuk-nonik-slider {
   width: 100%;
-  display: flex;
-  align-items: flex-end;
-  flex-direction: column;
-  justify-content: flex-start;
+  height: 633px;
+  display: inline-block;
+  border-radius: 15px;
 }
-.untuk-nonik-container06 {
-  width: 100%;
+.untuk-nonik-slider-slide {
+  height: auto;
   display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
+}
+.untuk-nonik-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.untuk-nonik-slider-slide1 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.untuk-nonik-image01 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.untuk-nonik-slider-slide2 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.untuk-nonik-image02 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.untuk-nonik-slider-slide3 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.untuk-nonik-image03 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.untuk-nonik-slider-slide4 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.untuk-nonik-image04 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.untuk-nonik-slider-slide5 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.untuk-nonik-image05 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.untuk-nonik-slider-slide6 {
+  height: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.untuk-nonik-image06 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.untuk-nonik-slider-pagination {
+  display: none;
+}
+.untuk-nonik-slider-button-prev {
+  display: none;
+}
+.untuk-nonik-slider-button-next {
+  display: none;
 }
 .untuk-nonik-text10 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
-  padding: 5px;
+  padding: 0px;
   font-size: 16px;
   font-style: normal;
   text-align: right;
   font-family: "Courier New";
   font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
   border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .untuk-nonik-text11 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
-  padding: 5px;
+  padding: 0px;
   font-size: 16px;
   font-style: normal;
   text-align: left;
   font-family: "Courier New";
   font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
   border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-container07 {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .untuk-nonik-text12 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
-  padding: 5px;
+  padding: 0px;
   font-size: 16px;
   font-style: normal;
-  text-align: right;
+  text-align: left;
   font-family: "Courier New";
   font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
   border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.untuk-nonik-container04 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: flex-end;
+  padding-left: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .untuk-nonik-text13 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   width: auto;
   height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
+  font-size: 18px;
+  text-align: right;
+  font-family: "Over the Rainbow";
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
   border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-container08 {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgb(189, 28, 196);
 }
 .untuk-nonik-text14 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-text15 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-container09 {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.untuk-nonik-text16 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-text17 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-container10 {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.untuk-nonik-text18 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-text19 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-container11 {
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.untuk-nonik-text20 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-text21 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 5px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.untuk-nonik-container12 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  padding-left: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.untuk-nonik-text22 {
-  color: rgb(255, 255, 255);
-  width: auto;
-  height: auto;
-  font-size: 18px;
-  text-align: right;
-  font-family: "Over the Rainbow";
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgb(189, 28, 196);
-}
-.untuk-nonik-text23 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-text24 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-container13 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-  padding-left: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.untuk-nonik-text25 {
-  color: rgb(255, 255, 255);
-  width: auto;
-  height: auto;
-  font-size: 18px;
-  text-align: right;
-  font-family: "Over the Rainbow";
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgb(189, 28, 196);
-}
-.untuk-nonik-text26 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-image1 {
-  width: 100%;
-  filter: blur(3px);
-  height: auto;
-  box-shadow: 5px 5px 5px 0px #d4d4d4;
-  border-color: #f1f1f1;
-  border-style: dotted;
-  border-width: 5px;
-  border-radius: 15px;
-}
-.untuk-nonik-text27 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-container14 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-  padding-left: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.untuk-nonik-text28 {
-  color: rgb(255, 255, 255);
-  width: auto;
-  height: auto;
-  font-size: 18px;
-  text-align: right;
-  font-family: "Over the Rainbow";
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgb(189, 28, 196);
-}
-.untuk-nonik-text29 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-text30 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-text32 {
-  font-family: "Courier New";
-  text-decoration: underline;
-}
-.untuk-nonik-text33 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-text34 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-text35 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: right;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-text36 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-text37 {
-  color: rgb(0, 0, 0);
-  width: auto;
-  height: auto;
-  padding: 0px;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Courier New";
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-}
-.untuk-nonik-container15 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  display: flex;
-  position: relative;
-  align-items: flex-end;
-  padding-left: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.untuk-nonik-text38 {
-  color: rgb(255, 255, 255);
-  width: auto;
-  height: auto;
-  font-size: 18px;
-  text-align: right;
-  font-family: "Over the Rainbow";
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgb(189, 28, 196);
-}
-.untuk-nonik-text39 {
   color: rgb(0, 0, 0);
   width: auto;
   height: auto;
@@ -752,14 +391,14 @@
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.untuk-nonik-container16 {
+.untuk-nonik-container05 {
   width: 100%;
   display: none;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
 }
-.untuk-nonik-container17 {
+.untuk-nonik-container06 {
   flex: 0 0 auto;
   width: 100%;
   height: 800px;
@@ -775,28 +414,28 @@
   background-repeat: repeat,no-repeat;
   background-position: top left;
 }
-.untuk-nonik-text40 {
+.untuk-nonik-text15 {
   color: #ffffff;
   font-size: 46px;
   font-family: "Birthstone";
 }
-.untuk-nonik-text42 {
+.untuk-nonik-text17 {
   font-weight: 700;
 }
-.untuk-nonik-text43 {
+.untuk-nonik-text18 {
   font-style: normal;
   font-weight: 400;
 }
-.untuk-nonik-text44 {
+.untuk-nonik-text19 {
   font-style: normal;
   font-weight: 400;
 }
-.untuk-nonik-text45 {
+.untuk-nonik-text20 {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-family: "Inter";
 }
-.untuk-nonik-container18 {
+.untuk-nonik-container07 {
   flex: 0 0 auto;
   width: 100%;
   height: 800px;
@@ -812,7 +451,7 @@
   background-repeat: auto;
   background-position: top left;
 }
-.untuk-nonik-text46 {
+.untuk-nonik-text21 {
   color: #171717;
   font-size: 30px;
   font-style: normal;
@@ -825,13 +464,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-text47 {
+.untuk-nonik-text22 {
   color: #171717;
   font-size: 12px;
   font-family: "Inter";
   margin-bottom: var(--dl-space-space-twounits);
 }
-.untuk-nonik-text48 {
+.untuk-nonik-text23 {
   color: #171717;
   font-size: 20px;
   font-family: "Spectral";
@@ -839,13 +478,13 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-unit);
 }
-.untuk-nonik-image2 {
+.untuk-nonik-image07 {
   width: 132px;
   height: 172px;
   align-self: center;
   object-fit: cover;
 }
-.untuk-nonik-container19 {
+.untuk-nonik-container08 {
   flex: 0 0 auto;
   width: 100%;
   height: 800px;
@@ -861,7 +500,7 @@
   background-repeat: repeat;
   background-position: top left;
 }
-.untuk-nonik-text51 {
+.untuk-nonik-text26 {
   color: #171717;
   font-size: 30px;
   font-style: normal;
@@ -874,13 +513,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-text52 {
+.untuk-nonik-text27 {
   color: #171717;
   font-size: 12px;
   font-family: "Inter";
   margin-bottom: var(--dl-space-space-twounits);
 }
-.untuk-nonik-text53 {
+.untuk-nonik-text28 {
   color: #171717;
   font-size: 20px;
   font-family: "Spectral";
@@ -888,7 +527,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-unit);
 }
-.untuk-nonik-image3 {
+.untuk-nonik-image08 {
   width: auto;
   height: 89px;
   align-self: flex-start;
@@ -896,7 +535,7 @@
   object-fit: cover;
   border-radius: 15px;
 }
-.untuk-nonik-image4 {
+.untuk-nonik-image09 {
   width: 208px;
   height: 112px;
   align-self: flex-end;
@@ -904,7 +543,7 @@
   object-fit: cover;
   border-radius: 15px;
 }
-.untuk-nonik-container20 {
+.untuk-nonik-container09 {
   flex: 0 0 auto;
   width: 100%;
   height: 800px;
@@ -920,7 +559,7 @@
   background-repeat: repeat;
   background-position: top left;
 }
-.untuk-nonik-text62 {
+.untuk-nonik-text37 {
   color: #171717;
   font-size: 30px;
   font-style: normal;
@@ -933,13 +572,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-text63 {
+.untuk-nonik-text38 {
   color: rgb(23, 23, 23);
   font-size: 12px;
   font-family: "Inter";
   margin-bottom: var(--dl-space-space-twounits);
 }
-.untuk-nonik-text64 {
+.untuk-nonik-text39 {
   color: #171717;
   font-size: 20px;
   font-family: "Spectral";
@@ -947,7 +586,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-unit);
 }
-.untuk-nonik-image5 {
+.untuk-nonik-image10 {
   width: 100%;
   height: 144px;
   align-self: flex-start;
@@ -956,7 +595,7 @@
   border-radius: 15px;
   margin-bottom: var(--dl-space-space-unit);
 }
-.untuk-nonik-image6 {
+.untuk-nonik-image11 {
   width: 252px;
   height: 144px;
   align-self: flex-start;
@@ -964,7 +603,7 @@
   object-fit: cover;
   border-radius: 15px;
 }
-.untuk-nonik-container21 {
+.untuk-nonik-container10 {
   flex: 0 0 auto;
   width: 100%;
   height: 800px;
@@ -980,7 +619,7 @@
   background-repeat: repeat;
   background-position: top left;
 }
-.untuk-nonik-text67 {
+.untuk-nonik-text42 {
   color: #171717;
   font-size: 30px;
   font-style: normal;
@@ -993,13 +632,13 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-text68 {
+.untuk-nonik-text43 {
   color: rgb(23, 23, 23);
   font-size: 12px;
   font-family: "Inter";
   margin-bottom: var(--dl-space-space-twounits);
 }
-.untuk-nonik-text69 {
+.untuk-nonik-text44 {
   color: #171717;
   font-size: 20px;
   font-family: "Spectral";
@@ -1007,7 +646,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-unit);
 }
-.untuk-nonik-text75 {
+.untuk-nonik-text50 {
   color: rgb(23, 23, 23);
   font-size: 20px;
   font-family: "Spectral";
@@ -1015,14 +654,14 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-threeunits);
 }
-.untuk-nonik-container22 {
+.untuk-nonik-container11 {
   display: flex;
   align-self: flex-end;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.untuk-nonik-text78 {
+.untuk-nonik-text53 {
   color: rgb(23, 23, 23);
   font-size: 30px;
   font-family: "Spectral";
@@ -1030,7 +669,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-halfunit);
 }
-.untuk-nonik-text81 {
+.untuk-nonik-text56 {
   color: rgb(23, 23, 23);
   font-size: 16px;
   font-family: "Spectral";
@@ -1038,7 +677,7 @@
   padding-right: 0px;
   padding-bottom: var(--dl-space-space-unit);
 }
-.untuk-nonik-container23 {
+.untuk-nonik-container12 {
   flex: 0 0 auto;
   width: 100%;
   height: 800px;
@@ -1054,7 +693,7 @@
   background-repeat: repeat;
   background-position: top left;
 }
-.untuk-nonik-text84 {
+.untuk-nonik-text59 {
   color: rgb(23, 23, 23);
   font-size: 30px;
   font-style: normal;
@@ -1067,7 +706,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.untuk-nonik-container24 {
+.untuk-nonik-container13 {
   flex: 0 0 auto;
   width: 200px;
   border: 2px dashed rgba(120, 120, 120, 0.4);
@@ -1109,172 +748,163 @@
     font-family: Over the Rainbow;
     background-color: rgb(189, 28, 196);
   }
-  .untuk-nonik-container13 {
+  .untuk-nonik-text02 {
+    top: 807px;
+    left: 19px;
+  }
+  .untuk-nonik-container03 {
     position: relative;
   }
-  .untuk-nonik-text26 {
+  .untuk-nonik-text04 {
     color: rgb(0, 0, 0);
   }
-  .untuk-nonik-text27 {
+  .untuk-nonik-text05 {
+    color: rgb(0, 0, 0);
+  }
+  .untuk-nonik-text08 {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-style: normal;
     font-family: Courier New;
     font-weight: 400;
   }
-  .untuk-nonik-container14 {
-    position: relative;
-  }
-  .untuk-nonik-text29 {
+  .untuk-nonik-text09 {
     color: rgb(0, 0, 0);
   }
-  .untuk-nonik-text30 {
-    color: rgb(0, 0, 0);
-  }
-  .untuk-nonik-text33 {
+  .untuk-nonik-text10 {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-style: normal;
     font-family: Courier New;
     font-weight: 400;
   }
-  .untuk-nonik-text34 {
+  .untuk-nonik-text11 {
     color: rgb(0, 0, 0);
   }
-  .untuk-nonik-text35 {
-    color: rgb(0, 0, 0);
-    font-size: 16px;
-    font-style: normal;
-    font-family: Courier New;
-    font-weight: 400;
-  }
-  .untuk-nonik-text36 {
+  .untuk-nonik-text12 {
     color: rgb(0, 0, 0);
   }
-  .untuk-nonik-text37 {
-    color: rgb(0, 0, 0);
-  }
-  .untuk-nonik-container15 {
+  .untuk-nonik-container04 {
     position: relative;
   }
-  .untuk-nonik-text38 {
+  .untuk-nonik-text13 {
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-family: Over the Rainbow;
     background-color: rgb(189, 28, 196);
   }
-  .untuk-nonik-text39 {
+  .untuk-nonik-text14 {
     color: rgb(0, 0, 0);
     padding: 0px;
     font-size: 5px;
     margin-bottom: var(--dl-space-space-twounits);
   }
-  .untuk-nonik-container16 {
+  .untuk-nonik-container05 {
     display: none;
   }
-  .untuk-nonik-text40 {
+  .untuk-nonik-text15 {
     font-size: 30px;
     font-family: Oooh Baby;
     margin-bottom: var(--dl-space-space-halfunit);
   }
-  .untuk-nonik-text45 {
+  .untuk-nonik-text20 {
     color: rgb(255, 255, 255);
   }
-  .untuk-nonik-text47 {
+  .untuk-nonik-text22 {
     color: #000000;
     font-size: 16px;
     font-family: Inter;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .untuk-nonik-text48 {
+  .untuk-nonik-text23 {
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: Spectral;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text50 {
+  .untuk-nonik-text25 {
     font-weight: 700;
   }
-  .untuk-nonik-image2 {
+  .untuk-nonik-image07 {
     align-self: center;
   }
-  .untuk-nonik-text52 {
+  .untuk-nonik-text27 {
     color: #000000;
     font-size: 16px;
     font-family: Inter;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .untuk-nonik-text53 {
+  .untuk-nonik-text28 {
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: Spectral;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text54 {
+  .untuk-nonik-text29 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text55 {
+  .untuk-nonik-text30 {
     color: #ffffff;
     font-size: 30px;
     font-family: Oooh Baby;
   }
-  .untuk-nonik-text56 {
+  .untuk-nonik-text31 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text57 {
+  .untuk-nonik-text32 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-image3 {
+  .untuk-nonik-image08 {
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-image4 {
+  .untuk-nonik-image09 {
     width: 220px;
     height: 118px;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text63 {
+  .untuk-nonik-text38 {
     color: #000000;
     font-size: 16px;
     font-family: Inter;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .untuk-nonik-text64 {
+  .untuk-nonik-text39 {
     color: #000000;
     font-size: 25px;
     font-family: Spectral;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-image6 {
+  .untuk-nonik-image11 {
     align-self: center;
   }
-  .untuk-nonik-text68 {
+  .untuk-nonik-text43 {
     color: #000000;
     font-size: 16px;
     font-family: Inter;
     margin-bottom: var(--dl-space-space-threeunits);
   }
-  .untuk-nonik-text69 {
+  .untuk-nonik-text44 {
     color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: Spectral;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text73 {
+  .untuk-nonik-text48 {
     font-weight: 700;
   }
-  .untuk-nonik-text75 {
+  .untuk-nonik-text50 {
     color: rgb(255, 255, 255);
     font-size: 30px;
     align-self: center;
     font-family: Oooh Baby;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-container22 {
+  .untuk-nonik-container11 {
     align-self: center;
     align-items: center;
     justify-content: center;
   }
-  .untuk-nonik-text78 {
+  .untuk-nonik-text53 {
     color: #000000;
     font-size: 25px;
     font-style: normal;
@@ -1282,13 +912,13 @@
     font-weight: 600;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-text81 {
+  .untuk-nonik-text56 {
     color: #000000;
     font-size: 16px;
     font-family: Spectral;
     margin-bottom: var(--dl-space-space-unit);
   }
-  .untuk-nonik-container24 {
+  .untuk-nonik-container13 {
     width: 100%;
     height: 506px;
     border-color: rgba(255, 247, 0, 0);
