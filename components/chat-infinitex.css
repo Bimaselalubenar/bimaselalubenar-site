@@ -20,15 +20,6 @@
   object-fit: cover;
   text-decoration: none;
 }
-.chat-infinitex-link1 {
-  display: contents;
-}
-.chat-infinitex-image1 {
-  width: 80px;
-  height: auto;
-  object-fit: cover;
-  text-decoration: none;
-}
 .chat-infinitex-root-class-name {
   margin-top: 340px;
 }
@@ -37,9 +28,6 @@
     width: auto;
   }
   .chat-infinitex-image {
-    width: 60px;
-  }
-  .chat-infinitex-image1 {
     width: 60px;
   }
 }

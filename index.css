@@ -80,9 +80,6 @@
   flex: 0 0 auto;
   width: 100%;
 }
-.announcement-root-class-name2 {
-  flex: 0;
-}
 
 
 @media(max-width: 479px) {
@@ -1132,7 +1129,8 @@
   justify-content: flex-start;
 }
 .footer-pasted-image {
-  width: 150px;
+  width: 94px;
+  height: 74px;
 }
 .footer-text {
   color: #000000;

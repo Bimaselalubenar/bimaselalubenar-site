@@ -80,9 +80,6 @@
   flex: 0 0 auto;
   width: 100%;
 }
-.announcement-root-class-name2 {
-  flex: 0;
-}
 
 
 @media(max-width: 479px) {
