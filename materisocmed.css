@@ -104,7 +104,9 @@
 
 @media(max-width: 479px) {
   .produk-materi-container {
-    width: 161px;
+    width: 154px;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: #f7f7f7;
   }
   .produk-materi-image {
@@ -571,10 +573,6 @@
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
-.materisocmed-text19 {
-  color: #000000;
-  width: Size-XSmall;
-}
 .materisocmed-week21 {
   gap: var(--dl-space-space-twounits);
   width: auto;
@@ -601,7 +599,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text20 {
+.materisocmed-text19 {
   font-size: 16px;
   font-style: normal;
   margin-top: var(--dl-space-space-unit);
@@ -613,7 +611,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text21 {
+.materisocmed-text20 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -649,12 +647,8 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text22 {
+.materisocmed-text21 {
   color: rgb(0, 0, 0);
-  width: Size-XSmall;
-}
-.materisocmed-text23 {
-  color: #000000;
   width: Size-XSmall;
 }
 .materisocmed-week22 {
@@ -683,7 +677,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text24 {
+.materisocmed-text22 {
   font-size: 16px;
   font-style: normal;
   margin-top: var(--dl-space-space-unit);
@@ -695,7 +689,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text25 {
+.materisocmed-text23 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -731,12 +725,8 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text26 {
+.materisocmed-text24 {
   color: rgb(0, 0, 0);
-  width: Size-XSmall;
-}
-.materisocmed-text27 {
-  color: #000000;
   width: Size-XSmall;
 }
 .materisocmed-week23 {
@@ -765,7 +755,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text28 {
+.materisocmed-text25 {
   font-size: 16px;
   font-style: normal;
   margin-top: var(--dl-space-space-unit);
@@ -777,7 +767,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text29 {
+.materisocmed-text26 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -813,11 +803,11 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text30 {
+.materisocmed-text27 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
-.materisocmed-text31 {
+.materisocmed-text28 {
   color: #000000;
   width: Size-XSmall;
 }
@@ -857,7 +847,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text32 {
+.materisocmed-text29 {
   font-size: 16px;
   font-style: normal;
   margin-top: var(--dl-space-space-unit);
@@ -869,7 +859,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text33 {
+.materisocmed-text30 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -905,12 +895,8 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text34 {
+.materisocmed-text31 {
   color: rgb(0, 0, 0);
-  width: Size-XSmall;
-}
-.materisocmed-text35 {
-  color: #000000;
   width: Size-XSmall;
 }
 .materisocmed-week25 {
@@ -940,7 +926,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text36 {
+.materisocmed-text32 {
   font-size: 16px;
   font-style: normal;
   margin-top: var(--dl-space-space-unit);
@@ -952,7 +938,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text37 {
+.materisocmed-text33 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -988,12 +974,8 @@
   border-color: #ffffff;
   border-bottom-width: 1px;
 }
-.materisocmed-text38 {
+.materisocmed-text34 {
   color: rgb(0, 0, 0);
-  width: Size-XSmall;
-}
-.materisocmed-text39 {
-  color: #000000;
   width: Size-XSmall;
 }
 .materisocmed-container16 {
@@ -1011,7 +993,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.materisocmed-text40 {
+.materisocmed-text35 {
   color: rgb(0, 0, 0);
   font-size: 12px;
   font-style: normal;
@@ -1054,7 +1036,7 @@
   padding-bottom: var(--dl-space-space-threeunits);
   justify-content: center;
 }
-.materisocmed-text41 {
+.materisocmed-text36 {
   font-size: 18px;
   font-style: normal;
   text-align: left;
@@ -1090,7 +1072,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.materisocmed-text42 {
+.materisocmed-text37 {
   font-size: 18px;
   font-style: normal;
   font-family: "Poppins";
@@ -1164,7 +1146,7 @@
   .materisocmed-container08 {
     gap: var(--dl-space-space-unit);
   }
-  .materisocmed-text40 {
+  .materisocmed-text35 {
     color: rgb(0, 0, 0);
     font-size: 12px;
     font-style: normal;
@@ -1232,9 +1214,11 @@
   }
 }
 @media(max-width: 479px) {
+  .materisocmed-container01 {
+    z-index: 100;
+  }
   .materisocmed-text {
     color: rgb(255, 255, 255);
-    font-size: 10px;
   }
   .materisocmed-text02 {
     font-weight: 700;
@@ -1247,13 +1231,17 @@
     flex-direction: column;
     justify-content: center;
   }
+  .materisocmed-text03 {
+    font-size: 16px;
+  }
   .materisocmed-container03 {
-    gap: var(--dl-space-space-halfunit);
+    gap: var(--dl-space-space-unit);
     width: 100%;
     flex-wrap: wrap;
     flex-direction: column;
   }
   .materisocmed-week1 {
+    gap: var(--dl-space-space-unit);
     width: 100%;
     flex-direction: row;
   }
@@ -1265,10 +1253,16 @@
     width: auto;
   }
   .materisocmed-text04 {
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
   }
+  .materisocmed-text05 {
+    width: auto;
+    font-size: 10px;
+  }
   .materisocmed-week2 {
+    gap: var(--dl-space-space-unit);
     width: 100%;
     flex-direction: row;
   }
@@ -1280,8 +1274,13 @@
     width: auto;
   }
   .materisocmed-text09 {
+    font-size: 12px;
     font-style: normal;
     font-weight: 500;
+  }
+  .materisocmed-text10 {
+    width: auto;
+    font-size: 10px;
   }
   .materisocmed-container06 {
     gap: var(--dl-space-space-halfunit);
@@ -1291,16 +1290,20 @@
     flex-direction: row;
     justify-content: center;
   }
+  .materisocmed-text15 {
+    font-size: 16px;
+  }
   .materisocmed-container07 {
     gap: var(--dl-space-space-halfunit);
     align-items: flex-start;
   }
   .materisocmed-container08 {
-    gap: var(--dl-space-space-halfunit);
+    gap: var(--dl-space-space-unit);
     width: 100%;
     flex-direction: column;
   }
   .materisocmed-week11 {
+    gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
@@ -1313,13 +1316,17 @@
     width: 100%;
   }
   .materisocmed-text16 {
-    font-size: 16px;
+    font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
     font-weight: 600;
     line-height: 1.15;
     text-transform: none;
     text-decoration: none;
+  }
+  .materisocmed-text17 {
+    width: auto;
+    font-size: 10px;
   }
   .materisocmed-button {
     padding: var(--dl-space-space-halfunit);
@@ -1329,6 +1336,7 @@
     font-size: 13px;
   }
   .materisocmed-week21 {
+    gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
@@ -1340,8 +1348,8 @@
   .materisocmed-container10 {
     width: 100%;
   }
-  .materisocmed-text20 {
-    font-size: 16px;
+  .materisocmed-text19 {
+    font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
     font-weight: 600;
@@ -1349,14 +1357,19 @@
     text-transform: none;
     text-decoration: none;
   }
+  .materisocmed-text20 {
+    width: auto;
+    font-size: 10px;
+  }
   .materisocmed-button1 {
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-text22 {
+  .materisocmed-text21 {
     font-size: 13px;
   }
   .materisocmed-week22 {
+    gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
@@ -1368,8 +1381,8 @@
   .materisocmed-container11 {
     width: 100%;
   }
-  .materisocmed-text24 {
-    font-size: 16px;
+  .materisocmed-text22 {
+    font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
     font-weight: 600;
@@ -1377,14 +1390,19 @@
     text-transform: none;
     text-decoration: none;
   }
+  .materisocmed-text23 {
+    width: auto;
+    font-size: 10px;
+  }
   .materisocmed-button2 {
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-text26 {
+  .materisocmed-text24 {
     font-size: 13px;
   }
   .materisocmed-week23 {
+    gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
@@ -1396,8 +1414,8 @@
   .materisocmed-container12 {
     width: 100%;
   }
-  .materisocmed-text28 {
-    font-size: 16px;
+  .materisocmed-text25 {
+    font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
     font-weight: 600;
@@ -1405,14 +1423,18 @@
     text-transform: none;
     text-decoration: none;
   }
+  .materisocmed-text26 {
+    font-size: 10px;
+  }
   .materisocmed-button3 {
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-text30 {
+  .materisocmed-text27 {
     font-size: 13px;
   }
   .materisocmed-week24 {
+    gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
@@ -1424,8 +1446,8 @@
   .materisocmed-container14 {
     width: 100%;
   }
-  .materisocmed-text32 {
-    font-size: 16px;
+  .materisocmed-text29 {
+    font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
     font-weight: 600;
@@ -1433,14 +1455,19 @@
     text-transform: none;
     text-decoration: none;
   }
+  .materisocmed-text30 {
+    width: auto;
+    font-size: 10px;
+  }
   .materisocmed-button4 {
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-text34 {
+  .materisocmed-text31 {
     font-size: 13px;
   }
   .materisocmed-week25 {
+    gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
@@ -1452,8 +1479,8 @@
   .materisocmed-container15 {
     width: 100%;
   }
-  .materisocmed-text36 {
-    font-size: 16px;
+  .materisocmed-text32 {
+    font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
     font-weight: 600;
@@ -1461,14 +1488,18 @@
     text-transform: none;
     text-decoration: none;
   }
+  .materisocmed-text33 {
+    width: auto;
+    font-size: 10px;
+  }
   .materisocmed-button5 {
     padding: var(--dl-space-space-halfunit);
     margin-top: var(--dl-space-space-unit);
   }
-  .materisocmed-text38 {
+  .materisocmed-text34 {
     font-size: 13px;
   }
-  .materisocmed-text40 {
+  .materisocmed-text35 {
     font-size: 12px;
   }
   .materisocmed-container17 {
@@ -1481,11 +1512,12 @@
     padding-bottom: var(--dl-space-space-threeunits);
     justify-content: center;
   }
-  .materisocmed-text41 {
+  .materisocmed-text36 {
+    font-size: 16px;
     margin-bottom: var(--dl-space-space-halfunit);
   }
   .materisocmed-container18 {
-    gap: var(--dl-space-space-oneandhalfunits);
+    gap: var(--dl-space-space-unit);
     flex-wrap: wrap;
     align-items: center;
     margin-bottom: 0px;

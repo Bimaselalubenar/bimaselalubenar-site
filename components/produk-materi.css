@@ -104,7 +104,9 @@
 
 @media(max-width: 479px) {
   .produk-materi-container {
-    width: 161px;
+    width: 154px;
+    flex-wrap: wrap;
+    flex-direction: column;
     background-color: #f7f7f7;
   }
   .produk-materi-image {
