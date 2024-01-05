@@ -43,7 +43,7 @@
   font-weight: 400;
 }
 .header-artikel-root-class-name {
-  margin-bottom: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-unit);
 }
 @media(max-width: 767px) {
   .header-artikel-text {
@@ -72,5 +72,8 @@
   }
   .header-artikel-text1 {
     margin-top: var(--dl-space-space-unit);
+  }
+  .header-artikel-root-class-name {
+    margin-bottom: var(--dl-space-space-threeunits);
   }
 }
