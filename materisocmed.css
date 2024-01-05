@@ -733,6 +733,18 @@
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
+.materisocmed-text17 {
+  font-size: 18px;
+  align-self: center;
+  font-style: normal;
+  margin-top: var(--dl-space-space-unit);
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: var(--dl-space-space-unit);
+  text-transform: none;
+  text-decoration: none;
+}
 .materisocmed-container09 {
   gap: var(--dl-space-space-unit);
   flex: 0;
@@ -771,7 +783,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text17 {
+.materisocmed-text18 {
   font-size: 16px;
   font-style: normal;
   margin-top: 0px;
@@ -783,7 +795,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text18 {
+.materisocmed-text19 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -816,7 +828,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text19 {
+.materisocmed-text20 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
@@ -849,7 +861,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text20 {
+.materisocmed-text21 {
   font-size: 16px;
   font-style: normal;
   margin-top: 0px;
@@ -861,7 +873,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text21 {
+.materisocmed-text22 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -894,7 +906,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text22 {
+.materisocmed-text23 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
@@ -913,7 +925,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.materisocmed-text23 {
+.materisocmed-text24 {
   color: rgb(0, 0, 0);
   font-size: 12px;
   font-style: normal;
@@ -955,7 +967,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.materisocmed-text24 {
+.materisocmed-text25 {
   font-size: 18px;
   font-style: normal;
   text-align: left;
@@ -994,7 +1006,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.materisocmed-text25 {
+.materisocmed-text26 {
   font-size: 18px;
   font-style: normal;
   font-family: "Poppins";
@@ -1064,10 +1076,13 @@
   .materisocmed-container04 {
     gap: var(--dl-space-space-unit);
   }
+  .materisocmed-text17 {
+    align-self: center;
+  }
   .materisocmed-container09 {
     gap: var(--dl-space-space-unit);
   }
-  .materisocmed-text23 {
+  .materisocmed-text24 {
     color: rgb(0, 0, 0);
     font-size: 12px;
     font-style: normal;
@@ -1135,6 +1150,16 @@
   .materisocmed-container08 {
     width: 151px;
   }
+  .materisocmed-text17 {
+    font-size: 18px;
+    align-self: center;
+    font-style: normal;
+    font-family: Poppins;
+    font-weight: 600;
+    line-height: 1.15;
+    text-transform: none;
+    text-decoration: none;
+  }
   .materisocmed-container09 {
     gap: var(--dl-space-space-unit);
   }
@@ -1144,7 +1169,7 @@
   .materisocmed-container10 {
     width: 293px;
   }
-  .materisocmed-text18 {
+  .materisocmed-text19 {
     color: rgb(37, 37, 37);
     font-size: 12px;
     font-family: Poppins;
@@ -1211,7 +1236,7 @@
   }
   .materisocmed-container03 {
     gap: var(--dl-space-space-halfunit);
-    align-items: flex-start;
+    align-items: center;
   }
   .materisocmed-container04 {
     gap: var(--dl-space-space-unit);
@@ -1355,12 +1380,17 @@
   .materisocmed-text16 {
     font-size: 13px;
   }
+  .materisocmed-text17 {
+    font-size: 16px;
+    align-self: center;
+  }
   .materisocmed-container09 {
     gap: var(--dl-space-space-unit);
     width: 100%;
     flex-direction: column;
   }
   .materisocmed-week23 {
+    flex: 0;
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
@@ -1372,7 +1402,7 @@
   .materisocmed-container10 {
     width: 100%;
   }
-  .materisocmed-text17 {
+  .materisocmed-text18 {
     font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
@@ -1381,7 +1411,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text18 {
+  .materisocmed-text19 {
     width: auto;
     font-size: 10px;
   }
@@ -1391,10 +1421,11 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text19 {
+  .materisocmed-text20 {
     font-size: 13px;
   }
   .materisocmed-week24 {
+    flex: 0;
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
@@ -1406,7 +1437,7 @@
   .materisocmed-container11 {
     width: 100%;
   }
-  .materisocmed-text20 {
+  .materisocmed-text21 {
     font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
@@ -1415,7 +1446,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text21 {
+  .materisocmed-text22 {
     width: auto;
     font-size: 10px;
   }
@@ -1425,10 +1456,10 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text22 {
+  .materisocmed-text23 {
     font-size: 13px;
   }
-  .materisocmed-text23 {
+  .materisocmed-text24 {
     font-size: 12px;
   }
   .materisocmed-container13 {
@@ -1439,7 +1470,7 @@
     flex-direction: column;
     justify-content: center;
   }
-  .materisocmed-text24 {
+  .materisocmed-text25 {
     font-size: 16px;
     margin-bottom: var(--dl-space-space-halfunit);
   }
@@ -1449,7 +1480,7 @@
     padding-left: var(--dl-space-space-halfunit);
     padding-right: var(--dl-space-space-halfunit);
   }
-  .materisocmed-text25 {
+  .materisocmed-text26 {
     font-size: 18px;
     font-style: normal;
     font-family: Poppins;
