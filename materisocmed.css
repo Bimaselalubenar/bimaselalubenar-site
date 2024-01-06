@@ -302,11 +302,18 @@
 }
 .materisocmed-text {
   color: rgb(255, 255, 255);
-  margin: var(--dl-space-space-halfunit);
   font-size: 10px;
   margin-top: var(--dl-space-space-unit);
-  margin-left: var(--dl-space-space-unit);
-  margin-right: var(--dl-space-space-unit);
+  margin-left: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-halfunit);
+  margin-bottom: var(--dl-space-space-halfunit);
+}
+.materisocmed-text03 {
+  color: rgb(255, 255, 255);
+  font-size: 10px;
+  margin-top: 0px;
+  margin-left: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-halfunit);
   margin-bottom: var(--dl-space-space-unit);
 }
 .materisocmed-slider {
@@ -358,7 +365,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text03 {
+.materisocmed-text04 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
   font-size: 12px;
@@ -396,7 +403,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.materisocmed-text04 {
+.materisocmed-text05 {
   font-size: 18px;
   font-style: normal;
   font-family: "Poppins";
@@ -455,7 +462,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text05 {
+.materisocmed-text06 {
   font-size: 16px;
   font-style: normal;
   margin-top: 0px;
@@ -467,7 +474,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text06 {
+.materisocmed-text07 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   font-style: normal;
@@ -501,7 +508,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text07 {
+.materisocmed-text08 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
@@ -533,7 +540,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text08 {
+.materisocmed-text09 {
   font-size: 16px;
   font-style: normal;
   margin-top: 0px;
@@ -545,7 +552,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text09 {
+.materisocmed-text10 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -578,7 +585,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text10 {
+.materisocmed-text11 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
@@ -610,7 +617,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text11 {
+.materisocmed-text12 {
   font-size: 16px;
   font-style: normal;
   margin-top: 0px;
@@ -622,7 +629,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text12 {
+.materisocmed-text13 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -655,7 +662,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text13 {
+.materisocmed-text14 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
@@ -687,7 +694,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text14 {
+.materisocmed-text15 {
   font-size: 16px;
   font-style: normal;
   margin-top: 0px;
@@ -699,7 +706,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text15 {
+.materisocmed-text16 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -732,11 +739,11 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text16 {
+.materisocmed-text17 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
-.materisocmed-text17 {
+.materisocmed-text18 {
   font-size: 18px;
   align-self: center;
   font-style: normal;
@@ -786,7 +793,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text18 {
+.materisocmed-text19 {
   font-size: 16px;
   font-style: normal;
   margin-top: 0px;
@@ -798,7 +805,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text19 {
+.materisocmed-text20 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -831,7 +838,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text20 {
+.materisocmed-text21 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
@@ -864,7 +871,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text21 {
+.materisocmed-text22 {
   font-size: 16px;
   font-style: normal;
   margin-top: 0px;
@@ -876,7 +883,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text22 {
+.materisocmed-text23 {
   color: rgb(37, 37, 37);
   font-size: 12px;
   text-align: left;
@@ -909,7 +916,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text23 {
+.materisocmed-text24 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
@@ -928,7 +935,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.materisocmed-text24 {
+.materisocmed-text25 {
   color: rgb(0, 0, 0);
   font-size: 12px;
   font-style: normal;
@@ -954,7 +961,7 @@
   border-radius: var(--dl-radius-radius-round);
   text-decoration: none;
 }
-.materisocmed-text25 {
+.materisocmed-text26 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
@@ -972,7 +979,6 @@
   width: 100%;
   height: auto;
   max-width: 991px;
-  border-radius: 15px;
 }
 .materisocmed-slider-slide2 {
   height: auto;
@@ -1022,7 +1028,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.materisocmed-text26 {
+.materisocmed-text27 {
   font-size: 18px;
   font-style: normal;
   text-align: left;
@@ -1061,7 +1067,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.materisocmed-text27 {
+.materisocmed-text28 {
   font-size: 18px;
   font-style: normal;
   font-family: "Poppins";
@@ -1131,13 +1137,13 @@
   .materisocmed-container04 {
     gap: var(--dl-space-space-unit);
   }
-  .materisocmed-text17 {
+  .materisocmed-text18 {
     align-self: center;
   }
   .materisocmed-container09 {
     gap: var(--dl-space-space-unit);
   }
-  .materisocmed-text24 {
+  .materisocmed-text25 {
     color: rgb(0, 0, 0);
     font-size: 12px;
     font-style: normal;
@@ -1147,7 +1153,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text25 {
+  .materisocmed-text26 {
     color: rgb(0, 0, 0);
     font-size: 16px;
     font-style: normal;
@@ -1183,7 +1189,7 @@
     margin: auto;
     position: absolute;
   }
-  .materisocmed-text03 {
+  .materisocmed-text04 {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1221,7 +1227,7 @@
   .materisocmed-container08 {
     width: 151px;
   }
-  .materisocmed-text17 {
+  .materisocmed-text18 {
     font-size: 18px;
     align-self: center;
     font-style: normal;
@@ -1240,7 +1246,7 @@
   .materisocmed-container10 {
     width: 293px;
   }
-  .materisocmed-text19 {
+  .materisocmed-text20 {
     color: rgb(37, 37, 37);
     font-size: 12px;
     font-family: Poppins;
@@ -1278,6 +1284,10 @@
   .materisocmed-text02 {
     font-weight: 700;
   }
+  .materisocmed-text03 {
+    color: rgb(255, 255, 255);
+    font-size: 10px;
+  }
   .materisocmed-slider {
     width: 100%;
   }
@@ -1295,7 +1305,7 @@
     padding: 5px;
     position: absolute;
   }
-  .materisocmed-text03 {
+  .materisocmed-text04 {
     font-size: 16px;
     font-style: normal;
     font-weight: 600;
@@ -1309,7 +1319,7 @@
     flex-direction: row;
     justify-content: center;
   }
-  .materisocmed-text04 {
+  .materisocmed-text05 {
     font-size: 16px;
   }
   .materisocmed-container03 {
@@ -1334,7 +1344,7 @@
   .materisocmed-container05 {
     width: 100%;
   }
-  .materisocmed-text05 {
+  .materisocmed-text06 {
     font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
@@ -1343,7 +1353,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text06 {
+  .materisocmed-text07 {
     width: auto;
     font-size: 10px;
   }
@@ -1353,7 +1363,7 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text07 {
+  .materisocmed-text08 {
     font-size: 13px;
   }
   .materisocmed-week2 {
@@ -1368,7 +1378,7 @@
   .materisocmed-container06 {
     width: 100%;
   }
-  .materisocmed-text08 {
+  .materisocmed-text09 {
     font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
@@ -1377,7 +1387,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text09 {
+  .materisocmed-text10 {
     width: auto;
     font-size: 10px;
   }
@@ -1387,7 +1397,7 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text10 {
+  .materisocmed-text11 {
     font-size: 13px;
   }
   .materisocmed-week21 {
@@ -1402,7 +1412,7 @@
   .materisocmed-container07 {
     width: 100%;
   }
-  .materisocmed-text11 {
+  .materisocmed-text12 {
     font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
@@ -1411,7 +1421,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text12 {
+  .materisocmed-text13 {
     width: auto;
     font-size: 10px;
   }
@@ -1421,7 +1431,7 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text13 {
+  .materisocmed-text14 {
     font-size: 13px;
   }
   .materisocmed-week22 {
@@ -1436,7 +1446,7 @@
   .materisocmed-container08 {
     width: 100%;
   }
-  .materisocmed-text14 {
+  .materisocmed-text15 {
     font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
@@ -1445,7 +1455,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text15 {
+  .materisocmed-text16 {
     font-size: 10px;
   }
   .materisocmed-button4 {
@@ -1454,10 +1464,10 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text16 {
+  .materisocmed-text17 {
     font-size: 13px;
   }
-  .materisocmed-text17 {
+  .materisocmed-text18 {
     font-size: 16px;
     align-self: center;
   }
@@ -1479,7 +1489,7 @@
   .materisocmed-container10 {
     width: 100%;
   }
-  .materisocmed-text18 {
+  .materisocmed-text19 {
     font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
@@ -1488,7 +1498,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text19 {
+  .materisocmed-text20 {
     width: auto;
     font-size: 10px;
   }
@@ -1498,7 +1508,7 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text20 {
+  .materisocmed-text21 {
     font-size: 13px;
   }
   .materisocmed-week24 {
@@ -1514,7 +1524,7 @@
   .materisocmed-container11 {
     width: 100%;
   }
-  .materisocmed-text21 {
+  .materisocmed-text22 {
     font-size: 12px;
     font-style: inherit;
     font-family: Poppins;
@@ -1523,7 +1533,7 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-text22 {
+  .materisocmed-text23 {
     width: auto;
     font-size: 10px;
   }
@@ -1533,13 +1543,13 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text23 {
+  .materisocmed-text24 {
     font-size: 13px;
   }
-  .materisocmed-text24 {
+  .materisocmed-text25 {
     font-size: 12px;
   }
-  .materisocmed-text25 {
+  .materisocmed-text26 {
     font-size: 16px;
   }
   .materisocmed-slider1 {
@@ -1557,17 +1567,17 @@
     flex-direction: column;
     justify-content: center;
   }
-  .materisocmed-text26 {
+  .materisocmed-text27 {
     font-size: 16px;
     margin-bottom: var(--dl-space-space-halfunit);
   }
   .materisocmed-container14 {
-    gap: var(--dl-space-space-halfunit);
+    gap: var(--dl-space-space-unit);
     align-items: flex-start;
     padding-left: var(--dl-space-space-halfunit);
     padding-right: var(--dl-space-space-halfunit);
   }
-  .materisocmed-text27 {
+  .materisocmed-text28 {
     font-size: 18px;
     font-style: normal;
     font-family: Poppins;
