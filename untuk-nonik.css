@@ -1111,6 +1111,8 @@
   display: flex;
   align-self: center;
   align-items: center;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: center;
 }
@@ -1119,7 +1121,7 @@
 }
 .untuk-nonik-image12 {
   flex: 1;
-  width: var(--dl-size-size-large);
+  width: var(--dl-size-size-medium);
   height: auto;
   object-fit: cover;
   border-radius: var(--dl-radius-radius-radius8);
@@ -1130,7 +1132,7 @@
 }
 .untuk-nonik-image13 {
   flex: 1;
-  width: var(--dl-size-size-large);
+  width: var(--dl-size-size-medium);
   height: auto;
   object-fit: cover;
   border-radius: var(--dl-radius-radius-radius8);
@@ -1141,7 +1143,7 @@
 }
 .untuk-nonik-image14 {
   flex: 1;
-  width: var(--dl-size-size-large);
+  width: var(--dl-size-size-medium);
   height: auto;
   object-fit: cover;
   border-radius: var(--dl-radius-radius-radius8);
