@@ -134,11 +134,13 @@
     align-items: center;
   }
   .header-artikel-text1 {
+    font-size: 11px;
     margin-top: 0px;
     padding-left: 0px;
     padding-right: 0px;
   }
   .header-artikel-text2 {
+    font-size: 11px;
     margin-top: 0px;
   }
   .header-artikel-root-class-name {

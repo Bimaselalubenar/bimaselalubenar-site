@@ -368,7 +368,7 @@
   flex: 0 0 auto;
   width: 100%;
   height: auto;
-  display: flex;
+  display: none;
   position: relative;
   max-width: 479px;
   align-items: center;
@@ -1070,6 +1070,75 @@
   align-items: flex-start;
   flex-direction: column;
 }
+.untuk-nonik-container14 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 800px;
+  display: flex;
+  max-width: 479px;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+}
+.untuk-nonik-container15 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 100%;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.untuk-nonik-text67 {
+  font-style: normal;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.untuk-nonik-text68 {
+  font-style: normal;
+  font-weight: 500;
+}
+.untuk-nonik-container16 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  height: 175px;
+  display: flex;
+  align-self: center;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.untuk-nonik-navlink {
+  display: contents;
+}
+.untuk-nonik-image12 {
+  width: var(--dl-size-size-large);
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius8);
+  text-decoration: none;
+}
+.untuk-nonik-navlink1 {
+  display: contents;
+}
+.untuk-nonik-image13 {
+  width: var(--dl-size-size-large);
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius8);
+  text-decoration: none;
+}
+.untuk-nonik-navlink2 {
+  display: contents;
+}
+.untuk-nonik-image14 {
+  width: var(--dl-size-size-large);
+  height: auto;
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-radius8);
+  text-decoration: none;
+}
 @media(max-width: 479px) {
   .untuk-nonik-container {
     background-size: auto;
@@ -1283,5 +1352,9 @@
     border-width: 0px;
     border-radius: 40px;
     background-color: #000000;
+  }
+  .untuk-nonik-container14 {
+    background-size: cover;
+    background-image: url('https://lcdn-hk.icons8.com/c/uKTraK8CA06tBlOy_NXWig/afe548fc9705063d98f0f02ccdf5f4bb7c2f8925.png');
   }
 }
