@@ -8,14 +8,13 @@
 }
 .header-artikel-container1 {
   width: 100%;
-  height: 267px;
+  height: auto;
   display: flex;
   overflow: unset;
   align-items: center;
-  margin-bottom: 246px;
   flex-direction: column;
   justify-content: flex-start;
-  background-color: #c68f00;
+  background-color: #ff0000;
 }
 .header-artikel-text {
   color: #ffffff;
@@ -26,31 +25,34 @@
   margin-top: var(--dl-space-space-unit);
 }
 .header-artikel-image {
-  width: 800px;
-  height: 399px;
+  width: 100%;
+  height: auto;
+  max-width: 800px;
   margin-top: var(--dl-space-space-unit);
   object-fit: cover;
   border-radius: 15px;
 }
 .header-artikel-container2 {
-  gap: var(--dl-space-space-threeunits);
   flex: 1;
   width: 800px;
   display: flex;
   max-width: auto;
+  margin-top: var(--dl-space-space-unit);
   align-items: center;
+  margin-bottom: var(--dl-space-space-unit);
   flex-direction: row;
-  justify-content: flex-start;
+  justify-content: space-between;
 }
 .header-artikel-text1 {
-  color: rgb(0, 0, 0);
+  color: #ffffff;
   width: auto;
   font-size: 16px;
   max-width: auto;
   align-self: center;
   font-style: normal;
-  margin-top: var(--dl-space-space-unit);
+  margin-top: 0px;
   font-weight: 400;
+  margin-left: var(--dl-space-space-unit);
 }
 .header-artikel-link {
   display: contents;
@@ -62,9 +64,10 @@
   max-width: auto;
   align-self: center;
   font-style: normal;
-  margin-top: var(--dl-space-space-unit);
+  margin-top: 0px;
   font-weight: 400;
   padding-top: var(--dl-space-space-halfunit);
+  margin-right: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-unit);
   border-radius: var(--dl-radius-radius-radius8);
   padding-right: var(--dl-space-space-unit);
@@ -77,12 +80,12 @@
 }
 @media(max-width: 991px) {
   .header-artikel-container1 {
-    margin-bottom: 242px;
+    margin-bottom: 0px;
   }
 }
 @media(max-width: 767px) {
   .header-artikel-container1 {
-    margin-bottom: 242px;
+    margin-bottom: 0px;
   }
   .header-artikel-text {
     margin-left: 0px;
@@ -101,14 +104,14 @@
     width: 100%;
   }
   .header-artikel-text1 {
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .header-artikel-text2 {
-    margin-left: 0px;
-    margin-right: 0px;
+    margin-left: var(--dl-space-space-unit);
+    margin-right: var(--dl-space-space-unit);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
@@ -118,7 +121,7 @@
     height: auto;
   }
   .header-artikel-container1 {
-    margin-bottom: 334px;
+    margin-bottom: 0px;
   }
   .header-artikel-text {
     margin-top: var(--dl-space-space-unit);
@@ -127,16 +130,20 @@
     height: auto;
   }
   .header-artikel-container2 {
+    margin-top: var(--dl-space-space-unit);
     align-items: center;
   }
   .header-artikel-text1 {
-    margin-top: var(--dl-space-space-unit);
+    margin-top: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
   .header-artikel-text2 {
-    margin-top: var(--dl-space-space-unit);
+    margin-top: 0px;
   }
   .header-artikel-root-class-name {
-    margin-bottom: var(--dl-space-space-threeunits);
+    height: auto;
+    margin-bottom: var(--dl-space-space-twounits);
   }
 }
 
@@ -202,15 +209,20 @@
   text-decoration: none;
 }
 .popmenu-root-class-name {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.popmenu-root-class-name1 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-
 @media(max-width: 479px) {
   .popmenu-container {
     width: auto;
     height: auto;
     align-items: center;
     flex-direction: row;
+  }
+  .popmenu-root-class-name1 {
+    margin-bottom: var(--dl-space-space-halfunit);
   }
 }
 
@@ -322,7 +334,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  max-width: 1000px;
+  max-width: 800px;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-unit);

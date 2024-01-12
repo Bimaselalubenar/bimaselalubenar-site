@@ -60,14 +60,19 @@
   text-decoration: none;
 }
 .popmenu-root-class-name {
+  margin-bottom: var(--dl-space-space-unit);
+}
+.popmenu-root-class-name1 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
-
 @media(max-width: 479px) {
   .popmenu-container {
     width: auto;
     height: auto;
     align-items: center;
     flex-direction: row;
+  }
+  .popmenu-root-class-name1 {
+    margin-bottom: var(--dl-space-space-halfunit);
   }
 }
