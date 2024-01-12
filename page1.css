@@ -5,6 +5,7 @@
   min-height: 100vh;
   align-items: center;
   flex-direction: column;
+  background-color: #c70068;
 }
 .page1-container1 {
   flex: 0;
@@ -49,5 +50,5 @@
 }
 .page1-video {
   width: 320px;
-  height: 180px;
+  height: 1px;
 }
