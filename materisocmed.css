@@ -208,6 +208,9 @@
 .popmenu-root-class-name1 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
+.popmenu-root-class-name2 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
 @media(max-width: 479px) {
   .popmenu-container {
     width: auto;
@@ -216,6 +219,9 @@
     flex-direction: row;
   }
   .popmenu-root-class-name1 {
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .popmenu-root-class-name2 {
     margin-bottom: var(--dl-space-space-halfunit);
   }
 }
@@ -505,10 +511,10 @@
 }
 .materisocmed-button01 {
   gap: var(--dl-space-space-halfunit);
-  width: 100%;
+  width: auto;
   cursor: pointer;
   display: flex;
-  padding: 5px;
+  padding: var(--dl-space-space-halfunit);
   transition: 0.5s;
   align-items: center;
   border-radius: var(--dl-radius-radius-radius8);
@@ -582,10 +588,10 @@
 }
 .materisocmed-button02 {
   gap: var(--dl-space-space-halfunit);
-  width: 100%;
+  width: auto;
   cursor: pointer;
   display: flex;
-  padding: 5px;
+  padding: var(--dl-space-space-halfunit);
   transition: 0.5s;
   align-items: center;
   border-radius: var(--dl-radius-radius-radius8);
@@ -659,10 +665,10 @@
 }
 .materisocmed-button03 {
   gap: var(--dl-space-space-halfunit);
-  width: 100%;
+  width: auto;
   cursor: pointer;
   display: flex;
-  padding: 5px;
+  padding: var(--dl-space-space-halfunit);
   transition: 0.5s;
   align-items: center;
   border-radius: var(--dl-radius-radius-radius8);
@@ -736,10 +742,10 @@
 }
 .materisocmed-button04 {
   gap: var(--dl-space-space-halfunit);
-  width: 100%;
+  width: auto;
   cursor: pointer;
   display: flex;
-  padding: 5px;
+  padding: var(--dl-space-space-halfunit);
   transition: 0.5s;
   align-items: center;
   border-radius: var(--dl-radius-radius-radius8);
@@ -836,10 +842,10 @@
 }
 .materisocmed-button05 {
   gap: var(--dl-space-space-halfunit);
-  width: 100%;
+  width: auto;
   cursor: pointer;
   display: flex;
-  padding: 5px;
+  padding: var(--dl-space-space-halfunit);
   transition: 0.5s;
   align-items: center;
   border-radius: var(--dl-radius-radius-radius8);
@@ -914,10 +920,10 @@
 }
 .materisocmed-button06 {
   gap: var(--dl-space-space-halfunit);
-  width: 100%;
+  width: auto;
   cursor: pointer;
   display: flex;
-  padding: 5px;
+  padding: var(--dl-space-space-halfunit);
   transition: 0.5s;
   align-items: center;
   border-radius: var(--dl-radius-radius-radius8);
@@ -1550,9 +1556,9 @@
   }
   .materisocmed-button01 {
     gap: var(--dl-space-space-halfunit);
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 5px;
+    padding: var(--dl-space-space-halfunit);
   }
   .materisocmed-text08 {
     font-size: 13px;
@@ -1584,9 +1590,9 @@
   }
   .materisocmed-button02 {
     gap: var(--dl-space-space-halfunit);
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 5px;
+    padding: var(--dl-space-space-halfunit);
   }
   .materisocmed-text11 {
     font-size: 13px;
@@ -1618,9 +1624,9 @@
   }
   .materisocmed-button03 {
     gap: var(--dl-space-space-halfunit);
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 5px;
+    padding: var(--dl-space-space-halfunit);
   }
   .materisocmed-text14 {
     font-size: 13px;
@@ -1651,9 +1657,9 @@
   }
   .materisocmed-button04 {
     gap: var(--dl-space-space-halfunit);
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 5px;
+    padding: var(--dl-space-space-halfunit);
   }
   .materisocmed-text17 {
     font-size: 13px;
@@ -1695,9 +1701,9 @@
   }
   .materisocmed-button05 {
     gap: var(--dl-space-space-halfunit);
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 5px;
+    padding: var(--dl-space-space-halfunit);
   }
   .materisocmed-text21 {
     font-size: 13px;
@@ -1730,9 +1736,9 @@
   }
   .materisocmed-button06 {
     gap: var(--dl-space-space-halfunit);
-    width: 100%;
+    width: auto;
     height: auto;
-    padding: 5px;
+    padding: var(--dl-space-space-halfunit);
   }
   .materisocmed-text24 {
     font-size: 13px;

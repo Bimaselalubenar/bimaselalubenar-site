@@ -65,6 +65,9 @@
 .popmenu-root-class-name1 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
+.popmenu-root-class-name2 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
 @media(max-width: 479px) {
   .popmenu-container {
     width: auto;
@@ -73,6 +76,9 @@
     flex-direction: row;
   }
   .popmenu-root-class-name1 {
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .popmenu-root-class-name2 {
     margin-bottom: var(--dl-space-space-halfunit);
   }
 }
