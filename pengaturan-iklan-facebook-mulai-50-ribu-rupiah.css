@@ -89,7 +89,7 @@
   }
 }
 
-.cetak-bukti-pembayaran-fbads-container {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -99,7 +99,7 @@
   justify-content: flex-start;
   background-color: #154c9a;
 }
-.cetak-bukti-pembayaran-fbads-container1 {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-container1 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -109,31 +109,19 @@
   flex-direction: column;
   justify-content: center;
 }
-.cetak-bukti-pembayaran-fbads-image {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-image {
   width: 100%;
   object-fit: cover;
 }
-.cetak-bukti-pembayaran-fbads-image1 {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-image1 {
   width: 100%;
   object-fit: cover;
 }
-.cetak-bukti-pembayaran-fbads-image2 {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-image2 {
   width: 100%;
   object-fit: cover;
 }
-.cetak-bukti-pembayaran-fbads-image3 {
-  width: 100%;
-  object-fit: cover;
-}
-.cetak-bukti-pembayaran-fbads-image4 {
-  width: 100%;
-  object-fit: cover;
-}
-.cetak-bukti-pembayaran-fbads-image5 {
-  width: 100%;
-  object-fit: cover;
-}
-.cetak-bukti-pembayaran-fbads-container2 {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-container2 {
   gap: var(--dl-space-space-halfunit);
   flex: 0 0 auto;
   width: 100%;
@@ -148,7 +136,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.cetak-bukti-pembayaran-fbads-text {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-text {
   color: #ffffff;
   font-size: 12px;
   font-style: normal;
@@ -161,10 +149,10 @@
   text-transform: none;
   text-decoration: none;
 }
-.cetak-bukti-pembayaran-fbads-link {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-link {
   display: contents;
 }
-.cetak-bukti-pembayaran-fbads-icon {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-icon {
   fill: #ffffff;
   width: 35px;
   height: 35px;
@@ -174,7 +162,7 @@
   border-radius: var(--dl-radius-radius-round);
   text-decoration: none;
 }
-.cetak-bukti-pembayaran-fbads-form {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-form {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   height: auto;
@@ -190,7 +178,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.cetak-bukti-pembayaran-fbads-text1 {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-text1 {
   color: #ffffff;
   font-size: 18px;
   font-style: normal;
@@ -201,7 +189,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.cetak-bukti-pembayaran-fbads-container3 {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-container3 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -209,7 +197,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.cetak-bukti-pembayaran-fbads-textinput {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-textinput {
   flex: 1;
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -217,7 +205,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #f5f5f5;
 }
-.cetak-bukti-pembayaran-fbads-textinput1 {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-textinput1 {
   flex: 1;
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -225,7 +213,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #f5f5f5;
 }
-.cetak-bukti-pembayaran-fbads-textarea {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-textarea {
   width: 100%;
   height: 86px;
   padding: var(--dl-space-space-unit);
@@ -233,7 +221,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #f5f5f5;
 }
-.cetak-bukti-pembayaran-fbads-button {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-button {
   width: 100%;
   cursor: pointer;
   height: auto;
@@ -251,11 +239,11 @@
   text-decoration: none;
   background-color: #fbea00;
 }
-.cetak-bukti-pembayaran-fbads-button:hover {
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-button:hover {
   background-color: #46cc06;
 }
 @media(max-width: 991px) {
-  .cetak-bukti-pembayaran-fbads-text {
+  .pengaturan-iklan-facebook-mulai50-ribu-rupiah-text {
     color: rgb(0, 0, 0);
     font-size: 12px;
     font-style: normal;
@@ -267,16 +255,16 @@
   }
 }
 @media(max-width: 479px) {
-  .cetak-bukti-pembayaran-fbads-text {
+  .pengaturan-iklan-facebook-mulai50-ribu-rupiah-text {
     color: #ffffff;
     font-size: 12px;
     border-color: #ffffff;
   }
-  .cetak-bukti-pembayaran-fbads-icon {
+  .pengaturan-iklan-facebook-mulai50-ribu-rupiah-icon {
     fill: #ffffff;
     border-color: #ffffff;
   }
-  .cetak-bukti-pembayaran-fbads-text1 {
+  .pengaturan-iklan-facebook-mulai50-ribu-rupiah-text1 {
     color: #ffffff;
     font-size: 18px;
     font-style: normal;
@@ -286,10 +274,10 @@
     text-transform: none;
     text-decoration: none;
   }
-  .cetak-bukti-pembayaran-fbads-textinput {
+  .pengaturan-iklan-facebook-mulai50-ribu-rupiah-textinput {
     flex: 1;
   }
-  .cetak-bukti-pembayaran-fbads-textinput1 {
+  .pengaturan-iklan-facebook-mulai50-ribu-rupiah-textinput1 {
     flex: 1;
   }
 }
