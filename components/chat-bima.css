@@ -21,7 +21,7 @@
 }
 .chat-bima-container1 {
   gap: var(--dl-space-space-halfunit);
-  width: 103px;
+  width: 67px;
   display: flex;
   align-items: center;
   padding-top: var(--dl-space-space-halfunit);
@@ -49,12 +49,18 @@
 .chat-bima-root-class-name {
   margin-top: 240px;
 }
+.chat-bima-root-class-name1 {
+  margin-top: 240px;
+}
+.chat-bima-root-class-name2 {
+  margin-top: 240px;
+}
 @media(max-width: 479px) {
   .chat-bima-container {
     width: auto;
   }
   .chat-bima-container1 {
-    width: 84px;
+    width: 51px;
     box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.61);
   }
   .chat-bima-text {
