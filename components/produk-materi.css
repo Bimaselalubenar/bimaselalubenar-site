@@ -97,7 +97,7 @@
 
 @media(max-width: 479px) {
   .produk-materi-container {
-    width: 165px;
+    width: 143px;
     height: auto;
     flex-wrap: wrap;
     flex-direction: row;

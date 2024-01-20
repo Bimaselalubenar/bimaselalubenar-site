@@ -97,7 +97,7 @@
 
 @media(max-width: 479px) {
   .produk-materi-container {
-    width: 165px;
+    width: 143px;
     height: auto;
     flex-wrap: wrap;
     flex-direction: row;
@@ -1056,7 +1056,7 @@
 }
 .materisocmed-container15 {
   gap: var(--dl-space-space-unit);
-  flex: 2;
+  flex: 0;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -1923,6 +1923,7 @@
   }
   .materisocmed-container15 {
     gap: var(--dl-space-space-unit);
+    flex: 0;
     align-items: flex-start;
     padding-left: var(--dl-space-space-halfunit);
     padding-right: var(--dl-space-space-halfunit);
