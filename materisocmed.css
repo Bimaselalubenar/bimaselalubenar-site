@@ -207,6 +207,9 @@
 .popmenu-root-class-name3 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
+.popmenu-root-class-name4 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
 @media(max-width: 479px) {
   .popmenu-container {
     width: auto;
@@ -221,6 +224,9 @@
     margin-bottom: var(--dl-space-space-halfunit);
   }
   .popmenu-root-class-name3 {
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .popmenu-root-class-name4 {
     margin-bottom: var(--dl-space-space-halfunit);
   }
 }
@@ -280,6 +286,9 @@
   margin-top: 240px;
 }
 .chat-bima-root-class-name2 {
+  margin-top: 240px;
+}
+.chat-bima-root-class-name3 {
   margin-top: 240px;
 }
 @media(max-width: 479px) {
@@ -1080,7 +1089,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: column;
   justify-content: center;
   background-color: #4e50fb;
@@ -1112,9 +1121,13 @@
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
+  transition: 0.3s;
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
+}
+.materisocmed-container19:hover {
+  background-color: #fff8f8;
 }
 .materisocmed-container20 {
   flex: 0 0 auto;
@@ -1163,7 +1176,7 @@
   color: #ffffff;
   font-size: 10px;
 }
-.materisocmed-icon2 {
+.materisocmed-icon02 {
   fill: #ffffff;
   width: 15px;
   height: auto;
@@ -1174,9 +1187,13 @@
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
+  transition: 0.3s;
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
+}
+.materisocmed-container23:hover {
+  background-color: #fff8f8;
 }
 .materisocmed-container24 {
   flex: 0 0 auto;
@@ -1225,7 +1242,141 @@
   color: #ffffff;
   font-size: 10px;
 }
-.materisocmed-icon4 {
+.materisocmed-icon04 {
+  fill: #ffffff;
+  width: 15px;
+  height: auto;
+}
+.materisocmed-container27 {
+  width: 100%;
+  display: flex;
+  margin-top: var(--dl-space-space-halfunit);
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.materisocmed-container28 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.materisocmed-container28:hover {
+  background-color: #fff8f8;
+}
+.materisocmed-container29 {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-width: 3px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-size: cover;
+  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/3.%20bukti%20apa%20saja%20yang%20di%20lampirkan%20dalam%20laporan/11.png?updatedAt=1706116463268');
+}
+.materisocmed-container30 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.materisocmed-navlink2 {
+  display: contents;
+}
+.materisocmed-container31 {
+  display: flex;
+  transition: 0.5s;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  padding-bottom: 4px;
+  justify-content: flex-start;
+  text-decoration: none;
+  background-color: #629fc6;
+}
+.materisocmed-container31:hover {
+  gap: var(--dl-space-space-halfunit);
+}
+.materisocmed-text38 {
+  color: #ffffff;
+  font-size: 10px;
+}
+.materisocmed-icon06 {
+  fill: #ffffff;
+  width: 15px;
+  height: auto;
+}
+.materisocmed-container32 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.materisocmed-container32:hover {
+  background-color: #fff8f8;
+}
+.materisocmed-container33 {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-width: 3px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-size: cover;
+  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+}
+.materisocmed-container34 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.materisocmed-navlink3 {
+  display: contents;
+}
+.materisocmed-container35 {
+  display: flex;
+  transition: 0.5s;
+  align-items: center;
+  padding-top: 4px;
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  padding-bottom: 4px;
+  justify-content: flex-start;
+  text-decoration: none;
+  background-color: #629fc6;
+}
+.materisocmed-container35:hover {
+  gap: var(--dl-space-space-halfunit);
+}
+.materisocmed-text40 {
+  color: #ffffff;
+  font-size: 10px;
+}
+.materisocmed-icon08 {
   fill: #ffffff;
   width: 15px;
   height: auto;
@@ -1251,7 +1402,7 @@
   height: auto;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.materisocmed-text37 {
+.materisocmed-text41 {
   font-style: normal;
   font-weight: 800;
 }
@@ -1279,7 +1430,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text38 {
+.materisocmed-text42 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
   font-size: 12px;
@@ -1305,7 +1456,7 @@
   height: auto;
   border-radius: var(--dl-radius-radius-radius8);
 }
-.materisocmed-text39 {
+.materisocmed-text43 {
   font-style: normal;
   font-weight: 800;
 }
@@ -1333,7 +1484,7 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #07ff00;
 }
-.materisocmed-text40 {
+.materisocmed-text44 {
   color: rgb(0, 0, 0);
   width: Size-XSmall;
   font-size: 12px;
@@ -1369,7 +1520,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.materisocmed-text41 {
+.materisocmed-text45 {
   font-size: 18px;
   font-style: normal;
   font-family: "Poppins";
@@ -1379,7 +1530,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-container27 {
+.materisocmed-container36 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -1432,7 +1583,7 @@
 .materisocmed-button09:hover {
   background-color: #46cc06;
 }
-.materisocmed-container28 {
+.materisocmed-container37 {
   flex: 0 0 auto;
   width: 100%;
   height: 100%;
@@ -1448,14 +1599,14 @@
   max-width: auto;
   object-fit: cover;
 }
-.materisocmed-container29 {
+.materisocmed-container38 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.materisocmed-text45 {
+.materisocmed-text49 {
   font-weight: 700;
 }
 @media(max-width: 991px) {
@@ -1877,6 +2028,7 @@
   .materisocmed-text21 {
     font-size: 12px;
     font-style: inherit;
+    text-align: left;
     font-family: Poppins;
     font-weight: 600;
     line-height: 1.15;
@@ -1945,8 +2097,34 @@
     flex: 0;
     width: 100%;
   }
+  .materisocmed-container20 {
+    width: 130px;
+    height: 130px;
+  }
   .materisocmed-container23 {
     width: 100%;
+  }
+  .materisocmed-container24 {
+    width: 130px;
+    height: 130px;
+  }
+  .materisocmed-container27 {
+    flex-direction: column;
+  }
+  .materisocmed-container28 {
+    flex: 0;
+    width: 100%;
+  }
+  .materisocmed-container29 {
+    width: 130px;
+    height: 130px;
+  }
+  .materisocmed-container32 {
+    width: 100%;
+  }
+  .materisocmed-container33 {
+    width: 130px;
+    height: 130px;
   }
   .materisocmed-video {
     border-radius: var(--dl-radius-radius-radius8);
@@ -1966,7 +2144,7 @@
     height: auto;
     padding: 5px;
   }
-  .materisocmed-text41 {
+  .materisocmed-text45 {
     font-size: 18px;
     font-style: normal;
     font-family: Poppins;

@@ -71,6 +71,9 @@
 .popmenu-root-class-name3 {
   margin-bottom: var(--dl-space-space-halfunit);
 }
+.popmenu-root-class-name4 {
+  margin-bottom: var(--dl-space-space-halfunit);
+}
 @media(max-width: 479px) {
   .popmenu-container {
     width: auto;
@@ -85,6 +88,9 @@
     margin-bottom: var(--dl-space-space-halfunit);
   }
   .popmenu-root-class-name3 {
+    margin-bottom: var(--dl-space-space-halfunit);
+  }
+  .popmenu-root-class-name4 {
     margin-bottom: var(--dl-space-space-halfunit);
   }
 }
@@ -146,6 +152,9 @@
 .chat-bima-root-class-name2 {
   margin-top: 240px;
 }
+.chat-bima-root-class-name3 {
+  margin-top: 240px;
+}
 @media(max-width: 479px) {
   .chat-bima-container {
     width: auto;
@@ -170,6 +179,40 @@
   background-color: #154c9a;
 }
 .cetak-bukti-pembayaran-fbads-container1 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: 479px;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #7c0375;
+}
+.cetak-bukti-pembayaran-fbads-navlink {
+  display: contents;
+}
+.cetak-bukti-pembayaran-fbads-container2 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-decoration: none;
+}
+.cetak-bukti-pembayaran-fbads-icon {
+  fill: #ffffff;
+  width: 22px;
+  height: 22px;
+}
+.cetak-bukti-pembayaran-fbads-text {
+  color: #ffffff;
+  font-style: normal;
+  font-weight: 700;
+}
+.cetak-bukti-pembayaran-fbads-container3 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -203,7 +246,7 @@
   width: 100%;
   object-fit: cover;
 }
-.cetak-bukti-pembayaran-fbads-container2 {
+.cetak-bukti-pembayaran-fbads-container4 {
   gap: var(--dl-space-space-halfunit);
   flex: 0 0 auto;
   width: 100%;
@@ -218,7 +261,7 @@
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.cetak-bukti-pembayaran-fbads-text {
+.cetak-bukti-pembayaran-fbads-text1 {
   color: #ffffff;
   font-size: 12px;
   font-style: normal;
@@ -234,7 +277,7 @@
 .cetak-bukti-pembayaran-fbads-link {
   display: contents;
 }
-.cetak-bukti-pembayaran-fbads-icon {
+.cetak-bukti-pembayaran-fbads-icon3 {
   fill: #ffffff;
   width: 35px;
   height: 35px;
@@ -260,7 +303,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.cetak-bukti-pembayaran-fbads-text1 {
+.cetak-bukti-pembayaran-fbads-text2 {
   color: #ffffff;
   font-size: 18px;
   font-style: normal;
@@ -271,7 +314,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.cetak-bukti-pembayaran-fbads-container3 {
+.cetak-bukti-pembayaran-fbads-container5 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -325,7 +368,7 @@
   background-color: #46cc06;
 }
 @media(max-width: 991px) {
-  .cetak-bukti-pembayaran-fbads-text {
+  .cetak-bukti-pembayaran-fbads-text1 {
     color: rgb(0, 0, 0);
     font-size: 12px;
     font-style: normal;
@@ -337,16 +380,16 @@
   }
 }
 @media(max-width: 479px) {
-  .cetak-bukti-pembayaran-fbads-text {
+  .cetak-bukti-pembayaran-fbads-text1 {
     color: #ffffff;
     font-size: 12px;
     border-color: #ffffff;
   }
-  .cetak-bukti-pembayaran-fbads-icon {
+  .cetak-bukti-pembayaran-fbads-icon3 {
     fill: #ffffff;
     border-color: #ffffff;
   }
-  .cetak-bukti-pembayaran-fbads-text1 {
+  .cetak-bukti-pembayaran-fbads-text2 {
     color: #ffffff;
     font-size: 18px;
     font-style: normal;

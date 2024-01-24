@@ -55,6 +55,9 @@
 .chat-bima-root-class-name2 {
   margin-top: 240px;
 }
+.chat-bima-root-class-name3 {
+  margin-top: 240px;
+}
 @media(max-width: 479px) {
   .chat-bima-container {
     width: auto;
