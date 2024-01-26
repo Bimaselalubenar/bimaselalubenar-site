@@ -1,0 +1,37 @@
+.tag-check {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  position: relative;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #5e00ff;
+}
+.tag-icon {
+  fill: #ffffff;
+  width: 18px;
+  height: 18px;
+}
+.tag-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Poppins;
+  line-height: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .tag-text {
+    line-height: 21px;
+  }
+}
