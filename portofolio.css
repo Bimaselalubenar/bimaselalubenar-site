@@ -937,6 +937,9 @@
   line-height: 21px;
   text-decoration: none;
 }
+.footer-root-class-name {
+  margin-top: var(--dl-space-space-threeunits);
+}
 
 
 
@@ -948,8 +951,8 @@
   margin-top: var(--dl-space-space-twounits);
 }
 
-.footer-root-class-name {
-  margin-top: var(--dl-space-space-threeunits);
+.footer-root-class-name8 {
+  margin-top: var(--dl-space-space-twounits);
 }
 @media(max-width: 991px) {
   .footer-footer {
