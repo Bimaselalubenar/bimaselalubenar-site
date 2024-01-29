@@ -13,12 +13,19 @@ module.exports = {
           "500": "#BF2626",
           "700": "#E14747"
         },
+        "grays": {
+          "white100": "#FFFFFF"
+        },
         "Gray": {
           "500": "#595959",
           "700": "#999999",
           "900": "#D9D9D9",
           "Black": "#000000",
           "White": "#FFFFFF"
+        },
+        "backgrounds": {
+          "gray": "#f7f4f2ff",
+          "primary": "#fa7930ff"
         },
         "Success": {
           "300": "#199033",
