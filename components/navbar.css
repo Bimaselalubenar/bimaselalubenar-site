@@ -276,9 +276,6 @@
   flex-direction: row;
   justify-content: space-between;
 }
-.navbar-navlink {
-  display: contents;
-}
 .navbar-image {
   width: 52px;
   height: 41px;

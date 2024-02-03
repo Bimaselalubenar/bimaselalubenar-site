@@ -85,7 +85,18 @@
   height: var(--dl-size-size-xsmall);
 }
 .navbar1-primary-btn {
-  background-color: #001eff;
+  color: #ffffff;
+  cursor: pointer;
+  font-style: normal;
+  margin-top: var(--dl-space-space-twounits);
+  font-weight: 500;
+  padding-top: var(--dl-space-space-halfunit);
+  border-width: 0px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgb(0, 30, 255);
 }
 .navbar1-social-media {
   flex: 0 0 auto;
@@ -160,6 +171,14 @@
 @media(max-width: 767px) {
   .navbar1-nav {
     display: none;
+  }
+  .navbar1-icon {
+    width: 30px;
+    height: 30px;
+  }
+  .navbar1-menu-close {
+    width: 30px;
+    height: 30px;
   }
   .navbar1-primary-btn1 {
     display: none;

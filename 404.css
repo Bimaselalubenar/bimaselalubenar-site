@@ -40,9 +40,6 @@
   color: #000000;
   margin-top: var(--dl-space-space-unit);
 }
-.eror-navlink {
-  display: contents;
-}
 .eror-text2 {
   color: #000000;
   margin-top: var(--dl-space-space-twounits);
