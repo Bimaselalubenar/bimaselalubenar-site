@@ -1,13 +1,22 @@
-.form-update-sales-online-container {
+.salesonlineupdate-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.salesonlineupdate-container1 {
   top: 0px;
   width: 100%;
   display: flex;
   position: absolute;
   align-items: center;
-  padding-top: var(--dl-space-space-threeunits);
+  padding-top: var(--dl-space-space-twounits);
   justify-content: center;
 }
-.form-update-sales-online-container1 {
+.salesonlineupdate-container2 {
   top: 0px;
   left: 0px;
   right: 0px;
@@ -22,14 +31,14 @@
   justify-content: flex-start;
   background-image: linear-gradient(to right, #bdc3c7 0%, #2c3e50 100%);
 }
-.form-update-sales-online-container2 {
+.salesonlineupdate-container3 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
 }
-.form-update-sales-online-container3 {
+.salesonlineupdate-container4 {
   width: 100%;
   display: flex;
   position: relative;
@@ -37,7 +46,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.form-update-sales-online-text {
+.salesonlineupdate-text {
   color: #ffffff;
   font-size: 18px;
   font-style: normal;
@@ -49,7 +58,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.form-update-sales-online-container4 {
+.salesonlineupdate-container5 {
   flex: 0 0 auto;
   width: 100%;
   display: flex;
@@ -58,7 +67,7 @@
   padding-right: var(--dl-space-space-twounits);
   flex-direction: column;
 }
-.form-update-sales-online-form {
+.salesonlineupdate-form {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -79,10 +88,10 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.form-update-sales-online-text1 {
+.salesonlineupdate-text1 {
   margin-left: var(--dl-space-space-unit);
 }
-.form-update-sales-online-select {
+.salesonlineupdate-select {
   flex: 1;
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -90,10 +99,10 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #f5f5f5;
 }
-.form-update-sales-online-text2 {
+.salesonlineupdate-text2 {
   margin-left: var(--dl-space-space-unit);
 }
-.form-update-sales-online-textinput {
+.salesonlineupdate-textinput {
   flex: 1;
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -101,10 +110,10 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #f5f5f5;
 }
-.form-update-sales-online-text3 {
+.salesonlineupdate-text3 {
   margin-left: var(--dl-space-space-unit);
 }
-.form-update-sales-online-textinput1 {
+.salesonlineupdate-textinput1 {
   flex: 1;
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -112,10 +121,10 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #f5f5f5;
 }
-.form-update-sales-online-text4 {
+.salesonlineupdate-text4 {
   margin-left: var(--dl-space-space-unit);
 }
-.form-update-sales-online-textinput2 {
+.salesonlineupdate-textinput2 {
   flex: 1;
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -123,10 +132,10 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #f5f5f5;
 }
-.form-update-sales-online-text5 {
+.salesonlineupdate-text5 {
   margin-left: var(--dl-space-space-unit);
 }
-.form-update-sales-online-textinput3 {
+.salesonlineupdate-textinput3 {
   flex: 1;
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -134,15 +143,15 @@
   border-radius: var(--dl-radius-radius-radius8);
   background-color: #f5f5f5;
 }
-.form-update-sales-online-text6 {
+.salesonlineupdate-text6 {
   margin-left: var(--dl-space-space-unit);
 }
-.form-update-sales-online-container5 {
+.salesonlineupdate-container6 {
   width: 100%;
   display: flex;
   flex-direction: row;
 }
-.form-update-sales-online-container6 {
+.salesonlineupdate-container7 {
   width: auto;
   height: 100%;
   padding: var(--dl-space-space-halfunit);
@@ -153,12 +162,12 @@
   border-top-right-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.form-update-sales-online-icon {
+.salesonlineupdate-icon {
   fill: #ffffff;
   width: 28px;
   height: 28px;
 }
-.form-update-sales-online-textinput4 {
+.salesonlineupdate-textinput4 {
   flex: 1;
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -168,16 +177,16 @@
   border-top-left-radius: 0px;
   border-bottom-left-radius: 0px;
 }
-.form-update-sales-online-container7 {
+.salesonlineupdate-container8 {
   display: flex;
   padding-left: var(--dl-space-space-unit);
   flex-direction: row;
 }
-.form-update-sales-online-text7 {
+.salesonlineupdate-text7 {
   font-size: 12px;
   margin-left: var(--dl-space-space-unit);
 }
-.form-update-sales-online-button {
+.salesonlineupdate-button {
   width: 100%;
   cursor: pointer;
   height: auto;
@@ -195,49 +204,32 @@
   text-decoration: none;
   background-color: #fbea00;
 }
-.form-update-sales-online-button:hover {
+.salesonlineupdate-button:hover {
   background-color: #46cc06;
 }
-
-
-
 @media(max-width: 479px) {
-  .form-update-sales-online-text {
+  .salesonlineupdate-text {
     color: #ffffff;
   }
-  .form-update-sales-online-container4 {
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-halfunit);
-  }
-  .form-update-sales-online-select {
+  .salesonlineupdate-select {
     flex: 1;
   }
-  .form-update-sales-online-textinput {
+  .salesonlineupdate-textinput {
     flex: 1;
   }
-  .form-update-sales-online-textinput1 {
+  .salesonlineupdate-textinput1 {
     flex: 1;
   }
-  .form-update-sales-online-textinput2 {
+  .salesonlineupdate-textinput2 {
     flex: 1;
   }
-  .form-update-sales-online-textinput3 {
+  .salesonlineupdate-textinput3 {
     flex: 1;
   }
-  .form-update-sales-online-container6 {
+  .salesonlineupdate-container7 {
     flex: 0;
   }
-  .form-update-sales-online-textinput4 {
+  .salesonlineupdate-textinput4 {
     flex: 1;
   }
-}
-
-.salesonlineupdate-container {
-  width: 100%;
-  display: flex;
-  overflow: auto;
-  min-height: 100vh;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
 }
