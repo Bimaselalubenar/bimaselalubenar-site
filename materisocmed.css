@@ -1283,11 +1283,11 @@
   display: inline-flex;
   max-width: 1000px;
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-unit);
   border-radius: var(--dl-radius-radius-radius8);
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
   background-color: #fff900;
 }
@@ -2184,6 +2184,14 @@
   }
   .materisocmed-text17 {
     align-self: center;
+  }
+  .materisocmed-text23 {
+    color: rgb(255, 255, 255);
+    font-size: 14px;
+    font-family: Poppins;
+    font-weight: 400;
+    line-height: 1.3;
+    text-decoration: none;
   }
   .materisocmed-container18 {
     gap: var(--dl-space-space-unit);
