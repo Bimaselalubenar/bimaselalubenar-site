@@ -91,10 +91,22 @@
   width: 15px;
   height: auto;
 }
-
-
-
-
+.produk-materi-root-class-name {
+  flex: 1;
+  width: 100%;
+}
+.produk-materi-root-class-name1 {
+  flex: 1;
+  width: 100%;
+}
+.produk-materi-root-class-name3 {
+  flex: 1;
+  width: 100%;
+}
+.produk-materi-root-class-name4 {
+  flex: 1;
+  width: 100%;
+}
 @media(max-width: 479px) {
   .produk-materi-container {
     width: 143px;
