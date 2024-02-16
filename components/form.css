@@ -85,6 +85,9 @@
 .form-root-class-name {
   max-width: 1000px;
 }
+.form-root-class-name1 {
+  max-width: 1000px;
+}
 @media(max-width: 479px) {
   .form-text {
     font-size: 18px;
