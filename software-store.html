@@ -1834,41 +1834,6 @@
         duration: 1000
       });
     </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-          $("form").submit(function() {
-              // Ambil data dari form
-              var nama = $("#nama").val();
-              var pesan = $("#pesan").val();
-
-              // Kirim data ke API WhatsApp
-              $.ajax({
-                  url: "/api/whatsapp/send",
-                  type: "post",
-                  data: {
-                      nama: nama,
-                      nomor: $("#nomor").val(),
-                      pesan: pesan
-                  },
-                  dataType: "json",
-                  success: function(data) {
-                      // Cek apakah pengiriman pesan berhasil
-                      if (data.success) {
-                          // Tampilkan pesan sukses
-                          alert("Pesan berhasil dikirim!");
-                      } else {
-                          // Tampilkan pesan gagal
-                          alert("Pesan gagal dikirim!");
-                      }
-                  }
-              });
-
-              // Batalkan pengiriman form
-              return false;
-          });
-      });
-    </script>
     <script
       src="https://static.elfsight.com/platform/platform.js"
       data-use-service-core=""

@@ -248,10 +248,9 @@
           name="Salesonlineregister"
           action="sukses-kirim"
           method="POST"
-          autocomplete="on"
-          data-netlify="true"
           enctype="multipart/form-data"
-          id="formsalesonlineupdate"
+          autocomplete="off"
+          data-netlify="true"
           class="salesonlineupdate-form"
         >
           <label class="salesonlineupdate-text1">Cabang MPM Motor</label>
@@ -386,10 +385,10 @@
           <input
             type="text"
             name="NamaSalesLama"
+            multiple="Namasaleslama"
             required=""
             placeholder="Nama sales lama"
             autocomplete="name"
-            multiple="Namasaleslama"
             class="salesonlineupdate-textinput H5-12px input"
           />
           <label class="salesonlineupdate-text3">Nama sales baru</label>
@@ -406,9 +405,9 @@
           </label>
           <input
             type="text"
+            name="Lamabergabung"
             required=""
             placeholder="1 Tahun/ Bulan"
-            name="Lamabergabung"
             class="salesonlineupdate-textinput2 H5-12px input"
           />
           <label class="salesonlineupdate-text5">
@@ -510,41 +509,6 @@
     <script>
       AOS.init({
         duration: 1000
-      });
-    </script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script>
-      $(document).ready(function() {
-          $("form").submit(function() {
-              // Ambil data dari form
-              var nama = $("#nama").val();
-              var pesan = $("#pesan").val();
-
-              // Kirim data ke API WhatsApp
-              $.ajax({
-                  url: "/api/whatsapp/send",
-                  type: "post",
-                  data: {
-                      nama: nama,
-                      nomor: $("#nomor").val(),
-                      pesan: pesan
-                  },
-                  dataType: "json",
-                  success: function(data) {
-                      // Cek apakah pengiriman pesan berhasil
-                      if (data.success) {
-                          // Tampilkan pesan sukses
-                          alert("Pesan berhasil dikirim!");
-                      } else {
-                          // Tampilkan pesan gagal
-                          alert("Pesan gagal dikirim!");
-                      }
-                  }
-              });
-
-              // Batalkan pengiriman form
-              return false;
-          });
       });
     </script>
     <script

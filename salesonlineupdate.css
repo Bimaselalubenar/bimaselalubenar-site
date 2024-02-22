@@ -52,7 +52,6 @@
   box-shadow: 5px 5px 15px 0px rgba(82, 82, 82, 0.28);
   padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-unit);
-  border-radius: var(--dl-radius-radius-radius4);
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-twounits);
