@@ -1548,7 +1548,7 @@
   text-decoration: none;
 }
 .materisocmed-container29 {
-  gap: var(--dl-space-space-halfunit);
+  gap: var(--dl-space-space-unit);
   flex: 0;
   width: 100%;
   display: flex;
@@ -1559,14 +1559,14 @@
   justify-content: center;
 }
 .materisocmed-container30 {
-  gap: var(--dl-space-space-halfunit);
+  gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
   flex-direction: row;
   justify-content: center;
 }
 .materisocmed-container31 {
-  gap: var(--dl-space-space-halfunit);
+  gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
   flex-direction: row;
