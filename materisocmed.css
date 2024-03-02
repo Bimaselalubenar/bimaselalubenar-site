@@ -1,151 +1,3 @@
-.produk-materi-container {
-  gap: var(--dl-space-space-halfunit);
-  flex: 0 0 auto;
-  width: 200px;
-  display: flex;
-  position: relative;
-  flex-wrap: wrap;
-  align-items: center;
-  border-radius: var(--dl-radius-radius-radius8);
-  flex-direction: column;
-  justify-content: center;
-  background-color: #ffffff;
-}
-.produk-materi-image {
-  width: 100%;
-  cursor: pointer;
-  height: auto;
-  object-fit: cover;
-  border-radius: var(--dl-radius-radius-radius8);
-}
-.produk-materi-container1 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  padding-left: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
-  justify-content: center;
-}
-.produk-materi-container2 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.produk-materi-text {
-  width: 100%;
-  font-size: 6px;
-  font-style: normal;
-  text-align: left;
-  font-weight: 600;
-}
-.produk-materi-text3 {
-  width: 100%;
-  font-size: 6px;
-  align-self: center;
-  text-align: right;
-}
-.produk-materi-text4 {
-  width: 100%;
-  font-size: 12px;
-  align-self: center;
-  font-style: normal;
-  text-align: left;
-  font-weight: 600;
-}
-.produk-materi-link {
-  display: contents;
-}
-.produk-materi-container3 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  cursor: pointer;
-  height: 31px;
-  display: flex;
-  padding: 5px;
-  transition: 0.5s;
-  align-items: center;
-  border-radius: var(--dl-radius-radius-radius8);
-  flex-direction: row;
-  justify-content: center;
-  text-decoration: none;
-  background-color: #fff700;
-}
-.produk-materi-container3:hover {
-  transform: scale(105%);
-  box-shadow: 0px 3px 0px 0px #6cc400,0px 3px 10px 0px #edff1b;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: #07ff00;
-}
-.produk-materi-text5 {
-  color: var(--dl-color-gray-black);
-  font-size: 10px;
-  font-style: normal;
-  font-weight: 500;
-}
-.produk-materi-icon {
-  width: 15px;
-  height: auto;
-}
-.produk-materi-root-class-name {
-  flex: 1;
-  width: 100%;
-}
-.produk-materi-root-class-name1 {
-  flex: 1;
-  width: 100%;
-}
-.produk-materi-root-class-name3 {
-  flex: 1;
-  width: 100%;
-}
-.produk-materi-root-class-name4 {
-  flex: 1;
-  width: 100%;
-}
-@media(max-width: 479px) {
-  .produk-materi-container {
-    width: 143px;
-    height: auto;
-    flex-wrap: wrap;
-    flex-direction: row;
-    background-color: #f7f7f7;
-  }
-  .produk-materi-image {
-    height: auto;
-  }
-  .produk-materi-container1 {
-    gap: 5px;
-  }
-  .produk-materi-container2 {
-    flex-direction: row;
-  }
-  .produk-materi-text {
-    font-size: 6px;
-  }
-  .produk-materi-text3 {
-    font-size: 6px;
-    text-align: right;
-  }
-  .produk-materi-text4 {
-    font-size: 8px;
-  }
-  .produk-materi-container3 {
-    gap: var(--dl-space-space-halfunit);
-    width: 100%;
-    height: auto;
-    padding: 5px;
-  }
-  .produk-materi-text5 {
-    width: auto;
-    font-size: 10px;
-  }
-}
-
 .form-container {
   width: 100%;
   display: flex;
@@ -686,7 +538,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-link01 {
+.materisocmed-navlink {
   display: contents;
 }
 .materisocmed-button01 {
@@ -763,7 +615,7 @@
   text-transform: capitalize;
   text-decoration: none;
 }
-.materisocmed-link02 {
+.materisocmed-navlink01 {
   display: contents;
 }
 .materisocmed-button02 {
@@ -840,7 +692,7 @@
   text-transform: capitalize;
   text-decoration: none;
 }
-.materisocmed-link03 {
+.materisocmed-navlink02 {
   display: contents;
 }
 .materisocmed-button03 {
@@ -917,7 +769,7 @@
   text-transform: capitalize;
   text-decoration: none;
 }
-.materisocmed-link04 {
+.materisocmed-navlink03 {
   display: contents;
 }
 .materisocmed-button04 {
@@ -998,7 +850,7 @@
 .materisocmed-text21 {
   font-style: normal;
 }
-.materisocmed-navlink {
+.materisocmed-navlink04 {
   display: contents;
 }
 .materisocmed-container17 {
@@ -1050,7 +902,7 @@
   line-height: 1.3;
   text-decoration: none;
 }
-.materisocmed-navlink1 {
+.materisocmed-navlink05 {
   color: #000000;
   padding: var(--dl-space-space-unit);
   font-style: normal;
@@ -1120,7 +972,7 @@
   text-transform: capitalize;
   text-decoration: none;
 }
-.materisocmed-link05 {
+.materisocmed-link1 {
   display: contents;
 }
 .materisocmed-button05 {
@@ -1203,7 +1055,7 @@
   align-items: flex-start;
   flex-direction: row;
 }
-.materisocmed-link06 {
+.materisocmed-link2 {
   display: contents;
 }
 .materisocmed-button06 {
@@ -1230,7 +1082,7 @@
   color: rgb(0, 0, 0);
   width: Size-XSmall;
 }
-.materisocmed-link07 {
+.materisocmed-link3 {
   display: contents;
 }
 .materisocmed-button07 {
@@ -1285,7 +1137,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-link08 {
+.materisocmed-link4 {
   display: contents;
 }
 .materisocmed-icon04 {
@@ -1418,7 +1270,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-link09 {
+.materisocmed-link5 {
   display: contents;
 }
 .materisocmed-button08 {
@@ -1493,7 +1345,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-link10 {
+.materisocmed-link6 {
   display: contents;
 }
 .materisocmed-button09 {
@@ -1521,68 +1373,16 @@
   width: Size-XSmall;
 }
 .materisocmed-container28 {
-  gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
   height: auto;
   display: flex;
-  flex-wrap: wrap;
   max-width: 1000px;
   align-items: center;
-  padding-top: var(--dl-space-space-threeunits);
-  padding-left: 0px;
-  margin-bottom: var(--dl-space-space-twounits);
-  padding-right: 0px;
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
   justify-content: center;
-}
-.materisocmed-text37 {
-  font-size: 18px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Poppins";
-  font-weight: 600;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
 }
 .materisocmed-container29 {
-  gap: var(--dl-space-space-unit);
-  flex: 0;
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  max-width: 900px;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: center;
-}
-.materisocmed-container30 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: center;
-}
-.materisocmed-container31 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: center;
-}
-.materisocmed-container32 {
-  flex: 0 0 auto;
-  width: 100%;
-  height: auto;
-  display: flex;
-  max-width: 1000px;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.materisocmed-container33 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -1592,7 +1392,7 @@
   justify-content: center;
   background-color: #4e50fb;
 }
-.materisocmed-text38 {
+.materisocmed-text37 {
   color: #ffffff;
   font-size: 18px;
   font-style: normal;
@@ -1605,13 +1405,79 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-container34 {
+.materisocmed-container30 {
   width: 100%;
   display: flex;
   margin-top: var(--dl-space-space-halfunit);
   align-items: center;
   flex-direction: row;
   justify-content: center;
+}
+.materisocmed-container31 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  transition: 0.3s;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.materisocmed-container31:hover {
+  background-color: #fff8f8;
+}
+.materisocmed-container32 {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-width: 3px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-size: cover;
+  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/2.%20cara%20set%20budget%20iklan%20mulai%2050K/10.jpeg?updatedAt=1705564404450');
+}
+.materisocmed-container33 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.materisocmed-text40 {
+  font-weight: 700;
+}
+.materisocmed-navlink06 {
+  display: contents;
+}
+.materisocmed-container34 {
+  display: flex;
+  transition: 0.5s;
+  align-items: center;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: flex-start;
+  text-decoration: none;
+  background-color: #629fc6;
+}
+.materisocmed-container34:hover {
+  gap: var(--dl-space-space-halfunit);
+}
+.materisocmed-text41 {
+  color: #ffffff;
+  font-size: 10px;
+}
+.materisocmed-icon06 {
+  fill: #ffffff;
+  width: 15px;
+  height: auto;
 }
 .materisocmed-container35 {
   gap: var(--dl-space-space-unit);
@@ -1638,7 +1504,7 @@
   border-width: 3px;
   border-radius: var(--dl-radius-radius-radius8);
   background-size: cover;
-  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/2.%20cara%20set%20budget%20iklan%20mulai%2050K/10.jpeg?updatedAt=1705564404450');
+  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/1.%20Cara%20cetak%20bukti%20top%20up/1.png?updatedAt=1705546819565');
 }
 .materisocmed-container37 {
   gap: var(--dl-space-space-halfunit);
@@ -1647,10 +1513,10 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.materisocmed-text41 {
+.materisocmed-text44 {
   font-weight: 700;
 }
-.materisocmed-navlink2 {
+.materisocmed-navlink07 {
   display: contents;
 }
 .materisocmed-container38 {
@@ -1670,16 +1536,24 @@
 .materisocmed-container38:hover {
   gap: var(--dl-space-space-halfunit);
 }
-.materisocmed-text42 {
+.materisocmed-text46 {
   color: #ffffff;
   font-size: 10px;
 }
-.materisocmed-icon06 {
+.materisocmed-icon08 {
   fill: #ffffff;
   width: 15px;
   height: auto;
 }
 .materisocmed-container39 {
+  width: 100%;
+  display: flex;
+  margin-top: var(--dl-space-space-halfunit);
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.materisocmed-container40 {
   gap: var(--dl-space-space-unit);
   flex: 1;
   width: 100%;
@@ -1690,10 +1564,10 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.materisocmed-container39:hover {
+.materisocmed-container40:hover {
   background-color: #fff8f8;
 }
-.materisocmed-container40 {
+.materisocmed-container41 {
   flex: 0 0 auto;
   width: 150px;
   height: 150px;
@@ -1704,22 +1578,19 @@
   border-width: 3px;
   border-radius: var(--dl-radius-radius-radius8);
   background-size: cover;
-  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/1.%20Cara%20cetak%20bukti%20top%20up/1.png?updatedAt=1705546819565');
+  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/3.%20bukti%20apa%20saja%20yang%20di%20lampirkan%20dalam%20laporan/11.png?updatedAt=1706116463268');
 }
-.materisocmed-container41 {
+.materisocmed-container42 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.materisocmed-text45 {
-  font-weight: 700;
-}
-.materisocmed-navlink3 {
+.materisocmed-navlink08 {
   display: contents;
 }
-.materisocmed-container42 {
+.materisocmed-container43 {
   display: flex;
   transition: 0.5s;
   align-items: center;
@@ -1733,25 +1604,17 @@
   text-decoration: none;
   background-color: #629fc6;
 }
-.materisocmed-container42:hover {
+.materisocmed-container43:hover {
   gap: var(--dl-space-space-halfunit);
 }
-.materisocmed-text47 {
+.materisocmed-text48 {
   color: #ffffff;
   font-size: 10px;
 }
-.materisocmed-icon08 {
+.materisocmed-icon10 {
   fill: #ffffff;
   width: 15px;
   height: auto;
-}
-.materisocmed-container43 {
-  width: 100%;
-  display: flex;
-  margin-top: var(--dl-space-space-halfunit);
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
 }
 .materisocmed-container44 {
   gap: var(--dl-space-space-unit);
@@ -1778,7 +1641,7 @@
   border-width: 3px;
   border-radius: var(--dl-radius-radius-radius8);
   background-size: cover;
-  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/3.%20bukti%20apa%20saja%20yang%20di%20lampirkan%20dalam%20laporan/11.png?updatedAt=1706116463268');
+  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
 }
 .materisocmed-container46 {
   gap: var(--dl-space-space-halfunit);
@@ -1787,7 +1650,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.materisocmed-navlink4 {
+.materisocmed-navlink09 {
   display: contents;
 }
 .materisocmed-container47 {
@@ -1807,70 +1670,7 @@
 .materisocmed-container47:hover {
   gap: var(--dl-space-space-halfunit);
 }
-.materisocmed-text49 {
-  color: #ffffff;
-  font-size: 10px;
-}
-.materisocmed-icon10 {
-  fill: #ffffff;
-  width: 15px;
-  height: auto;
-}
-.materisocmed-container48 {
-  gap: var(--dl-space-space-unit);
-  flex: 1;
-  width: 100%;
-  display: flex;
-  padding: var(--dl-space-space-unit);
-  transition: 0.3s;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.materisocmed-container48:hover {
-  background-color: #fff8f8;
-}
-.materisocmed-container49 {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  box-shadow: 5px 5px 15px 0px #d4d4d4;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-width: 3px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-size: cover;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
-}
-.materisocmed-container50 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.materisocmed-navlink5 {
-  display: contents;
-}
-.materisocmed-container51 {
-  display: flex;
-  transition: 0.5s;
-  align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-halfunit);
-  justify-content: flex-start;
-  text-decoration: none;
-  background-color: #629fc6;
-}
-.materisocmed-container51:hover {
-  gap: var(--dl-space-space-halfunit);
-}
-.materisocmed-text51 {
+.materisocmed-text50 {
   color: #ffffff;
   font-size: 10px;
 }
@@ -1879,7 +1679,7 @@
   width: 15px;
   height: auto;
 }
-.materisocmed-container52 {
+.materisocmed-container48 {
   flex: 0 0 auto;
   width: 100%;
   height: 100%;
@@ -1895,14 +1695,14 @@
   max-width: auto;
   object-fit: cover;
 }
-.materisocmed-container53 {
+.materisocmed-container49 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.materisocmed-text55 {
+.materisocmed-text54 {
   font-weight: 700;
 }
 @media(max-width: 991px) {
@@ -1954,9 +1754,6 @@
     line-height: 1.15;
     text-transform: none;
     text-decoration: none;
-  }
-  .materisocmed-container28 {
-    flex-wrap: wrap;
   }
   .materisocmed-image12 {
     width: 360px;
@@ -2091,11 +1888,6 @@
   }
   .materisocmed-container27 {
     width: 293px;
-  }
-  .materisocmed-container28 {
-    flex-wrap: wrap;
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-halfunit);
   }
   .materisocmed-image12 {
     width: 384px;
@@ -2538,35 +2330,7 @@
   .materisocmed-text36 {
     font-size: 13px;
   }
-  .materisocmed-container28 {
-    gap: var(--dl-space-space-halfunit);
-    flex-wrap: wrap;
-    align-items: center;
-    padding-top: var(--dl-space-space-twounits);
-    flex-direction: column;
-    justify-content: center;
-  }
   .materisocmed-text37 {
-    font-size: 16px;
-    margin-bottom: var(--dl-space-space-halfunit);
-  }
-  .materisocmed-container29 {
-    gap: var(--dl-space-space-unit);
-    flex: 0;
-    align-items: flex-start;
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-halfunit);
-    justify-content: center;
-  }
-  .materisocmed-container30 {
-    flex: 1;
-    width: 100%;
-  }
-  .materisocmed-container31 {
-    flex: 1;
-    width: 100%;
-  }
-  .materisocmed-text38 {
     font-size: 18px;
     font-style: normal;
     font-family: Poppins;
@@ -2575,11 +2339,18 @@
     text-transform: none;
     text-decoration: none;
   }
-  .materisocmed-container34 {
+  .materisocmed-container30 {
     flex-direction: column;
   }
-  .materisocmed-container35 {
+  .materisocmed-container31 {
     flex: 0;
+    width: 100%;
+  }
+  .materisocmed-container32 {
+    width: 130px;
+    height: 130px;
+  }
+  .materisocmed-container35 {
     width: 100%;
   }
   .materisocmed-container36 {
@@ -2587,27 +2358,20 @@
     height: 130px;
   }
   .materisocmed-container39 {
-    width: 100%;
-  }
-  .materisocmed-container40 {
-    width: 130px;
-    height: 130px;
-  }
-  .materisocmed-container43 {
     flex-direction: column;
   }
-  .materisocmed-container44 {
+  .materisocmed-container40 {
     flex: 0;
     width: 100%;
   }
-  .materisocmed-container45 {
+  .materisocmed-container41 {
     width: 130px;
     height: 130px;
   }
-  .materisocmed-container48 {
+  .materisocmed-container44 {
     width: 100%;
   }
-  .materisocmed-container49 {
+  .materisocmed-container45 {
     width: 130px;
     height: 130px;
   }
