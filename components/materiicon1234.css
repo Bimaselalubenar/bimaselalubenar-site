@@ -9,16 +9,16 @@
   padding-top: var(--dl-space-space-unit);
   border-color: #eca700;
   border-width: 2px;
-  padding-left: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
   border-radius: 15px;
-  padding-right: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-unit);
   justify-content: space-between;
   background-color: #ffffff;
 }
 .materiicon1234-container:hover {
-  box-shadow: 5px 5px 10px 0px rgba(148, 148, 148, 0.35);
-  background-color: #efefef;
+  box-shadow: 5px 5px 15px 0px rgba(103, 103, 103, 0.26);
+  background-color: #ffffff;
 }
 .materiicon1234-container1 {
   display: flex;
@@ -37,7 +37,22 @@
   flex-direction: column;
   justify-content: center;
 }
+.materiicon1234-container3 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
 .materiicon1234-text1 {
+  color: #7c7c7c;
+  font-size: 10px;
+}
+.materiicon1234-text2 {
+  color: #7c7c7c;
+  font-size: 10px;
+}
+.materiicon1234-text3 {
   font-size: 10px;
 }
 .materiicon1234-link {
@@ -48,6 +63,8 @@
   transition: 0.3s;
   font-weight: 600;
   padding-top: var(--dl-space-space-halfunit);
+  border-color: #eca700;
+  border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
@@ -58,6 +75,8 @@
 .materiicon1234-link:hover {
   color: #eca700;
   box-shadow: 3px 3px 10px 0px #b1adad;
+  border-color: #eca700;
+  border-width: 2px;
   background-color: #ffffff;
 }
 @media(max-width: 1600px) {
@@ -85,8 +104,10 @@
 }
 @media(max-width: 479px) {
   .materiicon1234-container {
+    gap: var(--dl-space-space-halfunit);
     align-items: flex-start;
     flex-direction: column;
+    justify-content: flex-start;
     background-color: #ffffff;
   }
   .materiicon1234-container2 {

@@ -34,10 +34,9 @@
 }
 
 .navbar1-navbar-container {
-  top: 0;
   width: 100%;
   display: flex;
-  position: fixed;
+  position: initial;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;

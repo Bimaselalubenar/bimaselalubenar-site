@@ -180,6 +180,26 @@
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: space-between;
 }
+.navLink {
+  color: #ffffff;
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.navLink:hover {
+  opacity: 0.5;
+}
+.navLink1 {
+  color: #ffffff;
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 600;
+}
+.navLink1:hover {
+  opacity: 0.5;
+}
 .H4-16px {
   font-size: 16px;
   font-style: normal;
