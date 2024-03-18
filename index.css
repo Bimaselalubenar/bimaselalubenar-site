@@ -90,17 +90,7 @@
 .linknavbima-text6:hover {
   color: #929292;
 }
-.linknavbima-container1 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.linknavbima-icon {
-  width: 18px;
-  height: 18px;
-}
+
 
 
 
@@ -130,6 +120,9 @@
     margin-right: 0px;
     border-radius: 20px;
     margin-bottom: 0px;
+  }
+  .linknavbima-text1 {
+    text-decoration: none;
   }
   .linknavbima-company-container {
     padding: var(--dl-space-space-unit);
@@ -661,12 +654,26 @@
     flex: 1;
     width: 100%;
   }
+  .profile-textinput {
+    box-shadow: 5px 5px 15px 0px rgba(210, 210, 210, 0.79);
+  }
   .profile-container05 {
     flex: 1;
     width: 100%;
   }
   .profile-text3 {
     font-size: 12px;
+  }
+  .profile-container06 {
+    box-shadow: 5px 5px 15px 0px rgba(210, 210, 210, 0.79);
+  }
+  .profile-icon06 {
+    width: 35px;
+    height: 32px;
+  }
+  .profile-textinput1 {
+    height: 100%;
+    padding: var(--dl-space-space-halfunit);
   }
   .profile-container07 {
     flex-direction: column;

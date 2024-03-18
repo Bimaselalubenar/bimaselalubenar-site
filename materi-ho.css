@@ -403,14 +403,6 @@
 .footer-text1 {
   color: #000000;
 }
-.footer-link {
-  color: #000000;
-  width: 100%;
-  font-size: 14px;
-  max-width: 1200px;
-  line-height: 21px;
-  text-decoration: none;
-}
 .footer-root-class-name {
   margin-top: var(--dl-space-space-threeunits);
 }

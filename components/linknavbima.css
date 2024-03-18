@@ -90,17 +90,7 @@
 .linknavbima-text6:hover {
   color: #929292;
 }
-.linknavbima-container1 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.linknavbima-icon {
-  width: 18px;
-  height: 18px;
-}
+
 
 
 
@@ -130,6 +120,9 @@
     margin-right: 0px;
     border-radius: 20px;
     margin-bottom: 0px;
+  }
+  .linknavbima-text1 {
+    text-decoration: none;
   }
   .linknavbima-company-container {
     padding: var(--dl-space-space-unit);
