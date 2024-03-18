@@ -442,6 +442,10 @@
 @media(max-width: 767px) {
   .footer-footer {
     gap: var(--dl-space-space-twounits);
+    padding-top: var(--dl-space-space-threeunits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-threeunits);
   }
   .footer-content {
     gap: var(--dl-space-space-threeunits);
@@ -468,10 +472,11 @@
 }
 @media(max-width: 479px) {
   .footer-footer {
-    padding-top: var(--dl-space-space-unit);
+    height: auto;
+    padding-top: var(--dl-space-space-twounits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
   }
   .footer-content {
     align-self: flex-start;
