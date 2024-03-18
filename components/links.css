@@ -60,7 +60,6 @@
   color: #000000;
   cursor: pointer;
   transition: 0.5s;
-  text-decoration: none;
 }
 .links-link03:hover {
   fill: #ffffff;
@@ -170,7 +169,7 @@
 .links-container {
   gap: var(--dl-space-space-unit);
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   flex-direction: row;
   justify-content: center;
 }
@@ -199,7 +198,7 @@
 }
 .links-image {
   width: auto;
-  height: 24px;
+  height: 22px;
   object-fit: cover;
   text-decoration: none;
 }

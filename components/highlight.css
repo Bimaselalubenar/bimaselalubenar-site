@@ -29,7 +29,7 @@
   font-size: 18px;
   max-width: 535px;
   font-style: normal;
-  font-family: Poppins;
+  font-family: "Inter";
   font-weight: 600;
   line-height: 1.15;
   text-transform: none;
@@ -37,6 +37,27 @@
 }
 .highlight-text1 {
   max-width: 535px;
-  font-family: Poppins;
+  font-family: "Inter";
   line-height: 24px;
+}
+.highlight-root-class-name {
+  width: 100%;
+}
+.highlight-root-class-name1 {
+  width: 100%;
+}
+.highlight-root-class-name2 {
+  width: 100%;
+}
+.highlight-root-class-name3 {
+  width: 100%;
+}
+.highlight-root-class-name4 {
+  width: 100%;
+}
+.highlight-root-class-name5 {
+  width: 100%;
+}
+.highlight-root-class-name6 {
+  width: 100%;
 }

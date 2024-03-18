@@ -77,7 +77,13 @@
   box-shadow: 3px 3px 10px 0px #b1adad;
   border-color: #eca700;
   border-width: 2px;
+  animation-name: tada;
+  animation-delay: 0s;
   background-color: #ffffff;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease;
 }
 @media(max-width: 1600px) {
   .materiicon1234-container2 {

@@ -211,29 +211,12 @@
 }
 .profile-link1 {
   color: rgb(0, 30, 255);
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Inter";
-  font-weight: 500;
 }
 .profile-link2 {
   color: rgb(0, 30, 255);
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Inter";
-  font-weight: 500;
 }
 .profile-link3 {
   color: rgb(0, 30, 255);
-  font-style: normal;
-  font-weight: 500;
-}
-.profile-link4 {
-  color: rgb(0, 30, 255);
-  font-size: 16px;
-  font-style: normal;
-  font-family: "Inter";
-  font-weight: 500;
 }
 .profile-register {
   color: #ffffff;
@@ -453,12 +436,6 @@
   border-style: double;
   border-width: 25px;
   border-radius: var(--dl-radius-radius-round);
-  animation-name: bounceIn;
-  animation-delay: 0s;
-  animation-duration: 2s;
-  animation-direction: normal;
-  animation-iteration-count: 1;
-  animation-timing-function: ease;
 }
 .profile-container10 {
   flex: 1;
