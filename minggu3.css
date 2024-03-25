@@ -1,3 +1,48 @@
+.block-container {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  cursor: not-allowed;
+  height: 100vh;
+  display: flex;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(66, 66, 66, 0.46);
+}
+.block-text {
+  color: #ffffff;
+}
+.block-text1 {
+  color: rgb(255, 255, 255);
+}
+.block-root-class-name {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.block-root-class-name1 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.block-root-class-name2 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.block-root-class-name3 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.block-root-class-name4 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+
 .materiicon1234-container {
   flex: 0 0 auto;
   width: 100%;
@@ -133,6 +178,15 @@
   flex-direction: column;
 }
 .minggu3-container1 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  overflow: hidden;
+  overflow-y: scroll;
+  align-items: center;
+  flex-direction: column;
+}
+.minggu3-container2 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -149,7 +203,7 @@
 .minggu3-navlink {
   display: contents;
 }
-.minggu3-container2 {
+.minggu3-container3 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
@@ -177,7 +231,7 @@
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-unit);
 }
-.minggu3-container3 {
+.minggu3-container4 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -198,7 +252,7 @@
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-unit);
 }
-.minggu3-container4 {
+.minggu3-container5 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;

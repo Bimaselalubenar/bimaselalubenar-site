@@ -21,9 +21,6 @@
   justify-content: flex-start;
   background-color: #7c0375;
 }
-.salesonlineupdate-navlink {
-  display: contents;
-}
 .salesonlineupdate-container02 {
   gap: var(--dl-space-space-halfunit);
   display: flex;

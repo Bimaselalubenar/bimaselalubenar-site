@@ -12,6 +12,8 @@
   display: flex;
   overflow: unset;
   align-items: center;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   justify-content: flex-start;
   background-color: #ff0000;
@@ -52,7 +54,7 @@
   font-style: normal;
   margin-top: 0px;
   font-weight: 400;
-  margin-left: var(--dl-space-space-unit);
+  margin-left: 0px;
 }
 .header-artikel-link {
   display: contents;
@@ -67,7 +69,7 @@
   margin-top: 0px;
   font-weight: 400;
   padding-top: var(--dl-space-space-halfunit);
-  margin-right: var(--dl-space-space-unit);
+  margin-right: 0px;
   padding-left: var(--dl-space-space-unit);
   border-radius: var(--dl-radius-radius-radius8);
   padding-right: var(--dl-space-space-unit);
@@ -90,8 +92,6 @@
   .header-artikel-text {
     margin-left: 0px;
     margin-right: 0px;
-    padding-left: var(--dl-space-space-unit);
-    padding-right: var(--dl-space-space-unit);
   }
   .header-artikel-image {
     width: 100%;
@@ -104,14 +104,14 @@
     width: 100%;
   }
   .header-artikel-text1 {
-    margin-left: var(--dl-space-space-unit);
-    margin-right: var(--dl-space-space-unit);
+    margin-left: 0px;
+    margin-right: 0px;
     padding-left: 0px;
     padding-right: 0px;
   }
   .header-artikel-text2 {
-    margin-left: var(--dl-space-space-unit);
-    margin-right: var(--dl-space-space-unit);
+    margin-left: 0px;
+    margin-right: 0px;
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }

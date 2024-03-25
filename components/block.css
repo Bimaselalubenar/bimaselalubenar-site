@@ -1,0 +1,44 @@
+.block-container {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  cursor: not-allowed;
+  height: 100vh;
+  display: flex;
+  z-index: 1000;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(66, 66, 66, 0.46);
+}
+.block-text {
+  color: #ffffff;
+}
+.block-text1 {
+  color: rgb(255, 255, 255);
+}
+.block-root-class-name {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.block-root-class-name1 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.block-root-class-name2 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.block-root-class-name3 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
+.block-root-class-name4 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}
