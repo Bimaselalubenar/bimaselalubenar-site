@@ -290,7 +290,7 @@
   align-items: stretch;
   border-color: #D9D9D9;
   border-width: 1px;
-  border-radius: var(--dl-radius-radius-radius4);
+  border-radius: 20px;
   flex-direction: column;
   list-style-type: none;
   background-color: var(--dl-color-gray-white);
@@ -309,16 +309,18 @@
   display: inline-flex;
   transition: 0.3s;
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-halfunit);
   border-radius: var(--dl-radius-radius-radius4);
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .profile-dropdown-toggle1:hover {
   fill: #fff;
   color: #fff;
-  background-color: #595959;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  background-color: #f5f5f5;
 }
 .profile-text01 {
   color: rgb(0, 30, 255);
@@ -341,16 +343,18 @@
   display: inline-flex;
   transition: 0.3s;
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-halfunit);
   border-radius: var(--dl-radius-radius-radius4);
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .profile-dropdown-toggle2:hover {
   fill: #fff;
   color: #fff;
-  background-color: #595959;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  background-color: #f5f5f5;
 }
 .profile-text02 {
   color: rgb(0, 30, 255);
@@ -373,16 +377,18 @@
   display: inline-flex;
   transition: 0.3s;
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-halfunit);
   border-radius: var(--dl-radius-radius-radius4);
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .profile-dropdown-toggle3:hover {
   fill: #fff;
   color: #fff;
-  background-color: #595959;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  background-color: #f5f5f5;
 }
 .profile-text03 {
   color: rgb(0, 30, 255);
@@ -405,16 +411,18 @@
   display: inline-flex;
   transition: 0.3s;
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-halfunit);
   border-radius: var(--dl-radius-radius-radius4);
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .profile-dropdown-toggle4:hover {
   fill: #fff;
   color: #fff;
-  background-color: #595959;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  background-color: #f5f5f5;
 }
 .profile-text04 {
   color: rgb(0, 30, 255);
@@ -429,18 +437,6 @@
   font-style: normal;
   font-weight: 600;
   letter-spacing: 2px;
-}
-.profile-dropdown1 {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  border-radius: var(--dl-radius-radius-radius2);
-}
-.profile-dropdown2 {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  border-radius: var(--dl-radius-radius-radius2);
 }
 .profile-register {
   color: #ffffff;
