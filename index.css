@@ -733,6 +733,9 @@
   cursor: pointer;
   height: 24px;
 }
+.profile-container14 {
+  display: contents;
+}
 @media(max-width: 1600px) {
   .profile-container09 {
     width: 605px;
