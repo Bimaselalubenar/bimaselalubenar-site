@@ -26,13 +26,13 @@
   align-items: center;
   border-color: #bfbfbf;
   border-style: dashed;
-  border-width: 3px;
+  border-width: 0px;
   border-radius: 15px;
-  flex-direction: row;
+  flex-direction: column;
   background-size: cover;
   justify-content: center;
   text-decoration: none;
-  background-image: url('https://assets.evermos.com/public/original/q:100/evermos-production/product/model/1609e914-9f93-4655-88f3-887703333718');
+  background-image: url('https://assets.evermos.com/public/small/q:100/evermos-production/product/model/3f0b436f-2417-42c3-8151-1c2b3a5c2334');
 }
 .ads-text {
   top: 0px;
@@ -49,7 +49,30 @@
 }
 .ads-text1 {
   color: #bfbfbf;
+  display: none;
   z-index: 100;
+}
+.ads-text2 {
+  color: #ffffff;
+  z-index: 100;
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 15px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: #000000;
+}
+.ads-text2:hover {
+  color: #000000;
+  transform: scale(105%);
+  box-shadow: 5px 5px 15px 0px rgba(56, 56, 56, 0.44);
+  border-radius: 15px;
+  letter-spacing: 2px;
+  background-color: #ffffff;
 }
 .ads-link1 {
   display: contents;
@@ -66,15 +89,15 @@
   align-items: center;
   border-color: #bfbfbf;
   border-style: dashed;
-  border-width: 3px;
+  border-width: 0px;
   border-radius: 15px;
-  flex-direction: row;
+  flex-direction: column;
   background-size: cover;
   justify-content: center;
   text-decoration: none;
-  background-image: url('https://assets.evermos.com/public/original/q:100/evermos-production/product/model/d91357bf-b8e8-4373-a0ca-abd4ab702425');
+  background-image: url('https://assets.evermos.com/public/small/q:100/evermos-production/product/model/9d9ad2b3-4930-406d-916e-ac45d8abc378');
 }
-.ads-text2 {
+.ads-text3 {
   top: 0px;
   color: #ffffff;
   right: 0px;
@@ -87,7 +110,30 @@
   padding-bottom: 5px;
   background-color: #000000;
 }
-.ads-text3 {
+.ads-text4 {
   color: #bfbfbf;
+  display: none;
   z-index: 100;
+}
+.ads-text5 {
+  color: #ffffff;
+  z-index: 100;
+  font-style: normal;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 15px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: #000000;
+}
+.ads-text5:hover {
+  color: #000000;
+  transform: scale(105%);
+  box-shadow: 5px 5px 15px 0px rgba(56, 56, 56, 0.44);
+  border-radius: 15px;
+  letter-spacing: 2px;
+  background-color: #ffffff;
 }
