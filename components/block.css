@@ -46,21 +46,21 @@
 .block-text {
   color: #ffffff;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   max-width: auto;
   font-style: normal;
   text-align: center;
   font-family: "Inter";
   font-weight: 600;
   line-height: 1.15;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-unit);
   border-radius: 15px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
   text-transform: none;
   text-decoration: none;
-  background-color: #ff9800;
+  background-color: #000000;
 }
 .block-container3 {
   width: 100%;
@@ -68,28 +68,35 @@
 .block-container4 {
   display: contents;
 }
-.block-text1 {
-  color: #ffffff;
+.block-container5 {
   width: 100%;
-  padding: var(--dl-space-space-unit);
-  background-color: #c00101;
+  display: flex;
+  overflow: hidden;
+  align-items: center;
+  flex-direction: column;
+}
+.block-text1 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: var(--dl-space-space-halfunit);
+  background-color: rgb(192, 1, 1);
 }
 .block-link {
   color: #ffffff;
   width: auto;
   cursor: pointer;
-  font-size: 20px;
+  font-size: 16px;
   max-width: auto;
   font-style: normal;
   text-align: center;
   font-family: "Inter";
   font-weight: 600;
   line-height: 1.15;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-unit);
   border-radius: 15px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
   text-transform: none;
   text-decoration: none;
   background-color: #049f0c;
@@ -142,7 +149,11 @@
   .block-container2 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     flex-direction: column;
+  }
+  .block-text {
+    font-size: 16px;
+    background-color: #000000;
   }
 }
