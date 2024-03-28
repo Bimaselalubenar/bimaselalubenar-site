@@ -3,7 +3,7 @@
   width: 100%;
   cursor: not-allowed;
   height: 100vh;
-  display: none;
+  display: flex;
   z-index: 1000;
   position: relative;
   align-items: center;
@@ -29,7 +29,7 @@
   justify-content: center;
 }
 .block-container2 {
-  gap: var(--dl-space-space-twounits);
+  gap: var(--dl-space-space-unit);
   flex: 0;
   width: 100%;
   height: auto;
@@ -67,6 +67,32 @@
 }
 .block-container4 {
   display: contents;
+}
+.block-text1 {
+  color: #ffffff;
+  width: 100%;
+  padding: var(--dl-space-space-unit);
+  background-color: #c00101;
+}
+.block-link {
+  color: #ffffff;
+  width: auto;
+  cursor: pointer;
+  font-size: 20px;
+  max-width: auto;
+  font-style: normal;
+  text-align: center;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 1.15;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 15px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-transform: none;
+  text-decoration: none;
+  background-color: #049f0c;
 }
 .block-root-class-name {
   top: 0px;
@@ -152,10 +178,8 @@
   border-width: 0px;
   border-radius: 15px;
   flex-direction: column;
-  background-size: cover;
   justify-content: center;
   text-decoration: none;
-  background-image: url('https://assets.evermos.com/public/small/q:100/evermos-production/product/model/3f0b436f-2417-42c3-8151-1c2b3a5c2334');
 }
 .ads-text {
   top: 0px;
@@ -172,11 +196,11 @@
 }
 .ads-text1 {
   color: #bfbfbf;
-  display: none;
   z-index: 100;
 }
 .ads-text2 {
   color: #ffffff;
+  display: none;
   z-index: 100;
   font-style: normal;
   text-align: center;
@@ -215,10 +239,8 @@
   border-width: 0px;
   border-radius: 15px;
   flex-direction: column;
-  background-size: cover;
   justify-content: center;
   text-decoration: none;
-  background-image: url('https://assets.evermos.com/public/small/q:100/evermos-production/product/model/9d9ad2b3-4930-406d-916e-ac45d8abc378');
 }
 .ads-text3 {
   top: 0px;
@@ -235,11 +257,11 @@
 }
 .ads-text4 {
   color: #bfbfbf;
-  display: none;
   z-index: 100;
 }
 .ads-text5 {
   color: #ffffff;
+  display: none;
   z-index: 100;
   font-style: normal;
   text-align: center;
@@ -259,6 +281,12 @@
   border-radius: 15px;
   letter-spacing: 2px;
   background-color: #ffffff;
+}
+@media(max-width: 479px) {
+  .ads-container {
+    height: 400px;
+    flex-direction: column;
+  }
 }
 
 .highlight-highlight {

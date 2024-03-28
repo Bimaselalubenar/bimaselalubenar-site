@@ -152,21 +152,18 @@
 }
 .profile-container01 {
   width: 100%;
-  cursor: pointer;
   display: flex;
-  z-index: 100;
-  position: relative;
+  z-index: 1000;
+  position: fixed;
   max-width: auto;
-  transition: 0.3s;
   align-items: center;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-halfunit);
+  backdrop-filter: blur(20px);
   justify-content: center;
-}
-.profile-container01:hover {
-  box-shadow: 0px 100px 100px 1000px rgba(0, 0, 0, 0.58);
+  background-color: rgba(241, 241, 241, 0.22);
 }
 .profile-navbar {
   width: 100%;
@@ -195,47 +192,30 @@
   display: flex;
   align-items: center;
   flex-direction: row;
+  justify-content: center;
 }
 .profile-link {
   color: rgb(0, 30, 255);
   cursor: pointer;
   font-style: normal;
-  transition: 0.3s;
   font-family: "Inter";
   font-weight: 400;
-}
-.profile-link:hover {
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 .profile-link1 {
   color: rgb(0, 30, 255);
   cursor: pointer;
   font-size: 16px;
   font-style: normal;
-  transition: 0.3s;
   font-family: "Inter";
   font-weight: 400;
-}
-.profile-link1:hover {
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 .profile-link2 {
   color: rgb(0, 30, 255);
   cursor: pointer;
   font-size: 16px;
   font-style: normal;
-  transition: 0.3s;
   font-family: "Inter";
   font-weight: 400;
-}
-.profile-link2:hover {
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 .profile-thq-dropdown {
   cursor: pointer;
@@ -260,14 +240,8 @@
   color: rgb(0, 30, 255);
   cursor: pointer;
   font-style: normal;
-  transition: 0.3s;
   font-family: "Inter";
   font-weight: 400;
-}
-.profile-text:hover {
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 .profile-dropdown-arrow {
   transition: 0.3s;
@@ -284,21 +258,22 @@
   margin: auto;
   display: none;
   z-index: 100;
+  overflow: hidden;
   position: absolute;
   min-width: 100%;
   transition: 0.3s;
   align-items: stretch;
-  border-color: #D9D9D9;
-  border-width: 1px;
+  border-color: #e7e7e7;
+  border-width: 2px;
   border-radius: 20px;
   flex-direction: column;
   list-style-type: none;
-  background-color: var(--dl-color-gray-white);
   list-style-position: inside;
 }
 .profile-dropdown {
   cursor: pointer;
   display: inline-block;
+  overflow: hidden;
   position: relative;
   border-radius: var(--dl-radius-radius-radius2);
 }
@@ -314,27 +289,20 @@
   border-radius: var(--dl-radius-radius-radius4);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-unit);
+  backdrop-filter: blur(20px);
 }
 .profile-dropdown-toggle1:hover {
-  fill: #fff;
-  color: #fff;
   padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  background-color: #f5f5f5;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .profile-text01 {
   color: rgb(0, 30, 255);
   cursor: pointer;
   font-size: 16px;
   font-style: normal;
-  transition: 0.3s;
   font-family: "Inter";
   font-weight: 400;
-}
-.profile-text01:hover {
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 .profile-dropdown-toggle2 {
   fill: #595959;
@@ -348,27 +316,20 @@
   border-radius: var(--dl-radius-radius-radius4);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-unit);
+  backdrop-filter: blur(20px);
 }
 .profile-dropdown-toggle2:hover {
-  fill: #fff;
-  color: #fff;
   padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  background-color: #f5f5f5;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .profile-text02 {
   color: rgb(0, 30, 255);
   cursor: pointer;
   font-size: 16px;
   font-style: normal;
-  transition: 0.3s;
   font-family: "Inter";
   font-weight: 400;
-}
-.profile-text02:hover {
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 .profile-dropdown-toggle3 {
   fill: #595959;
@@ -382,27 +343,20 @@
   border-radius: var(--dl-radius-radius-radius4);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-unit);
+  backdrop-filter: blur(20px);
 }
 .profile-dropdown-toggle3:hover {
-  fill: #fff;
-  color: #fff;
   padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  background-color: #f5f5f5;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .profile-text03 {
   color: rgb(0, 30, 255);
   cursor: pointer;
   font-size: 16px;
   font-style: normal;
-  transition: 0.3s;
   font-family: "Inter";
   font-weight: 400;
-}
-.profile-text03:hover {
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 .profile-dropdown-toggle4 {
   fill: #595959;
@@ -416,27 +370,20 @@
   border-radius: var(--dl-radius-radius-radius4);
   padding-right: var(--dl-space-space-halfunit);
   padding-bottom: var(--dl-space-space-unit);
+  backdrop-filter: blur(20px);
 }
 .profile-dropdown-toggle4:hover {
-  fill: #fff;
-  color: #fff;
   padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  background-color: #f5f5f5;
+  backdrop-filter: blur(20px);
+  background-color: rgba(255, 255, 255, 0.25);
 }
 .profile-text04 {
   color: rgb(0, 30, 255);
   cursor: pointer;
   font-size: 16px;
   font-style: normal;
-  transition: 0.3s;
   font-family: "Inter";
   font-weight: 400;
-}
-.profile-text04:hover {
-  font-style: normal;
-  font-weight: 600;
-  letter-spacing: 2px;
 }
 .profile-register {
   color: #ffffff;
