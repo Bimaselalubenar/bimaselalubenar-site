@@ -2,33 +2,52 @@
   <link href="./block.css" rel="stylesheet" />
   <div class="block-container">
     <div class="block-container1">
-      <div class="block-container2">
-        <span class="block-text"><span>SEDANG PPEMELIHARAAN</span></span>
-        <div class="block-container3">
-          <div class="block-container4">
-            <script src="https://cdn.logwork.com/widget/countdown.js"></script>
-            <a
-              href="https://logwork.com/countdown-timer"
-              class="countdown-timer"
-              data-style="columns"
-              data-date="2024-04-01 00:00"
-            >
-              -
-            </a>
+      <animate-on-reveal
+        animation="zoomOutDown"
+        duration="2s"
+        delay="0s"
+        direction="alternate-reverse"
+        easing="ease"
+        iteration="1"
+      >
+        <div data-thq-animate-on-reveal="true" class="block-container2">
+          <span class="block-text"><span>SEDANG PEMELIHARAAN</span></span>
+          <div class="block-container3">
+            <div class="block-container4">
+              <script src="https://cdn.logwork.com/widget/countdown.js"></script>
+              <a
+                href="https://logwork.com/countdown-timer"
+                class="countdown-timer"
+                data-style="columns"
+                data-date="2024-04-01 00:00"
+              >
+                -
+              </a>
+            </div>
           </div>
+          <div id="atention" class="block-container5">
+            <span class="block-text1">*Tidak ada catatan</span>
+          </div>
+          <animate-on-reveal
+            animation="tada"
+            duration="1s"
+            delay="0s"
+            direction="normal"
+            easing="ease-in-out"
+            iteration="1"
+          >
+            <a
+              href="https://bit.ly/Bima23"
+              data-thq-animate-on-reveal="true"
+              target="_blank"
+              rel="noreferrer noopener"
+              class="block-link"
+            >
+              <span>HUBUNGI ADMIN</span>
+            </a>
+          </animate-on-reveal>
         </div>
-        <div id="atention" class="block-container5">
-          <span class="block-text1">*Tidak ada catatan</span>
-        </div>
-        <a
-          href="https://bit.ly/Bima23"
-          target="_blank"
-          rel="noreferrer noopener"
-          class="block-link"
-        >
-          <span>HUBUNGI ADMIN</span>
-        </a>
-      </div>
+      </animate-on-reveal>
     </div>
   </div>
 </div>
