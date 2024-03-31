@@ -1101,6 +1101,18 @@
       });
     </script>
     <script
+      src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+      defer=""
+    ></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(function(OneSignal) {
+        OneSignal.init({
+          appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+        });
+      });
+    </script>
+    <script
       defer=""
       src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
     ></script>
