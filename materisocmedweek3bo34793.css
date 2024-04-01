@@ -3,7 +3,7 @@
   width: 100%;
   cursor: not-allowed;
   height: 100vh;
-  display: none;
+  display: flex;
   z-index: 1000;
   position: relative;
   align-items: center;
@@ -66,6 +66,7 @@
 }
 .block-container3 {
   width: 100%;
+  display: none;
 }
 .block-container4 {
   display: contents;
@@ -87,6 +88,7 @@
   color: #ffffff;
   width: auto;
   cursor: pointer;
+  display: none;
   font-size: 16px;
   max-width: auto;
   font-style: normal;
