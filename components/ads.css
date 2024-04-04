@@ -11,9 +11,6 @@
   flex-direction: row;
   justify-content: center;
 }
-.ads-link {
-  display: contents;
-}
 .ads-container1 {
   gap: 0;
   flex: 1;
@@ -30,7 +27,6 @@
   border-radius: 15px;
   flex-direction: column;
   justify-content: center;
-  text-decoration: none;
 }
 .ads-text {
   top: 0px;
@@ -72,9 +68,6 @@
   letter-spacing: 2px;
   background-color: #ffffff;
 }
-.ads-link1 {
-  display: contents;
-}
 .ads-container2 {
   gap: 0;
   flex: 1;
@@ -91,7 +84,6 @@
   border-radius: 15px;
   flex-direction: column;
   justify-content: center;
-  text-decoration: none;
 }
 .ads-text3 {
   top: 0px;

@@ -3,7 +3,7 @@
   width: 100%;
   cursor: not-allowed;
   height: 100vh;
-  display: flex;
+  display: none;
   z-index: 1000;
   position: relative;
   align-items: center;
@@ -289,7 +289,7 @@
   }
 }
 
-.materisocmedweek2bo34793-container {
+.materisocmedweek4booerq-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -297,7 +297,7 @@
   align-items: center;
   flex-direction: column;
 }
-.materisocmedweek2bo34793-container1 {
+.materisocmedweek4booerq-container1 {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -306,7 +306,7 @@
   align-items: center;
   flex-direction: column;
 }
-.materisocmedweek2bo34793-container2 {
+.materisocmedweek4booerq-container2 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -320,10 +320,10 @@
   justify-content: flex-start;
   background-color: #7c0375;
 }
-.materisocmedweek2bo34793-navlink {
+.materisocmedweek4booerq-navlink {
   display: contents;
 }
-.materisocmedweek2bo34793-container3 {
+.materisocmedweek4booerq-container3 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
@@ -331,17 +331,17 @@
   justify-content: flex-start;
   text-decoration: none;
 }
-.materisocmedweek2bo34793-icon {
+.materisocmedweek4booerq-icon {
   fill: #ffffff;
   width: 22px;
   height: 22px;
 }
-.materisocmedweek2bo34793-text {
+.materisocmedweek4booerq-text {
   color: #ffffff;
   font-style: normal;
   font-weight: 700;
 }
-.materisocmedweek2bo34793-text1 {
+.materisocmedweek4booerq-text1 {
   font-size: 20px;
   align-self: center;
   font-style: normal;
@@ -351,7 +351,7 @@
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-unit);
 }
-.materisocmedweek2bo34793-container4 {
+.materisocmedweek4booerq-container4 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -362,7 +362,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.materisocmedweek2bo34793-text2 {
+.materisocmedweek4booerq-text2 {
   font-size: 20px;
   align-self: center;
   font-style: normal;
@@ -372,7 +372,7 @@
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-unit);
 }
-.materisocmedweek2bo34793-container5 {
+.materisocmedweek4booerq-container5 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -384,7 +384,7 @@
   justify-content: flex-start;
 }
 @media(max-width: 479px) {
-  .materisocmedweek2bo34793-text1 {
+  .materisocmedweek4booerq-text1 {
     font-size: 20px;
     font-style: normal;
     font-weight: 600;
