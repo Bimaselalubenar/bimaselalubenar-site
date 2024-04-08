@@ -400,17 +400,12 @@
 .profile-text05 {
   margin-right: var(--dl-space-space-halfunit);
 }
-.profile-icon02 {
-  fill: #ffffff;
-  width: 20px;
-  height: 20px;
-}
 .profile-burger-menu {
   display: none;
   align-items: center;
   justify-content: center;
 }
-.profile-icon04 {
+.profile-icon02 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
@@ -454,7 +449,7 @@
   align-items: center;
   justify-content: center;
 }
-.profile-icon06 {
+.profile-icon04 {
   width: var(--dl-size-size-xsmall);
   height: var(--dl-size-size-xsmall);
 }
@@ -533,7 +528,7 @@
   justify-content: flex-start;
   background-color: #44bb00;
 }
-.profile-icon08 {
+.profile-icon06 {
   fill: #ffffff;
   width: 32px;
   height: 32px;
@@ -587,25 +582,90 @@
   width: 803px;
   height: 100%;
   display: flex;
+  overflow: hidden;
   align-items: flex-start;
-  padding-left: 676px;
+  padding-left: 0px;
   border-radius: var(--dl-radius-radius-radius4);
   flex-direction: column;
+  background-size: cover;
   justify-content: center;
-  background-color: #001eff;
+  background-image: linear-gradient(0deg, rgb(0, 0, 0) 0.00%,rgba(44, 62, 80, 0.08) 29.00%),url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/MTXX_MR20240225_040952524.jpg?updatedAt=1712531274350');
+  background-position: center;
   border-top-left-radius: 0px;
   border-top-right-radius: 25px;
   border-bottom-left-radius: 0px;
-  border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 200px;
+}
+.profile-slider {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+}
+.profile-slider-slide {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.profile-text10 {
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 70px;
+  font-style: normal;
+  text-align: right;
+  font-weight: 800;
+}
+.profile-slider-slide1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.profile-text11 {
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 70px;
+  font-style: normal;
+  text-align: right;
+  font-weight: 800;
+}
+.profile-slider-slide2 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+.profile-text12 {
+  color: rgba(255, 255, 255, 0.06);
+  font-size: 70px;
+  font-style: normal;
+  text-align: right;
+  font-weight: 800;
+}
+.profile-slider-pagination {
+  display: none;
+}
+.profile-slider-button-prev {
+  display: none;
+}
+.profile-slider-button-next {
+  display: none;
 }
 .profile-image2 {
   width: 245px;
   height: 254px;
+  display: none;
   object-fit: cover;
   border-color: #001eff;
   border-style: double;
   border-width: 25px;
-  border-radius: var(--dl-radius-radius-round);
+  border-radius: var(--dl-radius-radius-radius4);
+  border-top-right-radius: 60px;
+  border-bottom-left-radius: 60px;
 }
 .profile-container10 {
   flex: 1;
@@ -613,11 +673,11 @@
   height: 100%;
   display: flex;
   align-items: flex-start;
-  padding-top: 149px;
-  padding-left: 149px;
-  padding-right: 149px;
+  padding-top: var(--dl-space-space-fiveunits);
+  padding-left: var(--dl-space-space-fiveunits);
+  padding-right: var(--dl-space-space-fiveunits);
   flex-direction: column;
-  padding-bottom: 149px;
+  padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: center;
 }
 .profile-container11 {
@@ -625,34 +685,28 @@
   display: flex;
   align-items: flex-start;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
 }
-.profile-text10 {
-  color: #001eff;
+.profile-text13 {
+  color: rgb(0, 30, 255);
   font-size: 30px;
   font-style: normal;
   font-weight: 800;
 }
-.profile-text11 {
-  font-size: 25px;
+.profile-container12 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.profile-text14 {
+  font-size: 30px;
   font-style: normal;
+  text-align: left;
   font-weight: 300;
 }
-.profile-primary-btn {
-  color: #ffffff;
-  cursor: pointer;
-  font-style: normal;
-  margin-top: var(--dl-space-space-twounits);
-  font-weight: 500;
-  padding-top: var(--dl-space-space-halfunit);
-  border-width: 0px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgb(0, 30, 255);
-}
-.profile-container12 {
+.profile-container13 {
   gap: var(--dl-space-space-unit);
   width: auto;
   height: 100%;
@@ -662,38 +716,66 @@
   flex-direction: column;
   justify-content: center;
 }
+.profile-link3 {
+  display: contents;
+}
+.profile-icon08 {
+  fill: #001eff;
+  width: 24px;
+  cursor: pointer;
+  height: 24px;
+  text-decoration: none;
+}
+.profile-link4 {
+  display: contents;
+}
 .profile-icon10 {
   fill: #001eff;
   width: 24px;
   cursor: pointer;
   height: 24px;
+  text-decoration: none;
 }
-.profile-icon12 {
+.profile-link5 {
+  display: contents;
+}
+.profile-icon14 {
   fill: #001eff;
   width: 24px;
   cursor: pointer;
   height: 24px;
-}
-.profile-icon16 {
-  fill: #001eff;
-  width: 24px;
-  cursor: pointer;
-  height: 24px;
+  text-decoration: none;
 }
 .profile-container14 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.profile-text15 {
+  color: rgb(0, 30, 255);
+}
+.profile-container16 {
+  display: contents;
+}
+.profile-container18 {
   display: contents;
 }
 @media(max-width: 1600px) {
   .profile-container09 {
-    width: 605px;
-    padding-left: 475px;
+    width: 736px;
+    padding-left: 0px;
   }
 }
 @media(max-width: 1200px) {
   .profile-container09 {
-    width: 368px;
+    width: 610px;
     margin-right: 0px;
-    padding-left: 237px;
+    padding-left: 0px;
   }
 }
 @media(max-width: 991px) {
@@ -701,8 +783,8 @@
     background-color: #c6c6c6;
   }
   .profile-container09 {
-    width: 238px;
-    padding-left: 104px;
+    width: 483px;
+    padding-left: 0px;
   }
 }
 @media(max-width: 767px) {
@@ -710,7 +792,7 @@
     padding-left: 0px;
     padding-right: 0px;
   }
-  .profile-icon04 {
+  .profile-icon02 {
     fill: white;
     width: 33px;
     height: 33px;
@@ -730,7 +812,7 @@
     width: auto;
     height: 52px;
   }
-  .profile-icon06 {
+  .profile-icon04 {
     width: 40px;
     height: 40px;
   }
@@ -739,9 +821,9 @@
   }
   .profile-container09 {
     width: 100%;
-    height: 253px;
+    height: 577px;
     align-self: flex-start;
-    padding-top: 223px;
+    padding-top: 0px;
     padding-left: 0px;
     flex-direction: column;
     border-top-right-radius: 0px;
@@ -754,19 +836,22 @@
   .profile-container10 {
     width: 100%;
     align-items: center;
-    padding-top: 150px;
-    padding-left: var(--dl-space-space-twounits);
-    padding-right: var(--dl-space-space-twounits);
-    padding-bottom: var(--dl-space-space-twounits);
+    padding-top: var(--dl-space-space-fiveunits);
+    padding-left: var(--dl-space-space-fiveunits);
+    padding-right: var(--dl-space-space-fiveunits);
+    padding-bottom: var(--dl-space-space-fiveunits);
     justify-content: flex-start;
   }
   .profile-container11 {
     align-items: center;
   }
-  .profile-container12 {
+  .profile-container13 {
     width: 100%;
     height: auto;
     flex-direction: row;
+  }
+  .profile-container14 {
+    flex-direction: column;
   }
 }
 @media(max-width: 479px) {
@@ -780,7 +865,7 @@
   .profile-burger-menu {
     display: flex;
   }
-  .profile-icon04 {
+  .profile-icon02 {
     fill: #001eff;
   }
   .profile-mobile-menu {
@@ -840,7 +925,7 @@
   .profile-container06 {
     box-shadow: 5px 5px 15px 0px rgba(210, 210, 210, 0.79);
   }
-  .profile-icon08 {
+  .profile-icon06 {
     width: 35px;
     height: 32px;
   }
@@ -858,16 +943,25 @@
     color: rgb(255, 255, 255);
     background-color: rgb(0, 24, 194);
   }
+  .profile-container09 {
+    height: 530px;
+  }
   .profile-container10 {
     justify-content: flex-start;
   }
-  .profile-text10 {
+  .profile-text13 {
     color: rgb(0, 30, 255);
     font-size: 30px;
     font-style: normal;
     font-weight: 800;
   }
-  .profile-container12 {
+  .profile-container13 {
     height: auto;
+  }
+  .profile-text15 {
+    color: rgb(0, 30, 255);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 800;
   }
 }
