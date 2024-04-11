@@ -36,6 +36,9 @@
   text-transform: none;
   text-decoration: none;
 }
+.sukses-kirim-navlink {
+  display: contents;
+}
 .sukses-kirim-text1 {
   color: #000000;
   margin-top: var(--dl-space-space-twounits);
