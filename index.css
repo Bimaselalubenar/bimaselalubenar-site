@@ -791,17 +791,6 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.profile-image {
-  top: 794px;
-  right: -668px;
-  width: 1332px;
-  filter: blur(8px);
-  height: 1332px;
-  margin: auto;
-  z-index: 1;
-  position: absolute;
-  object-fit: cover;
-}
 .profile-container01 {
   width: 100%;
   display: flex;
@@ -828,7 +817,7 @@
   padding-right: var(--dl-space-space-unit);
   justify-content: space-between;
 }
-.profile-image1 {
+.profile-image {
   width: auto;
   height: 35px;
   object-fit: cover;
@@ -1184,7 +1173,7 @@
   margin-bottom: var(--dl-space-space-threeunits);
   justify-content: space-between;
 }
-.profile-image2 {
+.profile-image1 {
   width: 200px;
   z-index: 100;
   object-fit: cover;
@@ -2427,7 +2416,7 @@
   align-items: flex-start;
   flex-direction: row;
 }
-.profile-image3 {
+.profile-image2 {
   width: 55px;
   height: 55px;
   object-fit: cover;
@@ -2680,9 +2669,6 @@
 .profile-container78 {
   display: contents;
 }
-.profile-container80 {
-  display: contents;
-}
 @media(max-width: 1600px) {
   .profile-video {
     height: 0px;
@@ -2699,12 +2685,6 @@
   }
 }
 @media(max-width: 1200px) {
-  .profile-image {
-    top: 776px;
-    right: -453px;
-    width: 904px;
-    height: 904px;
-  }
   .profile-container09 {
     left: -401px;
   }
@@ -2795,9 +2775,6 @@
   }
 }
 @media(max-width: 767px) {
-  .profile-image {
-    top: 1631px;
-  }
   .profile-navbar {
     padding-left: 0px;
     padding-right: 0px;
@@ -2818,7 +2795,7 @@
     margin-bottom: var(--dl-space-space-unit);
     justify-content: space-between;
   }
-  .profile-image2 {
+  .profile-image1 {
     width: auto;
     height: 52px;
   }
@@ -2987,17 +2964,11 @@
   }
 }
 @media(max-width: 479px) {
-  .profile-image {
-    top: 1785px;
-    right: -238px;
-    width: 478px;
-    height: 478px;
-  }
   .profile-navbar {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .profile-image1 {
+  .profile-image {
     height: 30px;
   }
   .profile-desktop-menu {
@@ -3022,7 +2993,7 @@
   .profile-container02 {
     align-self: flex-end;
   }
-  .profile-image2 {
+  .profile-image1 {
     height: 30px;
   }
   .profile-menu-close {
@@ -3215,7 +3186,7 @@
   .profile-container63 {
     flex-direction: column;
   }
-  .profile-image3 {
+  .profile-image2 {
     width: 75px;
     height: 75px;
   }
