@@ -1399,6 +1399,28 @@
         });
       });</script
     ><script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script
+    ><script type="module">
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyCeyfrAPZ5mpvwMZhFoojmnnP4FKbPOAVM",
+        authDomain: "bimaselalubenar.firebaseapp.com",
+        projectId: "bimaselalubenar",
+        storageBucket: "bimaselalubenar.appspot.com",
+        messagingSenderId: "906211717344",
+        appId: "1:906211717344:web:350375d466cedc88506085",
+        measurementId: "G-23XZ3FR6KY"
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);</script
     ><script
       defer=""
       src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
