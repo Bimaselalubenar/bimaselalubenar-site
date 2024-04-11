@@ -1631,16 +1631,10 @@
 }
 .profile-container24 {
   gap: var(--dl-space-space-unit);
-  top: 0px;
-  left: 0px;
-  right: 0px;
   width: 100%;
-  bottom: 0px;
   height: 100%;
-  margin: auto;
   display: flex;
   z-index: 1;
-  position: absolute;
   max-width: 1000px;
   align-items: center;
   padding-left: var(--dl-space-space-unit);
@@ -1820,7 +1814,7 @@
   right: 0px;
   width: 100%;
   bottom: 0px;
-  height: 100vh;
+  height: 100%;
   margin: auto;
   position: absolute;
 }
@@ -2879,10 +2873,13 @@
     flex-direction: row;
   }
   .profile-container23 {
+    height: auto;
     padding: 0px;
     flex-direction: column;
   }
   .profile-container24 {
+    height: auto;
+    position: static;
     padding-top: var(--dl-space-space-fiveunits);
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
@@ -2890,7 +2887,19 @@
     padding-bottom: var(--dl-space-space-fiveunits);
   }
   .profile-container25 {
+    flex: 0 0 auto;
     width: 100%;
+    height: auto;
+  }
+  .profile-container26 {
+    flex: 0 0 auto;
+    height: 307px;
+  }
+  .profile-container27 {
+    gap: var(--dl-space-space-unit);
+    flex: 0 0 auto;
+    height: auto;
+    justify-content: flex-start;
   }
   .profile-container29 {
     width: 100%;
@@ -3076,7 +3085,7 @@
   }
   .profile-video {
     width: 100%;
-    height: auto;
+    height: 1px;
   }
   .profile-container08 {
     padding-top: 0px;
@@ -3147,9 +3156,12 @@
     height: auto;
   }
   .profile-container23 {
+    height: auto;
     padding: 0px;
   }
   .profile-container24 {
+    height: 100%;
+    position: static;
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
     flex-direction: column;
@@ -3158,7 +3170,11 @@
     width: 100%;
   }
   .profile-container26 {
+    height: 307px;
     background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Portofolio/serverbima-myskill-advanceprogramer.jpg?updatedAt=1696242909133');
+  }
+  .profile-container27 {
+    flex: 1;
   }
   .profile-container31 {
     top: 39px;
