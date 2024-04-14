@@ -289,7 +289,7 @@
   }
 }
 
-.materisocmedweek4booerq-container {
+.materisocmedweek3-container {
   width: 100%;
   display: flex;
   overflow: auto;
@@ -297,7 +297,7 @@
   align-items: center;
   flex-direction: column;
 }
-.materisocmedweek4booerq-container1 {
+.materisocmedweek3-container1 {
   width: 100%;
   height: 100vh;
   display: flex;
@@ -306,7 +306,7 @@
   align-items: center;
   flex-direction: column;
 }
-.materisocmedweek4booerq-container2 {
+.materisocmedweek3-container2 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -320,10 +320,10 @@
   justify-content: flex-start;
   background-color: #7c0375;
 }
-.materisocmedweek4booerq-navlink {
+.materisocmedweek3-navlink {
   display: contents;
 }
-.materisocmedweek4booerq-container3 {
+.materisocmedweek3-container3 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
@@ -331,17 +331,17 @@
   justify-content: flex-start;
   text-decoration: none;
 }
-.materisocmedweek4booerq-icon {
+.materisocmedweek3-icon {
   fill: #ffffff;
   width: 22px;
   height: 22px;
 }
-.materisocmedweek4booerq-text {
+.materisocmedweek3-text {
   color: #ffffff;
   font-style: normal;
   font-weight: 700;
 }
-.materisocmedweek4booerq-text1 {
+.materisocmedweek3-text1 {
   font-size: 20px;
   align-self: center;
   font-style: normal;
@@ -351,7 +351,7 @@
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-unit);
 }
-.materisocmedweek4booerq-container4 {
+.materisocmedweek3-container4 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -362,7 +362,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.materisocmedweek4booerq-text2 {
+.materisocmedweek3-text2 {
   font-size: 20px;
   align-self: center;
   font-style: normal;
@@ -372,7 +372,7 @@
   margin-right: var(--dl-space-space-unit);
   margin-bottom: var(--dl-space-space-unit);
 }
-.materisocmedweek4booerq-container5 {
+.materisocmedweek3-container5 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -382,11 +382,12 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+}
+.materisocmedweek3-container7 {
+  display: contents;
 }
 @media(max-width: 479px) {
-  .materisocmedweek4booerq-text1 {
+  .materisocmedweek3-text1 {
     font-size: 20px;
-    font-style: normal;
-    font-weight: 600;
   }
 }
