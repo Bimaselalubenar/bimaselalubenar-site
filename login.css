@@ -21,12 +21,44 @@
   justify-content: center;
   background-color: #080c46;
 }
+.login-container02 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: var(--dl-space-space-fourunits);
+  flex-direction: column;
+  justify-content: space-between;
+}
+.login-text {
+  color: #ffffff;
+  font-size: 30px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.login-container03 {
+  gap: var(--dl-space-space-twounits);
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  bottom: 0px;
+  margin: auto;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
 .login-lottie-node {
   width: 456px;
   height: 456px;
   z-index: 5;
 }
-.login-container02 {
+.login-container04 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -43,7 +75,7 @@
   backdrop-filter: blur(5px);
   background-color: rgba(217, 217, 217, 0.06);
 }
-.login-text {
+.login-text01 {
   color: rgb(240, 251, 1);
   font-size: 30px;
   align-self: center;
@@ -61,7 +93,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.login-text01 {
+.login-text02 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
@@ -74,7 +106,7 @@
   border-width: 0px;
   border-radius: 20px;
 }
-.login-text02 {
+.login-text03 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
@@ -87,14 +119,14 @@
   border-width: 0px;
   border-radius: 20px;
 }
-.login-container03 {
+.login-container05 {
   display: flex;
   align-items: center;
   margin-left: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: center;
 }
-.login-text03 {
+.login-text04 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
@@ -109,7 +141,7 @@
   border-radius: 20px;
   background-color: rgb(219, 249, 0);
 }
-.login-container04 {
+.login-container06 {
   display: flex;
   align-self: flex-end;
   margin-top: var(--dl-space-space-unit);
@@ -117,7 +149,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.login-text04 {
+.login-text05 {
   color: rgb(255, 255, 255);
   font-size: 14px;
   align-self: center;
@@ -128,7 +160,7 @@
 .login-link {
   display: contents;
 }
-.login-text05 {
+.login-text06 {
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
@@ -146,11 +178,11 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: underline;
 }
-.login-text05:hover {
+.login-text06:hover {
   color: #d7ff00;
   border-color: #d7ff00;
 }
-.login-container05 {
+.login-container07 {
   top: 0px;
   left: 0px;
   right: 0px;
@@ -164,7 +196,7 @@
   flex-direction: column;
   background-color: #0a1562;
 }
-.login-container06 {
+.login-container08 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   height: 100vh;
@@ -175,7 +207,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.login-container07 {
+.login-container09 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -193,7 +225,7 @@
   backdrop-filter: blur(5px);
   background-color: rgba(217, 217, 217, 0.06);
 }
-.login-text06 {
+.login-text07 {
   color: rgb(240, 251, 1);
   font-size: 30px;
   align-self: center;
@@ -211,7 +243,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.login-text07 {
+.login-text08 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
@@ -224,7 +256,7 @@
   border-width: 0px;
   border-radius: 20px;
 }
-.login-text08 {
+.login-text09 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
@@ -237,7 +269,7 @@
   border-width: 0px;
   border-radius: 20px;
 }
-.login-text09 {
+.login-text10 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
@@ -250,20 +282,20 @@
   border-width: 0px;
   border-radius: 20px;
 }
-.login-container08 {
+.login-container10 {
   display: flex;
   align-items: center;
   margin-left: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: center;
 }
-.login-text10 {
+.login-text11 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-container09 {
+.login-container11 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -300,24 +332,30 @@
   color: #d7ff00;
   border-color: #d7ff00;
 }
-.login-container11 {
+.login-container13 {
   display: contents;
 }
 .login-lottie-node1 {
   width: 456px;
   height: 456px;
 }
-.login-container13 {
+.login-container15 {
+  display: contents;
+}
+.login-container17 {
   display: contents;
 }
 @media(max-width: 1200px) {
-  .login-lottie-node {
-    display: none;
-  }
   .login-text {
     font-size: 30px;
   }
-  .login-text06 {
+  .login-lottie-node {
+    display: none;
+  }
+  .login-text01 {
+    font-size: 30px;
+  }
+  .login-text07 {
     font-size: 30px;
   }
   .login-lottie-node1 {
@@ -326,25 +364,38 @@
 }
 @media(max-width: 991px) {
   .login-text {
+    font-size: 30px;
+  }
+  .login-text01 {
     font-size: 20px;
   }
-  .login-text06 {
+  .login-text07 {
     font-size: 20px;
   }
 }
 @media(max-width: 767px) {
   .login-text {
+    font-size: 30px;
+  }
+  .login-text01 {
     font-size: 20px;
   }
-  .login-text06 {
+  .login-text07 {
     font-size: 20px;
   }
 }
 @media(max-width: 479px) {
-  .login-container02 {
+  .login-text {
+    z-index: 100;
+    align-self: flex-start;
+  }
+  .login-container03 {
+    margin-bottom: 0px;
+  }
+  .login-container04 {
     padding: var(--dl-space-space-unit);
   }
-  .login-text {
+  .login-text01 {
     font-size: 20px;
   }
   .login-textinput {
@@ -356,10 +407,10 @@
   .login-button {
     border-radius: 10px;
   }
-  .login-container07 {
+  .login-container09 {
     padding: var(--dl-space-space-unit);
   }
-  .login-text06 {
+  .login-text07 {
     font-size: 20px;
   }
   .login-textinput2 {
