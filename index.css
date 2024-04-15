@@ -798,10 +798,10 @@
   position: fixed;
   max-width: auto;
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   backdrop-filter: blur(5px);
   justify-content: center;
   background-color: rgba(241, 241, 241, 0.22);

@@ -468,6 +468,47 @@
         ><div
           ><div class="login-container16"
             ><script>
+              const words = ['Halo..', 'Silahkan masukan username dan password', 'dan jangan lupa untuk menyimpan dan di ingat', 'Semangat :)'];
+              let index = 0;
+              let letterIndex = 0;
+              let isDeleting = false;
+              let typingText = '';
+
+              function type() {
+                  const currentWord = words[index % words.length];
+                  if (isDeleting) {
+                      typingText = currentWord.substring(0, letterIndex - 1);
+                      letterIndex--;
+                  } else {
+                      typingText = currentWord.substring(0, letterIndex + 1);
+                      letterIndex++;
+                  }
+
+                  document.getElementById('pengumuman').textContent = typingText;
+
+                  let typingSpeed = 100;
+                  if (isDeleting) {
+                      typingSpeed /= 2;
+                  }
+
+                  if (!isDeleting && typingText === currentWord) {
+                      isDeleting = true;
+                      typingSpeed = 800;
+                  } else if (isDeleting && typingText === '') {
+                      isDeleting = false;
+                      index++;
+                      typingSpeed = 200;
+                  }
+
+                  setTimeout(type, typingSpeed);
+              }
+
+              type();
+            </script></div
+          ></div
+        ><div
+          ><div class="login-container18"
+            ><script>
               // Daftar username dan password
               const users = [
               { username: 'MPMSIMPANG', password: '9931' },
@@ -513,6 +554,7 @@
               { username: 'MPMKALISAT', password: '9971' },
               { username: 'MOURITS', password: '9999' },
               { username: 'BIMA', password: 'BIMA' },
+              { username: 'TAUFIK', password: '9999' },
                   // Tambahkan username dan password baru di sini
               ];
 
@@ -529,47 +571,6 @@
                       alert('User atau password salah, silahkan hubungi penyedia @bimaselalubenar');
                   }
               });
-            </script></div
-          ></div
-        ><div
-          ><div class="login-container18"
-            ><script>
-              const words = ['Halo..', 'Silahkan masukan username dan password', 'dan jangan lupa untuk menyimpan dan di ingat'];
-              let index = 0;
-              let letterIndex = 0;
-              let isDeleting = false;
-              let typingText = '';
-
-              function type() {
-                  const currentWord = words[index % words.length];
-                  if (isDeleting) {
-                      typingText = currentWord.substring(0, letterIndex - 1);
-                      letterIndex--;
-                  } else {
-                      typingText = currentWord.substring(0, letterIndex + 1);
-                      letterIndex++;
-                  }
-
-                  document.getElementById('pengumuman').textContent = typingText;
-
-                  let typingSpeed = 100;
-                  if (isDeleting) {
-                      typingSpeed /= 2;
-                  }
-
-                  if (!isDeleting && typingText === currentWord) {
-                      isDeleting = true;
-                      typingSpeed = 800;
-                  } else if (isDeleting && typingText === '') {
-                      isDeleting = false;
-                      index++;
-                      typingSpeed = 200;
-                  }
-
-                  setTimeout(type, typingSpeed);
-              }
-
-              type();
             </script></div
           ></div
         ></div
