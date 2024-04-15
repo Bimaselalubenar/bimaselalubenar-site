@@ -476,6 +476,17 @@
               ></div
             ></a
           ></div
+        ><div
+          ><div class="cetak-bukti-pembayaran-fbads-container7"
+            ><script>
+              const loggedInUser = localStorage.getItem('loggedInUser');
+              if (!loggedInUser) {
+                  window.location.href = 'login.html'; // Redirect ke halaman login jika tidak ada user yang login
+              } else {
+                  document.getElementById('loggedInUser').textContent = loggedInUser;
+              }
+            </script></div
+          ></div
         ></div
       ></div
     >

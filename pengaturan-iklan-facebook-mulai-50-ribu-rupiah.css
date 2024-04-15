@@ -355,6 +355,9 @@
 .pengaturan-iklan-facebook-mulai50-ribu-rupiah-button:hover {
   background-color: #46cc06;
 }
+.pengaturan-iklan-facebook-mulai50-ribu-rupiah-container7 {
+  display: contents;
+}
 @media(max-width: 991px) {
   .pengaturan-iklan-facebook-mulai50-ribu-rupiah-text1 {
     color: rgb(0, 0, 0);

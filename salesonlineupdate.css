@@ -217,6 +217,9 @@
 .salesonlineupdate-container09 {
   display: contents;
 }
+.salesonlineupdate-container11 {
+  display: contents;
+}
 @media(max-width: 479px) {
   .salesonlineupdate-container {
     background-color: transparent;

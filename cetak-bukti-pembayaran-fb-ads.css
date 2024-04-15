@@ -367,6 +367,9 @@
 .cetak-bukti-pembayaran-fbads-button:hover {
   background-color: #46cc06;
 }
+.cetak-bukti-pembayaran-fbads-container7 {
+  display: contents;
+}
 @media(max-width: 991px) {
   .cetak-bukti-pembayaran-fbads-text1 {
     color: rgb(0, 0, 0);

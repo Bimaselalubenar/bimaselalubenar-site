@@ -404,8 +404,8 @@
   justify-content: flex-start;
 }
 .footer-pasted-image {
-  width: 94px;
-  height: 74px;
+  width: auto;
+  height: 45px;
 }
 .footer-text {
   color: #efefef;

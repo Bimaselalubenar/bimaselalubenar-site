@@ -521,6 +521,17 @@
                   document.getElementById('hasil').innerHTML = '<h2>Terkirim</2>';
             </script></div
           ></div
+        ><div
+          ><div class="salesonlineupdate-container11"
+            ><script>
+              const loggedInUser = localStorage.getItem('loggedInUser');
+              if (!loggedInUser) {
+                  window.location.href = 'login.html'; // Redirect ke halaman login jika tidak ada user yang login
+              } else {
+                  document.getElementById('loggedInUser').textContent = loggedInUser;
+              }
+            </script></div
+          ></div
         ></div
       ></div
     >

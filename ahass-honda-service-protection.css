@@ -428,6 +428,9 @@
 .ahasshondaserviceprotection-button1:hover {
   background-color: #46cc06;
 }
+.ahasshondaserviceprotection-container5 {
+  display: contents;
+}
 @media(max-width: 991px) {
   .ahasshondaserviceprotection-container1 {
     width: 100%;
