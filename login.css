@@ -1,11 +1,10 @@
 .login-container {
   width: 100%;
   display: flex;
+  padding: 0px;
   overflow: auto;
   min-height: 100vh;
   align-items: center;
-  padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   justify-content: center;
   background-color: #080c46;
@@ -17,6 +16,8 @@
   display: flex;
   position: relative;
   align-items: center;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: center;
   background-color: #080c46;
@@ -204,8 +205,11 @@
   overflow: hidden;
   position: relative;
   align-items: center;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: center;
+  background-color: #43772a;
 }
 .login-container09 {
   gap: var(--dl-space-space-unit);
