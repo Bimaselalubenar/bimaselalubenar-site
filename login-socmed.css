@@ -1,4 +1,4 @@
-.login-container {
+.login-socmed-container {
   width: 100%;
   display: flex;
   padding: 0px;
@@ -9,7 +9,7 @@
   justify-content: center;
   background-color: #080c46;
 }
-.login-container01 {
+.login-socmed-container01 {
   gap: var(--dl-space-space-threeunits);
   width: 100%;
   height: 100vh;
@@ -22,7 +22,7 @@
   justify-content: center;
   background-color: #080c46;
 }
-.login-container02 {
+.login-socmed-container02 {
   flex: 0 0 auto;
   width: 100%;
   height: 100%;
@@ -33,15 +33,7 @@
   flex-direction: column;
   justify-content: space-between;
 }
-.login-text {
-  color: #ffffff;
-  font-size: 30px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.login-container03 {
+.login-socmed-container03 {
   gap: var(--dl-space-space-twounits);
   top: 0px;
   left: 0px;
@@ -54,12 +46,12 @@
   flex-direction: row;
   justify-content: center;
 }
-.login-lottie-node {
+.login-socmed-lottie-node {
   width: 456px;
   height: 456px;
   z-index: 5;
 }
-.login-container04 {
+.login-socmed-container04 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -76,7 +68,7 @@
   backdrop-filter: blur(5px);
   background-color: rgba(217, 217, 217, 0.06);
 }
-.login-text01 {
+.login-socmed-text {
   color: rgb(240, 251, 1);
   font-size: 30px;
   align-self: center;
@@ -85,7 +77,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.login-form {
+.login-socmed-form {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -94,46 +86,46 @@
   flex-direction: column;
   justify-content: center;
 }
-.login-text02 {
+.login-socmed-text01 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-textinput {
+.login-socmed-textinput {
   width: 100%;
   padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
   border-width: 0px;
   border-radius: 20px;
 }
-.login-text03 {
+.login-socmed-text02 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-textinput1 {
+.login-socmed-textinput1 {
   width: 100%;
   padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
   border-width: 0px;
   border-radius: 20px;
 }
-.login-container05 {
+.login-socmed-container05 {
   display: flex;
   align-items: center;
   margin-left: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: center;
 }
-.login-text04 {
+.login-socmed-text03 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-button {
+.login-socmed-button {
   width: 100%;
   cursor: pointer;
   padding: var(--dl-space-space-unit);
@@ -142,7 +134,7 @@
   border-radius: 20px;
   background-color: rgb(219, 249, 0);
 }
-.login-container06 {
+.login-socmed-container06 {
   display: flex;
   align-self: flex-end;
   margin-top: var(--dl-space-space-unit);
@@ -150,7 +142,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.login-text05 {
+.login-socmed-text04 {
   color: rgb(255, 255, 255);
   font-size: 14px;
   align-self: center;
@@ -158,10 +150,10 @@
   margin-left: var(--dl-space-space-unit);
   margin-right: 0px;
 }
-.login-link {
+.login-socmed-link {
   display: contents;
 }
-.login-text06 {
+.login-socmed-text05 {
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
@@ -179,11 +171,11 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: underline;
 }
-.login-text06:hover {
+.login-socmed-text05:hover {
   color: #d7ff00;
   border-color: #d7ff00;
 }
-.login-container07 {
+.login-socmed-container07 {
   top: 0px;
   left: 0px;
   right: 0px;
@@ -197,7 +189,7 @@
   flex-direction: column;
   background-color: #0a1562;
 }
-.login-container08 {
+.login-socmed-container08 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   height: 100vh;
@@ -211,7 +203,7 @@
   justify-content: center;
   background-color: #43772a;
 }
-.login-container09 {
+.login-socmed-container09 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -229,7 +221,7 @@
   backdrop-filter: blur(5px);
   background-color: rgba(217, 217, 217, 0.06);
 }
-.login-text07 {
+.login-socmed-text06 {
   color: rgb(240, 251, 1);
   font-size: 30px;
   align-self: center;
@@ -238,7 +230,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.login-form1 {
+.login-socmed-form1 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -247,59 +239,59 @@
   flex-direction: column;
   justify-content: center;
 }
-.login-text08 {
+.login-socmed-text07 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-textinput2 {
+.login-socmed-textinput2 {
   width: 100%;
   padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
   border-width: 0px;
   border-radius: 20px;
 }
-.login-text09 {
+.login-socmed-text08 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-textinput3 {
+.login-socmed-textinput3 {
   width: 100%;
   padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
   border-width: 0px;
   border-radius: 20px;
 }
-.login-text10 {
+.login-socmed-text09 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-textinput4 {
+.login-socmed-textinput4 {
   width: 100%;
   padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
   border-width: 0px;
   border-radius: 20px;
 }
-.login-container10 {
+.login-socmed-container10 {
   display: flex;
   align-items: center;
   margin-left: var(--dl-space-space-unit);
   flex-direction: row;
   justify-content: center;
 }
-.login-text11 {
+.login-socmed-text10 {
   color: rgb(255, 255, 255);
   font-family: "Inconsolata";
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-container11 {
+.login-socmed-container11 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -307,7 +299,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.login-button1 {
+.login-socmed-button1 {
   flex: 1;
   color: #ffffff;
   width: 100%;
@@ -318,7 +310,7 @@
   border-radius: 20px;
   background-color: #00aa1c;
 }
-.login-button2 {
+.login-socmed-button2 {
   color: #ffffff;
   width: auto;
   cursor: pointer;
@@ -331,11 +323,11 @@
   padding-bottom: 16px;
   background-color: transparent;
 }
-.login-button2:hover {
+.login-socmed-button2:hover {
   color: #d7ff00;
   border-color: #d7ff00;
 }
-.login-container12 {
+.login-socmed-container12 {
   display: flex;
   align-self: flex-end;
   margin-top: var(--dl-space-space-unit);
@@ -343,7 +335,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.login-text12 {
+.login-socmed-text11 {
   color: rgb(255, 255, 255);
   font-size: 14px;
   align-self: center;
@@ -351,10 +343,10 @@
   margin-left: var(--dl-space-space-unit);
   margin-right: 0px;
 }
-.login-link1 {
+.login-socmed-link1 {
   display: contents;
 }
-.login-text13 {
+.login-socmed-text12 {
   color: #ffffff;
   cursor: pointer;
   font-size: 14px;
@@ -372,112 +364,99 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: underline;
 }
-.login-text13:hover {
+.login-socmed-text12:hover {
   color: #d7ff00;
   border-color: #d7ff00;
 }
-.login-container14 {
+.login-socmed-container14 {
   display: contents;
 }
-.login-lottie-node1 {
+.login-socmed-lottie-node1 {
   width: 456px;
   height: 456px;
 }
-.login-container16 {
+.login-socmed-container16 {
   display: contents;
 }
-.login-container18 {
+.login-socmed-container18 {
   display: contents;
 }
 @media(max-width: 1200px) {
-  .login-text {
-    font-size: 30px;
-  }
-  .login-lottie-node {
+  .login-socmed-lottie-node {
     display: none;
   }
-  .login-text01 {
+  .login-socmed-text {
     font-size: 30px;
   }
-  .login-text07 {
+  .login-socmed-text06 {
     font-size: 30px;
   }
-  .login-lottie-node1 {
+  .login-socmed-lottie-node1 {
     display: none;
   }
 }
 @media(max-width: 991px) {
-  .login-text {
-    font-size: 30px;
-  }
-  .login-text01 {
+  .login-socmed-text {
     font-size: 20px;
   }
-  .login-text07 {
+  .login-socmed-text06 {
     font-size: 20px;
   }
 }
 @media(max-width: 767px) {
-  .login-text {
-    font-size: 30px;
-  }
-  .login-text01 {
+  .login-socmed-text {
     font-size: 20px;
   }
-  .login-text07 {
+  .login-socmed-text06 {
     font-size: 20px;
   }
 }
 @media(max-width: 479px) {
-  .login-text {
-    z-index: 100;
-    align-self: flex-start;
-  }
-  .login-container03 {
+  .login-socmed-container03 {
     margin-bottom: 0px;
   }
-  .login-container04 {
+  .login-socmed-container04 {
     padding: var(--dl-space-space-unit);
   }
-  .login-text01 {
+  .login-socmed-text {
     font-size: 20px;
   }
-  .login-textinput {
+  .login-socmed-textinput {
     border-radius: 10px;
   }
-  .login-textinput1 {
+  .login-socmed-textinput1 {
     border-radius: 10px;
   }
-  .login-button {
+  .login-socmed-button {
     border-radius: 10px;
   }
-  .login-container09 {
+  .login-socmed-container09 {
     padding: var(--dl-space-space-unit);
   }
-  .login-text07 {
+  .login-socmed-text06 {
     font-size: 20px;
   }
-  .login-textinput2 {
+  .login-socmed-textinput2 {
     border-radius: 10px;
   }
-  .login-textinput3 {
+  .login-socmed-textinput3 {
     border-radius: 10px;
   }
-  .login-textinput4 {
+  .login-socmed-textinput4 {
     border-radius: 10px;
   }
-  .login-button1 {
+  .login-socmed-button1 {
     border-radius: 10px;
   }
-  .login-button2 {
+  .login-socmed-button2 {
     border-radius: 10px;
   }
-  .login-text12 {
+  .login-socmed-text11 {
     color: rgb(255, 255, 255);
     font-size: 14px;
     font-family: Inconsolata;
   }
-  .login-text13 {
+  .login-socmed-text12 {
     color: rgb(255, 255, 255);
   }
 }
