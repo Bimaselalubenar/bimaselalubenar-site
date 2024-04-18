@@ -296,7 +296,7 @@
   justify-content: flex-start;
 }
 .footer-pasted-image {
-  width: auto;
+  width: 45px;
   height: 45px;
 }
 .footer-text {
@@ -351,7 +351,7 @@
     gap: var(--dl-space-space-halfunit);
   }
   .footer-pasted-image {
-    width: 100px;
+    width: 45px;
   }
   .footer-text {
     font-size: 12px;
