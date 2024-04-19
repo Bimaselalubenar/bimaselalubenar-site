@@ -1,4 +1,4 @@
-.highlight-highlight {
+.highlight1-highlight {
   gap: var(--dl-space-space-halfunit);
   cursor: pointer;
   display: flex;
@@ -11,21 +11,21 @@
   justify-content: flex-start;
   background-color: #ffffff;
 }
-.highlight-highlight:hover {
+.highlight1-highlight:hover {
   box-shadow: 5px 5px 15px 0px rgba(124, 124, 124, 0.4);
 }
-.highlight-icon {
+.highlight1-icon {
   width: 24px;
   height: 24px;
 }
-.highlight-container {
+.highlight1-container {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
 }
-.highlight-text {
+.highlight1-text {
   font-size: 18px;
   max-width: 535px;
   font-style: normal;
@@ -35,20 +35,23 @@
   text-transform: none;
   text-decoration: none;
 }
-.highlight-text1 {
+.highlight1-text1 {
   max-width: 535px;
   font-family: "Inter";
   line-height: 24px;
 }
-.highlight-root-class-name3 {
+.highlight1-root-class-name3 {
   width: 100%;
 }
-.highlight-root-class-name4 {
+.highlight1-root-class-name4 {
   width: 100%;
 }
-.highlight-root-class-name5 {
+.highlight1-root-class-name5 {
   width: 100%;
 }
-.highlight-root-class-name6 {
+.highlight1-root-class-name6 {
+  width: 100%;
+}
+.highlight1-root-class-name7 {
   width: 100%;
 }

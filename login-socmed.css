@@ -15,6 +15,7 @@
   height: 100vh;
   display: flex;
   position: relative;
+  align-self: center;
   align-items: center;
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
@@ -31,18 +32,14 @@
   align-items: center;
   padding-top: var(--dl-space-space-fourunits);
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
 }
 .login-socmed-container03 {
   gap: var(--dl-space-space-twounits);
-  top: 0px;
-  left: 0px;
   width: 100%;
-  bottom: 0px;
-  margin: auto;
   display: flex;
-  position: absolute;
   align-items: center;
+  margin-bottom: 0px;
   flex-direction: row;
   justify-content: center;
 }
@@ -176,20 +173,6 @@
   border-color: #d7ff00;
 }
 .login-socmed-container07 {
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  bottom: 0px;
-  height: 329px;
-  margin: auto;
-  display: flex;
-  position: absolute;
-  align-items: flex-start;
-  flex-direction: column;
-  background-color: #0a1562;
-}
-.login-socmed-container08 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   height: 100vh;
@@ -203,7 +186,7 @@
   justify-content: center;
   background-color: #43772a;
 }
-.login-socmed-container09 {
+.login-socmed-container08 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -278,7 +261,7 @@
   border-width: 0px;
   border-radius: 20px;
 }
-.login-socmed-container10 {
+.login-socmed-container09 {
   display: flex;
   align-items: center;
   margin-left: var(--dl-space-space-unit);
@@ -291,7 +274,7 @@
   margin-left: var(--dl-space-space-unit);
   margin-right: var(--dl-space-space-unit);
 }
-.login-socmed-container11 {
+.login-socmed-container10 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -327,7 +310,7 @@
   color: #d7ff00;
   border-color: #d7ff00;
 }
-.login-socmed-container12 {
+.login-socmed-container11 {
   display: flex;
   align-self: flex-end;
   margin-top: var(--dl-space-space-unit);
@@ -368,17 +351,17 @@
   color: #d7ff00;
   border-color: #d7ff00;
 }
-.login-socmed-container14 {
+.login-socmed-container13 {
   display: contents;
 }
 .login-socmed-lottie-node1 {
   width: 456px;
   height: 456px;
 }
-.login-socmed-container16 {
+.login-socmed-container15 {
   display: contents;
 }
-.login-socmed-container18 {
+.login-socmed-container17 {
   display: contents;
 }
 @media(max-width: 1200px) {
@@ -430,7 +413,7 @@
   .login-socmed-button {
     border-radius: 10px;
   }
-  .login-socmed-container09 {
+  .login-socmed-container08 {
     padding: var(--dl-space-space-unit);
   }
   .login-socmed-text06 {
