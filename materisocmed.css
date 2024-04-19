@@ -867,7 +867,7 @@
   height: auto;
   display: flex;
   align-items: center;
-  padding-top: 0px;
+  padding-top: var(--dl-space-space-unit);
   padding-left: 0px;
   padding-right: 0px;
   flex-direction: column;
