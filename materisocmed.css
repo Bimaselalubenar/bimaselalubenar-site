@@ -344,6 +344,9 @@
   font-family: "Inter";
   line-height: 24px;
 }
+.highlight1-root-class-name {
+  width: 100%;
+}
 .highlight1-root-class-name3 {
   width: 100%;
 }
@@ -357,9 +360,6 @@
   width: 100%;
 }
 .highlight1-root-class-name7 {
-  width: 100%;
-}
-.highlight1-root-class-name {
   width: 100%;
 }
 
@@ -1243,8 +1243,9 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   border-radius: 10px;
+  background-size: cover;
   justify-content: flex-start;
-  background-color: #efefef;
+  background-image: url('https://www.pajak.com/storage/2024/02/business-plan.jpg');
 }
 .materisocmed-lottie-node {
   width: 125px;
@@ -1258,7 +1259,7 @@
   max-width: auto;
   font-style: normal;
   font-family: "Inter";
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.15;
   padding-top: 0px;
   padding-left: 0px;
@@ -1328,8 +1329,9 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   border-radius: 10px;
+  background-size: cover;
   justify-content: flex-start;
-  background-color: #efefef;
+  background-image: url('https://www.pajak.com/storage/2024/02/business-plan.jpg');
 }
 .materisocmed-lottie-node1 {
   width: 125px;
@@ -1343,7 +1345,7 @@
   max-width: auto;
   font-style: normal;
   font-family: "Inter";
-  font-weight: 600;
+  font-weight: 700;
   line-height: 1.15;
   padding-top: 0px;
   padding-left: 0px;
@@ -1456,7 +1458,7 @@
 }
 .materisocmed-text24 {
   color: #000000;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   margin-top: 0px;
   text-align: left;
@@ -1547,7 +1549,7 @@
 }
 .materisocmed-text27 {
   color: #000000;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   margin-top: 0px;
   text-align: left;
@@ -1646,7 +1648,7 @@
 }
 .materisocmed-text30 {
   color: #000000;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   margin-top: 0px;
   text-align: left;
@@ -1737,7 +1739,7 @@
 }
 .materisocmed-text33 {
   color: #000000;
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   margin-top: 0px;
   text-align: left;
@@ -1854,7 +1856,7 @@
 }
 .materisocmed-text37 {
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   margin-top: 0px;
   text-align: left;
@@ -1945,7 +1947,7 @@
 }
 .materisocmed-text40 {
   color: rgb(0, 0, 0);
-  font-size: 18px;
+  font-size: 20px;
   font-style: normal;
   margin-top: 0px;
   text-align: left;
@@ -2076,7 +2078,7 @@
   justify-content: flex-start;
 }
 .materisocmed-text44 {
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
 }
 .materisocmed-text46 {
@@ -2157,7 +2159,7 @@
   justify-content: flex-start;
 }
 .materisocmed-text48 {
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
 }
 .materisocmed-text50 {
@@ -2246,7 +2248,7 @@
   justify-content: flex-start;
 }
 .materisocmed-text53 {
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
 }
 .materisocmed-text55 {
@@ -2327,7 +2329,7 @@
   justify-content: flex-start;
 }
 .materisocmed-text58 {
-  font-size: 18px;
+  font-size: 20px;
   text-align: left;
 }
 .materisocmed-navlink09 {
