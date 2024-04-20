@@ -336,79 +336,40 @@
     </script></head
   ><body
     ><link rel="stylesheet" href="./style.css" /><div
-      ><link href="./materisocmed.css" rel="stylesheet" /><script
+      ><script
         type="text/javascript"
         src="https://unpkg.com/@lottiefiles/lottie-player@1.6.0/dist/lottie-player.js"
       ></script
-      ><div class="materisocmed-container"
+      ><link href="./materisocmed.css" rel="stylesheet" /><div
+        class="materisocmed-container"
         ><div id="overlay" class="loading-container loading-root-class-name2"
           ><div class="loading-container1"
-            ><h1 class="loading-text">Sedang di muat..</h1
-            ><h1 id="typing" class="loading-text1"><span>Loading..</span></h1
-            ><h1 class="loading-text2">|</h1></div
-          ><img
-            alt="image"
-            src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/bimaselalubenar.gif?updatedAt=1712742178111"
-            class="loading-image"
-          /><div
-            ><div class="loading-container3"
-              ><script>
-                const words = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15', '16'];
-                let index = 0;
-                let letterIndex = 0;
-                let isDeleting = false;
-                let typingText = '';
+            ><lottie-player
+              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Animation%20bima/Loading.json?updatedAt=1713578483455"
+              autoplay="true"
+              speed="1"
+              background="transparent"
+              class="loading-lottie-node"
+            ></lottie-player
+            ><div
+              ><div class="loading-container3"
+                ><script>
+                  document.addEventListener('DOMContentLoaded', function () {
+                      var overlay = document.getElementById('overlay');
+                      var content = document.getElementById('content');
 
-                function type() {
-                    const currentWord = words[index % words.length];
-                    if (isDeleting) {
-                        typingText = currentWord.substring(0, letterIndex - 1);
-                        letterIndex--;
-                    } else {
-                        typingText = currentWord.substring(0, letterIndex + 1);
-                        letterIndex++;
-                    }
+                      // Tampilkan overlay
+                      overlay.style.display = 'flex';
 
-                    document.getElementById('typing').textContent = typingText;
-
-                    let typingSpeed = 100;
-                    if (isDeleting) {
-                        typingSpeed /= 2;
-                    }
-
-                    if (!isDeleting && typingText === currentWord) {
-                        isDeleting = true;
-                        typingSpeed = 800;
-                    } else if (isDeleting && typingText === '') {
-                        isDeleting = false;
-                        index++;
-                        typingSpeed = 200;
-                    }
-
-                    setTimeout(type, typingSpeed);
-                }
-
-                type();
-              </script></div
-            ></div
-          ><div
-            ><div class="loading-container5"
-              ><script>
-                document.addEventListener('DOMContentLoaded', function () {
-                    var overlay = document.getElementById('overlay');
-                    var content = document.getElementById('content');
-
-                    // Tampilkan overlay
-                    overlay.style.display = 'flex';
-
-                    // Tunggu 5 detik
-                    setTimeout(function () {
-                        // Sembunyikan overlay dan tampilkan konten utama
-                        overlay.style.display = 'none';
-                        content.style.display = 'block';
-                    }, 5000); // 5000 ms = 5 detik
-                });
-              </script></div
+                      // Tunggu 5 detik
+                      setTimeout(function () {
+                          // Sembunyikan overlay dan tampilkan konten utama
+                          overlay.style.display = 'none';
+                          content.style.display = 'block';
+                      }, 5000); // 5000 ms = 5 detik
+                  });
+                </script></div
+              ></div
             ></div
           ></div
         ><div class="block-container block-root-class-name"

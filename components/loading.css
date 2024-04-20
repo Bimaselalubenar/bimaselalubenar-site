@@ -13,44 +13,23 @@
   background-color: rgba(0, 0, 0, 0.13);
 }
 .loading-container1 {
+  width: 100%;
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
-.loading-text {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.loading-text1 {
-  color: #ffffff;
-  font-size: 30px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.loading-text2 {
-  color: rgb(255, 255, 255);
-  font-size: 30px;
-  font-style: normal;
-  text-align: center;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.loading-image {
-  width: 70px;
-  height: 70px;
-  object-fit: cover;
+.loading-lottie-node {
+  width: 100%;
+  height: 100vh;
+  animation-name: zoomOut;
+  animation-delay: 5s;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
 }
 .loading-container3 {
-  display: contents;
-}
-.loading-container5 {
   display: contents;
 }
 .loading-root-class-name {
@@ -63,42 +42,3 @@
 }
 
 
-@media(max-width: 1200px) {
-  .loading-text {
-    font-size: 30px;
-  }
-  .loading-text1 {
-    font-size: 30px;
-  }
-  .loading-text2 {
-    font-size: 30px;
-  }
-}
-@media(max-width: 991px) {
-  .loading-text {
-    font-size: 20px;
-  }
-  .loading-text1 {
-    font-size: 20px;
-  }
-  .loading-text2 {
-    font-size: 20px;
-  }
-}
-@media(max-width: 767px) {
-  .loading-text {
-    font-size: 20px;
-  }
-  .loading-text1 {
-    font-size: 20px;
-  }
-  .loading-text2 {
-    font-size: 20px;
-  }
-}
-@media(max-width: 479px) {
-  .loading-image {
-    width: 50px;
-    height: 50px;
-  }
-}
