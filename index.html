@@ -336,11 +336,50 @@
     </script></head
   ><body
     ><link rel="stylesheet" href="./style.css" /><div
-      ><link href="./index.css" rel="stylesheet" /><script
+      ><script
         type="text/javascript"
         src="https://unpkg.com/@lottiefiles/lottie-player@1.6.0/dist/lottie-player.js"
       ></script
-      ><div class="profile-container"
+      ><link href="./index.css" rel="stylesheet" /><div
+        class="profile-container"
+        ><div id="overlay" class="loading-container loading-root-class-name3"
+          ><div class="loading-container1"
+            ><lottie-player
+              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Animation%20bima/Loading.json?updatedAt=1713578483455"
+              speed="1"
+              autoplay="true"
+              background="transparent"
+              class="loading-lottie-node"
+            ></lottie-player
+            ><lottie-player
+              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Animation%20-%201713100629023.json?updatedAt=1713497661441"
+              loop="true"
+              speed="2"
+              autoplay="true"
+              background="transparent"
+              class="loading-lottie-node1"
+            ></lottie-player
+            ><div
+              ><div class="loading-container3"
+                ><script>
+                  document.addEventListener('DOMContentLoaded', function () {
+                      var overlay = document.getElementById('overlay');
+                      var content = document.getElementById('content');
+
+                      // Tampilkan overlay
+                      overlay.style.display = 'flex';
+
+                      // Tunggu 5 detik
+                      setTimeout(function () {
+                          // Sembunyikan overlay dan tampilkan konten utama
+                          overlay.style.display = 'none';
+                          content.style.display = 'block';
+                      }, 5000); // 5000 ms = 5 detik
+                  });
+                </script></div
+              ></div
+            ></div
+          ></div
         ><div class="profile-container01"
           ><header data-thq="thq-navbar" class="profile-navbar"
             ><img

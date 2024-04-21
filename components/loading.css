@@ -15,19 +15,32 @@
 .loading-container1 {
   width: 100%;
   display: flex;
+  overflow: hidden;
+  position: relative;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 .loading-lottie-node {
   width: 100%;
   height: 100vh;
+  z-index: 100;
   animation-name: zoomOut;
   animation-delay: 5s;
   animation-duration: 1s;
   animation-direction: normal;
   animation-iteration-count: 1;
   animation-timing-function: ease-out;
+}
+.loading-lottie-node1 {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  width: 1920px;
+  bottom: 0px;
+  height: 1980px;
+  margin: auto;
+  position: absolute;
 }
 .loading-container3 {
   display: contents;
@@ -40,5 +53,6 @@
   position: absolute;
   align-self: center;
 }
+
 
 

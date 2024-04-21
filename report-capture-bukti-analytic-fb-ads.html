@@ -487,11 +487,16 @@
         ><div
           ><div class="report-capture-bukti-analytic-fb-ads-container7"
             ><script>
-              const loggedInUser = localStorage.getItem('loggedInUser');
-              if (!loggedInUser) {
-                  window.location.href = 'login-socmed.html'; // Redirect ke halaman login jika tidak ada user yang login
+              const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
+              if (loggedInUser) {
+                document.getElementById('welcomeText').innerText = `Halo, ${loggedInUser.name}!`;
               } else {
-                  document.getElementById('loggedInUser').textContent = loggedInUser;
+                window.location.href = 'login-socmed.html';
+              }
+
+              function logout() {
+                localStorage.removeItem('loggedInUser');
+                window.location.href = 'login-socmed.html';
               }
             </script></div
           ></div

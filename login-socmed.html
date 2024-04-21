@@ -346,10 +346,18 @@
           ><div class="loading-container1"
             ><lottie-player
               src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Animation%20bima/Loading.json?updatedAt=1713578483455"
-              autoplay="true"
               speed="1"
+              autoplay="true"
               background="transparent"
               class="loading-lottie-node"
+            ></lottie-player
+            ><lottie-player
+              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Animation%20-%201713100629023.json?updatedAt=1713497661441"
+              loop="true"
+              speed="2"
+              autoplay="true"
+              background="transparent"
+              class="loading-lottie-node1"
             ></lottie-player
             ><div
               ><div class="loading-container3"
@@ -407,13 +415,19 @@
                       placeholder="Password"
                       autocomplete="off"
                       class="login-socmed-textinput1 input"
-                    /><div class="login-socmed-container06"
-                      ><input type="checkbox" id="123" required="true" /><label
-                        for="123"
-                        class="login-socmed-text03"
-                        >Setuju &amp; lanjutkan</label
+                    /><div for="123" class="login-socmed-container06"
+                      ><input
+                        type="checkbox"
+                        id="123"
+                        required="true"
+                        class="login-socmed-checkbox"
+                      /><span for="123" class="login-socmed-text03"
+                        >Setuju &amp; lanjutkan</span
                       ></div
-                    ><button type="submit" class="login-socmed-button input"
+                    ><button
+                      type="button"
+                      onclick="login()"
+                      class="login-socmed-button input"
                       >MASUK</button
                     ><div class="login-socmed-container07"
                       ><label class="login-socmed-text04"
@@ -504,112 +518,73 @@
         ><div
           ><div class="login-socmed-container16"
             ><script>
-              const words = ['Halo..', 'Silahkan masukan username dan password', 'dan jangan lupa untuk menyimpan dan di ingat', 'Semangat :)'];
-              let index = 0;
-              let letterIndex = 0;
-              let isDeleting = false;
-              let typingText = '';
-
-              function type() {
-                  const currentWord = words[index % words.length];
-                  if (isDeleting) {
-                      typingText = currentWord.substring(0, letterIndex - 1);
-                      letterIndex--;
-                  } else {
-                      typingText = currentWord.substring(0, letterIndex + 1);
-                      letterIndex++;
-                  }
-
-                  document.getElementById('pengumuman').textContent = typingText;
-
-                  let typingSpeed = 100;
-                  if (isDeleting) {
-                      typingSpeed /= 2;
-                  }
-
-                  if (!isDeleting && typingText === currentWord) {
-                      isDeleting = true;
-                      typingSpeed = 800;
-                  } else if (isDeleting && typingText === '') {
-                      isDeleting = false;
-                      index++;
-                      typingSpeed = 200;
-                  }
-
-                  setTimeout(type, typingSpeed);
-              }
-
-              type();
-            </script></div
-          ></div
-        ><div
-          ><div class="login-socmed-container18"
-            ><script>
-              // Daftar username dan password
-              const users = [
-              { username: 'MPMSIMPANG', password: '9931' },
-              { username: 'MPMNGAGEL', password: '9932' },
-              { username: 'MPMMASTRIP', password: '9933' },
-              { username: 'MPMGRESIK', password: '9934' },
-              { username: 'MPMGATEWAY', password: '9935' },
-              { username: 'MPMLARANGAN', password: '9936' },
-              { username: 'MPMMOJOKERTO', password: '9937' },
-              { username: 'MPMKUPANG', password: '9938' },
-              { username: 'MPMMATARAM', password: '9939' },
-              { username: 'MPMLOTIM', password: '9940' },
-              { username: 'MPMBATAM', password: '9941' },
-              { username: 'MPMPEKANBARU', password: '9942' },
-              { username: 'MPMMEDAN', password: '9943' },
-              { username: 'MPMPRABUMULIH', password: '9944' },
-              { username: 'MPMKEDIRI', password: '9945' },
-              { username: 'MPMPARE', password: '9946' },
-              { username: 'MPMTULUNGAGUNG', password: '9947' },
-              { username: 'MPMMADIUN', password: '9948' },
-              { username: 'MPMPONOROGO', password: '9949' },
-              { username: 'MPMBOJONEGORO', password: '9950' },
-              { username: 'MPMTUBAN', password: '9951' },
-              { username: 'MPMNGANJUK', password: '9952' },
-              { username: 'MPMNGAWI', password: '9953' },
-              { username: 'MPMJOMBANG', password: '9954' },
-              { username: 'MPMBABAT', password: '9955' },
-              { username: 'MPMBOGOR', password: '9956' },
-              { username: 'MPMTANGERANG', password: '9957' },
-              { username: 'MPMJEMBER', password: '9958' },
-              { username: 'MPMPASURUAN', password: '9959' },
-              { username: 'MPMKEBONSARI', password: '9960' },
-              { username: 'MPMBANYUWANGI', password: '9961' },
-              { username: 'MPMBONDOWOSO', password: '9962' },
-              { username: 'MPMSUKOREJO', password: '9963' },
-              { username: 'MPMBASUKI', password: '9964' },
-              { username: 'MPMSUKUN', password: '9965' },
-              { username: 'MPMKEPANJEN', password: '9966' },
-              { username: 'MPMBLITAR', password: '9967' },
-              { username: 'MPMPALU', password: '9968' },
-              { username: 'MPMMAKASSAR', password: '9969' },
-              { username: 'MPMPONTIANAK', password: '9970' },
-              { username: 'MPMKALISAT', password: '9971' },
-              { username: 'MOURITS', password: '9999' },
-              { username: 'BIMA', password: 'BIMA' },
-              { username: 'TAUFIK', password: '9999' },
-              { username: 'SUMA', password: 'ZUMA' },
-              { username: 'SOLEH', password: 'GAKSOLEH' },
-              { username: 'ELNA', password: '9192' },
-                  // Tambahkan username dan password baru di sini
+                const users = [
+                // ADMIN
+              { username: 'MPMMADIUN', name: 'Bima Ardianto', password: '91999' },
+              // PDCA
+              { username: 'MPMSIMPANG', name: 'Sutarminingsih', password: '9931' },
+              { username: 'MPMNGAGEL', name: 'Mifta', password: '9932' },
+              { username: 'MPMMASTRIP', name: 'Raisa', password: '9933' },
+              { username: 'MPMGRESIK', name: 'Alfian', password: '9934' },
+              { username: 'MPMGATEWAY', name: 'Dodi', password: '9935' },
+              { username: 'MPMLARANGAN', name: 'David', password: '9936' },
+              { username: 'MPMMOJOKERTO', name: 'Nessia', password: '9937' },
+              { username: 'MPMKUPANG', name: 'Iwan', password: '9938' },
+              { username: 'MPMMATARAM', name: 'Dedy', password: '9939' },
+              { username: 'MPMLOTIM', name: 'Rizky', password: '9940' },
+              { username: 'MPMBATAM', name: 'Indah', password: '9941' },
+              { username: 'MPMPEKANBARU', name: 'Rudi', password: '9942' },
+              { username: 'MPMMEDAN', name: 'Aini', password: '9943' },
+              { username: 'MPMPRABUMULIH', name: 'Deliza', password: '9944' },
+              { username: 'MPMKEDIRI', name: 'Ferdy', password: '9945' },
+              { username: 'MPMPARE', name: 'Tossy', password: '9946' },
+              { username: 'MPMTULUNGAGUNG', name: 'Eviana', password: '9947' },
+              { username: 'MPMMADIUN', name: 'Dibyo', password: '9948' },
+              { username: 'MPMPONOROGO', name: 'Ikmal', password: '9949' },
+              { username: 'MPMBOJONEGORO', name: 'Nindy', password: '9950' },
+              { username: 'MPMTUBAN', name: 'Edi', password: '9951' },
+              { username: 'MPMNGANJUK', name: 'Riko', password: '9952' },
+              { username: 'MPMNGAWI', name: 'Eko', password: '9953' },
+              { username: 'MPMJOMBANG', name: 'Eko', password: '9954' },
+              { username: 'MPMBABAT', name: 'Pulung', password: '9955' },
+              { username: 'MPMBOGOR', name: 'Desy', password: '9956' },
+              { username: 'MPMTANGERANG', name: 'Hafeed', password: '9957' },
+              { username: 'MPMJEMBER', name: 'Eko', password: '9958' },
+              { username: 'MPMPASURUAN', name: 'Benny', password: '9959' },
+              { username: 'MPMKEBONSARI', name: 'Eris', password: '9960' },
+              { username: 'MPMBANYUWANGI', name: 'Bakti', password: '9961' },
+              { username: 'MPMBONDOWOSO', name: 'Afif', password: '9962' },
+              { username: 'MPMSUKOREJO', name: 'Bhastian', password: '9963' },
+              { username: 'MPMBASUKI', name: 'Dimas', password: '9964' },
+              { username: 'MPMSUKUN', name: 'Enny', password: '9965' },
+              { username: 'MPMKEPANJEN', name: 'Ludfi', password: '9966' },
+              { username: 'MPMBLITAR', name: 'Hamam', password: '9967' },
+              { username: 'MPMPALU', name: 'Fahri', password: '9968' },
+              { username: 'MPMMAKASSAR', name: 'Ima', password: '9969' },
+              { username: 'MPMPONTIANAK', name: 'Fuji', password: '9970' },
+              // Z
+              { username: 'MPMNGANJUK', name: 'Elna', password: '9192' },
+              { username: 'MOURITS', name: 'Mourits', password: '9999' },
+              { username: 'BIMA', name: 'Bima', password: 'BIMA' },
+              { username: 'TAUFIK', name: 'Taufik', password: '9999' },
+              { username: 'SUMA', name: 'Suma', password: 'ZUMA' },
+              { username: 'SOLEH', name: 'Soleh', password: 'GAKSOLEH' },
+              // KACAB
               ];
 
-              const loginForm = document.getElementById('loginForm');
-              loginForm.addEventListener('submit', function (event) {
-                  event.preventDefault();
-                  const username = document.getElementById('username').value;
-                  const password = document.getElementById('password').value;
-                  const user = users.find(u => u.username === username && u.password === password);
-                  if (user) {
-                      localStorage.setItem('loggedInUser', username);
-                      window.location.href = 'materisocmed.html','materisocmedweek1.html','materisocmedweek2.html','materisocmedweek3.html','materisocmedweek4.html';
-                  } else {
-                      alert('User atau password salah, silahkan hubungi penyedia @bimaselalubenar');
-                  }
-              });
+              function login() {
+                const username = document.getElementById('username').value;
+                const password = document.getElementById('password').value;
+
+                const user = users.find(u => u.username === username && u.password === password);
+
+                if (user) {
+                  localStorage.setItem('loggedInUser', JSON.stringify(user));
+                  window.location.href = 'materisocmed.html';
+                } else {
+                  alert('User dan Password tidak terdaftar, hubungi 083845781063 atau klik daftar');
+                }
+              }
             </script></div
           ></div
         ></div
