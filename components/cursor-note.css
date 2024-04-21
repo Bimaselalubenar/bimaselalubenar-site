@@ -1,0 +1,51 @@
+.cursor-note-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  z-index: 1000;
+  position: relative;
+  max-width: auto;
+  align-items: flex-start;
+  padding-top: 0px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: 0px;
+  flex-direction: row;
+  padding-bottom: 0px;
+  justify-content: flex-start;
+}
+.cursor-note-container1 {
+  width: auto;
+  height: auto;
+  display: flex;
+  z-index: 1000;
+  position: relative;
+  max-width: auto;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.37);
+  align-items: flex-start;
+  padding-top: var(--dl-space-space-halfunit);
+  padding-left: var(--dl-space-space-halfunit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.cursor-note-text {
+  width: auto;
+  font-size: 16px;
+  max-width: 388px;
+  font-style: normal;
+  font-family: "Inconsolata";
+  font-weight: 500;
+}
+.cursor-note-icon {
+  width: 15px;
+  height: 15px;
+  align-self: flex-start;
+}
+.cursor-note-root-class-name1 {
+  left: 865px;
+  bottom: 759px;
+  position: absolute;
+}

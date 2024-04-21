@@ -909,6 +909,16 @@
                         <path
                           d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM384 832h-128v-448h128v448zM320 320c-35.4 0-64-28.6-64-64s28.6-64 64-64c35.4 0 64 28.6 64 64s-28.6 64-64 64zM832 832h-128v-256c0-35.4-28.6-64-64-64s-64 28.6-64 64v256h-128v-448h128v79.4c26.4-36.2 66.8-79.4 112-79.4 79.6 0 144 71.6 144 160v288z"
                         ></path></svg></a></div></div></footer></div></div></div
+        ><div
+          id="note4"
+          class="cursor-note-container cursor-note-root-class-name1"
+          ><div class="cursor-note-container1"
+            ><span class="cursor-note-text"
+              ><span>Halo, Jangan lupa minum 18 galon setiap hari</span></span
+            ><svg viewBox="0 0 1024 1024" class="cursor-note-icon">
+              <path
+                d="M768 342v-86h-512v86h512zM598 598v-86h-342v86h342zM256 384v86h512v-86h-512zM854 86q34 0 59 25t25 59v512q0 34-25 60t-59 26h-598l-170 170v-768q0-34 25-59t59-25h684z"
+              ></path></svg></div></div
         ><div class="materisocmed-container53"
           ><div class="materisocmed-container54"
             ><script
@@ -976,6 +986,22 @@
                 localStorage.removeItem('loggedInUser');
                 window.location.href = 'login-socmed.html';
               }
+            </script></div
+          ></div
+        ><div
+          ><div class="materisocmed-container62"
+            ><script>
+              const note4 = document.getElementById('note4');
+
+              document.addEventListener('mousemove', (e) => {
+                note4.style.display = 'block';
+                note4.style.left = e.pageX + 'px';
+                note4.style.top = e.pageY + 'px';
+              });
+
+              document.addEventListener('mouseout', () => {
+                note4.style.display = 'none';
+              });
             </script></div
           ></div
         ></div
