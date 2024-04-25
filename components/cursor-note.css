@@ -14,6 +14,7 @@
   justify-content: flex-start;
 }
 .cursor-note-container1 {
+  gap: var(--dl-space-space-halfunit);
   width: auto;
   height: auto;
   display: flex;
@@ -41,11 +42,16 @@
 }
 .cursor-note-icon {
   width: 15px;
-  height: 15px;
+  height: auto;
   align-self: flex-start;
 }
 .cursor-note-root-class-name1 {
   left: 865px;
   bottom: 759px;
   position: absolute;
+}
+@media(max-width: 767px) {
+  .cursor-note-container {
+    display: none;
+  }
 }
