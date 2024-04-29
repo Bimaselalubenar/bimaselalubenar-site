@@ -3,7 +3,7 @@
   width: 100%;
   cursor: not-allowed;
   height: 100vh;
-  display: none;
+  display: flex;
   z-index: 1000;
   position: relative;
   align-items: center;

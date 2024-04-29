@@ -8,22 +8,10 @@
   flex-direction: row;
   justify-content: center;
 }
-.ads-payrol-text {
-  top: 0px;
-  color: #ffffff;
-  right: 0px;
-  position: absolute;
-  font-size: 9px;
-  padding-top: 5px;
-  padding-left: 5px;
-  border-radius: var(--dl-radius-radius-radius4);
-  padding-right: 5px;
-  padding-bottom: 5px;
-  background-color: #000000;
-}
 .ads-payrol-container01 {
   gap: var(--dl-space-space-unit);
   width: 100%;
+  cursor: grabbing;
   height: auto;
   display: flex;
   overflow: hidden;
@@ -36,7 +24,7 @@
 }
 .ads-payrol-container02 {
   flex: 0 0 auto;
-  width: 300px;
+  width: 250px;
   height: 100%;
   display: flex;
   overflow: hidden;
@@ -54,7 +42,7 @@
   width: 100%;
   object-fit: cover;
 }
-.ads-payrol-text1 {
+.ads-payrol-text {
   width: 100%;
   font-size: 18px;
   font-style: normal;
@@ -95,32 +83,39 @@
   align-items: center;
   justify-content: flex-end;
 }
-.ads-payrol-text2 {
+.ads-payrol-text1 {
   color: #ffffff;
+  font-size: 10px;
+}
+.ads-payrol-container06 {
+  gap: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .ads-payrol-icon {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon02 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon04 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon06 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon08 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-link {
@@ -136,9 +131,9 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.ads-payrol-container06 {
+.ads-payrol-container07 {
   flex: 0 0 auto;
-  width: 300px;
+  width: 250px;
   height: 100%;
   display: flex;
   overflow: hidden;
@@ -149,14 +144,14 @@
   justify-content: center;
   background-color: #d0d0d0;
 }
-.ads-payrol-container06:hover {
+.ads-payrol-container07:hover {
   box-shadow: 5px 5px 10px 0px rgba(153, 153, 153, 0.42);
 }
 .ads-payrol-image2 {
   width: 100%;
   object-fit: cover;
 }
-.ads-payrol-text3 {
+.ads-payrol-text2 {
   width: 100%;
   font-size: 18px;
   font-style: normal;
@@ -168,7 +163,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: #ffffff;
 }
-.ads-payrol-container07 {
+.ads-payrol-container08 {
   width: 100%;
   height: auto;
   display: flex;
@@ -180,7 +175,7 @@
   justify-content: center;
   background-color: #df5700;
 }
-.ads-payrol-container08 {
+.ads-payrol-container09 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -191,38 +186,45 @@
   height: auto;
   object-fit: cover;
 }
-.ads-payrol-container09 {
+.ads-payrol-container10 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.ads-payrol-text4 {
+.ads-payrol-text3 {
   color: #ffffff;
+  font-size: 10px;
+}
+.ads-payrol-container11 {
+  gap: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .ads-payrol-icon10 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon12 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon14 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon16 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon18 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-link1 {
@@ -238,9 +240,9 @@
   padding-bottom: var(--dl-space-space-halfunit);
   text-decoration: none;
 }
-.ads-payrol-container10 {
+.ads-payrol-container12 {
   flex: 0 0 auto;
-  width: 300px;
+  width: 250px;
   height: 100%;
   display: flex;
   overflow: hidden;
@@ -251,14 +253,14 @@
   justify-content: center;
   background-color: #d0d0d0;
 }
-.ads-payrol-container10:hover {
+.ads-payrol-container12:hover {
   box-shadow: 5px 5px 10px 0px rgba(153, 153, 153, 0.42);
 }
 .ads-payrol-image4 {
   width: 100%;
   object-fit: cover;
 }
-.ads-payrol-text5 {
+.ads-payrol-text4 {
   width: 100%;
   font-size: 18px;
   font-style: normal;
@@ -270,7 +272,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: #ffffff;
 }
-.ads-payrol-container11 {
+.ads-payrol-container13 {
   width: 100%;
   height: auto;
   display: flex;
@@ -282,7 +284,7 @@
   justify-content: center;
   background-color: #df5700;
 }
-.ads-payrol-container12 {
+.ads-payrol-container14 {
   width: 100%;
   display: flex;
   align-items: center;
@@ -293,38 +295,45 @@
   height: auto;
   object-fit: cover;
 }
-.ads-payrol-container13 {
+.ads-payrol-container15 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   justify-content: flex-end;
 }
-.ads-payrol-text6 {
+.ads-payrol-text5 {
   color: #ffffff;
+  font-size: 10px;
+}
+.ads-payrol-container16 {
+  gap: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 }
 .ads-payrol-icon20 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon22 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon24 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon26 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-icon28 {
   fill: #fcff00;
-  width: 16px;
+  width: 12px;
   height: auto;
 }
 .ads-payrol-link2 {
@@ -345,7 +354,7 @@
   .ads-payrol-container02 {
     width: 206px;
   }
-  .ads-payrol-text1 {
+  .ads-payrol-text {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
@@ -365,7 +374,7 @@
   .ads-payrol-container05 {
     justify-content: flex-end;
   }
-  .ads-payrol-text2 {
+  .ads-payrol-text1 {
     font-size: 8px;
   }
   .ads-payrol-icon {
@@ -386,30 +395,30 @@
   .ads-payrol-link {
     font-size: 14px;
   }
-  .ads-payrol-container06 {
+  .ads-payrol-container07 {
     width: 206px;
   }
-  .ads-payrol-text3 {
+  .ads-payrol-text2 {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.3;
     background-color: rgb(255, 255, 255);
   }
-  .ads-payrol-container07 {
+  .ads-payrol-container08 {
     padding: var(--dl-space-space-halfunit);
   }
-  .ads-payrol-container08 {
+  .ads-payrol-container09 {
     flex-direction: row;
     justify-content: space-between;
   }
   .ads-payrol-image3 {
     width: 57px;
   }
-  .ads-payrol-container09 {
+  .ads-payrol-container10 {
     justify-content: flex-end;
   }
-  .ads-payrol-text4 {
+  .ads-payrol-text3 {
     font-size: 8px;
   }
   .ads-payrol-icon10 {
@@ -430,30 +439,30 @@
   .ads-payrol-link1 {
     font-size: 14px;
   }
-  .ads-payrol-container10 {
+  .ads-payrol-container12 {
     width: 206px;
   }
-  .ads-payrol-text5 {
+  .ads-payrol-text4 {
     font-size: 16px;
     font-style: normal;
     font-weight: 700;
     line-height: 1.3;
     background-color: rgb(255, 255, 255);
   }
-  .ads-payrol-container11 {
+  .ads-payrol-container13 {
     padding: var(--dl-space-space-halfunit);
   }
-  .ads-payrol-container12 {
+  .ads-payrol-container14 {
     flex-direction: row;
     justify-content: space-between;
   }
   .ads-payrol-image5 {
     width: 57px;
   }
-  .ads-payrol-container13 {
+  .ads-payrol-container15 {
     justify-content: flex-end;
   }
-  .ads-payrol-text6 {
+  .ads-payrol-text5 {
     font-size: 8px;
   }
   .ads-payrol-icon20 {
