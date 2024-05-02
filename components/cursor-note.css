@@ -40,14 +40,9 @@
   font-family: "Inconsolata";
   font-weight: 500;
 }
-.cursor-note-icon {
-  width: 15px;
-  height: auto;
-  align-self: flex-start;
-}
 .cursor-note-root-class-name1 {
-  left: 865px;
-  bottom: 759px;
+  top: 365px;
+  left: 883px;
   position: absolute;
 }
 @media(max-width: 767px) {

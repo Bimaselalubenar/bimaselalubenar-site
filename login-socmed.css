@@ -3,7 +3,7 @@
   top: 0px;
   width: 100%;
   height: 100vh;
-  display: none;
+  display: flex;
   z-index: 110;
   position: fixed;
   align-items: center;
@@ -121,14 +121,14 @@
   align-items: flex-start;
   border-color: rgba(255, 255, 255, 0.32);
   border-width: 2px;
-  border-radius: 20px;
+  border-radius: 10px;
   flex-direction: column;
   backdrop-filter: blur(5px);
   background-color: rgba(217, 217, 217, 0.06);
 }
 .login-socmed-text {
   color: rgb(240, 251, 1);
-  font-size: 30px;
+  font-size: 20px;
   align-self: center;
   font-style: normal;
   text-align: left;
@@ -152,10 +152,13 @@
 }
 .login-socmed-textinput {
   width: 100%;
-  padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
+  padding-top: var(--dl-space-space-halfunit);
   border-width: 0px;
-  border-radius: 20px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .login-socmed-text02 {
   color: rgb(255, 255, 255);
@@ -165,10 +168,13 @@
 }
 .login-socmed-textinput1 {
   width: 100%;
-  padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
+  padding-top: var(--dl-space-space-halfunit);
   border-width: 0px;
-  border-radius: 20px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .login-socmed-container06 {
   display: flex;
@@ -190,12 +196,15 @@
 .login-socmed-button {
   width: 100%;
   cursor: pointer;
-  padding: var(--dl-space-space-unit);
   font-style: normal;
   font-family: "Inconsolata";
   font-weight: 900;
+  padding-top: var(--dl-space-space-halfunit);
   border-width: 0px;
-  border-radius: 20px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
   background-color: rgb(219, 249, 0);
 }
 .login-socmed-container07 {
@@ -273,7 +282,7 @@
 }
 .login-socmed-text06 {
   color: rgb(240, 251, 1);
-  font-size: 30px;
+  font-size: 20px;
   align-self: center;
   font-style: normal;
   text-align: left;
@@ -297,10 +306,13 @@
 }
 .login-socmed-textinput2 {
   width: 100%;
-  padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
+  padding-top: var(--dl-space-space-halfunit);
   border-width: 0px;
-  border-radius: 20px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .login-socmed-text08 {
   color: rgb(255, 255, 255);
@@ -310,10 +322,13 @@
 }
 .login-socmed-textinput3 {
   width: 100%;
-  padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
+  padding-top: var(--dl-space-space-halfunit);
   border-width: 0px;
-  border-radius: 20px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .login-socmed-text09 {
   color: rgb(255, 255, 255);
@@ -323,10 +338,13 @@
 }
 .login-socmed-textinput4 {
   width: 100%;
-  padding: var(--dl-space-space-unit);
   font-family: "Inconsolata";
+  padding-top: var(--dl-space-space-halfunit);
   border-width: 0px;
-  border-radius: 20px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
 }
 .login-socmed-container10 {
   display: flex;
@@ -354,25 +372,30 @@
   color: #ffffff;
   width: 100%;
   cursor: pointer;
-  padding: var(--dl-space-space-unit);
   font-style: normal;
   font-family: "Inconsolata";
   font-weight: 900;
+  padding-top: var(--dl-space-space-halfunit);
   border-width: 0px;
-  border-radius: 20px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
   background-color: #00aa1c;
 }
 .login-socmed-button2 {
   color: #ffffff;
   width: auto;
   cursor: pointer;
-  padding: var(--dl-space-space-unit);
   transition: 0.3s;
   font-family: "Inconsolata";
+  padding-top: var(--dl-space-space-halfunit);
   border-color: #ffffff;
   border-width: 1px;
-  border-radius: 20px;
-  padding-bottom: 16px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
   background-color: transparent;
 }
 .login-socmed-button2:hover {

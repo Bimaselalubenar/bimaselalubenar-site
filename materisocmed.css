@@ -3,7 +3,7 @@
   top: 0px;
   width: 100%;
   height: 100vh;
-  display: none;
+  display: flex;
   z-index: 110;
   position: fixed;
   align-items: center;
@@ -56,7 +56,7 @@
   width: 100%;
   cursor: not-allowed;
   height: 100vh;
-  display: flex;
+  display: none;
   z-index: 1000;
   position: relative;
   align-items: center;
@@ -221,490 +221,150 @@
   }
 }
 
-.ads-payrol-container {
-  width: 100%;
-  height: auto;
-  display: flex;
-  position: relative;
-  max-width: 479px;
-  align-items: flex-start;
-  flex-direction: row;
-  justify-content: center;
-}
-.ads-payrol-container01 {
+.ads-container {
   gap: var(--dl-space-space-unit);
   width: 100%;
-  cursor: grabbing;
-  height: auto;
+  height: 255px;
   display: flex;
-  overflow: hidden;
-  overflow-x: scroll;
+  position: initial;
+  max-width: 479px;
   align-items: flex-start;
-  border-radius: var(--dl-radius-radius-radius4);
+  border-radius: 15px;
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: 0px;
   justify-content: flex-start;
 }
-.ads-payrol-container02 {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 100%;
+.ads-text {
+  top: 0px;
+  color: #ffffff;
+  right: 0px;
+  position: absolute;
+  font-size: 9px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: 5px;
+  padding-bottom: 5px;
+  background-color: #000000;
+}
+.ads-container1 {
+  gap: 0;
+  flex: 1;
+  width: 100%;
+  height: 235px;
   display: flex;
   overflow: hidden;
-  transition: 0.3s;
+  position: relative;
+  max-width: 1000px;
   align-items: center;
-  border-radius: 10px;
+  border-color: #bfbfbf;
+  border-style: dashed;
+  border-width: 0px;
+  border-radius: 15px;
   flex-direction: column;
   justify-content: center;
-  background-color: #d0d0d0;
 }
-.ads-payrol-container02:hover {
-  box-shadow: 5px 5px 10px 0px rgba(153, 153, 153, 0.42);
+.ads-text1 {
+  top: 0px;
+  color: #ffffff;
+  right: 0px;
+  position: absolute;
+  font-size: 9px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: 5px;
+  padding-bottom: 5px;
+  background-color: #000000;
 }
-.ads-payrol-image {
-  width: 100%;
-  object-fit: cover;
+.ads-text2 {
+  color: #bfbfbf;
+  z-index: 100;
 }
-.ads-payrol-text {
-  width: 100%;
-  font-size: 18px;
+.ads-text3 {
+  color: #ffffff;
+  display: none;
+  z-index: 100;
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.3;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 400;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-unit);
+  border-radius: 15px;
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-halfunit);
+  background-color: #000000;
+}
+.ads-text3:hover {
+  color: #000000;
+  transform: scale(105%);
+  box-shadow: 5px 5px 15px 0px rgba(56, 56, 56, 0.44);
+  border-radius: 15px;
+  letter-spacing: 2px;
   background-color: #ffffff;
 }
-.ads-payrol-container03 {
+.ads-container2 {
+  gap: 0;
+  flex: 1;
   width: 100%;
-  height: auto;
-  display: flex;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
-  justify-content: center;
-  background-color: #df5700;
-}
-.ads-payrol-container04 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.ads-payrol-image1 {
-  width: 80px;
-  height: auto;
-  object-fit: cover;
-}
-.ads-payrol-container05 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ads-payrol-text1 {
-  color: #ffffff;
-  font-size: 10px;
-}
-.ads-payrol-container06 {
-  gap: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ads-payrol-icon {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon02 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon04 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon06 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon08 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-link {
-  color: #ffffff;
-  margin-top: var(--dl-space-space-unit);
-  text-align: center;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-width: 2px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  text-decoration: none;
-}
-.ads-payrol-container07 {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 100%;
+  height: 235px;
   display: flex;
   overflow: hidden;
-  transition: 0.3s;
+  position: relative;
+  max-width: 1000px;
   align-items: center;
-  border-radius: 10px;
+  border-color: #bfbfbf;
+  border-style: dashed;
+  border-width: 0px;
+  border-radius: 15px;
   flex-direction: column;
   justify-content: center;
-  background-color: #d0d0d0;
 }
-.ads-payrol-container07:hover {
-  box-shadow: 5px 5px 10px 0px rgba(153, 153, 153, 0.42);
+.ads-text4 {
+  top: 0px;
+  color: #ffffff;
+  right: 0px;
+  position: absolute;
+  font-size: 9px;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: var(--dl-radius-radius-radius4);
+  padding-right: 5px;
+  padding-bottom: 5px;
+  background-color: #000000;
 }
-.ads-payrol-image2 {
-  width: 100%;
-  object-fit: cover;
+.ads-text5 {
+  color: #bfbfbf;
+  z-index: 100;
 }
-.ads-payrol-text2 {
-  width: 100%;
-  font-size: 18px;
+.ads-text6 {
+  color: #ffffff;
+  display: none;
+  z-index: 100;
   font-style: normal;
-  font-weight: 700;
-  line-height: 1.3;
+  text-align: center;
+  transition: 0.3s;
+  font-weight: 400;
   padding-top: var(--dl-space-space-halfunit);
   padding-left: var(--dl-space-space-unit);
+  border-radius: 15px;
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-halfunit);
+  background-color: #000000;
+}
+.ads-text6:hover {
+  color: #000000;
+  transform: scale(105%);
+  box-shadow: 5px 5px 15px 0px rgba(56, 56, 56, 0.44);
+  border-radius: 15px;
+  letter-spacing: 2px;
   background-color: #ffffff;
 }
-.ads-payrol-container08 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
-  justify-content: center;
-  background-color: #df5700;
-}
-.ads-payrol-container09 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.ads-payrol-image3 {
-  width: 80px;
-  height: auto;
-  object-fit: cover;
-}
-.ads-payrol-container10 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ads-payrol-text3 {
-  color: #ffffff;
-  font-size: 10px;
-}
-.ads-payrol-container11 {
-  gap: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ads-payrol-icon10 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon12 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon14 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon16 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon18 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-link1 {
-  color: #ffffff;
-  margin-top: var(--dl-space-space-unit);
-  text-align: center;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-width: 2px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  text-decoration: none;
-}
-.ads-payrol-container12 {
-  flex: 0 0 auto;
-  width: 250px;
-  height: 100%;
-  display: flex;
-  overflow: hidden;
-  transition: 0.3s;
-  align-items: center;
-  border-radius: 10px;
-  flex-direction: column;
-  justify-content: center;
-  background-color: #d0d0d0;
-}
-.ads-payrol-container12:hover {
-  box-shadow: 5px 5px 10px 0px rgba(153, 153, 153, 0.42);
-}
-.ads-payrol-image4 {
-  width: 100%;
-  object-fit: cover;
-}
-.ads-payrol-text4 {
-  width: 100%;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 700;
-  line-height: 1.3;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: #ffffff;
-}
-.ads-payrol-container13 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
-  justify-content: center;
-  background-color: #df5700;
-}
-.ads-payrol-container14 {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.ads-payrol-image5 {
-  width: 80px;
-  height: auto;
-  object-fit: cover;
-}
-.ads-payrol-container15 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ads-payrol-text5 {
-  color: #ffffff;
-  font-size: 10px;
-}
-.ads-payrol-container16 {
-  gap: 2px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-}
-.ads-payrol-icon20 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon22 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon24 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon26 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-icon28 {
-  fill: #fcff00;
-  width: 12px;
-  height: auto;
-}
-.ads-payrol-link2 {
-  color: #ffffff;
-  margin-top: var(--dl-space-space-unit);
-  text-align: center;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-width: 2px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  text-decoration: none;
-}
-
 @media(max-width: 479px) {
-  .ads-payrol-container02 {
-    width: 206px;
-  }
-  .ads-payrol-text {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.3;
-    background-color: rgb(255, 255, 255);
-  }
-  .ads-payrol-container03 {
-    padding: var(--dl-space-space-halfunit);
-  }
-  .ads-payrol-container04 {
+  .ads-container {
+    height: auto;
     flex-direction: row;
-    justify-content: space-between;
-  }
-  .ads-payrol-image1 {
-    width: 57px;
-  }
-  .ads-payrol-container05 {
-    justify-content: flex-end;
-  }
-  .ads-payrol-text1 {
-    font-size: 8px;
-  }
-  .ads-payrol-icon {
-    width: 9px;
-  }
-  .ads-payrol-icon02 {
-    width: 9px;
-  }
-  .ads-payrol-icon04 {
-    width: 9px;
-  }
-  .ads-payrol-icon06 {
-    width: 9px;
-  }
-  .ads-payrol-icon08 {
-    width: 9px;
-  }
-  .ads-payrol-link {
-    font-size: 14px;
-  }
-  .ads-payrol-container07 {
-    width: 206px;
-  }
-  .ads-payrol-text2 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.3;
-    background-color: rgb(255, 255, 255);
-  }
-  .ads-payrol-container08 {
-    padding: var(--dl-space-space-halfunit);
-  }
-  .ads-payrol-container09 {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .ads-payrol-image3 {
-    width: 57px;
-  }
-  .ads-payrol-container10 {
-    justify-content: flex-end;
-  }
-  .ads-payrol-text3 {
-    font-size: 8px;
-  }
-  .ads-payrol-icon10 {
-    width: 9px;
-  }
-  .ads-payrol-icon12 {
-    width: 9px;
-  }
-  .ads-payrol-icon14 {
-    width: 9px;
-  }
-  .ads-payrol-icon16 {
-    width: 9px;
-  }
-  .ads-payrol-icon18 {
-    width: 9px;
-  }
-  .ads-payrol-link1 {
-    font-size: 14px;
-  }
-  .ads-payrol-container12 {
-    width: 206px;
-  }
-  .ads-payrol-text4 {
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 1.3;
-    background-color: rgb(255, 255, 255);
-  }
-  .ads-payrol-container13 {
-    padding: var(--dl-space-space-halfunit);
-  }
-  .ads-payrol-container14 {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-  .ads-payrol-image5 {
-    width: 57px;
-  }
-  .ads-payrol-container15 {
-    justify-content: flex-end;
-  }
-  .ads-payrol-text5 {
-    font-size: 8px;
-  }
-  .ads-payrol-icon20 {
-    width: 9px;
-  }
-  .ads-payrol-icon22 {
-    width: 9px;
-  }
-  .ads-payrol-icon24 {
-    width: 9px;
-  }
-  .ads-payrol-icon26 {
-    width: 9px;
-  }
-  .ads-payrol-icon28 {
-    width: 9px;
-  }
-  .ads-payrol-link2 {
-    font-size: 14px;
   }
 }
 
@@ -1152,6 +812,7 @@
 
 
 
+
 @media(max-width: 991px) {
   .footer-footer {
     padding-top: var(--dl-space-space-fourunits);
@@ -1250,14 +911,9 @@
   font-family: "Inconsolata";
   font-weight: 500;
 }
-.cursor-note-icon {
-  width: 15px;
-  height: auto;
-  align-self: flex-start;
-}
 .cursor-note-root-class-name1 {
-  left: 865px;
-  bottom: 759px;
+  top: 365px;
+  left: 883px;
   position: absolute;
 }
 @media(max-width: 767px) {
@@ -1669,7 +1325,6 @@
   justify-content: flex-start;
 }
 .materisocmed-container19 {
-  gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
   height: auto;
@@ -1681,6 +1336,7 @@
   border-width: 2px;
   border-radius: 10px;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #ffffff;
 }
 .materisocmed-container20 {
@@ -1690,6 +1346,7 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   border-radius: 10px;
+  margin-bottom: var(--dl-space-space-unit);
   background-size: cover;
   justify-content: flex-start;
   background-image: url('https://www.pajak.com/storage/2024/02/business-plan.jpg');
@@ -1710,6 +1367,7 @@
   line-height: 1.15;
   padding-top: 0px;
   padding-left: 0px;
+  margin-bottom: var(--dl-space-space-halfunit);
   padding-right: 0px;
   padding-bottom: 0px;
   text-transform: none;
@@ -1727,6 +1385,7 @@
   line-height: 1.15;
   padding-top: 0px;
   padding-left: 0px;
+  margin-bottom: var(--dl-space-space-halfunit);
   padding-right: 0px;
   padding-bottom: 0px;
   text-transform: none;
@@ -1760,7 +1419,6 @@
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed-container21 {
-  gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
   height: auto;
@@ -1772,6 +1430,7 @@
   border-width: 2px;
   border-radius: 10px;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #ffffff;
 }
 .materisocmed-container22 {
@@ -1781,6 +1440,7 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   border-radius: 10px;
+  margin-bottom: var(--dl-space-space-unit);
   background-size: cover;
   justify-content: flex-start;
   background-image: url('https://www.pajak.com/storage/2024/02/business-plan.jpg');
@@ -1801,6 +1461,7 @@
   line-height: 1.15;
   padding-top: 0px;
   padding-left: 0px;
+  margin-bottom: var(--dl-space-space-halfunit);
   padding-right: 0px;
   padding-bottom: 0px;
   text-transform: none;
@@ -1818,6 +1479,7 @@
   line-height: 1.15;
   padding-top: 0px;
   padding-left: 0px;
+  margin-bottom: var(--dl-space-space-halfunit);
   padding-right: 0px;
   padding-bottom: 0px;
   text-transform: none;
@@ -1851,11 +1513,10 @@
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed-container23 {
-  gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
   height: auto;
-  display: none;
+  display: flex;
   padding: var(--dl-space-space-unit);
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
@@ -1863,6 +1524,7 @@
   border-width: 2px;
   border-radius: 10px;
   flex-direction: column;
+  justify-content: space-between;
   background-color: #ffffff;
 }
 .materisocmed-container24 {
@@ -1872,6 +1534,7 @@
   padding: var(--dl-space-space-unit);
   align-items: center;
   border-radius: 10px;
+  margin-bottom: var(--dl-space-space-unit);
   background-size: cover;
   justify-content: flex-start;
   background-image: url('https://www.pajak.com/storage/2024/02/business-plan.jpg');
@@ -1892,6 +1555,7 @@
   line-height: 1.15;
   padding-top: 0px;
   padding-left: 0px;
+  margin-bottom: var(--dl-space-space-halfunit);
   padding-right: 0px;
   padding-bottom: 0px;
   text-transform: none;
@@ -1909,6 +1573,7 @@
   line-height: 1.15;
   padding-top: 0px;
   padding-left: 0px;
+  margin-bottom: var(--dl-space-space-halfunit);
   padding-right: 0px;
   padding-bottom: 0px;
   text-transform: none;
@@ -1941,89 +1606,67 @@
 .materisocmed-navlink02:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed-text24 {
-  color: #ffffff;
-  width: 100%;
-  font-size: 20px;
-  max-width: auto;
-  font-style: normal;
-  font-family: "Inter";
-  font-weight: 600;
-  line-height: 1.15;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-unit);
-  text-transform: none;
-  text-decoration: none;
-  background-color: #ff9800;
-}
 .materisocmed-container25 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.materisocmed-container26 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.materisocmed-week1 {
   gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
   height: auto;
-  display: flex;
+  display: none;
   padding: var(--dl-space-space-unit);
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #ffffff;
   border-width: 2px;
   border-radius: 10px;
-  flex-direction: row;
+  flex-direction: column;
   background-color: #ffffff;
 }
-.materisocmed-image2 {
-  width: 70px;
-  height: auto;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.materisocmed-container27 {
-  gap: var(--dl-space-space-halfunit);
+.materisocmed-container26 {
   width: 100%;
+  height: 161px;
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-radius: 10px;
+  background-size: cover;
+  justify-content: flex-start;
+  background-image: url('https://www.pajak.com/storage/2024/02/business-plan.jpg');
 }
-.materisocmed-text25 {
-  color: #000000;
+.materisocmed-lottie-node3 {
+  width: 125px;
+  height: 125px;
+}
+.materisocmed-text24 {
+  fill: #ff9800;
+  color: rgb(26, 26, 26);
+  width: 100%;
   font-size: 20px;
+  max-width: auto;
   font-style: normal;
-  margin-top: 0px;
-  text-align: left;
   font-family: "Inter";
   font-weight: 700;
   line-height: 1.15;
-  margin-bottom: 0px;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text26 {
-  color: #000000;
+.materisocmed-text25 {
+  fill: #ff9800;
+  color: rgb(26, 26, 26);
+  width: 100%;
   font-size: 16px;
+  max-width: auto;
   font-style: normal;
-  text-align: left;
   font-family: "Inter";
   font-weight: 400;
   line-height: 1.15;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
   text-transform: none;
   text-decoration: none;
 }
@@ -2054,7 +1697,41 @@
 .materisocmed-navlink03:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed-week11 {
+.materisocmed-text26 {
+  color: #ffffff;
+  width: 100%;
+  font-size: 20px;
+  max-width: auto;
+  font-style: normal;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 1.15;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-transform: none;
+  text-decoration: none;
+  background-color: #ff9800;
+}
+.materisocmed-container27 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.materisocmed-container28 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.materisocmed-week1 {
   gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
@@ -2069,13 +1746,13 @@
   flex-direction: row;
   background-color: #ffffff;
 }
-.materisocmed-image3 {
+.materisocmed-image2 {
   width: 70px;
   height: auto;
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container28 {
+.materisocmed-container29 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -2133,15 +1810,7 @@
 .materisocmed-navlink04:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed-container29 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.materisocmed-week12 {
+.materisocmed-week11 {
   gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
@@ -2156,7 +1825,7 @@
   flex-direction: row;
   background-color: #ffffff;
 }
-.materisocmed-image4 {
+.materisocmed-image3 {
   width: 70px;
   height: auto;
   object-fit: cover;
@@ -2220,7 +1889,15 @@
 .materisocmed-navlink05:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed-week13 {
+.materisocmed-container31 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.materisocmed-week12 {
   gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
@@ -2235,13 +1912,13 @@
   flex-direction: row;
   background-color: #ffffff;
 }
-.materisocmed-image5 {
+.materisocmed-image4 {
   width: 70px;
   height: auto;
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container31 {
+.materisocmed-container32 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -2299,7 +1976,86 @@
 .materisocmed-navlink06:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
+.materisocmed-week13 {
+  gap: var(--dl-space-space-twounits);
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
+  align-items: center;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-radius: 10px;
+  flex-direction: row;
+  background-color: #ffffff;
+}
+.materisocmed-image5 {
+  width: 70px;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.materisocmed-container33 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
 .materisocmed-text33 {
+  color: #000000;
+  font-size: 20px;
+  font-style: normal;
+  margin-top: 0px;
+  text-align: left;
+  font-family: "Inter";
+  font-weight: 700;
+  line-height: 1.15;
+  margin-bottom: 0px;
+  text-transform: none;
+  text-decoration: none;
+}
+.materisocmed-text34 {
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inter";
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.materisocmed-navlink07 {
+  fill: #ff9800;
+  color: rgb(255, 152, 0);
+  width: auto;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: auto;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 1.15;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #ff9800;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-transform: none;
+  text-decoration: none;
+}
+.materisocmed-navlink07:hover {
+  box-shadow: 3px 3px 15px 0px #c6c6c6;
+}
+.materisocmed-text35 {
   color: #ffffff;
   width: 100%;
   font-size: 20px;
@@ -2317,7 +2073,7 @@
   text-decoration: none;
   background-color: #ff9800;
 }
-.materisocmed-container32 {
+.materisocmed-container34 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2346,14 +2102,14 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container33 {
+.materisocmed-container35 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text34 {
+.materisocmed-text36 {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-style: normal;
@@ -2366,7 +2122,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text35 {
+.materisocmed-text37 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
@@ -2425,14 +2181,14 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.materisocmed-container34 {
+.materisocmed-container36 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed-text36 {
+.materisocmed-text38 {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-style: normal;
@@ -2445,7 +2201,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-text37 {
+.materisocmed-text39 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
@@ -2483,7 +2239,7 @@
 .materisocmed-link1:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed-text38 {
+.materisocmed-text40 {
   color: #ffffff;
   width: 100%;
   font-size: 20px;
@@ -2501,7 +2257,7 @@
   text-decoration: none;
   background-color: #ff9800;
 }
-.materisocmed-container35 {
+.materisocmed-container37 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2509,7 +2265,7 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.materisocmed-container36 {
+.materisocmed-container38 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2517,7 +2273,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.materisocmed-container37 {
+.materisocmed-container39 {
   gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
@@ -2532,7 +2288,7 @@
   flex-direction: row;
   background-color: #ffffff;
 }
-.materisocmed-container38 {
+.materisocmed-container40 {
   flex: 0 0 auto;
   width: 150px;
   height: 150px;
@@ -2545,20 +2301,20 @@
   background-size: cover;
   background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/2.%20cara%20set%20budget%20iklan%20mulai%2050K/10.jpeg?updatedAt=1705564404450');
 }
-.materisocmed-container39 {
+.materisocmed-container41 {
   width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
 }
-.materisocmed-container40 {
+.materisocmed-container42 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
   display: flex;
   flex-direction: column;
 }
-.materisocmed-container41 {
+.materisocmed-container43 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -2566,21 +2322,21 @@
   position: relative;
   flex-direction: column;
 }
-.materisocmed-container42 {
+.materisocmed-container44 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.materisocmed-text39 {
+.materisocmed-text41 {
   font-size: 20px;
   text-align: left;
 }
-.materisocmed-text41 {
+.materisocmed-text43 {
   font-weight: 700;
 }
-.materisocmed-navlink07 {
+.materisocmed-navlink08 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -2605,10 +2361,10 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink07:hover {
+.materisocmed-navlink08:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed-container43 {
+.materisocmed-container45 {
   gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
@@ -2623,7 +2379,7 @@
   flex-direction: row;
   background-color: #ffffff;
 }
-.materisocmed-container44 {
+.materisocmed-container46 {
   flex: 0 0 auto;
   width: 150px;
   height: 150px;
@@ -2636,95 +2392,18 @@
   background-size: cover;
   background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/1.%20Cara%20cetak%20bukti%20top%20up/1.png?updatedAt=1705546819565');
 }
-.materisocmed-container45 {
+.materisocmed-container47 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
-}
-.materisocmed-text42 {
-  font-size: 20px;
-  text-align: left;
 }
 .materisocmed-text44 {
-  font-weight: 700;
-}
-.materisocmed-navlink08 {
-  fill: #ff9800;
-  color: rgb(255, 152, 0);
-  width: auto;
-  cursor: pointer;
-  font-size: 16px;
-  max-width: auto;
-  align-self: flex-start;
-  font-style: normal;
-  margin-top: var(--dl-space-space-halfunit);
-  transition: 0.3s;
-  font-family: "Inter";
-  font-weight: 600;
-  line-height: 1.15;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ff9800;
-  border-width: 2px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  text-transform: none;
-  text-decoration: none;
-}
-.materisocmed-navlink08:hover {
-  box-shadow: 3px 3px 15px 0px #c6c6c6;
-}
-.materisocmed-container46 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.materisocmed-container47 {
-  gap: var(--dl-space-space-twounits);
-  flex: 1;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: var(--dl-space-space-unit);
-  box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
-  align-items: center;
-  border-color: #ffffff;
-  border-width: 2px;
-  border-radius: 10px;
-  flex-direction: row;
-  background-color: #ffffff;
-}
-.materisocmed-container48 {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  box-shadow: 5px 5px 15px 0px #d4d4d4;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-width: 3px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-size: cover;
-  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/3.%20bukti%20apa%20saja%20yang%20di%20lampirkan%20dalam%20laporan/11.png?updatedAt=1706116463268');
-}
-.materisocmed-container49 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.materisocmed-text46 {
   font-size: 20px;
   text-align: left;
 }
-.materisocmed-text48 {
+.materisocmed-text46 {
   font-weight: 700;
 }
 .materisocmed-navlink09 {
@@ -2754,7 +2433,15 @@
 .materisocmed-navlink09:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed-container50 {
+.materisocmed-container48 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.materisocmed-container49 {
   gap: var(--dl-space-space-twounits);
   flex: 1;
   width: 100%;
@@ -2767,10 +2454,9 @@
   border-width: 2px;
   border-radius: 10px;
   flex-direction: row;
-  justify-content: flex-start;
   background-color: #ffffff;
 }
-.materisocmed-container51 {
+.materisocmed-container50 {
   flex: 0 0 auto;
   width: 150px;
   height: 150px;
@@ -2781,26 +2467,21 @@
   border-width: 3px;
   border-radius: var(--dl-radius-radius-radius8);
   background-size: cover;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/3.%20bukti%20apa%20saja%20yang%20di%20lampirkan%20dalam%20laporan/11.png?updatedAt=1706116463268');
 }
-.materisocmed-container52 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.materisocmed-container53 {
+.materisocmed-container51 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.materisocmed-text50 {
+.materisocmed-text48 {
   font-size: 20px;
   text-align: left;
+}
+.materisocmed-text50 {
+  font-weight: 700;
 }
 .materisocmed-navlink10 {
   fill: #ff9800;
@@ -2829,7 +2510,82 @@
 .materisocmed-navlink10:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
+.materisocmed-container52 {
+  gap: var(--dl-space-space-twounits);
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
+  align-items: center;
+  border-color: #ffffff;
+  border-width: 2px;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: flex-start;
+  background-color: #ffffff;
+}
+.materisocmed-container53 {
+  flex: 0 0 auto;
+  width: 150px;
+  height: 150px;
+  display: flex;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-width: 3px;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-size: cover;
+  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
+}
 .materisocmed-container54 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+.materisocmed-container55 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.materisocmed-text52 {
+  font-size: 20px;
+  text-align: left;
+}
+.materisocmed-navlink11 {
+  fill: #ff9800;
+  color: rgb(255, 152, 0);
+  width: auto;
+  cursor: pointer;
+  font-size: 16px;
+  max-width: auto;
+  align-self: flex-start;
+  font-style: normal;
+  margin-top: var(--dl-space-space-halfunit);
+  transition: 0.3s;
+  font-family: "Inter";
+  font-weight: 600;
+  line-height: 1.15;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #ff9800;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-transform: none;
+  text-decoration: none;
+}
+.materisocmed-navlink11:hover {
+  box-shadow: 3px 3px 15px 0px #c6c6c6;
+}
+.materisocmed-container56 {
   width: 100%;
   height: 3px;
   display: flex;
@@ -2837,20 +2593,17 @@
   flex-direction: column;
   background-color: #ff9800;
 }
-.materisocmed-container55 {
-  width: 100%;
-  align-self: center;
-}
-.materisocmed-container56 {
-  display: contents;
-}
 .materisocmed-container57 {
   width: 100%;
-  display: none;
   align-self: center;
 }
 .materisocmed-container58 {
   display: contents;
+}
+.materisocmed-container59 {
+  width: 100%;
+  display: none;
+  align-self: center;
 }
 .materisocmed-container60 {
   display: contents;
@@ -2859,6 +2612,9 @@
   display: contents;
 }
 .materisocmed-container64 {
+  display: contents;
+}
+.materisocmed-container66 {
   display: contents;
 }
 @media(max-width: 1200px) {
@@ -2877,10 +2633,10 @@
   .materisocmed-text08 {
     font-size: 16px;
   }
-  .materisocmed-container36 {
+  .materisocmed-container38 {
     flex-direction: column;
   }
-  .materisocmed-container46 {
+  .materisocmed-container48 {
     flex-direction: column;
   }
 }
@@ -2923,19 +2679,19 @@
   .materisocmed-container14 {
     width: 100%;
   }
-  .materisocmed-container26 {
+  .materisocmed-container28 {
     flex-direction: column;
   }
-  .materisocmed-container29 {
+  .materisocmed-container31 {
     flex-direction: column;
   }
-  .materisocmed-container32 {
+  .materisocmed-container34 {
     flex-direction: column;
   }
-  .materisocmed-container36 {
+  .materisocmed-container38 {
     flex-direction: column;
   }
-  .materisocmed-container46 {
+  .materisocmed-container48 {
     flex-direction: column;
   }
 }
@@ -2977,67 +2733,70 @@
   .materisocmed-container23 {
     flex: 1;
   }
+  .materisocmed-container25 {
+    flex: 1;
+  }
   .materisocmed-week1 {
     flex: 1;
   }
-  .materisocmed-container27 {
+  .materisocmed-container29 {
     width: 100%;
   }
   .materisocmed-week11 {
     flex: 1;
   }
-  .materisocmed-container28 {
+  .materisocmed-container30 {
     width: 100%;
   }
   .materisocmed-week12 {
     flex: 1;
   }
-  .materisocmed-container30 {
+  .materisocmed-container32 {
     width: 100%;
   }
   .materisocmed-week13 {
     flex: 1;
   }
-  .materisocmed-container31 {
+  .materisocmed-container33 {
     width: 100%;
   }
   .materisocmed-week14 {
     flex: 1;
   }
-  .materisocmed-container33 {
+  .materisocmed-container35 {
     width: 100%;
   }
   .materisocmed-week15 {
     flex: 1;
   }
-  .materisocmed-container34 {
+  .materisocmed-container36 {
     width: 100%;
   }
-  .materisocmed-container37 {
+  .materisocmed-container39 {
     flex: 1;
   }
-  .materisocmed-container38 {
+  .materisocmed-container40 {
     width: 120px;
     height: 120px;
   }
-  .materisocmed-container43 {
+  .materisocmed-container45 {
     flex: 1;
   }
-  .materisocmed-container44 {
+  .materisocmed-container46 {
     width: 120px;
     height: 120px;
   }
-  .materisocmed-container47 {
+  .materisocmed-container49 {
     flex: 1;
-  }
-  .materisocmed-container48 {
-    width: 120px;
-    height: 120px;
   }
   .materisocmed-container50 {
+    width: 120px;
+    height: 120px;
+  }
+  .materisocmed-container52 {
     flex: 1;
   }
-  .materisocmed-container51 {
+  .materisocmed-container53 {
     width: 120px;
     height: 120px;
   }
@@ -3118,6 +2877,12 @@
     align-items: flex-start;
     flex-direction: column;
   }
+  .materisocmed-container25 {
+    gap: var(--dl-space-space-unit);
+    width: 100%;
+    align-items: flex-start;
+    flex-direction: column;
+  }
   .materisocmed-week1 {
     gap: var(--dl-space-space-unit);
     width: 100%;
@@ -3128,10 +2893,10 @@
     width: 70px;
     height: auto;
   }
-  .materisocmed-container27 {
+  .materisocmed-container29 {
     width: 100%;
   }
-  .materisocmed-text26 {
+  .materisocmed-text28 {
     width: auto;
   }
   .materisocmed-week11 {
@@ -3144,10 +2909,10 @@
     width: 70px;
     height: auto;
   }
-  .materisocmed-container28 {
+  .materisocmed-container30 {
     width: 100%;
   }
-  .materisocmed-text28 {
+  .materisocmed-text30 {
     width: auto;
   }
   .materisocmed-week12 {
@@ -3160,10 +2925,10 @@
     width: 70px;
     height: auto;
   }
-  .materisocmed-container30 {
+  .materisocmed-container32 {
     width: 100%;
   }
-  .materisocmed-text30 {
+  .materisocmed-text32 {
     width: auto;
   }
   .materisocmed-week13 {
@@ -3176,10 +2941,10 @@
     width: 70px;
     height: auto;
   }
-  .materisocmed-container31 {
+  .materisocmed-container33 {
     width: 100%;
   }
-  .materisocmed-text32 {
+  .materisocmed-text34 {
     width: auto;
   }
   .materisocmed-week14 {
@@ -3192,10 +2957,10 @@
     width: 70px;
     height: auto;
   }
-  .materisocmed-container33 {
+  .materisocmed-container35 {
     width: 100%;
   }
-  .materisocmed-text35 {
+  .materisocmed-text37 {
     width: auto;
   }
   .materisocmed-week15 {
@@ -3208,49 +2973,49 @@
     width: 70px;
     height: auto;
   }
-  .materisocmed-container34 {
+  .materisocmed-container36 {
     width: 100%;
   }
-  .materisocmed-text37 {
+  .materisocmed-text39 {
     width: auto;
   }
-  .materisocmed-container37 {
+  .materisocmed-container39 {
     gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
   }
-  .materisocmed-container38 {
+  .materisocmed-container40 {
     width: 120px;
     height: 120px;
   }
-  .materisocmed-container43 {
+  .materisocmed-container45 {
     gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
   }
-  .materisocmed-container44 {
+  .materisocmed-container46 {
     width: 120px;
     height: 120px;
   }
-  .materisocmed-container47 {
+  .materisocmed-container49 {
     gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
-  }
-  .materisocmed-container48 {
-    width: 120px;
-    height: 120px;
   }
   .materisocmed-container50 {
+    width: 120px;
+    height: 120px;
+  }
+  .materisocmed-container52 {
     gap: var(--dl-space-space-unit);
     width: 100%;
     align-items: flex-start;
     flex-direction: row;
   }
-  .materisocmed-container51 {
+  .materisocmed-container53 {
     width: 120px;
     height: 120px;
   }

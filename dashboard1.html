@@ -1,11 +1,14 @@
 <!DOCTYPE html>
 <html lang="en"
   ><head
-    ><title>Materi socmed minggu 2</title
-    ><meta name="description" content="Materi socmed minggu 2" /><meta
-      property="og:title"
-      content="Materi socmed minggu 2"
-    /><meta property="og:description" content="Materi socmed minggu 2" /><meta
+    ><title>Dashboard1 - bimaselalubenar</title
+    ><meta
+      name="description"
+      content="Halo! Saya bima, saya Web DevOps &amp; Full Stack Developer"
+    /><meta property="og:title" content="Dashboard1 - bimaselalubenar" /><meta
+      property="og:description"
+      content="Halo, saya Bima. saya seorang  3d modeling dan Full stack development. bagaimana saya dapat berkontribusi dengan anda?"
+    /><meta
       property="og:image"
       content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bf1328a2-cee6-443f-bd21-0ba3b0b34318/80d71788-2417-4467-9d1a-2990c0c16eef?org_if_sml=1&amp;q=80&amp;force_format=original"
     /><meta
@@ -333,238 +336,182 @@
     </script></head
   ><body
     ><link rel="stylesheet" href="./style.css" /><div
-      ><link href="./materisocmedweek2.css" rel="stylesheet" /><div
-        class="materisocmedweek2-container"
-        ><div class="block-container block-root-class-name2"
-          ><div class="block-container1"
-            ><animate-on-reveal
-              animation="zoomOutDown"
-              duration="2s"
-              delay="0s"
-              direction="alternate-reverse"
-              easing="ease"
-              iteration="1"
-              ><div data-thq-animate-on-reveal="true" class="block-container2"
-                ><span class="block-text"><span>SEDANG PEMELIHARAAN</span></span
-                ><div class="block-container3"
-                  ><div class="block-container4"
-                    ><script src="https://cdn.logwork.com/widget/countdown.js"></script>
-                    <a
-                      href="https://logwork.com/countdown-timer"
-                      class="countdown-timer"
-                      data-style="columns"
-                      data-date="2024-04-01 00:00"
-                      >-</a
-                    ></div
+      ><link href="./dashboard1.css" rel="stylesheet" /><div
+        class="dashboard1-container"
+        ><div class="dashboard1-container01"
+          ><div class="dashboard1-container02"
+            ><span class="dashboard1-text"
+              ><span>Materi sudah di perbarui per tanggal </span
+              ><span class="dashboard1-text02"
+                >04/04/2024 | 11.48&nbsp;</span
+              ></span
+            ></div
+          ><div class="dashboard1-container03"
+            ><div class="dashboard1-container04"
+              ><div class="dashboard1-container05"
+                ><div class="dashboard1-container06"
+                  ><span id="welcomeText" class="dashboard1-text03"
+                    >User</span
                   ></div
-                ><div id="atention" class="block-container5"
-                  ><span class="block-text1"
-                    >*Izinkan notifikasi, agar mendapat informasi terbaru</span
+                ><span class="dashboard1-text04"
+                  ><span>Anda berhasil masuk! </span
+                  ><span class="dashboard1-text06"
+                    >simpan username dan password!</span
+                  ></span
+                ><span onclick="logout()" class="dashboard1-text07"
+                  >Logout</span
+                ></div
+              ><div class="dashboard1-container07"
+                ><div class="dashboard1-container08"
+                  ><svg viewBox="0 0 1024 1024" class="dashboard1-icon">
+                    <path
+                      d="M512 384q52 0 90 38t38 90-38 90-90 38-90-38-38-90 38-90 90-38zM512 726q88 0 151-63t63-151-63-151-151-63-151 63-63 151 63 151 151 63zM512 192q158 0 286 88t184 232q-56 144-184 232t-286 88-286-88-184-232q56-144 184-232t286-88z"
+                    ></path></svg
+                  ><p id="counter" class="dashboard1-text08">0</p
+                  ><p class="dashboard1-text09">view</p
+                  ><p class="dashboard1-text10">|</p
+                  ><svg viewBox="0 0 1024 1024" class="dashboard1-icon2">
+                    <path
+                      d="M512 384q52 0 90 38t38 90-38 90-90 38-90-38-38-90 38-90 90-38zM512 726q88 0 151-63t63-151-63-151-151-63-151 63-63 151 63 151 151 63zM512 192q158 0 286 88t184 232q-56 144-184 232t-286 88-286-88-184-232q56-144 184-232t286-88z"
+                    ></path></svg
+                  ><p class="dashboard1-text11">Total view</p
+                  ><p id="totalCounter" class="dashboard1-text12">0</p></div
+                ><span id="accordion1-btn" class="dashboard1-text13"
+                  >Chat GPT 3.5</span
+                ><span id="accordion2-btn" class="dashboard1-text14"
+                  >Chat GPT 3.5</span
+                ><div class="dashboard1-container09"></div></div></div
+            ><div class="dashboard1-container10"
+              ><div class="dashboard1-container11"
+                ><div id="accordion1-panel" class="dashboard1-container12"
+                  ><div class="dashboard1-container13"
+                    ><div class="dashboard1-container14"
+                      ><iframe
+                        src="https://www.chat.openai.com/"
+                        style="width:100%;height:500px;"
+                      ></iframe></div></div></div
+                ><div class="dashboard1-container15"></div></div></div></div
+          ><div
+            ><div class="dashboard1-container17"
+              ><script>
+                var accordions = document.querySelectorAll('.accordion-btn');
+
+                accordions.forEach(function(accordion) {
+                    accordion.addEventListener('click', function() {
+                        var panel = this.nextElementSibling;
+
+                        if (panel.style.display === 'block') {
+                            panel.style.display = 'none';
+                            this.classList.remove('active');
+                        } else {
+                            accordions.forEach(function(acc) {
+                                acc.classList.remove('active');
+                                acc.nextElementSibling.style.display = 'none';
+                            });
+
+                            panel.style.display = 'block';
+                            this.classList.add('active');
+                        }
+                    });
+                });
+              </script></div
+            ></div
+          ><div class="footer-footer footer-root-class-name12"
+            ><div class="footer-content"
+              ><div class="footer-information"
+                ><div class="footer-heading"
+                  ><img
+                    alt="Bima"
+                    src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/bimaselalubenar.gif?updatedAt=1712742178111"
+                    class="footer-pasted-image"
+                  /><span class="footer-text H4-16px"
+                    ><span>Full Stack Developer</span></span
+                  ><span class="footer-text1 H4-16px"
+                    ><span>3D Game Art</span></span
                   ></div
-                ><animate-on-reveal
-                  animation="tada"
-                  duration="1s"
-                  delay="0s"
-                  direction="normal"
-                  easing="ease-in-out"
-                  iteration="1"
+                ></div
+              ><footer class="links-links"
+                ><div class="links-column"
+                  ><span class="links-header"><span>Halaman</span></span
+                  ><a href="profile.html" class="links-link">Profile</a
                   ><a
-                    href="https://bit.ly/Bima23"
-                    data-thq-animate-on-reveal="true"
+                    href="https://github.com/login?return_to=https%3A%2F%2Fgithub.com%2FBimaselalubenar"
                     target="_blank"
                     rel="noreferrer noopener"
-                    class="block-link"
-                    ><span>HUBUNGI ADMIN</span></a
-                  ></animate-on-reveal
-                ></div
-              ></animate-on-reveal
-            ></div
-          ></div
-        ><div class="materisocmedweek2-container1"
-          ><div class="materisocmedweek2-container2"
-            ><a href="materisocmed.html" class="materisocmedweek2-navlink"
-              ><div class="materisocmedweek2-container3"
-                ><svg viewBox="0 0 1024 1024" class="materisocmedweek2-icon">
-                  <path
-                    d="M512 1024c282.77 0 512-229.23 512-512s-229.23-512-512-512-512 229.23-512 512 229.23 512 512 512zM512 96c229.75 0 416 186.25 416 416s-186.25 416-416 416-416-186.25-416-416 186.25-416 416-416z"
-                  ></path>
-                  <path
-                    d="M669.256 317.256l-90.512-90.512-285.254 285.256 285.256 285.254 90.508-90.508-194.744-194.746z"
-                  ></path></svg
-                ><span class="materisocmedweek2-text">Kembali</span></div
-              ></a
-            ></div
-          ><span class="materisocmedweek2-text1">Materi minggu 2</span
-          ><div class="materisocmedweek2-container4"
-            ><div class="materiicon1234-container"
-              ><div class="materiicon1234-container1"
-                ><span class="materiicon1234-text"
-                  ><span
-                    >"APA IYA HONDA GENIO SEMUNGIL ITU" - TikTok/Reels</span
-                  ></span
-                ></div
-              ><div class="materiicon1234-container2"
-                ><div class="materiicon1234-container3"
-                  ><span class="materiicon1234-text1"><span>Release</span></span
-                  ><span class="materiicon1234-text2"
-                    ><span>5/2/2024</span></span
+                    class="links-link1"
+                    >Login Git</a
                   ></div
-                ><span class="materiicon1234-text3"><span>.mp4</span></span
-                ><a
-                  href="https://drive.google.com/uc?export=download&amp;id=1EjMVjVKdeMr5QYtErbuh-eejhclwSpiR"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="materiicon1234-link"
-                  ><span>Unduh</span></a
-                ></div
-              ></div
-            ><div class="materiicon1234-container"
-              ><div class="materiicon1234-container1"
-                ><span class="materiicon1234-text"
-                  ><span
-                    >Fitur Produk Honda Genio &amp; Harga OTR atau materi
-                    salesman/counter sendiri</span
-                  ></span
-                ></div
-              ><div class="materiicon1234-container2"
-                ><div class="materiicon1234-container3"
-                  ><span class="materiicon1234-text1"><span>Release</span></span
-                  ><span class="materiicon1234-text2"
-                    ><span>5/2/2024</span></span
+                ><div class="links-column1"
+                  ><span class="links-header1"><span>Service</span></span
+                  ><a
+                    href="https://infinitex.my.id"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="links-link2"
+                    >Infinitex</a
                   ></div
-                ><span class="materiicon1234-text3"><span>.png</span></span
-                ><a
-                  href="https://drive.google.com/uc?export=download&amp;id=1umrTQVrw3VeZEZJyXGTOYA2aCH14-3Do"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="materiicon1234-link"
-                  ><span>Unduh</span></a
-                ></div
-              ></div
-            ><div class="materiicon1234-container"
-              ><div class="materiicon1234-container1"
-                ><span class="materiicon1234-text"
-                  ><span>5 TIPS SEDERHANA PERAWATAN MOTOR HONDA</span></span
-                ></div
-              ><div class="materiicon1234-container2"
-                ><div class="materiicon1234-container3"
-                  ><span class="materiicon1234-text1"><span>Release</span></span
-                  ><span class="materiicon1234-text2"
-                    ><span>5/2/2024</span></span
+                ><div class="links-column2"
+                  ><span class="links-header2"><span>Project</span></span
+                  ><a href="materisocmed.html" class="links-link3"
+                    >Materi Socmed</a
+                  ><a
+                    href="https://edusupe.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="links-link4"
+                    >Edusupe</a
+                  ><a
+                    href="https://livingleafstudio.com/"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="links-link5"
+                    >Living Leaf Studio</a
                   ></div
-                ><span class="materiicon1234-text3"><span>.mp4</span></span
-                ><a
-                  href="https://drive.google.com/uc?export=download&amp;id=1aFM4n-jgoAQVtZm5wRD7Z966a2ymUAbr"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="materiicon1234-link"
-                  ><span>Unduh</span></a
-                ></div
-              ></div
-            ></div
-          ><span class="materisocmedweek2-text2">Materi Bengkel</span
-          ><div class="materisocmedweek2-container5"
-            ><div class="materiicon1234-container"
-              ><div class="materiicon1234-container1"
-                ><span class="materiicon1234-text"
-                  ><span>PROMO RO (REPEAT ORDER)</span></span
-                ></div
-              ><div class="materiicon1234-container2"
-                ><div class="materiicon1234-container3"
-                  ><span class="materiicon1234-text1"><span>Release</span></span
-                  ><span class="materiicon1234-text2"
-                    ><span>2/3/2024</span></span
-                  ></div
-                ><span class="materiicon1234-text3"><span>.png</span></span
-                ><a
-                  href="https://drive.google.com/uc?export=download&amp;id=1L--5hnpWsratDwIcyoqIQEI1x5OA5Mpx"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="materiicon1234-link"
-                  ><span>Unduh</span></a
-                ></div
-              ></div
-            ><div class="materiicon1234-container"
-              ><div class="materiicon1234-container1"
-                ><span class="materiicon1234-text"
-                  ><span>AHASS HONDA SERVICE PROTECTION</span></span
-                ></div
-              ><div class="materiicon1234-container2"
-                ><div class="materiicon1234-container3"
-                  ><span class="materiicon1234-text1"><span>Release</span></span
-                  ><span class="materiicon1234-text2"
-                    ><span>2/3/2024</span></span
-                  ></div
-                ><span class="materiicon1234-text3"><span>.png</span></span
-                ><a
-                  href="https://drive.google.com/uc?export=download&amp;id=1R2e0-zf3oaIVlaYYYoa_bsDdHyz0fx34"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="materiicon1234-link"
-                  ><span>Unduh</span></a
-                ></div
-              ></div
-            ><div class="materiicon1234-container"
-              ><div class="materiicon1234-container1"
-                ><span class="materiicon1234-text"
-                  ><span>PROMO HAPPY HOUR</span></span
-                ></div
-              ><div class="materiicon1234-container2"
-                ><div class="materiicon1234-container3"
-                  ><span class="materiicon1234-text1"><span>Release</span></span
-                  ><span class="materiicon1234-text2"
-                    ><span>2/3/2024</span></span
-                  ></div
-                ><span class="materiicon1234-text3"><span>.png</span></span
-                ><a
-                  href="https://drive.google.com/uc?export=download&amp;id=1818lEGmcAMmqnZFgPOe7KnYfuCgb76XG"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="materiicon1234-link"
-                  ><span>Unduh</span></a
-                ></div
-              ></div
-            ><div class="materiicon1234-container"
-              ><div class="materiicon1234-container1"
-                ><span class="materiicon1234-text"
-                  ><span>BOOKING SERVIS SAT-SET DENGAN BROMPIT</span></span
-                ></div
-              ><div class="materiicon1234-container2"
-                ><div class="materiicon1234-container3"
-                  ><span class="materiicon1234-text1"><span>Release</span></span
-                  ><span class="materiicon1234-text2"
-                    ><span>2/3/2024</span></span
-                  ></div
-                ><span class="materiicon1234-text3"><span>.png</span></span
-                ><a
-                  href="https://drive.google.com/uc?export=download&amp;id=1idxH9jRJn7yL721YDQXae9eYfnSP3Ixg"
-                  target="_blank"
-                  rel="noreferrer noopener"
-                  class="materiicon1234-link"
-                  ><span>Unduh</span></a
-                ></div
-              ></div
-            ></div
-          ></div
-        ><div
-          ><div class="materisocmedweek2-container7"
-            ><script>
-              const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-              if (loggedInUser) {
-                document.getElementById('welcomeText').innerText = `Halo, ${loggedInUser.name}!`;
-              } else {
-                window.location.href = 'login-socmed.html';
-              }
-
-              function logout() {
-                localStorage.removeItem('loggedInUser');
-                window.location.href = 'login-socmed.html';
-              }
-            </script></div
-          ></div
-        ></div
-      ></div
-    >
+                ><div class="links-column3"
+                  ><span class="links-header3"><span>Social Media</span></span
+                  ><div class="links-container"
+                    ><a
+                      href="https://github.com/Bimaselalubenar"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="links-link6"
+                      ><svg
+                        id="openGithu"
+                        viewBox="0 0 1024 1024"
+                        class="links-icon"
+                      >
+                        <path
+                          d="M512.008 12.642c-282.738 0-512.008 229.218-512.008 511.998 0 226.214 146.704 418.132 350.136 485.836 25.586 4.738 34.992-11.11 34.992-24.632 0-12.204-0.48-52.542-0.696-95.324-142.448 30.976-172.504-60.41-172.504-60.41-23.282-59.176-56.848-74.916-56.848-74.916-46.452-31.778 3.51-31.124 3.51-31.124 51.4 3.61 78.476 52.766 78.476 52.766 45.672 78.27 119.776 55.64 149.004 42.558 4.588-33.086 17.852-55.68 32.506-68.464-113.73-12.942-233.276-56.85-233.276-253.032 0-55.898 20.004-101.574 52.76-137.428-5.316-12.9-22.854-64.972 4.952-135.5 0 0 43.006-13.752 140.84 52.49 40.836-11.348 84.636-17.036 128.154-17.234 43.502 0.198 87.336 5.886 128.256 17.234 97.734-66.244 140.656-52.49 140.656-52.49 27.872 70.528 10.35 122.6 5.036 135.5 32.82 35.856 52.694 81.532 52.694 137.428 0 196.654-119.778 239.95-233.79 252.624 18.364 15.89 34.724 47.046 34.724 94.812 0 68.508-0.596 123.644-0.596 140.508 0 13.628 9.222 29.594 35.172 24.566 203.322-67.776 349.842-259.626 349.842-485.768 0-282.78-229.234-511.998-511.992-511.998z"
+                        ></path></svg></a
+                    ><a
+                      href="https://www.instagram.com/bimaselalubenar/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="links-link7"
+                      ><svg
+                        id="alertButton"
+                        viewBox="0 0 1024 1024"
+                        class="links-icon2"
+                      >
+                        <path
+                          d="M512 92.2c136.8 0 153 0.6 206.8 3 50 2.2 77 10.6 95 17.6 23.8 9.2 41 20.4 58.8 38.2 18 18 29 35 38.4 58.8 7 18 15.4 45.2 17.6 95 2.4 54 3 70.2 3 206.8s-0.6 153-3 206.8c-2.2 50-10.6 77-17.6 95-9.2 23.8-20.4 41-38.2 58.8-18 18-35 29-58.8 38.4-18 7-45.2 15.4-95 17.6-54 2.4-70.2 3-206.8 3s-153-0.6-206.8-3c-50-2.2-77-10.6-95-17.6-23.8-9.2-41-20.4-58.8-38.2-18-18-29-35-38.4-58.8-7-18-15.4-45.2-17.6-95-2.4-54-3-70.2-3-206.8s0.6-153 3-206.8c2.2-50 10.6-77 17.6-95 9.2-23.8 20.4-41 38.2-58.8 18-18 35-29 58.8-38.4 18-7 45.2-15.4 95-17.6 53.8-2.4 70-3 206.8-3zM512 0c-139 0-156.4 0.6-211 3-54.4 2.4-91.8 11.2-124.2 23.8-33.8 13.2-62.4 30.6-90.8 59.2-28.6 28.4-46 57-59.2 90.6-12.6 32.6-21.4 69.8-23.8 124.2-2.4 54.8-3 72.2-3 211.2s0.6 156.4 3 211c2.4 54.4 11.2 91.8 23.8 124.2 13.2 33.8 30.6 62.4 59.2 90.8 28.4 28.4 57 46 90.6 59 32.6 12.6 69.8 21.4 124.2 23.8 54.6 2.4 72 3 211 3s156.4-0.6 211-3c54.4-2.4 91.8-11.2 124.2-23.8 33.6-13 62.2-30.6 90.6-59s46-57 59-90.6c12.6-32.6 21.4-69.8 23.8-124.2 2.4-54.6 3-72 3-211s-0.6-156.4-3-211c-2.4-54.4-11.2-91.8-23.8-124.2-12.6-34-30-62.6-58.6-91-28.4-28.4-57-46-90.6-59-32.6-12.6-69.8-21.4-124.2-23.8-54.8-2.6-72.2-3.2-211.2-3.2v0z"
+                        ></path>
+                        <path
+                          d="M512 249c-145.2 0-263 117.8-263 263s117.8 263 263 263 263-117.8 263-263c0-145.2-117.8-263-263-263zM512 682.6c-94.2 0-170.6-76.4-170.6-170.6s76.4-170.6 170.6-170.6c94.2 0 170.6 76.4 170.6 170.6s-76.4 170.6-170.6 170.6z"
+                        ></path>
+                        <path
+                          d="M846.8 238.6c0 33.91-27.49 61.4-61.4 61.4s-61.4-27.49-61.4-61.4c0-33.91 27.49-61.4 61.4-61.4s61.4 27.49 61.4 61.4z"
+                        ></path></svg></a
+                    ><a
+                      href="https://www.linkedin.com/in/bimaselalubenar/"
+                      target="_blank"
+                      rel="noreferrer noopener"
+                      class="links-link8"
+                      ><svg viewBox="0 0 1024 1024" class="links-icon6">
+                        <path
+                          d="M928 0h-832c-52.8 0-96 43.2-96 96v832c0 52.8 43.2 96 96 96h832c52.8 0 96-43.2 96-96v-832c0-52.8-43.2-96-96-96zM384 832h-128v-448h128v448zM320 320c-35.4 0-64-28.6-64-64s28.6-64 64-64c35.4 0 64 28.6 64 64s-28.6 64-64 64zM832 832h-128v-256c0-35.4-28.6-64-64-64s-64 28.6-64 64v256h-128v-448h128v79.4c26.4-36.2 66.8-79.4 112-79.4 79.6 0 144 71.6 144 160v288z"
+                        ></path></svg></a></div></div></footer></div></div></div></div
+    ></div>
     <script
       type="text/javascript"
       src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H"
