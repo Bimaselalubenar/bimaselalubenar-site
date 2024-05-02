@@ -3,7 +3,7 @@
   top: 0px;
   width: 100%;
   height: 100vh;
-  display: flex;
+  display: none;
   z-index: 110;
   position: fixed;
   align-items: center;
@@ -722,59 +722,6 @@
   }
 }
 
-.cursor-note-container {
-  width: auto;
-  height: auto;
-  display: flex;
-  z-index: 1000;
-  position: relative;
-  max-width: auto;
-  align-items: flex-start;
-  padding-top: 0px;
-  padding-left: var(--dl-space-space-unit);
-  padding-right: 0px;
-  flex-direction: row;
-  padding-bottom: 0px;
-  justify-content: flex-start;
-}
-.cursor-note-container1 {
-  gap: var(--dl-space-space-halfunit);
-  width: auto;
-  height: auto;
-  display: flex;
-  z-index: 1000;
-  position: relative;
-  max-width: auto;
-  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.37);
-  align-items: flex-start;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-halfunit);
-  flex-direction: row;
-  padding-bottom: var(--dl-space-space-halfunit);
-  justify-content: flex-start;
-  background-color: #ffffff;
-}
-.cursor-note-text {
-  width: auto;
-  font-size: 16px;
-  max-width: 388px;
-  font-style: normal;
-  font-family: "Inconsolata";
-  font-weight: 500;
-}
-.cursor-note-root-class-name1 {
-  top: 365px;
-  left: 883px;
-  position: absolute;
-}
-@media(max-width: 767px) {
-  .cursor-note-container {
-    display: none;
-  }
-}
-
 .materisocmed-container {
   width: 100%;
   display: flex;
@@ -1173,6 +1120,8 @@
   flex: 1;
   width: 100%;
   display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
   align-items: stretch;
   flex-direction: row;
   justify-content: flex-start;
@@ -2467,9 +2416,6 @@
 .materisocmed-container64 {
   display: contents;
 }
-.materisocmed-container66 {
-  display: contents;
-}
 @media(max-width: 1200px) {
   .materisocmed-text04 {
     font-size: 16px;
@@ -2710,23 +2656,27 @@
     padding-right: 0px;
   }
   .materisocmed-container18 {
-    flex-direction: column;
+    flex-direction: row;
+    padding-bottom: var(--dl-space-space-unit);
   }
   .materisocmed-container19 {
     gap: var(--dl-space-space-unit);
-    width: 100%;
+    flex: 0 0 auto;
+    width: 300px;
     align-items: flex-start;
     flex-direction: column;
   }
   .materisocmed-container21 {
     gap: var(--dl-space-space-unit);
-    width: 100%;
+    flex: 0 0 auto;
+    width: 300px;
     align-items: flex-start;
     flex-direction: column;
   }
   .materisocmed-container23 {
     gap: var(--dl-space-space-unit);
-    width: 100%;
+    flex: 0 0 auto;
+    width: 300px;
     align-items: flex-start;
     flex-direction: column;
   }
