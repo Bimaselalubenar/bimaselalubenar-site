@@ -35,6 +35,7 @@
         color: var(--dl-color-gray-black);
         background-color: var(--dl-color-gray-white);
 
+        null
       }</style
     ><link
       rel="stylesheet"
@@ -935,6 +936,7 @@
                     /><h1 class="profile-text46"
                       >Menyetujui, jika data anda akan kami simpan</h1
                     ></div
+                  ><span id="messageSent" class="profile-text47">Terkirim!</span
                   ><div class="profile-container68"
                     ><button
                       id="submitButton"
@@ -1108,17 +1110,41 @@
         ><div
           ><div class="profile-container75"
             ><script>
-              const scriptURL = 'https://script.google.com/macros/s/AKfycbygFwsmyNBElvgJpoFBXTP21rPXyiKVcmbMwpPRWPbjUcXYLIIxzlJk_Yj-6LTfjDUY/exec'
-              const form = document.forms['formbima']
+              const scriptURL = 'https://script.google.com/macros/s/AKfycbygFwsmyNBElvgJpoFBXTP21rPXyiKVcmbMwpPRWPbjUcXYLIIxzlJk_Yj-6LTfjDUY/exec';
+              const form = document.getElementById('formbima');
+              const messageSent = document.getElementById('messageSent');
 
               form.addEventListener('submit', e => {
-                e.preventDefault()
-                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-                  .then(response => console.log('Success!', response))
-                  .catch(error => console.error('Error!', error.message))
-              })
-            </script></div
-          ></div
+                  e.preventDefault();
+                  if (validateForm()) {
+                      const formData = new FormData(form);
+                      fetch(scriptURL, { method: 'POST', body: formData })
+                          .then(response => {
+                              console.log('Success!', response);
+                              messageSent.innerText = 'Pesan terkirim!'; // Tampilkan pesan terkirim
+                              form.reset(); // Reset formulir
+                          })
+                          .catch(error => {
+                              console.error('Error!', error.message);
+                              messageSent.innerText = 'Gagal mengirim, coba lagi.'; // Tampilkan pesan kesalahan
+                          });
+                  }
+              });
+
+              function validateForm() {
+                  const name = document.getElementById('name').value.trim();
+                  const whatsapp = document.getElementById('whatsapp').value.trim();
+                  const message = document.getElementById('message').value.trim();
+
+                  if (name === '' || whatsapp === '' || message === '') {
+                      alert('Mohon lengkapi semua kolom!');
+                      return false;
+                  }
+
+                  return true;
+              }
+            </script>
+          </div></div
         ><div
           ><div class="profile-container77"
             ><script>

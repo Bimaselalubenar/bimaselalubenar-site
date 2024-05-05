@@ -2,6 +2,16 @@ module.exports = {
   "theme": {
     "extend": {
       "colors": {
+        "theme": {
+          "primary2": "#923A06",
+          "primary1": "#D1510A",
+          "accent1": "#F3E8E2",
+          "neutral-light": "#FBFAF9",
+          "secondary1": "#F3E8E2",
+          "accent2": "#D8BFAF",
+          "neutral-dark": "#191818",
+          "secondary2": "#E0D1CB"
+        },
         "Primary": {
           "100": "#003EB3",
           "300": "#0074F0",
@@ -46,6 +56,10 @@ module.exports = {
         "SixUnits": "96px"
       },
       "borderRadius": {
+        "input-radius": "24px",
+        "card-radius": "8px",
+        "image-radius": "8px",
+        "button-radius": "24px",
         "Radius4": "4px",
         "Radius2": "2px",
         "Radius8": "8px",

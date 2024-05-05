@@ -355,67 +355,6 @@
   }
 }
 
-.highlight1-highlight {
-  gap: var(--dl-space-space-halfunit);
-  cursor: pointer;
-  display: flex;
-  padding: var(--dl-space-space-unit);
-  position: relative;
-  transition: 0.3s;
-  align-items: center;
-  border-radius: 20px;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: #ffffff;
-}
-.highlight1-highlight:hover {
-  box-shadow: 5px 5px 15px 0px rgba(124, 124, 124, 0.4);
-}
-.highlight1-icon {
-  width: 24px;
-  height: 24px;
-}
-.highlight1-container {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: center;
-}
-.highlight1-text {
-  font-size: 18px;
-  max-width: 535px;
-  font-style: normal;
-  font-family: "Inter";
-  font-weight: 600;
-  line-height: 1.15;
-  text-transform: none;
-  text-decoration: none;
-}
-.highlight1-text1 {
-  max-width: 535px;
-  font-family: "Inter";
-  line-height: 24px;
-}
-.highlight1-root-class-name {
-  width: 100%;
-}
-.highlight1-root-class-name3 {
-  width: 100%;
-}
-.highlight1-root-class-name4 {
-  width: 100%;
-}
-.highlight1-root-class-name5 {
-  width: 100%;
-}
-.highlight1-root-class-name6 {
-  width: 100%;
-}
-.highlight1-root-class-name7 {
-  width: 100%;
-}
-
 .links-links {
   gap: var(--dl-space-space-fiveunits);
   display: flex;
@@ -844,9 +783,6 @@
   margin-right: 0px;
   margin-bottom: var(--dl-space-space-halfunit);
 }
-.dashboard-text02 {
-  font-weight: 700;
-}
 .dashboard-container03 {
   gap: var(--dl-space-space-unit);
   width: 100%;
@@ -874,10 +810,10 @@
   padding-bottom: 0px;
   justify-content: flex-start;
 }
-.dashboard-text03 {
+.dashboard-text01 {
   color: rgb(255, 255, 255);
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   max-width: auto;
   font-style: normal;
   text-align: center;
@@ -906,23 +842,23 @@
   width: 16px;
   height: 16px;
 }
+.dashboard-text02 {
+  color: #232323;
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.dashboard-text03 {
+  color: #232323;
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
 .dashboard-text04 {
-  color: #232323;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.dashboard-text05 {
-  color: #232323;
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.dashboard-text06 {
   color: rgb(212, 212, 212);
   font-size: 16px;
   font-style: normal;
@@ -935,7 +871,7 @@
   width: 16px;
   height: 16px;
 }
-.dashboard-text07 {
+.dashboard-text05 {
   color: #232323;
   font-size: 16px;
   font-style: normal;
@@ -943,7 +879,7 @@
   font-family: "Inconsolata";
   font-weight: 300;
 }
-.dashboard-text08 {
+.dashboard-text06 {
   color: #232323;
   font-size: 16px;
   font-style: normal;
@@ -960,8 +896,8 @@
   padding: var(--dl-space-space-unit);
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
-  border-color: #ffffff;
-  border-width: 2px;
+  border-color: #e6e6e6;
+  border-width: 3px;
   border-radius: 10px;
   flex-direction: row;
   background-color: #ffffff;
@@ -979,7 +915,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.dashboard-text09 {
+.dashboard-text07 {
   color: rgb(0, 0, 0);
   font-size: 20px;
   font-style: normal;
@@ -992,7 +928,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.dashboard-text10 {
+.dashboard-text08 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
@@ -1038,16 +974,16 @@
   padding: var(--dl-space-space-unit);
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
-  border-color: #ffffff;
-  border-width: 2px;
-  border-radius: 15px;
+  border-color: #e6e6e6;
+  border-width: 3px;
+  border-radius: 10px;
   flex-direction: column;
   background-color: #ffffff;
 }
-.dashboard-text11 {
+.dashboard-text09 {
   color: rgb(255, 255, 255);
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   max-width: auto;
   font-style: normal;
   font-family: "Inter";
@@ -1100,10 +1036,10 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.dashboard-text12 {
+.dashboard-text10 {
   color: #ffffff;
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   max-width: auto;
   font-style: normal;
   font-family: "Inter";
@@ -1116,10 +1052,10 @@
   text-transform: none;
   text-decoration: none;
 }
-.dashboard-text13 {
+.dashboard-text11 {
   color: rgb(255, 255, 255);
   width: 100%;
-  font-size: 16px;
+  font-size: 14px;
   max-width: auto;
   font-style: normal;
   font-family: "Inter";
@@ -1136,7 +1072,7 @@
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-.dashboard-text15 {
+.dashboard-text13 {
   font-weight: 700;
 }
 .dashboard-container12 {
@@ -1170,7 +1106,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.dashboard-text16 {
+.dashboard-text14 {
   color: rgb(255, 0, 0);
   width: auto;
   cursor: pointer;
@@ -1212,7 +1148,7 @@
   flex-direction: column;
   background-color: #ff9800;
 }
-.dashboard-text17 {
+.dashboard-text15 {
   color: rgb(255, 255, 255);
   width: 100%;
   display: none;
@@ -1231,10 +1167,10 @@
   text-decoration: none;
   background-color: rgb(255, 152, 0);
 }
-.dashboard-text18 {
+.dashboard-text16 {
   color: rgb(255, 255, 255);
   width: 100%;
-  font-size: 20px;
+  font-size: 16px;
   max-width: auto;
   font-style: normal;
   font-family: "Inter";
@@ -1291,19 +1227,19 @@
   }
 }
 @media(max-width: 1200px) {
-  .dashboard-text04 {
+  .dashboard-text02 {
     font-size: 16px;
+  }
+  .dashboard-text03 {
+    font-size: 16px;
+  }
+  .dashboard-text04 {
+    font-size: 30px;
   }
   .dashboard-text05 {
     font-size: 16px;
   }
   .dashboard-text06 {
-    font-size: 30px;
-  }
-  .dashboard-text07 {
-    font-size: 16px;
-  }
-  .dashboard-text08 {
     font-size: 16px;
   }
   .dashboard-container17 {
@@ -1324,19 +1260,19 @@
     flex: 1;
     width: 100%;
   }
-  .dashboard-text04 {
+  .dashboard-text02 {
     font-size: 16px;
+  }
+  .dashboard-text03 {
+    font-size: 16px;
+  }
+  .dashboard-text04 {
+    font-size: 20px;
   }
   .dashboard-text05 {
     font-size: 16px;
   }
   .dashboard-text06 {
-    font-size: 20px;
-  }
-  .dashboard-text07 {
-    font-size: 16px;
-  }
-  .dashboard-text08 {
     font-size: 16px;
   }
   .dashboard-container07 {
@@ -1355,19 +1291,19 @@
     padding-left: var(--dl-space-space-unit);
     padding-right: var(--dl-space-space-unit);
   }
-  .dashboard-text04 {
+  .dashboard-text02 {
     font-size: 16px;
+  }
+  .dashboard-text03 {
+    font-size: 16px;
+  }
+  .dashboard-text04 {
+    font-size: 20px;
   }
   .dashboard-text05 {
     font-size: 16px;
   }
   .dashboard-text06 {
-    font-size: 20px;
-  }
-  .dashboard-text07 {
-    font-size: 16px;
-  }
-  .dashboard-text08 {
     font-size: 16px;
   }
   .dashboard-week1 {
@@ -1379,10 +1315,10 @@
   .dashboard-container07 {
     flex: 1;
   }
-  .dashboard-text17 {
+  .dashboard-text15 {
     display: flex;
   }
-  .dashboard-text18 {
+  .dashboard-text16 {
     display: none;
   }
   .dashboard-container17 {
@@ -1402,25 +1338,22 @@
     margin-left: 0px;
     margin-right: 0px;
   }
-  .dashboard-text02 {
-    font-weight: 700;
-  }
   .dashboard-container05 {
     margin-top: 0px;
   }
-  .dashboard-text04 {
+  .dashboard-text02 {
     font-size: 16px;
+  }
+  .dashboard-text03 {
+    font-size: 16px;
+  }
+  .dashboard-text04 {
+    font-size: 20px;
   }
   .dashboard-text05 {
     font-size: 16px;
   }
   .dashboard-text06 {
-    font-size: 20px;
-  }
-  .dashboard-text07 {
-    font-size: 16px;
-  }
-  .dashboard-text08 {
     font-size: 16px;
   }
   .dashboard-week1 {
@@ -1436,7 +1369,7 @@
   .dashboard-container06 {
     width: 100%;
   }
-  .dashboard-text10 {
+  .dashboard-text08 {
     width: auto;
   }
   .dashboard-container07 {
@@ -1457,10 +1390,10 @@
   .dashboard-navlink {
     width: 100%;
   }
-  .dashboard-text16 {
+  .dashboard-text14 {
     width: 100%;
   }
-  .dashboard-text17 {
+  .dashboard-text15 {
     display: flex;
   }
   .dashboard-container17 {

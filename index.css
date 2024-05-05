@@ -2468,7 +2468,6 @@
   height: auto;
   display: flex;
   position: relative;
-  transition: 0.3s;
   align-items: center;
   padding-top: 2px;
   padding-left: var(--dl-space-space-unit);
@@ -2479,9 +2478,6 @@
   backdrop-filter: blur(1px);
   justify-content: center;
   background-color: rgba(232, 232, 232, 0.04);
-}
-.profile-container66:hover {
-  backdrop-filter: blur(8px);
 }
 .profile-form1 {
   gap: var(--dl-space-space-unit);
@@ -2511,14 +2507,14 @@
   display: flex;
   position: relative;
   align-items: flex-start;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-color: #ffffff;
   border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   backdrop-filter: blur(10px);
   justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.1);
@@ -2541,14 +2537,14 @@
   display: flex;
   position: relative;
   align-items: flex-start;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-color: #ffffff;
   border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   backdrop-filter: blur(10px);
   justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.1);
@@ -2571,14 +2567,14 @@
   display: flex;
   position: relative;
   align-items: flex-start;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-color: #ffffff;
   border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   backdrop-filter: blur(10px);
   justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.1);
@@ -2596,6 +2592,15 @@
 }
 .profile-text46 {
   color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 400;
+}
+.profile-text47 {
+  color: rgb(255, 255, 255);
+  display: none;
   font-size: 16px;
   font-style: normal;
   text-align: left;
@@ -2621,14 +2626,14 @@
   position: relative;
   text-align: center;
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-color: #ffffff;
   border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   backdrop-filter: blur(10px);
   justify-content: center;
   background-color: rgba(215, 255, 0, 0.72);
@@ -2643,14 +2648,14 @@
   position: relative;
   text-align: center;
   align-items: center;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-color: #ffffff;
   border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   backdrop-filter: blur(10px);
   justify-content: center;
   background-color: rgba(19, 14, 200, 0.72);
@@ -2661,7 +2666,6 @@
   height: auto;
   display: flex;
   position: relative;
-  transition: 0.3s;
   align-items: center;
   padding-top: 2px;
   padding-left: var(--dl-space-space-unit);
@@ -2672,9 +2676,6 @@
   backdrop-filter: blur(1px);
   justify-content: center;
   background-color: rgba(232, 232, 232, 0.04);
-}
-.profile-container69:hover {
-  backdrop-filter: blur(8px);
 }
 .profile-container71 {
   display: contents;

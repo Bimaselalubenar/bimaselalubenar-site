@@ -571,6 +571,7 @@
   justify-content: flex-start;
 }
 .tools-text06 {
+  color: #b3b3b3;
   height: auto;
   font-size: 16px;
 }
@@ -601,6 +602,8 @@
   padding: var(--dl-space-space-unit);
   font-size: 16px;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
+  border-color: #c6c6c6;
+  border-width: 2px;
   border-radius: 10px;
   background-color: #ffffff;
 }
@@ -704,6 +707,7 @@
   justify-content: flex-start;
 }
 .tools-text09 {
+  color: #b3b3b3;
   height: auto;
   font-size: 16px;
 }
@@ -736,6 +740,8 @@
   padding: var(--dl-space-space-unit);
   font-size: 16px;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
+  border-color: #c6c6c6;
+  border-width: 2px;
   border-radius: 10px;
   background-color: #ffffff;
 }
@@ -747,6 +753,8 @@
   padding: var(--dl-space-space-unit);
   font-size: 16px;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
+  border-color: #c6c6c6;
+  border-width: 2px;
   border-radius: 10px;
   background-color: #ffffff;
 }
@@ -758,6 +766,8 @@
   padding: var(--dl-space-space-unit);
   font-size: 16px;
   box-shadow: 5px 5px 10px 0px #d4d4d4;
+  border-color: #c6c6c6;
+  border-width: 2px;
   border-radius: 10px;
   background-color: #ffffff;
 }
@@ -851,6 +861,7 @@
     height: 300px;
   }
   .tools-button1 {
+    width: 100%;
     box-shadow: 0px 3px 0px 0px #0a0061;
   }
   .tools-container14 {
@@ -863,6 +874,7 @@
     gap: var(--dl-space-space-halfunit);
   }
   .tools-button2 {
+    width: 100%;
     box-shadow: 0px 3px 0px 0px #0a0061;
   }
 }

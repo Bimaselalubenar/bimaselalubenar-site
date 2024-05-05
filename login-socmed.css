@@ -153,12 +153,12 @@
 .login-socmed-textinput {
   width: 100%;
   font-family: "Inconsolata";
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .login-socmed-text02 {
   color: rgb(255, 255, 255);
@@ -169,12 +169,12 @@
 .login-socmed-textinput1 {
   width: 100%;
   font-family: "Inconsolata";
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .login-socmed-container06 {
   display: flex;
@@ -199,12 +199,12 @@
   font-style: normal;
   font-family: "Inconsolata";
   font-weight: 900;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   background-color: rgb(219, 249, 0);
 }
 .login-socmed-container07 {
@@ -307,12 +307,12 @@
 .login-socmed-textinput2 {
   width: 100%;
   font-family: "Inconsolata";
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .login-socmed-text08 {
   color: rgb(255, 255, 255);
@@ -323,12 +323,12 @@
 .login-socmed-textinput3 {
   width: 100%;
   font-family: "Inconsolata";
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .login-socmed-text09 {
   color: rgb(255, 255, 255);
@@ -339,12 +339,12 @@
 .login-socmed-textinput4 {
   width: 100%;
   font-family: "Inconsolata";
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
 }
 .login-socmed-container10 {
   display: flex;
@@ -375,12 +375,12 @@
   font-style: normal;
   font-family: "Inconsolata";
   font-weight: 900;
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-width: 0px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   background-color: #00aa1c;
 }
 .login-socmed-button2 {
@@ -389,13 +389,13 @@
   cursor: pointer;
   transition: 0.3s;
   font-family: "Inconsolata";
-  padding-top: var(--dl-space-space-halfunit);
+  padding-top: var(--dl-space-space-unit);
   border-color: #ffffff;
   border-width: 1px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 10px;
   padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
+  padding-bottom: var(--dl-space-space-unit);
   background-color: transparent;
 }
 .login-socmed-button2:hover {
