@@ -56,8 +56,12 @@ module.exports = {
         "SixUnits": "96px"
       },
       "borderRadius": {
+        "inputradius": "24px",
+        "imageradius": "8px",
+        "cardradius": "8px",
         "input-radius": "24px",
         "card-radius": "8px",
+        "buttonradius": "24px",
         "image-radius": "8px",
         "button-radius": "24px",
         "Radius4": "4px",

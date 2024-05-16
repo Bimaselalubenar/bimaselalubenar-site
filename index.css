@@ -1460,8 +1460,8 @@
 }
 .profile-container13 {
   gap: var(--dl-space-space-halfunit);
-  width: 307px;
-  height: 307px;
+  width: 250px;
+  height: 250px;
   display: flex;
   padding: var(--dl-space-space-unit);
   position: relative;
