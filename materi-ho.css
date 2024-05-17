@@ -13,7 +13,7 @@
   padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-unit);
   border-radius: var(--dl-radius-radius-radius8);
-  margin-bottom: var(--dl-space-space-twounits);
+  margin-bottom: 0px;
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-twounits);
@@ -88,6 +88,7 @@
 .form-root-class-name1 {
   max-width: 1000px;
 }
+
 @media(max-width: 479px) {
   .form-text {
     font-size: 18px;
@@ -109,7 +110,6 @@
 .links-links {
   gap: var(--dl-space-space-fiveunits);
   display: flex;
-  z-index: 15;
   position: relative;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -414,7 +414,7 @@
   color: #efefef;
 }
 .footer-root-class-name {
-  margin-top: var(--dl-space-space-threeunits);
+  margin-top: 0px;
 }
 
 

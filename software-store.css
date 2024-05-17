@@ -542,7 +542,6 @@
 .links-links {
   gap: var(--dl-space-space-fiveunits);
   display: flex;
-  z-index: 15;
   position: relative;
   flex-wrap: wrap;
   align-items: flex-start;
@@ -847,7 +846,7 @@
   color: #efefef;
 }
 .footer-root-class-name {
-  margin-top: var(--dl-space-space-threeunits);
+  margin-top: 0px;
 }
 
 

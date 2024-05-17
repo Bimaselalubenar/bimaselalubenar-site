@@ -1,0 +1,80 @@
+<div>
+  <link href="./popup1.css" rel="stylesheet" />
+  <div id="popup1" class="popup1-container">
+    <div class="popup1-container1">
+      <div class="popup1-header">
+        <img
+          alt="image"
+          src="https://i.pinimg.com/originals/97/75/82/9775822c635a7841415518f12822f204.gif"
+          class="popup1-image"
+        />
+        <div class="form-container form-root-class-name2">
+          <form
+            id="Masukan"
+            name="Formmasukan"
+            action="sukses-kirim"
+            method="POST"
+            enctype="text/plain"
+            autocomplete="on"
+            data-netlify="true"
+            class="form-form"
+          >
+            <h1 class="form-text"><span>Masukan dan saran 🎉</span></h1>
+            <div class="form-container1">
+              <input
+                type="text"
+                id="nama"
+                name="Nama"
+                required
+                placeholder="Nama"
+                class="form-textinput input H5-12px"
+              />
+              <input
+                type="text"
+                id="cabang"
+                name="Cabang"
+                required
+                placeholder="Cabang"
+                class="form-textinput1 input H5-12px"
+              />
+            </div>
+            <textarea
+              name="masukan"
+              placeholder="Masukan"
+              class="form-textarea input H5-12px"
+            ></textarea>
+            <button type="submit" class="form-button">
+              <span>Kirim</span>
+            </button>
+          </form>
+        </div>
+      </div>
+      <button
+        type="button"
+        onclick="closeBanner('popup1')"
+        aria-label="Close"
+        class="popup1-close-button"
+      >
+        <svg viewBox="0 0 804.5714285714286 1024" class="popup1-icon">
+          <path
+            d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+          ></path>
+        </svg>
+      </button>
+    </div>
+    <div>
+      <div class="popup1-container3">
+        <script>
+          function showBanners() {
+              document.getElementById('popup1').style.display = 'block';
+          }
+
+          function closeBanner(bannerId) {
+              var banner = document.getElementById(bannerId);
+              banner.style.display = 'none';
+          }
+        </script>
+      </div>
+    </div>
+  </div>
+</div>

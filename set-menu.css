@@ -1,7 +1,6 @@
 .links-links {
   gap: var(--dl-space-space-fiveunits);
   display: flex;
-  z-index: 15;
   position: relative;
   flex-wrap: wrap;
   align-items: flex-start;
