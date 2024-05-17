@@ -419,6 +419,7 @@
         <div>
           <div class="tools-container02">
             <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
+            <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
           </div>
         </div>
         <div class="tools-container03">
@@ -522,7 +523,6 @@
                     id="imageUrl"
                     name="imageUrl"
                     target="text"
-                    required="true"
                     placeholder="Link gambar"
                     class="tools-textinput1"
                   />
@@ -602,107 +602,41 @@
           </div>
           <div class="tools-container19">
             <div class="tools-container20">
-              <span class="tools-text11">Generate Link Google Drive</span>
+              <span class="tools-text11">Barcode Generator</span>
               <form class="tools-form2">
                 <label for="text" class="tools-text12">
-                  Masukan link drive file
+                  Masukan format text / link
                 </label>
-                <label class="tools-text13">mp4 - jpg - png - pdf</label>
+                <label class="tools-text13">Value</label>
                 <div class="tools-container21">
                   <input
                     type="text"
-                    id="driveLink"
-                    target="text"
-                    placeholder="link drive"
-                    required="true"
+                    id="barcodeInput"
+                    placeholder="text to barcode"
                     class="tools-textinput2"
                   />
                   <button
                     type="submit"
-                    onclick="convertLink()"
-                    class="tools-button3"
-                  >
-                    Generate
-                  </button>
-                </div>
-              </form>
-              <label for="text" id="autoDownloadLink" class="tools-text14">
-                Link drive
-              </label>
-              <div class="tools-container22"></div>
-              <div>
-                <div class="tools-container24">
-                  <script>
-                    function generateQRCode(event) {
-                      event.preventDefault(); // Prevent form submission
-                      var text = document.getElementById('text').value;
-                      var qrCodeDiv = document.getElementById('qrcode');
-                      var qrCodeImg = document.getElementById('qrcode-img');
-                      var downloadLink = document.getElementById('download-link');
-                      qrCodeDiv.innerHTML = ''; // Clear previous QR code
-
-                      // Generate QR code
-                      var qr = new QRious({
-                        element: qrCodeDiv,
-                        value: text,
-                        size: 200,
-                      });
-
-                      // Show QR code image
-                      qrCodeImg.src = qr.toDataURL();
-                      qrCodeImg.style.display = 'block';
-
-                      // Show download link
-                      downloadLink.href = qr.toDataURL();
-                      downloadLink.style.display = 'block';
-                    }
-                  </script>
-                </div>
-              </div>
-            </div>
-            <div class="tools-container25">
-              <span class="tools-text15">Barcode Generator</span>
-              <div>
-                <div class="tools-container27">
-                  <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
-                </div>
-              </div>
-              <form class="tools-form3">
-                <label for="text" class="tools-text16">
-                  Masukan format text / link
-                </label>
-                <label class="tools-text17">Value</label>
-                <div class="tools-container28">
-                  <input
-                    type="text"
-                    id="barcodeInput"
-                    target="text"
-                    placeholder="text to barcode"
-                    required="true"
-                    class="tools-textinput3"
-                  />
-                  <button
-                    type="submit"
                     onclick="generateBarcode()"
-                    class="tools-button4"
+                    class="tools-button3"
                   >
                     Generate
                   </button>
                   <button
                     type="submit"
                     onclick="saveBarcode()"
-                    class="tools-button5"
+                    class="tools-button4"
                   >
                     Save Barcode
                   </button>
                 </div>
               </form>
-              <div id="barcodeContainer" class="tools-container29"></div>
-              <div class="tools-container30">
-                <div class="tools-container31"><svg id="barcode"></svg></div>
+              <div id="barcodeContainer" class="tools-container22"></div>
+              <div class="tools-container23">
+                <div class="tools-container24"><svg id="barcode"></svg></div>
               </div>
               <div>
-                <div class="tools-container33">
+                <div class="tools-container26">
                   <script>
                     function generateBarcode() {
                         const input = document.getElementById('barcodeInput').value;
@@ -739,9 +673,9 @@
                   </script>
                 </div>
               </div>
-              <div class="tools-container34"></div>
+              <div class="tools-container27"></div>
               <div>
-                <div class="tools-container36">
+                <div class="tools-container29">
                   <script>
                     function generateQRCode(event) {
                       event.preventDefault(); // Prevent form submission
@@ -894,7 +828,7 @@
           </div>
         </div>
         <div>
-          <div class="tools-container38">
+          <div class="tools-container31">
             <script>
               const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
               if (loggedInUser) {
