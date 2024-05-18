@@ -142,3 +142,13 @@
     align-self: flex-start;
   }
 }
+@media(max-width: 479px) {
+  .popup2-image {
+    top: -111px;
+    left: 0px;
+    right: 0px;
+    width: 379px;
+    height: 117px;
+    margin: auto;
+  }
+}

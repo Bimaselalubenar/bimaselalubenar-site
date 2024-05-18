@@ -1567,6 +1567,16 @@
     align-self: flex-start;
   }
 }
+@media(max-width: 479px) {
+  .popup2-image {
+    top: -111px;
+    left: 0px;
+    right: 0px;
+    width: 379px;
+    height: 117px;
+    margin: auto;
+  }
+}
 
 .web-service-container {
   width: 100%;
@@ -1660,7 +1670,7 @@
 }
 .web-service-container07:hover {
   transform: translateY(-20px);
-  box-shadow: 5px 5px 30px 0px #c8d41e;
+  box-shadow: 5px 5px 30px 0px #000000;
   margin-bottom: 0px;
   background-image: linear-gradient(135deg, rgb(11, 11, 11) 0.00%,rgb(34, 41, 49) 100.00%);
 }
@@ -1674,7 +1684,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
   border-radius: 20px;
-  background-image: linear-gradient(135deg, rgb(254, 172, 94) 0.00%,rgb(199, 121, 208) 50.00%,rgb(75, 192, 200) 100.00%);
+  background-image: linear-gradient(135deg, rgb(210, 103, 0) 0.00%,rgb(217, 126, 39) 51.00%,rgb(210, 103, 0) 100.00%);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -1850,7 +1860,7 @@
 }
 .web-service-container16:hover {
   transform: translateY(-20px);
-  box-shadow: 5px 5px 30px 0px #c8d41e;
+  box-shadow: 5px 5px 30px 0px #000000;
   margin-bottom: 0px;
   background-image: linear-gradient(135deg, rgb(11, 11, 11) 0.00%,rgb(34, 41, 49) 100.00%);
 }
@@ -1864,7 +1874,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
   border-radius: 20px;
-  background-image: linear-gradient(135deg, rgb(254, 172, 94) 0%, rgb(199, 121, 208) 50%, rgb(75, 192, 200) 100%);
+  background-image: linear-gradient(135deg, rgb(29, 46, 212) 0.00%,rgb(189, 25, 208) 51.00%,rgb(29, 46, 212) 100.00%);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
@@ -2040,7 +2050,7 @@
 }
 .web-service-container25:hover {
   transform: translateY(-20px);
-  box-shadow: 5px 5px 30px 0px #c8d41e;
+  box-shadow: 5px 5px 30px 0px #000000;
   margin-bottom: 0px;
   background-image: linear-gradient(135deg, rgb(11, 11, 11) 0.00%,rgb(34, 41, 49) 100.00%);
 }
@@ -2054,7 +2064,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
   border-radius: 20px;
-  background-image: linear-gradient(135deg, rgb(254, 172, 94) 0%, rgb(199, 121, 208) 50%, rgb(75, 192, 200) 100%);
+  background-image: linear-gradient(90deg, rgb(162, 189, 6) 0.00%,rgb(229, 207, 116) 51.00%,rgb(162, 189, 6) 100.00%);
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
