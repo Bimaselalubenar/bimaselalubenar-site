@@ -8,7 +8,7 @@
   flex-direction: column;
   background-size: cover;
   justify-content: center;
-  background-image: radial-gradient(circle at center, rgb(0, 0, 0) 0.00%,rgb(26, 13, 161) 100.00%),url('https://th.bing.com/th/id/OIP.2XGDQUhWTkcCW5Hh7rXuQwAAAA?w=474&h=474&rs=1&pid=ImgDetMain');
+  background-image: radial-gradient(circle at center, rgb(255, 137, 0) 0.00%,rgb(161, 161, 0) 100.00%);
   background-position: center;
 }
 .rekening-container01 {
@@ -107,7 +107,7 @@
   font-size: 16px;
   font-family: "Inconsolata";
   font-weight: 600;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
 }
 .rekening-text02 {
   font-weight: 900;
@@ -162,7 +162,7 @@
   font-size: 16px;
   font-family: "Inconsolata";
   font-weight: 600;
-  letter-spacing: 8px;
+  letter-spacing: 4px;
 }
 .rekening-text07 {
   font-weight: 900;
@@ -203,10 +203,12 @@
 .rekening-container10 {
   gap: var(--dl-space-space-unit);
   width: 100%;
-  height: 63px;
+  height: auto;
   display: flex;
   align-items: center;
+  padding-top: var(--dl-space-space-unit);
   flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
   background-color: #e5e5e5;
 }
@@ -247,6 +249,7 @@
 @media(max-width: 479px) {
   .rekening-container {
     background-color: #080c46;
+    background-image: radial-gradient(circle at center, rgb(255, 137, 0) 0.00%,rgb(161, 161, 0) 100.00%);
   }
   .rekening-container02 {
     width: auto;
@@ -257,10 +260,7 @@
     width: 240px;
     height: 240px;
   }
-  .rekening-text01 {
-    letter-spacing: 7px;
-  }
-  .rekening-text06 {
-    letter-spacing: 7px;
+  .rekening-container10 {
+    height: auto;
   }
 }
