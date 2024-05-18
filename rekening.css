@@ -7,14 +7,25 @@
   align-items: center;
   flex-direction: column;
   justify-content: center;
-<<<<<<< HEAD
   background-color: #dabf1b;
-=======
-  background-image: linear-gradient(180deg, rgb(226, 90, 8) 0.00%,rgb(216, 0, 0) 100.00%);
-  background-position: center;
->>>>>>> 359b08821d7460ae17eb4ed67670330a016a6bdd
 }
 .rekening-container01 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 581px;
+  display: flex;
+  position: absolute;
+  align-items: flex-start;
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: column;
+  background-color: #ffffff;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: var(--dl-radius-radius-round);
+  border-bottom-right-radius: var(--dl-radius-radius-round);
+}
+.rekening-container02 {
   gap: var(--dl-space-space-fourunits);
   width: 100%;
   height: auto;
@@ -25,7 +36,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.rekening-container02 {
+.rekening-container03 {
   gap: var(--dl-space-space-unit);
   width: auto;
   height: auto;
@@ -41,10 +52,10 @@
   border-bottom-left-radius: var(--dl-radius-radius-round);
   border-bottom-right-radius: var(--dl-radius-radius-round);
 }
-.rekening-container02:hover {
+.rekening-container03:hover {
   backdrop-filter: blur(8px);
 }
-.rekening-container03 {
+.rekening-container04 {
   gap: var(--dl-space-space-halfunit);
   width: 250px;
   height: 250px;
@@ -61,21 +72,21 @@
   border-bottom-left-radius: var(--dl-radius-radius-round);
   border-bottom-right-radius: var(--dl-radius-radius-round);
 }
-.rekening-container04 {
+.rekening-container05 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-twounits);
   z-index: 100;
   max-width: 600px;
-  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.33);
+  box-shadow: 5px 5px 30px 0px rgba(0, 0, 0, 0.21);
   align-items: center;
   border-radius: 20px;
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
 }
-.rekening-container05 {
+.rekening-container06 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -92,7 +103,7 @@
   font-family: "Inconsolata";
   font-weight: 600;
 }
-.rekening-container06 {
+.rekening-container07 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -130,7 +141,7 @@
 .rekening-text04 {
   color: #000000;
 }
-.rekening-container07 {
+.rekening-container08 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -146,7 +157,7 @@
   font-family: "Inconsolata";
   font-weight: 600;
 }
-.rekening-container08 {
+.rekening-container09 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -188,23 +199,12 @@
   font-family: "Inconsolata";
   font-weight: 400;
 }
-.rekening-container09 {
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  border: 2px dashed rgba(120, 120, 120, 0.4);
-  bottom: 0px;
-  height: 412px;
-  margin: auto;
-  display: flex;
-  position: absolute;
-  align-items: center;
-  flex-direction: column;
-  justify-content: flex-end;
-  background-color: #ffffff;
+.rekening-container11 {
+  display: contents;
 }
-.rekening-container10 {
+.rekening-container12 {
   gap: var(--dl-space-space-unit);
+  left: 0px;
   width: 100%;
   bottom: 0px;
   height: auto;
@@ -215,7 +215,7 @@
   flex-direction: row;
   padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 .rekening-image {
   width: auto;
@@ -227,11 +227,12 @@
   height: 37px;
   object-fit: cover;
 }
-.rekening-container12 {
-  display: contents;
-}
 @media(max-width: 991px) {
-  .rekening-container03 {
+  .rekening-container01 {
+    border-bottom-left-radius: 80px;
+    border-bottom-right-radius: 80px;
+  }
+  .rekening-container04 {
     flex: 0 0 auto;
     width: 240px;
     height: 240px;
@@ -241,7 +242,7 @@
   .rekening-container {
     justify-content: center;
   }
-  .rekening-container02 {
+  .rekening-container03 {
     top: 0px;
     left: 0px;
     right: 0px;
@@ -252,24 +253,24 @@
   }
 }
 @media(max-width: 479px) {
-  .rekening-container02 {
+  .rekening-container03 {
     width: auto;
     height: auto;
   }
-  .rekening-container03 {
+  .rekening-container04 {
     flex: 0 0 auto;
     width: 240px;
     height: 240px;
   }
-  .rekening-container05 {
+  .rekening-container06 {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .rekening-container07 {
+  .rekening-container08 {
     padding-left: 0px;
     padding-right: 0px;
   }
-  .rekening-container10 {
+  .rekening-container12 {
     height: auto;
   }
 }
