@@ -4,25 +4,31 @@
     <div class="popup2-container1">
       <div class="popup2-header">
         <form class="popup2-form">
-          <span class="popup2-text">Klaim Promo Hingga 50 Ribu</span>
           <img
             alt="image"
             src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Portofolio/Banner.png?updatedAt=1715986562319"
             class="popup2-image"
           />
           <div class="popup2-container2">
-            <input
-              type="text"
-              id="promoCode"
-              required="true"
-              placeholder="Masukan kode promo"
-              class="popup2-textinput"
-            />
-            <button type="button" onclick="applyPromo()" class="popup2-button">
-              Klaim Promo
-            </button>
+            <span class="popup2-text">Klaim Promo Hingga 50 Ribu</span>
+            <div class="popup2-container3">
+              <input
+                type="text"
+                id="promoCode"
+                required="true"
+                placeholder="Masukan kode promo"
+                class="popup2-textinput"
+              />
+              <button
+                type="button"
+                onclick="applyPromo()"
+                class="popup2-button"
+              >
+                Klaim Promo
+              </button>
+            </div>
+            <span id="message" class="popup2-text1"> </span>
           </div>
-          <span id="message" class="popup2-text1"> </span>
         </form>
       </div>
       <button
@@ -39,7 +45,7 @@
       </button>
     </div>
     <div>
-      <div class="popup2-container4">
+      <div class="popup2-container5">
         <script>
           function showBanners() {
               document.getElementById('popup2').style.display = 'block';
@@ -53,7 +59,7 @@
       </div>
     </div>
     <div>
-      <div class="popup2-container6">
+      <div class="popup2-container7">
         <script>
           function applyPromo() {
               const validPromoCode = 'DISKON2024';

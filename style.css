@@ -467,6 +467,28 @@
   text-align: center;
   vertical-align: middle;
 }
+.copy-button {
+  color: #ffffff;
+  width: auto;
+  font-size: 16px;
+  font-style: normal;
+  font-family: "Inconsolata";
+  font-weight: 600;
+  border-width: 0px;
+  background-color: #09009a;
+}
+.message {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  height: 34px;
+  display: flex;
+  max-width: 479px;
+  align-items: flex-start;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  justify-content: center;
+}
 .H4-16px {
   font-size: 16px;
   font-style: normal;
@@ -546,6 +568,8 @@
   text-transform: none;
   text-decoration: none;
 }
+
+
 @media(max-width: 991px) {
   .thq-flex-row {
     flex-direction: column;

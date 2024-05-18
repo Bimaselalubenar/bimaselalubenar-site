@@ -1443,21 +1443,17 @@
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: var(--dl-space-space-halfunit);
   position: relative;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.39);
   align-items: flex-start;
   border-color: #ffffff;
   border-width: 3px;
-  border-radius: 10px;
-  animation-name: slideInUp;
+  border-radius: 20px;
   flex-direction: row;
-  animation-delay: 5s;
   background-color: var(--dl-color-theme-neutral-light);
-  animation-duration: 1s;
-  animation-direction: alternate;
-  animation-iteration-count: 1;
-  animation-timing-function: step-start;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .popup2-header {
   flex: 1;
@@ -1476,29 +1472,40 @@
   flex-direction: column;
   justify-content: flex-start;
 }
+.popup2-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.popup2-container2 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius4);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: flex-start;
+  background-color: #e5e5e5;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
 .popup2-text {
   font-size: 30px;
   font-style: normal;
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.popup2-image {
-  top: -142px;
-  left: 0px;
-  right: 0px;
-  width: 563px;
-  height: 167px;
-  margin: auto;
-  position: absolute;
-  object-fit: cover;
-}
-.popup2-container2 {
+.popup2-container3 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
   display: flex;
   box-shadow: 5px 5px 15px 0px rgba(41, 41, 41, 0.17);
-  align-items: flex-start;
+  align-items: center;
   border-color: #ffffff;
   border-width: 3px;
   border-radius: 20px;
@@ -1543,10 +1550,10 @@
   height: 24px;
   align-self: center;
 }
-.popup2-container4 {
+.popup2-container5 {
   display: contents;
 }
-.popup2-container6 {
+.popup2-container7 {
   display: contents;
 }
 .popup2-root-class-name {
@@ -1572,8 +1579,8 @@
     top: -111px;
     left: 0px;
     right: 0px;
-    width: 379px;
-    height: 117px;
+    width: 100%;
+    height: auto;
     margin: auto;
   }
 }
@@ -1604,7 +1611,6 @@
   align-items: center;
   padding-top: var(--dl-space-space-fiveunits);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-fiveunits);
   justify-content: center;
 }
 .web-service-container03 {
@@ -1662,6 +1668,7 @@
   width: 100%;
   cursor: pointer;
   display: flex;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
   align-items: center;
   border-radius: 20px;
@@ -1695,15 +1702,18 @@
   display: flex;
   padding: var(--dl-space-space-unit);
   align-items: flex-start;
-  border-color: #dcdcdc;
-  border-style: solid;
-  border-width: 3px;
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
-  border-top-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
+}
+.web-service-container09 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .web-service-text03 {
   color: rgb(255, 255, 255);
@@ -1716,14 +1726,26 @@
   font-weight: 800;
   border-radius: 20px;
 }
-.web-service-container09 {
+.web-service-text04 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0px;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Inconsolata";
+  font-weight: 400;
+  border-radius: 20px;
+  text-decoration: line-through;
+}
+.web-service-container10 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.web-service-container10 {
+.web-service-container11 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: center;
@@ -1735,27 +1757,7 @@
   width: 16px;
   height: 16px;
 }
-.web-service-text04 {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.web-service-container11 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.web-service-icon02 {
-  fill: #ffffff;
-  width: 16px;
-  height: 16px;
-}
-.web-service-text07 {
+.web-service-text05 {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-style: normal;
@@ -1770,7 +1772,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.web-service-icon04 {
+.web-service-icon02 {
   fill: #ffffff;
   width: 16px;
   height: 16px;
@@ -1790,7 +1792,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.web-service-icon06 {
+.web-service-icon04 {
   fill: #ffffff;
   width: 16px;
   height: 16px;
@@ -1810,7 +1812,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.web-service-icon08 {
+.web-service-icon06 {
   fill: #ffffff;
   width: 16px;
   height: 16px;
@@ -1823,23 +1825,63 @@
   font-family: "Inconsolata";
   font-weight: 300;
 }
+.web-service-container15 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon08 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text11 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-container16 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon10 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text12 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
 .web-service-link {
   display: contents;
 }
-.web-service-container15 {
+.web-service-container17 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-halfunit);
   align-items: center;
   border-color: #ffffff;
-  border-width: 3px;
+  border-width: 2px;
   border-radius: 15px;
   flex-direction: row;
   justify-content: center;
   text-decoration: none;
 }
-.web-service-text11 {
+.web-service-text13 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-style: normal;
@@ -1847,24 +1889,25 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.web-service-container16 {
+.web-service-container18 {
   flex: 1;
   width: 100%;
   cursor: pointer;
   display: flex;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
   align-items: center;
   border-radius: 20px;
   flex-direction: column;
   justify-content: center;
 }
-.web-service-container16:hover {
+.web-service-container18:hover {
   transform: translateY(-20px);
   box-shadow: 5px 5px 30px 0px #000000;
   margin-bottom: 0px;
   background-image: linear-gradient(135deg, rgb(11, 11, 11) 0.00%,rgb(34, 41, 49) 100.00%);
 }
-.web-service-text12 {
+.web-service-text14 {
   color: rgb(255, 255, 255);
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -1878,24 +1921,27 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.web-service-container17 {
+.web-service-container19 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   height: auto;
   display: flex;
   padding: var(--dl-space-space-unit);
   align-items: flex-start;
-  border-color: #dcdcdc;
-  border-style: solid;
-  border-width: 3px;
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
-  border-top-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-.web-service-text13 {
+.web-service-container20 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.web-service-text15 {
   color: rgb(255, 255, 255);
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -1906,34 +1952,26 @@
   font-weight: 800;
   border-radius: 20px;
 }
-.web-service-container18 {
+.web-service-text16 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0px;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Inconsolata";
+  font-weight: 400;
+  border-radius: 20px;
+  text-decoration: line-through;
+}
+.web-service-container21 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.web-service-container19 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.web-service-icon10 {
-  fill: #ffffff;
-  width: 16px;
-  height: 16px;
-}
-.web-service-text14 {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.web-service-container20 {
+.web-service-container22 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: center;
@@ -1953,46 +1991,6 @@
   font-family: "Inconsolata";
   font-weight: 300;
 }
-.web-service-container21 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.web-service-icon14 {
-  fill: #ffffff;
-  width: 16px;
-  height: 16px;
-}
-.web-service-text18 {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.web-service-container22 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.web-service-icon16 {
-  fill: #ffffff;
-  width: 16px;
-  height: 16px;
-}
-.web-service-text19 {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
 .web-service-container23 {
   gap: var(--dl-space-space-unit);
   display: flex;
@@ -2000,7 +1998,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.web-service-icon18 {
+.web-service-icon14 {
   fill: #ffffff;
   width: 16px;
   height: 16px;
@@ -2013,23 +2011,103 @@
   font-family: "Inconsolata";
   font-weight: 300;
 }
+.web-service-container24 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon16 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text21 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-container25 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon18 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text22 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-container26 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon20 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text23 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-container27 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon22 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text24 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
 .web-service-link1 {
   display: contents;
 }
-.web-service-container24 {
+.web-service-container28 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-halfunit);
   align-items: center;
   border-color: #ffffff;
-  border-width: 3px;
+  border-width: 2px;
   border-radius: 15px;
   flex-direction: row;
   justify-content: center;
   text-decoration: none;
 }
-.web-service-text21 {
+.web-service-text27 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-style: normal;
@@ -2037,24 +2115,25 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.web-service-container25 {
+.web-service-container29 {
   flex: 1;
   width: 100%;
   cursor: pointer;
   display: flex;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.5);
   transition: 0.5s;
   align-items: center;
   border-radius: 20px;
   flex-direction: column;
   justify-content: center;
 }
-.web-service-container25:hover {
+.web-service-container29:hover {
   transform: translateY(-20px);
   box-shadow: 5px 5px 30px 0px #000000;
   margin-bottom: 0px;
   background-image: linear-gradient(135deg, rgb(11, 11, 11) 0.00%,rgb(34, 41, 49) 100.00%);
 }
-.web-service-text22 {
+.web-service-text28 {
   color: rgb(255, 255, 255);
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -2068,24 +2147,27 @@
   border-bottom-left-radius: 0px;
   border-bottom-right-radius: 0px;
 }
-.web-service-container26 {
+.web-service-container30 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   height: auto;
   display: flex;
   padding: var(--dl-space-space-unit);
   align-items: flex-start;
-  border-color: #dcdcdc;
-  border-style: solid;
-  border-width: 3px;
   border-radius: 20px;
   flex-direction: column;
   justify-content: flex-start;
-  border-top-width: 0px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
 }
-.web-service-text23 {
+.web-service-container31 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.web-service-text29 {
   color: rgb(255, 255, 255);
   width: 100%;
   padding: var(--dl-space-space-unit);
@@ -2096,54 +2178,26 @@
   font-weight: 800;
   border-radius: 20px;
 }
-.web-service-container27 {
+.web-service-text30 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  padding: 0px;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Inconsolata";
+  font-weight: 400;
+  border-radius: 20px;
+  text-decoration: line-through;
+}
+.web-service-container32 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   justify-content: flex-start;
 }
-.web-service-container28 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.web-service-icon20 {
-  fill: #ffffff;
-  width: 16px;
-  height: 16px;
-}
-.web-service-text24 {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.web-service-container29 {
-  gap: var(--dl-space-space-unit);
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
-}
-.web-service-icon22 {
-  fill: #ffffff;
-  width: 16px;
-  height: 16px;
-}
-.web-service-text27 {
-  color: rgb(255, 255, 255);
-  font-size: 16px;
-  font-style: normal;
-  text-align: left;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.web-service-container30 {
+.web-service-container33 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: center;
@@ -2155,7 +2209,7 @@
   width: 16px;
   height: 16px;
 }
-.web-service-text28 {
+.web-service-text31 {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-style: normal;
@@ -2163,7 +2217,7 @@
   font-family: "Inconsolata";
   font-weight: 300;
 }
-.web-service-container31 {
+.web-service-container34 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: center;
@@ -2175,7 +2229,7 @@
   width: 16px;
   height: 16px;
 }
-.web-service-text29 {
+.web-service-text34 {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-style: normal;
@@ -2183,7 +2237,7 @@
   font-family: "Inconsolata";
   font-weight: 300;
 }
-.web-service-container32 {
+.web-service-container35 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: center;
@@ -2195,7 +2249,67 @@
   width: 16px;
   height: 16px;
 }
-.web-service-text30 {
+.web-service-text35 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-container36 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon30 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text36 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-container37 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon32 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text37 {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-container38 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.web-service-icon34 {
+  fill: #ffffff;
+  width: 16px;
+  height: 16px;
+}
+.web-service-text38 {
   color: rgb(255, 255, 255);
   font-size: 16px;
   font-style: normal;
@@ -2206,20 +2320,20 @@
 .web-service-link2 {
   display: contents;
 }
-.web-service-container33 {
+.web-service-container39 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-halfunit);
   align-items: center;
   border-color: #ffffff;
-  border-width: 3px;
+  border-width: 2px;
   border-radius: 15px;
   flex-direction: row;
   justify-content: center;
   text-decoration: none;
 }
-.web-service-text31 {
+.web-service-text39 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-style: normal;
@@ -2227,7 +2341,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.web-service-container34 {
+.web-service-container40 {
   padding-top: var(--dl-space-space-fourunits);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
@@ -2245,7 +2359,7 @@
   border-radius: 20px;
   flex-direction: column;
 }
-.web-service-container35 {
+.web-service-container41 {
   gap: var(--dl-space-space-twounits);
   flex: 0 0 auto;
   width: 100%;
@@ -2253,7 +2367,7 @@
   align-items: center;
   flex-direction: column;
 }
-.web-service-text32 {
+.web-service-text40 {
   color: rgb(255, 255, 255);
   font-size: 30px;
   font-style: normal;
@@ -2261,7 +2375,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.web-service-text33 {
+.web-service-text41 {
   color: rgb(255, 255, 255);
   text-align: center;
   font-family: "Inconsolata";
@@ -2285,162 +2399,6 @@
   flex-direction: column;
   justify-content: center;
 }
-.web-service-container36 {
-  gap: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.web-service-progress0 {
-  flex: 1;
-  width: auto;
-  height: 2px;
-  display: flex;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-style: outset;
-  border-width: 2px;
-  border-radius: var(--dl-radius-radius-button-radius);
-  flex-direction: column;
-  background-color: #ffffff;
-}
-.web-service-container37 {
-  width: 12px;
-  height: 12px;
-  margin: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-style: outset;
-  border-width: 2px;
-  border-radius: var(--dl-radius-radius-button-radius);
-  background-color: #ffffff;
-}
-.web-service-progress01 {
-  flex: 1;
-  width: auto;
-  height: 2px;
-  display: flex;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-style: outset;
-  border-width: 2px;
-  border-radius: var(--dl-radius-radius-button-radius);
-  flex-direction: column;
-  background-color: #ffffff;
-}
-.web-service-container38 {
-  gap: var(--dl-space-space-halfunit);
-  flex: 1;
-  width: auto;
-  display: flex;
-  padding: var(--dl-space-space-halfunit);
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.web-service-text34 {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-style: normal;
-  text-align: center;
-  font-family: "Inconsolata";
-  font-weight: 800;
-}
-.web-service-text35 {
-  color: rgb(255, 255, 255);
-  font-style: normal;
-  text-align: center;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.web-service-step3 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.web-service-container39 {
-  gap: 0;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.web-service-progress02 {
-  flex: 1;
-  width: auto;
-  height: 2px;
-  display: flex;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-style: outset;
-  border-width: 2px;
-  border-radius: var(--dl-radius-radius-button-radius);
-  flex-direction: column;
-  background-color: #ffffff;
-}
-.web-service-container40 {
-  width: 12px;
-  height: 12px;
-  margin: var(--dl-space-space-halfunit);
-  border-color: #ffffff;
-  border-style: outset;
-  border-width: 2px;
-  border-radius: var(--dl-radius-radius-button-radius);
-  background-color: #ffffff;
-}
-.web-service-progress03 {
-  flex: 1;
-  width: auto;
-  height: 2px;
-  display: flex;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-style: outset;
-  border-width: 2px;
-  border-radius: var(--dl-radius-radius-button-radius);
-  flex-direction: column;
-  background-color: #ffffff;
-}
-.web-service-container41 {
-  gap: var(--dl-space-space-halfunit);
-  flex: 1;
-  width: auto;
-  display: flex;
-  padding: var(--dl-space-space-halfunit);
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.web-service-text36 {
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-style: normal;
-  text-align: center;
-  font-family: "Inconsolata";
-  font-weight: 800;
-}
-.web-service-text37 {
-  color: rgb(255, 255, 255);
-  font-style: normal;
-  text-align: center;
-  font-family: "Inconsolata";
-  font-weight: 300;
-}
-.web-service-step4 {
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
 .web-service-container42 {
   gap: 0;
   width: 100%;
@@ -2449,7 +2407,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-progress04 {
+.web-service-progress0 {
   flex: 1;
   width: auto;
   height: 2px;
@@ -2472,7 +2430,7 @@
   border-radius: var(--dl-radius-radius-button-radius);
   background-color: #ffffff;
 }
-.web-service-progress05 {
+.web-service-progress01 {
   flex: 1;
   width: auto;
   height: 2px;
@@ -2495,7 +2453,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.web-service-text38 {
+.web-service-text42 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-style: normal;
@@ -2503,14 +2461,14 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.web-service-text39 {
+.web-service-text43 {
   color: rgb(255, 255, 255);
   font-style: normal;
   text-align: center;
   font-family: "Inconsolata";
   font-weight: 300;
 }
-.web-service-step5 {
+.web-service-step3 {
   width: auto;
   height: auto;
   display: flex;
@@ -2527,7 +2485,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-progress06 {
+.web-service-progress02 {
   flex: 1;
   width: auto;
   height: 2px;
@@ -2550,7 +2508,7 @@
   border-radius: var(--dl-radius-radius-button-radius);
   background-color: #ffffff;
 }
-.web-service-progress07 {
+.web-service-progress03 {
   flex: 1;
   width: auto;
   height: 2px;
@@ -2573,7 +2531,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.web-service-text40 {
+.web-service-text44 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-style: normal;
@@ -2581,28 +2539,206 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.web-service-text41 {
+.web-service-text45 {
   color: rgb(255, 255, 255);
   font-style: normal;
   text-align: center;
   font-family: "Inconsolata";
   font-weight: 300;
 }
+.web-service-step4 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.web-service-container48 {
+  gap: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.web-service-progress04 {
+  flex: 1;
+  width: auto;
+  height: 2px;
+  display: flex;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-style: outset;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-button-radius);
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.web-service-container49 {
+  width: 12px;
+  height: 12px;
+  margin: var(--dl-space-space-halfunit);
+  border-color: #ffffff;
+  border-style: outset;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-button-radius);
+  background-color: #ffffff;
+}
+.web-service-progress05 {
+  flex: 1;
+  width: auto;
+  height: 2px;
+  display: flex;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-style: outset;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-button-radius);
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.web-service-container50 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 1;
+  width: auto;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.web-service-text46 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Inconsolata";
+  font-weight: 800;
+}
+.web-service-text47 {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  text-align: center;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-step5 {
+  width: auto;
+  height: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.web-service-container51 {
+  gap: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.web-service-progress06 {
+  flex: 1;
+  width: auto;
+  height: 2px;
+  display: flex;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-style: outset;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-button-radius);
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.web-service-container52 {
+  width: 12px;
+  height: 12px;
+  margin: var(--dl-space-space-halfunit);
+  border-color: #ffffff;
+  border-style: outset;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-button-radius);
+  background-color: #ffffff;
+}
+.web-service-progress07 {
+  flex: 1;
+  width: auto;
+  height: 2px;
+  display: flex;
+  align-items: flex-start;
+  border-color: #ffffff;
+  border-style: outset;
+  border-width: 2px;
+  border-radius: var(--dl-radius-radius-button-radius);
+  flex-direction: column;
+  background-color: #ffffff;
+}
+.web-service-container53 {
+  gap: var(--dl-space-space-halfunit);
+  flex: 1;
+  width: auto;
+  display: flex;
+  padding: var(--dl-space-space-halfunit);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.web-service-text48 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  font-family: "Inconsolata";
+  font-weight: 800;
+}
+.web-service-text49 {
+  color: rgb(255, 255, 255);
+  font-style: normal;
+  text-align: center;
+  font-family: "Inconsolata";
+  font-weight: 300;
+}
+.web-service-container54 {
+  width: 100%;
+  display: flex;
+  max-width: 1200px;
+  box-shadow: 5px 5px 40px 0px rgba(0, 0, 0, 0.7);
+  align-items: center;
+  padding-top: var(--dl-space-space-threeunits);
+  border-radius: 30px;
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  justify-content: center;
+  background-color: #333333;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
 .web-service-form {
-  gap: var(--dl-space-space-unit);
+  gap: var(--dl-space-space-twounits);
   width: 100%;
   height: auto;
   display: flex;
   max-width: 1000px;
   align-items: center;
-  padding-top: var(--dl-space-space-fourunits);
+  padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-fourunits);
+  padding-bottom: var(--dl-space-space-unit);
   justify-content: center;
 }
-.web-service-container48 {
+.web-service-text50 {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-style: normal;
+  font-family: "Inconsolata";
+  font-weight: 600;
+}
+.web-service-container55 {
   gap: var(--dl-space-space-unit);
   flex: 1;
   width: 100%;
@@ -2611,7 +2747,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-container49 {
+.web-service-container56 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2619,7 +2755,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.web-service-text42 {
+.web-service-text51 {
   color: rgb(255, 255, 255);
 }
 .web-service-select {
@@ -2632,7 +2768,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-container50 {
+.web-service-container57 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2640,7 +2776,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.web-service-text43 {
+.web-service-text52 {
   color: rgb(255, 255, 255);
 }
 .web-service-textinput {
@@ -2653,7 +2789,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-container51 {
+.web-service-container58 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2661,7 +2797,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-container52 {
+.web-service-container59 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2669,7 +2805,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.web-service-text44 {
+.web-service-text53 {
   color: rgb(255, 255, 255);
 }
 .web-service-textinput1 {
@@ -2682,7 +2818,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-container53 {
+.web-service-container60 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2690,7 +2826,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.web-service-text45 {
+.web-service-text54 {
   color: rgb(255, 255, 255);
 }
 .web-service-textinput2 {
@@ -2703,7 +2839,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-container54 {
+.web-service-container61 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: auto;
@@ -2713,7 +2849,7 @@
   align-items: center;
   justify-content: center;
 }
-.web-service-text46 {
+.web-service-text55 {
   color: rgb(255, 255, 255);
 }
 .web-service-button {
@@ -2735,20 +2871,17 @@
   flex-direction: row;
   justify-content: center;
 }
-.web-service-container56 {
+.web-service-container63 {
   display: contents;
 }
 @media(max-width: 1200px) {
   .web-service-text01 {
     font-size: 30px;
   }
-  .web-service-text04 {
-    font-size: 30px;
-  }
   .web-service-text05 {
     font-size: 30px;
   }
-  .web-service-text07 {
+  .web-service-text06 {
     font-size: 30px;
   }
   .web-service-text08 {
@@ -2763,10 +2896,10 @@
   .web-service-text11 {
     font-size: 30px;
   }
-  .web-service-text14 {
+  .web-service-text12 {
     font-size: 30px;
   }
-  .web-service-text15 {
+  .web-service-text13 {
     font-size: 30px;
   }
   .web-service-text17 {
@@ -2775,13 +2908,16 @@
   .web-service-text18 {
     font-size: 30px;
   }
-  .web-service-text19 {
-    font-size: 30px;
-  }
   .web-service-text20 {
     font-size: 30px;
   }
   .web-service-text21 {
+    font-size: 30px;
+  }
+  .web-service-text22 {
+    font-size: 30px;
+  }
+  .web-service-text23 {
     font-size: 30px;
   }
   .web-service-text24 {
@@ -2793,16 +2929,28 @@
   .web-service-text27 {
     font-size: 30px;
   }
-  .web-service-text28 {
-    font-size: 30px;
-  }
-  .web-service-text29 {
-    font-size: 30px;
-  }
-  .web-service-text30 {
-    font-size: 30px;
-  }
   .web-service-text31 {
+    font-size: 30px;
+  }
+  .web-service-text32 {
+    font-size: 30px;
+  }
+  .web-service-text34 {
+    font-size: 30px;
+  }
+  .web-service-text35 {
+    font-size: 30px;
+  }
+  .web-service-text36 {
+    font-size: 30px;
+  }
+  .web-service-text37 {
+    font-size: 30px;
+  }
+  .web-service-text38 {
+    font-size: 30px;
+  }
+  .web-service-text39 {
     font-size: 30px;
   }
 }
@@ -2828,7 +2976,7 @@
   .web-service-text05 {
     font-size: 20px;
   }
-  .web-service-text07 {
+  .web-service-text06 {
     font-size: 20px;
   }
   .web-service-text08 {
@@ -2855,13 +3003,13 @@
   .web-service-text15 {
     font-size: 20px;
   }
+  .web-service-text16 {
+    font-size: 20px;
+  }
   .web-service-text17 {
     font-size: 20px;
   }
   .web-service-text18 {
-    font-size: 20px;
-  }
-  .web-service-text19 {
     font-size: 20px;
   }
   .web-service-text20 {
@@ -2897,6 +3045,27 @@
   .web-service-text31 {
     font-size: 20px;
   }
+  .web-service-text32 {
+    font-size: 20px;
+  }
+  .web-service-text34 {
+    font-size: 20px;
+  }
+  .web-service-text35 {
+    font-size: 20px;
+  }
+  .web-service-text36 {
+    font-size: 20px;
+  }
+  .web-service-text37 {
+    font-size: 20px;
+  }
+  .web-service-text38 {
+    font-size: 20px;
+  }
+  .web-service-text39 {
+    font-size: 20px;
+  }
 }
 @media(max-width: 767px) {
   .web-service-text01 {
@@ -2905,13 +3074,10 @@
   .web-service-container06 {
     flex-direction: column;
   }
-  .web-service-text04 {
-    font-size: 20px;
-  }
   .web-service-text05 {
     font-size: 20px;
   }
-  .web-service-text07 {
+  .web-service-text06 {
     font-size: 20px;
   }
   .web-service-text08 {
@@ -2926,10 +3092,10 @@
   .web-service-text11 {
     font-size: 20px;
   }
-  .web-service-text14 {
+  .web-service-text12 {
     font-size: 20px;
   }
-  .web-service-text15 {
+  .web-service-text13 {
     font-size: 20px;
   }
   .web-service-text17 {
@@ -2938,13 +3104,16 @@
   .web-service-text18 {
     font-size: 20px;
   }
-  .web-service-text19 {
-    font-size: 20px;
-  }
   .web-service-text20 {
     font-size: 20px;
   }
   .web-service-text21 {
+    font-size: 20px;
+  }
+  .web-service-text22 {
+    font-size: 20px;
+  }
+  .web-service-text23 {
     font-size: 20px;
   }
   .web-service-text24 {
@@ -2956,19 +3125,31 @@
   .web-service-text27 {
     font-size: 20px;
   }
-  .web-service-text28 {
-    font-size: 20px;
-  }
-  .web-service-text29 {
-    font-size: 20px;
-  }
-  .web-service-text30 {
-    font-size: 20px;
-  }
   .web-service-text31 {
     font-size: 20px;
   }
-  .web-service-text33 {
+  .web-service-text32 {
+    font-size: 20px;
+  }
+  .web-service-text34 {
+    font-size: 20px;
+  }
+  .web-service-text35 {
+    font-size: 20px;
+  }
+  .web-service-text36 {
+    font-size: 20px;
+  }
+  .web-service-text37 {
+    font-size: 20px;
+  }
+  .web-service-text38 {
+    font-size: 20px;
+  }
+  .web-service-text39 {
+    font-size: 20px;
+  }
+  .web-service-text41 {
     padding-left: 0px;
     padding-right: 0px;
   }
@@ -2981,7 +3162,7 @@
     align-items: flex-start;
     flex-direction: row;
   }
-  .web-service-container36 {
+  .web-service-container42 {
     top: 0px;
     left: 0px;
     width: auto;
@@ -2995,14 +3176,14 @@
   .web-service-progress01 {
     height: 100%;
   }
-  .web-service-container38 {
+  .web-service-container44 {
     height: auto;
     align-items: flex-start;
     padding-top: 0px;
     padding-left: var(--dl-space-space-twounits);
     padding-bottom: 0px;
   }
-  .web-service-text35 {
+  .web-service-text43 {
     text-align: left;
   }
   .web-service-step3 {
@@ -3010,7 +3191,7 @@
     align-items: flex-start;
     flex-direction: row;
   }
-  .web-service-container39 {
+  .web-service-container45 {
     top: 0px;
     left: 0px;
     width: auto;
@@ -3024,14 +3205,14 @@
   .web-service-progress03 {
     height: 100%;
   }
-  .web-service-container41 {
+  .web-service-container47 {
     height: auto;
     align-items: flex-start;
     padding-top: 0px;
     padding-left: var(--dl-space-space-twounits);
     padding-bottom: 0px;
   }
-  .web-service-text37 {
+  .web-service-text45 {
     text-align: left;
   }
   .web-service-step4 {
@@ -3039,7 +3220,7 @@
     align-items: flex-start;
     flex-direction: row;
   }
-  .web-service-container42 {
+  .web-service-container48 {
     top: 0px;
     left: 0px;
     width: auto;
@@ -3053,14 +3234,14 @@
   .web-service-progress05 {
     height: 100%;
   }
-  .web-service-container44 {
+  .web-service-container50 {
     height: auto;
     align-items: flex-start;
     padding-top: 0px;
     padding-left: var(--dl-space-space-twounits);
     padding-bottom: 0px;
   }
-  .web-service-text39 {
+  .web-service-text47 {
     text-align: left;
   }
   .web-service-step5 {
@@ -3068,7 +3249,7 @@
     align-items: flex-start;
     flex-direction: row;
   }
-  .web-service-container45 {
+  .web-service-container51 {
     top: 0px;
     left: 0px;
     width: auto;
@@ -3082,14 +3263,14 @@
   .web-service-progress07 {
     height: 100%;
   }
-  .web-service-container47 {
+  .web-service-container53 {
     height: auto;
     align-items: flex-start;
     padding-top: 0px;
     padding-left: var(--dl-space-space-twounits);
     padding-bottom: 0px;
   }
-  .web-service-text41 {
+  .web-service-text49 {
     text-align: left;
   }
 }
@@ -3100,10 +3281,19 @@
   .web-service-text03 {
     font-size: 30px;
   }
-  .web-service-text13 {
+  .web-service-text04 {
     font-size: 30px;
   }
-  .web-service-text23 {
+  .web-service-text15 {
+    font-size: 30px;
+  }
+  .web-service-text16 {
+    font-size: 30px;
+  }
+  .web-service-text29 {
+    font-size: 30px;
+  }
+  .web-service-text30 {
     font-size: 30px;
   }
   .web-service-max-width {
