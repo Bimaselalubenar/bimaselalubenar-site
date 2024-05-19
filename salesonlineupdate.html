@@ -417,17 +417,19 @@
 
       <div class="salesonlineupdate-container">
         <div class="salesonlineupdate-container01">
-          <div class="salesonlineupdate-container02">
-            <svg viewBox="0 0 1024 1024" class="salesonlineupdate-icon">
-              <path
-                d="M512 1024c282.77 0 512-229.23 512-512s-229.23-512-512-512-512 229.23-512 512 229.23 512 512 512zM512 96c229.75 0 416 186.25 416 416s-186.25 416-416 416-416-186.25-416-416 186.25-416 416-416z"
-              ></path>
-              <path
-                d="M669.256 317.256l-90.512-90.512-285.254 285.256 285.256 285.254 90.508-90.508-194.744-194.746z"
-              ></path>
-            </svg>
-            <span class="salesonlineupdate-text">Kembali</span>
-          </div>
+          <a href="materisocmed1.html" class="salesonlineupdate-navlink">
+            <div class="salesonlineupdate-container02">
+              <svg viewBox="0 0 1024 1024" class="salesonlineupdate-icon">
+                <path
+                  d="M512 1024c282.77 0 512-229.23 512-512s-229.23-512-512-512-512 229.23-512 512 229.23 512 512 512zM512 96c229.75 0 416 186.25 416 416s-186.25 416-416 416-416-186.25-416-416 186.25-416 416-416z"
+                ></path>
+                <path
+                  d="M669.256 317.256l-90.512-90.512-285.254 285.256 285.256 285.254 90.508-90.508-194.744-194.746z"
+                ></path>
+              </svg>
+              <span class="salesonlineupdate-text">Kembali</span>
+            </div>
+          </a>
         </div>
         <form
           name="Salesonlineregister"
@@ -637,19 +639,10 @@
             >
               Kirim
             </button>
-            <div id="hasil" class="salesonlineupdate-container07">
-              <button
-                id="terkirim"
-                type="reset"
-                class="salesonlineupdate-button1"
-              >
-                Terkirim
-              </button>
-            </div>
           </div>
         </form>
         <div>
-          <div class="salesonlineupdate-container09">
+          <div class="salesonlineupdate-container08">
             <script>
               function tamplkan_data() {
                   document.getElementById('hasil').innerHTML = '<h2>Terkirim</2>';
@@ -657,7 +650,7 @@
           </div>
         </div>
         <div>
-          <div class="salesonlineupdate-container11">
+          <div class="salesonlineupdate-container10">
             <script>
               const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
               if (loggedInUser) {

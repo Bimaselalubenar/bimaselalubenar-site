@@ -416,39 +416,33 @@
       <link href="./tools.css" rel="stylesheet" />
 
       <div class="tools-container">
-        <div>
+        <div class="tools-container01">
           <div class="tools-container02">
-            <script src="https://cdn.jsdelivr.net/npm/qrious"></script>
-            <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.5/dist/JsBarcode.all.min.js"></script>
-          </div>
-        </div>
-        <div class="tools-container03">
-          <div class="tools-container04">
-            <div class="tools-container05">
+            <div class="tools-container03">
               <span id="welcomeText" class="tools-text">User</span>
             </div>
             <span class="tools-text01">
               <span>Anda berhasil masuk!</span>
               <span class="tools-text03">simpan username dan password!</span>
             </span>
-            <div class="tools-container06">
+            <div class="tools-container04">
               <a href="materisocmed.html" class="tools-navlink">Kembali</a>
               <span onclick="logout()" class="tools-text04">Logout</span>
             </div>
           </div>
-          <div class="tools-container07">
-            <div class="tools-container08">
+          <div class="tools-container05">
+            <div class="tools-container06">
               <span id="accordion1-btn" class="tools-text05">
                 Generate QR Code
               </span>
-              <form onsubmit="generateQRCode(event)" class="tools-form">
+              <form class="tools-form">
                 <label for="text" class="tools-text06">
                   Masukan link yang ingin di generate QR Code
                 </label>
                 <label class="tools-text07">
                   Dapat berupa link, text, nomor, password dan catatan
                 </label>
-                <div class="tools-container09">
+                <div class="tools-container07">
                   <input
                     type="text"
                     id="text"
@@ -456,59 +450,62 @@
                     placeholder="link / text / note"
                     class="tools-textinput"
                   />
-                  <button type="submit" class="tools-button">Generate</button>
+                  <button
+                    type="button"
+                    onclick="generateQRCode()"
+                    class="tools-button"
+                  >
+                    Generate
+                  </button>
                 </div>
               </form>
-              <div id="qrcode" class="tools-container10"></div>
-              <img
-                id="qrcode-img"
-                alt="QR Code"
-                src='""'
-                style="display: none"
-                class="tools-image"
-              />
+              <div id="qrcode" class="tools-container08"></div>
               <button
-                id="download-link"
-                href='""'
+                id="downloadButton"
                 type="button"
-                style="display:"
-                download="qrcode.png"
+                style="display: none"
+                onclick="downloadQRCode()"
                 class="tools-button1"
               >
                 Download QR
               </button>
-              <div class="tools-container11"></div>
+              <div class="tools-container09"></div>
               <div>
-                <div class="tools-container13">
+                <div class="tools-container11">
+                  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
                   <script>
-                    function generateQRCode(event) {
-                      event.preventDefault(); // Prevent form submission
-                      var text = document.getElementById('text').value;
-                      var qrCodeDiv = document.getElementById('qrcode');
-                      var qrCodeImg = document.getElementById('qrcode-img');
-                      var downloadLink = document.getElementById('download-link');
-                      qrCodeDiv.innerHTML = ''; // Clear previous QR code
+                    function generateQRCode() {
+                        var text = document.getElementById('text').value;
+                        var qrcodeContainer = document.getElementById('qrcode');
+                        qrcodeContainer.innerHTML = ''; // Clear previous QR code
+                        var qrcode = new QRCode(qrcodeContainer, {
+                            text: text,
+                            width: 400,
+                            height: 400,
+                        });
 
-                      // Generate QR code
-                      var qr = new QRious({
-                        element: qrCodeDiv,
-                        value: text,
-                        size: 200,
-                      });
+                        setTimeout(() => {
+                            document.getElementById('downloadButton').style.display = 'inline-block'; // Show download button
+                        }, 100);
+                    }
 
-                      // Show QR code image
-                      qrCodeImg.src = qr.toDataURL();
-                      qrCodeImg.style.display = 'block';
-
-                      // Show download link
-                      downloadLink.href = qr.toDataURL();
-                      downloadLink.style.display = 'block';
+                    function downloadQRCode() {
+                        var qrcodeImg = document.querySelector('#qrcode img');
+                        if (qrcodeImg) {
+                            var imgURL = qrcodeImg.src;
+                            var link = document.createElement('a');
+                            link.href = imgURL;
+                            link.download = 'qrcode.png';
+                            document.body.appendChild(link);
+                            link.click();
+                            document.body.removeChild(link);
+                        }
                     }
                   </script>
                 </div>
               </div>
             </div>
-            <div class="tools-container14">
+            <div class="tools-container12">
               <span id="accordion1-btn" class="tools-text08">
                 Image Downloader HD+
               </span>
@@ -517,7 +514,7 @@
                   Masukan link gambar yang ingin di unduh
                 </label>
                 <label class="tools-text10">Format, PNG, Webp, Jpg, Gif</label>
-                <div class="tools-container15">
+                <div class="tools-container13">
                   <input
                     type="text"
                     id="imageUrl"
@@ -548,9 +545,9 @@
                   <button type="submit" class="tools-button2">Download</button>
                 </div>
               </form>
-              <div class="tools-container16"></div>
+              <div class="tools-container14"></div>
               <div>
-                <div class="tools-container18">
+                <div class="tools-container16">
                   <script>
                     function downloadImage(event) {
                       event.preventDefault(); // Prevent form submission
@@ -594,111 +591,6 @@
 
                       // Set the image source to trigger the download process
                       img.src = imageUrl;
-                    }
-                  </script>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="tools-container19">
-            <div class="tools-container20">
-              <span class="tools-text11">Barcode Generator</span>
-              <form class="tools-form2">
-                <label for="text" class="tools-text12">
-                  Masukan format text / link
-                </label>
-                <label class="tools-text13">Value</label>
-                <div class="tools-container21">
-                  <input
-                    type="text"
-                    id="barcodeInput"
-                    placeholder="text to barcode"
-                    class="tools-textinput2"
-                  />
-                  <button
-                    type="submit"
-                    onclick="generateBarcode()"
-                    class="tools-button3"
-                  >
-                    Generate
-                  </button>
-                  <button
-                    type="submit"
-                    onclick="saveBarcode()"
-                    class="tools-button4"
-                  >
-                    Save Barcode
-                  </button>
-                </div>
-              </form>
-              <div id="barcodeContainer" class="tools-container22"></div>
-              <div class="tools-container23">
-                <div class="tools-container24"><svg id="barcode"></svg></div>
-              </div>
-              <div>
-                <div class="tools-container26">
-                  <script>
-                    function generateBarcode() {
-                        const input = document.getElementById('barcodeInput').value;
-                        JsBarcode('#barcode', input, {
-                            format: 'CODE128',
-                            lineColor: '#000',
-                            width: 2,
-                            height: 100,
-                            displayValue: true
-                        });
-                    }
-
-                    function saveBarcode() {
-                        const svg = document.getElementById('barcode');
-                        const svgData = new XMLSerializer().serializeToString(svg);
-                        const canvas = document.createElement('canvas');
-                        const ctx = canvas.getContext('2d');
-                        const img = new Image();
-
-                        img.onload = function() {
-                            canvas.width = img.width;
-                            canvas.height = img.height;
-                            ctx.drawImage(img, 0, 0);
-                            const pngFile = canvas.toDataURL('image/png');
-
-                            const link = document.createElement('a');
-                            link.href = pngFile;
-                            link.download = 'barcode.png';
-                            link.click();
-                        };
-
-                        img.src = 'data:image/svg+xml;base64,' + btoa(svgData);
-                    }
-                  </script>
-                </div>
-              </div>
-              <div class="tools-container27"></div>
-              <div>
-                <div class="tools-container29">
-                  <script>
-                    function generateQRCode(event) {
-                      event.preventDefault(); // Prevent form submission
-                      var text = document.getElementById('text').value;
-                      var qrCodeDiv = document.getElementById('qrcode');
-                      var qrCodeImg = document.getElementById('qrcode-img');
-                      var downloadLink = document.getElementById('download-link');
-                      qrCodeDiv.innerHTML = ''; // Clear previous QR code
-
-                      // Generate QR code
-                      var qr = new QRious({
-                        element: qrCodeDiv,
-                        value: text,
-                        size: 200,
-                      });
-
-                      // Show QR code image
-                      qrCodeImg.src = qr.toDataURL();
-                      qrCodeImg.style.display = 'block';
-
-                      // Show download link
-                      downloadLink.href = qr.toDataURL();
-                      downloadLink.style.display = 'block';
                     }
                   </script>
                 </div>
@@ -828,7 +720,7 @@
           </div>
         </div>
         <div>
-          <div class="tools-container31">
+          <div class="tools-container18">
             <script>
               const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
               if (loggedInUser) {

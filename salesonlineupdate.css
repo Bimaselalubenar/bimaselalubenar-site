@@ -1,4 +1,5 @@
 .salesonlineupdate-container {
+  gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   overflow: auto;
@@ -15,11 +16,14 @@
   display: flex;
   padding: var(--dl-space-space-unit);
   z-index: 100;
-  max-width: 479px;
+  max-width: auto;
   align-items: center;
   flex-direction: row;
   justify-content: flex-start;
   background-color: #7c0375;
+}
+.salesonlineupdate-navlink {
+  display: contents;
 }
 .salesonlineupdate-container02 {
   gap: var(--dl-space-space-halfunit);
@@ -49,6 +53,7 @@
   box-shadow: 5px 5px 15px 0px rgba(82, 82, 82, 0.28);
   padding-top: var(--dl-space-space-unit);
   padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-twounits);
@@ -185,39 +190,10 @@
   color: #ffffff;
   background-color: #46cc06;
 }
-.salesonlineupdate-container07 {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-}
-.salesonlineupdate-button1 {
-  color: rgb(255, 255, 255);
-  width: 100%;
-  cursor: pointer;
-  height: auto;
-  display: none;
-  padding: var(--dl-space-space-unit);
-  font-size: 12px;
-  align-self: flex-start;
-  font-style: normal;
-  transition: 0.3s;
-  font-family: "Poppins";
-  font-weight: 600;
-  line-height: 1.15;
-  border-width: 0px;
-  border-radius: var(--dl-radius-radius-radius8);
-  text-transform: none;
-  text-decoration: none;
-  background-color: rgb(0, 78, 251);
-}
-.salesonlineupdate-button1:hover {
-  color: #ffffff;
-  background-color: #46cc06;
-}
-.salesonlineupdate-container09 {
+.salesonlineupdate-container08 {
   display: contents;
 }
-.salesonlineupdate-container11 {
+.salesonlineupdate-container10 {
   display: contents;
 }
 @media(max-width: 479px) {

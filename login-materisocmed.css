@@ -1,0 +1,769 @@
+.login-materisocmed-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.login-materisocmed-container01 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: flex;
+  max-width: 800px;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fbfbfb;
+}
+.login-materisocmed-container02 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-materisocmed-image {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.login-materisocmed-form {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-materisocmed-text {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.login-materisocmed-container03 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-materisocmed-text01 {
+  font-style: normal;
+  font-weight: 400;
+}
+.login-materisocmed-textinput {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-text02 {
+  font-style: normal;
+  font-weight: 400;
+}
+.login-materisocmed-textinput1 {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-container04 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.login-materisocmed-container05 {
+  fill: #d07100;
+  flex: 1;
+  color: #d07100;
+  width: 100%;
+  height: 37px;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.login-materisocmed-button {
+  fill: #d07100;
+  color: rgb(255, 255, 255);
+  width: auto;
+  cursor: pointer;
+  height: auto;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgb(208, 113, 0);
+}
+.login-materisocmed-text03 {
+  font-weight: 400;
+}
+.login-materisocmed-container06 {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-materisocmed-textinput2 {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-button1 {
+  fill: #d07100;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgb(208, 113, 0);
+}
+.login-materisocmed-text04 {
+  fill: rgb(208, 113, 0);
+  color: rgb(208, 113, 0);
+  cursor: pointer;
+  font-size: 12px;
+  align-self: flex-end;
+  transition: 0.3s;
+  font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: rgb(208, 113, 0);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.login-materisocmed-text04:hover {
+  color: #ffffff;
+  border-width: 1px;
+  background-color: rgb(208, 113, 0);
+}
+.login-materisocmed-container07 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.login-materisocmed-text05 {
+  font-weight: 400;
+}
+.login-materisocmed-container09 {
+  display: contents;
+}
+.login-materisocmed-container10 {
+  gap: var(--dl-space-space-unit);
+  width: 2px;
+  display: flex;
+  padding: 0px;
+  align-self: stretch;
+  margin-top: var(--dl-space-space-twounits);
+  align-items: center;
+  margin-bottom: var(--dl-space-space-twounits);
+  flex-direction: column;
+  justify-content: center;
+  background-color: #a5a5a5;
+}
+.login-materisocmed-container11 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-materisocmed-text06 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.login-materisocmed-text07 {
+  font-weight: 400;
+}
+.login-materisocmed-text09 {
+  font-style: normal;
+  font-weight: 400;
+}
+.login-materisocmed-container12 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container13 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text10 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text12 {
+  font-weight: 700;
+}
+.login-materisocmed-container14 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon02 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container15 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text14 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text16 {
+  font-weight: 700;
+}
+.login-materisocmed-text18 {
+  font-weight: 700;
+}
+.login-materisocmed-container16 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon04 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container17 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text20 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text22 {
+  font-weight: 700;
+}
+.login-materisocmed-container18 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon06 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container19 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text24 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text26 {
+  font-weight: 700;
+}
+.login-materisocmed-container20 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon08 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container21 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text28 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text30 {
+  font-weight: 700;
+}
+.login-materisocmed-container22 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon10 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container23 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text32 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text34 {
+  font-weight: 700;
+}
+.login-materisocmed-container24 {
+  flex: 0 0 auto;
+  width: 100%;
+  height: auto;
+  display: none;
+  max-width: 800px;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #fbfbfb;
+}
+.login-materisocmed-container25 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.login-materisocmed-image1 {
+  width: 100%;
+  height: 135px;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.login-materisocmed-form1 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-self: center;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-materisocmed-text36 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.login-materisocmed-container26 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-materisocmed-text37 {
+  font-weight: 400;
+}
+.login-materisocmed-textinput3 {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-text38 {
+  font-style: normal;
+  font-weight: 400;
+}
+.login-materisocmed-textinput4 {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-text39 {
+  font-weight: 400;
+}
+.login-materisocmed-textinput5 {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-text40 {
+  font-weight: 400;
+}
+.login-materisocmed-textinput6 {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-text41 {
+  font-weight: 400;
+}
+.login-materisocmed-textinput7 {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-text42 {
+  font-weight: 400;
+}
+.login-materisocmed-textinput8 {
+  fill: #d07100;
+  color: #d07100;
+  width: 100%;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgba(217, 217, 217, 0);
+}
+.login-materisocmed-button2 {
+  fill: #d07100;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgb(208, 113, 0);
+}
+.login-materisocmed-text43 {
+  fill: rgb(208, 113, 0);
+  color: rgb(208, 113, 0);
+  cursor: pointer;
+  font-size: 12px;
+  align-self: flex-end;
+  transition: 0.3s;
+  font-weight: 400;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: rgb(208, 113, 0);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+}
+.login-materisocmed-text43:hover {
+  color: #ffffff;
+  border-width: 1px;
+  background-color: rgb(208, 113, 0);
+}
+.login-materisocmed-container27 {
+  gap: var(--dl-space-space-unit);
+  width: 2px;
+  display: flex;
+  padding: 0px;
+  align-self: stretch;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #a5a5a5;
+}
+.login-materisocmed-container28 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  align-self: stretch;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.login-materisocmed-text44 {
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+}
+.login-materisocmed-text45 {
+  font-weight: 400;
+}
+.login-materisocmed-text47 {
+  font-style: normal;
+  font-weight: 400;
+}
+.login-materisocmed-container29 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon12 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container30 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text48 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text50 {
+  font-weight: 700;
+}
+.login-materisocmed-container31 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon14 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container32 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text52 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text54 {
+  font-weight: 700;
+}
+.login-materisocmed-text56 {
+  font-weight: 700;
+}
+.login-materisocmed-container33 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon16 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container34 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text58 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text60 {
+  font-weight: 700;
+}
+.login-materisocmed-container35 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon18 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container36 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text62 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text64 {
+  font-weight: 700;
+}
+.login-materisocmed-container37 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon20 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container38 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text66 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text68 {
+  font-weight: 700;
+}
+.login-materisocmed-container39 {
+  gap: var(--dl-space-space-halfunit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-icon22 {
+  width: 20px;
+  height: 20px;
+}
+.login-materisocmed-container40 {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+}
+.login-materisocmed-text70 {
+  width: 100%;
+  font-weight: 400;
+}
+.login-materisocmed-text72 {
+  font-weight: 700;
+}
+.login-materisocmed-button3 {
+  fill: #d07100;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  height: auto;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgb(208, 113, 0);
+}
+.login-materisocmed-container42 {
+  display: contents;
+}
+
+
+
+
+@media(max-width: 479px) {
+  .login-materisocmed-container01 {
+    flex-direction: column;
+  }
+  .login-materisocmed-container24 {
+    flex-direction: column;
+  }
+}

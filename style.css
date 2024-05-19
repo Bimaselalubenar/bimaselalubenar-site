@@ -489,6 +489,26 @@
   flex-direction: column;
   justify-content: center;
 }
+.toggle-btn {
+  top: var(--dl-space-space-halfunit);
+  fill: #ffffff;
+  left: var(--dl-space-space-halfunit);
+  width: 30px;
+  cursor: pointer;
+  height: 30px;
+  position: absolute;
+}
+
+.profile-pic {
+  width: 40px;
+  height: 40px;
+  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.14);
+  object-fit: cover;
+  border-radius: var(--dl-radius-radius-round);
+}
+
+
+
 .H4-16px {
   font-size: 16px;
   font-style: normal;
@@ -666,5 +686,12 @@
   }
   .thq-grid-2 {
     grid-gap: var(--dl-space-space-unit);
+  }
+  .profile-pic {
+    left: 0px;
+    right: 0px;
+    bottom: -64px;
+    margin: auto;
+    margin-left: 0px;
   }
 }
