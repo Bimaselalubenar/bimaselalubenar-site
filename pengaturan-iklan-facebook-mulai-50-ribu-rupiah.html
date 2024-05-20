@@ -592,16 +592,23 @@
         <div>
           <div class="pengaturan-iklan-facebook-mulai50-ribu-rupiah-container7">
             <script>
-              const loggedInUser = JSON.parse(localStorage.getItem('loggedInUser'));
-              if (loggedInUser) {
-                document.getElementById('welcomeText').innerText = `Halo, ${loggedInUser.name}!`;
-              } else {
-                window.location.href = 'login-socmed.html';
-              }
+              const userInfo = document.getElementById('userInfo');
+              const user = JSON.parse(localStorage.getItem('currentUser'));
+              if (user) {
+                  document.getElementById('userName0').textContent = user.name;
+                  document.getElementById('userName1').textContent = user.name;
+                  document.getElementById('userEmail').textContent = user.email;
+                  document.getElementById('userBranch').textContent = user.branch;
+               document.getElementById('userPosition').textContent = user.position;
+               document.getElementById('userCabang').textContent = user.cabang;
 
-              function logout() {
-                localStorage.removeItem('loggedInUser');
-                window.location.href = 'login-socmed.html';
+                  document.getElementById('logoutButton').addEventListener('click', function() {
+                      localStorage.removeItem('currentUser');
+                      window.location.href = 'login-materisocmed.html'; // Redirect to login page
+                  });
+              } else {
+                  // Redirect to login page if user is not logged in
+                  window.location.href = 'login-materisocmed.html';
               }
             </script>
           </div>
@@ -679,11 +686,11 @@
     <script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script>
     <script
       defer=""
-      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
     ></script>
     <script
       defer=""
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
     ></script>
   </body>
 </html>
