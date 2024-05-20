@@ -1,0 +1,101 @@
+.howtoclick-container {
+  width: auto;
+  height: auto;
+  display: flex;
+  z-index: 100;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.howtoclick-container1 {
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.howtoclick-container2 {
+  gap: var(--dl-space-space-halfunit);
+  width: auto;
+  display: flex;
+  position: relative;
+  align-items: center;
+  padding-top: 5px;
+  padding-left: 5px;
+  border-radius: 10px;
+  padding-right: 5px;
+  flex-direction: row;
+  padding-bottom: 5px;
+  justify-content: center;
+  background-color: #1f54de;
+}
+.howtoclick-icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.howtoclick-header {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.howtoclick-title {
+  color: rgb(255, 255, 255);
+  font-size: 16px;
+  font-style: normal;
+  font-family: Inter;
+  font-weight: 500;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.howtoclick-close-button {
+  display: flex;
+  align-self: center;
+  flex-direction: row;
+}
+.howtoclick-icon2 {
+  fill: #ffffff;
+  width: 20px;
+  cursor: pointer;
+  height: 20px;
+  align-self: center;
+}
+.howtoclick-container4 {
+  display: contents;
+}
+.howtoclick-root-class-name {
+  top: 35px;
+  left: 63px;
+  position: absolute;
+}
+@media(max-width: 767px) {
+  .howtoclick-header {
+    gap: var(--dl-space-space-unit);
+    flex: 1;
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .howtoclick-close-button {
+    align-self: flex-start;
+  }
+}
+@media(max-width: 479px) {
+  .howtoclick-container2 {
+    align-items: center;
+    padding-left: 5px;
+    justify-content: center;
+  }
+  .howtoclick-icon {
+    fill: #ffffff;
+  }
+  .howtoclick-root-class-name {
+    top: 38px;
+    left: 59px;
+  }
+}
