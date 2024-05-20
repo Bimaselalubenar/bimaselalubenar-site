@@ -528,7 +528,6 @@
                         errorMessage.innerText = 'Email or password is incorrect.';
                       }
                     });
-
                     // Data akun pengguna
                     let users = [
                       { name: 'Bima Ardianto Pramana', email: 'Bimaardiantopramana@gmail.com', password: 'Ardianto23', branch: 'Kota Madiun', position: 'PIC Digital Marketing', cabang: 'MPM MADIUN' },
@@ -559,11 +558,9 @@
                       { name: 'NESSIA KRISWANINGYU', email: 'nessyakriswaningyu051194@gmail.com', password: '@MPMmjk19', branch: 'MOJOKERTO', position: 'PIC Socmed', cabang: 'MPM Motor Mojokerto' },
                       { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
                     ];
-
                     function getUserByEmail(email) {
                       return users.find(user => user.email === email);
                     }
-
                     // Inisialisasi CAPTCHA saat halaman dimuat
                     refreshCaptcha();
                   </script>
