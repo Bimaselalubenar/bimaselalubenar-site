@@ -467,7 +467,7 @@
             <div id="dashboard" class="materisocmed1-container008 content">
               <div class="materisocmed1-container009">
                 <div class="materisocmed1-container010">
-                  <span id="userName" class="materisocmed1-text03">user</span>
+                  <span id="userName0" class="materisocmed1-text03">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon10"
@@ -477,7 +477,7 @@
                     ></path>
                   </svg>
                   <img
-                    id="profile"
+                    id="profile0"
                     alt="profile 1"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
                     class="profile-pic"
@@ -1656,7 +1656,7 @@
 
                                       reader.onload = function(e) {
                                           $('.profile-pic').attr('src', e.target.result);
-                                          $('#profile').attr('src', e.target.result);
+                                          $('#profile0').attr('src', e.target.result);
                                           $('#profile1').attr('src', e.target.result);
                                           $('#profile2').attr('src', e.target.result);
                                           $('#profile3').attr('src', e.target.result);
@@ -2692,7 +2692,7 @@
               const userInfo = document.getElementById('userInfo');
               const user = JSON.parse(localStorage.getItem('currentUser'));
               if (user) {
-                  document.getElementById('userName').textContent = user.name;
+                  document.getElementById('userName0').textContent = user.name;
                   document.getElementById('userName1').textContent = user.name;
                   document.getElementById('userName2').textContent = user.name;
                   document.getElementById('userName3').textContent = user.name;
