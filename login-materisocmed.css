@@ -297,8 +297,8 @@
   overflow-y: scroll;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
-  padding-left: var(--dl-space-space-twounits);
-  padding-right: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
@@ -717,10 +717,11 @@
   font-weight: 700;
 }
 .login-materisocmed-container26 {
+  gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 .login-materisocmed-navlink1 {
@@ -729,7 +730,7 @@
 .login-materisocmed-text37 {
   fill: rgb(208, 113, 0);
   color: rgb(208, 113, 0);
-  width: auto;
+  width: 100%;
   cursor: pointer;
   height: auto;
   align-self: flex-end;
@@ -750,30 +751,6 @@
   background-color: rgb(208, 113, 0);
 }
 .login-materisocmed-container27 {
-  width: 100px;
-  cursor: pointer;
-  height: 100px;
-  display: flex;
-  overflow: hidden;
-  position: relative;
-  align-items: flex-start;
-  border-radius: var(--dl-radius-radius-round);
-  flex-direction: column;
-}
-.login-materisocmed-image1 {
-  width: 100px;
-  height: 100px;
-  box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.14);
-  object-fit: cover;
-  transition: 0.3s;
-  border-color: #ffffff;
-  border-width: 4px;
-  border-radius: var(--dl-radius-radius-round);
-}
-.login-materisocmed-image1:hover {
-  transform: scale(119%);
-}
-.login-materisocmed-container28 {
   flex: 0 0 auto;
   width: 100%;
   height: auto;
@@ -787,7 +764,7 @@
   justify-content: center;
   background-color: #fbfbfb;
 }
-.login-materisocmed-container29 {
+.login-materisocmed-container28 {
   gap: var(--dl-space-space-unit);
   flex: 1;
   width: 100%;
@@ -797,7 +774,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.login-materisocmed-image2 {
+.login-materisocmed-image1 {
   width: 100%;
   height: 120px;
   object-fit: cover;
@@ -819,7 +796,7 @@
   font-style: normal;
   font-weight: 600;
 }
-.login-materisocmed-container30 {
+.login-materisocmed-container29 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -960,7 +937,7 @@
   border-width: 1px;
   background-color: rgb(208, 113, 0);
 }
-.login-materisocmed-container31 {
+.login-materisocmed-container30 {
   gap: var(--dl-space-space-unit);
   width: 2px;
   display: flex;
@@ -973,7 +950,7 @@
   justify-content: center;
   background-color: #a5a5a5;
 }
-.login-materisocmed-container32 {
+.login-materisocmed-container31 {
   gap: var(--dl-space-space-unit);
   flex: 1;
   width: 100%;
@@ -996,7 +973,7 @@
   font-style: normal;
   font-weight: 400;
 }
-.login-materisocmed-container33 {
+.login-materisocmed-container32 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
@@ -1006,7 +983,7 @@
   width: 20px;
   height: 20px;
 }
-.login-materisocmed-container34 {
+.login-materisocmed-container33 {
   flex: 1;
   width: 100%;
   display: flex;
@@ -1020,7 +997,7 @@
 .login-materisocmed-text52 {
   font-weight: 700;
 }
-.login-materisocmed-container35 {
+.login-materisocmed-container34 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
@@ -1030,7 +1007,7 @@
   width: 20px;
   height: 20px;
 }
-.login-materisocmed-container36 {
+.login-materisocmed-container35 {
   flex: 1;
   width: 100%;
   display: flex;
@@ -1047,7 +1024,7 @@
 .login-materisocmed-text58 {
   font-weight: 700;
 }
-.login-materisocmed-container37 {
+.login-materisocmed-container36 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
@@ -1057,7 +1034,7 @@
   width: 20px;
   height: 20px;
 }
-.login-materisocmed-container38 {
+.login-materisocmed-container37 {
   flex: 1;
   width: 100%;
   display: flex;
@@ -1071,7 +1048,7 @@
 .login-materisocmed-text62 {
   font-weight: 700;
 }
-.login-materisocmed-container39 {
+.login-materisocmed-container38 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
@@ -1081,7 +1058,7 @@
   width: 20px;
   height: 20px;
 }
-.login-materisocmed-container40 {
+.login-materisocmed-container39 {
   flex: 1;
   width: 100%;
   display: flex;
@@ -1095,7 +1072,7 @@
 .login-materisocmed-text66 {
   font-weight: 700;
 }
-.login-materisocmed-container41 {
+.login-materisocmed-container40 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
@@ -1105,7 +1082,7 @@
   width: 20px;
   height: 20px;
 }
-.login-materisocmed-container42 {
+.login-materisocmed-container41 {
   flex: 1;
   width: 100%;
   display: flex;
@@ -1119,7 +1096,7 @@
 .login-materisocmed-text70 {
   font-weight: 700;
 }
-.login-materisocmed-container43 {
+.login-materisocmed-container42 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: flex-start;
@@ -1129,7 +1106,7 @@
   width: 20px;
   height: 20px;
 }
-.login-materisocmed-container44 {
+.login-materisocmed-container43 {
   flex: 1;
   width: 100%;
   display: flex;
@@ -1156,7 +1133,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: rgb(208, 113, 0);
 }
-.login-materisocmed-container45 {
+.login-materisocmed-container44 {
   top: 0px;
   left: 0px;
   right: 0px;
@@ -1171,7 +1148,7 @@
   justify-content: center;
   background-color: #ff7400;
 }
-.login-materisocmed-container47 {
+.login-materisocmed-container46 {
   display: contents;
 }
 
@@ -1183,12 +1160,6 @@
   }
   .login-materisocmed-container08 {
     flex-direction: column;
-  }
-  .login-materisocmed-image1 {
-    left: 0px;
-    right: 0px;
-    bottom: -20px;
-    margin: auto;
   }
 }
 @media(max-width: 479px) {
@@ -1210,17 +1181,10 @@
     padding-right: 0px;
     background-color: #c2c2c2;
   }
-  .login-materisocmed-image1 {
-    left: 0px;
-    right: 0px;
-    bottom: -20px;
-    margin: auto;
-    position: absolute;
-  }
-  .login-materisocmed-container28 {
+  .login-materisocmed-container27 {
     flex-direction: column;
   }
-  .login-materisocmed-container31 {
+  .login-materisocmed-container30 {
     width: 100%;
     height: 3px;
     margin-top: 0px;

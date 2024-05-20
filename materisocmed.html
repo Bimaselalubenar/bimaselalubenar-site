@@ -1738,54 +1738,82 @@
                 <div class="materisocmed-container109">
                   <form id="profileForm" class="materisocmed-form2">
                     <span class="materisocmed-text64">Upload foto profile</span>
-                    <input
-                      type="file"
-                      id="upload"
-                      accept="image/*"
-                      placeholder="placeholder"
-                      class="materisocmed-textinput2 button"
-                    />
-                    <button
-                      id="saveButton"
-                      type="button"
-                      class="materisocmed-button4 button"
-                    >
-                      Terapkan
-                    </button>
+                    <div class="materisocmed-container110">
+                      <div
+                        id="deleteButton"
+                        type="button"
+                        class="materisocmed-container111 button"
+                      >
+                        <svg
+                          viewBox="0 0 804.5714285714286 1024"
+                          class="materisocmed-icon12"
+                        >
+                          <path
+                            d="M292.571 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM438.857 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM585.143 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM274.286 219.429h256l-27.429-66.857c-1.714-2.286-6.857-5.714-9.714-6.286h-181.143c-3.429 0.571-8 4-9.714 6.286zM804.571 237.714v36.571c0 10.286-8 18.286-18.286 18.286h-54.857v541.714c0 62.857-41.143 116.571-91.429 116.571h-475.429c-50.286 0-91.429-51.429-91.429-114.286v-544h-54.857c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h176.571l40-95.429c11.429-28 45.714-50.857 76-50.857h182.857c30.286 0 64.571 22.857 76 50.857l40 95.429h176.571c10.286 0 18.286 8 18.286 18.286z"
+                          ></path>
+                        </svg>
+                      </div>
+                      <input
+                        type="file"
+                        id="upload"
+                        accept="image/*"
+                        class="materisocmed-textinput2 button"
+                      />
+                      <button
+                        id="saveButton"
+                        type="button"
+                        class="materisocmed-button4 button"
+                      >
+                        Terapkan
+                      </button>
+                    </div>
                     <div>
-                      <div class="materisocmed-container111">
+                      <div class="materisocmed-container113">
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                         <script>
                           $(document).ready(function() {
+                              // Handle file upload
                               $('#upload').on('change', function() {
                                   if (this.files && this.files[0]) {
                                       var reader = new FileReader();
-
                                       reader.onload = function(e) {
                                           $('.profile-pic').attr('src', e.target.result);
-                                          $('#profile0').attr('src', e.target.result);
-                                          $('#profile1').attr('src', e.target.result);
                                       }
-
                                       reader.readAsDataURL(this.files[0]);
                                   }
                               });
 
+                              // Save images to local storage
                               $('#saveButton').on('click', function() {
-                                  // Simpan gambar ke penyimpanan lokal
                                   var images = [];
                                   $('.profile-pic').each(function() {
-                                      images.push($(this).attr('src'));
+                                      var src = $(this).attr('src');
+                                      if (src) {
+                                          images.push(src);
+                                      }
                                   });
-                                  localStorage.setItem('profileImages', JSON.stringify(images));
-                                  alert('Gambar profil telah disimpan.');
+                                  if (images.length > 0) {
+                                      localStorage.setItem('profileImages', JSON.stringify(images));
+                                      alert('Gambar profil telah disimpan.');
+                                  } else {
+                                      alert('Tidak ada gambar untuk disimpan.');
+                                  }
                               });
 
-                              // Memuat gambar dari penyimpanan lokal saat halaman dimuat
+                              // Delete images from local storage and page
+                              $('#deleteButton').on('click', function() {
+                                  $('.profile-pic').attr('src', '');
+                                  localStorage.removeItem('profileImages');
+                                  alert('Gambar profil telah dihapus.');
+                              });
+
+                              // Load images from local storage on page load
                               var savedImages = JSON.parse(localStorage.getItem('profileImages'));
-                              if (savedImages) {
+                              if (savedImages && savedImages.length > 0) {
                                   $('.profile-pic').each(function(index) {
-                                      $(this).attr('src', savedImages[index]);
+                                      if (index < savedImages.length) {
+                                          $(this).attr('src', savedImages[index]);
+                                      }
                                   });
                               }
                           });
@@ -1796,18 +1824,18 @@
                 </div>
               </div>
             </div>
-            <div id="week1" class="materisocmed-container112 content">
-              <div class="materisocmed-container113">
-                <div class="materisocmed-container114"></div>
-              </div>
+            <div id="week1" class="materisocmed-container114 content">
               <div class="materisocmed-container115">
+                <div class="materisocmed-container116"></div>
+              </div>
+              <div class="materisocmed-container117">
                 <span id="welcomeText" class="materisocmed-text65">
                   Materi Minggu 1
                 </span>
               </div>
-              <div class="materisocmed-container116">
+              <div class="materisocmed-container118">
                 <span class="materisocmed-text66">Promosi H1</span>
-                <div class="materisocmed-container117">
+                <div class="materisocmed-container119">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -1899,7 +1927,7 @@
                   </div>
                 </div>
                 <span class="materisocmed-text67">Promosi H2</span>
-                <div class="materisocmed-container118">
+                <div class="materisocmed-container120">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2015,18 +2043,18 @@
                 </div>
               </div>
             </div>
-            <div id="week2" class="materisocmed-container119 content">
-              <div class="materisocmed-container120">
-                <div class="materisocmed-container121"></div>
-              </div>
+            <div id="week2" class="materisocmed-container121 content">
               <div class="materisocmed-container122">
+                <div class="materisocmed-container123"></div>
+              </div>
+              <div class="materisocmed-container124">
                 <span id="welcomeText" class="materisocmed-text68">
                   Materi Minggu 2
                 </span>
               </div>
-              <div class="materisocmed-container123">
+              <div class="materisocmed-container125">
                 <span class="materisocmed-text69">Promosi H1</span>
-                <div class="materisocmed-container124">
+                <div class="materisocmed-container126">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2118,7 +2146,7 @@
                   </div>
                 </div>
                 <span class="materisocmed-text70">Promosi H2</span>
-                <div class="materisocmed-container125">
+                <div class="materisocmed-container127">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2234,18 +2262,18 @@
                 </div>
               </div>
             </div>
-            <div id="week3" class="materisocmed-container126 content">
-              <div class="materisocmed-container127">
-                <div class="materisocmed-container128"></div>
-              </div>
+            <div id="week3" class="materisocmed-container128 content">
               <div class="materisocmed-container129">
+                <div class="materisocmed-container130"></div>
+              </div>
+              <div class="materisocmed-container131">
                 <span id="welcomeText" class="materisocmed-text71">
                   Materi Minggu 3
                 </span>
               </div>
-              <div class="materisocmed-container130">
+              <div class="materisocmed-container132">
                 <span class="materisocmed-text72">Promosi H1</span>
-                <div class="materisocmed-container131">
+                <div class="materisocmed-container133">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2338,7 +2366,7 @@
                   </div>
                 </div>
                 <span class="materisocmed-text73">Promosi H2</span>
-                <div class="materisocmed-container132">
+                <div class="materisocmed-container134">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2454,18 +2482,18 @@
                 </div>
               </div>
             </div>
-            <div id="week4" class="materisocmed-container133 content">
-              <div class="materisocmed-container134">
-                <div class="materisocmed-container135"></div>
-              </div>
+            <div id="week4" class="materisocmed-container135 content">
               <div class="materisocmed-container136">
+                <div class="materisocmed-container137"></div>
+              </div>
+              <div class="materisocmed-container138">
                 <span id="welcomeText" class="materisocmed-text74">
                   Materi Minggu 4
                 </span>
               </div>
-              <div class="materisocmed-container137">
+              <div class="materisocmed-container139">
                 <span class="materisocmed-text75">Promosi H1</span>
-                <div class="materisocmed-container138">
+                <div class="materisocmed-container140">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2527,7 +2555,7 @@
                   </div>
                 </div>
                 <span class="materisocmed-text76">Promosi H2</span>
-                <div class="materisocmed-container139">
+                <div class="materisocmed-container141">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2646,7 +2674,7 @@
           </div>
         </div>
         <div>
-          <div class="materisocmed-container141">
+          <div class="materisocmed-container143">
             <script>
               document.getElementById('dashboardMenu').addEventListener('click', function() {
                   showContent('dashboard');
@@ -2710,7 +2738,7 @@
           </div>
         </div>
         <div>
-          <div class="materisocmed-container143">
+          <div class="materisocmed-container145">
             <script>
               const userInfo = document.getElementById('userInfo');
               const user = JSON.parse(localStorage.getItem('currentUser'));
