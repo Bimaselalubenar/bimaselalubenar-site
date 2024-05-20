@@ -174,6 +174,7 @@
   cursor: pointer;
   display: flex;
   padding: var(--dl-space-space-unit);
+  z-index: 5;
   align-items: center;
   border-radius: 15px;
   flex-direction: row;
@@ -193,6 +194,7 @@
   top: var(--dl-space-space-unit);
   right: var(--dl-space-space-unit);
   display: flex;
+  z-index: 5;
   position: absolute;
   flex-direction: row;
 }
