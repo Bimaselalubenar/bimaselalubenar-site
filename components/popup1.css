@@ -165,7 +165,7 @@
 .popup1-text16 {
   font-size: 16px;
 }
-.popup1-navlink1 {
+.popup1-link {
   display: contents;
 }
 .popup1-container5 {
@@ -213,12 +213,6 @@
   margin: auto;
   position: absolute;
 }
-.popup1-root-class-name1 {
-  top: 0px;
-  left: 0px;
-  margin: auto;
-  position: absolute;
-}
 .popup1-root-class-name2 {
   top: 0px;
   left: 0px;
@@ -226,6 +220,7 @@
   margin: auto;
   position: absolute;
 }
+
 @media(max-width: 1200px) {
   .popup1-text09 {
     font-size: 30px;

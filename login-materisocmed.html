@@ -471,7 +471,12 @@
                       registrasi untuk mendapat aksses lebih lengkap!
                     </span>
                   </span>
-                  <a href="login-materisocmed.html" class="popup1-navlink1">
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeoimBrrXgi6osxPT0jboNHXvGwv7CV4ERHe5g8i8mcGHFp-g/viewform"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="popup1-link"
+                  >
                     <div class="popup1-container5">
                       <h1 class="popup1-text17">Registrasi Sekarang!</h1>
                     </div>
@@ -571,7 +576,7 @@
                 </div>
               </form>
               <div class="login-materisocmed-container08">
-                <a href="materisocmed1.html" class="login-materisocmed-navlink">
+                <a href="materisocmed.html" class="login-materisocmed-navlink">
                   <p class="login-materisocmed-text04">Sudah pernah login</p>
                 </a>
                 <label
@@ -618,16 +623,16 @@
                           const user = getUserByEmail(email);
 
                           if (captcha !== captchaInput) {
-                              errorMessage.innerText = 'CAPTCHA is incorrect. Please try again.';
+                              errorMessage.innerText = 'CAPTCHA salah. Ulangi lagi.';
                               refreshCaptcha();
                               return;
                           }
 
                           if (user && user.password === password) {
                               localStorage.setItem('currentUser', JSON.stringify(user));
-                              window.location.href = 'materisocmed1.html';
+                              window.location.href = 'materisocmed.html';
                           } else {
-                              errorMessage.innerText = 'Email or password is incorrect.';
+                              errorMessage.innerText = 'Email dan Password salah.';
                           }
                       });
                       // akun / user / email

@@ -165,7 +165,7 @@
 .popup1-text16 {
   font-size: 16px;
 }
-.popup1-navlink1 {
+.popup1-link {
   display: contents;
 }
 .popup1-container5 {
@@ -213,12 +213,6 @@
   margin: auto;
   position: absolute;
 }
-.popup1-root-class-name1 {
-  top: 0px;
-  left: 0px;
-  margin: auto;
-  position: absolute;
-}
 .popup1-root-class-name2 {
   top: 0px;
   left: 0px;
@@ -226,6 +220,7 @@
   margin: auto;
   position: absolute;
 }
+
 @media(max-width: 1200px) {
   .popup1-text09 {
     font-size: 30px;
@@ -466,7 +461,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
 }
 .login-materisocmed-navlink {
@@ -478,7 +473,7 @@
   color: rgb(208, 113, 0);
   width: 100%;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 16px;
   align-self: flex-end;
   text-align: center;
   transition: 0.3s;
@@ -502,7 +497,7 @@
   color: rgb(208, 113, 0);
   width: 100%;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 16px;
   align-self: flex-end;
   text-align: center;
   transition: 0.3s;
@@ -877,8 +872,9 @@
 .login-materisocmed-text44 {
   fill: rgb(208, 113, 0);
   color: rgb(208, 113, 0);
+  width: 100%;
   cursor: pointer;
-  font-size: 12px;
+  font-size: 16px;
   align-self: flex-end;
   text-align: center;
   transition: 0.3s;

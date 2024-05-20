@@ -32,7 +32,7 @@
 .popupcomers-header {
   gap: var(--dl-space-space-unit);
   flex: 1;
-  display: none;
+  display: flex;
   position: relative;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
@@ -116,7 +116,7 @@
 .popupcomers-header1 {
   gap: var(--dl-space-space-unit);
   flex: 1;
-  display: flex;
+  display: none;
   position: relative;
   align-items: center;
   padding-top: var(--dl-space-space-twounits);
@@ -191,9 +191,7 @@
 .popupcomers-container7 {
   display: contents;
 }
-.popupcomers-root-class-name {
-  display: none;
-}
+
 @media(max-width: 1200px) {
   .popupcomers-text09 {
     font-size: 30px;
