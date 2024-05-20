@@ -377,8 +377,15 @@
   font-size: 20px;
   font-style: normal;
 }
+.popup1-text14 {
+  font-size: 16px;
+}
 .popup1-text15 {
+  font-size: 16px;
   font-weight: 700;
+}
+.popup1-text16 {
+  font-size: 16px;
 }
 .popup1-navlink1 {
   display: contents;
@@ -426,7 +433,6 @@
   right: 0px;
   bottom: 0px;
   margin: auto;
-  display: none;
   position: absolute;
 }
 .popup1-root-class-name1 {
@@ -440,7 +446,6 @@
   left: 0px;
   right: 0px;
   margin: auto;
-  display: none;
   position: absolute;
 }
 @media(max-width: 1200px) {
@@ -494,7 +499,7 @@
     left: 0px;
     right: 0px;
     width: 100%;
-    height: auto;
+    height: 250px;
     margin: auto;
   }
 }

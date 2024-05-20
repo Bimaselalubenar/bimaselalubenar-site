@@ -1,0 +1,133 @@
+.sukses-registrasi-container {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  padding-left: var(--dl-space-space-twounits);
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: column;
+  justify-content: center;
+}
+.sukses-registrasi-container1 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 40px;
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  background-image: linear-gradient(180deg, rgb(66, 255, 46) 0.00%,rgb(0, 121, 19) 100.00%);
+}
+.sukses-registrasi-icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.sukses-registrasi-text {
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+}
+.sukses-registrasi-navlink {
+  display: contents;
+}
+.sukses-registrasi-text1 {
+  color: #000000;
+  font-size: 16px;
+  font-style: normal;
+  margin-top: 0px;
+  font-family: Poppins;
+  font-weight: 400;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: underline  none;
+}
+.sukses-registrasi-container2 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.sukses-registrasi-container3 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: 1000px;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ff0000;
+}
+.sukses-registrasi-icon2 {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.sukses-registrasi-text2 {
+  fill: #ff9800;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 16px;
+  max-width: auto;
+  font-style: normal;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: 1.15;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  text-transform: none;
+  text-decoration: none;
+}
+.sukses-registrasi-container4 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  max-width: 1000px;
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: row;
+  justify-content: center;
+  background-color: #ff0000;
+}
+.sukses-registrasi-icon4 {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.sukses-registrasi-text3 {
+  fill: #ff9800;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  font-size: 16px;
+  max-width: auto;
+  font-style: normal;
+  font-family: "Inter";
+  font-weight: 500;
+  line-height: 1.15;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-bottom: 0px;
+  text-transform: none;
+  text-decoration: none;
+}
+@media(max-width: 767px) {
+  .sukses-registrasi-container3 {
+    align-items: flex-start;
+  }
+  .sukses-registrasi-container4 {
+    align-items: flex-start;
+  }
+}
