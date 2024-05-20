@@ -1272,6 +1272,7 @@
   right: 0px;
   bottom: 0px;
   margin: auto;
+  display: none;
   position: absolute;
 }
 .popup1-root-class-name1 {
@@ -1285,6 +1286,7 @@
   left: 0px;
   right: 0px;
   margin: auto;
+  display: none;
   position: absolute;
 }
 @media(max-width: 1200px) {

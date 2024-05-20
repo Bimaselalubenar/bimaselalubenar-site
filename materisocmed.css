@@ -426,6 +426,7 @@
   right: 0px;
   bottom: 0px;
   margin: auto;
+  display: none;
   position: absolute;
 }
 .popup1-root-class-name1 {
@@ -439,6 +440,7 @@
   left: 0px;
   right: 0px;
   margin: auto;
+  display: none;
   position: absolute;
 }
 @media(max-width: 1200px) {
@@ -1485,7 +1487,7 @@
   font-size: 16px;
   font-family: "Inter";
 }
-.materisocmed-navlink01 {
+.materisocmed-navlink1 {
   text-decoration: underline;
 }
 .materisocmed-close-button3 {
@@ -1597,7 +1599,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink02 {
+.materisocmed-navlink2 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1621,7 +1623,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink02:hover {
+.materisocmed-navlink2:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed-container27 {
@@ -1688,7 +1690,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink03 {
+.materisocmed-navlink3 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1712,7 +1714,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink03:hover {
+.materisocmed-navlink3:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed-container29 {
@@ -1892,7 +1894,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink04 {
+.materisocmed-navlink4 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1916,7 +1918,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink04:hover {
+.materisocmed-navlink4:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed-week11 {
@@ -1971,7 +1973,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink05 {
+.materisocmed-navlink5 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1995,7 +1997,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink05:hover {
+.materisocmed-navlink5:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed-container35 {
@@ -2058,7 +2060,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink06 {
+.materisocmed-navlink6 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -2082,7 +2084,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink06:hover {
+.materisocmed-navlink6:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed-week13 {
@@ -2137,7 +2139,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink07 {
+.materisocmed-navlink7 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -2161,7 +2163,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed-navlink07:hover {
+.materisocmed-navlink7:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed-text34 {
@@ -2348,379 +2350,25 @@
 .materisocmed-link1:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed-text39 {
-  color: #ffffff;
-  width: 100%;
-  font-size: 16px;
-  max-width: auto;
-  font-style: normal;
-  font-family: "Inter";
-  font-weight: 600;
-  line-height: 1.15;
-  padding-top: var(--dl-space-space-unit);
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-unit);
-  text-transform: none;
-  text-decoration: none;
-  background-color: #ff9800;
-}
 .materisocmed-container41 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.materisocmed-container42 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.materisocmed-container43 {
-  gap: var(--dl-space-space-twounits);
-  flex: 1;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: var(--dl-space-space-unit);
-  box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
-  align-items: center;
-  border-color: #e6e6e6;
-  border-width: 3px;
-  border-radius: 10px;
-  flex-direction: row;
-  background-color: #ffffff;
-}
-.materisocmed-container44 {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  box-shadow: 5px 5px 15px 0px #d4d4d4;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-width: 3px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-size: cover;
-  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/2.%20cara%20set%20budget%20iklan%20mulai%2050K/10.jpeg?updatedAt=1705564404450');
-}
-.materisocmed-container45 {
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.materisocmed-container46 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-}
-.materisocmed-container47 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  position: relative;
-  flex-direction: column;
-}
-.materisocmed-container48 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.materisocmed-text40 {
-  font-size: 16px;
-  text-align: left;
-}
-.materisocmed-text42 {
-  font-weight: 700;
-}
-.materisocmed-navlink08 {
-  fill: #ff9800;
-  color: rgb(255, 152, 0);
-  width: auto;
-  cursor: pointer;
-  font-size: 16px;
-  max-width: auto;
-  align-self: flex-start;
-  font-style: normal;
-  margin-top: var(--dl-space-space-halfunit);
-  text-align: center;
-  transition: 0.3s;
-  font-family: "Inter";
-  font-weight: 600;
-  line-height: 1.15;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ff9800;
-  border-width: 2px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  text-transform: none;
-  text-decoration: none;
-}
-.materisocmed-navlink08:hover {
-  box-shadow: 3px 3px 15px 0px #c6c6c6;
-}
-.materisocmed-container49 {
-  gap: var(--dl-space-space-twounits);
-  flex: 1;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: var(--dl-space-space-unit);
-  box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
-  align-items: center;
-  border-color: #e6e6e6;
-  border-width: 3px;
-  border-radius: 10px;
-  flex-direction: row;
-  background-color: #ffffff;
-}
-.materisocmed-container50 {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  box-shadow: 5px 5px 15px 0px #d4d4d4;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-width: 3px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-size: cover;
-  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/1.%20Cara%20cetak%20bukti%20top%20up/1.png?updatedAt=1705546819565');
-}
-.materisocmed-container51 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.materisocmed-text43 {
-  font-size: 16px;
-  text-align: left;
-}
-.materisocmed-text45 {
-  font-weight: 700;
-}
-.materisocmed-navlink09 {
-  fill: #ff9800;
-  color: rgb(255, 152, 0);
-  width: auto;
-  cursor: pointer;
-  font-size: 16px;
-  max-width: auto;
-  align-self: flex-start;
-  font-style: normal;
-  margin-top: var(--dl-space-space-halfunit);
-  transition: 0.3s;
-  font-family: "Inter";
-  font-weight: 600;
-  line-height: 1.15;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ff9800;
-  border-width: 2px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  text-transform: none;
-  text-decoration: none;
-}
-.materisocmed-navlink09:hover {
-  box-shadow: 3px 3px 15px 0px #c6c6c6;
-}
-.materisocmed-container52 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: center;
-}
-.materisocmed-container53 {
-  gap: var(--dl-space-space-twounits);
-  flex: 1;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: var(--dl-space-space-unit);
-  box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
-  align-items: center;
-  border-color: #e6e6e6;
-  border-width: 3px;
-  border-radius: 10px;
-  flex-direction: row;
-  background-color: #ffffff;
-}
-.materisocmed-container54 {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  box-shadow: 5px 5px 15px 0px #d4d4d4;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-width: 3px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-size: cover;
-  background-image: url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Ads/3.%20bukti%20apa%20saja%20yang%20di%20lampirkan%20dalam%20laporan/11.png?updatedAt=1706116463268');
-}
-.materisocmed-container55 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.materisocmed-text47 {
-  font-size: 16px;
-  text-align: left;
-}
-.materisocmed-text49 {
-  font-weight: 700;
-}
-.materisocmed-navlink10 {
-  fill: #ff9800;
-  color: rgb(255, 152, 0);
-  width: auto;
-  cursor: pointer;
-  font-size: 16px;
-  max-width: auto;
-  align-self: flex-start;
-  font-style: normal;
-  margin-top: var(--dl-space-space-halfunit);
-  transition: 0.3s;
-  font-family: "Inter";
-  font-weight: 600;
-  line-height: 1.15;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ff9800;
-  border-width: 2px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  text-transform: none;
-  text-decoration: none;
-}
-.materisocmed-navlink10:hover {
-  box-shadow: 3px 3px 15px 0px #c6c6c6;
-}
-.materisocmed-container56 {
-  gap: var(--dl-space-space-twounits);
-  flex: 1;
-  width: 100%;
-  height: auto;
-  display: flex;
-  padding: var(--dl-space-space-unit);
-  box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
-  align-items: center;
-  border-color: #e6e6e6;
-  border-width: 3px;
-  border-radius: 10px;
-  flex-direction: row;
-  justify-content: flex-start;
-  background-color: #ffffff;
-}
-.materisocmed-container57 {
-  flex: 0 0 auto;
-  width: 150px;
-  height: 150px;
-  display: flex;
-  box-shadow: 5px 5px 15px 0px #d4d4d4;
-  align-items: flex-start;
-  border-color: #ffffff;
-  border-width: 3px;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-size: cover;
-  background-image: url("https://play.teleporthq.io/static/svg/default-img.svg");
-}
-.materisocmed-container58 {
-  flex: 0 0 auto;
-  width: auto;
-  height: auto;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-}
-.materisocmed-container59 {
-  gap: var(--dl-space-space-halfunit);
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  justify-content: flex-start;
-}
-.materisocmed-text51 {
-  font-size: 16px;
-  text-align: left;
-}
-.materisocmed-navlink11 {
-  fill: #ff9800;
-  color: rgb(255, 152, 0);
-  width: auto;
-  cursor: pointer;
-  font-size: 16px;
-  max-width: auto;
-  align-self: flex-start;
-  font-style: normal;
-  margin-top: var(--dl-space-space-halfunit);
-  transition: 0.3s;
-  font-family: "Inter";
-  font-weight: 600;
-  line-height: 1.15;
-  padding-top: var(--dl-space-space-halfunit);
-  border-color: #ff9800;
-  border-width: 2px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  text-transform: none;
-  text-decoration: none;
-}
-.materisocmed-navlink11:hover {
-  box-shadow: 3px 3px 15px 0px #c6c6c6;
-}
-.materisocmed-container60 {
-  width: 100%;
-  height: 3px;
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  background-color: #ff9800;
-}
-.materisocmed-container61 {
   width: 100%;
   align-self: center;
 }
-.materisocmed-container62 {
+.materisocmed-container42 {
   display: contents;
 }
-.materisocmed-container63 {
+.materisocmed-container43 {
   width: 100%;
   display: none;
   align-self: center;
 }
-.materisocmed-container64 {
+.materisocmed-container44 {
   display: contents;
 }
-.materisocmed-container66 {
+.materisocmed-container46 {
   display: contents;
 }
-.materisocmed-container68 {
+.materisocmed-container48 {
   display: contents;
 }
 @media(max-width: 1200px) {
@@ -2738,12 +2386,6 @@
   }
   .materisocmed-text06 {
     font-size: 16px;
-  }
-  .materisocmed-container42 {
-    flex-direction: column;
-  }
-  .materisocmed-container52 {
-    flex-direction: column;
   }
 }
 @media(max-width: 991px) {
@@ -2792,12 +2434,6 @@
     flex-direction: column;
   }
   .materisocmed-container38 {
-    flex-direction: column;
-  }
-  .materisocmed-container42 {
-    flex-direction: column;
-  }
-  .materisocmed-container52 {
     flex-direction: column;
   }
 }
@@ -2911,34 +2547,6 @@
   .materisocmed-container40 {
     width: 100%;
   }
-  .materisocmed-container43 {
-    flex: 1;
-  }
-  .materisocmed-container44 {
-    width: 120px;
-    height: 120px;
-  }
-  .materisocmed-container49 {
-    flex: 1;
-  }
-  .materisocmed-container50 {
-    width: 120px;
-    height: 120px;
-  }
-  .materisocmed-container53 {
-    flex: 1;
-  }
-  .materisocmed-container54 {
-    width: 120px;
-    height: 120px;
-  }
-  .materisocmed-container56 {
-    flex: 1;
-  }
-  .materisocmed-container57 {
-    width: 120px;
-    height: 120px;
-  }
 }
 @media(max-width: 479px) {
   .materisocmed-container02 {
@@ -3010,7 +2618,7 @@
   .materisocmed-lottie-node {
     display: none;
   }
-  .materisocmed-navlink02 {
+  .materisocmed-navlink2 {
     font-size: 14px;
   }
   .materisocmed-container27 {
@@ -3021,7 +2629,7 @@
     align-items: flex-start;
     flex-direction: column;
   }
-  .materisocmed-navlink03 {
+  .materisocmed-navlink3 {
     font-size: 14px;
   }
   .materisocmed-container29 {
@@ -3046,7 +2654,7 @@
   .materisocmed-text27 {
     width: auto;
   }
-  .materisocmed-navlink04 {
+  .materisocmed-navlink4 {
     font-size: 14px;
   }
   .materisocmed-week11 {
@@ -3065,7 +2673,7 @@
   .materisocmed-text29 {
     width: auto;
   }
-  .materisocmed-navlink05 {
+  .materisocmed-navlink5 {
     font-size: 14px;
   }
   .materisocmed-week12 {
@@ -3084,7 +2692,7 @@
   .materisocmed-text31 {
     width: auto;
   }
-  .materisocmed-navlink06 {
+  .materisocmed-navlink6 {
     font-size: 14px;
   }
   .materisocmed-week13 {
@@ -3103,7 +2711,7 @@
   .materisocmed-text33 {
     width: auto;
   }
-  .materisocmed-navlink07 {
+  .materisocmed-navlink7 {
     font-size: 14px;
   }
   .materisocmed-week14 {
@@ -3142,58 +2750,6 @@
     width: auto;
   }
   .materisocmed-link1 {
-    font-size: 14px;
-  }
-  .materisocmed-container43 {
-    gap: var(--dl-space-space-unit);
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  .materisocmed-container44 {
-    width: 120px;
-    height: 120px;
-  }
-  .materisocmed-navlink08 {
-    font-size: 14px;
-  }
-  .materisocmed-container49 {
-    gap: var(--dl-space-space-unit);
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  .materisocmed-container50 {
-    width: 120px;
-    height: 120px;
-  }
-  .materisocmed-navlink09 {
-    font-size: 14px;
-  }
-  .materisocmed-container53 {
-    gap: var(--dl-space-space-unit);
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  .materisocmed-container54 {
-    width: 120px;
-    height: 120px;
-  }
-  .materisocmed-navlink10 {
-    font-size: 14px;
-  }
-  .materisocmed-container56 {
-    gap: var(--dl-space-space-unit);
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: row;
-  }
-  .materisocmed-container57 {
-    width: 120px;
-    height: 120px;
-  }
-  .materisocmed-navlink11 {
     font-size: 14px;
   }
 }
