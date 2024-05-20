@@ -435,12 +435,15 @@
   margin: auto;
   position: absolute;
 }
-
+.popup1-root-class-name1 {
+  display: none;
+}
 .popup1-root-class-name2 {
   top: 0px;
   left: 0px;
   right: 0px;
   margin: auto;
+  display: none;
   position: absolute;
 }
 @media(max-width: 1200px) {
@@ -1599,7 +1602,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-navlink2 {
+.materisocmed4444-text20 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1623,7 +1626,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-navlink2:hover {
+.materisocmed4444-text20:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed4444-container27 {
@@ -1654,7 +1657,7 @@
   justify-content: flex-start;
   background-image: url('https://d2n4wb9orp1vta.cloudfront.net/cms/Group-of-used-tools.jpg');
 }
-.materisocmed4444-text20 {
+.materisocmed4444-text21 {
   fill: #ff9800;
   color: rgb(26, 26, 26);
   width: 100%;
@@ -1672,7 +1675,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text21 {
+.materisocmed4444-text22 {
   fill: #ff9800;
   color: rgb(26, 26, 26);
   width: 100%;
@@ -1690,7 +1693,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-navlink3 {
+.materisocmed4444-navlink2 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1714,7 +1717,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-navlink3:hover {
+.materisocmed4444-navlink2:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed4444-container29 {
@@ -1747,7 +1750,7 @@
   width: 125px;
   height: 125px;
 }
-.materisocmed4444-text22 {
+.materisocmed4444-text23 {
   fill: #ff9800;
   color: rgb(26, 26, 26);
   width: 100%;
@@ -1764,7 +1767,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text23 {
+.materisocmed4444-text24 {
   fill: #ff9800;
   color: rgb(26, 26, 26);
   width: 100%;
@@ -1781,7 +1784,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text24 {
+.materisocmed4444-text25 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1805,10 +1808,10 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text24:hover {
+.materisocmed4444-text25:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed4444-text25 {
+.materisocmed4444-text26 {
   color: #ffffff;
   width: 100%;
   font-size: 16px;
@@ -1870,7 +1873,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed4444-text26 {
+.materisocmed4444-text27 {
   color: #000000;
   font-size: 16px;
   font-style: normal;
@@ -1883,7 +1886,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text27 {
+.materisocmed4444-text28 {
   color: #000000;
   font-size: 12px;
   font-style: normal;
@@ -1894,7 +1897,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text28 {
+.materisocmed4444-text29 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1918,7 +1921,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text28:hover {
+.materisocmed4444-text29:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed4444-week11 {
@@ -1949,7 +1952,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed4444-text29 {
+.materisocmed4444-text30 {
   color: #000000;
   font-size: 16px;
   font-style: normal;
@@ -1962,7 +1965,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text30 {
+.materisocmed4444-text31 {
   color: #000000;
   font-size: 12px;
   font-style: normal;
@@ -1973,7 +1976,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text31 {
+.materisocmed4444-text32 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -1997,7 +2000,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text31:hover {
+.materisocmed4444-text32:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed4444-container35 {
@@ -2036,7 +2039,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed4444-text32 {
+.materisocmed4444-text33 {
   color: #000000;
   font-size: 16px;
   font-style: normal;
@@ -2049,7 +2052,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text33 {
+.materisocmed4444-text34 {
   color: #000000;
   font-size: 12px;
   font-style: normal;
@@ -2060,7 +2063,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text34 {
+.materisocmed4444-text35 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -2084,7 +2087,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text34:hover {
+.materisocmed4444-text35:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
 .materisocmed4444-week13 {
@@ -2115,7 +2118,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed4444-text35 {
+.materisocmed4444-text36 {
   color: #000000;
   font-size: 16px;
   font-style: normal;
@@ -2128,7 +2131,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text36 {
+.materisocmed4444-text37 {
   color: #000000;
   font-size: 12px;
   font-style: normal;
@@ -2139,7 +2142,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text37 {
+.materisocmed4444-text38 {
   fill: #ff9800;
   color: rgb(255, 152, 0);
   width: auto;
@@ -2163,10 +2166,10 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text37:hover {
+.materisocmed4444-text38:hover {
   box-shadow: 3px 3px 15px 0px #c6c6c6;
 }
-.materisocmed4444-text38 {
+.materisocmed4444-text39 {
   color: #ffffff;
   width: 100%;
   font-size: 16px;
@@ -2220,7 +2223,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed4444-text39 {
+.materisocmed4444-text40 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
@@ -2233,7 +2236,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text40 {
+.materisocmed4444-text41 {
   color: rgb(0, 0, 0);
   font-size: 12px;
   font-style: normal;
@@ -2299,7 +2302,7 @@
   align-items: flex-start;
   flex-direction: column;
 }
-.materisocmed4444-text41 {
+.materisocmed4444-text42 {
   color: rgb(0, 0, 0);
   font-size: 16px;
   font-style: normal;
@@ -2312,7 +2315,7 @@
   text-transform: none;
   text-decoration: none;
 }
-.materisocmed4444-text42 {
+.materisocmed4444-text43 {
   color: rgb(0, 0, 0);
   font-size: 12px;
   font-style: normal;
@@ -2618,7 +2621,7 @@
   .materisocmed4444-lottie-node {
     display: none;
   }
-  .materisocmed4444-navlink2 {
+  .materisocmed4444-text20 {
     font-size: 14px;
   }
   .materisocmed4444-container27 {
@@ -2629,7 +2632,7 @@
     align-items: flex-start;
     flex-direction: column;
   }
-  .materisocmed4444-navlink3 {
+  .materisocmed4444-navlink2 {
     font-size: 14px;
   }
   .materisocmed4444-container29 {
@@ -2651,10 +2654,10 @@
   .materisocmed4444-container33 {
     width: 100%;
   }
-  .materisocmed4444-text27 {
+  .materisocmed4444-text28 {
     width: auto;
   }
-  .materisocmed4444-text28 {
+  .materisocmed4444-text29 {
     font-size: 14px;
   }
   .materisocmed4444-week11 {
@@ -2670,10 +2673,10 @@
   .materisocmed4444-container34 {
     width: 100%;
   }
-  .materisocmed4444-text30 {
+  .materisocmed4444-text31 {
     width: auto;
   }
-  .materisocmed4444-text31 {
+  .materisocmed4444-text32 {
     font-size: 14px;
   }
   .materisocmed4444-week12 {
@@ -2689,10 +2692,10 @@
   .materisocmed4444-container36 {
     width: 100%;
   }
-  .materisocmed4444-text33 {
+  .materisocmed4444-text34 {
     width: auto;
   }
-  .materisocmed4444-text34 {
+  .materisocmed4444-text35 {
     font-size: 14px;
   }
   .materisocmed4444-week13 {
@@ -2708,10 +2711,10 @@
   .materisocmed4444-container37 {
     width: 100%;
   }
-  .materisocmed4444-text36 {
+  .materisocmed4444-text37 {
     width: auto;
   }
-  .materisocmed4444-text37 {
+  .materisocmed4444-text38 {
     font-size: 14px;
   }
   .materisocmed4444-week14 {
@@ -2727,7 +2730,7 @@
   .materisocmed4444-container39 {
     width: 100%;
   }
-  .materisocmed4444-text40 {
+  .materisocmed4444-text41 {
     width: auto;
   }
   .materisocmed4444-link {
@@ -2746,7 +2749,7 @@
   .materisocmed4444-container40 {
     width: 100%;
   }
-  .materisocmed4444-text42 {
+  .materisocmed4444-text43 {
     width: auto;
   }
   .materisocmed4444-link1 {

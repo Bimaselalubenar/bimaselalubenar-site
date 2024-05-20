@@ -71,11 +71,6 @@
 .howtoclick-container4 {
   display: contents;
 }
-.howtoclick-root-class-name {
-  top: 35px;
-  left: 63px;
-  position: absolute;
-}
 @media(max-width: 767px) {
   .howtoclick-header {
     gap: var(--dl-space-space-unit);
@@ -95,9 +90,5 @@
   }
   .howtoclick-icon {
     fill: #ffffff;
-  }
-  .howtoclick-root-class-name {
-    top: 38px;
-    left: 59px;
   }
 }

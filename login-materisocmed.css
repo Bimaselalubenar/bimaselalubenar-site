@@ -213,12 +213,15 @@
   margin: auto;
   position: absolute;
 }
-
+.popup1-root-class-name1 {
+  display: none;
+}
 .popup1-root-class-name2 {
   top: 0px;
   left: 0px;
   right: 0px;
   margin: auto;
+  display: none;
   position: absolute;
 }
 @media(max-width: 1200px) {
@@ -362,6 +365,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -378,6 +382,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -398,7 +403,7 @@
   flex: 1;
   color: #d07100;
   width: 100%;
-  height: 37px;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -411,7 +416,7 @@
   color: rgb(255, 255, 255);
   width: auto;
   cursor: pointer;
-  height: auto;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -434,6 +439,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -447,7 +453,7 @@
   color: rgb(255, 255, 255);
   width: 100%;
   cursor: pointer;
-  height: auto;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -473,7 +479,6 @@
   color: rgb(208, 113, 0);
   width: 100%;
   cursor: pointer;
-  font-size: 16px;
   align-self: flex-end;
   text-align: center;
   transition: 0.3s;
@@ -497,7 +502,6 @@
   color: rgb(208, 113, 0);
   width: 100%;
   cursor: pointer;
-  font-size: 16px;
   align-self: flex-end;
   text-align: center;
   transition: 0.3s;
@@ -772,6 +776,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -787,6 +792,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -802,6 +808,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -817,6 +824,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -832,6 +840,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -847,6 +856,7 @@
   fill: #d07100;
   color: #d07100;
   width: 100%;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -860,7 +870,7 @@
   color: rgb(255, 255, 255);
   width: 100%;
   cursor: pointer;
-  height: auto;
+  height: 40px;
   padding-top: var(--dl-space-space-halfunit);
   border-color: #d07100;
   border-width: 2px;
@@ -874,6 +884,7 @@
   color: rgb(208, 113, 0);
   width: 100%;
   cursor: pointer;
+  height: 40px;
   font-size: 16px;
   align-self: flex-end;
   text-align: center;
