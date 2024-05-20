@@ -191,7 +191,9 @@
 .popupcomers-container7 {
   display: contents;
 }
-
+.popupcomers-root-class-name {
+  display: none;
+}
 @media(max-width: 1200px) {
   .popupcomers-text09 {
     font-size: 30px;

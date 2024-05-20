@@ -601,12 +601,62 @@
               </svg>
               <span class="materisocmed1-text02">Profile</span>
             </div>
+            <span class="materisocmed1-text03">Help!</span>
+            <span id="dog" class="materisocmed1-text04">Hi!</span>
+            <div>
+              <div class="materisocmed1-container008">
+                <script>
+                  const words = ['Hi...!!', 'Kamu sedang bekerja?', 'Semangat ya..', 'Saya disini menemanimu', 'Tapi aku bisa menggigitmu :)'];
+                  let index = 0;
+                  let letterIndex = 0;
+                  let isDeleting = false;
+                  let typingText = '';
+
+                  function type() {
+                      const currentWord = words[index % words.length];
+                      if (isDeleting) {
+                          typingText = currentWord.substring(0, letterIndex - 1);
+                          letterIndex--;
+                      } else {
+                          typingText = currentWord.substring(0, letterIndex + 1);
+                          letterIndex++;
+                      }
+
+                      document.getElementById('dog').textContent = typingText;
+
+                      let typingSpeed = 100;
+                      if (isDeleting) {
+                          typingSpeed /= 2;
+                      }
+
+                      if (!isDeleting && typingText === currentWord) {
+                          isDeleting = true;
+                          typingSpeed = 800;
+                      } else if (isDeleting && typingText === '') {
+                          isDeleting = false;
+                          index++;
+                          typingSpeed = 200;
+                      }
+
+                      setTimeout(type, typingSpeed);
+                  }
+
+                  type();
+                </script>
+              </div>
+            </div>
+            <img
+              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/framesequence-dog.gif?updatedAt=1716176791064"
+              alt="Dog"
+              loading="lazy"
+              class="materisocmed1-image"
+            />
           </nav>
-          <div class="materisocmed1-container007">
-            <div id="dashboard" class="materisocmed1-container008 content">
-              <div class="materisocmed1-container009">
-                <div class="materisocmed1-container010">
-                  <span id="userName0" class="materisocmed1-text03">user</span>
+          <div class="materisocmed1-container009">
+            <div id="dashboard" class="materisocmed1-container010 content">
+              <div class="materisocmed1-container011">
+                <div class="materisocmed1-container012">
+                  <span id="userName0" class="materisocmed1-text05">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon10"
@@ -623,9 +673,9 @@
                   />
                 </div>
               </div>
-              <div class="materisocmed1-container011">
-                <div class="materisocmed1-container012">
-                  <div class="materisocmed1-container013">
+              <div class="materisocmed1-container013">
+                <div class="materisocmed1-container014">
+                  <div class="materisocmed1-container015">
                     <lottie-player
                       src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Animation%20-%201713497405619.json?updatedAt=1713497661324"
                       loop="true"
@@ -635,20 +685,20 @@
                       class="materisocmed1-lottie-node"
                     ></lottie-player>
                   </div>
-                  <span class="materisocmed1-text04">
+                  <span class="materisocmed1-text06">
                     Masuk dashboard activity sales online MSO
                   </span>
-                  <span class="materisocmed1-text05">
+                  <span class="materisocmed1-text07">
                     Aktivitas sales online tahun periode 2024
                   </span>
                   <a href="#" id="statistikMenu" class="materisocmed1-navlink">
                     Lihat -&gt;
                   </a>
                 </div>
-                <div class="materisocmed1-container014">
-                  <div class="materisocmed1-container015"></div>
-                  <span class="materisocmed1-text06">Tools</span>
-                  <span class="materisocmed1-text07">
+                <div class="materisocmed1-container016">
+                  <div class="materisocmed1-container017"></div>
+                  <span class="materisocmed1-text08">Tools</span>
+                  <span class="materisocmed1-text09">
                     Tools Converter - QR Generate
                   </span>
                   <a href="#" id="toolsMenu" class="materisocmed1-navlink01">
@@ -656,29 +706,29 @@
                   </a>
                 </div>
               </div>
-              <div class="materisocmed1-container016">
-                <span id="welcomeText" class="materisocmed1-text08">
+              <div class="materisocmed1-container018">
+                <span id="welcomeText" class="materisocmed1-text10">
                   Materi socmed
                 </span>
               </div>
-              <div class="materisocmed1-container017">
-                <div class="materisocmed1-container018">
+              <div class="materisocmed1-container019">
+                <div class="materisocmed1-container020">
                   <div class="materisocmed1-week1">
                     <img
                       alt="Week1"
                       src="https://img.icons8.com/fluency/96/calendar-plus.png"
                       loading="lazy"
-                      class="materisocmed1-image01"
+                      class="materisocmed1-image02"
                     />
-                    <div class="materisocmed1-container019">
-                      <h2 class="materisocmed1-text09">Minggu 1</h2>
-                      <span class="materisocmed1-text10">
+                    <div class="materisocmed1-container021">
+                      <h2 class="materisocmed1-text11">Minggu 1</h2>
+                      <span class="materisocmed1-text12">
                         Di posting semua di social media dealer
                       </span>
                       <span
                         id="week1Menu"
                         href="#"
-                        class="materisocmed1-text11"
+                        class="materisocmed1-text13"
                       >
                         Unduh
                       </span>
@@ -689,34 +739,34 @@
                       alt="Week1"
                       src="https://img.icons8.com/fluency/96/calendar-plus.png"
                       loading="lazy"
-                      class="materisocmed1-image02"
+                      class="materisocmed1-image03"
                     />
-                    <div class="materisocmed1-container020">
-                      <h2 class="materisocmed1-text12">Minggu 2</h2>
-                      <span class="materisocmed1-text13">
+                    <div class="materisocmed1-container022">
+                      <h2 class="materisocmed1-text14">Minggu 2</h2>
+                      <span class="materisocmed1-text15">
                         Di posting semua di social media dealer
                       </span>
                       <span
                         id="week2Menu"
                         href="#"
-                        class="materisocmed1-text14"
+                        class="materisocmed1-text16"
                       >
                         Unduh
                       </span>
                     </div>
                   </div>
                 </div>
-                <div class="materisocmed1-container021">
+                <div class="materisocmed1-container023">
                   <div class="materisocmed1-week12">
                     <img
                       alt="Week1"
                       src="https://img.icons8.com/fluency/96/calendar-plus.png"
                       loading="lazy"
-                      class="materisocmed1-image03"
+                      class="materisocmed1-image04"
                     />
-                    <div class="materisocmed1-container022">
-                      <h2 class="materisocmed1-text15">Minggu 3</h2>
-                      <span class="materisocmed1-text16">
+                    <div class="materisocmed1-container024">
+                      <h2 class="materisocmed1-text17">Minggu 3</h2>
+                      <span class="materisocmed1-text18">
                         Di posting semua di social media dealer
                       </span>
                       <a
@@ -733,17 +783,17 @@
                       alt="Week1"
                       src="https://img.icons8.com/fluency/96/calendar-plus.png"
                       loading="lazy"
-                      class="materisocmed1-image04"
+                      class="materisocmed1-image05"
                     />
-                    <div class="materisocmed1-container023">
-                      <h2 class="materisocmed1-text17">Minggu 4</h2>
-                      <span class="materisocmed1-text18">
+                    <div class="materisocmed1-container025">
+                      <h2 class="materisocmed1-text19">Minggu 4</h2>
+                      <span class="materisocmed1-text20">
                         Di posting semua di social media dealer
                       </span>
                       <span
                         id="week4Menu"
                         href="#"
-                        class="materisocmed1-text19"
+                        class="materisocmed1-text21"
                       >
                         Unduh
                       </span>
@@ -751,25 +801,25 @@
                   </div>
                 </div>
               </div>
-              <div class="materisocmed1-container024">
-                <span id="welcomeText" class="materisocmed1-text20">
+              <div class="materisocmed1-container026">
+                <span id="welcomeText" class="materisocmed1-text22">
                   Form Report &amp; Jadwal
                 </span>
               </div>
-              <div class="materisocmed1-container025">
-                <div class="materisocmed1-container026">
+              <div class="materisocmed1-container027">
+                <div class="materisocmed1-container028">
                   <div class="materisocmed1-week14">
                     <img
                       alt="Week1"
                       src="https://img.icons8.com/fluency/96/calendar-plus.png"
                       loading="lazy"
-                      class="materisocmed1-image05"
+                      class="materisocmed1-image06"
                     />
-                    <div class="materisocmed1-container027">
-                      <h2 class="materisocmed1-text21">
+                    <div class="materisocmed1-container029">
+                      <h2 class="materisocmed1-text23">
                         Jadwal posting socmed cabang
                       </h2>
-                      <span class="materisocmed1-text22">
+                      <span class="materisocmed1-text24">
                         **Tidak perlu di laporkan
                       </span>
                       <a
@@ -787,11 +837,11 @@
                       alt="Week1"
                       src="https://img.icons8.com/fluency/96/calendar-plus.png"
                       loading="lazy"
-                      class="materisocmed1-image06"
+                      class="materisocmed1-image07"
                     />
-                    <div class="materisocmed1-container028">
-                      <h2 class="materisocmed1-text23">Form sales online</h2>
-                      <span class="materisocmed1-text24">
+                    <div class="materisocmed1-container030">
+                      <h2 class="materisocmed1-text25">Form sales online</h2>
+                      <span class="materisocmed1-text26">
                         Untuk di update bulan Mei 2024
                       </span>
                       <a
@@ -930,10 +980,10 @@
                 </div>
               </div>
             </div>
-            <div id="tools" class="materisocmed1-container029 content">
-              <div class="materisocmed1-container030">
-                <div class="materisocmed1-container031">
-                  <span id="userName1" class="materisocmed1-text25">user</span>
+            <div id="tools" class="materisocmed1-container031 content">
+              <div class="materisocmed1-container032">
+                <div class="materisocmed1-container033">
+                  <span id="userName1" class="materisocmed1-text27">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon12"
@@ -946,24 +996,24 @@
                     id="profile1"
                     alt="profile 6"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="materisocmed1-image07 profile-pic"
+                    class="materisocmed1-image08 profile-pic"
                   />
                 </div>
               </div>
-              <div class="materisocmed1-container032">
-                <div class="materisocmed1-container033">
-                  <div class="materisocmed1-container034">
-                    <span id="accordion1-btn" class="materisocmed1-text26">
+              <div class="materisocmed1-container034">
+                <div class="materisocmed1-container035">
+                  <div class="materisocmed1-container036">
+                    <span id="accordion1-btn" class="materisocmed1-text28">
                       Generate QR Code
                     </span>
                     <form class="materisocmed1-form">
-                      <label for="text" class="materisocmed1-text27">
+                      <label for="text" class="materisocmed1-text29">
                         Masukan link yang ingin di generate QR Code
                       </label>
-                      <label class="materisocmed1-text28">
+                      <label class="materisocmed1-text30">
                         Dapat berupa link, text, nomor, password dan catatan
                       </label>
-                      <div class="materisocmed1-container035">
+                      <div class="materisocmed1-container037">
                         <input
                           type="text"
                           id="text"
@@ -980,7 +1030,7 @@
                         </button>
                       </div>
                     </form>
-                    <div id="qrcode" class="materisocmed1-container036"></div>
+                    <div id="qrcode" class="materisocmed1-container038"></div>
                     <button
                       id="downloadButton"
                       type="button"
@@ -990,9 +1040,9 @@
                     >
                       Download QR
                     </button>
-                    <div class="materisocmed1-container037"></div>
+                    <div class="materisocmed1-container039"></div>
                     <div>
-                      <div class="materisocmed1-container039">
+                      <div class="materisocmed1-container041">
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
                         <script>
                           function generateQRCode() {
@@ -1026,21 +1076,21 @@
                       </div>
                     </div>
                   </div>
-                  <div class="materisocmed1-container040">
-                    <span id="accordion1-btn" class="materisocmed1-text29">
+                  <div class="materisocmed1-container042">
+                    <span id="accordion1-btn" class="materisocmed1-text31">
                       Image Downloader HD+
                     </span>
                     <form
                       onsubmit="downloadImage(event)"
                       class="materisocmed1-form1"
                     >
-                      <label for="text" class="materisocmed1-text30">
+                      <label for="text" class="materisocmed1-text32">
                         Masukan link gambar yang ingin di unduh
                       </label>
-                      <label class="materisocmed1-text31">
+                      <label class="materisocmed1-text33">
                         Format, PNG, Webp, Jpg, Gif
                       </label>
-                      <div class="materisocmed1-container041">
+                      <div class="materisocmed1-container043">
                         <input
                           type="text"
                           id="imageUrl"
@@ -1079,9 +1129,9 @@
                         </button>
                       </div>
                     </form>
-                    <div class="materisocmed1-container042"></div>
+                    <div class="materisocmed1-container044"></div>
                     <div>
-                      <div class="materisocmed1-container044">
+                      <div class="materisocmed1-container046">
                         <script>
                           function downloadImage(event) {
                             event.preventDefault(); // Prevent form submission
@@ -1256,10 +1306,10 @@
                 </div>
               </div>
             </div>
-            <div id="statistik" class="materisocmed1-container045 content">
-              <div class="materisocmed1-container046">
-                <div class="materisocmed1-container047">
-                  <span id="userName2" class="materisocmed1-text32">user</span>
+            <div id="statistik" class="materisocmed1-container047 content">
+              <div class="materisocmed1-container048">
+                <div class="materisocmed1-container049">
+                  <span id="userName2" class="materisocmed1-text34">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon14"
@@ -1272,13 +1322,13 @@
                     id="profile2"
                     alt="profile 6"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="materisocmed1-image08 profile-pic"
+                    class="materisocmed1-image09 profile-pic"
                   />
                 </div>
               </div>
-              <div class="materisocmed1-container048">
-                <div class="materisocmed1-container049">
-                  <div class="materisocmed1-container050">
+              <div class="materisocmed1-container050">
+                <div class="materisocmed1-container051">
+                  <div class="materisocmed1-container052">
                     <iframe
                       width="100%"
                       height="1000"
@@ -1415,10 +1465,10 @@
                 </div>
               </div>
             </div>
-            <div id="tips" class="materisocmed1-container051 content">
-              <div class="materisocmed1-container052">
-                <div class="materisocmed1-container053">
-                  <span id="userName3" class="materisocmed1-text33">user</span>
+            <div id="tips" class="materisocmed1-container053 content">
+              <div class="materisocmed1-container054">
+                <div class="materisocmed1-container055">
+                  <span id="userName3" class="materisocmed1-text35">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon16"
@@ -1431,21 +1481,21 @@
                     id="profile3"
                     alt="profile 2"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="materisocmed1-image09 profile-pic"
+                    class="materisocmed1-image10 profile-pic"
                   />
                 </div>
               </div>
-              <div class="materisocmed1-container054">
-                <div class="materisocmed1-container055">
-                  <div class="materisocmed1-container056">
-                    <div class="materisocmed1-container057"></div>
-                    <div class="materisocmed1-container058">
-                      <div class="materisocmed1-container059">
-                        <div class="materisocmed1-container060">
-                          <div class="materisocmed1-container061">
-                            <span class="materisocmed1-text34">
+              <div class="materisocmed1-container056">
+                <div class="materisocmed1-container057">
+                  <div class="materisocmed1-container058">
+                    <div class="materisocmed1-container059"></div>
+                    <div class="materisocmed1-container060">
+                      <div class="materisocmed1-container061">
+                        <div class="materisocmed1-container062">
+                          <div class="materisocmed1-container063">
+                            <span class="materisocmed1-text36">
                               <span>Cara set iklan dari</span>
-                              <span class="materisocmed1-text36">
+                              <span class="materisocmed1-text38">
                                 budget 50 Ribu
                               </span>
                             </span>
@@ -1460,12 +1510,12 @@
                       </a>
                     </div>
                   </div>
-                  <div class="materisocmed1-container062">
-                    <div class="materisocmed1-container063"></div>
-                    <div class="materisocmed1-container064">
-                      <span class="materisocmed1-text37">
+                  <div class="materisocmed1-container064">
+                    <div class="materisocmed1-container065"></div>
+                    <div class="materisocmed1-container066">
+                      <span class="materisocmed1-text39">
                         <span>Cara cetak bukti</span>
-                        <span class="materisocmed1-text39">TOP UP</span>
+                        <span class="materisocmed1-text41">TOP UP</span>
                         <span>Iklan FB Ads</span>
                       </span>
                       <a
@@ -1477,13 +1527,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="materisocmed1-container065">
-                  <div class="materisocmed1-container066">
-                    <div class="materisocmed1-container067"></div>
-                    <div class="materisocmed1-container068">
-                      <span class="materisocmed1-text41">
+                <div class="materisocmed1-container067">
+                  <div class="materisocmed1-container068">
+                    <div class="materisocmed1-container069"></div>
+                    <div class="materisocmed1-container070">
+                      <span class="materisocmed1-text43">
                         <span>Capture Analisis</span>
-                        <span class="materisocmed1-text43">
+                        <span class="materisocmed1-text45">
                           Aktivitas FB Ads
                         </span>
                         <span>keperluan laporan mingguan</span>
@@ -1496,11 +1546,11 @@
                       </a>
                     </div>
                   </div>
-                  <div class="materisocmed1-container069">
-                    <div class="materisocmed1-container070"></div>
-                    <div class="materisocmed1-container071">
-                      <div class="materisocmed1-container072">
-                        <span class="materisocmed1-text45">
+                  <div class="materisocmed1-container071">
+                    <div class="materisocmed1-container072"></div>
+                    <div class="materisocmed1-container073">
+                      <div class="materisocmed1-container074">
+                        <span class="materisocmed1-text47">
                           Tidak tersedia..
                         </span>
                       </div>
@@ -1510,21 +1560,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="materisocmed1-container073">
-                  <div class="materisocmed1-container074">
-                    <div class="materisocmed1-container075"></div>
-                    <div class="materisocmed1-container076">
-                      <span class="materisocmed1-text46">Tidak tersedia..</span>
+                <div class="materisocmed1-container075">
+                  <div class="materisocmed1-container076">
+                    <div class="materisocmed1-container077"></div>
+                    <div class="materisocmed1-container078">
+                      <span class="materisocmed1-text48">Tidak tersedia..</span>
                       <a href="**" class="materisocmed1-navlink07">
                         Lihat -&gt;
                       </a>
                     </div>
                   </div>
-                  <div class="materisocmed1-container077">
-                    <div class="materisocmed1-container078"></div>
-                    <div class="materisocmed1-container079">
-                      <div class="materisocmed1-container080">
-                        <span class="materisocmed1-text47">
+                  <div class="materisocmed1-container079">
+                    <div class="materisocmed1-container080"></div>
+                    <div class="materisocmed1-container081">
+                      <div class="materisocmed1-container082">
+                        <span class="materisocmed1-text49">
                           Tidak tersedia..
                         </span>
                       </div>
@@ -1534,21 +1584,21 @@
                     </div>
                   </div>
                 </div>
-                <div class="materisocmed1-container081">
-                  <div class="materisocmed1-container082">
-                    <div class="materisocmed1-container083"></div>
-                    <div class="materisocmed1-container084">
-                      <span class="materisocmed1-text48">Tidak tersedia..</span>
+                <div class="materisocmed1-container083">
+                  <div class="materisocmed1-container084">
+                    <div class="materisocmed1-container085"></div>
+                    <div class="materisocmed1-container086">
+                      <span class="materisocmed1-text50">Tidak tersedia..</span>
                       <a href="**" class="materisocmed1-navlink09">
                         Lihat -&gt;
                       </a>
                     </div>
                   </div>
-                  <div class="materisocmed1-container085">
-                    <div class="materisocmed1-container086"></div>
-                    <div class="materisocmed1-container087">
-                      <div class="materisocmed1-container088">
-                        <span class="materisocmed1-text49">
+                  <div class="materisocmed1-container087">
+                    <div class="materisocmed1-container088"></div>
+                    <div class="materisocmed1-container089">
+                      <div class="materisocmed1-container090">
+                        <span class="materisocmed1-text51">
                           Tidak tersedia..
                         </span>
                       </div>
@@ -1683,10 +1733,10 @@
                 </div>
               </div>
             </div>
-            <div id="profile" class="materisocmed1-container089 content">
-              <div class="materisocmed1-container090">
-                <div class="materisocmed1-container091">
-                  <span id="userName4" class="materisocmed1-text50">user</span>
+            <div id="profile" class="materisocmed1-container091 content">
+              <div class="materisocmed1-container092">
+                <div class="materisocmed1-container093">
+                  <span id="userName4" class="materisocmed1-text52">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon18"
@@ -1703,59 +1753,67 @@
                   />
                 </div>
               </div>
-              <div id="currentProfile" class="materisocmed1-container092">
-                <div class="materisocmed1-container093"></div>
+              <div id="currentProfile" class="materisocmed1-container094">
+                <div class="materisocmed1-container095">
+                  <div class="materisocmed1-container096"></div>
+                </div>
                 <img
                   id="profile5"
                   alt="profile4"
                   src="https://play.teleporthq.io/static/svg/default-img.svg"
-                  class="materisocmed1-image11 profile-pic"
+                  class="materisocmed1-image12 profile-pic"
                 />
               </div>
-              <div class="materisocmed1-container094 container">
-                <div id="userInfo" class="materisocmed1-container095">
-                  <div class="materisocmed1-container096">
-                    <span class="materisocmed1-text51">
-                      NAMA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp;
-                      &nbsp;&nbsp;
-                    </span>
-                    <span id="userName5" class="materisocmed1-text52">
-                      User
-                    </span>
-                  </div>
-                  <div class="materisocmed1-container097">
-                    <span class="materisocmed1-text53">
-                      EMAIL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp;
-                      &nbsp;&nbsp;
-                    </span>
-                    <span id="userEmail" class="materisocmed1-text54">
-                      User
-                    </span>
-                  </div>
-                  <div class="materisocmed1-container098">
-                    <span class="materisocmed1-text55">
-                      MSO&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
-                      :&nbsp; &nbsp;&nbsp;
-                    </span>
-                    <span id="userBranch" class="materisocmed1-text56">
-                      User
-                    </span>
-                  </div>
+              <div class="materisocmed1-container097 container">
+                <div id="userInfo" class="materisocmed1-container098">
                   <div class="materisocmed1-container099">
-                    <span class="materisocmed1-text57">
-                      JABATAN&nbsp; &nbsp; &nbsp;:&nbsp; &nbsp;&nbsp;
-                    </span>
-                    <span id="userPosition" class="materisocmed1-text58">
-                      User
-                    </span>
-                  </div>
-                  <div class="materisocmed1-container100">
-                    <span class="materisocmed1-text59">
-                      CABANG&nbsp; &nbsp; &nbsp; :&nbsp; &nbsp;&nbsp;
-                    </span>
-                    <span id="userCabang" class="materisocmed1-text60">
-                      User
-                    </span>
+                    <div class="materisocmed1-container100">
+                      <div class="materisocmed1-container101">
+                        <span class="materisocmed1-text53">
+                          NAMA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp;
+                          &nbsp;&nbsp;
+                        </span>
+                        <span id="userName5" class="materisocmed1-text54">
+                          User
+                        </span>
+                      </div>
+                      <div class="materisocmed1-container102">
+                        <span class="materisocmed1-text55">
+                          EMAIL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;:&nbsp;
+                          &nbsp;&nbsp;
+                        </span>
+                        <span id="userEmail" class="materisocmed1-text56">
+                          User
+                        </span>
+                      </div>
+                      <div class="materisocmed1-container103">
+                        <span class="materisocmed1-text57">
+                          MSO&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; :&nbsp;
+                          &nbsp;&nbsp;
+                        </span>
+                        <span id="userBranch" class="materisocmed1-text58">
+                          User
+                        </span>
+                      </div>
+                    </div>
+                    <div class="materisocmed1-container104">
+                      <div class="materisocmed1-container105">
+                        <span class="materisocmed1-text59">
+                          JABATAN&nbsp; &nbsp;:&nbsp; &nbsp;&nbsp;
+                        </span>
+                        <span id="userPosition" class="materisocmed1-text60">
+                          User
+                        </span>
+                      </div>
+                      <div class="materisocmed1-container106">
+                        <span class="materisocmed1-text61">
+                          CABANG&nbsp; &nbsp; :&nbsp; &nbsp;&nbsp;
+                        </span>
+                        <span id="userCabang" class="materisocmed1-text62">
+                          User
+                        </span>
+                      </div>
+                    </div>
                   </div>
                   <button
                     id="logoutButton"
@@ -1766,10 +1824,10 @@
                   </button>
                 </div>
               </div>
-              <div class="materisocmed1-container101">
-                <div class="materisocmed1-container102">
+              <div class="materisocmed1-container107">
+                <div class="materisocmed1-container108">
                   <form id="profileForm" class="materisocmed1-form2">
-                    <span class="materisocmed1-text61">
+                    <span class="materisocmed1-text63">
                       Upload foto profile
                     </span>
                     <input
@@ -1787,7 +1845,7 @@
                       Terapkan
                     </button>
                     <div>
-                      <div class="materisocmed1-container104">
+                      <div class="materisocmed1-container110">
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                         <script>
                           $(document).ready(function() {
@@ -1838,10 +1896,10 @@
                 </div>
               </div>
             </div>
-            <div id="week1" class="materisocmed1-container105 content">
-              <div class="materisocmed1-container106">
-                <div class="materisocmed1-container107">
-                  <span id="userName6" class="materisocmed1-text62">user</span>
+            <div id="week1" class="materisocmed1-container111 content">
+              <div class="materisocmed1-container112">
+                <div class="materisocmed1-container113">
+                  <span id="userName6" class="materisocmed1-text64">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon20"
@@ -1854,21 +1912,21 @@
                     id="profile6"
                     alt="profile6"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="materisocmed1-image12 profile-pic"
+                    class="materisocmed1-image13 profile-pic"
                   />
                 </div>
               </div>
-              <div class="materisocmed1-container108">
-                <div class="materisocmed1-container109"></div>
+              <div class="materisocmed1-container114">
+                <div class="materisocmed1-container115"></div>
               </div>
-              <div class="materisocmed1-container110">
-                <span id="welcomeText" class="materisocmed1-text63">
+              <div class="materisocmed1-container116">
+                <span id="welcomeText" class="materisocmed1-text65">
                   Materi Minggu 1
                 </span>
               </div>
-              <div class="materisocmed1-container111">
-                <span class="materisocmed1-text64">Promosi H1</span>
-                <div class="materisocmed1-container112">
+              <div class="materisocmed1-container117">
+                <span class="materisocmed1-text66">Promosi H1</span>
+                <div class="materisocmed1-container118">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -1959,8 +2017,8 @@
                     </div>
                   </div>
                 </div>
-                <span class="materisocmed1-text65">Promosi H2</span>
-                <div class="materisocmed1-container113">
+                <span class="materisocmed1-text67">Promosi H2</span>
+                <div class="materisocmed1-container119">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2076,10 +2134,10 @@
                 </div>
               </div>
             </div>
-            <div id="week2" class="materisocmed1-container114 content">
-              <div class="materisocmed1-container115">
-                <div class="materisocmed1-container116">
-                  <span id="userName7" class="materisocmed1-text66">user</span>
+            <div id="week2" class="materisocmed1-container120 content">
+              <div class="materisocmed1-container121">
+                <div class="materisocmed1-container122">
+                  <span id="userName7" class="materisocmed1-text68">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon22"
@@ -2092,21 +2150,21 @@
                     id="profile7"
                     alt="profile3"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="materisocmed1-image13 profile-pic"
+                    class="materisocmed1-image14 profile-pic"
                   />
                 </div>
               </div>
-              <div class="materisocmed1-container117">
-                <div class="materisocmed1-container118"></div>
+              <div class="materisocmed1-container123">
+                <div class="materisocmed1-container124"></div>
               </div>
-              <div class="materisocmed1-container119">
-                <span id="welcomeText" class="materisocmed1-text67">
+              <div class="materisocmed1-container125">
+                <span id="welcomeText" class="materisocmed1-text69">
                   Materi Minggu 2
                 </span>
               </div>
-              <div class="materisocmed1-container120">
-                <span class="materisocmed1-text68">Promosi H1</span>
-                <div class="materisocmed1-container121">
+              <div class="materisocmed1-container126">
+                <span class="materisocmed1-text70">Promosi H1</span>
+                <div class="materisocmed1-container127">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2197,8 +2255,8 @@
                     </div>
                   </div>
                 </div>
-                <span class="materisocmed1-text69">Promosi H2</span>
-                <div class="materisocmed1-container122">
+                <span class="materisocmed1-text71">Promosi H2</span>
+                <div class="materisocmed1-container128">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2314,10 +2372,10 @@
                 </div>
               </div>
             </div>
-            <div id="week3" class="materisocmed1-container123 content">
-              <div class="materisocmed1-container124">
-                <div class="materisocmed1-container125">
-                  <span id="userName8" class="materisocmed1-text70">user</span>
+            <div id="week3" class="materisocmed1-container129 content">
+              <div class="materisocmed1-container130">
+                <div class="materisocmed1-container131">
+                  <span id="userName8" class="materisocmed1-text72">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon24"
@@ -2330,21 +2388,21 @@
                     id="profile8"
                     alt="profile3"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="materisocmed1-image14 profile-pic"
+                    class="materisocmed1-image15 profile-pic"
                   />
                 </div>
               </div>
-              <div class="materisocmed1-container126">
-                <div class="materisocmed1-container127"></div>
+              <div class="materisocmed1-container132">
+                <div class="materisocmed1-container133"></div>
               </div>
-              <div class="materisocmed1-container128">
-                <span id="welcomeText" class="materisocmed1-text71">
+              <div class="materisocmed1-container134">
+                <span id="welcomeText" class="materisocmed1-text73">
                   Materi Minggu 3
                 </span>
               </div>
-              <div class="materisocmed1-container129">
-                <span class="materisocmed1-text72">Promosi H1</span>
-                <div class="materisocmed1-container130">
+              <div class="materisocmed1-container135">
+                <span class="materisocmed1-text74">Promosi H1</span>
+                <div class="materisocmed1-container136">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2436,8 +2494,8 @@
                     </div>
                   </div>
                 </div>
-                <span class="materisocmed1-text73">Promosi H2</span>
-                <div class="materisocmed1-container131">
+                <span class="materisocmed1-text75">Promosi H2</span>
+                <div class="materisocmed1-container137">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2553,10 +2611,10 @@
                 </div>
               </div>
             </div>
-            <div id="week4" class="materisocmed1-container132 content">
-              <div class="materisocmed1-container133">
-                <div class="materisocmed1-container134">
-                  <span id="userName9" class="materisocmed1-text74">user</span>
+            <div id="week4" class="materisocmed1-container138 content">
+              <div class="materisocmed1-container139">
+                <div class="materisocmed1-container140">
+                  <span id="userName9" class="materisocmed1-text76">user</span>
                   <svg
                     viewBox="0 0 731.4285714285713 1024"
                     class="materisocmed1-icon26"
@@ -2569,21 +2627,21 @@
                     id="profile9"
                     alt="profile3"
                     src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="materisocmed1-image15 profile-pic"
+                    class="materisocmed1-image16 profile-pic"
                   />
                 </div>
               </div>
-              <div class="materisocmed1-container135">
-                <div class="materisocmed1-container136"></div>
+              <div class="materisocmed1-container141">
+                <div class="materisocmed1-container142"></div>
               </div>
-              <div class="materisocmed1-container137">
-                <span id="welcomeText" class="materisocmed1-text75">
+              <div class="materisocmed1-container143">
+                <span id="welcomeText" class="materisocmed1-text77">
                   Materi Minggu 4
                 </span>
               </div>
-              <div class="materisocmed1-container138">
-                <span class="materisocmed1-text76">Promosi H1</span>
-                <div class="materisocmed1-container139">
+              <div class="materisocmed1-container144">
+                <span class="materisocmed1-text78">Promosi H1</span>
+                <div class="materisocmed1-container145">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2644,8 +2702,8 @@
                     </div>
                   </div>
                 </div>
-                <span class="materisocmed1-text77">Promosi H2</span>
-                <div class="materisocmed1-container140">
+                <span class="materisocmed1-text79">Promosi H2</span>
+                <div class="materisocmed1-container146">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2764,7 +2822,7 @@
           </div>
         </div>
         <div>
-          <div class="materisocmed1-container142">
+          <div class="materisocmed1-container148">
             <script>
               document.getElementById('dashboardMenu').addEventListener('click', function() {
                   showContent('dashboard');
@@ -2828,7 +2886,7 @@
           </div>
         </div>
         <div>
-          <div class="materisocmed1-container144">
+          <div class="materisocmed1-container150">
             <script>
               const userInfo = document.getElementById('userInfo');
               const user = JSON.parse(localStorage.getItem('currentUser'));
