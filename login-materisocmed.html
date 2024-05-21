@@ -1,959 +1,1130 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <title>login-materisocmed - bimaselalubenar</title>
+    <meta
+      name="description"
+      content="Halo! Saya bima, saya Web DevOps &amp; Full Stack Developer"
+    />
+    <meta property="og:title" content="login-materisocmed - bimaselalubenar" />
+    <meta
+      property="og:description"
+      content="Halo, saya Bima. saya seorang  3d modeling dan Full stack development. bagaimana saya dapat berkontribusi dengan anda?"
+    />
+    <meta
+      property="og:image"
+      content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bf1328a2-cee6-443f-bd21-0ba3b0b34318/cc059b72-4374-43ca-a7aa-681afcfbecdb?org_if_sml=1&amp;q=80&amp;force_format=original"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
 
-<head>
-  <title>login-materisocmed - bimaselalubenar</title>
-  <meta name="description" content="Halo! Saya bima, saya Web DevOps &amp; Full Stack Developer" />
-  <meta property="og:title" content="login-materisocmed - bimaselalubenar" />
-  <meta property="og:description"
-    content="Halo, saya Bima. saya seorang  3d modeling dan Full stack development. bagaimana saya dapat berkontribusi dengan anda?" />
-  <meta property="og:image"
-    content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bf1328a2-cee6-443f-bd21-0ba3b0b34318/cc059b72-4374-43ca-a7aa-681afcfbecdb?org_if_sml=1&amp;q=80&amp;force_format=original" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta charset="utf-8" />
-  <meta property="twitter:card" content="summary_large_image" />
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
 
-  <style data-tag="reset-style-sheet">
-    html {
-      line-height: 1.15;
-    }
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
 
-    body {
-      margin: 0;
-    }
+        null
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/animate.css@4.1.1/animate.css"
+    />
+    <link
+      rel="shortcut icon"
+      href="public/logo2.png"
+      type="icon/png"
+      sizes="32x32"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Birthstone:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oooh+Baby:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow:wght@400&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-    * {
-      box-sizing: border-box;
-      border-width: 0;
-      border-style: solid;
-    }
+    <!-- Google Tag Manager -->
 
-    p,
-    li,
-    ul,
-    pre,
-    div,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    figure,
-    blockquote,
-    figcaption {
-      margin: 0;
-      padding: 0;
-    }
+    <!-- End Google Tag Manager -->
 
-    button {
-      background-color: transparent;
-    }
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
 
-    button,
-    input,
-    optgroup,
-    select,
-    textarea {
-      font-family: inherit;
-      font-size: 100%;
-      line-height: 1.15;
-      margin: 0;
-    }
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-PRJDS8CS');
+    </script>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./login-materisocmed.css" rel="stylesheet" />
 
-    button,
-    select {
-      text-transform: none;
-    }
-
-    button,
-    [type="button"],
-    [type="reset"],
-    [type="submit"] {
-      -webkit-appearance: button;
-    }
-
-    button::-moz-focus-inner,
-    [type="button"]::-moz-focus-inner,
-    [type="reset"]::-moz-focus-inner,
-    [type="submit"]::-moz-focus-inner {
-      border-style: none;
-      padding: 0;
-    }
-
-    button:-moz-focus,
-    [type="button"]:-moz-focus,
-    [type="reset"]:-moz-focus,
-    [type="submit"]:-moz-focus {
-      outline: 1px dotted ButtonText;
-    }
-
-    a {
-      color: inherit;
-      text-decoration: inherit;
-    }
-
-    input {
-      padding: 2px 4px;
-    }
-
-    img {
-      display: block;
-    }
-
-    html {
-      scroll-behavior: smooth
-    }
-  </style>
-  <style data-tag="default-style-sheet">
-    html {
-      font-family: Inter;
-      font-size: 16px;
-    }
-
-    body {
-      font-weight: 400;
-      font-style: normal;
-      text-decoration: none;
-      text-transform: none;
-      letter-spacing: normal;
-      line-height: 1.15;
-      color: var(--dl-color-gray-black);
-      background-color: var(--dl-color-gray-white);
-
-      null
-    }
-  </style>
-  <link rel="stylesheet" href="https://unpkg.com/animate.css@4.1.1/animate.css" />
-  <link rel="shortcut icon" href="public/logo2.png" type="icon/png" sizes="32x32" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Birthstone:wght@400&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oooh+Baby:wght@400&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Over+the+Rainbow:wght@400&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet"
-    href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-    data-tag="font" />
-  <link rel="stylesheet" href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css" />
-  <!--This is the head section-->
-  <!-- <style> ... </style> -->
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-
-  <!-- Google Tag Manager -->
-
-  <!-- End Google Tag Manager -->
-
-  <style>
-    [data-thq="thq-dropdown"]:hover>[data-thq="thq-dropdown-list"] {
-      display: flex;
-    }
-
-    [data-thq="thq-dropdown"]:hover>div [data-thq="thq-dropdown-arrow"] {
-      transform: rotate(90deg);
-    }
-  </style>
-  <script>
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PRJDS8CS');
-  </script>
-</head>
-
-<body>
-  <link rel="stylesheet" href="./style.css" />
-  <div>
-    <link href="./login-materisocmed.css" rel="stylesheet" />
-
-    <div class="login-materisocmed-container">
-      <div class="login-materisocmed-container01">
-        <div id="popup1" class="popup1-container popup1-root-class-name2">
-          <div class="popup1-container1">
-            <div class="popup1-header">
-              <img alt="image"
-                src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/Banner.png?updatedAt=1716073516598"
-                class="popup1-image" />
-              <div class="popup1-container2">
-                <span class="popup1-text">
-                  <span class="popup1-text01">
-                    🎉 Jangan lewatkan kesempatan ini!
+      <div class="login-materisocmed-container">
+        <div class="login-materisocmed-container01">
+          <div id="popup1" class="popup1-container popup1-root-class-name2">
+            <div class="popup1-container1">
+              <div class="popup1-header">
+                <img
+                  alt="image"
+                  src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/Banner.png?updatedAt=1716073516598"
+                  class="popup1-image"
+                />
+                <div class="popup1-container2">
+                  <span class="popup1-text">
+                    <span class="popup1-text01">
+                      🎉 Jangan lewatkan kesempatan ini!
+                    </span>
+                    <br class="popup1-text02" />
+                    <br class="popup1-text03" />
+                    <span class="popup1-text04">Masukkan kode promo</span>
+                    <span class="popup1-text05">DISKON2024</span>
+                    <span class="popup1-text06">
+                      untuk mendapatkan diskon hingga
+                    </span>
+                    <span class="popup1-text07">Rp. 50.000</span>
+                    <span class="popup1-text08">
+                      untuk jasa pembuatan website. Yuk, manfaatkan promo ini
+                      sekarang juga dan wujudkan website impianmu dengan harga
+                      lebih terjangkau! 🚀
+                    </span>
                   </span>
-                  <br class="popup1-text02" />
-                  <br class="popup1-text03" />
-                  <span class="popup1-text04">Masukkan kode promo</span>
-                  <span class="popup1-text05">DISKON2024</span>
-                  <span class="popup1-text06">
-                    untuk mendapatkan diskon hingga
+                  <a href="web-service.html" class="popup1-navlink">
+                    <div class="popup1-container3">
+                      <h1 class="popup1-text09"><span>Pilih Paket</span></h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <div class="popup1-header1">
+                <img
+                  alt="image"
+                  src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/OIG3.OiyeMlc2W.jpeg?updatedAt=1716129982153"
+                  class="popup1-image1"
+                />
+                <div class="popup1-container4">
+                  <span class="popup1-text10">
+                    <span class="popup1-text11">PERHATIAN!</span>
+                    <br class="popup1-text12" />
+                    <br class="popup1-text13" />
+                    <span class="popup1-text14">
+                      Silahkan buat akun baru karena per
+                    </span>
+                    <span class="popup1-text15">tanggal&nbsp; 1 Juni 2024</span>
+                    <span class="popup1-text16">
+                      , halaman akan di alihkan di Dashboard terbaru! segera
+                      registrasi untuk mendapat aksses lebih lengkap!
+                    </span>
                   </span>
-                  <span class="popup1-text07">Rp. 50.000</span>
-                  <span class="popup1-text08">
-                    untuk jasa pembuatan website. Yuk, manfaatkan promo ini
-                    sekarang juga dan wujudkan website impianmu dengan harga
-                    lebih terjangkau! 🚀
-                  </span>
-                </span>
-                <a href="web-service.html" class="popup1-navlink">
-                  <div class="popup1-container3">
-                    <h1 class="popup1-text09"><span>Pilih Paket</span></h1>
-                  </div>
-                </a>
+                  <a
+                    href="https://docs.google.com/forms/d/e/1FAIpQLSeoimBrrXgi6osxPT0jboNHXvGwv7CV4ERHe5g8i8mcGHFp-g/viewform"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="popup1-link"
+                  >
+                    <div class="popup1-container5">
+                      <h1 class="popup1-text17">Registrasi Sekarang!</h1>
+                    </div>
+                  </a>
+                </div>
+              </div>
+              <button
+                type="button"
+                onclick="closeBanner('popup1')"
+                aria-label="Close"
+                class="popup1-close-button"
+              >
+                <svg viewBox="0 0 804.5714285714286 1024" class="popup1-icon">
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path>
+                </svg>
+              </button>
+            </div>
+            <div>
+              <div class="popup1-container7">
+                <script>
+                  function showBanners() {
+                      document.getElementById('popup1').style.display = 'block';
+                  }
+
+                  function closeBanner(bannerId) {
+                      var banner = document.getElementById(bannerId);
+                      banner.style.display = 'none';
+                  }
+                </script>
               </div>
             </div>
-            <div class="popup1-header1">
-              <img alt="image"
+          </div>
+          <div id="sign" class="login-materisocmed-container02 content">
+            <div class="login-materisocmed-container03">
+              <img
+                alt="login"
                 src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/OIG3.OiyeMlc2W.jpeg?updatedAt=1716129982153"
-                class="popup1-image1" />
-              <div class="popup1-container4">
-                <span class="popup1-text10">
-                  <span class="popup1-text11">PERHATIAN!</span>
-                  <br class="popup1-text12" />
-                  <br class="popup1-text13" />
-                  <span class="popup1-text14">
-                    Silahkan buat akun baru karena per
-                  </span>
-                  <span class="popup1-text15">tanggal&nbsp; 1 Juni 2024</span>
-                  <span class="popup1-text16">
-                    , halaman akan di alihkan di Dashboard terbaru! segera
-                    registrasi untuk mendapat aksses lebih lengkap!
-                  </span>
-                </span>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSeoimBrrXgi6osxPT0jboNHXvGwv7CV4ERHe5g8i8mcGHFp-g/viewform"
-                  target="_blank" rel="noreferrer noopener" class="popup1-link">
-                  <div class="popup1-container5">
-                    <h1 class="popup1-text17">Registrasi Sekarang!</h1>
-                  </div>
+                loading="lazy"
+                class="login-materisocmed-image"
+              />
+              <form id="loginForm" class="login-materisocmed-form">
+                <span class="login-materisocmed-text">Sign in</span>
+                <div class="login-materisocmed-container04">
+                  <label for="email" class="login-materisocmed-text01">
+                    Email
+                  </label>
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    required="true"
+                    placeholder="Email"
+                    class="login-materisocmed-textinput"
+                  />
+                  <label for="password" class="login-materisocmed-text02">
+                    Password
+                  </label>
+                  <input
+                    type="password"
+                    id="password"
+                    name="password"
+                    required="true"
+                    placeholder="Password"
+                    class="login-materisocmed-textinput1"
+                  />
+                </div>
+                <div class="login-materisocmed-container05">
+                  <div
+                    id="captcha"
+                    class="login-materisocmed-container06"
+                  ></div>
+                  <button
+                    id="refreshCaptcha"
+                    type="button"
+                    class="login-materisocmed-button"
+                  >
+                    Re CAPTCHA
+                  </button>
+                </div>
+                <label for="captchaInput" class="login-materisocmed-text03">
+                  Enter CAPTCHA
+                </label>
+                <div class="login-materisocmed-container07">
+                  <input
+                    type="text"
+                    id="captchaInput"
+                    name="captchaInput"
+                    required="true"
+                    placeholder="Captcha"
+                    class="login-materisocmed-textinput2"
+                  />
+                  <button type="submit" class="login-materisocmed-button1">
+                    Login
+                  </button>
+                </div>
+              </form>
+              <div class="login-materisocmed-container08">
+                <a href="materisocmed.html" class="login-materisocmed-navlink">
+                  <p class="login-materisocmed-text04">Sudah pernah login</p>
                 </a>
-              </div>
-            </div>
-            <button type="button" onclick="closeBanner('popup1')" aria-label="Close" class="popup1-close-button">
-              <svg viewBox="0 0 804.5714285714286 1024" class="popup1-icon">
-                <path
-                  d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z">
-                </path>
-              </svg>
-            </button>
-          </div>
-          <div>
-            <div class="popup1-container7">
-              <script>
-                function showBanners() {
-                  document.getElementById('popup1').style.display = 'block';
-                }
-
-                function closeBanner(bannerId) {
-                  var banner = document.getElementById(bannerId);
-                  banner.style.display = 'none';
-                }
-              </script>
-            </div>
-          </div>
-        </div>
-        <div id="sign" class="login-materisocmed-container02 content">
-          <div class="login-materisocmed-container03">
-            <img alt="login"
-              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/OIG3.OiyeMlc2W.jpeg?updatedAt=1716129982153"
-              loading="lazy" class="login-materisocmed-image" />
-            <form id="loginForm" class="login-materisocmed-form">
-              <span class="login-materisocmed-text">Sign in</span>
-              <div class="login-materisocmed-container04">
-                <label for="email" class="login-materisocmed-text01">
-                  Email
+                <label
+                  id="registerMenu"
+                  for="captchaInput"
+                  href="#"
+                  class="login-materisocmed-text05"
+                >
+                  Buat akun baru!
                 </label>
-                <input type="email" id="email" name="email" required="true" placeholder="Email"
-                  class="login-materisocmed-textinput" />
-                <label for="password" class="login-materisocmed-text02">
-                  Password
-                </label>
-                <input type="password" id="password" name="password" required="true" placeholder="Password"
-                  class="login-materisocmed-textinput1" />
               </div>
-              <div class="login-materisocmed-container05">
-                <div id="captcha" class="login-materisocmed-container06"></div>
-                <button id="refreshCaptcha" type="button" class="login-materisocmed-button">
-                  Re CAPTCHA
-                </button>
-              </div>
-              <label for="captchaInput" class="login-materisocmed-text03">
-                Enter CAPTCHA
-              </label>
-              <div class="login-materisocmed-container07">
-                <input type="text" id="captchaInput" name="captchaInput" required="true" placeholder="Captcha"
-                  class="login-materisocmed-textinput2" />
-                <button type="submit" class="login-materisocmed-button1">
-                  Login
-                </button>
-              </div>
-            </form>
-            <div class="login-materisocmed-container08">
-              <a href="materisocmed.html" class="login-materisocmed-navlink">
-                <p class="login-materisocmed-text04">Sudah pernah login</p>
-              </a>
-              <label id="registerMenu" for="captchaInput" href="#" class="login-materisocmed-text05">
-                Buat akun baru!
-              </label>
-            </div>
-            <div class="login-materisocmed-container09">
-              <p id="errorMessage" class="login-materisocmed-text06 error">
-                &nbsp;
-              </p>
-              <div>
-                <div class="login-materisocmed-container11">
-                  <script>
-                    const loginForm = document.getElementById('loginForm');
-                    const errorMessage = document.getElementById('errorMessage');
+              <div class="login-materisocmed-container09">
+                <p id="errorMessage" class="login-materisocmed-text06 error">
+                  &nbsp;
+                </p>
+                <div>
+                  <div class="login-materisocmed-container11">
+                    <script>
+                      const loginForm = document.getElementById('loginForm');
+                      const errorMessage = document.getElementById('errorMessage');
 
-                    function generateCaptcha() {
-                      const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-                      let captcha = '';
-                      for (let i = 0; i < 5; i++) {
-                        captcha += characters.charAt(Math.floor(Math.random() * characters.length));
-                      }
-                      return captcha;
-                    }
-
-                    function refreshCaptcha() {
-                      const captchaElement = document.getElementById('captcha');
-                      captchaElement.textContent = generateCaptcha();
-                    }
-
-                    document.getElementById('refreshCaptcha').addEventListener('click', refreshCaptcha);
-
-                    loginForm.addEventListener('submit', function (event) {
-                      event.preventDefault();
-                      const email = document.getElementById('email').value;
-                      const password = document.getElementById('password').value;
-                      const captchaInput = document.getElementById('captchaInput').value;
-                      const captcha = document.getElementById('captcha').textContent;
-                      const user = getUserByEmail(email);
-
-                      if (captcha !== captchaInput) {
-                        errorMessage.innerText = 'CAPTCHA is incorrect. Please try again.';
-                        refreshCaptcha();
-                        return;
+                      function generateCaptcha() {
+                          const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                          let captcha = '';
+                          for (let i = 0; i < 5; i++) {
+                              captcha += characters.charAt(Math.floor(Math.random() * characters.length));
+                          }
+                          return captcha;
                       }
 
-                      if (user && user.password === password) {
-                        localStorage.setItem('currentUser', JSON.stringify(user));
-                        window.location.href = 'materisocmed.html';
-                      } else {
-                        errorMessage.innerText = 'Email or password is incorrect.';
+                      function refreshCaptcha() {
+                          const captchaElement = document.getElementById('captcha');
+                          captchaElement.textContent = generateCaptcha();
                       }
-                    });
 
-                    // Data akun pengguna
-                    let users = [
-                      { name: 'Bima Ardianto Pramana', email: 'Bimaardiantopramana@gmail.com', password: 'Ardianto23', branch: 'Kota Madiun', position: 'PIC Digital Marketing', cabang: 'MPM MADIUN' },
-                      { name: 'Kusuma Bagas', email: 'Kusumabagas003@gmail.com', password: 'Kusumabagas919191', branch: 'Kota Madiun', position: 'Admin PIC Medsos MSO Madiun', cabang: 'MPM MADIUN' },
-                      { name: 'Sudibyo', email: 'mpm.madiun1@gmail.com', password: 'Pangsud91', branch: 'Kota Madiun', position: 'PDCA', cabang: 'MPM MADIUN' },
-                      { name: 'Mifta', email: 'mpmngagel.sby@gmail.com', password: 'MPMh0010', branch: 'Kota Surabaya', position: 'PDCA', cabang: 'MPM NGAGEL' },
-                      { name: 'Raisa Jelita', email: 'h0900.mpmmotor.surabaya@gmail.com', password: 'Mst170**', branch: 'Surabaya', position: 'PDCA', cabang: 'MPM Motor Mastrip' },
-                      { name: 'Nindy Ayu Tristami', email: 'mpmbjn@gmail.com', password: 'Mpmbjn!#', branch: 'Kabupaten Bojonegoro', position: 'PIC Socmed', cabang: 'MPM Motor Bojonegoro' },
-                      { name: 'Elna Kurnia Cahya', email: 'Elnaniakurnia24@gmail.com', password: 'Elnani@99', branch: 'Nganjuk', position: 'PIC Socmed', cabang: 'MPM Motor Nganjuk' },
-                      { name: 'ENNY KARTIKANING ADI', email: 'mpmmotorsukun.malang@gmail.com', password: 'Kartikaning80!?', branch: 'Malang', position: 'PDCA', cabang: 'MPM Motor Sukun' },
-                      { name: 'Ferdy Okta Pramanda', email: 'pdca.kediri@gmail.com', password: 'Nop4ssword', branch: 'Kota Kediri', position: 'PDCA', cabang: 'MPM Motor Kediri' },
-                      { name: 'Indirwan Djara', email: 'indirwandjara07@gmail.com', password: 'Iwan123#!', branch: 'Kota Kupang', position: 'PDCA', cabang: 'MPM Motor Kupang' },
-                      { name: 'rudi ona', email: 'mpmpku.official@gmail.com', password: '1@MPMpku', branch: 'Pekanbaru', position: 'PDCA', cabang: 'MPM Motor Pekanbaru' },
-                      { name: 'Hamam Nasrodin', email: 'mpm.bumibungkarno@gmail.com', password: 'Supriad!79', branch: 'Blitar', position: 'PDCA', cabang: 'MPM Motor Blitar' },
-                      { name: 'SILVESTER DIMAS SB', email: 'mpm.basra@gmail.com', password: 'mpmbasr@7173!', branch: 'Kota Malang', position: 'PDCA', cabang: 'MPM Motor Basra' },
-                      { name: 'BAKTI ARI WIJAYA', email: 'MPMMOTOR.LAROS@GMAIL.COM', password: '@jrk?49FLP', branch: 'BANYUWANGI', position: 'PDCA', cabang: 'MPM Motor Banyuwangi' },
-                      { name: 'PRITA AYU GIANING RETNOWATI', email: 'pritaayu92@gmail.com', password: 'Nop4$$word!', branch: 'SURABAYA', position: 'PIC Socmed', cabang: 'MPM Motor Simpang' },
-                      { name: 'DECKY KURNIAWAN', email: 'kurniawan.decky90@gmail.com', password: 'Decky@3190', branch: 'Jombang', position: 'PDCA', cabang: 'MPM Motor Jombang' },
-                      { name: 'Ludfi Riyo', email: 'ludfi.riyo@gmail.com', password: 'Nop4$$word!', branch: 'Malang', position: 'PDCA', cabang: 'MPM Motor Kepanjen' },
-                      { name: 'mpmmotorpare', email: 'admin.pare@mpm-motor.com', password: 'pkbangsa13C!', branch: 'Kediri', position: 'PDCA', cabang: 'MPM Motor Pare' },
-                      { name: 'MUHAMMAD DAVID SULTANSYAH', email: 'davidsultansyah@gmail.com', password: 'mpmlarangan1', branch: 'SIDOARJO', position: 'PDCA', cabang: 'MPM Motor Larangan' },
-                      { name: 'Eko Saputro', email: 'ekoputra1999@gmail.com', password: 'mpmngawi2023', branch: 'Ngawi', position: 'PIC Socmed', cabang: 'MPM Motor Ngawi' },
-                      { name: 'LALU DEDY SISWARI AFRIZAL', email: 'laludedysiswariafrizal@gmail.com', password: '99Lht!@#$', branch: 'Mataram', position: 'PDCA', cabang: 'MPM Motor Mataram' },
-                      { name: 'PULUNG SIWANATA', email: 'pulung.siwanata91@gmail.com', password: 'Mpmb@b@t241!', branch: 'Lamongan', position: 'PDCA', cabang: 'MPM Motor Babat' },
-                      { name: 'Afif Rizka R', email: 'Afif.rizkar@gmail.com', password: 'MpmMotorBondowoso', branch: 'Bondowoso', position: 'PDCA', cabang: 'MPM Motor Bondowoso' },
-                      { name: 'sri desi', email: 'sridesi139@gmail.com', password: 'Sridesi139', branch: 'bogor', position: 'PIC Socmed', cabang: 'MPM Motor Bogor' },
-                      { name: 'NESSIA KRISWANINGYU', email: 'nessyakriswaningyu051194@gmail.com', password: '@MPMmjk19', branch: 'MOJOKERTO', position: 'PIC Socmed', cabang: 'MPM Motor Mojokerto' },
-                      { name: 'Mifta', email: 'mpmngagel.sby@gmail.com', password: 'MPMh0010', branch: 'Kota Surabaya', position: 'PDCA', cabang: 'MPM NGAGEL' },
-                      { name: 'FAHRI SETIAWAN', email: 'fahri.mpmpalu13105@gmail.com', password: 'dua+2=empat', branch: 'Palu', position: 'PDCA', cabang: 'MPM Motor Palu' },
-                      { name: 'DEVARA MARYELLA', email: 'Devaramaryella1@gmail.com', password: 'Devara1*', branch: 'Tuban', position: 'PIC Socmed', cabang: 'MPM Motor Tuban' },
-                      { name: 'Defliza Widayanti', email: 'defliza96@gmail.com', password: 'D3fLiza96W', branch: 'Prabumulih', position: 'PIC Socmed', cabang: 'MPM Motor Prabumulih' },
-                      { name: 'M Rizky HIdayat', email: 'rizkydayat628@gmail.com', password: 'Smandamania@123', branch: 'Lombok Timur', position: 'PDCA', cabang: 'MPM Motor Lotim' },
-                      { name: 'NURUL AINI SIREGAR', email: 'ainisiregar0104@gmail.com', password: '@ini0104', branch: 'KOTA MEDAN', position: 'PIC Socmed', cabang: 'MPM Motor Medan' },
-                      { name: 'Dodi Sujono', email: 'mpmgateway.waru@gmail.com', password: 'mpm@gateway', branch: 'Sidoarjo', position: 'PDCA', cabang: 'MPM Motor Gateway' },
-                      { name: 'Fuj Andayani', email: 'fujiandayani40@gmail.com', password: 'Mpm13436!', branch: 'Pontianak', position: 'PIC Socmed', cabang: 'MPM Motor Pontianak' },
-                      { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
-                      { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
-                      // SALES
-                      { name: ' DEDE MARLINA', email: 'dedechubbii@gmail.com', password: 'Dedempm203', branch: 'Kota Tangerang', position: 'Sales Online', cabang: 'MPM Motor Tangerang' },
-                      { name: 'Wahyu jadmiko', email: 'Wahyujat70@gmail.com', password: 'wahyu12345', branch: 'Nganjuk', position: 'Sales Online', cabang: 'MPM Motor Nganjuk' },
-                      { name: 'Sinta dwi cahyani', email: 'sintacika01@gmail.com', password: 'sinta1', branch: 'Malang', position: 'Sales Online', cabang: 'Kediri' },
-                      { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
-                      // Rapikan code dengan Shift + Alt + F
-                    ];
+                      document.getElementById('refreshCaptcha').addEventListener('click', refreshCaptcha);
 
-                    function getUserByEmail(email) {
-                      return users.find(user => user.email === email);
-                    }
+                      loginForm.addEventListener('submit', function(event) {
+                          event.preventDefault();
+                          const email = document.getElementById('email').value;
+                          const password = document.getElementById('password').value;
+                          const captchaInput = document.getElementById('captchaInput').value;
+                          const captcha = document.getElementById('captcha').textContent;
+                          const user = getUserByEmail(email);
 
-                    // Inisialisasi CAPTCHA saat halaman dimuat
-                    refreshCaptcha();
-                  </script>
+                          if (captcha !== captchaInput) {
+                              errorMessage.innerText = 'CAPTCHA is incorrect. Please try again.';
+                              refreshCaptcha();
+                              return;
+                          }
+
+                          if (user && user.password === password) {
+                              localStorage.setItem('currentUser', JSON.stringify(user));
+                              window.location.href = 'materisocmed.html';
+                          } else {
+                              errorMessage.innerText = 'Email or password is incorrect.';
+                          }
+                      });
+
+                      // Data akun pengguna
+                      let users = [
+                          { name: 'Bima Ardianto Pramana', email: 'Bimaardiantopramana@gmail.com', password: 'Ardianto23', branch: 'Kota Madiun', position: 'PIC Digital Marketing', cabang: 'MPM MADIUN' },
+                                            { name: 'Kusuma Bagas', email: 'Kusumabagas003@gmail.com', password: 'Kusumabagas919191', branch: 'Kota Madiun', position: 'Admin PIC Medsos MSO Madiun', cabang: 'MPM MADIUN' },
+                                            { name: 'Sudibyo', email: 'mpm.madiun1@gmail.com', password: 'Pangsud91', branch: 'Kota Madiun', position: 'PDCA', cabang: 'MPM MADIUN' },
+                                            { name: 'Mifta', email: 'mpmngagel.sby@gmail.com', password: 'MPMh0010', branch: 'Kota Surabaya', position: 'PDCA', cabang: 'MPM NGAGEL' },
+                                            { name: 'Raisa Jelita', email: 'h0900.mpmmotor.surabaya@gmail.com', password: 'Mst170**', branch: 'Surabaya', position: 'PDCA', cabang: 'MPM Motor Mastrip' },
+                                            { name: 'Nindy Ayu Tristami', email: 'mpmbjn@gmail.com', password: 'Mpmbjn!#', branch: 'Kabupaten Bojonegoro', position: 'PIC Socmed', cabang: 'MPM Motor Bojonegoro' },
+                                            { name: 'Elna Kurnia Cahya', email: 'Elnaniakurnia24@gmail.com', password: 'Elnani@99', branch: 'Nganjuk', position: 'PIC Socmed', cabang: 'MPM Motor Nganjuk' },
+                                            { name: 'ENNY KARTIKANING ADI', email: 'mpmmotorsukun.malang@gmail.com', password: 'Kartikaning80!?', branch: 'Malang', position: 'PDCA', cabang: 'MPM Motor Sukun' },
+                                            { name: 'Ferdy Okta Pramanda', email: 'pdca.kediri@gmail.com', password: 'Nop4ssword', branch: 'Kota Kediri', position: 'PDCA', cabang: 'MPM Motor Kediri' },
+                                            { name: 'Indirwan Djara', email: 'indirwandjara07@gmail.com', password: 'Iwan123#!', branch: 'Kota Kupang', position: 'PDCA', cabang: 'MPM Motor Kupang' },
+                                            { name: 'rudi ona', email: 'mpmpku.official@gmail.com', password: '1@MPMpku', branch: 'Pekanbaru', position: 'PDCA', cabang: 'MPM Motor Pekanbaru' },
+                                            { name: 'Hamam Nasrodin', email: 'mpm.bumibungkarno@gmail.com', password: 'Supriad!79', branch: 'Blitar', position: 'PDCA', cabang: 'MPM Motor Blitar' },
+                                            { name: 'SILVESTER DIMAS SB', email: 'mpm.basra@gmail.com', password: 'mpmbasr@7173!', branch: 'Kota Malang', position: 'PDCA', cabang: 'MPM Motor Basra' },
+                                            { name: 'BAKTI ARI WIJAYA', email: 'MPMMOTOR.LAROS@GMAIL.COM', password: '@jrk?49FLP', branch: 'BANYUWANGI', position: 'PDCA', cabang: 'MPM Motor Banyuwangi' },
+                                            { name: 'PRITA AYU GIANING RETNOWATI', email: 'pritaayu92@gmail.com', password: 'Nop4$$word!', branch: 'SURABAYA', position: 'PIC Socmed', cabang: 'MPM Motor Simpang' },
+                                            { name: 'DECKY KURNIAWAN', email: 'kurniawan.decky90@gmail.com', password: 'Decky@3190', branch: 'Jombang', position: 'PDCA', cabang: 'MPM Motor Jombang' },
+                                            { name: 'Ludfi Riyo', email: 'ludfi.riyo@gmail.com', password: 'Nop4$$word!', branch: 'Malang', position: 'PDCA', cabang: 'MPM Motor Kepanjen' },
+                                            { name: 'mpmmotorpare', email: 'admin.pare@mpm-motor.com', password: 'pkbangsa13C!', branch: 'Kediri', position: 'PDCA', cabang: 'MPM Motor Pare' },
+                                            { name: 'MUHAMMAD DAVID SULTANSYAH', email: 'davidsultansyah@gmail.com', password: 'mpmlarangan1', branch: 'SIDOARJO', position: 'PDCA', cabang: 'MPM Motor Larangan' },
+                                            { name: 'Eko Saputro', email: 'ekoputra1999@gmail.com', password: 'mpmngawi2023', branch: 'Ngawi', position: 'PIC Socmed', cabang: 'MPM Motor Ngawi' },
+                                            { name: 'LALU DEDY SISWARI AFRIZAL', email: 'laludedysiswariafrizal@gmail.com', password: '99Lht!@#$', branch: 'Mataram', position: 'PDCA', cabang: 'MPM Motor Mataram' },
+                                            { name: 'PULUNG SIWANATA', email: 'pulung.siwanata91@gmail.com', password: 'Mpmb@b@t241!', branch: 'Lamongan', position: 'PDCA', cabang: 'MPM Motor Babat' },
+                                            { name: 'Afif Rizka R', email: 'Afif.rizkar@gmail.com', password: 'MpmMotorBondowoso', branch: 'Bondowoso', position: 'PDCA', cabang: 'MPM Motor Bondowoso' },
+                                            { name: 'sri desi', email: 'sridesi139@gmail.com', password: 'Sridesi139', branch: 'bogor', position: 'PIC Socmed', cabang: 'MPM Motor Bogor' },
+                                            { name: 'NESSIA KRISWANINGYU', email: 'nessyakriswaningyu051194@gmail.com', password: '@MPMmjk19', branch: 'MOJOKERTO', position: 'PIC Socmed', cabang: 'MPM Motor Mojokerto' },
+                                            { name: 'Mifta', email: 'mpmngagel.sby@gmail.com', password: 'MPMh0010', branch: 'Kota Surabaya', position: 'PDCA', cabang: 'MPM NGAGEL' },
+                                            { name: 'FAHRI SETIAWAN', email: 'fahri.mpmpalu13105@gmail.com', password: 'dua+2=empat', branch: 'Palu', position: 'PDCA', cabang: 'MPM Motor Palu' },
+                                            { name: 'DEVARA MARYELLA', email: 'Devaramaryella1@gmail.com', password: 'Devara1*', branch: 'Tuban', position: 'PIC Socmed', cabang: 'MPM Motor Tuban' },
+                                            { name: 'Defliza Widayanti', email: 'defliza96@gmail.com', password: 'D3fLiza96W', branch: 'Prabumulih', position: 'PIC Socmed', cabang: 'MPM Motor Prabumulih' },
+                                            { name: 'M Rizky HIdayat', email: 'rizkydayat628@gmail.com', password: 'Smandamania@123', branch: 'Lombok Timur', position: 'PDCA', cabang: 'MPM Motor Lotim' },
+                                            { name: 'NURUL AINI SIREGAR', email: 'ainisiregar0104@gmail.com', password: '@ini0104', branch: 'KOTA MEDAN', position: 'PIC Socmed', cabang: 'MPM Motor Medan' },
+                                            { name: 'Dodi Sujono', email: 'mpmgateway.waru@gmail.com', password: 'mpm@gateway', branch: 'Sidoarjo', position: 'PDCA', cabang: 'MPM Motor Gateway' },
+                                            { name: 'Fuj Andayani', email: 'fujiandayani40@gmail.com', password: 'Mpm13436!', branch: 'Pontianak', position: 'PIC Socmed', cabang: 'MPM Motor Pontianak' },
+                                            { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
+                                            // SALES
+                                            { name: ' DEDE MARLINA', email: 'dedechubbii@gmail.com', password: 'Dedempm203', branch: 'Kota Tangerang', position: 'Sales Online', cabang: 'MPM Motor Tangerang' },
+                                            { name: 'Wahyu jadmiko', email: 'Wahyujat70@gmail.com', password: 'wahyu12345', branch: 'Nganjuk', position: 'Sales Online', cabang: 'MPM Motor Nganjuk' },
+                                            { name: 'Sinta dwi cahyani', email: 'sintacika01@gmail.com', password: 'sinta1', branch: 'Malang', position: 'Sales Online', cabang: 'Kediri' },
+                                            { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
+                                            // Rapikan code dengan Shift + Alt + F
+                      ];
+
+                      function getUserByEmail(email) {
+                          return users.find(user => user.email === email);
+                      }
+
+                      // Inisialisasi CAPTCHA saat halaman dimuat
+                      refreshCaptcha();
+                    </script>
+                  </div>
                 </div>
               </div>
             </div>
+            <div class="login-materisocmed-container12"></div>
+            <div class="login-materisocmed-container13">
+              <span class="login-materisocmed-text07">Perhatian!</span>
+              <label for="email" class="login-materisocmed-text08">
+                <span>
+                  Untuk meningkatkan keamanan dan kenyamanan sistem kami,
+                  berikut beberapa aturan yang wajib diikuti saat membuat akun
+                  baru:
+                </span>
+                <br class="login-materisocmed-text10" />
+              </label>
+              <div class="login-materisocmed-container14">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container15">
+                  <label for="email" class="login-materisocmed-text11">
+                    <span>Harap menggunakan</span>
+                    <span class="login-materisocmed-text13">nama lengkap</span>
+                    <span>sesuai identitas resmi Anda.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="login-materisocmed-container16">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon02">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container17">
+                  <label for="email" class="login-materisocmed-text15">
+                    <span>Pastikan menggunakan</span>
+                    <span class="login-materisocmed-text17">
+                      email yang aktif
+                    </span>
+                    <span>dan</span>
+                    <span class="login-materisocmed-text19">valid</span>
+                    <span>.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="login-materisocmed-container18">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon04">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container19">
+                  <label for="email" class="login-materisocmed-text21">
+                    <span>Email ini akan digunakan untuk memberikan</span>
+                    <span class="login-materisocmed-text23">
+                      informasi penting
+                    </span>
+                    <span>lainnya.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="login-materisocmed-container20">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon06">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container21">
+                  <label for="email" class="login-materisocmed-text25">
+                    <span>Gunakan password yang kuat dengan</span>
+                    <span class="login-materisocmed-text27">
+                      minimal 8 karakter
+                    </span>
+                    <span>.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="login-materisocmed-container22">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon08">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container23">
+                  <label for="email" class="login-materisocmed-text29">
+                    <span>Harap</span>
+                    <span class="login-materisocmed-text31">
+                      mencantumkan cabang
+                    </span>
+                    <span>tempat Anda bekerja atau terdaftar.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="login-materisocmed-container24">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon10">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container25">
+                  <label for="email" class="login-materisocmed-text33">
+                    <span>Sebutkan</span>
+                    <span class="login-materisocmed-text35">jabatan Anda</span>
+                    <span>dengan jelas dan benar.</span>
+                  </label>
+                </div>
+              </div>
+              <div class="login-materisocmed-container26">
+                <a href="materisocmed.html" class="login-materisocmed-navlink1">
+                  <p class="login-materisocmed-text37">Sudah pernah login</p>
+                </a>
+              </div>
+            </div>
           </div>
-          <div class="login-materisocmed-container12"></div>
-          <div class="login-materisocmed-container13">
-            <span class="login-materisocmed-text07">Perhatian!</span>
-            <label for="email" class="login-materisocmed-text08">
-              <span>
-                Untuk meningkatkan keamanan dan kenyamanan sistem kami,
-                berikut beberapa aturan yang wajib diikuti saat membuat akun
-                baru:
-              </span>
-              <br class="login-materisocmed-text10" />
-            </label>
-            <div class="login-materisocmed-container14">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container15">
-                <label for="email" class="login-materisocmed-text11">
-                  <span>Harap menggunakan</span>
-                  <span class="login-materisocmed-text13">nama lengkap</span>
-                  <span>sesuai identitas resmi Anda.</span>
-                </label>
-              </div>
+          <div id="register" class="login-materisocmed-container27 content">
+            <div class="login-materisocmed-container28">
+              <img
+                alt="login"
+                src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/OIG3.OiyeMlc2W.jpeg?updatedAt=1716129982153"
+                loading="lazy"
+                class="login-materisocmed-image1"
+              />
+              <form
+                id="register1"
+                name="registeraccount"
+                action="sukses-registrasi"
+                method="POST"
+                data-netlify="true"
+                class="login-materisocmed-form1"
+              >
+                <span class="login-materisocmed-text38">Register</span>
+                <div class="login-materisocmed-container29">
+                  <label for="email" class="login-materisocmed-text39">
+                    Nama Lengkap*
+                  </label>
+                  <input
+                    type="text"
+                    id="nama-lengkap"
+                    name="nama-lengkap"
+                    required="true"
+                    placeholder="Nama Lengkap"
+                    class="login-materisocmed-textinput3"
+                  />
+                  <label for="email" class="login-materisocmed-text40">
+                    Email*
+                  </label>
+                  <input
+                    type="email"
+                    id="buat-email"
+                    name="buat-email"
+                    required="true"
+                    placeholder="Email"
+                    class="login-materisocmed-textinput4"
+                  />
+                  <label for="password" class="login-materisocmed-text41">
+                    Buat Password*
+                  </label>
+                  <input
+                    type="password"
+                    id="buat-password"
+                    name="buat-password"
+                    required="true"
+                    placeholder="Buat Password"
+                    class="login-materisocmed-textinput5"
+                  />
+                  <label for="password" class="login-materisocmed-text42">
+                    Kota Domisili*
+                  </label>
+                  <input
+                    type="text"
+                    id="kota"
+                    name="kota"
+                    required="true"
+                    placeholder="Kota Domisili"
+                    class="login-materisocmed-textinput6"
+                  />
+                  <label for="password" class="login-materisocmed-text43">
+                    Jabatan*
+                  </label>
+                  <input
+                    type="text"
+                    id="jabatan"
+                    name="jabatan"
+                    required="true"
+                    placeholder="Jabatan"
+                    class="login-materisocmed-textinput7"
+                  />
+                  <label for="password" class="login-materisocmed-text44">
+                    Cabang*
+                  </label>
+                  <input
+                    type="text"
+                    id="cabang"
+                    name="cabang"
+                    required="true"
+                    placeholder="Cabang"
+                    class="login-materisocmed-textinput8"
+                  />
+                </div>
+                <button type="submit" class="login-materisocmed-button2">
+                  Buat Akun
+                </button>
+              </form>
+              <label
+                id="signMenu"
+                for="captchaInput"
+                href="#"
+                class="login-materisocmed-text45"
+              >
+                Sudah punya akun?
+              </label>
             </div>
-            <div class="login-materisocmed-container16">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon02">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container17">
-                <label for="email" class="login-materisocmed-text15">
-                  <span>Pastikan menggunakan</span>
-                  <span class="login-materisocmed-text17">
-                    email yang aktif
-                  </span>
-                  <span>dan</span>
-                  <span class="login-materisocmed-text19">valid</span>
-                  <span>.</span>
-                </label>
+            <div class="login-materisocmed-container30"></div>
+            <div class="login-materisocmed-container31">
+              <span class="login-materisocmed-text46">Tata cara register</span>
+              <label for="email" class="login-materisocmed-text47">
+                <span>
+                  Untuk optimasi kita memerlukan data anda, seperti contoh di
+                  bawah ini.
+                </span>
+                <br class="login-materisocmed-text49" />
+              </label>
+              <div class="login-materisocmed-container32">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon12">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container33">
+                  <label for="email" class="login-materisocmed-text50">
+                    <span>Harap menggunakan</span>
+                    <span class="login-materisocmed-text52">nama lengkap</span>
+                    <span>sesuai identitas resmi Anda.</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="login-materisocmed-container18">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon04">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container19">
-                <label for="email" class="login-materisocmed-text21">
-                  <span>Email ini akan digunakan untuk memberikan</span>
-                  <span class="login-materisocmed-text23">
-                    informasi penting
-                  </span>
-                  <span>lainnya.</span>
-                </label>
+              <div class="login-materisocmed-container34">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon14">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container35">
+                  <label for="email" class="login-materisocmed-text54">
+                    <span>Pastikan menggunakan</span>
+                    <span class="login-materisocmed-text56">
+                      email yang aktif
+                    </span>
+                    <span>dan</span>
+                    <span class="login-materisocmed-text58">valid</span>
+                    <span>. **Contoh : Bimaardiantopramana@gmail.com</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="login-materisocmed-container20">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon06">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container21">
-                <label for="email" class="login-materisocmed-text25">
-                  <span>Gunakan password yang kuat dengan</span>
-                  <span class="login-materisocmed-text27">
-                    minimal 8 karakter
-                  </span>
-                  <span>.</span>
-                </label>
+              <div class="login-materisocmed-container36">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon16">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container37">
+                  <label for="email" class="login-materisocmed-text60">
+                    <span>Gunakan password yang kuat dengan</span>
+                    <span class="login-materisocmed-text62">
+                      minimal 8 karakter
+                    </span>
+                    <span>. **Contoh Asp3r889!</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="login-materisocmed-container22">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon08">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container23">
-                <label for="email" class="login-materisocmed-text29">
-                  <span>Harap</span>
-                  <span class="login-materisocmed-text31">
-                    mencantumkan cabang
-                  </span>
-                  <span>tempat Anda bekerja atau terdaftar.</span>
-                </label>
+              <div class="login-materisocmed-container38">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon18">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container39">
+                  <label for="email" class="login-materisocmed-text64">
+                    <span>Kota Domisili,</span>
+                    <span class="login-materisocmed-text66">
+                      tempat tinggal anda sekarang
+                    </span>
+                    <span>. **Contoh Kota Surabaya</span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="login-materisocmed-container24">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon10">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container25">
-                <label for="email" class="login-materisocmed-text33">
-                  <span>Sebutkan</span>
-                  <span class="login-materisocmed-text35">jabatan Anda</span>
-                  <span>dengan jelas dan benar.</span>
-                </label>
+              <div class="login-materisocmed-container40">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon20">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container41">
+                  <label for="email" class="login-materisocmed-text68">
+                    <span>Harap</span>
+                    <span class="login-materisocmed-text70">
+                      mencantumkan cabang
+                    </span>
+                    <span>
+                      tempat Anda bekerja atau terdaftar. **Contoh MPM Motor
+                      Simpang
+                    </span>
+                  </label>
+                </div>
               </div>
-            </div>
-            <div class="login-materisocmed-container26">
-              <a href="materisocmed.html" class="login-materisocmed-navlink1">
-                <p class="login-materisocmed-text37">Sudah pernah login</p>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div id="register" class="login-materisocmed-container27 content">
-          <div class="login-materisocmed-container28">
-            <img alt="login"
-              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/OIG3.OiyeMlc2W.jpeg?updatedAt=1716129982153"
-              loading="lazy" class="login-materisocmed-image1" />
-            <form id="register1" name="registeraccount" action="sukses-registrasi" method="POST" data-netlify="true"
-              class="login-materisocmed-form1">
-              <span class="login-materisocmed-text38">Register</span>
-              <div class="login-materisocmed-container29">
-                <label for="email" class="login-materisocmed-text39">
-                  Nama Lengkap*
-                </label>
-                <input type="text" id="nama-lengkap" name="nama-lengkap" required="true" placeholder="Nama Lengkap"
-                  class="login-materisocmed-textinput3" />
-                <label for="email" class="login-materisocmed-text40">
-                  Email*
-                </label>
-                <input type="email" id="buat-email" name="buat-email" required="true" placeholder="Email"
-                  class="login-materisocmed-textinput4" />
-                <label for="password" class="login-materisocmed-text41">
-                  Buat Password*
-                </label>
-                <input type="password" id="buat-password" name="buat-password" required="true"
-                  placeholder="Buat Password" class="login-materisocmed-textinput5" />
-                <label for="password" class="login-materisocmed-text42">
-                  Kota Domisili*
-                </label>
-                <input type="text" id="kota" name="kota" required="true" placeholder="Kota Domisili"
-                  class="login-materisocmed-textinput6" />
-                <label for="password" class="login-materisocmed-text43">
-                  Jabatan*
-                </label>
-                <input type="text" id="jabatan" name="jabatan" required="true" placeholder="Jabatan"
-                  class="login-materisocmed-textinput7" />
-                <label for="password" class="login-materisocmed-text44">
-                  Cabang*
-                </label>
-                <input type="text" id="cabang" name="cabang" required="true" placeholder="Cabang"
-                  class="login-materisocmed-textinput8" />
+              <div class="login-materisocmed-container42">
+                <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon22">
+                  <path
+                    d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z"
+                  ></path>
+                </svg>
+                <div class="login-materisocmed-container43">
+                  <label for="email" class="login-materisocmed-text72">
+                    <span>Sebutkan</span>
+                    <span class="login-materisocmed-text74">jabatan Anda</span>
+                    <span>
+                      dengan jelas dan benar. **Contoh Admin PIC Socmed MPM
+                      Motor Simpang
+                    </span>
+                  </label>
+                </div>
               </div>
-              <button type="submit" class="login-materisocmed-button2">
-                Buat Akun
+              <button type="button" class="login-materisocmed-button3">
+                Password harap di simpan!
               </button>
-            </form>
-            <label id="signMenu" for="captchaInput" href="#" class="login-materisocmed-text45">
-              Sudah punya akun?
-            </label>
-          </div>
-          <div class="login-materisocmed-container30"></div>
-          <div class="login-materisocmed-container31">
-            <span class="login-materisocmed-text46">Tata cara register</span>
-            <label for="email" class="login-materisocmed-text47">
-              <span>
-                Untuk optimasi kita memerlukan data anda, seperti contoh di
-                bawah ini.
-              </span>
-              <br class="login-materisocmed-text49" />
-            </label>
-            <div class="login-materisocmed-container32">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon12">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container33">
-                <label for="email" class="login-materisocmed-text50">
-                  <span>Harap menggunakan</span>
-                  <span class="login-materisocmed-text52">nama lengkap</span>
-                  <span>sesuai identitas resmi Anda.</span>
-                </label>
-              </div>
             </div>
-            <div class="login-materisocmed-container34">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon14">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container35">
-                <label for="email" class="login-materisocmed-text54">
-                  <span>Pastikan menggunakan</span>
-                  <span class="login-materisocmed-text56">
-                    email yang aktif
-                  </span>
-                  <span>dan</span>
-                  <span class="login-materisocmed-text58">valid</span>
-                  <span>. **Contoh : Bimaardiantopramana@gmail.com</span>
-                </label>
-              </div>
-            </div>
-            <div class="login-materisocmed-container36">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon16">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container37">
-                <label for="email" class="login-materisocmed-text60">
-                  <span>Gunakan password yang kuat dengan</span>
-                  <span class="login-materisocmed-text62">
-                    minimal 8 karakter
-                  </span>
-                  <span>. **Contoh Asp3r889!</span>
-                </label>
-              </div>
-            </div>
-            <div class="login-materisocmed-container38">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon18">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container39">
-                <label for="email" class="login-materisocmed-text64">
-                  <span>Kota Domisili,</span>
-                  <span class="login-materisocmed-text66">
-                    tempat tinggal anda sekarang
-                  </span>
-                  <span>. **Contoh Kota Surabaya</span>
-                </label>
-              </div>
-            </div>
-            <div class="login-materisocmed-container40">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon20">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container41">
-                <label for="email" class="login-materisocmed-text68">
-                  <span>Harap</span>
-                  <span class="login-materisocmed-text70">
-                    mencantumkan cabang
-                  </span>
-                  <span>
-                    tempat Anda bekerja atau terdaftar. **Contoh MPM Motor
-                    Simpang
-                  </span>
-                </label>
-              </div>
-            </div>
-            <div class="login-materisocmed-container42">
-              <svg viewBox="0 0 1024 1024" class="login-materisocmed-icon22">
-                <path
-                  d="M660 874l-148-148 60-60 88 88 218-220 60 60zM470 512q-70 0-121-50t-51-120 51-121 121-51 120 51 50 121-50 120-120 50zM384 726l128 128h-384v-86q0-76 117-123t225-47q30 0 42 2z">
-                </path>
-              </svg>
-              <div class="login-materisocmed-container43">
-                <label for="email" class="login-materisocmed-text72">
-                  <span>Sebutkan</span>
-                  <span class="login-materisocmed-text74">jabatan Anda</span>
-                  <span>
-                    dengan jelas dan benar. **Contoh Admin PIC Socmed MPM
-                    Motor Simpang
-                  </span>
-                </label>
-              </div>
-            </div>
-            <button type="button" class="login-materisocmed-button3">
-              Password harap di simpan!
-            </button>
           </div>
         </div>
-      </div>
-      <div class="login-materisocmed-container44"></div>
-      <div>
-        <div class="login-materisocmed-container46">
-          <script>
-            document.getElementById('registerMenu').addEventListener('click', function () {
-              showContent('register');
-            });
+        <div class="login-materisocmed-container44"></div>
+        <div>
+          <div class="login-materisocmed-container46">
+            <script>
+              document.getElementById('registerMenu').addEventListener('click', function() {
+                  showContent('register');
+              });
 
-            document.getElementById('signMenu').addEventListener('click', function () {
-              showContent('sign');
-            });
+              document.getElementById('signMenu').addEventListener('click', function() {
+                  showContent('sign');
+              });
 
-            document.getElementById('toggleMenu').addEventListener('click', function () {
-              const menuList = document.getElementById('menuList');
-              if (menuList.style.display === 'none' || menuList.style.display === '') {
-                menuList.style.display = 'flex';
-              } else {
-                menuList.style.display = 'none';
+              document.getElementById('toggleMenu').addEventListener('click', function() {
+                  const menuList = document.getElementById('menuList');
+                  if (menuList.style.display === 'none' || menuList.style.display === '') {
+                      menuList.style.display = 'flex';
+                  } else {
+                      menuList.style.display = 'none';
+                  }
+              });
+
+              function showContent(contentId) {
+                  document.getElementById('register').style.display = 'none';
+                  document.getElementById('sign').style.display = 'none';
+
+                  document.getElementById(contentId).style.display = 'block';
               }
-            });
-
-            function showContent(contentId) {
-              document.getElementById('register').style.display = 'none';
-              document.getElementById('sign').style.display = 'none';
-
-              document.getElementById(contentId).style.display = 'block';
-            }
-          </script>
+            </script>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <script type="text/javascript" src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H" async=""></script>
-  <script type="text/javascript">
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
-    gtag('config', 'G-ZHMFRWD45H');
-  </script>
-  <script type="text/javascript">
-    (function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-PRJDS8CS');
-  </script>
-  <script async="" src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag() { dataLayer.push(arguments); }
-    gtag('js', new Date());
+    <script
+      type="text/javascript"
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H"
+      async=""
+    ></script>
+    <script type="text/javascript">
+      window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-ZHMFRWD45H');
+    </script>
+    <script type="text/javascript">
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+              new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+              j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+              'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+              })(window,document,'script','dataLayer','GTM-PRJDS8CS');
+    </script>
+    <script
+      async=""
+      src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H"
+    ></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'G-ZHMFRWD45H');
-  </script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-  <script>
-    AOS.init({
-      duration: 1000
-    });
-  </script>
-  <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core="" defer=""></script>
-  <script>
-    const openBtn = document.getElementById("btnGithub");
-    const closeBtn = document.getElementById("closeGithub");
-    const modal = document.getElementById("modalGithub")
-
-    openBtn.addEventListener("click", () => {
-      modal.classList.add("open");
-    });
-
-    closeBtn.addEventListener("click", () => {
-      modal.classList.add("open");
-    });
-  </script>
-  <script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer=""></script>
-  <script>
-    window.OneSignalDeferred = window.OneSignalDeferred || [];
-    OneSignalDeferred.push(function (OneSignal) {
-      OneSignal.init({
-        appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+      gtag('config', 'G-ZHMFRWD45H');
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script>
+      AOS.init({
+        duration: 1000
       });
-    });
-  </script>
-  <script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script>
-  <script defer="" src="https://unpkg.com/@teleporthq/teleport-custom-scripts"></script>
-  <script defer="" src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"></script>
-</body>
+    </script>
+    <script
+      src="https://static.elfsight.com/platform/platform.js"
+      data-use-service-core=""
+      defer=""
+    ></script>
+    <script>
+      const openBtn = document.getElementById("btnGithub");
+      const closeBtn = document.getElementById("closeGithub");
+      const modal = document.getElementById("modalGithub")
 
+      openBtn.addEventListener("click", () => {
+      modal.classList.add("open");
+      });
+
+      closeBtn.addEventListener("click", () => {
+      modal.classList.add("open");
+      });
+    </script>
+    <script
+      src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+      defer=""
+    ></script>
+    <script>
+      window.OneSignalDeferred = window.OneSignalDeferred || [];
+      OneSignalDeferred.push(function(OneSignal) {
+        OneSignal.init({
+          appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+        });
+      });
+    </script>
+    <script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script
+      defer=""
+      src="https://unpkg.com/@teleporthq/react-components/dist/animate-on-reveal.umd.js"
+    ></script>
+  </body>
 </html>
