@@ -421,6 +421,38 @@
 
       <div class="materisocmed-container">
         <div class="materisocmed-container001">
+          <div id="cursor1" class="materisocmed-container002">
+            <h2 class="materisocmed-title">Ini adalah menu dashboard</h2>
+            <button
+              type="button"
+              onclick="closeBanner('cursor1')"
+              aria-label="Close"
+              class="materisocmed-close-button"
+            >
+              <svg
+                viewBox="0 0 804.5714285714286 1024"
+                class="materisocmed-icon"
+              >
+                <path
+                  d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                ></path>
+              </svg>
+            </button>
+            <div>
+              <div class="materisocmed-container004">
+                <script>
+                  function showBanners() {
+                      document.getElementById('cursor1').style.display = 'block';
+                  }
+
+                  function closeBanner(bannerId) {
+                      var banner = document.getElementById(bannerId);
+                      banner.style.display = 'none';
+                  }
+                </script>
+              </div>
+            </div>
+          </div>
           <div
             id="popup3"
             class="popupcomers-container popupcomers-root-class-name1"
@@ -589,8 +621,8 @@
               </div>
             </div>
           </div>
-          <div id="toggleMenu" class="materisocmed-container002">
-            <svg viewBox="0 0 1024 1024" class="materisocmed-icon">
+          <div id="toggleMenu" class="materisocmed-container005">
+            <svg viewBox="0 0 1024 1024" class="materisocmed-icon02">
               <path
                 d="M810.667 768c23.467 0 42.667 19.2 42.667 42.667s-19.2 42.667-42.667 42.667h-597.333c-23.467 0-42.667-19.2-42.667-42.667s19.2-42.667 42.667-42.667h597.333M810.667 682.667h-597.333c-70.571 0-128 57.429-128 128s57.429 128 128 128h597.333c70.571 0 128-57.429 128-128s-57.429-128-128-128z"
               ></path>
@@ -602,27 +634,27 @@
               ></path>
             </svg>
           </div>
-          <nav id="menuList" class="materisocmed-container003">
-            <div id="dashboardMenu" href="#" class="materisocmed-container004">
-              <svg viewBox="0 0 1024 1024" class="materisocmed-icon04">
+          <nav id="menuList" class="materisocmed-container006">
+            <div id="dashboardMenu" href="#" class="materisocmed-container007">
+              <svg viewBox="0 0 1024 1024" class="materisocmed-icon06">
                 <path
                   d="M554 128h342v256h-342v-256zM554 896v-426h342v426h-342zM128 896v-256h342v256h-342zM128 554v-426h342v426h-342z"
                 ></path>
               </svg>
               <span class="materisocmed-text">Dashboard</span>
             </div>
-            <div id="tipsMenu" href="#" class="materisocmed-container005">
-              <svg viewBox="0 0 1024 1024" class="materisocmed-icon06">
+            <div id="tipsMenu" href="#" class="materisocmed-container008">
+              <svg viewBox="0 0 1024 1024" class="materisocmed-icon08">
                 <path
                   d="M512 86q124 0 211 87t87 211q0 150-128 244v98q0 18-12 30t-30 12h-256q-18 0-30-12t-12-30v-98q-128-88-128-244 0-124 87-211t211-87zM384 896v-42h256v42q0 18-12 30t-30 12h-172q-18 0-30-12t-12-30z"
                 ></path>
               </svg>
               <span class="materisocmed-text01">Tips</span>
             </div>
-            <div id="profileMenu" href="#" class="materisocmed-container006">
+            <div id="profileMenu" href="#" class="materisocmed-container009">
               <svg
                 viewBox="0 0 731.4285714285713 1024"
-                class="materisocmed-icon08"
+                class="materisocmed-icon10"
               >
                 <path
                   d="M731.429 799.429c0 83.429-54.857 151.429-121.714 151.429h-488c-66.857 0-121.714-68-121.714-151.429 0-150.286 37.143-324 186.857-324 46.286 45.143 109.143 73.143 178.857 73.143s132.571-28 178.857-73.143c149.714 0 186.857 173.714 186.857 324zM585.143 292.571c0 121.143-98.286 219.429-219.429 219.429s-219.429-98.286-219.429-219.429 98.286-219.429 219.429-219.429 219.429 98.286 219.429 219.429z"
@@ -630,7 +662,7 @@
               </svg>
               <span class="materisocmed-text02">Profile</span>
             </div>
-            <div class="materisocmed-container007">
+            <div class="materisocmed-container010">
               <span class="materisocmed-text03">Help!</span>
               <span id="dog" class="materisocmed-text04">Hi!</span>
               <img
@@ -646,7 +678,7 @@
                 class="materisocmed-image01"
               />
               <div>
-                <div class="materisocmed-container009">
+                <div class="materisocmed-container012">
                   <script>
                     const words = ['Hi...!!', 'Kamu sedang bekerja?', 'Semangat ya..', 'Saya disini menemanimu', 'Tapi aku bisa menggigitmu :)'];
                     let index = 0;
@@ -689,19 +721,19 @@
               </div>
             </div>
           </nav>
-          <div class="materisocmed-container010">
-            <div class="materisocmed-container011">
-              <div class="materisocmed-container012">
+          <div class="materisocmed-container013">
+            <div class="materisocmed-container014">
+              <div class="materisocmed-container015">
                 <span id="userName0" class="materisocmed-text05">user</span>
                 <svg
                   viewBox="0 0 731.4285714285713 1024"
-                  class="materisocmed-icon10"
+                  class="materisocmed-icon12"
                 >
                   <path
                     d="M731.429 799.429c0 83.429-54.857 151.429-121.714 151.429h-488c-66.857 0-121.714-68-121.714-151.429 0-150.286 37.143-324 186.857-324 46.286 45.143 109.143 73.143 178.857 73.143s132.571-28 178.857-73.143c149.714 0 186.857 173.714 186.857 324zM585.143 292.571c0 121.143-98.286 219.429-219.429 219.429s-219.429-98.286-219.429-219.429 98.286-219.429 219.429-219.429 219.429 98.286 219.429 219.429z"
                   ></path>
                 </svg>
-                <div class="materisocmed-container013">
+                <div class="materisocmed-container016">
                   <lottie-player
                     src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/New%20Lottie.json?updatedAt=1716216429583"
                     loop="true"
@@ -719,11 +751,11 @@
                 </div>
               </div>
             </div>
-            <div id="dashboard" class="materisocmed-container014 content">
-              <div class="materisocmed-container015">
-                <div class="materisocmed-container016">
-                  <div class="materisocmed-container017">
-                    <div class="materisocmed-container018">
+            <div id="dashboard" class="materisocmed-container017 content">
+              <div class="materisocmed-container018">
+                <div class="materisocmed-container019">
+                  <div class="materisocmed-container020">
+                    <div class="materisocmed-container021">
                       <lottie-player
                         src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Animation%20-%201713497405619.json?updatedAt=1713497661324"
                         loop="true"
@@ -747,8 +779,8 @@
                       Lihat -&gt;
                     </span>
                   </div>
-                  <div class="materisocmed-container019">
-                    <div class="materisocmed-container020"></div>
+                  <div class="materisocmed-container022">
+                    <div class="materisocmed-container023"></div>
                     <span class="materisocmed-text09">Tools</span>
                     <span class="materisocmed-text10">
                       Tools Converter - QR Generate
@@ -757,13 +789,13 @@
                       Lihat -&gt;
                     </a>
                   </div>
-                  <div class="materisocmed-container021">
-                    <div class="materisocmed-container022"></div>
+                  <div class="materisocmed-container024">
+                    <div class="materisocmed-container025"></div>
                     <span class="materisocmed-text11">Update Sales Online</span>
                     <span class="materisocmed-text12">Update Sales Online</span>
-                    <div class="materisocmed-container023">
+                    <div class="materisocmed-container026">
                       <div>
-                        <div class="materisocmed-container025">
+                        <div class="materisocmed-container028">
                           <script>
                             function openPopup() {
                                 const url = 'https://docs.google.com/forms/d/e/1FAIpQLSfIZ5dxcoopkdbcRYtomx8loztN9Y03eEi7_psQjzKBk73W1A/viewform';
@@ -782,13 +814,13 @@
                   </div>
                 </div>
               </div>
-              <div class="materisocmed-container026">
+              <div class="materisocmed-container029">
                 <span id="welcomeText" class="materisocmed-text14">
                   Materi socmed
                 </span>
               </div>
-              <div class="materisocmed-container027">
-                <div class="materisocmed-container028">
+              <div class="materisocmed-container030">
+                <div class="materisocmed-container031">
                   <div class="materisocmed-week1">
                     <img
                       alt="Week1"
@@ -796,7 +828,7 @@
                       loading="lazy"
                       class="materisocmed-image03"
                     />
-                    <div class="materisocmed-container029">
+                    <div class="materisocmed-container032">
                       <h2 class="materisocmed-text15">Minggu 1</h2>
                       <span class="materisocmed-text16">
                         Di posting semua di social media dealer
@@ -813,7 +845,7 @@
                       loading="lazy"
                       class="materisocmed-image04"
                     />
-                    <div class="materisocmed-container030">
+                    <div class="materisocmed-container033">
                       <h2 class="materisocmed-text18">Minggu 2</h2>
                       <span class="materisocmed-text19">
                         Di posting semua di social media dealer
@@ -824,7 +856,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="materisocmed-container031">
+                <div class="materisocmed-container034">
                   <div class="materisocmed-week12">
                     <img
                       alt="Week1"
@@ -832,7 +864,7 @@
                       loading="lazy"
                       class="materisocmed-image05"
                     />
-                    <div class="materisocmed-container032">
+                    <div class="materisocmed-container035">
                       <h2 class="materisocmed-text21">Minggu 3</h2>
                       <span class="materisocmed-text22">
                         Di posting semua di social media dealer
@@ -849,7 +881,7 @@
                       loading="lazy"
                       class="materisocmed-image06"
                     />
-                    <div class="materisocmed-container033">
+                    <div class="materisocmed-container036">
                       <h2 class="materisocmed-text24">Minggu 4</h2>
                       <span class="materisocmed-text25">
                         Di posting semua di social media dealer
@@ -861,13 +893,13 @@
                   </div>
                 </div>
               </div>
-              <div class="materisocmed-container034">
+              <div class="materisocmed-container037">
                 <span id="welcomeText" class="materisocmed-text27">
                   Form Report &amp; Jadwal
                 </span>
               </div>
-              <div class="materisocmed-container035">
-                <div class="materisocmed-container036">
+              <div class="materisocmed-container038">
+                <div class="materisocmed-container039">
                   <div class="materisocmed-week14">
                     <img
                       alt="Week1"
@@ -875,7 +907,7 @@
                       loading="lazy"
                       class="materisocmed-image07"
                     />
-                    <div class="materisocmed-container037">
+                    <div class="materisocmed-container040">
                       <h2 class="materisocmed-text28">
                         Jadwal posting socmed cabang
                       </h2>
@@ -899,7 +931,7 @@
                       loading="lazy"
                       class="materisocmed-image08"
                     />
-                    <div class="materisocmed-container038">
+                    <div class="materisocmed-container041">
                       <h2 class="materisocmed-text30">Form sales online</h2>
                       <span class="materisocmed-text31">
                         Untuk di update bulan Mei 2024
@@ -1040,10 +1072,10 @@
                 </div>
               </div>
             </div>
-            <div id="tools" class="materisocmed-container039 content">
-              <div class="materisocmed-container040">
-                <div class="materisocmed-container041">
-                  <div class="materisocmed-container042">
+            <div id="tools" class="materisocmed-container042 content">
+              <div class="materisocmed-container043">
+                <div class="materisocmed-container044">
+                  <div class="materisocmed-container045">
                     <span id="accordion1-btn" class="materisocmed-text32">
                       Generate QR Code
                     </span>
@@ -1054,7 +1086,7 @@
                       <label class="materisocmed-text34">
                         Dapat berupa link, text, nomor, password dan catatan
                       </label>
-                      <div class="materisocmed-container043">
+                      <div class="materisocmed-container046">
                         <input
                           type="text"
                           id="text"
@@ -1071,7 +1103,7 @@
                         </button>
                       </div>
                     </form>
-                    <div id="qrcode" class="materisocmed-container044"></div>
+                    <div id="qrcode" class="materisocmed-container047"></div>
                     <button
                       id="downloadButton"
                       type="button"
@@ -1081,9 +1113,9 @@
                     >
                       Download QR
                     </button>
-                    <div class="materisocmed-container045"></div>
+                    <div class="materisocmed-container048"></div>
                     <div>
-                      <div class="materisocmed-container047">
+                      <div class="materisocmed-container050">
                         <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
                         <script>
                           function generateQRCode() {
@@ -1117,7 +1149,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="materisocmed-container048">
+                  <div class="materisocmed-container051">
                     <span id="accordion1-btn" class="materisocmed-text35">
                       Image Downloader HD+
                     </span>
@@ -1131,7 +1163,7 @@
                       <label class="materisocmed-text37">
                         Format, PNG, Webp, Jpg, Gif
                       </label>
-                      <div class="materisocmed-container049">
+                      <div class="materisocmed-container052">
                         <input
                           type="text"
                           id="imageUrl"
@@ -1170,9 +1202,9 @@
                         </button>
                       </div>
                     </form>
-                    <div class="materisocmed-container050"></div>
+                    <div class="materisocmed-container053"></div>
                     <div>
-                      <div class="materisocmed-container052">
+                      <div class="materisocmed-container055">
                         <script>
                           function downloadImage(event) {
                             event.preventDefault(); // Prevent form submission
@@ -1347,10 +1379,10 @@
                 </div>
               </div>
             </div>
-            <div id="statistik" class="materisocmed-container053 content">
-              <div class="materisocmed-container054">
-                <div class="materisocmed-container055">
-                  <div class="materisocmed-container056">
+            <div id="statistik" class="materisocmed-container056 content">
+              <div class="materisocmed-container057">
+                <div class="materisocmed-container058">
+                  <div class="materisocmed-container059">
                     <iframe
                       width="100%"
                       height="1000"
@@ -1487,15 +1519,15 @@
                 </div>
               </div>
             </div>
-            <div id="tips" class="materisocmed-container057 content">
-              <div class="materisocmed-container058">
-                <div class="materisocmed-container059">
-                  <div class="materisocmed-container060">
-                    <div class="materisocmed-container061"></div>
-                    <div class="materisocmed-container062">
-                      <div class="materisocmed-container063">
-                        <div class="materisocmed-container064">
-                          <div class="materisocmed-container065">
+            <div id="tips" class="materisocmed-container060 content">
+              <div class="materisocmed-container061">
+                <div class="materisocmed-container062">
+                  <div class="materisocmed-container063">
+                    <div class="materisocmed-container064"></div>
+                    <div class="materisocmed-container065">
+                      <div class="materisocmed-container066">
+                        <div class="materisocmed-container067">
+                          <div class="materisocmed-container068">
                             <span class="materisocmed-text38">
                               <span>Cara set iklan dari</span>
                               <span class="materisocmed-text40">
@@ -1513,9 +1545,9 @@
                       </a>
                     </div>
                   </div>
-                  <div class="materisocmed-container066">
-                    <div class="materisocmed-container067"></div>
-                    <div class="materisocmed-container068">
+                  <div class="materisocmed-container069">
+                    <div class="materisocmed-container070"></div>
+                    <div class="materisocmed-container071">
                       <span class="materisocmed-text41">
                         <span>Cara cetak bukti</span>
                         <span class="materisocmed-text43">TOP UP</span>
@@ -1530,10 +1562,10 @@
                     </div>
                   </div>
                 </div>
-                <div class="materisocmed-container069">
-                  <div class="materisocmed-container070">
-                    <div class="materisocmed-container071"></div>
-                    <div class="materisocmed-container072">
+                <div class="materisocmed-container072">
+                  <div class="materisocmed-container073">
+                    <div class="materisocmed-container074"></div>
+                    <div class="materisocmed-container075">
                       <span class="materisocmed-text45">
                         <span>Capture Analisis</span>
                         <span class="materisocmed-text47">
@@ -1549,10 +1581,10 @@
                       </a>
                     </div>
                   </div>
-                  <div class="materisocmed-container073">
-                    <div class="materisocmed-container074"></div>
-                    <div class="materisocmed-container075">
-                      <div class="materisocmed-container076">
+                  <div class="materisocmed-container076">
+                    <div class="materisocmed-container077"></div>
+                    <div class="materisocmed-container078">
+                      <div class="materisocmed-container079">
                         <span class="materisocmed-text49">
                           Tidak tersedia..
                         </span>
@@ -1561,18 +1593,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="materisocmed-container077">
-                  <div class="materisocmed-container078">
-                    <div class="materisocmed-container079"></div>
-                    <div class="materisocmed-container080">
+                <div class="materisocmed-container080">
+                  <div class="materisocmed-container081">
+                    <div class="materisocmed-container082"></div>
+                    <div class="materisocmed-container083">
                       <span class="materisocmed-text50">Tidak tersedia..</span>
                       <a href="**" class="materisocmed-navlink5">Lihat -&gt;</a>
                     </div>
                   </div>
-                  <div class="materisocmed-container081">
-                    <div class="materisocmed-container082"></div>
-                    <div class="materisocmed-container083">
-                      <div class="materisocmed-container084">
+                  <div class="materisocmed-container084">
+                    <div class="materisocmed-container085"></div>
+                    <div class="materisocmed-container086">
+                      <div class="materisocmed-container087">
                         <span class="materisocmed-text51">
                           Tidak tersedia..
                         </span>
@@ -1581,18 +1613,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="materisocmed-container085">
-                  <div class="materisocmed-container086">
-                    <div class="materisocmed-container087"></div>
-                    <div class="materisocmed-container088">
+                <div class="materisocmed-container088">
+                  <div class="materisocmed-container089">
+                    <div class="materisocmed-container090"></div>
+                    <div class="materisocmed-container091">
                       <span class="materisocmed-text52">Tidak tersedia..</span>
                       <a href="**" class="materisocmed-navlink7">Lihat -&gt;</a>
                     </div>
                   </div>
-                  <div class="materisocmed-container089">
-                    <div class="materisocmed-container090"></div>
-                    <div class="materisocmed-container091">
-                      <div class="materisocmed-container092">
+                  <div class="materisocmed-container092">
+                    <div class="materisocmed-container093"></div>
+                    <div class="materisocmed-container094">
+                      <div class="materisocmed-container095">
                         <span class="materisocmed-text53">
                           Tidak tersedia..
                         </span>
@@ -1726,12 +1758,12 @@
                 </div>
               </div>
             </div>
-            <div id="profile" class="materisocmed-container093 content">
-              <div id="currentProfile" class="materisocmed-container094">
-                <div class="materisocmed-container095">
-                  <div class="materisocmed-container096"></div>
+            <div id="profile" class="materisocmed-container096 content">
+              <div id="currentProfile" class="materisocmed-container097">
+                <div class="materisocmed-container098">
+                  <div class="materisocmed-container099"></div>
                 </div>
-                <div class="materisocmed-container097">
+                <div class="materisocmed-container100">
                   <lottie-player
                     src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/New%20Lottie.json?updatedAt=1716216429583"
                     loop="true"
@@ -1748,11 +1780,11 @@
                   />
                 </div>
               </div>
-              <div class="materisocmed-container098 container">
-                <div id="userInfo" class="materisocmed-container099">
-                  <div class="materisocmed-container100">
-                    <div class="materisocmed-container101">
-                      <div class="materisocmed-container102">
+              <div class="materisocmed-container101 container">
+                <div id="userInfo" class="materisocmed-container102">
+                  <div class="materisocmed-container103">
+                    <div class="materisocmed-container104">
+                      <div class="materisocmed-container105">
                         <span class="materisocmed-text54">
                           NAMA&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                           &nbsp;&nbsp;
@@ -1761,7 +1793,7 @@
                           User
                         </span>
                       </div>
-                      <div class="materisocmed-container103">
+                      <div class="materisocmed-container106">
                         <span class="materisocmed-text56">
                           EMAIL&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                           &nbsp;&nbsp;
@@ -1770,7 +1802,7 @@
                           User
                         </span>
                       </div>
-                      <div class="materisocmed-container104">
+                      <div class="materisocmed-container107">
                         <span class="materisocmed-text58">
                           MSO&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
                           &nbsp;&nbsp;
@@ -1780,8 +1812,8 @@
                         </span>
                       </div>
                     </div>
-                    <div class="materisocmed-container105">
-                      <div class="materisocmed-container106">
+                    <div class="materisocmed-container108">
+                      <div class="materisocmed-container109">
                         <span class="materisocmed-text60">
                           JABATAN&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;
                         </span>
@@ -1789,7 +1821,7 @@
                           User
                         </span>
                       </div>
-                      <div class="materisocmed-container107">
+                      <div class="materisocmed-container110">
                         <span class="materisocmed-text62">
                           CABANG&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
                         </span>
@@ -1808,19 +1840,19 @@
                   </button>
                 </div>
               </div>
-              <div class="materisocmed-container108">
-                <div class="materisocmed-container109">
+              <div class="materisocmed-container111">
+                <div class="materisocmed-container112">
                   <form id="profileForm" class="materisocmed-form2">
                     <span class="materisocmed-text64">Upload foto profile</span>
-                    <div class="materisocmed-container110">
+                    <div class="materisocmed-container113">
                       <div
                         id="deleteButton"
                         type="button"
-                        class="materisocmed-container111 button"
+                        class="materisocmed-container114 button"
                       >
                         <svg
                           viewBox="0 0 804.5714285714286 1024"
-                          class="materisocmed-icon12"
+                          class="materisocmed-icon14"
                         >
                           <path
                             d="M292.571 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM438.857 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM585.143 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM274.286 219.429h256l-27.429-66.857c-1.714-2.286-6.857-5.714-9.714-6.286h-181.143c-3.429 0.571-8 4-9.714 6.286zM804.571 237.714v36.571c0 10.286-8 18.286-18.286 18.286h-54.857v541.714c0 62.857-41.143 116.571-91.429 116.571h-475.429c-50.286 0-91.429-51.429-91.429-114.286v-544h-54.857c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h176.571l40-95.429c11.429-28 45.714-50.857 76-50.857h182.857c30.286 0 64.571 22.857 76 50.857l40 95.429h176.571c10.286 0 18.286 8 18.286 18.286z"
@@ -1842,7 +1874,7 @@
                       </button>
                     </div>
                     <div>
-                      <div class="materisocmed-container113">
+                      <div class="materisocmed-container116">
                         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
                         <script>
                           $(document).ready(function() {
@@ -1898,18 +1930,18 @@
                 </div>
               </div>
             </div>
-            <div id="week1" class="materisocmed-container114 content">
-              <div class="materisocmed-container115">
-                <div class="materisocmed-container116"></div>
+            <div id="week1" class="materisocmed-container117 content">
+              <div class="materisocmed-container118">
+                <div class="materisocmed-container119"></div>
               </div>
-              <div class="materisocmed-container117">
+              <div class="materisocmed-container120">
                 <span id="welcomeText" class="materisocmed-text65">
                   Materi Minggu 1
                 </span>
               </div>
-              <div class="materisocmed-container118">
+              <div class="materisocmed-container121">
                 <span class="materisocmed-text66">Promosi H1</span>
-                <div class="materisocmed-container119">
+                <div class="materisocmed-container122">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2001,7 +2033,7 @@
                   </div>
                 </div>
                 <span class="materisocmed-text67">Promosi H2</span>
-                <div class="materisocmed-container120">
+                <div class="materisocmed-container123">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2117,18 +2149,18 @@
                 </div>
               </div>
             </div>
-            <div id="week2" class="materisocmed-container121 content">
-              <div class="materisocmed-container122">
-                <div class="materisocmed-container123"></div>
+            <div id="week2" class="materisocmed-container124 content">
+              <div class="materisocmed-container125">
+                <div class="materisocmed-container126"></div>
               </div>
-              <div class="materisocmed-container124">
+              <div class="materisocmed-container127">
                 <span id="welcomeText" class="materisocmed-text68">
                   Materi Minggu 2
                 </span>
               </div>
-              <div class="materisocmed-container125">
+              <div class="materisocmed-container128">
                 <span class="materisocmed-text69">Promosi H1</span>
-                <div class="materisocmed-container126">
+                <div class="materisocmed-container129">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2220,7 +2252,7 @@
                   </div>
                 </div>
                 <span class="materisocmed-text70">Promosi H2</span>
-                <div class="materisocmed-container127">
+                <div class="materisocmed-container130">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2336,18 +2368,18 @@
                 </div>
               </div>
             </div>
-            <div id="week3" class="materisocmed-container128 content">
-              <div class="materisocmed-container129">
-                <div class="materisocmed-container130"></div>
+            <div id="week3" class="materisocmed-container131 content">
+              <div class="materisocmed-container132">
+                <div class="materisocmed-container133"></div>
               </div>
-              <div class="materisocmed-container131">
+              <div class="materisocmed-container134">
                 <span id="welcomeText" class="materisocmed-text71">
                   Materi Minggu 3
                 </span>
               </div>
-              <div class="materisocmed-container132">
+              <div class="materisocmed-container135">
                 <span class="materisocmed-text72">Promosi H1</span>
-                <div class="materisocmed-container133">
+                <div class="materisocmed-container136">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2440,7 +2472,7 @@
                   </div>
                 </div>
                 <span class="materisocmed-text73">Promosi H2</span>
-                <div class="materisocmed-container134">
+                <div class="materisocmed-container137">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2556,18 +2588,18 @@
                 </div>
               </div>
             </div>
-            <div id="week4" class="materisocmed-container135 content">
-              <div class="materisocmed-container136">
-                <div class="materisocmed-container137"></div>
+            <div id="week4" class="materisocmed-container138 content">
+              <div class="materisocmed-container139">
+                <div class="materisocmed-container140"></div>
               </div>
-              <div class="materisocmed-container138">
+              <div class="materisocmed-container141">
                 <span id="welcomeText" class="materisocmed-text74">
                   Materi Minggu 4
                 </span>
               </div>
-              <div class="materisocmed-container139">
+              <div class="materisocmed-container142">
                 <span class="materisocmed-text75">Promosi H1</span>
-                <div class="materisocmed-container140">
+                <div class="materisocmed-container143">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2629,7 +2661,7 @@
                   </div>
                 </div>
                 <span class="materisocmed-text76">Promosi H2</span>
-                <div class="materisocmed-container141">
+                <div class="materisocmed-container144">
                   <div class="materiicon1234-container">
                     <div class="materiicon1234-container1">
                       <span class="materiicon1234-text">
@@ -2748,7 +2780,7 @@
           </div>
         </div>
         <div>
-          <div class="materisocmed-container143">
+          <div class="materisocmed-container146">
             <script>
               document.getElementById('dashboardMenu').addEventListener('click', function() {
                   showContent('dashboard');
@@ -2812,7 +2844,7 @@
           </div>
         </div>
         <div>
-          <div class="materisocmed-container145">
+          <div class="materisocmed-container148">
             <script>
               const userInfo = document.getElementById('userInfo');
               const user = JSON.parse(localStorage.getItem('currentUser'));
