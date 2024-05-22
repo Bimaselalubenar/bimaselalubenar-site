@@ -13,6 +13,7 @@
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   padding-bottom: var(--dl-space-space-unit);
+  backdrop-filter: blur(10px);
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.45);
 }
@@ -77,10 +78,6 @@
 .popupcomers-text {
   font-size: 20px;
   text-align: center;
-}
-.popupcomers-text01 {
-  font-size: 30px;
-  font-style: normal;
   font-weight: 700;
 }
 .popupcomers-text10 {
@@ -88,13 +85,24 @@
   text-align: center;
 }
 .popupcomers-text11 {
-  font-weight: 900;
+  font-style: normal;
+  font-weight: 400;
 }
 .popupcomers-text12 {
+  font-weight: 900;
+}
+.popupcomers-text13 {
+  font-style: normal;
+  font-weight: 400;
+}
+.popupcomers-text14 {
+  font-weight: 900;
+}
+.popupcomers-text15 {
   font-style: normal;
   font-weight: 700;
 }
-.popupcomers-text13 {
+.popupcomers-text16 {
   font-style: normal;
 }
 .popupcomers-navlink {
@@ -114,7 +122,7 @@
   text-decoration: none;
   background-color: #18aa00;
 }
-.popupcomers-text30 {
+.popupcomers-text33 {
   color: #ffffff;
   font-size: 20px;
   font-style: normal;
@@ -160,16 +168,13 @@
   justify-content: space-between;
   background-color: #eaeaea;
 }
-.popupcomers-text31 {
+.popupcomers-text34 {
   font-size: 20px;
-  text-align: center;
-}
-.popupcomers-text32 {
-  font-size: 30px;
   font-style: normal;
+  text-align: center;
   font-weight: 700;
 }
-.popupcomers-text41 {
+.popupcomers-text35 {
   font-size: 16px;
   text-align: center;
 }
@@ -190,7 +195,7 @@
   text-decoration: none;
   background-color: #18aa00;
 }
-.popupcomers-text42 {
+.popupcomers-text36 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-style: normal;
@@ -230,27 +235,19 @@
 }
 
 
-@media(max-width: 1200px) {
-  .popupcomers-text30 {
-    font-size: 30px;
-  }
-  .popupcomers-text42 {
-    font-size: 30px;
-  }
-}
 @media(max-width: 991px) {
-  .popupcomers-text30 {
+  .popupcomers-text33 {
     font-size: 20px;
   }
-  .popupcomers-text42 {
+  .popupcomers-text36 {
     font-size: 20px;
   }
 }
 @media(max-width: 767px) {
-  .popupcomers-text30 {
+  .popupcomers-text33 {
     font-size: 20px;
   }
-  .popupcomers-text42 {
+  .popupcomers-text36 {
     font-size: 20px;
   }
   .popupcomers-close-button {
@@ -270,8 +267,11 @@
     top: -111px;
     left: 0px;
     right: 0px;
-    height: 200px;
+    height: auto;
     margin: auto;
+  }
+  .popupcomers-text35 {
+    font-size: 16px;
   }
 }
 
@@ -3744,6 +3744,9 @@
 }
 .materisocmed-container143 {
   display: contents;
+}
+.materisocmed-container144 {
+  height: 0px;
 }
 .materisocmed-container145 {
   display: contents;

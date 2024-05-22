@@ -1,0 +1,112 @@
+.btn-banner-container {
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  padding: Unit;
+  z-index: 110;
+  position: fixed;
+  max-width: auto;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.btn-banner-container1 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  position: relative;
+  max-width: 700px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.39);
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: center;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+.btn-banner-close-button {
+  top: var(--dl-space-space-unit);
+  right: var(--dl-space-space-unit);
+  display: flex;
+  z-index: 5;
+  position: absolute;
+  flex-direction: row;
+}
+.btn-banner-icon {
+  width: 24px;
+  cursor: pointer;
+  height: 24px;
+  align-self: center;
+}
+.btn-banner-header {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: 0px;
+  border-radius: 10px;
+  padding-right: 0px;
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: flex-start;
+}
+.btn-banner-video {
+  flex: 1;
+  width: 100%;
+  height: auto;
+}
+.btn-banner-container2 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #ff7400;
+}
+.btn-banner-text {
+  color: #ffffff;
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.btn-banner-button {
+  fill: #d07100;
+  color: rgb(255, 255, 255);
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+  display: none;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: #d07100;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: rgb(208, 113, 0);
+}
+.btn-banner-container4 {
+  display: contents;
+}
+
+
+
+@media(max-width: 767px) {
+  .btn-banner-close-button {
+    align-self: flex-start;
+  }
+}
+
