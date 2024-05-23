@@ -207,14 +207,6 @@
 .popup1-container7 {
   display: contents;
 }
-.popup1-root-class-name {
-  top: 0px;
-  left: 0px;
-  right: 0px;
-  bottom: 0px;
-  margin: auto;
-  position: absolute;
-}
 .popup1-root-class-name1 {
   top: 0px;
   left: 0px;
@@ -293,11 +285,11 @@
   align-self: center;
   overflow-y: scroll;
   align-items: center;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-threeunits);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-twounits);
   justify-content: center;
 }
 .login-materisocmed-container02 {
@@ -766,7 +758,8 @@
   flex-direction: column;
   justify-content: center;
   background-color: #ffffff;
-  border-top-right-radius: 0;
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
 }
 .login-materisocmed-container18 {
   gap: var(--dl-space-space-halfunit);
@@ -811,7 +804,7 @@
   gap: var(--dl-space-space-unit);
   flex: 1;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
   padding: var(--dl-space-space-twounits);
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.1);
@@ -833,6 +826,7 @@
 }
 .login-materisocmed-container20 {
   gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
   display: flex;
   transition: 0.3s;
   align-items: flex-start;
@@ -845,7 +839,8 @@
   justify-content: flex-start;
 }
 .login-materisocmed-container20:hover {
-  background-color: #eae2e2;
+  transform: scale(105%);
+  background-color: #ececec;
 }
 .login-materisocmed-icon {
   fill: #19b700;
@@ -858,6 +853,7 @@
 }
 .login-materisocmed-container21 {
   gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
   display: flex;
   transition: 0.3s;
   align-items: flex-start;
@@ -870,7 +866,8 @@
   justify-content: flex-start;
 }
 .login-materisocmed-container21:hover {
-  background-color: #eae2e2;
+  transform: scale(105%);
+  background-color: #ececec;
 }
 .login-materisocmed-icon02 {
   fill: #19b700;
@@ -883,6 +880,7 @@
 }
 .login-materisocmed-container22 {
   gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
   display: flex;
   transition: 0.3s;
   align-items: flex-start;
@@ -895,7 +893,8 @@
   justify-content: flex-start;
 }
 .login-materisocmed-container22:hover {
-  background-color: #eae2e2;
+  transform: scale(105%);
+  background-color: #ececec;
 }
 .login-materisocmed-icon04 {
   fill: #19b700;
@@ -908,6 +907,7 @@
 }
 .login-materisocmed-container23 {
   gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
   display: flex;
   transition: 0.3s;
   align-items: flex-start;
@@ -920,7 +920,8 @@
   justify-content: flex-start;
 }
 .login-materisocmed-container23:hover {
-  background-color: #eae2e2;
+  transform: scale(105%);
+  background-color: #ececec;
 }
 .login-materisocmed-icon06 {
   fill: #19b700;
@@ -933,6 +934,7 @@
 }
 .login-materisocmed-container24 {
   gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
   display: flex;
   transition: 0.3s;
   align-items: flex-start;
@@ -945,7 +947,8 @@
   justify-content: flex-start;
 }
 .login-materisocmed-container24:hover {
-  background-color: #eae2e2;
+  transform: scale(105%);
+  background-color: #ececec;
 }
 .login-materisocmed-icon08 {
   fill: #19b700;
@@ -958,6 +961,7 @@
 }
 .login-materisocmed-container25 {
   gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
   display: flex;
   transition: 0.3s;
   align-items: flex-start;
@@ -970,7 +974,8 @@
   justify-content: flex-start;
 }
 .login-materisocmed-container25:hover {
-  background-color: #eae2e2;
+  transform: scale(105%);
+  background-color: #ececec;
 }
 .login-materisocmed-icon10 {
   fill: #19b700;
@@ -983,6 +988,7 @@
 }
 .login-materisocmed-container26 {
   gap: var(--dl-space-space-halfunit);
+  cursor: pointer;
   display: flex;
   transition: 0.3s;
   align-items: flex-start;
@@ -995,7 +1001,8 @@
   justify-content: flex-start;
 }
 .login-materisocmed-container26:hover {
-  background-color: #eae2e2;
+  transform: scale(105%);
+  background-color: #ececec;
 }
 .login-materisocmed-icon12 {
   fill: #19b700;
@@ -1043,9 +1050,11 @@
   left: 0px;
   right: 0px;
   width: 100%;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
   height: 528px;
   margin: auto;
   display: flex;
+  overflow: hidden;
   position: absolute;
   align-items: center;
   flex-direction: column;
@@ -1067,21 +1076,53 @@
   }
 }
 @media(max-width: 767px) {
+  .login-materisocmed-container01 {
+    padding-top: var(--dl-space-space-fourunits);
+    justify-content: flex-start;
+  }
   .login-materisocmed-container10 {
     flex-direction: column;
   }
   .login-materisocmed-container15 {
+    align-items: center;
+    justify-content: center;
+  }
+  .login-materisocmed-container16 {
     flex-direction: column;
+  }
+  .login-materisocmed-container17 {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+  }
+  .login-materisocmed-video {
+    flex: 0 0 auto;
+    height: 700px;
+  }
+  .login-materisocmed-container19 {
+    border-top-right-radius: 0px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
   }
 }
 @media(max-width: 479px) {
   .login-materisocmed-container01 {
-    padding-top: var(--dl-space-space-threeunits);
+    padding-top: var(--dl-space-space-fourunits);
+    justify-content: flex-start;
   }
   .login-materisocmed-container15 {
-    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .login-materisocmed-container16 {
+    justify-content: center;
   }
   .login-materisocmed-video {
-    height: 720px;
+    flex: 0 0 auto;
+    height: 700px;
+  }
+  .login-materisocmed-container19 {
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 10px;
   }
 }

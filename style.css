@@ -498,7 +498,10 @@
   height: 30px;
   position: absolute;
 }
-
+.content {
+  overlay-content: -ms-overflow-style: none; scrollbar-width: none;
+  overlay-content-webkit-scrollbar: display: none;
+}
 .profile-pic {
   width: 40px;
   height: 40px;
@@ -512,9 +515,20 @@
 
 
 
+.overlay {
+  align-items: center;
+}
 
 
+.overlay-content {
+  overlay-content: -ms-overflow-style: none; scrollbar-width: none;
+  overlay-content-webkit-scrollbar: display: none;
+}
 
+.removescsroll {
+  overlay-content: -ms-overflow-style: none; scrollbar-width: none;
+  overlay-content-webkit-scrollbar: display: none;
+}
 .H4-16px {
   font-size: 16px;
   font-style: normal;
