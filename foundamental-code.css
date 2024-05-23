@@ -1317,6 +1317,8 @@
   fill: var(--dl-color-gray-black);
   color: var(--dl-color-gray-black);
 }
+
+
 @media(max-width: 1600px) {
   .linknavbima-container03 {
     flex-direction: column;
