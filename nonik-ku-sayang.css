@@ -718,72 +718,12 @@
 .nonik-ku-sayang-container14 {
   flex: 0 0 auto;
   width: 100%;
-  height: 800px;
-  display: none;
+  border: 2px dashed rgba(120, 120, 120, 0.4);
+  height: 100vh;
+  display: flex;
   max-width: 479px;
   align-items: flex-start;
-  padding-top: 0px;
-  padding-left: var(--dl-space-space-halfunit);
-  padding-right: var(--dl-space-space-halfunit);
   flex-direction: column;
-  padding-bottom: 0px;
-  justify-content: center;
-}
-.nonik-ku-sayang-container15 {
-  gap: var(--dl-space-space-halfunit);
-  flex: 0 0 auto;
-  width: 100%;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  margin-bottom: var(--dl-space-space-twounits);
-  flex-direction: column;
-  justify-content: center;
-}
-.nonik-ku-sayang-text67 {
-  font-style: normal;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-.nonik-ku-sayang-text68 {
-  font-style: normal;
-  font-weight: 500;
-}
-.nonik-ku-sayang-container16 {
-  gap: var(--dl-space-space-halfunit);
-  width: 100%;
-  height: 175px;
-  display: flex;
-  align-self: center;
-  align-items: center;
-  padding-left: var(--dl-space-space-unit);
-  padding-right: var(--dl-space-space-unit);
-  flex-direction: row;
-  justify-content: center;
-}
-.nonik-ku-sayang-image12 {
-  flex: 1;
-  width: var(--dl-size-size-medium);
-  height: auto;
-  object-fit: cover;
-  border-radius: var(--dl-radius-radius-radius8);
-  text-decoration: none;
-}
-.nonik-ku-sayang-image13 {
-  flex: 1;
-  width: var(--dl-size-size-medium);
-  height: auto;
-  object-fit: cover;
-  border-radius: var(--dl-radius-radius-radius8);
-  text-decoration: none;
-}
-.nonik-ku-sayang-image14 {
-  flex: 1;
-  width: var(--dl-size-size-medium);
-  height: auto;
-  object-fit: cover;
-  border-radius: var(--dl-radius-radius-radius8);
-  text-decoration: none;
 }
 @media(max-width: 479px) {
   .nonik-ku-sayang-container {
@@ -999,25 +939,5 @@
     border-width: 0px;
     border-radius: 40px;
     background-color: #000000;
-  }
-  .nonik-ku-sayang-container14 {
-    display: none;
-    padding-top: 0px;
-    padding-left: var(--dl-space-space-halfunit);
-    padding-right: var(--dl-space-space-halfunit);
-    padding-bottom: 0px;
-    background-size: cover;
-    background-image: url('https://lcdn-hk.icons8.com/c/uKTraK8CA06tBlOy_NXWig/afe548fc9705063d98f0f02ccdf5f4bb7c2f8925.png');
-  }
-  .nonik-ku-sayang-container15 {
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-  }
-  .nonik-ku-sayang-text67 {
-    text-align: center;
-  }
-  .nonik-ku-sayang-text68 {
-    text-align: center;
   }
 }
