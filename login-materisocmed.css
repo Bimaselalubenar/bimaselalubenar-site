@@ -450,10 +450,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: rgb(208, 113, 0);
 }
-.login-materisocmed-container09 {
-  display: contents;
-}
-.login-materisocmed-container10 {
+.login-materisocmed-container08 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
@@ -509,7 +506,7 @@
   border-width: 1px;
   background-color: rgb(208, 113, 0);
 }
-.login-materisocmed-container11 {
+.login-materisocmed-container09 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -519,6 +516,9 @@
 }
 .login-materisocmed-text06 {
   font-weight: 400;
+}
+.login-materisocmed-container11 {
+  display: contents;
 }
 .login-materisocmed-container12 {
   flex: 0 0 auto;
@@ -1080,7 +1080,7 @@
     padding-top: var(--dl-space-space-fourunits);
     justify-content: flex-start;
   }
-  .login-materisocmed-container10 {
+  .login-materisocmed-container08 {
     flex-direction: column;
   }
   .login-materisocmed-container15 {
