@@ -29,7 +29,8 @@
   background-color: #3b5bc2;
 }
 .nav2-image1 {
-  height: 3rem;
+  width: 30px;
+  height: 30px;
 }
 .nav2-desktop-menu {
   flex: 1;
@@ -1596,7 +1597,7 @@
   display: flex;
   max-width: 1000px;
   align-items: center;
-  padding-top: 120px;
+  padding-top: 100px;
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
@@ -1666,7 +1667,7 @@
   color: #3f3f3f;
   font-family: "Inter";
 }
-.dana-kaget-dari-bima-navlink {
+.dana-kaget-dari-bima-button {
   color: rgb(255, 255, 255);
   width: 100%;
   cursor: pointer;
@@ -1681,10 +1682,9 @@
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-unit);
   text-transform: uppercase;
-  text-decoration: none;
   background-color: rgb(0, 68, 130);
 }
-.dana-kaget-dari-bima-navlink:hover {
+.dana-kaget-dari-bima-button:hover {
   color: #2f2f2f;
   box-shadow: 5px 5px 10px 0px #bcbcbc;
   font-style: normal;
@@ -1752,7 +1752,7 @@
   color: #3f3f3f;
   font-family: "Inter";
 }
-.dana-kaget-dari-bima-navlink1 {
+.dana-kaget-dari-bima-button1 {
   color: rgb(255, 255, 255);
   width: 100%;
   cursor: pointer;
@@ -1767,10 +1767,9 @@
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-unit);
   text-transform: uppercase;
-  text-decoration: none;
   background-color: rgb(0, 68, 130);
 }
-.dana-kaget-dari-bima-navlink1:hover {
+.dana-kaget-dari-bima-button1:hover {
   color: #2f2f2f;
   box-shadow: 5px 5px 10px 0px #bcbcbc;
   font-style: normal;
@@ -1842,7 +1841,7 @@
   color: #3f3f3f;
   font-family: "Inter";
 }
-.dana-kaget-dari-bima-navlink2 {
+.dana-kaget-dari-bima-button2 {
   color: rgb(255, 255, 255);
   width: 100%;
   cursor: pointer;
@@ -1857,10 +1856,9 @@
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-unit);
   text-transform: uppercase;
-  text-decoration: none;
   background-color: rgb(0, 68, 130);
 }
-.dana-kaget-dari-bima-navlink2:hover {
+.dana-kaget-dari-bima-button2:hover {
   color: #2f2f2f;
   box-shadow: 5px 5px 10px 0px #bcbcbc;
   font-style: normal;
@@ -1924,7 +1922,7 @@
   color: #3f3f3f;
   font-family: "Inter";
 }
-.dana-kaget-dari-bima-navlink3 {
+.dana-kaget-dari-bima-button3 {
   color: rgb(255, 255, 255);
   width: 100%;
   cursor: pointer;
@@ -1939,10 +1937,9 @@
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-unit);
   text-transform: uppercase;
-  text-decoration: none;
   background-color: rgb(0, 68, 130);
 }
-.dana-kaget-dari-bima-navlink3:hover {
+.dana-kaget-dari-bima-button3:hover {
   color: #2f2f2f;
   box-shadow: 5px 5px 10px 0px #bcbcbc;
   font-style: normal;

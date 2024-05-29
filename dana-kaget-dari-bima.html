@@ -2,7 +2,6 @@
 <html lang="en"
   ><head
     ><title>Dana-kaget-dari-bima - bimaselalubenar</title
-    ><title>Countdown Divs</title
     ><meta name="description" content="Daana kaget dari bimaselalubenar" /><meta
       property="og:title"
       content="Dana-kaget-dari-bima - bimaselalubenar"
@@ -12,9 +11,6 @@
     /><meta
       property="og:image"
       content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bf1328a2-cee6-443f-bd21-0ba3b0b34318/8f81ab67-4e5d-4600-adfb-13dbe8e81f9b?org_if_sml=1&amp;force_format=original"
-    /><meta charset="UTF-8" /><meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
     /><meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -613,9 +609,7 @@
             ></div
           ><div class="dana-kaget-dari-bima-container02"
             ><div class="dana-kaget-dari-bima-container03"
-              ><div
-                id="div1"
-                class="dana-kaget-dari-bima-container04 countdown-div"
+              ><div id="box1" class="dana-kaget-dari-bima-container04 box"
                 ><img
                   alt="image"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/banner%20give%20away.png?updatedAt=1716877663025"
@@ -627,13 +621,15 @@
                     >Menunggu...</span
                   ><span class="dana-kaget-dari-bima-text02"
                     >Rp. 500,-/ 20 orang</span
-                  ><a href="**" class="dana-kaget-dari-bima-navlink button"
-                    >Ambil Sekarang</a
+                  ><button
+                    type="button"
+                    id="button1"
+                    disabled=""
+                    class="dana-kaget-dari-bima-button button"
+                    >Ambil Sekarang</button
                   ></div
                 ></div
-              ><div
-                id="div2"
-                class="dana-kaget-dari-bima-container06 countdown-div"
+              ><div id="box2" class="dana-kaget-dari-bima-container06 box"
                 ><img
                   alt="image"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/banner%20give%20away.png?updatedAt=1716877663025"
@@ -645,15 +641,17 @@
                     >Menunggu...</span
                   ><span class="dana-kaget-dari-bima-text05"
                     >Rp. 500,-/ 20 orang</span
-                  ><a href="**" class="dana-kaget-dari-bima-navlink1 button"
-                    >Ambil Sekarang</a
+                  ><button
+                    type="button"
+                    id="button2"
+                    disabled="true"
+                    class="dana-kaget-dari-bima-button1 button"
+                    >Ambil Sekarang</button
                   ></div
                 ></div
               ></div
             ><div class="dana-kaget-dari-bima-container08"
-              ><div
-                id="div3"
-                class="dana-kaget-dari-bima-container09 countdown-div"
+              ><div id="box3" class="dana-kaget-dari-bima-container09 box"
                 ><img
                   alt="image"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/banner%20give%20away.png?updatedAt=1716877663025"
@@ -665,13 +663,15 @@
                     >Menunggu...</span
                   ><span class="dana-kaget-dari-bima-text08"
                     >Rp. 1.000,-/ 10 orang</span
-                  ><a href="**" class="dana-kaget-dari-bima-navlink2 button"
-                    >Ambil Sekarang</a
+                  ><button
+                    type="button"
+                    id="button3"
+                    disabled="true"
+                    class="dana-kaget-dari-bima-button2 button"
+                    >Ambil Sekarang</button
                   ></div
                 ></div
-              ><div
-                id="div4"
-                class="dana-kaget-dari-bima-container11 countdown-div"
+              ><div id="box4" class="dana-kaget-dari-bima-container11 box"
                 ><img
                   alt="image"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/banner%20give%20away.png?updatedAt=1716877663025"
@@ -683,80 +683,68 @@
                     >Menunggu...</span
                   ><span class="dana-kaget-dari-bima-text11"
                     >Rp. 1.000,-/ 10 orang</span
-                  ><a href="**" class="dana-kaget-dari-bima-navlink3 button"
-                    >Ambil Sekarang</a
+                  ><button
+                    type="button"
+                    id="button4"
+                    disabled="true"
+                    class="dana-kaget-dari-bima-button3 button"
+                    >Ambil Sekarang</button
                   ></div
                 ></div
               ></div
             ><div
-              ><div class="dana-kaget-dari-bima-container14">
-                <style>
-                  .disabled {
-                      pointer-events: none;
-                      opacity: 0.5;
-                  }
-                  .countdown-div {
-                      margin: 20px;
-                      padding: 10px;
-                      border: 1px solid #000;
-                      width: 200px;
-                      text-align: center;
-                  }
-                </style>
-
-                <div id="div1" class="countdown-div">
-                  <p id="countdown1">Menunggu...</p>
-                </div>
-                <div id="div2" class="countdown-div">
-                  <p id="countdown2">Menunggu...</p>
-                </div>
-                <div id="div3" class="countdown-div">
-                  <p id="countdown3">Menunggu...</p>
-                </div>
-                <div id="div4" class="countdown-div">
-                  <p id="countdown4">Menunggu...</p>
-                </div>
-
-                <script>
-                  // Atur waktu hitung mundur (format: 'YYYY-MM-DDTHH:MM:SS')
-                  const countdownTimes = {
-                      1: new Date('2024-06-01T12:00:00'), // Waktu untuk Link 1
-                      2: new Date('2024-06-01T13:00:00'), // Waktu untuk Link 2
-                      3: new Date('2024-06-01T14:00:00'), // Waktu untuk Link 3
-                      4: new Date('2024-06-01T15:00:00')  // Waktu untuk Link 4
+              ><div class="dana-kaget-dari-bima-container14"
+                ><script>
+                  // Set the dates we're counting down to
+                  var countDownDates = {
+                    1: new Date('2024-06-01T12:00:00').getTime(),
+                    2: new Date('2024-06-01T13:00:00').getTime(),
+                    3: new Date('2024-06-01T14:00:00').getTime(),
+                    4: new Date('2024-06-01T15:00:00').getTime(),
                   };
 
-                  function startCountdown(divId, countdownId, endTime) {
-                      const div = document.getElementById(divId);
-                      div.classList.add('disabled'); // Menambahkan kelas disabled saat inisialisasi
+                  // One hour in milliseconds
+                  var oneHour = 1000 * 60 * 60;
 
-                      function updateDiv() {
-                          const countdownText = document.getElementById(countdownId);
-                          const now = new Date();
-                          const remainingTime = endTime - now;
+                  // Update the count down every 1 second
+                  var countdownfunction = setInterval(function () {
+                    // Get today's date and time
+                    var now = new Date().getTime();
 
-                          if (remainingTime > 0) {
-                              let days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
-                              let hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                              let minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
-                              let seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+                    // Iterate through each countdown
+                    for (var i = 1; i <= 4; i++) {
+                      var distance = countDownDates[i] - now;
+                      var days = Math.floor((distance - oneHour) / (1000 * 60 * 60 * 24));
+                      var hours = Math.floor(
+                        ((distance - oneHour) % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+                      );
+                      var minutes = Math.floor(
+                        ((distance - oneHour) % (1000 * 60 * 60)) / (1000 * 60)
+                      );
+                      var seconds = Math.floor(((distance - oneHour) % (1000 * 60)) / 1000);
 
-                              countdownText.textContent = `${days} hari ${hours} jam ${minutes} menit ${seconds} detik`;
-                              setTimeout(updateDiv, 1000);
-                          } else {
-                              countdownText.textContent = 'Link dapat diakses';
-                              div.classList.remove('disabled');
-                          }
+                      // Display the result in the corresponding element
+                     document.getElementById('countdown' + i).innerHTML = days + ' Hari ' + hours + ' Jam ' + minutes + ' Menit ' + seconds + ' Detik ';
+
+                      // If the count down is within one hour or finished, enable the button
+                      if (distance <= oneHour) {
+                        document.getElementById('countdown' + i).innerHTML = 'Dapat di akses';
+                        var button = document.getElementById('button' + i);
+                        button.disabled = false;
+                        button.onclick = (function (i) {
+                          return function () {
+                            var urls = [
+                              'https://www.instagram.com/link1',
+                              'https://www.instagram.com/link2',
+                              'https://www.instagram.com/link3',
+                              'https://www.instagram.com/link4',
+                            ];
+                            window.open(urls[i - 1], '_blank');
+                          };
+                        })(i);
                       }
-
-                      updateDiv();
-                  }
-
-                  // Memulai hitungan mundur untuk setiap div dengan waktu yang telah ditentukan
-                  startCountdown('div1', 'countdown1', countdownTimes[1]);
-                  startCountdown('div2', 'countdown2', countdownTimes[2]);
-                  startCountdown('div3', 'countdown3', countdownTimes[3]);
-                  startCountdown('div4', 'countdown4', countdownTimes[4]);
+                    }
+                  }, 1000);
                 </script>
               </div></div
             ></div

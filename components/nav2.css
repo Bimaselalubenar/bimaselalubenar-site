@@ -29,7 +29,8 @@
   background-color: #3b5bc2;
 }
 .nav2-image1 {
-  height: 3rem;
+  width: 30px;
+  height: 30px;
 }
 .nav2-desktop-menu {
   flex: 1;

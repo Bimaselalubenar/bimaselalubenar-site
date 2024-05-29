@@ -529,7 +529,7 @@
   overlay-content: -ms-overflow-style: none; scrollbar-width: none;
   overlay-content-webkit-scrollbar: display: none;
 }
-.countdown-div {
+.box {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
