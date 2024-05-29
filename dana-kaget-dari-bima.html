@@ -2,6 +2,7 @@
 <html lang="en"
   ><head
     ><title>Dana-kaget-dari-bima - bimaselalubenar</title
+    ><title>Countdown Divs</title
     ><meta name="description" content="Daana kaget dari bimaselalubenar" /><meta
       property="og:title"
       content="Dana-kaget-dari-bima - bimaselalubenar"
@@ -11,6 +12,9 @@
     /><meta
       property="og:image"
       content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/bf1328a2-cee6-443f-bd21-0ba3b0b34318/8f81ab67-4e5d-4600-adfb-13dbe8e81f9b?org_if_sml=1&amp;force_format=original"
+    /><meta charset="UTF-8" /><meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
     /><meta
       name="viewport"
       content="width=device-width, initial-scale=1.0"
@@ -445,8 +449,8 @@
                   ><div class="nav2-nav"
                     ><div class="nav2-top"
                       ><img
-                        src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/bimaselalubenar.gif?updatedAt=1712742178111"
                         alt="logo"
+                        src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/bimaselalubenar.gif?updatedAt=1712742178111"
                         class="nav2-logo" /><div
                         data-thq="thq-close-menu"
                         class="nav2-close-menu"
@@ -611,7 +615,7 @@
             ><div class="dana-kaget-dari-bima-container03"
               ><div
                 id="div1"
-                class="dana-kaget-dari-bima-container04 disable countdown-div"
+                class="dana-kaget-dari-bima-container04 countdown-div"
                 ><img
                   alt="image"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/banner%20give%20away.png?updatedAt=1716877663025"
@@ -629,7 +633,7 @@
                 ></div
               ><div
                 id="div2"
-                class="dana-kaget-dari-bima-container06 disable countdown-div"
+                class="dana-kaget-dari-bima-container06 countdown-div"
                 ><img
                   alt="image"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/banner%20give%20away.png?updatedAt=1716877663025"
@@ -649,7 +653,7 @@
             ><div class="dana-kaget-dari-bima-container08"
               ><div
                 id="div3"
-                class="dana-kaget-dari-bima-container09 disable countdown-div"
+                class="dana-kaget-dari-bima-container09 countdown-div"
                 ><img
                   alt="image"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/banner%20give%20away.png?updatedAt=1716877663025"
@@ -667,7 +671,7 @@
                 ></div
               ><div
                 id="div4"
-                class="dana-kaget-dari-bima-container11 disable countdown-div"
+                class="dana-kaget-dari-bima-container11 countdown-div"
                 ><img
                   alt="image"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/banner%20give%20away.png?updatedAt=1716877663025"
@@ -685,14 +689,41 @@
                 ></div
               ></div
             ><div
-              ><div class="dana-kaget-dari-bima-container14"
-                ><script>
-                  // Atur waktu hitung mundur (format: 'TAHUN-BULAN-HARI-T-JAM:MENIT:DETIK')
+              ><div class="dana-kaget-dari-bima-container14">
+                <style>
+                  .disabled {
+                      pointer-events: none;
+                      opacity: 0.5;
+                  }
+                  .countdown-div {
+                      margin: 20px;
+                      padding: 10px;
+                      border: 1px solid #000;
+                      width: 200px;
+                      text-align: center;
+                  }
+                </style>
+
+                <div id="div1" class="countdown-div">
+                  <p id="countdown1">Menunggu...</p>
+                </div>
+                <div id="div2" class="countdown-div">
+                  <p id="countdown2">Menunggu...</p>
+                </div>
+                <div id="div3" class="countdown-div">
+                  <p id="countdown3">Menunggu...</p>
+                </div>
+                <div id="div4" class="countdown-div">
+                  <p id="countdown4">Menunggu...</p>
+                </div>
+
+                <script>
+                  // Atur waktu hitung mundur (format: 'YYYY-MM-DDTHH:MM:SS')
                   const countdownTimes = {
-                      1: new Date('2024-06-1T12:00:00'), // Waktu untuk Link 1
-                      2: new Date('2024-06-1T13:00:00'), // Waktu untuk Link 2
-                      3: new Date('2024-06-1T14:00:00'), // Waktu untuk Link 3
-                      4: new Date('2024-06-1T15:00:00')  // Waktu untuk Link 4
+                      1: new Date('2024-06-01T12:00:00'), // Waktu untuk Link 1
+                      2: new Date('2024-06-01T13:00:00'), // Waktu untuk Link 2
+                      3: new Date('2024-06-01T14:00:00'), // Waktu untuk Link 3
+                      4: new Date('2024-06-01T15:00:00')  // Waktu untuk Link 4
                   };
 
                   function startCountdown(divId, countdownId, endTime) {
@@ -726,8 +757,8 @@
                   startCountdown('div2', 'countdown2', countdownTimes[2]);
                   startCountdown('div3', 'countdown3', countdownTimes[3]);
                   startCountdown('div4', 'countdown4', countdownTimes[4]);
-                </script></div
-              ></div
+                </script>
+              </div></div
             ></div
           ><div class="footer-footer footer-root-class-name15"
             ><div
