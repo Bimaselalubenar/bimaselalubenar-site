@@ -161,7 +161,9 @@
   display: contents;
 }
 
-
+.popupcomers-root-class-name1 {
+  display: none;
+}
 .popupcomers-root-class-name2 {
   display: none;
 }
