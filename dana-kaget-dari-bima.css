@@ -430,9 +430,7 @@
 }
 
 
-.popupcomers-root-class-name2 {
-  display: none;
-}
+
 @media(max-width: 991px) {
   .popupcomers-text33 {
     font-size: 20px;
@@ -1605,52 +1603,52 @@
   justify-content: flex-start;
 }
 .dana-kaget-dari-bima-container03 {
-  gap: var(--dl-space-space-twounits);
+  flex: 0 0 auto;
   width: 100%;
   display: flex;
+  padding: var(--dl-space-space-unit);
+  overflow: hidden;
   align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
+  border-color: #c6c6c6;
+  border-width: 3px;
+  border-radius: 20px;
+  justify-content: center;
+}
+.dana-kaget-dari-bima-image {
+  width: 130px;
+  height: 130px;
+  object-fit: cover;
+  margin-right: var(--dl-space-space-twounits);
+  border-radius: var(--dl-radius-radius-round);
 }
 .dana-kaget-dari-bima-container04 {
   gap: var(--dl-space-space-unit);
+  flex: 1;
   width: 100%;
-  height: auto;
+  height: 100%;
   display: flex;
-  box-shadow: 5px 5px 15px 0px #d4d4d4;
-  align-items: center;
-  padding-top: 0px;
-  padding-left: 0px;
-  border-radius: 20px;
-  padding-right: 0px;
-  flex-direction: column;
-  padding-bottom: 0px;
-  justify-content: center;
-  background-color: #ffffff;
-}
-.dana-kaget-dari-bima-image {
-  width: 100%;
-  height: auto;
-  object-fit: cover;
-  border-radius: 20px;
-}
-.dana-kaget-dari-bima-container05 {
-  gap: var(--dl-space-space-unit);
-  width: 100%;
-  display: flex;
-  align-items: center;
+  align-items: flex-start;
   flex-direction: column;
   justify-content: center;
 }
 .dana-kaget-dari-bima-text {
-  color: #3f3f3f;
-  font-size: 25px;
+  font-size: 20px;
   font-style: normal;
-  font-family: "Inter";
   font-weight: 800;
 }
-.dana-kaget-dari-bima-text01 {
-  color: #201d1d;
+.dana-kaget-dari-bima-text02 {
+  color: #0028ff;
+}
+.dana-kaget-dari-bima-container05 {
+  gap: var(--dl-space-space-unit);
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: center;
+}
+.dana-kaget-dari-bima-link {
+  color: rgb(32, 29, 29);
+  cursor: pointer;
   font-style: normal;
   text-align: center;
   font-weight: 600;
@@ -1661,39 +1659,50 @@
   border-radius: 20px;
   padding-right: var(--dl-space-space-unit);
   padding-bottom: var(--dl-space-space-halfunit);
-  background-color: #ffffff;
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
 }
-.dana-kaget-dari-bima-text02 {
-  color: #3f3f3f;
-  font-family: "Inter";
-}
-.dana-kaget-dari-bima-button {
-  color: rgb(255, 255, 255);
-  width: 100%;
+.dana-kaget-dari-bima-link1 {
+  color: rgb(32, 29, 29);
   cursor: pointer;
   font-style: normal;
-  transition: 0.3s;
-  font-weight: 500;
-  padding-top: var(--dl-space-space-unit);
-  border-color: #004482;
-  border-width: 3px;
-  padding-left: var(--dl-space-space-unit);
-  border-radius: 10px;
-  padding-right: var(--dl-space-space-unit);
-  padding-bottom: var(--dl-space-space-unit);
-  text-transform: uppercase;
-  background-color: rgb(0, 68, 130);
-}
-.dana-kaget-dari-bima-button:hover {
-  color: #2f2f2f;
-  box-shadow: 5px 5px 10px 0px #bcbcbc;
-  font-style: normal;
+  text-align: center;
   font-weight: 600;
-  border-color: #434343;
-  border-width: 3px;
-  background-color: transparent;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
+}
+.dana-kaget-dari-bima-link2 {
+  color: rgb(32, 29, 29);
+  cursor: pointer;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  text-decoration: none;
+  background-color: rgb(255, 255, 255);
 }
 .dana-kaget-dari-bima-container06 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dana-kaget-dari-bima-container07 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -1713,13 +1722,9 @@
   width: 100%;
   height: auto;
   object-fit: cover;
-  padding-top: 0px;
-  padding-left: 0px;
   border-radius: 20px;
-  padding-right: 0px;
-  padding-bottom: 0px;
 }
-.dana-kaget-dari-bima-container07 {
+.dana-kaget-dari-bima-container08 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -1752,7 +1757,7 @@
   color: #3f3f3f;
   font-family: "Inter";
 }
-.dana-kaget-dari-bima-button1 {
+.dana-kaget-dari-bima-button {
   color: rgb(255, 255, 255);
   width: 100%;
   cursor: pointer;
@@ -1769,7 +1774,7 @@
   text-transform: uppercase;
   background-color: rgb(0, 68, 130);
 }
-.dana-kaget-dari-bima-button1:hover {
+.dana-kaget-dari-bima-button:hover {
   color: #2f2f2f;
   box-shadow: 5px 5px 10px 0px #bcbcbc;
   font-style: normal;
@@ -1777,14 +1782,6 @@
   border-color: #434343;
   border-width: 3px;
   background-color: transparent;
-}
-.dana-kaget-dari-bima-container08 {
-  gap: var(--dl-space-space-twounits);
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 .dana-kaget-dari-bima-container09 {
   gap: var(--dl-space-space-unit);
@@ -1806,7 +1803,11 @@
   width: 100%;
   height: auto;
   object-fit: cover;
+  padding-top: 0px;
+  padding-left: 0px;
   border-radius: 20px;
+  padding-right: 0px;
+  padding-bottom: 0px;
 }
 .dana-kaget-dari-bima-container10 {
   gap: var(--dl-space-space-unit);
@@ -1841,7 +1842,7 @@
   color: #3f3f3f;
   font-family: "Inter";
 }
-.dana-kaget-dari-bima-button2 {
+.dana-kaget-dari-bima-button1 {
   color: rgb(255, 255, 255);
   width: 100%;
   cursor: pointer;
@@ -1858,7 +1859,7 @@
   text-transform: uppercase;
   background-color: rgb(0, 68, 130);
 }
-.dana-kaget-dari-bima-button2:hover {
+.dana-kaget-dari-bima-button1:hover {
   color: #2f2f2f;
   box-shadow: 5px 5px 10px 0px #bcbcbc;
   font-style: normal;
@@ -1868,6 +1869,14 @@
   background-color: transparent;
 }
 .dana-kaget-dari-bima-container11 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dana-kaget-dari-bima-container12 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -1889,7 +1898,7 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.dana-kaget-dari-bima-container12 {
+.dana-kaget-dari-bima-container13 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -1922,6 +1931,87 @@
   color: #3f3f3f;
   font-family: "Inter";
 }
+.dana-kaget-dari-bima-button2 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-color: #004482;
+  border-width: 3px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-transform: uppercase;
+  background-color: rgb(0, 68, 130);
+}
+.dana-kaget-dari-bima-button2:hover {
+  color: #2f2f2f;
+  box-shadow: 5px 5px 10px 0px #bcbcbc;
+  font-style: normal;
+  font-weight: 600;
+  border-color: #434343;
+  border-width: 3px;
+  background-color: transparent;
+}
+.dana-kaget-dari-bima-container14 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  border-radius: 20px;
+  padding-right: 0px;
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.dana-kaget-dari-bima-image4 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.dana-kaget-dari-bima-container15 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.dana-kaget-dari-bima-text12 {
+  color: #3f3f3f;
+  font-size: 25px;
+  font-style: normal;
+  font-family: "Inter";
+  font-weight: 800;
+}
+.dana-kaget-dari-bima-text13 {
+  color: #201d1d;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: #ffffff;
+}
+.dana-kaget-dari-bima-text14 {
+  color: #3f3f3f;
+  font-family: "Inter";
+}
 .dana-kaget-dari-bima-button3 {
   color: rgb(255, 255, 255);
   width: 100%;
@@ -1948,18 +2038,193 @@
   border-width: 3px;
   background-color: transparent;
 }
-.dana-kaget-dari-bima-container14 {
+.dana-kaget-dari-bima-container16 {
+  gap: var(--dl-space-space-twounits);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.dana-kaget-dari-bima-container17 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  border-radius: 20px;
+  padding-right: 0px;
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.dana-kaget-dari-bima-image5 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.dana-kaget-dari-bima-container18 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.dana-kaget-dari-bima-text15 {
+  color: #3f3f3f;
+  font-size: 25px;
+  font-style: normal;
+  font-family: "Inter";
+  font-weight: 800;
+}
+.dana-kaget-dari-bima-text16 {
+  color: #201d1d;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: #ffffff;
+}
+.dana-kaget-dari-bima-text17 {
+  color: rgb(63, 63, 63);
+}
+.dana-kaget-dari-bima-button4 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-color: #004482;
+  border-width: 3px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-transform: uppercase;
+  background-color: rgb(0, 68, 130);
+}
+.dana-kaget-dari-bima-button4:hover {
+  color: #2f2f2f;
+  box-shadow: 5px 5px 10px 0px #bcbcbc;
+  font-style: normal;
+  font-weight: 600;
+  border-color: #434343;
+  border-width: 3px;
+  background-color: transparent;
+}
+.dana-kaget-dari-bima-container19 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  box-shadow: 5px 5px 15px 0px #d4d4d4;
+  align-items: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  border-radius: 20px;
+  padding-right: 0px;
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.dana-kaget-dari-bima-image6 {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 20px;
+}
+.dana-kaget-dari-bima-container20 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.dana-kaget-dari-bima-text18 {
+  color: #3f3f3f;
+  font-size: 25px;
+  font-style: normal;
+  font-family: "Inter";
+  font-weight: 800;
+}
+.dana-kaget-dari-bima-text19 {
+  color: #201d1d;
+  font-style: normal;
+  text-align: center;
+  font-weight: 600;
+  padding-top: var(--dl-space-space-halfunit);
+  border-color: var(--dl-color-gray-black);
+  border-width: 1px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 20px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
+  background-color: #ffffff;
+}
+.dana-kaget-dari-bima-text20 {
+  color: rgb(63, 63, 63);
+}
+.dana-kaget-dari-bima-button5 {
+  color: rgb(255, 255, 255);
+  width: 100%;
+  cursor: pointer;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  padding-top: var(--dl-space-space-unit);
+  border-color: #004482;
+  border-width: 3px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: 10px;
+  padding-right: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-unit);
+  text-transform: uppercase;
+  background-color: rgb(0, 68, 130);
+}
+.dana-kaget-dari-bima-button5:hover {
+  color: #2f2f2f;
+  box-shadow: 5px 5px 10px 0px #bcbcbc;
+  font-style: normal;
+  font-weight: 600;
+  border-color: #434343;
+  border-width: 3px;
+  background-color: transparent;
+}
+.dana-kaget-dari-bima-container22 {
   display: contents;
 }
 
 
 
 @media(max-width: 767px) {
-  .dana-kaget-dari-bima-container03 {
+  .dana-kaget-dari-bima-container06 {
     flex-direction: column;
   }
-  .dana-kaget-dari-bima-container08 {
+  .dana-kaget-dari-bima-container11 {
+    flex-direction: column;
+  }
+  .dana-kaget-dari-bima-container16 {
     flex-direction: column;
   }
 }
-
+@media(max-width: 479px) {
+  .dana-kaget-dari-bima-container03 {
+    padding-left: 16px;
+  }
+}
