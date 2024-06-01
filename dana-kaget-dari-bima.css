@@ -448,9 +448,7 @@
 }
 
 
-.popupcomers-root-class-name2 {
-  display: none;
-}
+
 @media(max-width: 991px) {
   .popupcomers-text33 {
     font-size: 20px;
@@ -1634,6 +1632,12 @@
   border-radius: 20px;
   justify-content: center;
 }
+.dana-kaget-dari-bima-container04 {
+  width: 100%;
+  height: auto;
+  display: none;
+  object-fit: cover;
+}
 .dana-kaget-dari-bima-image {
   width: 130px;
   height: 130px;
@@ -1641,7 +1645,7 @@
   margin-right: var(--dl-space-space-twounits);
   border-radius: var(--dl-radius-radius-round);
 }
-.dana-kaget-dari-bima-container04 {
+.dana-kaget-dari-bima-container05 {
   gap: var(--dl-space-space-unit);
   flex: 1;
   width: 100%;
@@ -1654,12 +1658,12 @@
 .dana-kaget-dari-bima-text {
   font-size: 20px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
 }
 .dana-kaget-dari-bima-text02 {
   color: #0028ff;
 }
-.dana-kaget-dari-bima-container05 {
+.dana-kaget-dari-bima-container06 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: flex-start;
@@ -1726,7 +1730,7 @@
 .dana-kaget-dari-bima-link2:hover {
   box-shadow: 5px 5px 10px 0px #d4d4d4;
 }
-.dana-kaget-dari-bima-container06 {
+.dana-kaget-dari-bima-container07 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   display: flex;
@@ -1734,7 +1738,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.dana-kaget-dari-bima-container07 {
+.dana-kaget-dari-bima-container08 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -1756,7 +1760,7 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.dana-kaget-dari-bima-container08 {
+.dana-kaget-dari-bima-container09 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -1815,7 +1819,7 @@
   border-width: 3px;
   background-color: transparent;
 }
-.dana-kaget-dari-bima-container09 {
+.dana-kaget-dari-bima-container10 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -1841,7 +1845,7 @@
   padding-right: 0px;
   padding-bottom: 0px;
 }
-.dana-kaget-dari-bima-container10 {
+.dana-kaget-dari-bima-container11 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -1900,7 +1904,7 @@
   border-width: 3px;
   background-color: transparent;
 }
-.dana-kaget-dari-bima-container11 {
+.dana-kaget-dari-bima-container12 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   display: flex;
@@ -1908,7 +1912,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.dana-kaget-dari-bima-container12 {
+.dana-kaget-dari-bima-container13 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -1930,7 +1934,7 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.dana-kaget-dari-bima-container13 {
+.dana-kaget-dari-bima-container14 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -1989,7 +1993,7 @@
   border-width: 3px;
   background-color: transparent;
 }
-.dana-kaget-dari-bima-container14 {
+.dana-kaget-dari-bima-container15 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -2011,7 +2015,7 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.dana-kaget-dari-bima-container15 {
+.dana-kaget-dari-bima-container16 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2070,7 +2074,7 @@
   border-width: 3px;
   background-color: transparent;
 }
-.dana-kaget-dari-bima-container16 {
+.dana-kaget-dari-bima-container17 {
   gap: var(--dl-space-space-twounits);
   width: 100%;
   display: flex;
@@ -2078,7 +2082,7 @@
   flex-direction: row;
   justify-content: flex-start;
 }
-.dana-kaget-dari-bima-container17 {
+.dana-kaget-dari-bima-container18 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -2100,7 +2104,7 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.dana-kaget-dari-bima-container18 {
+.dana-kaget-dari-bima-container19 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2158,7 +2162,7 @@
   border-width: 3px;
   background-color: transparent;
 }
-.dana-kaget-dari-bima-container19 {
+.dana-kaget-dari-bima-container20 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: auto;
@@ -2180,7 +2184,7 @@
   object-fit: cover;
   border-radius: 20px;
 }
-.dana-kaget-dari-bima-container20 {
+.dana-kaget-dari-bima-container21 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -2238,39 +2242,70 @@
   border-width: 3px;
   background-color: transparent;
 }
-.dana-kaget-dari-bima-container22 {
+.dana-kaget-dari-bima-container23 {
   display: contents;
 }
 
 
 
 @media(max-width: 767px) {
-  .dana-kaget-dari-bima-container06 {
+  .dana-kaget-dari-bima-container07 {
     flex-direction: column;
   }
-  .dana-kaget-dari-bima-container11 {
+  .dana-kaget-dari-bima-container12 {
     flex-direction: column;
   }
-  .dana-kaget-dari-bima-container16 {
+  .dana-kaget-dari-bima-container17 {
     flex-direction: column;
   }
 }
 @media(max-width: 479px) {
   .dana-kaget-dari-bima-container03 {
-    gap: var(--dl-space-space-unit);
+    gap: var(--dl-space-space-twounits);
+    position: relative;
     padding-left: 16px;
     flex-direction: column;
   }
+  .dana-kaget-dari-bima-container04 {
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 95px;
+    margin: auto;
+    display: flex;
+    position: absolute;
+    background-color: #f1f1f1;
+  }
   .dana-kaget-dari-bima-image {
+    z-index: 5;
     margin-right: 0px;
   }
-  .dana-kaget-dari-bima-container04 {
+  .dana-kaget-dari-bima-container05 {
     align-items: center;
   }
   .dana-kaget-dari-bima-text {
     text-align: center;
   }
-  .dana-kaget-dari-bima-container05 {
+  .dana-kaget-dari-bima-container06 {
     width: 100%;
+    flex-direction: column;
+  }
+  .dana-kaget-dari-bima-link {
+    width: 100%;
+    padding-top: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .dana-kaget-dari-bima-link1 {
+    width: 100%;
+    padding-top: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
+  }
+  .dana-kaget-dari-bima-link2 {
+    width: 100%;
+    padding-top: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-unit);
   }
 }
