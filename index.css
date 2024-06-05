@@ -1156,7 +1156,7 @@
   text-decoration: none;
   background-color: #18aa00;
 }
-.popupcomers-text33 {
+.popupcomers-text17 {
   color: #ffffff;
   font-size: 20px;
   font-style: normal;
@@ -1198,12 +1198,12 @@
 
 
 @media(max-width: 991px) {
-  .popupcomers-text33 {
+  .popupcomers-text17 {
     font-size: 20px;
   }
 }
 @media(max-width: 767px) {
-  .popupcomers-text33 {
+  .popupcomers-text17 {
     font-size: 20px;
   }
   .popupcomers-close-button {
