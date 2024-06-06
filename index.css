@@ -1037,16 +1037,16 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  padding: Unit;
   z-index: 110;
   position: fixed;
   max-width: auto;
+  overflow-y: scroll;
   align-items: center;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-twounits);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-twounits);
   backdrop-filter: blur(10px);
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.45);
@@ -1091,12 +1091,31 @@
   padding-bottom: 0px;
   justify-content: flex-start;
 }
+.popupcomers-container2 {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
 .popupcomers-image {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.popupcomers-container2 {
+.popupcomers-lottie-node {
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 565px;
+  margin: auto;
+  z-index: 1;
+  position: absolute;
+}
+.popupcomers-container3 {
   gap: var(--dl-space-space-unit);
   flex: 1;
   width: 100%;
@@ -1142,7 +1161,7 @@
 .popupcomers-navlink {
   display: contents;
 }
-.popupcomers-container3 {
+.popupcomers-container4 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   cursor: pointer;
@@ -1191,7 +1210,7 @@
   height: 24px;
   align-self: center;
 }
-.popupcomers-container5 {
+.popupcomers-container6 {
   display: contents;
 }
 
