@@ -1022,7 +1022,7 @@
   }
   .linknavbima-container05 {
     gap: 0px;
-    flex-direction: row;
+    flex-direction: column;
   }
   .linknavbima-container06 {
     flex-direction: column;
@@ -1114,6 +1114,7 @@
   margin: auto;
   z-index: 1;
   position: absolute;
+  transform: scale(210%);
 }
 .popupcomers-container3 {
   gap: var(--dl-space-space-unit);
@@ -1320,6 +1321,7 @@
 }
 .footer-root-class-name {
   margin-top: 0px;
+  background-color: transparent;
 }
 
 

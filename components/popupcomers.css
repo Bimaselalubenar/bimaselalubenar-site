@@ -80,6 +80,7 @@
   margin: auto;
   z-index: 1;
   position: absolute;
+  transform: scale(210%);
 }
 .popupcomers-container3 {
   gap: var(--dl-space-space-unit);

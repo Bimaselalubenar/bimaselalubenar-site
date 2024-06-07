@@ -1130,7 +1130,7 @@
   }
   .linknavbima-container05 {
     gap: 0px;
-    flex-direction: row;
+    flex-direction: column;
   }
   .linknavbima-container06 {
     flex-direction: column;
@@ -1156,6 +1156,7 @@
 }
 .footer-root-class-name {
   margin-top: 0px;
+  background-color: transparent;
 }
 
 
