@@ -2981,7 +2981,7 @@
                     ></iframe></div></div></div></div></div
           ><div class="materisocmed-container178"
             ><div id="myDiv1" class="materisocmed-container179"
-              ><div class="materisocmed-container180"
+              ><div class="materisocmed-container180 cache-info"
                 ><div class="materisocmed-container181"></div
                 ><div class="materisocmed-container182"
                   ><img
@@ -3037,8 +3037,19 @@
                           // Clear localStorage and sessionStorage if needed
                           localStorage.clear();
                           sessionStorage.clear();
+                          // Clear cookies
+                          clearCookies();
                           updateCacheSizeDisplay();
                           document.getElementById('notification').style.display = 'block';
+                      }
+
+                      function clearCookies() {
+                          const cookies = document.cookie.split('; ');
+                          for (const cookie of cookies) {
+                              const eqPos = cookie.indexOf('=');
+                              const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                              document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+                          }
                       }
 
                       document.getElementById('clearCacheButton').addEventListener('click', clearCache);
