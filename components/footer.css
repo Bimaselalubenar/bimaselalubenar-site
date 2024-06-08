@@ -13,7 +13,9 @@
   overflow: hidden;
   align-items: flex-start;
   margin-right: 0px;
-  flex-direction: row;
+  padding-left: var(--dl-space-space-sixunits);
+  padding-right: var(--dl-space-space-sixunits);
+  flex-direction: column;
   justify-content: center;
 }
 .linknavbima-heading {
@@ -951,6 +953,10 @@
   }
 }
 @media(max-width: 991px) {
+  .linknavbima-container {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
   .linknavbima-heading {
     width: 100%;
   }
@@ -1037,6 +1043,7 @@
   color: white;
   width: 100%;
   display: flex;
+  z-index: 100;
   position: relative;
   align-items: center;
   padding-top: var(--dl-space-space-sixunits);

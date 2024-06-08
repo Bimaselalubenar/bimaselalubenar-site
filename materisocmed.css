@@ -371,7 +371,9 @@
   overflow: hidden;
   align-items: flex-start;
   margin-right: 0px;
-  flex-direction: row;
+  padding-left: var(--dl-space-space-sixunits);
+  padding-right: var(--dl-space-space-sixunits);
+  flex-direction: column;
   justify-content: center;
 }
 .linknavbima-heading {
@@ -1309,6 +1311,10 @@
   }
 }
 @media(max-width: 991px) {
+  .linknavbima-container {
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+  }
   .linknavbima-heading {
     width: 100%;
   }
@@ -1395,6 +1401,7 @@
   color: white;
   width: 100%;
   display: flex;
+  z-index: 100;
   position: relative;
   align-items: center;
   padding-top: var(--dl-space-space-sixunits);
@@ -2111,7 +2118,6 @@
 .materisocmed-container020 {
   width: 100%;
   height: 100vh;
-  align-self: flex-start;
   overflow-y: scroll;
   padding-top: 73px;
   background-color: #ffffff;
@@ -5338,7 +5344,7 @@
   background-color: #ffffff;
 }
 .materisocmed-text102 {
-  color: #ffffff;
+  color: #313131;
   font-size: 20px;
   align-self: center;
   font-style: normal;
@@ -5358,7 +5364,7 @@
   border-radius: var(--dl-radius-radius-round);
   flex-direction: column;
   justify-content: center;
-  background-color: #fff67f;
+  background-image: linear-gradient(90deg, rgb(254, 172, 94) 0.00%,rgb(199, 121, 208) 50.00%,rgb(75, 192, 200) 100.00%);
 }
 .materisocmed-text103 {
   color: #ffffff;
@@ -5374,7 +5380,7 @@
 }
 .materisocmed-text104 {
   color: #ffffff;
-  font-size: 20px;
+  font-size: 16px;
   align-self: center;
   font-style: normal;
   margin-top: 0px;
@@ -5397,13 +5403,13 @@
   height: auto;
   display: flex;
   align-items: center;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-halfunit);
   border-color: #d2d2d2;
   border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
   justify-content: center;
   border-top-width: 0px;
   border-left-width: 0px;
@@ -5449,13 +5455,13 @@
   height: auto;
   display: flex;
   align-items: center;
-  padding-top: var(--dl-space-space-unit);
+  padding-top: var(--dl-space-space-halfunit);
   border-color: #d2d2d2;
   border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: row;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: var(--dl-space-space-halfunit);
   justify-content: center;
   border-top-width: 0px;
   border-left-width: 0px;
@@ -5647,7 +5653,7 @@
   height: auto;
   display: none;
   overflow: hidden;
-  box-shadow: 0px 0px 10px 0px rgba(142, 141, 141, 0.36);
+  box-shadow: 5px 5px 0px 0px #e7e7e7,5px 5px 15px 0px rgba(64, 64, 64, 0.52);
   align-items: center;
   margin-right: 0px;
   border-radius: var(--dl-radius-radius-radius8);
@@ -5803,14 +5809,7 @@
 .materisocmed-container195 {
   display: contents;
 }
-@media(max-width: 1600px) {
-  .materisocmed-container009 {
-    display: none;
-  }
-  .materisocmed-container174 {
-    display: none;
-  }
-}
+
 @media(max-width: 1200px) {
   .materisocmed-container023 {
     flex: 1;
@@ -5886,6 +5885,9 @@
     left: 0px;
     width: auto;
     position: absolute;
+  }
+  .materisocmed-container009 {
+    display: none;
   }
   .materisocmed-container011 {
     display: none;
@@ -5996,16 +5998,14 @@
     font-weight: 600;
     text-transform: uppercase;
   }
+  .materisocmed-container174 {
+    display: none;
+  }
 }
 @media(max-width: 767px) {
   .materisocmed-container003 {
     align-items: flex-start;
     justify-content: flex-start;
-  }
-  .materisocmed-container020 {
-    width: 100%;
-    position: relative;
-    align-self: flex-start;
   }
   .materisocmed-container021 {
     align-items: flex-start;
@@ -6885,8 +6885,6 @@
   }
   .materisocmed-container165 {
     gap: var(--dl-space-space-halfunit);
-    width: 300px;
-    height: 300px;
   }
   .materisocmed-text103 {
     font-size: 40px;
@@ -6913,10 +6911,6 @@
   }
   .materisocmed-text109 {
     font-size: 16px;
-  }
-  .materisocmed-container169 {
-    padding-top: var(--dl-space-space-unit);
-    padding-bottom: var(--dl-space-space-unit);
   }
   .materisocmed-container172 {
     flex-direction: column;

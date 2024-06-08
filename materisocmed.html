@@ -2877,94 +2877,91 @@
                       let intervalId;
 
                       startButton.addEventListener('click', () => {
-                        startInternetSpeedTest();
+                          startInternetSpeedTest();
                       });
 
                       stopButton.addEventListener('click', () => {
-                        stopInternetSpeedTest();
+                          stopInternetSpeedTest();
                       });
 
                       resetButton.addEventListener('click', () => {
-                        resetInternetSpeedTest();
+                          resetInternetSpeedTest();
                       });
 
                       async function startInternetSpeedTest() {
-                        if (intervalId) return; // Prevent multiple intervals
-                        intervalId = setInterval(async () => {
-                          let speed = await getInternetSpeed();
-                          if (speed === null) {
-                            speedValueElement.textContent = 'No connection';
-                            averageSpeedValueElement.textContent = 'N/A';
-                            speedRatingElement.textContent = 'N/A';
-                            return;
-                          }
-                          speedValueElement.textContent = speed.toFixed(2);
+                          if (intervalId) return; // Prevent multiple intervals
+                          intervalId = setInterval(async () => {
+                              let speed = await getInternetSpeed();
+                              if (speed === null) {
+                                  speedValueElement.textContent = 'No connection';
+                                  averageSpeedValueElement.textContent = 'N/A';
+                                  speedRatingElement.textContent = 'N/A';
+                                  return;
+                              }
+                              speedValueElement.textContent = speed.toFixed(2);
 
-                          // Save measurement
-                          speedMeasurements.push(speed);
+                              // Save measurement
+                              speedMeasurements.push(speed);
 
-                          // Calculate and display average speed
-                          let averageSpeed = calculateAverageSpeed(speedMeasurements);
-                          averageSpeedValueElement.textContent = averageSpeed.toFixed(2);
+                              // Calculate and display average speed
+                              let averageSpeed = calculateAverageSpeed(speedMeasurements);
+                              averageSpeedValueElement.textContent = averageSpeed.toFixed(2);
 
-                          // Display speed rating
-                          let rating = getSpeedRating(averageSpeed);
-                          speedRatingElement.textContent = rating;
-                        }, 1000); // Update every second
+                              // Display speed rating
+                              let rating = getSpeedRating(averageSpeed);
+                              speedRatingElement.textContent = rating;
+                          }, 1000); // Update every second
                       }
 
                       function stopInternetSpeedTest() {
-                        clearInterval(intervalId);
-                        intervalId = null;
+                          clearInterval(intervalId);
+                          intervalId = null;
                       }
 
                       function resetInternetSpeedTest() {
-                        stopInternetSpeedTest();
-                        speedMeasurements = [];
-                        speedValueElement.textContent = '0';
-                        averageSpeedValueElement.textContent = '0';
-                        speedRatingElement.textContent = 'N/A';
+                          stopInternetSpeedTest();
+                          speedMeasurements = [];
+                          speedValueElement.textContent = '0.00';
+                          averageSpeedValueElement.textContent = '0.00';
+                          speedRatingElement.textContent = 'N/A';
                       }
 
                       async function getInternetSpeed() {
-                        try {
-                          let startTime = Date.now();
-                          let response = await fetch(
-                            'https://scontent.fsub32-2.fna.fbcdn.net/v/t39.10537-6/10000000_964310852026032_6301613827711600359_n.msi/SparkARStudio_v181.msi?_nc_cat=108&ccb=1-7&_nc_sid=32be81&_nc_eui2=AeHuHpV3jCgcQFmWnfr7QbM3aieur6TEbP1qJ66vpMRs_fhtmVKpKkxl3bjTv3zHuW_I95ZOoZapslgTETz9gPJe&_nc_ohc=oQkFTJCns2cQ7kNvgEVNwiU&_nc_ad=z-m&_nc_cid=0&_nc_zor=4&_nc_pt=1&_nc_ht=scontent.fsub32-2.fna&oh=00_AYAj9use-gqE5FNWZpIzXuhChiON9leC36ft4FLdBwWLTg&oe=66658CFE',
-                            { method: 'HEAD', cache: 'no-store' }
-                          );
-                          let endTime = Date.now();
-                          let contentLength = response.headers.get('content-length');
-                          if (!response.ok || !contentLength) {
-                            throw new Error('Failed to fetch file for speed test');
+                          try {
+                              let startTime = Date.now();
+                              let response = await fetch('https://download.samplelib.com/mp4/sample-100mb.mp4', { method: 'HEAD', cache: 'no-store' });
+                              let endTime = Date.now();
+                              let contentLength = response.headers.get('content-length');
+                              if (!response.ok || !contentLength) {
+                                  throw new Error('Failed to fetch file for speed test');
+                              }
+                              let duration = (endTime - startTime) / 1000; // in seconds
+                              let speed = (contentLength * 8) / (1024 * 1024 * duration); // convert to Mbps
+                              return speed;
+                          } catch (error) {
+                              console.error('Error fetching file for speed test:', error);
+                              return null; // signify no connection or an error
                           }
-                          let duration = (endTime - startTime) / 1000; // in seconds
-                          let speed = (contentLength * 8) / (1024 * 1024 * duration); // convert to Mbps
-                          return speed;
-                        } catch (error) {
-                          console.error('Error fetching file for speed test:', error);
-                          return null; // signify no connection or an error
-                        }
                       }
 
                       function calculateAverageSpeed(measurements) {
-                        let total = measurements.reduce((acc, curr) => acc + curr, 0);
-                        return total / measurements.length;
+                          let total = measurements.reduce((acc, curr) => acc + curr, 0);
+                          return total / measurements.length;
                       }
 
                       function getSpeedRating(speed) {
-                        if (speed >= 100) {
-                          return 'Sangat Baik';
-                        } else if (speed >= 90) {
-                          return 'Baik';
-                        } else if (speed >= 70) {
-                          return 'Buruk';
-                        } else {
-                          return 'Sangat Buruk';
-                        }
+                          if (speed >= 75) {
+                              return 'Sangat Baik';
+                          } else if (speed >= 50) {
+                              return 'Baik';
+                          } else if (speed >= 25) {
+                              return 'Buruk';
+                          } else {
+                              return 'Sangat Buruk';
+                          }
                       }
-                    </script>
-                  </div></div
+                    </script></div
+                  ></div
                 ></div
               ></div
             ><div id="appai" class="materisocmed-container172 content"
