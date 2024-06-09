@@ -2965,13 +2965,49 @@
                 ></div
               ></div
             ><div id="appai" class="materisocmed-container172 content"
-              ><div class="materisocmed-container173"
-                ><span class="materisocmed-text110">Segera hadir..</span><iframe src="https://copilot.microsoft.com/" width="100%" height="100%" scrolling="none" frameborder="0"></iframe></div
+              ><div id="embed-container" class="materisocmed-container173"
+                ><div
+                  ><div class="materisocmed-container175"
+                    ><script>
+                      function getBrowser() {
+                        var userAgent = navigator.userAgent;
+
+                        if (userAgent.indexOf('Chrome') > -1 && userAgent.indexOf('Edg') === -1) {
+                          return 'Chrome';
+                        } else if (userAgent.indexOf('Edg') > -1) {
+                          return 'Edge';
+                        } else {
+                          return 'Other';
+                        }
+                      }
+
+                      function loadEmbed() {
+                        var browser = getBrowser();
+                        var embedContainer = document.getElementById('embed-container');
+                        var embedLink;
+
+                        if (browser === 'Chrome') {
+                          embedLink = 'https://chatgpt.com/';
+                        } else if (browser === 'Edge') {
+                          embedLink = 'https://copilot.microsoft.com/';
+                        } else {
+                          embedContainer.innerHTML = 'Unsupported browser';
+                          return;
+                        }
+
+                        embedContainer.innerHTML =
+                          '<iframe src='' + embedLink + '' width='600' height='400'></iframe>';
+                      }
+
+                      window.onload = loadEmbed;
+                    </script>
+                  </div></div
+                ></div
               ></div
-            ><div id="minigame" class="materisocmed-container174 content"
-              ><div class="materisocmed-container175"
-                ><div class="materisocmed-container176"
-                  ><div class="materisocmed-container177"
+            ><div id="minigame" class="materisocmed-container176 content"
+              ><div class="materisocmed-container177"
+                ><div class="materisocmed-container178"
+                  ><div class="materisocmed-container179"
                     ><iframe
                       src="https://bloob.io/8ballpool"
                       width="100%"
@@ -2979,35 +3015,35 @@
                       scrolling="none"
                       frameborder="0"
                     ></iframe></div></div></div></div></div
-          ><div class="materisocmed-container178"
-            ><div id="myDiv1" class="materisocmed-container179"
-              ><div class="materisocmed-container180 cache-info"
-                ><div class="materisocmed-container181"></div
-                ><div class="materisocmed-container182"
+          ><div class="materisocmed-container180"
+            ><div id="myDiv1" class="materisocmed-container181"
+              ><div class="materisocmed-container182 cache-info"
+                ><div class="materisocmed-container183"></div
+                ><div class="materisocmed-container184"
                   ><img
                     alt="bimaselalubenar"
                     src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/446116167_462400663031066_7733220523066410286_n.jpg?updatedAt=1717210689175"
                     class="materisocmed-image08"
-                  /><span class="materisocmed-text111">Clear Chache</span></div
-                ><span class="materisocmed-text112">Total sampah : </span
-                ><div class="materisocmed-container183"
-                  ><span id="angka" class="materisocmed-text113"
+                  /><span class="materisocmed-text110">Clear Chache</span></div
+                ><span class="materisocmed-text111">Total sampah : </span
+                ><div class="materisocmed-container185"
+                  ><span id="angka" class="materisocmed-text112"
                     >Menghitung...</span
-                  ><span id="mb" class="materisocmed-text114">Mb</span
-                  ><span id="status" class="materisocmed-text115"
+                  ><span id="mb" class="materisocmed-text113">Mb</span
+                  ><span id="status" class="materisocmed-text114"
                     >Status</span
                   ></div
-                ><span id="cacheSize" class="materisocmed-text116"
+                ><span id="cacheSize" class="materisocmed-text115"
                   >Calculating...</span
                 ><button
                   id="clearCacheButton"
                   type="button"
                   class="materisocmed-button15"
                   >Bersihkan sampah</button
-                ><span id="notification" class="materisocmed-text117"
+                ><span id="notification" class="materisocmed-text116"
                   >Sampah berhasil di bersihkan!</span
-                ><div class="materisocmed-container184"
-                  ><div class="materisocmed-container185"
+                ><div class="materisocmed-container186"
+                  ><div class="materisocmed-container187"
                     ><script>
                       function getRandomNumber(min, max) {
                           return (Math.random() * (max - min) + min).toFixed(2);
@@ -3044,8 +3080,8 @@
                       window.onload = startUpdating;
                     </script></div
                   ></div
-                ><div class="materisocmed-container186"
-                  ><div class="materisocmed-container187"
+                ><div class="materisocmed-container188"
+                  ><div class="materisocmed-container189"
                     ><script>
                       async function calculateCacheSize() {
                           if ('caches' in window) {
@@ -3106,7 +3142,7 @@
               ></div
             ><div
               onclick="toggleDiv('myDiv1')"
-              class="materisocmed-container188"
+              class="materisocmed-container190"
               ><svg
                 viewBox="0 0 804.5714285714286 1024"
                 class="materisocmed-icon34"
@@ -3114,24 +3150,24 @@
                 <path
                   d="M292.571 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM438.857 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM585.143 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM274.286 219.429h256l-27.429-66.857c-1.714-2.286-6.857-5.714-9.714-6.286h-181.143c-3.429 0.571-8 4-9.714 6.286zM804.571 237.714v36.571c0 10.286-8 18.286-18.286 18.286h-54.857v541.714c0 62.857-41.143 116.571-91.429 116.571h-475.429c-50.286 0-91.429-51.429-91.429-114.286v-544h-54.857c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h176.571l40-95.429c11.429-28 45.714-50.857 76-50.857h182.857c30.286 0 64.571 22.857 76 50.857l40 95.429h176.571c10.286 0 18.286 8 18.286 18.286z"
                 ></path></svg></div></div
-          ><div class="materisocmed-container189"
-            ><div id="myDiv2" class="materisocmed-container190"
-              ><div class="materisocmed-container191"
-                ><div class="materisocmed-container192"></div
-                ><div class="materisocmed-container193"
+          ><div class="materisocmed-container191"
+            ><div id="myDiv2" class="materisocmed-container192"
+              ><div class="materisocmed-container193"
+                ><div class="materisocmed-container194"></div
+                ><div class="materisocmed-container195"
                   ><img
                     alt="bimaselalubenar"
                     src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/446116167_462400663031066_7733220523066410286_n.jpg?updatedAt=1717210689175"
                     class="materisocmed-image09"
-                  /><span class="materisocmed-text118"
+                  /><span class="materisocmed-text117"
                     >Bimaselalubenar</span
                   ></div
-                ><div class="materisocmed-container194"
+                ><div class="materisocmed-container196"
                   ><img
                     alt="---"
                     src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNna2dmbHdtOHZ5ZmFiNmJxb21xd293ZG9kb2tsZ2h1b2lha2g2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZOZzPhtZBTLBzwgew5/giphy.webp"
                     class="materisocmed-image10" /></div
-                ><div class="materisocmed-container195"
+                ><div class="materisocmed-container197"
                   ><input
                     type="text"
                     id="messageWA"
@@ -3149,13 +3185,13 @@
               ></div
             ><div
               onclick="toggleDiv('myDiv2')"
-              class="materisocmed-container196"
+              class="materisocmed-container198"
               ><svg viewBox="0 0 1024 1024" class="materisocmed-icon36">
                 <path
                   d="M873 148.8c-95.8-96-223.2-148.8-359-148.8-279.6 0-507.2 227.6-507.2 507.4 0 89.4 23.4 176.8 67.8 253.6l-72 263 269-70.6c74.2 40.4 157.6 61.8 242.4 61.8h0.2c0 0 0 0 0 0 279.6 0 507.4-227.6 507.4-507.4 0-135.6-52.8-263-148.6-359zM514.2 929.6v0c-75.8 0-150-20.4-214.8-58.8l-15.4-9.2-159.6 41.8 42.6-155.6-10-16c-42.4-67-64.6-144.6-64.6-224.4 0-232.6 189.2-421.8 422-421.8 112.6 0 218.6 44 298.2 123.6 79.6 79.8 123.4 185.6 123.4 298.4-0.2 232.8-189.4 422-421.8 422zM745.4 613.6c-12.6-6.4-75-37-86.6-41.2s-20-6.4-28.6 6.4c-8.4 12.6-32.8 41.2-40.2 49.8-7.4 8.4-14.8 9.6-27.4 3.2s-53.6-19.8-102-63c-37.6-33.6-63.2-75.2-70.6-87.8s-0.8-19.6 5.6-25.8c5.8-5.6 12.6-14.8 19-22.2s8.4-12.6 12.6-21.2c4.2-8.4 2.2-15.8-1-22.2s-28.6-68.8-39-94.2c-10.2-24.8-20.8-21.4-28.6-21.8-7.4-0.4-15.8-0.4-24.2-0.4s-22.2 3.2-33.8 15.8c-11.6 12.6-44.4 43.4-44.4 105.8s45.4 122.6 51.8 131.2c6.4 8.4 89.4 136.6 216.6 191.4 30.2 13 53.8 20.8 72.2 26.8 30.4 9.6 58 8.2 79.8 5 24.4-3.6 75-30.6 85.6-60.2s10.6-55 7.4-60.2c-3-5.6-11.4-8.8-24.2-15.2z"
                 ></path></svg></div></div></div
-        ><div class="materisocmed-container197"
-          ><div class="materisocmed-container198"
+        ><div class="materisocmed-container199"
+          ><div class="materisocmed-container200"
             ><script>
               document.getElementById('dashboardMenu').addEventListener('click', function() {
                   showContent('dashboard');
@@ -3232,8 +3268,8 @@
               }
             </script></div
           ></div
-        ><div class="materisocmed-container199"
-          ><div class="materisocmed-container200"
+        ><div class="materisocmed-container201"
+          ><div class="materisocmed-container202"
             ><script>
               const userInfo = document.getElementById('userInfo');
               const user = JSON.parse(localStorage.getItem('currentUser'));
@@ -3258,8 +3294,8 @@
               }
             </script>
           </div></div
-        ><div class="materisocmed-container201"
-          ><div class="materisocmed-container202"
+        ><div class="materisocmed-container203"
+          ><div class="materisocmed-container204"
             ><script>
               function showBannerlogin1(bannerNumber) {
                   document.getElementById('overlay').style.display = 'block';
@@ -3272,8 +3308,8 @@
               }
             </script></div
           ></div
-        ><div class="materisocmed-container203"
-          ><div class="materisocmed-container204"
+        ><div class="materisocmed-container205"
+          ><div class="materisocmed-container206"
             ><script>
               function sendMessage() {
                   const message = document.getElementById('messageWA').value;
@@ -3283,8 +3319,8 @@
               }
             </script></div
           ></div
-        ><div class="materisocmed-container205"
-          ><div class="materisocmed-container206"
+        ><div class="materisocmed-container207"
+          ><div class="materisocmed-container208"
             ><script>
               function toggleDiv(divId) {
                   const myDiv = document.getElementById(divId);
