@@ -2965,44 +2965,43 @@
                 ></div
               ></div
             ><div id="appai" class="materisocmed-container172 content"
-              ><div id="embed-container" class="materisocmed-container173"
-                ><div
-                  ><div class="materisocmed-container175"
-                    ><script>
-                      function getBrowser() {
-                        var userAgent = navigator.userAgent;
+              ><div id="embed-container" class="materisocmed-container173"></div
+              ><div
+                ><div class="materisocmed-container175"
+                  ><script>
+                    function getBrowser() {
+                      var userAgent = navigator.userAgent;
 
-                        if (userAgent.indexOf('Chrome') > -1 && userAgent.indexOf('Edg') === -1) {
-                          return 'Chrome';
-                        } else if (userAgent.indexOf('Edg') > -1) {
-                          return 'Edge';
-                        } else {
-                          return 'Other';
-                        }
+                      if (userAgent.indexOf('Chrome') > -1 && userAgent.indexOf('Edg') === -1) {
+                        return 'Chrome';
+                      } else if (userAgent.indexOf('Edg') > -1) {
+                        return 'Edge';
+                      } else {
+                        return 'Other';
+                      }
+                    }
+
+                    function loadEmbed() {
+                      var browser = getBrowser();
+                      var embedContainer = document.getElementById('embed-container');
+                      var embedLink;
+
+                      if (browser === 'Chrome') {
+                        embedLink = 'https://chatgpt.com/';
+                      } else if (browser === 'Edge') {
+                        embedLink = 'https://copilot.microsoft.com/';
+                      } else {
+                        embedContainer.innerHTML = 'Unsupported browser';
+                        return;
                       }
 
-                      function loadEmbed() {
-                        var browser = getBrowser();
-                        var embedContainer = document.getElementById('embed-container');
-                        var embedLink;
+                      embedContainer.innerHTML =
+                        '<iframe src='' + embedLink + '' width='600' height='400'></iframe>';
+                    }
 
-                        if (browser === 'Chrome') {
-                          embedLink = 'https://chatgpt.com/';
-                        } else if (browser === 'Edge') {
-                          embedLink = 'https://copilot.microsoft.com/';
-                        } else {
-                          embedContainer.innerHTML = 'Unsupported browser';
-                          return;
-                        }
-
-                        embedContainer.innerHTML =
-                          '<iframe src='' + embedLink + '' width='600' height='400'></iframe>';
-                      }
-
-                      window.onload = loadEmbed;
-                    </script>
-                  </div></div
-                ></div
+                    window.onload = loadEmbed;
+                  </script>
+                </div></div
               ></div
             ><div id="minigame" class="materisocmed-container176 content"
               ><div class="materisocmed-container177"
