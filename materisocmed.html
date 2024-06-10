@@ -2968,41 +2968,44 @@
               ><span class="materisocmed-text110"
                 ><span>Untuk pengguna </span
                 ><span class="materisocmed-text112">Microsoft Edge</span></span
-              ><div id="embed-container" class="materisocmed-container173"></div
-              ><div
-                ><div class="materisocmed-container175"
-                  ><script>
-                    function getBrowser() {
-                        var userAgent = navigator.userAgent;
+              ><div class="materisocmed-container173"
+                ><div class="materisocmed-container174"
+                  ><div class="materisocmed-container175">
+                    <div id="embed-container"></div>
 
-                        if (userAgent.indexOf('Chrome') > -1 && userAgent.indexOf('Edg') === -1) {
-                            return 'Chrome';
-                        } else if (userAgent.indexOf('Edg') > -1) {
-                            return 'Edge';
-                        } else {
-                            return 'Other';
-                        }
-                    }
+                    <script>
+                      function getBrowser() {
+                          var userAgent = navigator.userAgent;
 
-                    function loadEmbed() {
-                        var browser = getBrowser();
-                        var embedContainer = document.getElementById('embed-container');
-                        var embedLink;
+                          if (userAgent.indexOf('Chrome') > -1 && userAgent.indexOf('Edg') === -1) {
+                              return 'Chrome';
+                          } else if (userAgent.indexOf('Edg') > -1) {
+                              return 'Edge';
+                          } else {
+                              return 'Other';
+                          }
+                      }
 
-                        if (browser === 'Chrome') {
-                            embedLink = 'EROR!. UNTUK PENGGUNA MICROSOFT EDGE';
-                        } else if (browser === 'Edge') {
-                            embedLink = 'https://copilot.microsoft.com/';
-                        } else {
-                            embedContainer.innerHTML = 'Unsupported browser';
-                            return;
-                        }
+                      function loadEmbed() {
+                          var browser = getBrowser();
+                          var embedContainer = document.getElementById('embed-container');
+                          var embedLink;
 
-                        embedContainer.innerHTML = '<iframe src='' + embedLink + '' width='100%' height='100%'></iframe>';
-                    }
+                          if (browser === 'Chrome') {
+                              embedLink = 'https://chatgpt.com/';
+                          } else if (browser === 'Edge') {
+                              embedLink = 'https://copilot.microsoft.com/';
+                          } else {
+                              embedContainer.innerHTML = 'Unsupported browser';
+                              return;
+                          }
 
-                    window.onload = loadEmbed;
-                  </script></div
+                          embedContainer.innerHTML = '<iframe src='' + embedLink + '' width='100%' height='100%'></iframe>';
+                      }
+
+                      window.onload = loadEmbed;
+                    </script></div
+                  ></div
                 ></div
               ></div
             ><div id="minigame" class="materisocmed-container176 content"
