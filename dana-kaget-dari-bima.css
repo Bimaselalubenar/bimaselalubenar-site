@@ -310,7 +310,7 @@
   display: flex;
   padding: var(--dl-space-space-unit);
   position: relative;
-  max-width: 700px;
+  max-width: 500px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.39);
   align-items: flex-start;
   border-radius: 10px;
@@ -326,7 +326,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding-bottom: var(--dl-space-space-unit);
+  padding-bottom: 0px;
 }
 .popupcomers-header {
   gap: var(--dl-space-space-unit);
@@ -369,7 +369,7 @@
   transform: scale(210%);
 }
 .popupcomers-container3 {
-  gap: var(--dl-space-space-unit);
+  gap: var(--dl-space-space-halfunit);
   flex: 1;
   width: 100%;
   height: auto;
@@ -2271,6 +2271,9 @@
   background-color: transparent;
 }
 .dana-kaget-dari-bima-container23 {
+  display: contents;
+}
+.dana-kaget-dari-bima-container25 {
   display: contents;
 }
 

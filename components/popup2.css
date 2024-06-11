@@ -22,7 +22,7 @@
   display: flex;
   padding: var(--dl-space-space-unit);
   position: relative;
-  max-width: 700px;
+  max-width: 500px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.39);
   align-items: flex-start;
   border-color: #ffffff;
@@ -56,7 +56,7 @@
   object-fit: cover;
 }
 .popup2-container2 {
-  gap: var(--dl-space-space-unit);
+  gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
   align-items: center;
@@ -139,7 +139,6 @@
   right: 0px;
   bottom: 0px;
   margin: auto;
-  display: none;
   position: absolute;
 }
 @media(max-width: 767px) {

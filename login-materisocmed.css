@@ -23,7 +23,7 @@
   display: flex;
   padding: var(--dl-space-space-unit);
   position: relative;
-  max-width: 700px;
+  max-width: 500px;
   box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.39);
   align-items: flex-start;
   border-radius: 10px;
@@ -129,7 +129,7 @@
   object-fit: cover;
 }
 .popup1-container4 {
-  gap: var(--dl-space-space-unit);
+  gap: var(--dl-space-space-halfunit);
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
