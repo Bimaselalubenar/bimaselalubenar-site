@@ -3124,16 +3124,16 @@
                         class="materisocmed-textinput10 form-control" /></div
                     ><div class="materisocmed-container201 form-group"
                       ><button
-                        type="button"
                         id="submitBtn"
+                        type="button"
                         onclick="sendMessage()"
                         class="materisocmed-button16"
                         >Kirim
                       </button></div
                     ><div class="materisocmed-container202 form-group"
                       ><button
-                        type="button"
                         id="logoutBtn"
+                        type="button"
                         onclick="logout()"
                         class="materisocmed-button17"
                         >Keluar</button
@@ -3141,141 +3141,20 @@
                     ></div
                   ></div
                 ></div
-              ><div
-                ><div class="materisocmed-container204"
-                  ><script>
-                            const validCredentials = {
-                                username: 'admin',
-                                password: 'password123'
-                            };
-
-                            function login() {
-                                const username = document.getElementById('username').value;
-                                const password = document.getElementById('password').value;
-                                if (username === validCredentials.username && password === validCredentials.password) {
-                                    document.getElementById('div1').style.display = 'none';
-                                    document.getElementById('div2').style.display = 'block';
-                                } else {
-                                    alert('Incorrect username or password.');
-                                }
-                            }
-
-                            function logout() {
-                                document.getElementById('div1').style.display = 'block';
-                                document.getElementById('div2').style.display = 'none';
-                            }
-
-                            function sendMessage() {
-                                const cabang = document.getElementById('cabangDropdown').value;
-                                const admin = document.getElementById('adminInput').value;
-                                const whatsapp = document.getElementById('whatsappInput').value;
-                                const link = document.getElementById('linkInput').value;
-                                const calendar = document.getElementById('calendarInput').value;
-
-                                const message = `*Salam Satu Hati*\n\nDengan ibu/bapak ${admin}\nSekedar menginformasikan mengenai *Google review ${cabang}* ada beberapa ulasan yang belum terbalas, di mohon untuk merespon segera dan melampirkan info layanan H1 & H23. Untuk melihat dan membalas ulasan, dapat meklik tautan berikut.\n\n${link}\n\ndi mohon untuk segera di ulas, sebelum ${calendar}\n*Terima Kasih*`;
-                                const encodedMessage = encodeURIComponent(message);
-                                window.open(`https://wa.me/${whatsapp}?text=${encodedMessage}`);
-                            }
-
-                            const cabangs = [
-                                { name: 'MPMSIMPANG', admin: 'SUTARMININGSIH', whatsapp: '6282141557589' },
-                    { name: 'MPMNGAGEL', admin: 'MIFTA', whatsapp: '6285730171288' },
-                    { name: 'MPMMASTRIP', admin: 'RAISA', whatsapp: '6285730158408' },
-                    { name: 'MPMGRESIK', admin: 'ALFIAN', whatsapp: '628121612386' },
-                    { name: 'MPMGATEWAY', admin: 'DODI', whatsapp: '628123108787' },
-                    { name: 'MPMLARANGAN', admin: 'DAVID', whatsapp: '6281233338987' },
-                    { name: 'MPMMOJOKERTO', admin: 'NESSIA', whatsapp: '6285645921629' },
-                    { name: 'MPMKUPANG', admin: 'IWAN', whatsapp: '6282273003747' },
-                    { name: 'MPMMATARAM', admin: 'DEDY', whatsapp: '6281907177474' },
-                    { name: 'MPMLOTIM', admin: 'RIZKY', whatsapp: '6285520743564' },
-                    { name: 'MPMBATAM', admin: 'INDAH', whatsapp: '6281927162235' },
-                    { name: 'MPMPEKANBARU', admin: 'RUDI', whatsapp: '6281378025008' },
-                    { name: 'MPMMEDAN', admin: 'AINI', whatsapp: '6285762045610' },
-                    { name: 'MPMPRABUMULIH', admin: 'DELIZA', whatsapp: '6289627307135' },
-                    { name: 'MPMKEDIRI', admin: 'FERDY', whatsapp: '6281233678951' },
-                    { name: 'MPMPARE', admin: 'TOSSY', whatsapp: '6282257662090' },
-                    { name: 'MPMTULUNGAGUNG', admin: 'EVIANA', whatsapp: '6285230901393' },
-                    { name: 'MPMMADIUN', admin: 'DIBYO', whatsapp: '6285736617651' },
-                    { name: 'MPMPONOROGO', admin: 'IKMAL', whatsapp: '6287764920020' },
-                    { name: 'MPMBOJONEGORO', admin: 'NINDY', whatsapp: '6282233868544' },
-                    { name: 'MPMTUBAN', admin: 'EDI', whatsapp: '628113384610' },
-                    { name: 'MPMNGANJUK', admin: 'RIKO', whatsapp: '6282143787227' },
-                    { name: 'MPMNGAWI', admin: 'EKO', whatsapp: '6281226854816' },
-                    { name: 'MPMJOMBANG', admin: 'EKO', whatsapp: '6285649763733' },
-                    { name: 'MPMBABAT', admin: 'PULUNG', whatsapp: '6285745264666' },
-                    { name: 'MPMBOGOR', admin: 'DESY', whatsapp: '6289614273414' },
-                    { name: 'MPMTANGERANG', admin: 'HAFEED', whatsapp: '628192200098' },
-                    { name: 'MPMJEMBER', admin: 'EKO', whatsapp: '628990513170' },
-                    { name: 'MPMPASURUAN', admin: 'BENNY', whatsapp: '6285646530403' },
-                    { name: 'MPMKEBONSARI', admin: 'ERIS', whatsapp: '6282257501597' },
-                    { name: 'MPMBANYUWANGI', admin: 'BAKTI', whatsapp: '6285258771196' },
-                    { name: 'MPMBONDOWOSO', admin: 'AFIF', whatsapp: '6281357653847' },
-                    { name: 'MPMSUKOREJO', admin: 'BHASTIAN', whatsapp: '6281332865088' },
-                    { name: 'MPMBASUKI', admin: 'DIMAS', whatsapp: '6283848763115' },
-                    { name: 'MPMSUKUN', admin: 'ENNY', whatsapp: '6281334382724' },
-                    { name: 'MPMKEPANJEN', admin: 'LUDFI', whatsapp: '6281333420871' },
-                    { name: 'MPMBLITAR', admin: 'HAMAM', whatsapp: '6281333996007' },
-                    { name: 'MPMPALU', admin: 'FAHRI', whatsapp: '6282253076607' },
-                    { name: 'MPMMAKASSAR', admin: 'IMA', whatsapp: '6288202023475' },
-                    { name: 'MPMPONTIANAK', admin: 'FUJI', whatsapp: '6295345122251' },
-                    { name: 'MPMKALISAT', admin: 'RAHMAD', whatsapp: '6281332562864' },
-                    { name: 'MPMNGANJUK', admin: 'ELNA', whatsapp: '6282333062452' },
-                            ];
-
-                            function filterCabangs() {
-                                const input = document.getElementById('cabangInput').value.toUpperCase();
-                                const dropdown = document.getElementById('cabangDropdown');
-                                dropdown.innerHTML = '';
-                                for (const cabang of cabangs) {
-                                    if (cabang.name.toUpperCase().indexOf(input) > -1) {
-                                        const option = document.createElement('div');
-                                        option.innerHTML = cabang.name;
-                                        option.onclick = function() {
-                                            document.getElementById('cabangInput').value = cabang.name;
-                                            updateAdminInfo(cabang.name);
-                                            closeDropdown();
-                                        }
-                                        dropdown.appendChild(option);
-                                    }
-                                }
-                                dropdown.classList.add('show');
-                            }
-
-                            function closeDropdown() {
-                                document.getElementById('cabangDropdown').classList.remove('show');
-                            }
-
-                            function updateAdminInfo(cabangName) {
-                                const adminInput = document.getElementById('adminInput');
-                                const whatsappInput = document.getElementById('whatsappInput');
-                                const filtered = cabangs.filter(cabang => cabang.name === cabangName);
-                                if (filtered.length > 0) {
-                                    adminInput.value = filtered[0].admin;
-                                    whatsappInput.value = '62' + filtered[0].whatsapp.substring(1);
-                                }
-                            }
-
-                            window.onclick = function(event) {
-                                if (!event.target.matches('#cabangInput')) {
-                                    closeDropdown();
-                                }
-                            }
-                  </script></div
-                ></div
               ></div
             ></div
-          ><div class="materisocmed-container205"
-            ><div id="myDiv1" class="materisocmed-container206"
-              ><div class="materisocmed-container207 cache-info"
-                ><div class="materisocmed-container208"></div
-                ><div class="materisocmed-container209"
+          ><div class="materisocmed-container203"
+            ><div id="myDiv1" class="materisocmed-container204"
+              ><div class="materisocmed-container205 cache-info"
+                ><div class="materisocmed-container206"></div
+                ><div class="materisocmed-container207"
                   ><img
                     alt="bimaselalubenar"
                     src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/446116167_462400663031066_7733220523066410286_n.jpg?updatedAt=1717210689175"
                     class="materisocmed-image08"
                   /><span class="materisocmed-text135">Clear Chache</span></div
                 ><span class="materisocmed-text136">Total sampah : </span
-                ><div class="materisocmed-container210"
+                ><div class="materisocmed-container208"
                   ><span id="angka" class="materisocmed-text137"
                     >Menghitung...</span
                   ><span id="mb" class="materisocmed-text138">Mb</span
@@ -3291,8 +3170,8 @@
                   >Bersihkan sampah</button
                 ><span id="notification" class="materisocmed-text141"
                   >Sampah berhasil di bersihkan!</span
-                ><div class="materisocmed-container211"
-                  ><div class="materisocmed-container212"
+                ><div class="materisocmed-container209"
+                  ><div class="materisocmed-container210"
                     ><script>
                       function getRandomNumber(min, max) {
                           return (Math.random() * (max - min) + min).toFixed(2);
@@ -3329,8 +3208,8 @@
                       window.onload = startUpdating;
                     </script></div
                   ></div
-                ><div class="materisocmed-container213"
-                  ><div class="materisocmed-container214"
+                ><div class="materisocmed-container211"
+                  ><div class="materisocmed-container212"
                     ><script>
                       async function calculateCacheSize() {
                           if ('caches' in window) {
@@ -3391,7 +3270,7 @@
               ></div
             ><div
               onclick="toggleDiv('myDiv1')"
-              class="materisocmed-container215"
+              class="materisocmed-container213"
               ><svg
                 viewBox="0 0 804.5714285714286 1024"
                 class="materisocmed-icon36"
@@ -3399,11 +3278,11 @@
                 <path
                   d="M292.571 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM438.857 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM585.143 786.286v-402.286c0-10.286-8-18.286-18.286-18.286h-36.571c-10.286 0-18.286 8-18.286 18.286v402.286c0 10.286 8 18.286 18.286 18.286h36.571c10.286 0 18.286-8 18.286-18.286zM274.286 219.429h256l-27.429-66.857c-1.714-2.286-6.857-5.714-9.714-6.286h-181.143c-3.429 0.571-8 4-9.714 6.286zM804.571 237.714v36.571c0 10.286-8 18.286-18.286 18.286h-54.857v541.714c0 62.857-41.143 116.571-91.429 116.571h-475.429c-50.286 0-91.429-51.429-91.429-114.286v-544h-54.857c-10.286 0-18.286-8-18.286-18.286v-36.571c0-10.286 8-18.286 18.286-18.286h176.571l40-95.429c11.429-28 45.714-50.857 76-50.857h182.857c30.286 0 64.571 22.857 76 50.857l40 95.429h176.571c10.286 0 18.286 8 18.286 18.286z"
                 ></path></svg></div></div
-          ><div class="materisocmed-container216"
-            ><div id="myDiv2" class="materisocmed-container217"
-              ><div class="materisocmed-container218"
-                ><div class="materisocmed-container219"></div
-                ><div class="materisocmed-container220"
+          ><div class="materisocmed-container214"
+            ><div id="myDiv2" class="materisocmed-container215"
+              ><div class="materisocmed-container216"
+                ><div class="materisocmed-container217"></div
+                ><div class="materisocmed-container218"
                   ><img
                     alt="bimaselalubenar"
                     src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/446116167_462400663031066_7733220523066410286_n.jpg?updatedAt=1717210689175"
@@ -3411,12 +3290,12 @@
                   /><span class="materisocmed-text142"
                     >Bimaselalubenar</span
                   ></div
-                ><div class="materisocmed-container221"
+                ><div class="materisocmed-container219"
                   ><img
                     alt="---"
                     src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjNna2dmbHdtOHZ5ZmFiNmJxb21xd293ZG9kb2tsZ2h1b2lha2g2YiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/ZOZzPhtZBTLBzwgew5/giphy.webp"
                     class="materisocmed-image10" /></div
-                ><div class="materisocmed-container222"
+                ><div class="materisocmed-container220"
                   ><input
                     type="text"
                     id="messageWA"
@@ -3434,11 +3313,132 @@
               ></div
             ><div
               onclick="toggleDiv('myDiv2')"
-              class="materisocmed-container223"
+              class="materisocmed-container221"
               ><svg viewBox="0 0 1024 1024" class="materisocmed-icon38">
                 <path
                   d="M873 148.8c-95.8-96-223.2-148.8-359-148.8-279.6 0-507.2 227.6-507.2 507.4 0 89.4 23.4 176.8 67.8 253.6l-72 263 269-70.6c74.2 40.4 157.6 61.8 242.4 61.8h0.2c0 0 0 0 0 0 279.6 0 507.4-227.6 507.4-507.4 0-135.6-52.8-263-148.6-359zM514.2 929.6v0c-75.8 0-150-20.4-214.8-58.8l-15.4-9.2-159.6 41.8 42.6-155.6-10-16c-42.4-67-64.6-144.6-64.6-224.4 0-232.6 189.2-421.8 422-421.8 112.6 0 218.6 44 298.2 123.6 79.6 79.8 123.4 185.6 123.4 298.4-0.2 232.8-189.4 422-421.8 422zM745.4 613.6c-12.6-6.4-75-37-86.6-41.2s-20-6.4-28.6 6.4c-8.4 12.6-32.8 41.2-40.2 49.8-7.4 8.4-14.8 9.6-27.4 3.2s-53.6-19.8-102-63c-37.6-33.6-63.2-75.2-70.6-87.8s-0.8-19.6 5.6-25.8c5.8-5.6 12.6-14.8 19-22.2s8.4-12.6 12.6-21.2c4.2-8.4 2.2-15.8-1-22.2s-28.6-68.8-39-94.2c-10.2-24.8-20.8-21.4-28.6-21.8-7.4-0.4-15.8-0.4-24.2-0.4s-22.2 3.2-33.8 15.8c-11.6 12.6-44.4 43.4-44.4 105.8s45.4 122.6 51.8 131.2c6.4 8.4 89.4 136.6 216.6 191.4 30.2 13 53.8 20.8 72.2 26.8 30.4 9.6 58 8.2 79.8 5 24.4-3.6 75-30.6 85.6-60.2s10.6-55 7.4-60.2c-3-5.6-11.4-8.8-24.2-15.2z"
                 ></path></svg></div></div></div
+        ><div
+          ><div class="materisocmed-container223"
+            ><script>
+                      const validCredentials = {
+                          username: 'admin',
+                          password: 'password123'
+                      };
+
+                      function login() {
+                          const username = document.getElementById('username').value;
+                          const password = document.getElementById('password').value;
+                          if (username === validCredentials.username && password === validCredentials.password) {
+                              document.getElementById('div1').style.display = 'none';
+                              document.getElementById('div2').style.display = 'block';
+                          } else {
+                              alert('Incorrect username or password.');
+                          }
+                      }
+
+                      function logout() {
+                          document.getElementById('div1').style.display = 'block';
+                          document.getElementById('div2').style.display = 'none';
+                      }
+
+                      function sendMessage() {
+                          const cabang = document.getElementById('cabangDropdown').value;
+                          const admin = document.getElementById('adminInput').value;
+                          const whatsapp = document.getElementById('whatsappInput').value;
+                          const link = document.getElementById('linkInput').value;
+                          const calendar = document.getElementById('calendarInput').value;
+
+                          const message = `*Salam Satu Hati*\n\nDengan ibu/bapak ${admin}\nSekedar menginformasikan mengenai *Google review ${cabang}* ada beberapa ulasan yang belum terbalas, di mohon untuk merespon segera dan melampirkan info layanan H1 & H23. Untuk melihat dan membalas ulasan, dapat meklik tautan berikut.\n\n${link}\n\ndi mohon untuk segera di ulas, sebelum ${calendar}\n*Terima Kasih*`;
+                          const encodedMessage = encodeURIComponent(message);
+                          window.open(`https://wa.me/${whatsapp}?text=${encodedMessage}`);
+                      }
+
+                      const cabangs = [
+                          { name: 'MPMSIMPANG', admin: 'SUTARMININGSIH', whatsapp: '082141557589' },
+              { name: 'MPMNGAGEL', admin: 'MIFTA', whatsapp: '085730171288' },
+              { name: 'MPMMASTRIP', admin: 'RAISA', whatsapp: '085730158408' },
+              { name: 'MPMGRESIK', admin: 'ALFIAN', whatsapp: '08121612386' },
+              { name: 'MPMGATEWAY', admin: 'DODI', whatsapp: '08123108787' },
+              { name: 'MPMLARANGAN', admin: 'DAVID', whatsapp: '081233338987' },
+              { name: 'MPMMOJOKERTO', admin: 'NESSIA', whatsapp: '085645921629' },
+              { name: 'MPMKUPANG', admin: 'IWAN', whatsapp: '082273003747' },
+              { name: 'MPMMATARAM', admin: 'DEDY', whatsapp: '081907177474' },
+              { name: 'MPMLOTIM', admin: 'RIZKY', whatsapp: '085520743564' },
+              { name: 'MPMBATAM', admin: 'INDAH', whatsapp: '081927162235' },
+              { name: 'MPMPEKANBARU', admin: 'RUDI', whatsapp: '081378025008' },
+              { name: 'MPMMEDAN', admin: 'AINI', whatsapp: '085762045610' },
+              { name: 'MPMPRABUMULIH', admin: 'DELIZA', whatsapp: '089627307135' },
+              { name: 'MPMKEDIRI', admin: 'FERDY', whatsapp: '081233678951' },
+              { name: 'MPMPARE', admin: 'TOSSY', whatsapp: '082257662090' },
+              { name: 'MPMTULUNGAGUNG', admin: 'EVIANA', whatsapp: '085230901393' },
+              { name: 'MPMMADIUN', admin: 'DIBYO', whatsapp: '085736617651' },
+              { name: 'MPMPONOROGO', admin: 'IKMAL', whatsapp: '087764920020' },
+              { name: 'MPMBOJONEGORO', admin: 'NINDY', whatsapp: '082233868544' },
+              { name: 'MPMTUBAN', admin: 'EDI', whatsapp: '08113384610' },
+              { name: 'MPMNGANJUK', admin: 'RIKO', whatsapp: '082143787227' },
+              { name: 'MPMNGAWI', admin: 'EKO', whatsapp: '081226854816' },
+              { name: 'MPMJOMBANG', admin: 'EKO', whatsapp: '085649763733' },
+              { name: 'MPMBABAT', admin: 'PULUNG', whatsapp: '085745264666' },
+              { name: 'MPMBOGOR', admin: 'DESY', whatsapp: '089614273414' },
+              { name: 'MPMTANGERANG', admin: 'HAFEED', whatsapp: '081292200098' },
+              { name: 'MPMJEMBER', admin: 'EKO', whatsapp: '08990513170' },
+              { name: 'MPMPASURUAN', admin: 'BENNY', whatsapp: '085646530403' },
+              { name: 'MPMKEBONSARI', admin: 'ERIS', whatsapp: '082257501597' },
+              { name: 'MPMBANYUWANGI', admin: 'BAKTI', whatsapp: '085258771196' },
+              { name: 'MPMBONDOWOSO', admin: 'AFIF', whatsapp: '081357653847' },
+              { name: 'MPMSUKOREJO', admin: 'BHASTIAN', whatsapp: '081332865088' },
+              { name: 'MPMBASUKI', admin: 'DIMAS', whatsapp: '083848763115' },
+              { name: 'MPMSUKUN', admin: 'ENNY', whatsapp: '081334382724' },
+              { name: 'MPMKEPANJEN', admin: 'LUDFI', whatsapp: '081333420871' },
+              { name: 'MPMBLITAR', admin: 'HAMAM', whatsapp: '081333996007' },
+              { name: 'MPMPALU', admin: 'FAHRI', whatsapp: '082253076607' },
+              { name: 'MPMMAKASSAR', admin: 'IMA', whatsapp: '0882020234275' },
+              { name: 'MPMPONTIANAK', admin: 'FUJI', whatsapp: '095345122251' },
+              { name: 'MPMKALISAT', admin: 'RAHMAD', whatsapp: '081332562864' },
+              { name: 'MPMNGANJUK', admin: 'ELNA', whatsapp: '082333062452' },
+                      ];
+
+                      function filterCabangs() {
+                          const input = document.getElementById('cabangInput').value.toUpperCase();
+                          const dropdown = document.getElementById('cabangDropdown');
+                          dropdown.innerHTML = '';
+                          for (const cabang of cabangs) {
+                              if (cabang.name.toUpperCase().indexOf(input) > -1) {
+                                  const option = document.createElement('div');
+                                  option.innerHTML = cabang.name;
+                                  option.onclick = function() {
+                                      document.getElementById('cabangInput').value = cabang.name;
+                                      updateAdminInfo(cabang.name);
+                                      closeDropdown();
+                                  }
+                                  dropdown.appendChild(option);
+                              }
+                          }
+                          dropdown.classList.add('show');
+                      }
+
+                      function closeDropdown() {
+                          document.getElementById('cabangDropdown').classList.remove('show');
+                      }
+
+                      function updateAdminInfo(cabangName) {
+                          const adminInput = document.getElementById('adminInput');
+                          const whatsappInput = document.getElementById('whatsappInput');
+                          const filtered = cabangs.filter(cabang => cabang.name === cabangName);
+                          if (filtered.length > 0) {
+                              adminInput.value = filtered[0].admin;
+                              whatsappInput.value = '62' + filtered[0].whatsapp.substring(1);
+                          }
+                      }
+
+                      window.onclick = function(event) {
+                          if (!event.target.matches('#cabangInput')) {
+                              closeDropdown();
+                          }
+                      }
+            </script></div
+          ></div
         ><div class="materisocmed-container224"
           ><div class="materisocmed-container225"
             ><script>
