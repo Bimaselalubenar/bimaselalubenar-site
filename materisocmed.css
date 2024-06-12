@@ -5748,7 +5748,7 @@
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
   justify-content: center;
-  background-color: #6f6f6f;
+  background-color: #ada9a9;
 }
 .materisocmed-container185 {
   gap: var(--dl-space-space-unit);
@@ -6900,6 +6900,7 @@
     width: auto;
   }
   .materisocmed-container021 {
+    display: none;
     flex-direction: column;
   }
   .materisocmed-container024 {
