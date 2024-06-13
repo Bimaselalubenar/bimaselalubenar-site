@@ -68,13 +68,10 @@
   background-color: var(--dl-color-gray-white);
 }
 .input {
-  color: var(--dl-color-gray-black);
   cursor: auto;
   padding: 0.5rem 1rem;
-  border-color: var(--dl-color-gray-black);
-  border-width: 1px;
+  border-width: 0px;
   border-radius: 4px;
-  background-color: #ffffff;
 }
 .textarea {
   color: var(--dl-color-gray-black);
