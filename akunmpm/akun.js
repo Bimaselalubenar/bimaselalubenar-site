@@ -94,7 +94,7 @@ let users = [
     { name: 'Wahyu jadmiko', email: 'Wahyujat70@gmail.com', password: 'wahyu12345', branch: 'Nganjuk', position: 'Sales Online', cabang: 'MPM Motor Nganjuk' },
     { name: 'Sinta dwi cahyani', email: 'sintacika01@gmail.com', password: 'sinta1', branch: 'Malang', position: 'Sales Online', cabang: 'MPM Motor Kediri' },
     { name: 'Rochmanul karim', email: 'rochmanulkarim1@gmail.com', password: 'Cakkarim07@', branch: 'KAB. PASURUAN', position: 'SALES ONLINE', cabang: 'mpm sukorejo' },
-    { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
+    { name: 'AJI ADITYA PRAMANA', email: 'ajiapram4@gmail.com', password: 'ajiap1234', branch: 'KAB PASURUAN', position: 'KAB PASURUAN', cabang: 'MPM SUKOREJO' },
     { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
     // Rapikan code dengan Shift + Alt + F
 ];
