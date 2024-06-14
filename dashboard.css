@@ -10,13 +10,16 @@
 }
 .dashboard-container01 {
   flex: 0 0 auto;
-  left: 721px;
-  width: 479px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
   bottom: 0px;
   height: 60px;
+  margin: auto;
   display: flex;
   z-index: 2;
   position: absolute;
+  max-width: 479px;
   align-items: center;
   flex-direction: row;
   justify-content: center;
@@ -24,6 +27,7 @@
 .dashboard-container02 {
   flex: 1;
   width: 100%;
+  cursor: pointer;
   height: 100%;
   display: flex;
   transition: 0.3s;
@@ -54,6 +58,7 @@
 .dashboard-container03 {
   flex: 1;
   width: 100%;
+  cursor: pointer;
   height: 100%;
   display: flex;
   transition: 0.3s;
@@ -84,6 +89,7 @@
 .dashboard-container04 {
   flex: 1;
   width: 100%;
+  cursor: pointer;
   height: 100%;
   display: flex;
   transition: 0.3s;
@@ -114,6 +120,7 @@
 .dashboard-container05 {
   flex: 1;
   width: 100%;
+  cursor: pointer;
   height: 100%;
   display: flex;
   transition: 0.3s;

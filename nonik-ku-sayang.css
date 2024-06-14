@@ -393,7 +393,7 @@
 }
 .nonik-ku-sayang-container05 {
   width: 100%;
-  display: none;
+  display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
@@ -720,7 +720,7 @@
   width: 100%;
   border: 2px dashed rgba(120, 120, 120, 0.4);
   height: 100vh;
-  display: flex;
+  display: none;
   max-width: 479px;
   align-items: flex-start;
   flex-direction: column;
@@ -814,7 +814,7 @@
     font-weight: 400;
   }
   .nonik-ku-sayang-container05 {
-    display: none;
+    display: flex;
   }
   .nonik-ku-sayang-text15 {
     font-size: 30px;
