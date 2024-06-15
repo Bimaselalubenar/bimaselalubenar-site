@@ -413,61 +413,62 @@
   <body
     ><link rel="stylesheet" href="./style.css" /><div
       ><link href="./login.css" rel="stylesheet" /><div class="login-container"
-        ><div class="login-container1"
-          ><form id="loginForm" class="login-form"
-            ><label for="email">Email</label
-            ><input
-              type="email"
-              id="email"
-              name="email"
-              required="true"
-              placeholder="Email"
-              autocomplete="email"
-              class="login-textinput input" /><label for="password"
-              ><span>Password</span><br /></label
-            ><input
-              type="password"
-              id="password"
-              name="password"
-              required="true"
-              placeholder="Password"
-              autocomplete="current-password"
-              class="login-textinput1 input" /><div class="login-container2"
-              ><input
-                type="checkbox"
-                id="cek"
-                checked="true"
-                required="true" /><label for="cek" class="login-text4"
-                ><span>Menyutujui untuk masuk</span><br /></label></div
-            ><button type="submit" class="login-button input">Login</button
-            ><div
-              ><div class="login-container4"
-                ><script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
-                <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script>
-                <script src="firebase-config.js"></script>
-                <script src="login.js"></script> </div></div></form
-          ><div class="login-container5"
-            ><div class="login-container6"
-              ><button
-                id="btn-login"
-                type="button"
-                onclick="login()"
-                disabled="true"
-                class="login-button1"
-                >Log in</button
-              ><button
-                id="btn-logout"
-                type="button"
-                onclick="logout()"
-                disabled="true"
-                class="login-button2"
-                >Log out</button
-              ></div
+        ><div class="login-container01"
+          ><div class="login-container02"
+            ><img
+              alt="image"
+              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/nonik.png?updatedAt=1718457712860"
+              class="login-image"
+            /><span class="login-text"
+              ><span>Log</span><span class="login-text2">in</span></span
+            ><form id="loginSayang" class="login-form"
+              ><div class="login-container03"
+                ><label for="abemail" class="login-text3">Email</label
+                ><input
+                  type="email"
+                  id="email"
+                  placeholder="Email"
+                  autocomplete="email"
+                  required="true"
+                  name="email"
+                  class="login-textinput input" /></div
+              ><div class="login-container04"
+                ><label for="abpassword" class="login-text4">Password</label
+                ><input
+                  type="password"
+                  id="password"
+                  name="password"
+                  required="true"
+                  placeholder="Password"
+                  autocomplete="current-password"
+                  class="login-textinput1 input" /></div
+              ><div class="login-container05"
+                ><span class="login-text5">Captcha</span
+                ><div class="login-container06"
+                  ><div id="captcha" class="login-container07 captcha"></div
+                  ><button
+                    id="refreshCaptcha"
+                    type="button"
+                    class="login-button captcha"
+                    >Re-Captcha</button
+                  ></div
+                ></div
+              ><div class="login-container08"
+                ><label for="abpassword" class="login-text6"
+                  >Input Captcha</label
+                ><input
+                  type="text"
+                  id="captchaInput"
+                  name="captchaInput"
+                  required="true"
+                  placeholder="captchaInput"
+                  class="login-textinput2 input" /></div
+              ><button type="submit" class="login-button1">Log in</button
+              ><p id="errorMessage" class="login-text7">&nbsp;&nbsp; </p></form
             ></div
-          ><div
-            ><div class="login-container8"
-              ><script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script>
-              <script src="js/app.js"></script></div></div></div></div
+          ><div class="login-container09"
+            ><div class="login-container10"
+              ><script src="sayang/script.js"></script></div></div></div></div
     ></div>
     <script
       type="text/javascript"

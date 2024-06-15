@@ -1,4 +1,4 @@
-.popup1-container {
+.popupcustomize-container {
   top: 0px;
   width: 100%;
   height: 100vh;
@@ -17,7 +17,7 @@
   justify-content: center;
   background-color: rgba(0, 0, 0, 0.45);
 }
-.popup1-container1 {
+.popupcustomize-container1 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -30,7 +30,7 @@
   flex-direction: column;
   background-color: var(--dl-color-theme-neutral-light);
 }
-.popup1-header {
+.popupcustomize-header {
   gap: var(--dl-space-space-unit);
   flex: 1;
   display: none;
@@ -39,12 +39,12 @@
   padding-top: var(--dl-space-space-twounits);
   flex-direction: column;
 }
-.popup1-image {
+.popupcustomize-image {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.popup1-container2 {
+.popupcustomize-container2 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
@@ -54,46 +54,46 @@
   flex-direction: column;
   background-color: #eaeaea;
 }
-.popup1-text {
+.popupcustomize-text {
   font-size: 20px;
   text-align: center;
 }
-.popup1-text01 {
+.popupcustomize-text01 {
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
 }
-.popup1-text02 {
+.popupcustomize-text02 {
   font-style: normal;
 }
-.popup1-text03 {
+.popupcustomize-text03 {
   font-style: normal;
 }
-.popup1-text04 {
+.popupcustomize-text04 {
   font-size: 16px;
   font-style: normal;
 }
-.popup1-text05 {
+.popupcustomize-text05 {
   font-size: 16px;
   font-weight: 900;
 }
-.popup1-text06 {
+.popupcustomize-text06 {
   font-size: 16px;
   font-style: normal;
 }
-.popup1-text07 {
+.popupcustomize-text07 {
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
 }
-.popup1-text08 {
+.popupcustomize-text08 {
   font-size: 16px;
   font-style: normal;
 }
-.popup1-navlink {
+.popupcustomize-navlink {
   display: contents;
 }
-.popup1-container3 {
+.popupcustomize-container3 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   cursor: pointer;
@@ -106,7 +106,7 @@
   text-decoration: none;
   background-color: #18aa00;
 }
-.popup1-text09 {
+.popupcustomize-text09 {
   color: #ffffff;
   font-size: 20px;
   font-style: normal;
@@ -114,7 +114,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.popup1-header1 {
+.popupcustomize-header1 {
   gap: var(--dl-space-space-unit);
   flex: 1;
   display: flex;
@@ -123,34 +123,35 @@
   padding-top: var(--dl-space-space-twounits);
   flex-direction: column;
 }
-.popup1-image1 {
+.popupcustomize-image1 {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.popup1-container4 {
-  gap: var(--dl-space-space-halfunit);
+.popupcustomize-container4 {
+  gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   padding: var(--dl-space-space-unit);
   align-items: center;
+  padding-top: 16px;
   border-radius: 10px;
   flex-direction: column;
   background-color: #eaeaea;
 }
-.popup1-text10 {
-  font-size: 30px;
+.popupcustomize-text10 {
+  font-size: 20px;
   text-align: center;
-  font-weight: bold;
+  font-weight: 700;
 }
-.popup1-text11 {
+.popupcustomize-text11 {
   font-size: 16px;
   text-align: center;
 }
-.popup1-navlink1 {
+.popupcustomize-link {
   display: contents;
 }
-.popup1-container5 {
+.popupcustomize-container5 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   cursor: pointer;
@@ -164,7 +165,7 @@
   text-decoration: none;
   background-color: #18aa00;
 }
-.popup1-text12 {
+.popupcustomize-text12 {
   color: rgb(255, 255, 255);
   font-size: 20px;
   font-style: normal;
@@ -172,7 +173,7 @@
   font-family: "Inconsolata";
   font-weight: 800;
 }
-.popup1-close-button {
+.popupcustomize-close-button {
   top: var(--dl-space-space-unit);
   right: var(--dl-space-space-unit);
   display: flex;
@@ -180,16 +181,20 @@
   position: absolute;
   flex-direction: row;
 }
-.popup1-icon {
+.popupcustomize-icon {
   width: 24px;
   cursor: pointer;
   height: 24px;
   align-self: center;
+  transition: 0.7s;
 }
-.popup1-container7 {
+.popupcustomize-icon:hover {
+  transform: rotate(90deg);
+}
+.popupcustomize-container7 {
   display: contents;
 }
-.popup1-root-class-name1 {
+.popupcustomize-root-class-name1 {
   top: 0px;
   left: 0px;
   right: 0px;
@@ -198,41 +203,41 @@
   position: absolute;
 }
 @media(max-width: 1200px) {
-  .popup1-text09 {
+  .popupcustomize-text09 {
     font-size: 30px;
   }
 }
 @media(max-width: 991px) {
-  .popup1-text09 {
+  .popupcustomize-text09 {
     font-size: 20px;
   }
-  .popup1-text12 {
+  .popupcustomize-text12 {
     font-size: 20px;
   }
 }
 @media(max-width: 767px) {
-  .popup1-header {
+  .popupcustomize-header {
     gap: var(--dl-space-space-unit);
     align-items: flex-start;
     flex-direction: column;
   }
-  .popup1-text09 {
+  .popupcustomize-text09 {
     font-size: 20px;
   }
-  .popup1-header1 {
+  .popupcustomize-header1 {
     gap: var(--dl-space-space-unit);
     align-items: flex-start;
     flex-direction: column;
   }
-  .popup1-text12 {
+  .popupcustomize-text12 {
     font-size: 20px;
   }
-  .popup1-close-button {
+  .popupcustomize-close-button {
     align-self: flex-start;
   }
 }
 @media(max-width: 479px) {
-  .popup1-image {
+  .popupcustomize-image {
     top: -111px;
     left: 0px;
     right: 0px;
@@ -240,7 +245,7 @@
     height: auto;
     margin: auto;
   }
-  .popup1-image1 {
+  .popupcustomize-image1 {
     top: -111px;
     left: 0px;
     right: 0px;

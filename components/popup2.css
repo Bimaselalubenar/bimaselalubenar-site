@@ -30,8 +30,6 @@
   border-radius: 20px;
   flex-direction: row;
   background-color: var(--dl-color-theme-neutral-light);
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
 }
 .popup2-header {
   flex: 1;
@@ -56,7 +54,7 @@
   object-fit: cover;
 }
 .popup2-container2 {
-  gap: var(--dl-space-space-halfunit);
+  gap: var(--dl-space-space-unit);
   width: 100%;
   display: flex;
   align-items: center;
@@ -126,6 +124,10 @@
   cursor: pointer;
   height: 24px;
   align-self: center;
+  transition: 0.7s;
+}
+.popup2-icon:hover {
+  transform: rotate(90deg);
 }
 .popup2-container5 {
   display: contents;
