@@ -42,12 +42,14 @@ button:hover {
     background-color: #0056b3;
 }
 .note-container {
+    width: 100%;
     border: 2px solid transparent;
     padding: 10px;
     margin: 10px 0;
     position: relative;
-    background-color: rgba(255, 255, 255, 0.7); /* Warna latar belakang transparan */
-    border-radius: 5px;
+    gap: 5px;
+    background-color: rgba(236, 226, 226, 0.7); /* Warna latar belakang transparan */
+    border-radius: 8px;
     transition: background-color 0.5s ease, border-color 0.5s ease; /* Transisi untuk perubahan warna */
 }
 .note-container:hover {
@@ -68,6 +70,7 @@ button:hover {
     border-radius: 3px;
 }
 .note-container .delete-button:hover {
+    margin-top: 5px;
     background-color: #c82333;
 }
 .note-container p:nth-child(odd) {
