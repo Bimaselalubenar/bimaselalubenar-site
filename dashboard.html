@@ -927,11 +927,11 @@
                     noteContainer.className = 'note-container';
 
                     noteContainer.innerHTML = `
-                                <p>Nama: ${name}</p>
-                                <p>Catatan: ${note}</p>
-                                <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
-                                <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
-                            `;
+                                                <p>Nama: ${name}</p><br>
+                                                <p>Catatan: ${note}</p><br>
+                                                <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
+                                                <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
+                                            `;
 
                     // Menambahkan catatan di awal daftar
                     const notesContainer = document.getElementById('notes');
@@ -988,13 +988,11 @@
                       noteContainer.className = 'note-container';
 
                       noteContainer.innerHTML = `
-                                    <p>Nama: ${note.name}</p>
-                                    <p>Catatan: ${note.note}</p>
+                                    <p>Nama: ${note.name}</p><br>
+                                    <p>Catatan: ${note.note}</p><br>
                                     <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
                                     <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
                                 `;
-
-                      noteContainer.style.backgroundColor = getRandomColor();
 
                       document.getElementById('notes').appendChild(noteContainer);
                     });
