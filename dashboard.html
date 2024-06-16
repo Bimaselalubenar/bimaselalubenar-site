@@ -793,93 +793,100 @@
                 class="dashboard-textinput2 input" /></form></div
           ><div
             ><div class="dashboard-container39"
+              ><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script></div></div
+          ><div
+            ><div class="dashboard-container41"
               ><script>
                 function addNote() {
-                    const name = document.getElementById('name').value;
-                    const note = document.getElementById('note').value;
-                    const timestamp = new Date().toLocaleString();
+                  const name = document.getElementById('name').value;
+                  const note = document.getElementById('note').value;
 
+                  const noteContainer = document.createElement('div');
+                  noteContainer.className = 'note-container';
+
+                  noteContainer.innerHTML = `
+                              <p>Nama: ${name}</p>
+                              <p>Catatan: ${note}</p>
+                              <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
+                              <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
+                          `;
+
+                  // Menambahkan catatan di awal daftar
+                  const notesContainer = document.getElementById('notes');
+                  notesContainer.insertBefore(noteContainer, notesContainer.firstChild);
+
+                  document.getElementById('noteForm').reset();
+
+                  // Menambahkan efek animasi warna
+                  noteContainer.style.backgroundColor = getRandomColor();
+
+                  // Menyimpan catatan ke localStorage
+                  const notes = JSON.parse(localStorage.getItem('notes')) || [];
+                  notes.unshift({ name, note }); // Menambahkan di awal array
+                  localStorage.setItem('notes', JSON.stringify(notes));
+                }
+
+                function saveAsImage(button) {
+                  const noteContainer = button.parentElement;
+                  html2canvas(noteContainer).then((canvas) => {
+                    const link = document.createElement('a');
+                    link.download = 'catatan.png';
+                    link.href = canvas.toDataURL();
+                    link.click();
+                  });
+                }
+
+                function deleteNote(button) {
+                  const noteContainer = button.parentElement;
+                  noteContainer.remove();
+
+                  // Menghapus catatan dari localStorage
+                  const notes = JSON.parse(localStorage.getItem('notes')) || [];
+                  const name = noteContainer.querySelector('p').textContent.split(': ')[1];
+                  const note = noteContainer
+                    .querySelector('p:nth-of-type(2)')
+                    .textContent.split(': ')[1];
+                  const index = notes.findIndex((n) => n.name === name && n.note === note);
+                  if (index !== -1) {
+                    notes.splice(index, 1);
+                    localStorage.setItem('notes', JSON.stringify(notes));
+                  }
+                }
+
+                function getRandomColor() {
+                  const letters = '0123456789ABCDEF';
+                  let color = '#';
+                  for (let i = 0; i < 6; i++) {
+                    color += letters[Math.floor(Math.random() * 16)];
+                  }
+                  return color;
+                }
+
+                window.onload = function () {
+                  const notes = JSON.parse(localStorage.getItem('notes')) || [];
+                  notes.forEach((note) => {
                     const noteContainer = document.createElement('div');
                     noteContainer.className = 'note-container';
 
                     noteContainer.innerHTML = `
-                        <p>Nama: ${name}</p>
-                        <p>Tanggal dan Waktu: ${timestamp}</p>
-                        <p>Catatan: ${note}</p>
-                        <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
-                        <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
-                    `;
+                                  <p>Nama: ${note.name}</p>
+                                  <p>Catatan: ${note.note}</p>
+                                  <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
+                                  <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
+                              `;
 
-                    // Menambahkan catatan di awal daftar
-                    const notesContainer = document.getElementById('notes');
-                    notesContainer.insertBefore(noteContainer, notesContainer.firstChild);
+                    noteContainer.style.backgroundColor = getRandomColor();
 
-                    document.getElementById('noteForm').reset();
-
-                    // Menyimpan catatan ke localStorage
-                    const notes = JSON.parse(localStorage.getItem('notes')) || [];
-                    notes.unshift({ name, timestamp, note }); // Menambahkan di awal array
-                    localStorage.setItem('notes', JSON.stringify(notes));
-                }
-
-                function saveAsImage(button) {
-                    const noteContainer = button.parentElement;
-                    html2canvas(noteContainer).then(canvas => {
-                        const link = document.createElement('a');
-                        link.download = 'catatan.png';
-                        link.href = canvas.toDataURL();
-                        link.click();
-                    });
-                }
-
-                function deleteNote(button) {
-                    const noteContainer = button.parentElement;
-                    noteContainer.remove();
-
-                    // Menghapus catatan dari localStorage
-                    const notes = JSON.parse(localStorage.getItem('notes')) || [];
-                    const name = noteContainer.querySelector('p').textContent.split(': ')[1];
-                    const timestamp = noteContainer.querySelector('p:nth-of-type(2)').textContent.split(': ')[1];
-                    const note = noteContainer.querySelector('p:nth-of-type(3)').textContent.split(': ')[1];
-                    const index = notes.findIndex(n => n.name === name && n.timestamp === timestamp && n.note === note);
-                    if (index !== -1) {
-                        notes.splice(index, 1);
-                        localStorage.setItem('notes', JSON.stringify(notes));
-                    }
-                }
-
-                function getRandomColor() {
-                    const letters = '0123456789ABCDEF';
-                    let color = '#';
-                    for (let i = 0; i < 6; i++) {
-                        color += letters[Math.floor(Math.random() * 16)];
-                    }
-                    return color;
-                }
-
-                window.onload = function() {
-                    const notes = JSON.parse(localStorage.getItem('notes')) || [];
-                    notes.forEach(note => {
-                        const noteContainer = document.createElement('div');
-                        noteContainer.className = 'note-container';
-
-                        noteContainer.innerHTML = `
-                            <p>Nama: ${note.name}</p>
-                            <p>Tanggal dan Waktu: ${note.timestamp}</p>
-                            <p>Catatan: ${note.note}</p>
-                            <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
-                            <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
-                        `;
-
-                        document.getElementById('notes').appendChild(noteContainer);
-                    });
+                    document.getElementById('notes').appendChild(noteContainer);
+                  });
                 };
               </script>
-              <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script></div></div></div
-        ><div id="notif" class="dashboard-container40 removescsroll content"
-          ><div class="dashboard-container41"
+            </div></div
+          ></div
+        ><div id="notif" class="dashboard-container42 removescsroll content"
+          ><div class="dashboard-container43"
             ><span class="dashboard-text25">Notifikasi</span></div
-          ><div class="dashboard-container42"
+          ><div class="dashboard-container44"
             ><animate-on-reveal
               animation="bounceIn"
               duration="2s"
@@ -889,7 +896,7 @@
               iteration="99"
               ><div
                 data-thq-animate-on-reveal="true"
-                class="dashboard-container43"
+                class="dashboard-container45"
                 ><svg viewBox="0 0 1024 1024" class="dashboard-icon12">
                   <path
                     d="M889.68 166.32c-93.608-102.216-228.154-166.32-377.68-166.32-282.77 0-512 229.23-512 512h96c0-229.75 186.25-416 416-416 123.020 0 233.542 53.418 309.696 138.306l-149.696 149.694h352v-352l-134.32 134.32z"
@@ -902,7 +909,7 @@
             ></div
           ></div
         ><div
-          ><div class="dashboard-container45"
+          ><div class="dashboard-container47"
             ><script>
               document.getElementById('profileMenu').addEventListener('click', function () {
                 showContent('profile');
@@ -940,9 +947,90 @@
             </script>
           </div></div
         ><div
-          ><div class="dashboard-container47"
-            ><script src="sayang/dashboard.js"></script></div></div></div
-    ></div>
+          ><div class="dashboard-container49"
+            ><script src="sayang/dashboard.js"></script></div></div
+        ><div
+          id="popup1"
+          class="popupcustomize-container popupcustomize-root-class-name"
+          ><div class="popupcustomize-container1"
+            ><div class="popupcustomize-header"
+              ><img
+                alt="image"
+                src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/Banner.png?updatedAt=1716073516598"
+                class="popupcustomize-image"
+              /><div class="popupcustomize-container2"
+                ><span class="popupcustomize-text"
+                  ><span class="popupcustomize-text01"
+                    >🎉 Jangan lewatkan kesempatan ini!</span
+                  ><br class="popupcustomize-text02" /><br
+                    class="popupcustomize-text03"
+                  /><span class="popupcustomize-text04"
+                    >Masukkan kode promo </span
+                  ><span class="popupcustomize-text05">DISKON2024</span
+                  ><span class="popupcustomize-text06">
+                    untuk mendapatkan diskon hingga </span
+                  ><span class="popupcustomize-text07">Rp. 50.000</span
+                  ><span class="popupcustomize-text08">
+                    untuk jasa pembuatan website. Yuk, manfaatkan promo ini
+                    sekarang juga dan wujudkan website impianmu dengan harga
+                    lebih terjangkau! 🚀</span
+                  ></span
+                ><a href="web-service.html" class="popupcustomize-navlink"
+                  ><div class="popupcustomize-container3"
+                    ><h1 class="popupcustomize-text09">asdasdasd</h1></div
+                  ></a
+                ></div
+              ></div
+            ><div class="popupcustomize-header1"
+              ><img
+                alt="image"
+                src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/446116167_462400663031066_7733220523066410286_n.jpg?updatedAt=1717210689175"
+                class="popupcustomize-image1"
+              /><div class="popupcustomize-container4"
+                ><span class="popupcustomize-text10"><span>Cieww</span></span
+                ><span class="popupcustomize-text11"
+                  ><span>udah bisa masuk</span></span
+                ><a
+                  href="https://api.whatsapp.com/send?phone=6283845781063&amp;text=Terima%20kasih%20banyak%20sayang%20%3C3"
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  class="popupcustomize-link"
+                  ><div class="popupcustomize-container5"
+                    ><h1 class="popupcustomize-text12"
+                      ><span>Bilang terima kasih sayang</span></h1
+                    ></div
+                  ></a
+                ></div
+              ></div
+            ><button
+              type="button"
+              onclick="closeBanner('popup1')"
+              aria-label="Close"
+              class="popupcustomize-close-button"
+              ><svg
+                viewBox="0 0 804.5714285714286 1024"
+                class="popupcustomize-icon"
+              >
+                <path
+                  d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                ></path></svg></button></div
+          ><div
+            ><div class="popupcustomize-container7"
+              ><script>
+                function showBanners() {
+                    document.getElementById('popup1').style.display = 'block';
+                }
+
+                function closeBanner(bannerId) {
+                    var banner = document.getElementById(bannerId);
+                    banner.style.display = 'none';
+                }
+              </script></div
+            ></div
+          ></div
+        ></div
+      ></div
+    >
     <script
       type="text/javascript"
       src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H"
