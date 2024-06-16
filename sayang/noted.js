@@ -6,22 +6,23 @@ function addNote() {
     noteContainer.className = "note-container";
 
     noteContainer.innerHTML = `
-    <div style="border: 0px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;">
-        <p style="margin-bottom: 15px; font-size: 16px;">Nama: ${note.name}</p>
-        <p style="margin-bottom: 15px; font-size: 16px;">Catatan: ${note.note}</p>
-        <button style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="saveAsImage(this)">Simpan sebagai Gambar</button>
-        <button class="delete-button" style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="deleteNote(this)">Hapus</button>
-    </div>
-`;
-    // Menambahkan catatan di awal daftar
+        <div style="border: 1px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;">
+            <p style="margin-bottom: 15px; font-size: 16px;">Nama: ${name}</p>
+            <p style="margin-bottom: 15px; font-size: 16px;">Catatan: ${note}</p>
+            <button style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="saveAsImage(this)">Simpan sebagai Gambar</button>
+            <button class="delete-button" style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="deleteNote(this)">Hapus</button>
+        </div>
+    `;
+
+    // Add the note to the beginning of the list
     const notesContainer = document.getElementById("notes");
     notesContainer.insertBefore(noteContainer, notesContainer.firstChild);
 
     document.getElementById("noteForm").reset();
 
-    // Menyimpan catatan ke localStorage
+    // Save the note to localStorage
     const notes = JSON.parse(localStorage.getItem("notes")) || [];
-    notes.unshift({ name, note }); // Menambahkan di awal array
+    notes.unshift({ name, note }); // Add to the beginning of the array
     localStorage.setItem("notes", JSON.stringify(notes));
 }
 
@@ -39,26 +40,15 @@ function deleteNote(button) {
     const noteContainer = button.parentElement;
     noteContainer.remove();
 
-    // Menghapus catatan dari localStorage
+    // Remove the note from localStorage
     const notes = JSON.parse(localStorage.getItem("notes")) || [];
     const name = noteContainer.querySelector("p").textContent.split(": ")[1];
-    const note = noteContainer
-        .querySelector("p:nth-of-type(2)")
-        .textContent.split(": ")[1];
+    const note = noteContainer.querySelector("p:nth-of-type(2)").textContent.split(": ")[1];
     const index = notes.findIndex((n) => n.name === name && n.note === note);
     if (index !== -1) {
         notes.splice(index, 1);
         localStorage.setItem("notes", JSON.stringify(notes));
     }
-}
-
-function getRandomColor() {
-    const letters = "0123456789ABCDEF";
-    let color = "#";
-    for (let i = 0; i < 6; i++) {
-        color += letters[Math.floor(Math.random() * 16)];
-    }
-    return color;
 }
 
 window.onload = function () {
@@ -68,13 +58,13 @@ window.onload = function () {
         noteContainer.className = "note-container";
 
         noteContainer.innerHTML = `
-    <div style="border: 0px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;">
-        <p style="margin-bottom: 15px; font-size: 16px;">Nama: ${note.name}</p>
-        <p style="margin-bottom: 15px; font-size: 16px;">Catatan: ${note.note}</p>
-        <button style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="saveAsImage(this)">Simpan sebagai Gambar</button>
-        <button class="delete-button" style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="deleteNote(this)">Hapus</button>
-    </div>
-`;
+            <div style="border: 1px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;">
+                <p style="margin-bottom: 15px; font-size: 16px;">Nama: ${note.name}</p>
+                <p style="margin-bottom: 15px; font-size: 16px;">Catatan: ${note.note}</p>
+                <button style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="saveAsImage(this)">Simpan sebagai Gambar</button>
+                <button class="delete-button" style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="deleteNote(this)">Hapus</button>
+            </div>
+        `;
         document.getElementById("notes").appendChild(noteContainer);
     });
 };
