@@ -415,6 +415,86 @@
       ><link href="./dashboard.css" rel="stylesheet" /><div
         class="dashboard-container"
         ><div class="dashboard-container01"
+          ><div
+            id="popup1"
+            class="popupcustomize-container popupcustomize-root-class-name3"
+            ><div class="popupcustomize-container1"
+              ><div class="popupcustomize-header"
+                ><img
+                  alt="image"
+                  src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/Banner.png?updatedAt=1716073516598"
+                  class="popupcustomize-image"
+                /><div class="popupcustomize-container2"
+                  ><span class="popupcustomize-text"
+                    ><span class="popupcustomize-text01"
+                      >🎉 Jangan lewatkan kesempatan ini!</span
+                    ><br class="popupcustomize-text02" /><br
+                      class="popupcustomize-text03"
+                    /><span class="popupcustomize-text04"
+                      >Masukkan kode promo </span
+                    ><span class="popupcustomize-text05">DISKON2024</span
+                    ><span class="popupcustomize-text06">
+                      untuk mendapatkan diskon hingga </span
+                    ><span class="popupcustomize-text07">Rp. 50.000</span
+                    ><span class="popupcustomize-text08">
+                      untuk jasa pembuatan website. Yuk, manfaatkan promo ini
+                      sekarang juga dan wujudkan website impianmu dengan harga
+                      lebih terjangkau! 🚀</span
+                    ></span
+                  ><a href="web-service.html" class="popupcustomize-navlink"
+                    ><div class="popupcustomize-container3"
+                      ><h1 class="popupcustomize-text09">asdasdasd</h1></div
+                    ></a
+                  ></div
+                ></div
+              ><div class="popupcustomize-header1"
+                ><img
+                  alt="image"
+                  src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/popup/Banner2.png?updatedAt=1716254586235"
+                  class="popupcustomize-image1"
+                /><div class="popupcustomize-container4"
+                  ><span class="popupcustomize-text10"
+                    ><span>Ini popup</span></span
+                  ><span class="popupcustomize-text11"
+                    ><span>Ini Deskripsi</span></span
+                  ><a
+                    href=""
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="popupcustomize-link"
+                    ><div class="popupcustomize-container5"
+                      ><h1 class="popupcustomize-text12"
+                        ><span>Registrasi Sekarang!</span></h1
+                      ></div
+                    ></a
+                  ></div
+                ></div
+              ><button
+                type="button"
+                onclick="closeBanner('popup1')"
+                aria-label="Close"
+                class="popupcustomize-close-button"
+                ><svg
+                  viewBox="0 0 804.5714285714286 1024"
+                  class="popupcustomize-icon"
+                >
+                  <path
+                    d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                  ></path></svg></button></div
+            ><div
+              ><div class="popupcustomize-container7"
+                ><script>
+                  function showBanners() {
+                      document.getElementById('popup1').style.display = 'block';
+                  }
+
+                  function closeBanner(bannerId) {
+                      var banner = document.getElementById(bannerId);
+                      banner.style.display = 'none';
+                  }
+                </script></div
+              ></div
+            ></div
           ><div id="menuList" class="dashboard-container02"
             ><div id="notifMenu" href="#" class="dashboard-container03"
               ><svg viewBox="0 0 1024 1024" class="dashboard-icon">
@@ -509,109 +589,111 @@
                     ><div class="dashboard-container21"
                       ><script>
                         function getRandomNumber(min, max) {
-                            return (Math.random() * (max - min) + min).toFixed(2);
+                          return (Math.random() * (max - min) + min).toFixed(2);
                         }
 
                         function getAlertLevel(value) {
-                            if (value > 87) {
-                                return 'High';
-                            } else if (value > 102) {
-                                return 'Moderate';
-                            } else {
-                                return 'Normal';
-                            }
+                          if (value > 87) {
+                            return 'High';
+                          } else if (value > 102) {
+                            return 'Moderate';
+                          } else {
+                            return 'Normal';
+                          }
                         }
 
                         function updateRandomNumber() {
-                            var randomNumberElement = document.getElementById('angka');
-                            var mbElement = document.getElementById('mb');
-                            var statusElement = document.getElementById('status');
+                          var randomNumberElement = document.getElementById('angka');
+                          var mbElement = document.getElementById('mb');
+                          var statusElement = document.getElementById('status');
 
-                            var randomValue = getRandomNumber(87, 102);
-                            var alertLevel = getAlertLevel(randomValue);
+                          var randomValue = getRandomNumber(87, 102);
+                          var alertLevel = getAlertLevel(randomValue);
 
-                            randomNumberElement.innerHTML = randomValue;
-                            mbElement.innerHTML = 'Mb';
-                            statusElement.innerHTML = '(' + alertLevel + ')';
+                          randomNumberElement.innerHTML = randomValue;
+                          mbElement.innerHTML = 'Mb';
+                          statusElement.innerHTML = '(' + alertLevel + ')';
                         }
 
                         function startUpdating() {
-                            updateRandomNumber();
-                            setInterval(updateRandomNumber, 2000); // Update setiap 2 detik
+                          updateRandomNumber();
+                          setInterval(updateRandomNumber, 2000); // Update setiap 2 detik
                         }
 
                         window.onload = startUpdating;
                       </script>
                       <script>
                         async function calculateCacheSize() {
-                            if ('caches' in window) {
-                                let cacheSize = 0;
-                                const cacheNames = await caches.keys();
-                                for (const name of cacheNames) {
-                                    const cache = await caches.open(name);
-                                    const requests = await cache.keys();
-                                    for (const request of requests) {
-                                        const response = await cache.match(request);
-                                        if (response) {
-                                            const buffer = await response.arrayBuffer();
-                                            cacheSize += buffer.byteLength;
-                                        }
-                                    }
+                          if ('caches' in window) {
+                            let cacheSize = 0;
+                            const cacheNames = await caches.keys();
+                            for (const name of cacheNames) {
+                              const cache = await caches.open(name);
+                              const requests = await cache.keys();
+                              for (const request of requests) {
+                                const response = await cache.match(request);
+                                if (response) {
+                                  const buffer = await response.arrayBuffer();
+                                  cacheSize += buffer.byteLength;
                                 }
-                                return (cacheSize / (1024 * 1024)).toFixed(2); // Convert to MB
+                              }
                             }
-                            return 0;
+                            return (cacheSize / (1024 * 1024)).toFixed(2); // Convert to MB
+                          }
+                          return 0;
                         }
 
                         async function updateCacheSizeDisplay() {
-                            const cacheSize = await calculateCacheSize();
-                            document.getElementById('cacheSize').textContent = `${cacheSize} MB`;
+                          const cacheSize = await calculateCacheSize();
+                          document.getElementById('cacheSize').textContent = `${cacheSize} MB`;
                         }
 
                         async function clearCache() {
-                            if ('caches' in window) {
-                                const cacheNames = await caches.keys();
-                                for (const name of cacheNames) {
-                                    await caches.delete(name);
-                                }
+                          if ('caches' in window) {
+                            const cacheNames = await caches.keys();
+                            for (const name of cacheNames) {
+                              await caches.delete(name);
                             }
-                            // Clear localStorage and sessionStorage if needed
-                            localStorage.clear();
-                            sessionStorage.clear();
-                            // Clear cookies
-                            clearCookies();
-                            updateCacheSizeDisplay();
+                          }
+                          // Clear localStorage and sessionStorage if needed
+                          localStorage.clear();
+                          sessionStorage.clear();
+                          // Clear cookies
+                          clearCookies();
+                          updateCacheSizeDisplay();
 
-                            const notification = document.getElementById('notification');
-                            notification.style.display = 'block';
-                            let countdown = 10;
-                            notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
+                          const notification = document.getElementById('notification');
+                          notification.style.display = 'block';
+                          let countdown = 10;
+                          notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
 
-                            const interval = setInterval(() => {
-                                countdown--;
-                                if (countdown <= 0) {
-                                    clearInterval(interval);
-                                    window.location.href = 'login.html';
-                                } else {
-                                    notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
-                                }
-                            }, 1000);
+                          const interval = setInterval(() => {
+                            countdown--;
+                            if (countdown <= 0) {
+                              clearInterval(interval);
+                              window.location.href = 'login.html';
+                            } else {
+                              notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
+                            }
+                          }, 1000);
                         }
 
                         function clearCookies() {
-                            const cookies = document.cookie.split('; ');
-                            for (const cookie of cookies) {
-                                const eqPos = cookie.indexOf('=');
-                                const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-                                document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
-                            }
+                          const cookies = document.cookie.split('; ');
+                          for (const cookie of cookies) {
+                            const eqPos = cookie.indexOf('=');
+                            const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                            document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+                          }
                         }
 
-                        document.getElementById('clearCacheButton').addEventListener('click', clearCache);
+                        document
+                          .getElementById('clearCacheButton')
+                          .addEventListener('click', clearCache);
 
                         updateCacheSizeDisplay();
-                      </script></div
-                    ></div
+                      </script>
+                    </div></div
                   ></div
                 ></div
               ><form id="profileForm" class="dashboard-form"
@@ -696,7 +778,7 @@
           ><div id="gift" class="dashboard-container26 content removescsroll"
             ><div class="dashboard-container27"
               ><span class="dashboard-text14">Gift 🎁</span></div
-            ><div class="dashboard-container28"
+            ><div class="dashboard-container28 removescsroll"
               ><div class="gift-container gift-root-class-name"
                 ><img
                   alt="image"

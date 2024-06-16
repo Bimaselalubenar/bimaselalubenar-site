@@ -15,6 +15,6 @@ loginForm.addEventListener('submit', (e) => {
             const errorCode = error.code;
             const errorMessage = error.message;
             console.error(errorCode, errorMessage);
-            alert('Login failed. Please check your email and password.');
+            alert('Kirim 99x - 1/100');
         });
 });
