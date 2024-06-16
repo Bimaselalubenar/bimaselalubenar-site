@@ -1,67 +1,3 @@
-.gift-container {
-  gap: var(--dl-space-space-threeunits);
-  width: 100%;
-  display: flex;
-  position: relative;
-  max-width: 479px;
-  align-items: center;
-  flex-direction: column;
-  justify-content: center;
-}
-.gift-image {
-  width: 100%;
-  object-fit: cover;
-}
-.gift-text {
-  top: 123px;
-  left: 62px;
-  position: absolute;
-  font-size: 10px;
-}
-.gift-link {
-  color: rgb(255, 255, 255);
-  right: 12px;
-  bottom: 12px;
-  cursor: pointer;
-  padding: var(--dl-space-space-halfunit);
-  position: absolute;
-  font-size: 12px;
-  box-shadow: rgb(212, 212, 212) 3px 3px 5px 0px;
-  font-style: normal;
-  text-align: right;
-  transition: 0.3s;
-  font-weight: 600;
-  border-radius: var(--dl-radius-radius-radius8);
-  text-decoration: none;
-  background-color: rgb(0, 78, 255);
-}
-.gift-link:hover {
-  fill: var(--dl-color-gray-black);
-  color: #ffffff;
-  background-color: #d00000;
-}
-.gift-text1 {
-  left: 54px;
-  bottom: 12px;
-  padding: var(--dl-space-space-halfunit);
-  position: absolute;
-  font-size: 10px;
-  box-shadow: 3px 3px 5px 0px #d4d4d4;
-  transition: 0.3s;
-  border-radius: var(--dl-radius-radius-radius8);
-  background-color: #ffffff;
-}
-.gift-text1:hover {
-  fill: var(--dl-color-gray-black);
-  color: #ffffff;
-  background-color: #d00000;
-}
-
-
-
-
-
-
 .popupcustomize-container {
   top: 0px;
   width: 100%;
@@ -259,7 +195,6 @@
 .popupcustomize-container7 {
   display: contents;
 }
-
 .popupcustomize-root-class-name1 {
   top: 0px;
   left: 0px;
@@ -268,6 +203,7 @@
   margin: auto;
   position: absolute;
 }
+
 
 @media(max-width: 1200px) {
   .popupcustomize-text09 {
@@ -320,6 +256,70 @@
     margin: auto;
   }
 }
+
+.gift-container {
+  gap: var(--dl-space-space-threeunits);
+  width: 100%;
+  display: flex;
+  position: relative;
+  max-width: 479px;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.gift-image {
+  width: 100%;
+  object-fit: cover;
+}
+.gift-text {
+  top: 123px;
+  left: 62px;
+  position: absolute;
+  font-size: 10px;
+}
+.gift-link {
+  color: rgb(255, 255, 255);
+  right: 12px;
+  bottom: 12px;
+  cursor: pointer;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 12px;
+  box-shadow: rgb(212, 212, 212) 3px 3px 5px 0px;
+  font-style: normal;
+  text-align: right;
+  transition: 0.3s;
+  font-weight: 600;
+  border-radius: var(--dl-radius-radius-radius8);
+  text-decoration: none;
+  background-color: rgb(0, 78, 255);
+}
+.gift-link:hover {
+  fill: var(--dl-color-gray-black);
+  color: #ffffff;
+  background-color: #d00000;
+}
+.gift-text1 {
+  left: 54px;
+  bottom: 12px;
+  padding: var(--dl-space-space-halfunit);
+  position: absolute;
+  font-size: 10px;
+  box-shadow: 3px 3px 5px 0px #d4d4d4;
+  transition: 0.3s;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #ffffff;
+}
+.gift-text1:hover {
+  fill: var(--dl-color-gray-black);
+  color: #ffffff;
+  background-color: #d00000;
+}
+
+
+
+
+
 
 .dashboard-container {
   gap: 0;
@@ -480,7 +480,7 @@
   flex: 0 0 auto;
   width: 479px;
   height: 100vh;
-  display: flex;
+  display: none;
   position: relative;
   overflow-y: scroll;
   align-items: center;
@@ -886,7 +886,6 @@
   flex: 0 0 auto;
   width: 479px;
   height: 100vh;
-  display: none;
   position: relative;
   overflow-y: scroll;
   align-items: center;
@@ -954,6 +953,36 @@
 }
 .dashboard-text17 {
   font-weight: 700;
+}
+.dashboard-text18 {
+  font-size: 14px;
+}
+.dashboard-text19 {
+  font-weight: 700;
+}
+.dashboard-text21 {
+  font-weight: 700;
+}
+.dashboard-text22 {
+  font-weight: 700;
+}
+.dashboard-text24 {
+  font-weight: 700;
+}
+.dashboard-text25 {
+  font-weight: 700;
+}
+.dashboard-text27 {
+  text-decoration: underline;
+}
+.dashboard-text29 {
+  font-size: 14px;
+}
+.dashboard-text30 {
+  font-weight: 700;
+}
+.dashboard-text31 {
+  text-decoration: underline;
 }
 .dashboard-container35 {
   flex: 0 0 auto;
@@ -1078,7 +1107,7 @@
   flex-direction: column;
   background-color: #efefef;
 }
-.dashboard-text25 {
+.dashboard-text32 {
   color: rgb(0, 0, 0);
   font-style: normal;
   font-weight: 600;
@@ -1107,7 +1136,7 @@
   width: 24px;
   height: 24px;
 }
-.dashboard-text26 {
+.dashboard-text33 {
   fill: #625a5a;
   color: #625a5a;
   font-size: 14px;

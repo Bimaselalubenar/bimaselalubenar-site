@@ -6095,6 +6095,7 @@
 .materisocmed-container200 {
   width: 479px;
   height: auto;
+  display: none;
   overflow: hidden;
   box-shadow: 5px 5px 10px 0px rgba(64, 64, 64, 0.26);
   align-items: center;
