@@ -528,173 +528,170 @@
           ><div id="profile" class="dashboard-container07 content removescsroll"
             ><div class="dashboard-container08 removescsroll"
               ><div class="dashboard-container09"
-                ><div class="dashboard-container10"
-                  ><img
-                    id="profile1"
-                    alt="Profile 1"
-                    src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="dashboard-image profile-pic" /><img
-                    id="profile2"
-                    alt="Profile 2"
-                    src="https://play.teleporthq.io/static/svg/default-img.svg"
-                    class="dashboard-image1" /></div
-                ><div class="dashboard-container11 removescsroll"
-                  ><div id="userInfo" class="dashboard-container12"
-                    ><div class="dashboard-container13"
-                      ><span class="dashboard-text">Profile</span></div
+                ><img
+                  id="profile1"
+                  alt="Profile 1"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="dashboard-image profile-pic" /><img
+                  id="profile2"
+                  alt="Profile 2"
+                  src="https://play.teleporthq.io/static/svg/default-img.svg"
+                  class="dashboard-image1" /></div
+              ><div class="dashboard-container10"
+                ><div id="userInfo" class="dashboard-container11"
+                  ><div class="dashboard-container12"
+                    ><span class="dashboard-text">Profile</span></div
+                  ><div class="dashboard-container13"
                     ><div class="dashboard-container14"
-                      ><div class="dashboard-container15"
-                        ><span class="dashboard-text01"
-                          >Name&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span
-                        ><span id="userName" class="dashboard-text02"
-                          >user</span
-                        ></div
-                      ><div class="dashboard-container16"
-                        ><span class="dashboard-text03"
-                          >Email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
-                        ><span id="userEmail" class="dashboard-text04"
-                          >user</span
-                        ></div
-                      ><div class="dashboard-container17"
-                        ><span class="dashboard-text05"
-                          >Phone&nbsp; &nbsp; &nbsp; &nbsp;</span
-                        ><span id="userPhone" class="dashboard-text06"
-                          >user</span
-                        ></div
-                      ><div class="dashboard-container18"
-                        ><span class="dashboard-text07"
-                          ><span>Tanggal</span><br /><span
-                            >Lahir&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span
-                          ></span
-                        ><span id="userBirthdate" class="dashboard-text11"
-                          >user</span
-                        ></div
+                      ><span class="dashboard-text01"
+                        >Name&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span
+                      ><span id="userName" class="dashboard-text02"
+                        >user</span
                       ></div
-                    ><span class="dashboard-text12">Profile</span></div
-                  ><div class="dashboard-container19 cache-info"
-                    ><div class="dashboard-container20"
-                      ><span class="dashboard-text13"
-                        >Sampah yang tidak di gunakan</span
-                      ><span id="cacheSize" class="dashboard-text14"
-                        >Menghitung sampah...</span
+                    ><div class="dashboard-container15"
+                      ><span class="dashboard-text03"
+                        >Email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+                      ><span id="userEmail" class="dashboard-text04"
+                        >user</span
                       ></div
-                    ><button
-                      id="clearCacheButton"
-                      type="button"
-                      class="dashboard-button"
-                      >Bersihkan dan keluar</button
-                    ><span id="notification" class="dashboard-text15"
-                      >&nbsp;</span
-                    ><div
-                      ><div class="dashboard-container22"
-                        ><script>
-                          function getRandomNumber(min, max) {
-                            return (Math.random() * (max - min) + min).toFixed(2);
+                    ><div class="dashboard-container16"
+                      ><span class="dashboard-text05"
+                        >Phone&nbsp; &nbsp; &nbsp; &nbsp;</span
+                      ><span id="userPhone" class="dashboard-text06"
+                        >user</span
+                      ></div
+                    ><div class="dashboard-container17"
+                      ><span class="dashboard-text07"
+                        ><span>Tangga</span><br /><span
+                          >Lahir&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+                        ></span
+                      ><span id="userBirthdate" class="dashboard-text11"
+                        >user</span
+                      ></div
+                    ></div
+                  ><span class="dashboard-text12">Profile</span></div
+                ><div class="dashboard-container18 cache-info"
+                  ><div class="dashboard-container19"
+                    ><span class="dashboard-text13"
+                      >Sampah yang tidak di gunakan</span
+                    ><span id="cacheSize" class="dashboard-text14"
+                      >Menghitung sampah...</span
+                    ></div
+                  ><button
+                    id="clearCacheButton"
+                    type="button"
+                    class="dashboard-button"
+                    >Bersihkan dan keluar</button
+                  ><span id="notification" class="dashboard-text15">&nbsp;</span
+                  ><div
+                    ><div class="dashboard-container21"
+                      ><script>
+                        function getRandomNumber(min, max) {
+                          return (Math.random() * (max - min) + min).toFixed(2);
+                        }
+
+                        function getAlertLevel(value) {
+                          if (value > 87) {
+                            return 'High';
+                          } else if (value > 102) {
+                            return 'Moderate';
+                          } else {
+                            return 'Normal';
                           }
+                        }
 
-                          function getAlertLevel(value) {
-                            if (value > 87) {
-                              return 'High';
-                            } else if (value > 102) {
-                              return 'Moderate';
-                            } else {
-                              return 'Normal';
-                            }
-                          }
+                        function updateRandomNumber() {
+                          var randomNumberElement = document.getElementById('angka');
+                          var mbElement = document.getElementById('mb');
+                          var statusElement = document.getElementById('status');
 
-                          function updateRandomNumber() {
-                            var randomNumberElement = document.getElementById('angka');
-                            var mbElement = document.getElementById('mb');
-                            var statusElement = document.getElementById('status');
+                          var randomValue = getRandomNumber(87, 102);
+                          var alertLevel = getAlertLevel(randomValue);
 
-                            var randomValue = getRandomNumber(87, 102);
-                            var alertLevel = getAlertLevel(randomValue);
+                          randomNumberElement.innerHTML = randomValue;
+                          mbElement.innerHTML = 'Mb';
+                          statusElement.innerHTML = '(' + alertLevel + ')';
+                        }
 
-                            randomNumberElement.innerHTML = randomValue;
-                            mbElement.innerHTML = 'Mb';
-                            statusElement.innerHTML = '(' + alertLevel + ')';
-                          }
+                        function startUpdating() {
+                          updateRandomNumber();
+                          setInterval(updateRandomNumber, 2000); // Update setiap 2 detik
+                        }
 
-                          function startUpdating() {
-                            updateRandomNumber();
-                            setInterval(updateRandomNumber, 2000); // Update setiap 2 detik
-                          }
-
-                          window.onload = startUpdating;
-                        </script>
-                        <script>
-                          async function calculateCacheSize() {
-                            if ('caches' in window) {
-                              let cacheSize = 0;
-                              const cacheNames = await caches.keys();
-                              for (const name of cacheNames) {
-                                const cache = await caches.open(name);
-                                const requests = await cache.keys();
-                                for (const request of requests) {
-                                  const response = await cache.match(request);
-                                  if (response) {
-                                    const buffer = await response.arrayBuffer();
-                                    cacheSize += buffer.byteLength;
-                                  }
+                        window.onload = startUpdating;
+                      </script>
+                      <script>
+                        async function calculateCacheSize() {
+                          if ('caches' in window) {
+                            let cacheSize = 0;
+                            const cacheNames = await caches.keys();
+                            for (const name of cacheNames) {
+                              const cache = await caches.open(name);
+                              const requests = await cache.keys();
+                              for (const request of requests) {
+                                const response = await cache.match(request);
+                                if (response) {
+                                  const buffer = await response.arrayBuffer();
+                                  cacheSize += buffer.byteLength;
                                 }
                               }
-                              return (cacheSize / (1024 * 1024)).toFixed(2); // Convert to MB
                             }
-                            return 0;
+                            return (cacheSize / (1024 * 1024)).toFixed(2); // Convert to MB
                           }
+                          return 0;
+                        }
 
-                          async function updateCacheSizeDisplay() {
-                            const cacheSize = await calculateCacheSize();
-                            document.getElementById('cacheSize').textContent = `${cacheSize} MB`;
-                          }
+                        async function updateCacheSizeDisplay() {
+                          const cacheSize = await calculateCacheSize();
+                          document.getElementById('cacheSize').textContent = `${cacheSize} MB`;
+                        }
 
-                          async function clearCache() {
-                            if ('caches' in window) {
-                              const cacheNames = await caches.keys();
-                              for (const name of cacheNames) {
-                                await caches.delete(name);
-                              }
-                            }
-                            // Clear localStorage and sessionStorage if needed
-                            localStorage.clear();
-                            sessionStorage.clear();
-                            // Clear cookies
-                            clearCookies();
-                            updateCacheSizeDisplay();
-
-                            const notification = document.getElementById('notification');
-                            notification.style.display = 'block';
-                            let countdown = 10;
-                            notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
-
-                            const interval = setInterval(() => {
-                              countdown--;
-                              if (countdown <= 0) {
-                                clearInterval(interval);
-                                window.location.href = 'login.html';
-                              } else {
-                                notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
-                              }
-                            }, 1000);
-                          }
-
-                          function clearCookies() {
-                            const cookies = document.cookie.split('; ');
-                            for (const cookie of cookies) {
-                              const eqPos = cookie.indexOf('=');
-                              const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-                              document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+                        async function clearCache() {
+                          if ('caches' in window) {
+                            const cacheNames = await caches.keys();
+                            for (const name of cacheNames) {
+                              await caches.delete(name);
                             }
                           }
-
-                          document
-                            .getElementById('clearCacheButton')
-                            .addEventListener('click', clearCache);
-
+                          // Clear localStorage and sessionStorage if needed
+                          localStorage.clear();
+                          sessionStorage.clear();
+                          // Clear cookies
+                          clearCookies();
                           updateCacheSizeDisplay();
-                        </script>
-                      </div></div
-                    ></div
+
+                          const notification = document.getElementById('notification');
+                          notification.style.display = 'block';
+                          let countdown = 10;
+                          notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
+
+                          const interval = setInterval(() => {
+                            countdown--;
+                            if (countdown <= 0) {
+                              clearInterval(interval);
+                              window.location.href = 'login.html';
+                            } else {
+                              notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
+                            }
+                          }, 1000);
+                        }
+
+                        function clearCookies() {
+                          const cookies = document.cookie.split('; ');
+                          for (const cookie of cookies) {
+                            const eqPos = cookie.indexOf('=');
+                            const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
+                            document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
+                          }
+                        }
+
+                        document
+                          .getElementById('clearCacheButton')
+                          .addEventListener('click', clearCache);
+
+                        updateCacheSizeDisplay();
+                      </script>
+                    </div></div
                   ></div
                 ><form id="profileForm" class="dashboard-form"
                   ><label for="upload" class="dashboard-text16">Upload</label
@@ -703,11 +700,11 @@
                     id="upload"
                     accept="image/*"
                     class="dashboard-textinput button"
-                  /><div class="dashboard-container23"
+                  /><div class="dashboard-container22"
                     ><div
                       id="delete"
                       type="button"
-                      class="dashboard-container24"
+                      class="dashboard-container23"
                       ><svg
                         viewBox="0 0 804.5714285714286 1024"
                         class="dashboard-icon08"
@@ -719,7 +716,7 @@
                       >Terapkan</button
                     ></div
                   ><div
-                    ><div class="dashboard-container26"
+                    ><div class="dashboard-container25"
                       ><script>
                         const profile1 = document.getElementById('profile1');
                         const profile2 = document.getElementById('profile2');
@@ -779,10 +776,10 @@
                 ></div
               ></div
             ></div
-          ><div id="gift" class="dashboard-container27 content removescsroll"
-            ><div class="dashboard-container28"
+          ><div id="gift" class="dashboard-container26 content removescsroll"
+            ><div class="dashboard-container27"
               ><span class="dashboard-text17">Gift 🎁</span></div
-            ><div class="dashboard-container29 removescsroll"
+            ><div class="dashboard-container28 removescsroll"
               ><div class="gift-container gift-root-class-name"
                 ><img
                   alt="image"
@@ -850,15 +847,15 @@
                 ><span class="gift-text1"><span>28-02-2024</span></span></div
               ></div
             ></div
-          ><div id="noted" class="dashboard-container30 content removescsroll"
-            ><div class="dashboard-container31"
+          ><div id="noted" class="dashboard-container29 content removescsroll"
+            ><div class="dashboard-container30"
               ><span class="dashboard-text18">Note ❤️</span></div
             ><div
-              ><div class="dashboard-container33"
+              ><div class="dashboard-container32"
                 ><link rel="stylesheet" href="sayang/styles.css" /></div></div
-            ><div class="dashboard-container34"
-              ><div class="dashboard-container35"
-                ><div class="dashboard-container36"></div
+            ><div class="dashboard-container33"
+              ><div class="dashboard-container34"
+                ><div class="dashboard-container35"></div
                 ><span class="dashboard-text19"
                   ><span class="dashboard-text20">Hai Sayang!</span
                   ><br class="dashboard-text21" /><br
@@ -886,15 +883,15 @@
                 ></div
               ><div
                 id="notes"
-                class="dashboard-container37 removescsroll"
+                class="dashboard-container36 removescsroll"
               ></div></div
-            ><div class="dashboard-container38"
+            ><div class="dashboard-container37"
               ><form id="noteForm" class="dashboard-form1"
                 ><div
                   id="addNoteButton"
                   type="button"
                   onclick="addNote()"
-                  class="dashboard-container39"
+                  class="dashboard-container38"
                   ><svg viewBox="0 0 1024 1024" class="dashboard-icon10">
                     <path
                       d="M992 384h-352v-352c0-17.672-14.328-32-32-32h-192c-17.672 0-32 14.328-32 32v352h-352c-17.672 0-32 14.328-32 32v192c0 17.672 14.328 32 32 32h352v352c0 17.672 14.328 32 32 32h192c17.672 0 32-14.328 32-32v-352h352c17.672 0 32-14.328 32-32v-192c0-17.672-14.328-32-32-32z"
@@ -913,10 +910,10 @@
                   placeholder="Punya unek unek?"
                   class="dashboard-textinput2 input" /></form></div
             ><div
-              ><div class="dashboard-container41"
+              ><div class="dashboard-container40"
                 ><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script></div></div
             ><div
-              ><div class="dashboard-container43"
+              ><div class="dashboard-container42"
                 ><script>
                     function addNote() {
                       const name = document.getElementById('name').value;
@@ -1002,10 +999,10 @@
                 </script>
               </div></div
             ></div
-          ><div id="notif" class="dashboard-container44 content removescsroll"
-            ><div class="dashboard-container45"
+          ><div id="notif" class="dashboard-container43 content removescsroll"
+            ><div class="dashboard-container44"
               ><span class="dashboard-text35">Notifikasi</span></div
-            ><div class="dashboard-container46"
+            ><div class="dashboard-container45"
               ><animate-on-reveal
                 animation="bounceIn"
                 duration="2s"
@@ -1015,7 +1012,7 @@
                 iteration="99"
                 ><div
                   data-thq-animate-on-reveal="true"
-                  class="dashboard-container47"
+                  class="dashboard-container46"
                   ><svg viewBox="0 0 1024 1024" class="dashboard-icon12">
                     <path
                       d="M889.68 166.32c-93.608-102.216-228.154-166.32-377.68-166.32-282.77 0-512 229.23-512 512h96c0-229.75 186.25-416 416-416 123.020 0 233.542 53.418 309.696 138.306l-149.696 149.694h352v-352l-134.32 134.32z"
@@ -1028,8 +1025,8 @@
               ></div
             ></div
           ></div
-        ><div class="dashboard-container48"
-          ><div class="dashboard-container49"
+        ><div class="dashboard-container47"
+          ><div class="dashboard-container48"
             ><script>
               document.getElementById('profileMenu').addEventListener('click', function () {
                 showContent('profile');
@@ -1066,8 +1063,8 @@
               }
             </script>
           </div></div
-        ><div class="dashboard-container50"
-          ><div class="dashboard-container51"
+        ><div class="dashboard-container49"
+          ><div class="dashboard-container50"
             ><script src="sayang/dashboard.js"></script></div></div
         ><div
           id="popup1"
