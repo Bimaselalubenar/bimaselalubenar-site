@@ -1,0 +1,39 @@
+.tag-check {
+  gap: 5px;
+  display: flex;
+  position: relative;
+  align-items: flex-start;
+  padding-top: 5px;
+  padding-left: 7px;
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: 7px;
+  flex-direction: row;
+  padding-bottom: 5px;
+  justify-content: flex-start;
+  background-color: #5e00ff;
+}
+.tag-icon {
+  fill: #ffffff;
+  width: 16px;
+  height: auto;
+}
+.tag-text {
+  color: #ffffff;
+  font-size: 14px;
+  font-family: Poppins;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 767px) {
+  .tag-text {
+    line-height: 21px;
+  }
+}

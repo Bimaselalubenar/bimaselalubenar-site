@@ -1,0 +1,51 @@
+.loading-container {
+  gap: var(--dl-space-space-unit);
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  display: none;
+  z-index: 120;
+  position: fixed;
+  align-items: center;
+  flex-direction: column;
+  backdrop-filter: blur(20px);
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.01);
+}
+.loading-container1 {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.loading-lottie-node {
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  animation-name: zoomOut;
+  animation-delay: 5s;
+  animation-duration: 1s;
+  animation-direction: normal;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-out;
+}
+.loading-container3 {
+  display: contents;
+}
+.loading-root-class-name {
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  margin: auto;
+  position: absolute;
+  align-self: center;
+}
+
+.loading-root-class-name2 {
+  top: 0px;
+  left: 0px;
+  position: absolute;
+}

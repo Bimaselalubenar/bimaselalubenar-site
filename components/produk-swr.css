@@ -1,0 +1,303 @@
+.produk-swr-container {
+  gap: var(--dl-space-space-halfunit);
+  flex: 0 0 auto;
+  width: 209px;
+  display: flex;
+  position: relative;
+  flex-wrap: wrap;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: column;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.produk-swr-image {
+  width: 100%;
+  cursor: pointer;
+  height: auto;
+  object-fit: cover;
+  transition: 0.5s;
+  border-radius: var(--dl-radius-radius-radius8);
+}
+.produk-swr-image:hover {
+  transform: translateY(-12px);
+  box-shadow: 0px 3px 0px 0px #444444,0px 5px 5px 0px #909090;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+.produk-swr-container1 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding-left: var(--dl-space-space-halfunit);
+  padding-right: var(--dl-space-space-halfunit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-halfunit);
+  justify-content: center;
+}
+.produk-swr-container2 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: center;
+}
+.produk-swr-text {
+  width: 100%;
+  font-size: 6px;
+  font-style: normal;
+  text-align: left;
+  font-weight: 600;
+}
+.produk-swr-text03 {
+  width: 100%;
+  font-size: 6px;
+  align-self: center;
+  text-align: right;
+}
+.produk-swr-text04 {
+  width: 100%;
+  font-size: 12px;
+  align-self: center;
+  font-style: normal;
+  text-align: left;
+  font-weight: 600;
+}
+.produk-swr-container3 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  cursor: no-drop;
+  display: flex;
+  padding: 5px;
+  box-shadow: 0px 5px 5px 0px #d4d4d4;
+  align-items: center;
+  border-radius: 5px;
+  flex-direction: row;
+  justify-content: center;
+  background-image: linear-gradient(to right, #c02425 0%, #f0cb35 100%);
+}
+.produk-swr-text05 {
+  color: #ffffff;
+  width: auto;
+  font-size: 9px;
+  align-self: center;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+}
+.produk-swr-text06 {
+  color: #ffffff;
+  width: 100%;
+  font-size: 12px;
+  align-self: center;
+  font-style: normal;
+  text-align: left;
+  font-weight: 600;
+}
+.produk-swr-container4 {
+  gap: 5px;
+  width: 100%;
+  display: flex;
+  margin-top: var(--dl-space-space-halfunit);
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.produk-swr-container5 {
+  gap: 5px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.produk-swr-icon {
+  fill: #000aff;
+  width: 10px;
+  height: auto;
+}
+.produk-swr-text07 {
+  color: #000aff;
+  width: auto;
+  font-size: 9px;
+  align-self: center;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+}
+.produk-swr-container6 {
+  gap: 5px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.produk-swr-icon2 {
+  fill: #000aff;
+  width: 10px;
+  height: auto;
+}
+.produk-swr-text08 {
+  color: #000aff;
+  width: auto;
+  font-size: 9px;
+  align-self: center;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+}
+.produk-swr-container7 {
+  gap: 5px;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+.produk-swr-icon4 {
+  fill: #000aff;
+  width: 10px;
+  height: auto;
+}
+.produk-swr-text09 {
+  color: #000aff;
+  width: auto;
+  font-size: 9px;
+  align-self: center;
+  font-style: normal;
+  text-align: left;
+  font-weight: 400;
+}
+.produk-swr-link {
+  display: contents;
+}
+.produk-swr-container8 {
+  gap: var(--dl-space-space-halfunit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: 5px;
+  transition: 0.5s;
+  align-items: center;
+  border-radius: var(--dl-radius-radius-radius8);
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #fff700;
+}
+.produk-swr-container8:hover {
+  transform: scale(105%);
+  box-shadow: 0px 3px 0px 0px #6cc400,0px 3px 10px 0px #edff1b;
+  border-radius: var(--dl-radius-radius-radius8);
+  background-color: #07ff00;
+}
+.produk-swr-text10 {
+  color: var(--dl-color-gray-black);
+  font-size: 10px;
+  font-style: normal;
+  font-weight: 500;
+}
+.produk-swr-icon6 {
+  width: 18px;
+  height: auto;
+}
+
+
+
+
+
+
+
+
+
+
+@media(max-width: 479px) {
+  .produk-swr-container {
+    width: 161px;
+    background-color: #f7f7f7;
+  }
+  .produk-swr-image {
+    height: auto;
+  }
+  .produk-swr-container1 {
+    gap: 5px;
+  }
+  .produk-swr-container2 {
+    flex-direction: row;
+  }
+  .produk-swr-text {
+    font-size: 6px;
+  }
+  .produk-swr-text03 {
+    font-size: 6px;
+    text-align: right;
+  }
+  .produk-swr-text04 {
+    font-size: 8px;
+  }
+  .produk-swr-container3 {
+    padding: 6px;
+    justify-content: center;
+    background-image: linear-gradient(135deg, rgb(192, 36, 37) 0.00%,rgb(240, 203, 53) 100.00%);
+  }
+  .produk-swr-text05 {
+    color: #ffffff;
+    width: auto;
+    font-size: 8px;
+  }
+  .produk-swr-text06 {
+    color: #ffffff;
+    font-size: 8px;
+  }
+  .produk-swr-container5 {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .produk-swr-icon {
+    width: 8px;
+    height: auto;
+  }
+  .produk-swr-text07 {
+    font-size: 8px;
+  }
+  .produk-swr-container6 {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .produk-swr-icon2 {
+    width: 8px;
+    height: auto;
+  }
+  .produk-swr-text08 {
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 400;
+  }
+  .produk-swr-container7 {
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .produk-swr-icon4 {
+    width: 8px;
+    height: auto;
+  }
+  .produk-swr-text09 {
+    font-size: 8px;
+  }
+  .produk-swr-container8 {
+    gap: var(--dl-space-space-halfunit);
+    width: 100%;
+    height: auto;
+    padding: 5px;
+  }
+  .produk-swr-text10 {
+    width: auto;
+    font-size: 10px;
+  }
+  .produk-swr-icon6 {
+    width: 18px;
+    height: auto;
+  }
+}

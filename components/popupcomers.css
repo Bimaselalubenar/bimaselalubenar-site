@@ -1,0 +1,212 @@
+.popupcomers-container {
+  top: 0px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  z-index: 110;
+  position: fixed;
+  max-width: auto;
+  overflow-y: scroll;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: var(--dl-space-space-unit);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-twounits);
+  backdrop-filter: blur(10px);
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.45);
+}
+.popupcomers-container1 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  position: relative;
+  max-width: 500px;
+  box-shadow: 5px 5px 15px 0px rgba(0, 0, 0, 0.39);
+  align-items: flex-start;
+  border-radius: 20px;
+  flex-direction: column;
+  background-color: var(--dl-color-theme-neutral-light);
+}
+.popupcomers-slider {
+  width: 100%;
+  height: auto;
+  display: inline-block;
+}
+.popupcomers-slider-slide {
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding-bottom: 0px;
+}
+.popupcomers-header {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-twounits);
+  padding-left: 0px;
+  border-radius: 10px;
+  padding-right: 0px;
+  flex-direction: column;
+  padding-bottom: 0px;
+  justify-content: flex-start;
+}
+.popupcomers-container2 {
+  width: 100%;
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.popupcomers-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.popupcomers-lottie-node {
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  bottom: 0px;
+  height: 565px;
+  margin: auto;
+  z-index: 1;
+  position: absolute;
+  transform: scale(210%);
+}
+.popupcomers-container3 {
+  gap: var(--dl-space-space-unit);
+  flex: 1;
+  width: 100%;
+  height: auto;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  align-items: center;
+  border-radius: 10px;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: #eaeaea;
+}
+.popupcomers-text {
+  font-size: 20px;
+  text-align: center;
+  font-weight: 700;
+}
+.popupcomers-text10 {
+  font-size: 16px;
+  text-align: center;
+}
+.popupcomers-text11 {
+  font-style: normal;
+  font-weight: 400;
+}
+.popupcomers-text12 {
+  font-weight: 900;
+}
+.popupcomers-text13 {
+  font-style: normal;
+  font-weight: 400;
+}
+.popupcomers-text14 {
+  font-weight: 900;
+}
+.popupcomers-text15 {
+  font-style: normal;
+  font-weight: 700;
+}
+.popupcomers-text16 {
+  font-style: normal;
+}
+.popupcomers-navlink {
+  display: contents;
+}
+.popupcomers-container4 {
+  gap: var(--dl-space-space-unit);
+  width: 100%;
+  cursor: pointer;
+  display: flex;
+  padding: var(--dl-space-space-unit);
+  z-index: 5;
+  align-items: center;
+  border-radius: 15px;
+  flex-direction: row;
+  justify-content: center;
+  text-decoration: none;
+  background-color: #18aa00;
+}
+.popupcomers-text17 {
+  color: #ffffff;
+  font-size: 20px;
+  font-style: normal;
+  text-align: left;
+  font-family: "Inconsolata";
+  font-weight: 800;
+}
+.popupcomers-slider-pagination {
+  display: block;
+}
+.popupcomers-slider-button-prev {
+  fill: var(--dl-color-gray-black);
+  color: #d6d6d6;
+  display: none;
+}
+.popupcomers-slider-button-next {
+  fill: var(--dl-color-gray-black);
+  color: #d6d6d6;
+  display: none;
+}
+.popupcomers-close-button {
+  top: var(--dl-space-space-unit);
+  right: var(--dl-space-space-unit);
+  display: flex;
+  z-index: 5;
+  position: absolute;
+  flex-direction: row;
+}
+.popupcomers-icon {
+  width: 24px;
+  cursor: pointer;
+  height: 24px;
+  align-self: center;
+  transition: 0.3s;
+}
+.popupcomers-icon:hover {
+  transform: rotate(90deg);
+}
+.popupcomers-container6 {
+  display: contents;
+}
+
+
+
+@media(max-width: 991px) {
+  .popupcomers-text17 {
+    font-size: 20px;
+  }
+}
+@media(max-width: 767px) {
+  .popupcomers-text17 {
+    font-size: 20px;
+  }
+  .popupcomers-close-button {
+    align-self: flex-start;
+  }
+}
+@media(max-width: 479px) {
+  .popupcomers-image {
+    top: -111px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+}

@@ -1,0 +1,46 @@
+.sukses-kirim-container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+}
+.sukses-kirim-container1 {
+  gap: var(--dl-space-space-unit);
+  flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  padding-top: var(--dl-space-space-unit);
+  padding-left: var(--dl-space-space-twounits);
+  border-radius: 40px;
+  padding-right: var(--dl-space-space-twounits);
+  flex-direction: row;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
+  background-image: linear-gradient(180deg, rgb(66, 255, 46) 0.00%,rgb(0, 121, 19) 100.00%);
+}
+.sukses-kirim-icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+.sukses-kirim-text {
+  color: #ffffff;
+  font-size: 18px;
+  font-style: normal;
+  font-family: "Poppins";
+  font-weight: 600;
+  line-height: 1.15;
+  text-transform: none;
+  text-decoration: none;
+}
+.sukses-kirim-navlink {
+  display: contents;
+}
+.sukses-kirim-text1 {
+  color: #000000;
+  margin-top: var(--dl-space-space-twounits);
+  text-decoration: none;
+}

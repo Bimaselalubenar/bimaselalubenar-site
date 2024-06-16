@@ -1,0 +1,33 @@
+.chat-infinitex-container {
+  gap: var(--dl-space-space-halfunit);
+  right: 0px;
+  width: auto;
+  height: auto;
+  display: flex;
+  z-index: 100;
+  position: fixed;
+  align-items: center;
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.chat-infinitex-link {
+  display: contents;
+}
+.chat-infinitex-image {
+  width: 80px;
+  height: auto;
+  object-fit: cover;
+  text-decoration: none;
+}
+.chat-infinitex-root-class-name {
+  margin-top: 340px;
+}
+@media(max-width: 479px) {
+  .chat-infinitex-container {
+    width: auto;
+  }
+  .chat-infinitex-image {
+    width: 60px;
+  }
+}
