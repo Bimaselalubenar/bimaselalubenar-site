@@ -347,15 +347,12 @@
 }
 .dashboard-container02 {
   flex: 0 0 auto;
-  left: 0px;
-  right: 0px;
   width: 100%;
   bottom: 0px;
   height: 60px;
-  margin: auto;
   display: flex;
   z-index: 10;
-  position: absolute;
+  position: fixed;
   max-width: 479px;
   transition: 0.8s;
   align-items: center;
