@@ -195,6 +195,9 @@
 .popupcustomize-container7 {
   display: contents;
 }
+.popupcustomize-root-class-name {
+  display: none;
+}
 .popupcustomize-root-class-name1 {
   top: 0px;
   left: 0px;
@@ -204,9 +207,6 @@
   position: absolute;
 }
 
-.popupcustomize-root-class-name {
-  display: none;
-}
 .popupcustomize-root-class-name3 {
   display: none;
 }

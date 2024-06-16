@@ -414,7 +414,27 @@
     ><link rel="stylesheet" href="./style.css" /><div
       ><link href="./dashboard.css" rel="stylesheet" /><div
         class="dashboard-container"
-        ><div class="dashboard-container01"
+        ><div
+          ><div class="dashboard-container02"
+            ><script
+              src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+              defer=""
+            ></script>
+            <script>
+              window.OneSignalDeferred = window.OneSignalDeferred || [];
+              OneSignalDeferred.push(async function(OneSignal) {
+                await OneSignal.init({
+                  appId: '0f909d64-b774-4092-a4a2-d2892f279fdc',
+                  serviceWorkerParam: {
+                    scope: '/onesignal/'
+                  },
+                  serviceWorkerPath: 'onesignal/OneSignalSDKWorker.js',
+                  serviceWorkerUpdaterPath: 'onesignal/OneSignalSDKUpdaterWorker.js'
+                });
+              });
+            </script></div
+          ></div
+        ><div class="dashboard-container03"
           ><div
             id="popup1"
             class="popupcustomize-container popupcustomize-root-class-name3"
@@ -495,13 +515,13 @@
                 </script></div
               ></div
             ></div
-          ><div id="menuList" class="dashboard-container02"
-            ><div id="notifMenu" href="#" class="dashboard-container03"
+          ><div id="menuList" class="dashboard-container04"
+            ><div id="notifMenu" href="#" class="dashboard-container05"
               ><svg viewBox="0 0 1024 1024" class="dashboard-icon">
                 <path
                   d="M521.143 969.143c0-5.143-4-9.143-9.143-9.143-45.143 0-82.286-37.143-82.286-82.286 0-5.143-4-9.143-9.143-9.143s-9.143 4-9.143 9.143c0 55.429 45.143 100.571 100.571 100.571 5.143 0 9.143-4 9.143-9.143zM987.429 804.571c0 40-33.143 73.143-73.143 73.143h-256c0 80.571-65.714 146.286-146.286 146.286s-146.286-65.714-146.286-146.286h-256c-40 0-73.143-33.143-73.143-73.143 84.571-71.429 182.857-199.429 182.857-475.429 0-109.714 90.857-229.714 242.286-252-2.857-6.857-4.571-14.286-4.571-22.286 0-30.286 24.571-54.857 54.857-54.857s54.857 24.571 54.857 54.857c0 8-1.714 15.429-4.571 22.286 151.429 22.286 242.286 142.286 242.286 252 0 276 98.286 404 182.857 475.429z"
                 ></path></svg></div
-            ><div id="notedMenu" href="#" class="dashboard-container04"
+            ><div id="notedMenu" href="#" class="dashboard-container06"
               ><svg
                 viewBox="0 0 950.8571428571428 1024"
                 class="dashboard-icon02"
@@ -509,7 +529,7 @@
                 <path
                   d="M438.857 548.571v219.429c0 60.571-49.143 109.714-109.714 109.714h-219.429c-60.571 0-109.714-49.143-109.714-109.714v-402.286c0-161.143 131.429-292.571 292.571-292.571h36.571c20 0 36.571 16.571 36.571 36.571v73.143c0 20-16.571 36.571-36.571 36.571h-36.571c-80.571 0-146.286 65.714-146.286 146.286v18.286c0 30.286 24.571 54.857 54.857 54.857h128c60.571 0 109.714 49.143 109.714 109.714zM950.857 548.571v219.429c0 60.571-49.143 109.714-109.714 109.714h-219.429c-60.571 0-109.714-49.143-109.714-109.714v-402.286c0-161.143 131.429-292.571 292.571-292.571h36.571c20 0 36.571 16.571 36.571 36.571v73.143c0 20-16.571 36.571-36.571 36.571h-36.571c-80.571 0-146.286 65.714-146.286 146.286v18.286c0 30.286 24.571 54.857 54.857 54.857h128c60.571 0 109.714 49.143 109.714 109.714z"
                 ></path></svg></div
-            ><div id="giftMenu" href="#" class="dashboard-container05"
+            ><div id="giftMenu" href="#" class="dashboard-container07"
               ><svg
                 viewBox="0 0 877.7142857142857 1024"
                 class="dashboard-icon04"
@@ -517,7 +537,7 @@
                 <path
                   d="M530.286 774.857v-409.143h-182.857v409.143c0 20 16.571 29.714 36.571 29.714h109.714c20 0 36.571-9.714 36.571-29.714zM269.714 292.571h111.429l-72-92c-6.286-7.429-20-17.714-39.429-17.714-30.286 0-54.857 24.571-54.857 54.857s24.571 54.857 54.857 54.857zM662.857 237.714c0-30.286-24.571-54.857-54.857-54.857-19.429 0-33.143 10.286-39.429 17.714l-71.429 92h110.857c30.286 0 54.857-24.571 54.857-54.857zM877.714 384v182.857c0 10.286-8 18.286-18.286 18.286h-54.857v237.714c0 30.286-24.571 54.857-54.857 54.857h-621.714c-30.286 0-54.857-24.571-54.857-54.857v-237.714h-54.857c-10.286 0-18.286-8-18.286-18.286v-182.857c0-10.286 8-18.286 18.286-18.286h251.429c-70.857 0-128-57.143-128-128s57.143-128 128-128c38.286 0 73.714 16 96 44l73.143 94.286 73.143-94.286c22.286-28 57.714-44 96-44 70.857 0 128 57.143 128 128s-57.143 128-128 128h251.429c10.286 0 18.286 8 18.286 18.286z"
                 ></path></svg></div
-            ><div id="profileMenu" href="#" class="dashboard-container06"
+            ><div id="profileMenu" href="#" class="dashboard-container08"
               ><svg
                 viewBox="0 0 731.4285714285713 1024"
                 class="dashboard-icon06"
@@ -525,9 +545,9 @@
                 <path
                   d="M731.429 799.429c0 83.429-54.857 151.429-121.714 151.429h-488c-66.857 0-121.714-68-121.714-151.429 0-150.286 37.143-324 186.857-324 46.286 45.143 109.143 73.143 178.857 73.143s132.571-28 178.857-73.143c149.714 0 186.857 173.714 186.857 324zM585.143 292.571c0 121.143-98.286 219.429-219.429 219.429s-219.429-98.286-219.429-219.429 98.286-219.429 219.429-219.429 219.429 98.286 219.429 219.429z"
                 ></path></svg></div></div
-          ><div id="profile" class="dashboard-container07 content removescsroll"
-            ><div class="dashboard-container08 removescsroll"
-              ><div class="dashboard-container09"
+          ><div id="profile" class="dashboard-container09 removescsroll content"
+            ><div class="dashboard-container10 removescsroll"
+              ><div class="dashboard-container11"
                 ><img
                   id="profile1"
                   alt="Profile 1"
@@ -537,30 +557,33 @@
                   alt="Profile 2"
                   src="https://play.teleporthq.io/static/svg/default-img.svg"
                   class="dashboard-image1" /></div
-              ><div class="dashboard-container10"
-                ><div id="userInfo" class="dashboard-container11"
-                  ><div class="dashboard-container12"
+              ><div class="dashboard-container12"
+                ><div
+                  class="dashboard-container13 onesignal-customlink-container"
+                ></div
+                ><div id="userInfo" class="dashboard-container14"
+                  ><div class="dashboard-container15"
                     ><span class="dashboard-text">Profile</span></div
-                  ><div class="dashboard-container13"
-                    ><div class="dashboard-container14"
+                  ><div class="dashboard-container16"
+                    ><div class="dashboard-container17"
                       ><span class="dashboard-text01"
                         >Name&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span
                       ><span id="userName" class="dashboard-text02"
                         >user</span
                       ></div
-                    ><div class="dashboard-container15"
+                    ><div class="dashboard-container18"
                       ><span class="dashboard-text03"
                         >Email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
                       ><span id="userEmail" class="dashboard-text04"
                         >user</span
                       ></div
-                    ><div class="dashboard-container16"
+                    ><div class="dashboard-container19"
                       ><span class="dashboard-text05"
                         >Phone&nbsp; &nbsp; &nbsp; &nbsp;</span
                       ><span id="userPhone" class="dashboard-text06"
                         >user</span
                       ></div
-                    ><div class="dashboard-container17"
+                    ><div class="dashboard-container20"
                       ><span class="dashboard-text07"
                         ><span>Tangga</span><br /><span
                           >Lahir&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
@@ -570,8 +593,8 @@
                       ></div
                     ></div
                   ><span class="dashboard-text12">Profile</span></div
-                ><div class="dashboard-container18 cache-info"
-                  ><div class="dashboard-container19"
+                ><div class="dashboard-container21 cache-info"
+                  ><div class="dashboard-container22"
                     ><span class="dashboard-text13"
                       >Sampah yang tidak di gunakan</span
                     ><span id="cacheSize" class="dashboard-text14"
@@ -584,7 +607,7 @@
                     >Bersihkan dan keluar</button
                   ><span id="notification" class="dashboard-text15">&nbsp;</span
                   ><div
-                    ><div class="dashboard-container21"
+                    ><div class="dashboard-container24"
                       ><script>
                         function getRandomNumber(min, max) {
                           return (Math.random() * (max - min) + min).toFixed(2);
@@ -700,11 +723,11 @@
                     id="upload"
                     accept="image/*"
                     class="dashboard-textinput button"
-                  /><div class="dashboard-container22"
+                  /><div class="dashboard-container25"
                     ><div
                       id="delete"
                       type="button"
-                      class="dashboard-container23"
+                      class="dashboard-container26"
                       ><svg
                         viewBox="0 0 804.5714285714286 1024"
                         class="dashboard-icon08"
@@ -716,7 +739,7 @@
                       >Terapkan</button
                     ></div
                   ><div
-                    ><div class="dashboard-container25"
+                    ><div class="dashboard-container28"
                       ><script>
                         const profile1 = document.getElementById('profile1');
                         const profile2 = document.getElementById('profile2');
@@ -776,10 +799,10 @@
                 ></div
               ></div
             ></div
-          ><div id="gift" class="dashboard-container26 content removescsroll"
-            ><div class="dashboard-container27"
+          ><div id="gift" class="dashboard-container29 removescsroll content"
+            ><div class="dashboard-container30"
               ><span class="dashboard-text17">Gift 🎁</span></div
-            ><div class="dashboard-container28 removescsroll"
+            ><div class="dashboard-container31 removescsroll"
               ><div class="gift-container gift-root-class-name"
                 ><img
                   alt="image"
@@ -847,15 +870,15 @@
                 ><span class="gift-text1"><span>28-02-2024</span></span></div
               ></div
             ></div
-          ><div id="noted" class="dashboard-container29 content removescsroll"
-            ><div class="dashboard-container30"
+          ><div id="noted" class="dashboard-container32 removescsroll content"
+            ><div class="dashboard-container33"
               ><span class="dashboard-text18">Note ❤️</span></div
             ><div
-              ><div class="dashboard-container32"
+              ><div class="dashboard-container35"
                 ><link rel="stylesheet" href="sayang/styles.css" /></div></div
-            ><div class="dashboard-container33 removescsroll"
-              ><div class="dashboard-container34"
-                ><div class="dashboard-container35"></div
+            ><div class="dashboard-container36 removescsroll"
+              ><div class="dashboard-container37"
+                ><div class="dashboard-container38"></div
                 ><span class="dashboard-text19"
                   ><span class="dashboard-text20">Hai Sayang!</span
                   ><br class="dashboard-text21" /><br
@@ -881,14 +904,14 @@
                     class="dashboard-text33"
                   /><span class="dashboard-text34">Bima</span></span
                 ></div
-              ><div id="notes" class="dashboard-container36"></div></div
-            ><div class="dashboard-container37"
+              ><div id="notes" class="dashboard-container39"></div></div
+            ><div class="dashboard-container40"
               ><form id="noteForm" class="dashboard-form1"
                 ><div
                   id="addNoteButton"
                   type="button"
                   onclick="addNote()"
-                  class="dashboard-container38"
+                  class="dashboard-container41"
                   ><svg viewBox="0 0 1024 1024" class="dashboard-icon10">
                     <path
                       d="M992 384h-352v-352c0-17.672-14.328-32-32-32h-192c-17.672 0-32 14.328-32 32v352h-352c-17.672 0-32 14.328-32 32v192c0 17.672 14.328 32 32 32h352v352c0 17.672 14.328 32 32 32h192c17.672 0 32-14.328 32-32v-352h352c17.672 0 32-14.328 32-32v-192c0-17.672-14.328-32-32-32z"
@@ -907,15 +930,15 @@
                   placeholder="Punya unek unek?"
                   class="dashboard-textinput2 input" /></form></div
             ><div
-              ><div class="dashboard-container40"
+              ><div class="dashboard-container43"
                 ><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script></div></div
             ><div
-              ><div class="dashboard-container42"
+              ><div class="dashboard-container45"
                 ><script src="sayang/noted.js"></script></div></div></div
-          ><div id="notif" class="dashboard-container43 content removescsroll"
-            ><div class="dashboard-container44"
+          ><div id="notif" class="dashboard-container46 removescsroll content"
+            ><div class="dashboard-container47"
               ><span class="dashboard-text35">Notifikasi</span></div
-            ><div class="dashboard-container45"
+            ><div class="dashboard-container48"
               ><animate-on-reveal
                 animation="bounceIn"
                 duration="2s"
@@ -925,7 +948,7 @@
                 iteration="99"
                 ><div
                   data-thq-animate-on-reveal="true"
-                  class="dashboard-container46"
+                  class="dashboard-container49"
                   ><svg viewBox="0 0 1024 1024" class="dashboard-icon12">
                     <path
                       d="M889.68 166.32c-93.608-102.216-228.154-166.32-377.68-166.32-282.77 0-512 229.23-512 512h96c0-229.75 186.25-416 416-416 123.020 0 233.542 53.418 309.696 138.306l-149.696 149.694h352v-352l-134.32 134.32z"
@@ -938,8 +961,8 @@
               ></div
             ></div
           ></div
-        ><div class="dashboard-container47"
-          ><div class="dashboard-container48"
+        ><div class="dashboard-container50"
+          ><div class="dashboard-container51"
             ><script>
               document.getElementById('profileMenu').addEventListener('click', function () {
                 showContent('profile');
@@ -976,8 +999,8 @@
               }
             </script>
           </div></div
-        ><div class="dashboard-container49"
-          ><div class="dashboard-container50"
+        ><div class="dashboard-container52"
+          ><div class="dashboard-container53"
             ><script src="sayang/dashboard.js"></script></div></div
         ><div
           id="popup1"

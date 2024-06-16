@@ -6,7 +6,7 @@ function addNote() {
     noteContainer.className = "note-container";
 
     noteContainer.innerHTML = `
-        <div style="border: 1px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;">
+        <div style="border: 0px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;">
             <p style="margin-bottom: 15px; font-size: 16px;">Nama: ${name}</p>
             <p style="margin-bottom: 15px; font-size: 16px;">Catatan: ${note}</p>
             <button style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="saveAsImage(this)">Simpan sebagai Gambar</button>
@@ -58,7 +58,7 @@ window.onload = function () {
         noteContainer.className = "note-container";
 
         noteContainer.innerHTML = `
-            <div style="border: 1px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;">
+            <div style="border: 0px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;">
                 <p style="margin-bottom: 15px; font-size: 16px;">Nama: ${note.name}</p>
                 <p style="margin-bottom: 15px; font-size: 16px;">Catatan: ${note.note}</p>
                 <button style="margin-bottom: 15px; font-size: 14px; padding: 10px 20px;" onclick="saveAsImage(this)">Simpan sebagai Gambar</button>
