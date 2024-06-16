@@ -526,7 +526,7 @@
                   d="M731.429 799.429c0 83.429-54.857 151.429-121.714 151.429h-488c-66.857 0-121.714-68-121.714-151.429 0-150.286 37.143-324 186.857-324 46.286 45.143 109.143 73.143 178.857 73.143s132.571-28 178.857-73.143c149.714 0 186.857 173.714 186.857 324zM585.143 292.571c0 121.143-98.286 219.429-219.429 219.429s-219.429-98.286-219.429-219.429 98.286-219.429 219.429-219.429 219.429 98.286 219.429 219.429z"
                 ></path></svg></div></div
           ><div id="profile" class="dashboard-container07 content removescsroll"
-            ><div class="dashboard-container08"
+            ><div class="dashboard-container08 removescsroll"
               ><div class="dashboard-container09"></div
               ><img
                 id="profile2"
@@ -919,84 +919,87 @@
             ><div
               ><div class="dashboard-container43"
                 ><script>
-                  function addNote() {
-                    const name = document.getElementById('name').value;
-                    const note = document.getElementById('note').value;
+                    function addNote() {
+                      const name = document.getElementById('name').value;
+                      const note = document.getElementById('note').value;
 
-                    const noteContainer = document.createElement('div');
-                    noteContainer.className = 'note-container';
-
-                    noteContainer.innerHTML = `
-                                                <p>Nama: ${name}</p><br>
-                                                <p>Catatan: ${note}</p><br>
-                                                <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
-                                                <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
-                                            `;
-
-                    // Menambahkan catatan di awal daftar
-                    const notesContainer = document.getElementById('notes');
-                    notesContainer.insertBefore(noteContainer, notesContainer.firstChild);
-
-                    document.getElementById('noteForm').reset();
-
-                    // Menyimpan catatan ke localStorage
-                    const notes = JSON.parse(localStorage.getItem('notes')) || [];
-                    notes.unshift({ name, note }); // Menambahkan di awal array
-                    localStorage.setItem('notes', JSON.stringify(notes));
-                  }
-
-                  function saveAsImage(button) {
-                    const noteContainer = button.parentElement;
-                    html2canvas(noteContainer).then((canvas) => {
-                      const link = document.createElement('a');
-                      link.download = 'catatan.png';
-                      link.href = canvas.toDataURL();
-                      link.click();
-                    });
-                  }
-
-                  function deleteNote(button) {
-                    const noteContainer = button.parentElement;
-                    noteContainer.remove();
-
-                    // Menghapus catatan dari localStorage
-                    const notes = JSON.parse(localStorage.getItem('notes')) || [];
-                    const name = noteContainer.querySelector('p').textContent.split(': ')[1];
-                    const note = noteContainer
-                      .querySelector('p:nth-of-type(2)')
-                      .textContent.split(': ')[1];
-                    const index = notes.findIndex((n) => n.name === name && n.note === note);
-                    if (index !== -1) {
-                      notes.splice(index, 1);
-                      localStorage.setItem('notes', JSON.stringify(notes));
-                    }
-                  }
-
-                  function getRandomColor() {
-                    const letters = '0123456789ABCDEF';
-                    let color = '#';
-                    for (let i = 0; i < 6; i++) {
-                      color += letters[Math.floor(Math.random() * 16)];
-                    }
-                    return color;
-                  }
-
-                  window.onload = function () {
-                    const notes = JSON.parse(localStorage.getItem('notes')) || [];
-                    notes.forEach((note) => {
                       const noteContainer = document.createElement('div');
                       noteContainer.className = 'note-container';
 
                       noteContainer.innerHTML = `
-                                    <p>Nama: ${note.name}</p><br>
-                                    <p>Catatan: ${note.note}</p><br>
-                                    <button onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
-                                    <button class='delete-button' onclick='deleteNote(this)'>Hapus</button>
-                                `;
+                      <div style='border: 0px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;'>
+                          <p style='margin-bottom: 15px; font-size: 16px;'>Nama: ${note.name}</p>
+                          <p style='margin-bottom: 15px; font-size: 16px;'>Catatan: ${note.note}</p>
+                          <button style='margin-bottom: 15px; font-size: 14px; padding: 10px 20px;' onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
+                          <button class='delete-button' style='margin-bottom: 15px; font-size: 14px; padding: 10px 20px;' onclick='deleteNote(this)'>Hapus</button>
+                      </div>
+                  `;
+                      // Menambahkan catatan di awal daftar
+                      const notesContainer = document.getElementById('notes');
+                      notesContainer.insertBefore(noteContainer, notesContainer.firstChild);
 
-                      document.getElementById('notes').appendChild(noteContainer);
-                    });
-                  };
+                      document.getElementById('noteForm').reset();
+
+                      // Menyimpan catatan ke localStorage
+                      const notes = JSON.parse(localStorage.getItem('notes')) || [];
+                      notes.unshift({ name, note }); // Menambahkan di awal array
+                      localStorage.setItem('notes', JSON.stringify(notes));
+                    }
+
+                    function saveAsImage(button) {
+                      const noteContainer = button.parentElement;
+                      html2canvas(noteContainer).then((canvas) => {
+                        const link = document.createElement('a');
+                        link.download = 'catatan.png';
+                        link.href = canvas.toDataURL();
+                        link.click();
+                      });
+                    }
+
+                    function deleteNote(button) {
+                      const noteContainer = button.parentElement;
+                      noteContainer.remove();
+
+                      // Menghapus catatan dari localStorage
+                      const notes = JSON.parse(localStorage.getItem('notes')) || [];
+                      const name = noteContainer.querySelector('p').textContent.split(': ')[1];
+                      const note = noteContainer
+                        .querySelector('p:nth-of-type(2)')
+                        .textContent.split(': ')[1];
+                      const index = notes.findIndex((n) => n.name === name && n.note === note);
+                      if (index !== -1) {
+                        notes.splice(index, 1);
+                        localStorage.setItem('notes', JSON.stringify(notes));
+                      }
+                    }
+
+                    function getRandomColor() {
+                      const letters = '0123456789ABCDEF';
+                      let color = '#';
+                      for (let i = 0; i < 6; i++) {
+                        color += letters[Math.floor(Math.random() * 16)];
+                      }
+                      return color;
+                    }
+
+                    window.onload = function () {
+                      const notes = JSON.parse(localStorage.getItem('notes')) || [];
+                      notes.forEach((note) => {
+                        const noteContainer = document.createElement('div');
+                        noteContainer.className = 'note-container';
+
+                        noteContainer.innerHTML = `
+                      <div style='border: 0px solid #ccc; padding: 15px; max-width: 100%; word-wrap: break-word; box-sizing: border-box;'>
+                          <p style='margin-bottom: 15px; font-size: 16px;'>Nama: ${note.name}</p>
+                          <p style='margin-bottom: 15px; font-size: 16px;'>Catatan: ${note.note}</p>
+                          <button style='margin-bottom: 15px; font-size: 14px; padding: 10px 20px;' onclick='saveAsImage(this)'>Simpan sebagai Gambar</button>
+                          <button class='delete-button' style='margin-bottom: 15px; font-size: 14px; padding: 10px 20px;' onclick='deleteNote(this)'>Hapus</button>
+                      </div>
+                  `;
+
+                        document.getElementById('notes').appendChild(noteContainer);
+                      });
+                    };
                 </script>
               </div></div
             ></div
