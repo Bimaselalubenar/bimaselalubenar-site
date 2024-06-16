@@ -3972,7 +3972,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: 0px;
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #e6e6e6;
@@ -4063,7 +4063,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: 0px;
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #e6e6e6;
@@ -4140,7 +4140,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: 0px;
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #e6e6e6;
@@ -4209,7 +4209,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: 0px;
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #e6e6e6;
@@ -4291,7 +4291,7 @@
   flex: 1;
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: 0px;
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #e6e6e6;
@@ -4357,7 +4357,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: 0px;
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #e6e6e6;
@@ -4439,7 +4439,7 @@
   flex: 1;
   width: 100%;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: 0px;
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #e6e6e6;
@@ -4505,7 +4505,7 @@
   width: 100%;
   height: auto;
   display: flex;
-  padding: var(--dl-space-space-unit);
+  padding: 0px;
   box-shadow: 5px 5px 15px 0px rgba(177, 177, 177, 0.65);
   align-items: center;
   border-color: #e6e6e6;
@@ -6080,7 +6080,7 @@
   flex: 0 0 auto;
   right: 0px;
   width: auto;
-  bottom: 160px;
+  bottom: 63px;
   height: auto;
   display: flex;
   z-index: 20;
@@ -6095,9 +6095,8 @@
 .materisocmed-container200 {
   width: 479px;
   height: auto;
-  display: none;
   overflow: hidden;
-  box-shadow: 5px 5px 0px 0px #e7e7e7,5px 5px 15px 0px rgba(64, 64, 64, 0.52);
+  box-shadow: 5px 5px 10px 0px rgba(64, 64, 64, 0.26);
   align-items: center;
   margin-right: 0px;
   border-radius: var(--dl-radius-radius-radius8);
@@ -7224,12 +7223,21 @@
   .materisocmed-container083 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
     flex-direction: row;
   }
   .materisocmed-container084 {
     width: 120px;
     height: 120px;
+    box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.32);
+    border-width: 0px;
+  }
+  .materisocmed-container085 {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
   }
   .materisocmed-navlink {
     font-size: 14px;
@@ -7237,12 +7245,21 @@
   .materisocmed-container089 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
     flex-direction: row;
   }
   .materisocmed-container090 {
     width: 120px;
     height: 120px;
+    box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.32);
+    border-width: 0px;
+  }
+  .materisocmed-container091 {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
   }
   .materisocmed-navlink1 {
     font-size: 14px;
@@ -7250,12 +7267,21 @@
   .materisocmed-container093 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
     flex-direction: row;
   }
   .materisocmed-container094 {
     width: 120px;
     height: 120px;
+    box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.32);
+    border-width: 0px;
+  }
+  .materisocmed-container095 {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
   }
   .materisocmed-navlink2 {
     font-size: 14px;
@@ -7263,12 +7289,21 @@
   .materisocmed-container096 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
     flex-direction: row;
   }
   .materisocmed-container097 {
     width: 120px;
     height: 120px;
+    box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.32);
+    border-width: 0px;
+  }
+  .materisocmed-container098 {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
   }
   .materisocmed-navlink3 {
     font-size: 14px;
@@ -7276,12 +7311,21 @@
   .materisocmed-container101 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
     flex-direction: row;
   }
   .materisocmed-container102 {
     width: 120px;
     height: 120px;
+    box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.32);
+    border-width: 0px;
+  }
+  .materisocmed-container103 {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
   }
   .materisocmed-navlink4 {
     font-size: 14px;
@@ -7289,12 +7333,21 @@
   .materisocmed-container104 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
     flex-direction: row;
   }
   .materisocmed-container105 {
     width: 120px;
     height: 120px;
+    box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.32);
+    border-width: 0px;
+  }
+  .materisocmed-container106 {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
   }
   .materisocmed-navlink5 {
     font-size: 14px;
@@ -7302,12 +7355,21 @@
   .materisocmed-container109 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
     flex-direction: row;
   }
   .materisocmed-container110 {
     width: 120px;
     height: 120px;
+    box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.32);
+    border-width: 0px;
+  }
+  .materisocmed-container111 {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
   }
   .materisocmed-navlink6 {
     font-size: 14px;
@@ -7315,12 +7377,21 @@
   .materisocmed-container112 {
     gap: var(--dl-space-space-unit);
     width: 100%;
-    align-items: flex-start;
+    padding: 0px;
+    align-items: center;
     flex-direction: row;
   }
   .materisocmed-container113 {
     width: 120px;
     height: 120px;
+    box-shadow: 5px 5px 15px 0px rgba(212, 212, 212, 0.32);
+    border-width: 0px;
+  }
+  .materisocmed-container114 {
+    width: 100%;
+    height: 100%;
+    align-items: flex-start;
+    justify-content: center;
   }
   .materisocmed-navlink7 {
     font-size: 14px;

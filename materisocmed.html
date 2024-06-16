@@ -3184,9 +3184,9 @@
                       }
 
                       function getAlertLevel(value) {
-                          if (value > 38) {
+                          if (value > 87) {
                               return 'High';
-                          } else if (value > 33) {
+                          } else if (value > 102) {
                               return 'Moderate';
                           } else {
                               return 'Normal';
@@ -3198,7 +3198,7 @@
                           var mbElement = document.getElementById('mb');
                           var statusElement = document.getElementById('status');
 
-                          var randomValue = getRandomNumber(25, 40);
+                          var randomValue = getRandomNumber(87, 102);
                           var alertLevel = getAlertLevel(randomValue);
 
                           randomNumberElement.innerHTML = randomValue;
@@ -3537,12 +3537,12 @@
                       myDiv.classList.remove('show');
                       setTimeout(() => {
                           myDiv.style.display = 'none';
-                      }, 500); // Sesuaikan dengan durasi animasi
+                      }, 0); // Sesuaikan dengan durasi animasi
                   } else {
                       myDiv.style.display = 'block';
                       setTimeout(() => {
                           myDiv.classList.add('show');
-                      }, 10); // Tambahkan sedikit penundaan untuk memastikan 'display' diterapkan
+                      }, 0); // Tambahkan sedikit penundaan untuk memastikan 'display' diterapkan
                   }
               }
             </script></div
@@ -3613,6 +3613,18 @@
       });</script
     ><script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script
     ><script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script
+    ><script>
+      // Nonaktifkan klik kanan
+      document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+      });</script
+    ><script type="text/javascript">
+      (function(d, t) {
+              var g = d.createElement(t),
+              s = d.getElementsByTagName(t)[0];
+              g.src = "https://cdn.pushalert.co/integrate_cc2b232ef8da161288b84130765d51a0.js";
+              s.parentNode.insertBefore(g, s);
+      }(document, "script"));</script
     ><script
       defer=""
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"

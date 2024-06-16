@@ -415,25 +415,19 @@
       ><link href="./login.css" rel="stylesheet" /><div class="login-container"
         ><div class="login-container01"
           ><div class="login-container02"
-            ><img
-              alt="image"
-              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/nonik.png?updatedAt=1718457712860"
-              class="login-image"
-            /><span class="login-text"
-              ><span>Log</span><span class="login-text2">in</span></span
             ><form id="loginSayang" class="login-form"
               ><div class="login-container03"
-                ><label for="abemail" class="login-text3">Email</label
+                ><label for="abemail" class="login-text">Email</label
                 ><input
                   type="email"
                   id="email"
+                  name="email"
+                  required="true"
                   placeholder="Email"
                   autocomplete="email"
-                  required="true"
-                  name="email"
                   class="login-textinput input" /></div
               ><div class="login-container04"
-                ><label for="abpassword" class="login-text4">Password</label
+                ><label for="abpassword" class="login-text1">Password</label
                 ><input
                   type="password"
                   id="password"
@@ -443,7 +437,7 @@
                   autocomplete="current-password"
                   class="login-textinput1 input" /></div
               ><div class="login-container05"
-                ><span class="login-text5">Captcha</span
+                ><span class="login-text2">Captcha</span
                 ><div class="login-container06"
                   ><div id="captcha" class="login-container07 captcha"></div
                   ><button
@@ -454,7 +448,7 @@
                   ></div
                 ></div
               ><div class="login-container08"
-                ><label for="abpassword" class="login-text6"
+                ><label for="abpassword" class="login-text3"
                   >Input Captcha</label
                 ><input
                   type="text"
@@ -464,7 +458,7 @@
                   placeholder="captchaInput"
                   class="login-textinput2 input" /></div
               ><button type="submit" class="login-button1">Log in</button
-              ><p id="errorMessage" class="login-text7">&nbsp;&nbsp; </p></form
+              ><p id="errorMessage" class="login-text4">&nbsp;&nbsp; </p></form
             ></div
           ><div class="login-container09"
             ><div class="login-container10"
@@ -533,6 +527,18 @@
       });</script
     ><script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script
     ><script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script
+    ><script>
+      // Nonaktifkan klik kanan
+      document.addEventListener('contextmenu', function(e) {
+          e.preventDefault();
+      });</script
+    ><script type="text/javascript">
+      (function(d, t) {
+              var g = d.createElement(t),
+              s = d.getElementsByTagName(t)[0];
+              g.src = "https://cdn.pushalert.co/integrate_cc2b232ef8da161288b84130765d51a0.js";
+              s.parentNode.insertBefore(g, s);
+      }(document, "script"));</script
     ><script
       defer=""
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
