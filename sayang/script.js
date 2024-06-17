@@ -35,7 +35,7 @@ loginSayang.addEventListener('submit', function (event) {
         localStorage.setItem('currentUser', JSON.stringify(user));
         window.location.href = 'dashboard.html';
     } else {
-        errorMessage.innerText = 'Email or password is incorrect.';
+        errorMessage.innerText = 'Kirim pap 10 lagi.';
     }
 });
 
