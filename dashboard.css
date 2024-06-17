@@ -950,15 +950,25 @@
   justify-content: center;
 }
 .dashboard-textinput {
-  color: rgb(255, 255, 255);
-  cursor: pointer;
+  fill: #658ea9;
+  flex: 0 0 auto;
+  color: #658ea9;
+  width: 100%;
+  height: auto;
   display: none;
-  padding: var(--dl-space-space-halfunit);
   font-style: normal;
-  font-weight: 500;
-  border-width: 0px;
-  border-radius: 10px;
-  background-color: rgb(241, 146, 0);
+  align-items: center;
+  font-weight: 600;
+  padding-top: var(--dl-space-space-unit);
+  border-color: #658ea9;
+  border-style: dashed;
+  border-width: 2px;
+  padding-left: var(--dl-space-space-unit);
+  border-radius: var(--dl-radius-radius-radius8);
+  padding-right: var(--dl-space-space-unit);
+  flex-direction: column;
+  padding-bottom: var(--dl-space-space-unit);
+  justify-content: center;
 }
 .dashboard-container25 {
   gap: var(--dl-space-space-halfunit);
