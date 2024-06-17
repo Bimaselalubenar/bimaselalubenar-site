@@ -934,7 +934,7 @@
   color: #658ea9;
   width: 100%;
   height: auto;
-  display: none;
+  display: flex;
   font-style: normal;
   align-items: center;
   font-weight: 600;
