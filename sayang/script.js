@@ -41,7 +41,7 @@ loginSayang.addEventListener('submit', function (event) {
 
 let users = [
     {
-        name: 'Gusty Kukuh Indriyan M', email: 'gustykukuhindriyanmurty@gmail.com', password: 'gak tau',
+        name: 'Gusty Kukuh Indriyan M', email: 'gustykukuhindriyanmurty@gmail.com', password: 'gaktau',
         phone: '08978010123', birthdate: '2000-01-25', position: 'Manager', cabang: 'MPM MADIUN'
     },
 ];
