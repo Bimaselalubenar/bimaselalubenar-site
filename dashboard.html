@@ -421,15 +421,17 @@
             ><div class="popupbuatsayang-header"
               ><div class="popupbuatsayang-container2"
                 ><video
-                  autoplay="true"
                   src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Nonik/nonik.mp4?updatedAt=1703506364286"
+                  autoplay="true"
+                  controls="true"
+                  loop="true"
                   class="popupbuatsayang-video"
                 ></video></div
               ><img class="popupbuatsayang-image" /><div
                 class="popupbuatsayang-container3"
                 ><span id="greeting" class="popupbuatsayang-text greeting"
                   >****</span
-                ><span id="message" class="popupbuatsayang-text1 message"
+                ><span id="message" class="popupbuatsayang-text1"
                   >***********</span
                 ><div class="popupbuatsayang-container4"
                   ><h1 class="popupbuatsayang-text2"
@@ -818,67 +820,12 @@
                     ><button id="apply" type="button" class="dashboard-button1"
                       >Terapkan</button
                     ></div
-                  ><div
-                    ><div class="dashboard-container28"
-                      ><script>
-                        const profile1 = document.getElementById('profile1');
-                        const profile2 = document.getElementById('profile2');
-                        const upload = document.getElementById('upload');
-                        const deleteBtn = document.getElementById('delete');
-                        const applyBtn = document.getElementById('apply');
-
-                        function loadProfilePictures() {
-                            const savedProfile1 = localStorage.getItem('profile1');
-                            const savedProfile2 = localStorage.getItem('profile2');
-
-                            if (savedProfile1) {
-                                profile1.src = savedProfile1;
-                            }
-
-                            if (savedProfile2) {
-                                profile2.src = savedProfile2;
-                            }
-                        }
-
-                        function updateProfilePictures(file) {
-                            const reader = new FileReader();
-
-                            reader.onload = function (e) {
-                                const result = e.target.result;
-                                profile1.src = result;
-                                profile2.src = result;
-                            }
-
-                            reader.readAsDataURL(file);
-                        }
-
-                        upload.addEventListener('change', (event) => {
-                            const file = event.target.files[0];
-                            if (file) {
-                                updateProfilePictures(file);
-                            }
-                        });
-
-                        deleteBtn.addEventListener('click', () => {
-                            profile1.src = 'default.jpg';
-                            profile2.src = 'default.jpg';
-                            localStorage.removeItem('profile1');
-                            localStorage.removeItem('profile2');
-                        });
-
-                        applyBtn.addEventListener('click', () => {
-                            localStorage.setItem('profile1', profile1.src);
-                            localStorage.setItem('profile2', profile2.src);
-                            alert('profile berhasil di rubah');
-                        });
-
-                        window.onload = loadProfilePictures;
-                      </script></div
-                    ></div
                   ></form
                 ></div
               ></div
-            ></div
+            ><div
+              ><div class="dashboard-container28"
+                ><script src="sayang/profile.js"></script></div></div></div
           ><div id="gift" class="dashboard-container29 removescsroll content"
             ><div class="dashboard-container30"
               ><span class="dashboard-text17">Gift 🎁</span></div
@@ -1041,7 +988,7 @@
               ></div
             ></div
           ></div
-        ><div class="dashboard-container50"
+        ><div
           ><div class="dashboard-container51"
             ><script>
               document.getElementById('profileMenu').addEventListener('click', function () {
@@ -1079,7 +1026,7 @@
               }
             </script>
           </div></div
-        ><div class="dashboard-container52"
+        ><div
           ><div class="dashboard-container53"
             ><script src="sayang/dashboard.js"></script></div></div
         ><div
