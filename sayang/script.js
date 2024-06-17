@@ -49,6 +49,5 @@ let users = [
 function getUserByEmail(email) {
     return users.find(user => user.email === email);
 }
-
 // Initialize CAPTCHA on page load
 refreshCaptcha();
