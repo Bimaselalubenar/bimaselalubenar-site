@@ -88,6 +88,7 @@ let users = [
     { name: 'Alfian', email: 'mpm.gresik@gmail.com', password: 'gresik', branch: 'Gresik', position: 'PIC SOCMED', cabang: 'MPM MOTOR GRESIK' },
     { name: 'indah permata sari', email: 'admin.batam@mpm-motor.com', password: 'admin123!', branch: 'kota batam', position: 'PDCA', cabang: 'MSO Batam' },
     { name: 'Puspia cwantik', email: 'puspiaku@gmail.com', password: 'puspus', branch: 'MADIUN', position: 'COUNTER SALES', cabang: 'MPM MADIUN' },
+    { name: 'Ahmad Khoirun', email: 'ahmadkhoirun92@gmail.com', password: 'uunmpm92', branch: 'Tuban', position: 'PIC SOCMED', cabang: 'Tuban' },
     { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
     // SALES
     { name: ' DEDE MARLINA', email: 'dedechubbii@gmail.com', password: 'Dedempm203', branch: 'Kota Tangerang', position: 'Sales Online', cabang: 'MPM Motor Tangerang' },
