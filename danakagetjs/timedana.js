@@ -40,12 +40,12 @@ var countdownfunction = setInterval(function () {
       button.onclick = (function (i) {
         return function () {
           var urls = [
-            "https://link.dana.id/kaget?c=sdfynzwyy&r=bgpBS5",
-            "https://link.dana.id/kaget?c=skjqju2wv&r=bgpBS5",
-            "https://link.dana.id/kaget?c=scpxsptj2&r=bgpBS5",
-            "https://link.dana.id/kaget?c=sl58u2m4w&r=bgpBS5",
-            "https://link.dana.id/kaget?c=skbnmse64&r=bgpBS5",
-            "https://www.instagram.com/bimaselalubenar",
+            "https://bimaselalubenar.my.id/web-service",
+            "https://bimaselalubenar.my.id/web-service",
+            "https://bimaselalubenar.my.id/web-service",
+            "https://bimaselalubenar.my.id/web-service",
+            "https://bimaselalubenar.my.id/web-service",
+            "https://bimaselalubenar.my.id/web-service",
           ];
           window.open(urls[i - 1], "_blank");
         };
