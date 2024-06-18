@@ -1,11 +1,11 @@
 // Set the dates we're counting down to
 var countDownDates = {
-  1: new Date("2024-08-01T13:00:00").getTime(),
-  2: new Date("2024-08-01T14:00:00").getTime(),
-  3: new Date("2024-08-01T15:00:00").getTime(),
-  4: new Date("2024-08-01T16:00:00").getTime(),
-  5: new Date("2024-08-01T17:00:00").getTime(),
-  6: new Date("2024-08-01T08:00:00").getTime(),
+  1: new Date("2024-07-01T13:00:00").getTime(),
+  2: new Date("2024-07-01T14:00:00").getTime(),
+  3: new Date("2024-07-01T15:00:00").getTime(),
+  4: new Date("2024-07-01T16:00:00").getTime(),
+  5: new Date("2024-07-01T17:00:00").getTime(),
+  6: new Date("2024-07-01T18:00:00").getTime(),
 };
 
 // One hour in milliseconds
@@ -56,16 +56,21 @@ var countdownfunction = setInterval(function () {
 
 // Change text content when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function() {
-  document.getElementById("j1").innerText = "Judul 1 telah diubah!";
-  document.getElementById("t1").innerText = "Text 1 telah diubah!";
-  document.getElementById("j2").innerText = "Judul 2 telah diubah!";
-  document.getElementById("t2").innerText = "Text 2 telah diubah!";
-  document.getElementById("j3").innerText = "Judul 3 telah diubah!";
-  document.getElementById("t3").innerText = "Text 3 telah diubah!";
-  document.getElementById("j4").innerText = "Judul 4 telah diubah!";
-  document.getElementById("t4").innerText = "Text 4 telah diubah!";
-  document.getElementById("j5").innerText = "Judul 5 telah diubah!";
-  document.getElementById("t5").innerText = "Text 5 telah diubah!";
-  document.getElementById("j6").innerText = "Judul 6 telah diubah!";
-  document.getElementById("t6").innerText = "Text 6 telah diubah!";
+  document.getElementById("j1").innerText = "Dana kaget batch 1";
+  document.getElementById("t1").innerText = "Rp.100,- /100 Orang";
+
+  document.getElementById("j2").innerText = "Dana kaget batch 2";
+  document.getElementById("t2").innerText = "Rp.100,- /100 Orang";
+
+  document.getElementById("j3").innerText = "Dana kaget batch 3";
+  document.getElementById("t3").innerText = "Rp.200,- /50 Orang";
+
+  document.getElementById("j4").innerText = "Dana kaget batch 4";
+  document.getElementById("t4").innerText = "Rp.200,- /50 Orang";
+
+  document.getElementById("j5").innerText = "Dana kaget batch 5";
+  document.getElementById("t5").innerText = "Rp.1,000,- /10 Orang";
+
+  document.getElementById("j6").innerText = "Dana kaget batch 6";
+  document.getElementById("t6").innerText = "Bonus! ✨";
 });
