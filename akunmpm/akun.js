@@ -91,12 +91,13 @@ let users = [
     { name: 'Ahmad Khoirun', email: 'ahmadkhoirun92@gmail.com', password: 'uunmpm92', branch: 'Tuban', position: 'PIC SOCMED', cabang: 'Tuban' },
     { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
     // SALES
-    { name: ' DEDE MARLINA', email: 'dedechubbii@gmail.com', password: 'Dedempm203', branch: 'Kota Tangerang', position: 'Sales Online', cabang: 'MPM Motor Tangerang' },
+    { name: 'DEDE MARLINA', email: 'dedechubbii@gmail.com', password: 'Dedempm203', branch: 'Kota Tangerang', position: 'Sales Online', cabang: 'MPM Motor Tangerang' },
     { name: 'Wahyu jadmiko', email: 'Wahyujat70@gmail.com', password: 'wahyu12345', branch: 'Nganjuk', position: 'Sales Online', cabang: 'MPM Motor Nganjuk' },
     { name: 'Sinta dwi cahyani', email: 'sintacika01@gmail.com', password: 'sinta1', branch: 'Malang', position: 'Sales Online', cabang: 'MPM Motor Kediri' },
     { name: 'Rochmanul karim', email: 'rochmanulkarim1@gmail.com', password: 'Cakkarim07@', branch: 'KAB. PASURUAN', position: 'SALES ONLINE', cabang: 'mpm sukorejo' },
     { name: 'AJI ADITYA PRAMANA', email: 'ajiapram4@gmail.com', password: 'ajiap1234', branch: 'KAB PASURUAN', position: 'KAB PASURUAN', cabang: 'MPM SUKOREJO' },
     { name: 'Rizky firmansyah', email: 'firmansyahrizky423@gmail.com', password: 'Rafly22', branch: 'KAB PASURUAN', position: 'SALES ONLINE', cabang: 'Sukorejo' },
+    { name: 'Linatul Husna', email: 'linahusna62@gmail.com', password: '123240', branch: 'Pasuruan', position: 'SALES ONLINE', cabang: 'MPM Motor Sukorejo' },
     { name: '', email: '', password: '', branch: '', position: '', cabang: '' },
     // Rapikan code dengan Shift + Alt + F
 ];
