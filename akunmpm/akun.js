@@ -46,8 +46,8 @@ loginForm.addEventListener("submit", function (event) {
 
 // Data akun pengguna
 let users = [
-    { name: 'Bimaselalubenar', email: 'Bimaardiantopramana@gmail.com', password: 'Ardianto23', branch: 'Madiun', position: 'PIC Marketing Digital', cabang: 'MPM Madiun' },
-    { name: 'Kusumasum', email: 'Kusumabagas003@gmail.com', password: 'Kusumabagas919191', branch: 'Kota Madiun', position: 'Admin PIC Medsos MSO Madiun', cabang: 'MPM MADIUN' },
+    { name: 'Bimaselalubenar', email: 'Bimaardiantopramana@gmail.com', password: 'Ardianto23', branch: 'Madiun', position: 'PIC Marketing Digital', cabang: 'MPM Madiun', subscribed: true, expiryDate: '2024-07-01' },
+    { name: 'Kusumasum', email: 'Kusumabagas003@gmail.com', password: 'Kusumabagas919191', branch: 'Kota Madiun', position: 'Admin PIC Medsos MSO Madiun', cabang: 'MPM MADIUN', subscribed: false, expiryDate: null },
     { name: 'Sudibyo', email: 'mpm.madiun1@gmail.com', password: 'Pangsud91', branch: 'Kota Madiun', position: 'PDCA', cabang: 'MPM MADIUN' },
     { name: 'Mifta', email: 'mpmngagel.sby@gmail.com', password: 'MPMh0010', branch: 'Kota Surabaya', position: 'PDCA', cabang: 'MPM NGAGEL' },
     { name: 'Raisa Jelita', email: 'h0900.mpmmotor.surabaya@gmail.com', password: 'Mst170**', branch: 'Surabaya', position: 'PDCA', cabang: 'MPM Motor Mastrip' },
@@ -108,3 +108,59 @@ function getUserByEmail(email) {
 
 // Inisialisasi CAPTCHA saat halaman dimuat
 refreshCaptcha();
+
+// dashboard ================================================================== test
+
+// Helper function to check if subscription is expired
+function isSubscriptionExpired(expiryDate) {
+    if (!expiryDate) return true;
+    const currentDate = new Date();
+    const expiry = new Date(expiryDate);
+    return currentDate > expiry;
+}
+
+// Login form handling
+document.getElementById('loginForm')?.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const email = document.getElementById('email').value;
+    const password = document.getElementById('password').value;
+    const user = users.find(user => user.email === email && user.password === password);
+
+    if (user) {
+        // Check if the subscription is expired
+        if (user.subscribed && isSubscriptionExpired(user.expiryDate)) {
+            user.subscribed = false;
+            user.expiryDate = null;
+            alert('Your subscription has expired. Please subscribe again.');
+        }
+        localStorage.setItem('currentUser', JSON.stringify(user));
+        window.location.href = 'dashboard.html';
+    } else {
+        alert('Login failed. Please check your email and password.');
+    }
+});
+
+// Dashboard handling
+if (window.location.pathname.includes('dashboard.html')) {
+    const currentUser = JSON.parse(localStorage.getItem('currentUser'));
+    if (!currentUser) {
+        window.location.href = 'login.html';
+    } else {
+        document.getElementById('greeting').innerText = `Hello, ${currentUser.email}`;
+        const subscriptionDiv = document.getElementById('subscriptionDiv');
+        const subscribeBtn = document.getElementById('subscribeBtn');
+
+        if (currentUser.subscribed) {
+            subscriptionDiv.classList.remove('hidden');
+        }
+
+        subscribeBtn.addEventListener('click', function() {
+            const expiryDate = new Date();
+            expiryDate.setMonth(expiryDate.getMonth() + 1); // Set expiry date to one month from now
+            currentUser.subscribed = true;
+            currentUser.expiryDate = expiryDate.toISOString().split('T')[0];
+            localStorage.setItem('currentUser', JSON.stringify(currentUser));
+            subscriptionDiv.classList.remove('hidden');
+        });
+    }
+}
