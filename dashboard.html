@@ -543,162 +543,68 @@
                 ><div
                   class="dashboard-container11 onesignal-customlink-container"
                 ></div
-                ><div id="userInfo" class="dashboard-container12"
+                ><div class="dashboard-container12"
                   ><div class="dashboard-container13"
                     ><span class="dashboard-text">Profile</span></div
-                  ><div class="dashboard-container14"
+                  ><div id="userInfo" class="dashboard-container14"
                     ><div class="dashboard-container15"
                       ><span class="dashboard-text01"
                         >Name&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span
                       ><span id="userName" class="dashboard-text02"
-                        >user</span
+                        >-</span
                       ></div
                     ><div class="dashboard-container16"
                       ><span class="dashboard-text03"
                         >Email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
                       ><span id="userEmail" class="dashboard-text04"
-                        >user</span
+                        >-</span
                       ></div
                     ><div class="dashboard-container17"
-                      ><span class="dashboard-text05"
-                        >Phone&nbsp; &nbsp; &nbsp; &nbsp;</span
-                      ><span id="userPhone" class="dashboard-text06"
-                        >user</span
+                      ><span class="dashboard-text05">Password&nbsp;</span
+                      ><span id="userPassword" class="dashboard-text06"
+                        >-</span
                       ></div
-                    ></div
-                  ><div class="dashboard-container18"
+                    ><div class="dashboard-container18"
+                      ><span class="dashboard-text07"
+                        ><span>Number</span><br /><span
+                          >Phone&nbsp; &nbsp; &nbsp; &nbsp;</span
+                        ><br /></span
+                      ><span id="userPhone" class="dashboard-text12"
+                        >-</span
+                      ></div
+                    ><div class="dashboard-container19"
+                      ><span class="dashboard-text13"
+                        ><span>Date of</span><br /><span
+                          >Birth&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+                        ><br /></span
+                      ><span id="userDob" class="dashboard-text18">-</span></div
+                    ><div class="dashboard-container20"
+                      ><span class="dashboard-text19"
+                        ><span>Zodiac&nbsp; &nbsp; &nbsp;&nbsp;</span
+                        ><br /></span
+                      ><span id="userZodiac" class="dashboard-text22"
+                        >-</span
+                      ></div
                     ><button
-                      type="button"
                       id="logoutButton"
+                      type="button"
                       class="dashboard-button"
                       >Keluar</button
                     ></div
-                  ><span class="dashboard-text07">Profile</span></div
-                ><div class="dashboard-container19 cache-info"
-                  ><div class="dashboard-container20"
-                    ><span class="dashboard-text08"
-                      >Sampah yang tidak di gunakan</span
-                    ><span id="cacheSize" class="dashboard-text09"
-                      >Menghitung sampah...</span
+                  ><div class="dashboard-container21"></div
+                  ><span class="dashboard-text23">Profile</span
+                  ><div class="dashboard-container22"
+                    ><button type="button" class="dashboard-button1"
+                      >Waktu aktif</button
+                    ><button
+                      id="timeActive"
+                      type="button"
+                      class="dashboard-button2"
+                      >0 jam 0 menit 0 detik</button
                     ></div
-                  ><button
-                    id="clearCacheButton"
-                    type="button"
-                    class="dashboard-button1"
-                    >Bersihkan dan keluar</button
-                  ><span id="notification" class="dashboard-text10">&nbsp;</span
-                  ><div
-                    ><div class="dashboard-container22"
-                      ><script>
-                        function getRandomNumber(min, max) {
-                          return (Math.random() * (max - min) + min).toFixed(2);
-                        }
-
-                        function getAlertLevel(value) {
-                          if (value > 87) {
-                            return 'High';
-                          } else if (value > 102) {
-                            return 'Moderate';
-                          } else {
-                            return 'Normal';
-                          }
-                        }
-
-                        function updateRandomNumber() {
-                          var randomNumberElement = document.getElementById('angka');
-                          var mbElement = document.getElementById('mb');
-                          var statusElement = document.getElementById('status');
-
-                          var randomValue = getRandomNumber(87, 102);
-                          var alertLevel = getAlertLevel(randomValue);
-
-                          randomNumberElement.innerHTML = randomValue;
-                          mbElement.innerHTML = 'Mb';
-                          statusElement.innerHTML = '(' + alertLevel + ')';
-                        }
-
-                        function startUpdating() {
-                          updateRandomNumber();
-                          setInterval(updateRandomNumber, 2000); // Update setiap 2 detik
-                        }
-
-                        window.onload = startUpdating;
-                      </script>
-                      <script>
-                        async function calculateCacheSize() {
-                          if ('caches' in window) {
-                            let cacheSize = 0;
-                            const cacheNames = await caches.keys();
-                            for (const name of cacheNames) {
-                              const cache = await caches.open(name);
-                              const requests = await cache.keys();
-                              for (const request of requests) {
-                                const response = await cache.match(request);
-                                if (response) {
-                                  const buffer = await response.arrayBuffer();
-                                  cacheSize += buffer.byteLength;
-                                }
-                              }
-                            }
-                            return (cacheSize / (1024 * 1024)).toFixed(2); // Convert to MB
-                          }
-                          return 0;
-                        }
-
-                        async function updateCacheSizeDisplay() {
-                          const cacheSize = await calculateCacheSize();
-                          document.getElementById('cacheSize').textContent = `${cacheSize} MB`;
-                        }
-
-                        async function clearCache() {
-                          if ('caches' in window) {
-                            const cacheNames = await caches.keys();
-                            for (const name of cacheNames) {
-                              await caches.delete(name);
-                            }
-                          }
-                          // Clear localStorage and sessionStorage if needed
-                          localStorage.clear();
-                          sessionStorage.clear();
-                          // Clear cookies
-                          clearCookies();
-                          updateCacheSizeDisplay();
-
-                          const notification = document.getElementById('notification');
-                          notification.style.display = 'block';
-                          let countdown = 10;
-                          notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
-
-                          const interval = setInterval(() => {
-                            countdown--;
-                            if (countdown <= 0) {
-                              clearInterval(interval);
-                              window.location.href = 'login.html';
-                            } else {
-                              notification.textContent = `Beralih ke halaman login dalam ${countdown} detik...`;
-                            }
-                          }, 1000);
-                        }
-
-                        function clearCookies() {
-                          const cookies = document.cookie.split('; ');
-                          for (const cookie of cookies) {
-                            const eqPos = cookie.indexOf('=');
-                            const name = eqPos > -1 ? cookie.substr(0, eqPos) : cookie;
-                            document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:00 GMT;path=/';
-                          }
-                        }
-
-                        document
-                          .getElementById('clearCacheButton')
-                          .addEventListener('click', clearCache);
-
-                        updateCacheSizeDisplay();
-                      </script>
-                    </div></div
                   ></div
                 ><form id="profileForm" class="dashboard-form"
-                  ><label for="upload" accept="image/*" class="dashboard-text11"
+                  ><label for="upload" accept="image/*" class="dashboard-text24"
                     >Upload</label
                   ><input
                     type="file"
@@ -721,7 +627,7 @@
                     ><button
                       id="saveButton"
                       type="button"
-                      class="dashboard-button2"
+                      class="dashboard-button3"
                       >Terapkan</button
                     ></div
                   ></form
@@ -730,7 +636,7 @@
             ></div
           ><div id="gift" class="dashboard-container25 removescsroll content"
             ><div class="dashboard-container26"
-              ><span class="dashboard-text12">Gift 🎁</span></div
+              ><span class="dashboard-text25">Gift 🎁</span></div
             ><div class="dashboard-container27 removescsroll"
               ><div class="gift-container gift-root-class-name"
                 ><img
@@ -801,37 +707,37 @@
             ></div
           ><div id="noted" class="dashboard-container28 removescsroll content"
             ><div class="dashboard-container29"
-              ><span class="dashboard-text13">Note ❤️</span></div
+              ><span class="dashboard-text26">Note ❤️</span></div
             ><div
               ><div class="dashboard-container31"
                 ><link rel="stylesheet" href="sayang/styles.css" /></div></div
             ><div class="dashboard-container32 removescsroll"
               ><div class="dashboard-container33"
                 ><div class="dashboard-container34"></div
-                ><span class="dashboard-text14"
-                  ><span class="dashboard-text15">Hai Sayang!</span
-                  ><br class="dashboard-text16" /><br
-                    class="dashboard-text17"
+                ><span class="dashboard-text27"
+                  ><span class="dashboard-text28">Hai Sayang!</span
+                  ><br class="dashboard-text29" /><br
+                    class="dashboard-text30"
                   /><span
                     >Ini catatan untukmu. Kalau kamu ingin curhat atau
                     mengungkapkan sesuatu, tapi masih ragu untuk menunjukkannya
                     kepadaku nanti, tidak apa-apa. Kamu bisa menggunakan ini.
                     ❤️</span
-                  ><br class="dashboard-text19" /><br
-                    class="dashboard-text20"
+                  ><br class="dashboard-text32" /><br
+                    class="dashboard-text33"
                   /><span
                     >Bukan berarti aku tidak mau mendengarkanmu, tetapi aku tahu
                     kamu sering merasa tidak ingin merepotkanku. Padahal, aku
                     ingin sekali mendengarkan ceritamu. Jadi, aku membuat ini
                     supaya kamu bisa menyimpan dan menceritakan masalahmu
                     kepadaku tanpa merasa khawatir merepotkan. ❤️</span
-                  ><br class="dashboard-text22" /><br
-                    class="dashboard-text23"
+                  ><br class="dashboard-text35" /><br
+                    class="dashboard-text36"
                   /><span>Dari </span
-                  ><span class="dashboard-text25">developer kesayanganmu</span
-                  ><span>,</span><br class="dashboard-text27" /><br
-                    class="dashboard-text28"
-                  /><span class="dashboard-text29">Bima</span></span
+                  ><span class="dashboard-text38">developer kesayanganmu</span
+                  ><span>,</span><br class="dashboard-text40" /><br
+                    class="dashboard-text41"
+                  /><span class="dashboard-text42">Bima</span></span
                 ></div
               ><div id="notes" class="dashboard-container35"></div></div
             ><div class="dashboard-container36"
@@ -866,7 +772,7 @@
                 ><script src="sayang/noted.js"></script></div></div></div
           ><div id="notif" class="dashboard-container42 removescsroll content"
             ><div class="dashboard-container43"
-              ><span class="dashboard-text30">Notifikasi</span></div
+              ><span class="dashboard-text43">Notifikasi</span></div
             ><div class="dashboard-container44"
               ><animate-on-reveal
                 animation="bounceIn"
@@ -885,52 +791,11 @@
                     <path
                       d="M928 512c0 229.75-186.25 416-416 416-123.020 0-233.542-53.418-309.694-138.306l149.694-149.694h-352v352l134.32-134.32c93.608 102.216 228.154 166.32 377.68 166.32 282.77 0 512-229.23 512-512h-96z"
                     ></path></svg
-                  ><span class="dashboard-text31">Update</span></div
+                  ><span class="dashboard-text44">Update</span></div
                 ></animate-on-reveal
               ></div
             ></div
           ></div
-        ><div
-          ><div class="dashboard-container47"
-            ><script>
-              document.getElementById('profileMenu').addEventListener('click', function () {
-                showContent('profile');
-              });
-
-              document.getElementById('giftMenu').addEventListener('click', function () {
-                showContent('gift');
-              });
-
-              document.getElementById('notedMenu').addEventListener('click', function () {
-                showContent('noted');
-              });
-
-              document.getElementById('notifMenu').addEventListener('click', function () {
-                showContent('notif');
-              });
-
-              document.getElementById('toggleMenu').addEventListener('click', function () {
-                const menuList = document.getElementById('menuList');
-                if (menuList.style.display === 'none' || menuList.style.display === '') {
-                  menuList.style.display = 'flex';
-                } else {
-                  menuList.style.display = 'none';
-                }
-              });
-
-              function showContent(contentId) {
-                document.getElementById('profile').style.display = 'none';
-                document.getElementById('gift').style.display = 'none';
-                document.getElementById('noted').style.display = 'none';
-                document.getElementById('notif').style.display = 'none';
-
-                document.getElementById(contentId).style.display = 'block';
-              }
-            </script>
-          </div></div
-        ><div
-          ><div class="dashboard-container49"
-            ><script src="sayang/dashboard.js"></script></div></div
         ><div
           id="popup1"
           class="popupcustomize-container popupcustomize-root-class-name"
@@ -1012,10 +877,54 @@
             ></div
           ></div
         ><div
+          ><div class="dashboard-container47"
+            ><script>
+              document.getElementById('profileMenu').addEventListener('click', function () {
+                showContent('profile');
+              });
+
+              document.getElementById('giftMenu').addEventListener('click', function () {
+                showContent('gift');
+              });
+
+              document.getElementById('notedMenu').addEventListener('click', function () {
+                showContent('noted');
+              });
+
+              document.getElementById('notifMenu').addEventListener('click', function () {
+                showContent('notif');
+              });
+
+              document.getElementById('toggleMenu').addEventListener('click', function () {
+                const menuList = document.getElementById('menuList');
+                if (menuList.style.display === 'none' || menuList.style.display === '') {
+                  menuList.style.display = 'flex';
+                } else {
+                  menuList.style.display = 'none';
+                }
+              });
+
+              function showContent(contentId) {
+                document.getElementById('profile').style.display = 'none';
+                document.getElementById('gift').style.display = 'none';
+                document.getElementById('noted').style.display = 'none';
+                document.getElementById('notif').style.display = 'none';
+
+                document.getElementById(contentId).style.display = 'block';
+              }
+            </script>
+          </div></div
+        ><div
+          ><div class="dashboard-container49"
+            ><script src="sayang/dashboard.js"></script></div></div
+        ><div
           ><div class="dashboard-container51"
-            ><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></div></div
+            ><script src="sayang/chache.js"></script></div></div
         ><div
           ><div class="dashboard-container53"
+            ><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></div></div
+        ><div
+          ><div class="dashboard-container55"
             ><script
               src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
               defer=""
@@ -1035,9 +944,30 @@
             </script></div
           ></div
         ><div
-          ><div class="dashboard-container55"
-            ><script src="sayang/profile.js"></script></div></div></div
-    ></div>
+          ><div class="dashboard-container57"
+            ><script>
+              document.addEventListener('DOMContentLoaded', function() {
+                  const timeActiveDiv = document.getElementById('timeActive');
+                  let startTime = Date.now();
+
+                  // Fungsi untuk memperbarui waktu aktif
+                  function updateTime() {
+                      let elapsedTime = Math.floor((Date.now() - startTime) / 1000); // waktu dalam detik
+                      let hours = Math.floor(elapsedTime / 3600);
+                      let minutes = Math.floor((elapsedTime % 3600) / 60);
+                      let seconds = elapsedTime % 60;
+
+                      timeActiveDiv.textContent = `Waktu aktif: ${hours} jam ${minutes} menit ${seconds} detik`;
+                  }
+
+                  // Memperbarui waktu aktif setiap detik
+                  setInterval(updateTime, 1000);
+              });
+            </script></div
+          ></div
+        ></div
+      ></div
+    >
     <script
       type="text/javascript"
       src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H"

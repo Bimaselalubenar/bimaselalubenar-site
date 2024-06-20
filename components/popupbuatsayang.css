@@ -127,7 +127,9 @@
 .popupbuatsayang-container8 {
   display: contents;
 }
-
+.popupbuatsayang-root-class-name {
+  display: none;
+}
 
 
 @media(max-width: 991px) {

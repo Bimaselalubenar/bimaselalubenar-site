@@ -413,34 +413,14 @@
   <body
     ><link rel="stylesheet" href="./style.css" /><div
       ><link href="./login.css" rel="stylesheet" /><div class="login-container"
-        ><div
+        ><div class="login-container01"
           ><div class="login-container02"
-            ><script
-              src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
-              defer=""
-            ></script>
-            <script>
-              window.OneSignalDeferred = window.OneSignalDeferred || [];
-              OneSignalDeferred.push(async function(OneSignal) {
-                await OneSignal.init({
-                  appId: '0f909d64-b774-4092-a4a2-d2892f279fdc',
-                  serviceWorkerParam: {
-                    scope: '/onesignal/'
-                  },
-                  serviceWorkerPath: 'onesignal/OneSignalSDKWorker.js',
-                  serviceWorkerUpdaterPath: 'onesignal/OneSignalSDKUpdaterWorker.js'
-                });
-              });
-            </script></div
-          ></div
-        ><div class="login-container03"
-          ><div class="login-container04"
             ><img
               alt="sayang"
-              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/nonik.png?updatedAt=1718457712860"
+              src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Nonik/nonik.png?updatedAt=1718575658065"
               class="login-image"
-            /><form id="loginSayang" class="login-form"
-              ><div class="login-container05"
+            /><form id="loginForm" class="login-form"
+              ><div class="login-container03"
                 ><label for="abemail" class="login-text">Email</label
                 ><input
                   type="email"
@@ -450,7 +430,7 @@
                   placeholder="Email"
                   autocomplete="email"
                   class="login-textinput input" /></div
-              ><div class="login-container06"
+              ><div class="login-container04"
                 ><label for="abpassword" class="login-text1">Password</label
                 ><input
                   type="password"
@@ -460,10 +440,10 @@
                   placeholder="Password"
                   autocomplete="current-password"
                   class="login-textinput1 input" /></div
-              ><div class="login-container07"
+              ><div class="login-container05"
                 ><span class="login-text2">Captcha</span
-                ><div class="login-container08"
-                  ><div id="captcha" class="login-container09 captcha"></div
+                ><div class="login-container06"
+                  ><div id="captcha" class="login-container07 captcha"></div
                   ><button
                     id="refreshCaptcha"
                     type="button"
@@ -471,7 +451,7 @@
                     >Re-Captcha</button
                   ></div
                 ></div
-              ><div class="login-container10"
+              ><div class="login-container08"
                 ><label for="captchaInput" class="login-text3"
                   >Input Captcha</label
                 ><input
@@ -479,13 +459,13 @@
                   id="captchaInput"
                   name="captchaInput"
                   required="true"
-                  placeholder="captchaInput"
+                  placeholder="Masukan Captcha"
                   class="login-textinput2 input" /></div
-              ><button type="submit" class="login-button1">Log in</button></form
+              ><button type="submit" class="login-button1 error"
+                >Log in</button
+              ></form
             ><p id="errorMessage" class="login-text4">&nbsp;&nbsp; </p></div
-          ><div
-            ><div class="login-container12"
-              ><script src="sayang/script.js"></script></div></div></div
+          ></div
         ><div
           id="popup1"
           class="popupcustomize-container popupcustomize-root-class-name2"
@@ -521,7 +501,7 @@
             ><div class="popupcustomize-header1"
               ><img
                 alt="image"
-                src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/nonik.png?updatedAt=1718457712860"
+                src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Nonik/nonik.png?updatedAt=1718575658065"
                 class="popupcustomize-image1"
               /><div class="popupcustomize-container4"
                 ><span class="popupcustomize-text10"
@@ -566,9 +546,30 @@
               </script></div
             ></div
           ></div
-        ></div
-      ></div
-    >
+        ><div
+          ><div class="login-container10"
+            ><script
+              src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
+              defer=""
+            ></script>
+            <script>
+              window.OneSignalDeferred = window.OneSignalDeferred || [];
+              OneSignalDeferred.push(async function(OneSignal) {
+                await OneSignal.init({
+                  appId: '0f909d64-b774-4092-a4a2-d2892f279fdc',
+                  serviceWorkerParam: {
+                    scope: '/onesignal/'
+                  },
+                  serviceWorkerPath: 'onesignal/OneSignalSDKWorker.js',
+                  serviceWorkerUpdaterPath: 'onesignal/OneSignalSDKUpdaterWorker.js'
+                });
+              });
+            </script></div
+          ></div
+        ><div
+          ><div class="login-container12"
+            ><script src="sayang/login.js"></script></div></div></div
+    ></div>
     <script
       type="text/javascript"
       src="https://www.googletagmanager.com/gtag/js?id=G-ZHMFRWD45H"
