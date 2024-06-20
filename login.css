@@ -432,10 +432,7 @@
 }
 .login-text4 {
   color: #d20000;
-  margin-left: var(--dl-space-space-unit);
-}
-.login-container11 {
-  display: none;
+  margin: 0px;
 }
 .login-container12 {
   display: contents;

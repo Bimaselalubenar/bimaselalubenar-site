@@ -689,6 +689,8 @@
   height: 318px;
   object-fit: cover;
   border-radius: var(--dl-radius-radius-input-radius);
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
 }
 .dashboard-container10 {
   width: 100%;
@@ -815,30 +817,15 @@
   background-color: rgb(235, 235, 235);
 }
 .dashboard-container18 {
-  width: 100%;
+  flex: 0 0 auto;
+  width: auto;
+  height: auto;
   display: flex;
   align-self: flex-start;
-  align-items: center;
-  flex-direction: row;
-  justify-content: flex-start;
+  align-items: flex-start;
+  justify-content: center;
 }
-.dashboard-text07 {
-  font-size: 14px;
-}
-.dashboard-text11 {
-  color: rgb(255, 255, 255);
-  font-size: 14px;
-  align-self: flex-start;
-  font-style: normal;
-  font-weight: 400;
-  padding-top: var(--dl-space-space-halfunit);
-  padding-left: var(--dl-space-space-halfunit);
-  border-radius: var(--dl-radius-radius-radius8);
-  padding-right: var(--dl-space-space-halfunit);
-  padding-bottom: var(--dl-space-space-halfunit);
-  background-color: rgb(37, 183, 0);
-}
-.dashboard-text12 {
+.dashboard-button {
   color: rgb(255, 255, 255);
   cursor: pointer;
   font-size: 14px;
@@ -853,7 +840,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: rgb(37, 183, 0);
 }
-.dashboard-text13 {
+.dashboard-text07 {
   fill: #ebebeb;
   color: #ebebeb;
   width: 100%;
@@ -887,10 +874,10 @@
   flex-direction: column;
   justify-content: flex-start;
 }
-.dashboard-text14 {
+.dashboard-text08 {
   font-size: 14px;
 }
-.dashboard-text15 {
+.dashboard-text09 {
   color: rgb(255, 255, 255);
   font-size: 14px;
   align-self: flex-start;
@@ -903,7 +890,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: rgb(37, 183, 0);
 }
-.dashboard-button {
+.dashboard-button1 {
   color: rgb(255, 255, 255);
   font-size: 14px;
   align-self: flex-start;
@@ -916,7 +903,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   background-color: #da0000;
 }
-.dashboard-text16 {
+.dashboard-text10 {
   color: rgb(193, 0, 0);
 }
 .dashboard-container22 {
@@ -937,13 +924,13 @@
   padding-bottom: var(--dl-space-space-fourunits);
   justify-content: flex-end;
 }
-.dashboard-text17 {
+.dashboard-text11 {
   fill: #658ea9;
   flex: 0 0 auto;
   color: #658ea9;
   width: 100%;
   height: auto;
-  display: none;
+  display: flex;
   font-style: normal;
   align-items: center;
   font-weight: 600;
@@ -964,7 +951,7 @@
   color: #658ea9;
   width: 100%;
   height: auto;
-  display: flex;
+  display: none;
   font-style: normal;
   align-items: center;
   font-weight: 600;
@@ -1002,7 +989,7 @@
   width: 24px;
   height: 24px;
 }
-.dashboard-button1 {
+.dashboard-button2 {
   fill: var(--dl-color-gray-black);
   flex: 1;
   color: #ffffff;
@@ -1047,7 +1034,7 @@
   justify-content: center;
   background-color: #efefef;
 }
-.dashboard-text18 {
+.dashboard-text12 {
   color: #000000;
   font-style: normal;
   font-weight: 800;
@@ -1090,7 +1077,7 @@
   flex-direction: column;
   background-color: #efefef;
 }
-.dashboard-text19 {
+.dashboard-text13 {
   color: rgb(0, 0, 0);
   font-style: normal;
   font-weight: 600;
@@ -1134,40 +1121,40 @@
   flex-direction: column;
   background-color: #d2d2d2;
 }
-.dashboard-text20 {
+.dashboard-text14 {
   font-size: 14px;
 }
-.dashboard-text21 {
+.dashboard-text15 {
+  font-weight: 700;
+}
+.dashboard-text16 {
+  font-size: 14px;
+}
+.dashboard-text17 {
+  font-weight: 700;
+}
+.dashboard-text19 {
+  font-weight: 700;
+}
+.dashboard-text20 {
   font-weight: 700;
 }
 .dashboard-text22 {
-  font-size: 14px;
+  font-weight: 700;
 }
 .dashboard-text23 {
   font-weight: 700;
 }
 .dashboard-text25 {
-  font-weight: 700;
+  text-decoration: underline;
 }
-.dashboard-text26 {
-  font-weight: 700;
+.dashboard-text27 {
+  font-size: 14px;
 }
 .dashboard-text28 {
   font-weight: 700;
 }
 .dashboard-text29 {
-  font-weight: 700;
-}
-.dashboard-text31 {
-  text-decoration: underline;
-}
-.dashboard-text33 {
-  font-size: 14px;
-}
-.dashboard-text34 {
-  font-weight: 700;
-}
-.dashboard-text35 {
   text-decoration: underline;
 }
 .dashboard-container35 {
@@ -1292,7 +1279,7 @@
   flex-direction: column;
   background-color: #efefef;
 }
-.dashboard-text36 {
+.dashboard-text30 {
   color: rgb(0, 0, 0);
   font-style: normal;
   font-weight: 600;
@@ -1321,7 +1308,7 @@
   width: 24px;
   height: 24px;
 }
-.dashboard-text37 {
+.dashboard-text31 {
   fill: #625a5a;
   color: #625a5a;
   font-size: 14px;
@@ -1367,9 +1354,6 @@
   }
   .dashboard-container14 {
     flex: 1;
-  }
-  .dashboard-text07 {
-    font-size: 14px;
   }
   .dashboard-container19 {
     flex: 1;

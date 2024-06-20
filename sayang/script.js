@@ -1,53 +1,57 @@
-const loginSayang = document.getElementById('loginSayang');
-const errorMessage = document.getElementById('errorMessage');
+const loginForm = document.getElementById("loginSayang");
+const errorMessage = document.getElementById("errorMessage");
 
 function generateCaptcha() {
-    const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-    let captcha = '';
+    const characters =
+        "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    let captcha = "";
     for (let i = 0; i < 5; i++) {
-        captcha += characters.charAt(Math.floor(Math.random() * characters.length));
+        captcha += characters.charAt(
+            Math.floor(Math.random() * characters.length)
+        );
     }
     return captcha;
 }
 
 function refreshCaptcha() {
-    const captchaElement = document.getElementById('captcha');
+    const captchaElement = document.getElementById("captcha");
     captchaElement.textContent = generateCaptcha();
 }
 
-document.getElementById('refreshCaptcha').addEventListener('click', refreshCaptcha);
+document
+    .getElementById("refreshCaptcha")
+    .addEventListener("click", refreshCaptcha);
 
-loginSayang.addEventListener('submit', function (event) {
+loginForm.addEventListener("submit", function (event) {
     event.preventDefault();
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-    const captchaInput = document.getElementById('captchaInput').value;
-    const captcha = document.getElementById('captcha').textContent;
+    const email = document.getElementById("email").value;
+    const password = document.getElementById("password").value;
+    const captchaInput = document.getElementById("captchaInput").value;
+    const captcha = document.getElementById("captcha").textContent;
     const user = getUserByEmail(email);
 
     if (captcha !== captchaInput) {
-        errorMessage.innerText = 'CAPTCHA is incorrect. Please try again.';
+        errorMessage.innerText = "CAPTCHA is incorrect. Please try again.";
         refreshCaptcha();
         return;
     }
 
     if (user && user.password === password) {
-        localStorage.setItem('currentUser', JSON.stringify(user));
-        window.location.href = 'dashboard.html';
+        localStorage.setItem("currentUser", JSON.stringify(user));
+        window.location.href = "dashboard.html";
     } else {
-        errorMessage.innerText = 'Kirim pap 10 lagi.';
+        errorMessage.innerText = "Email or password is incorrect.";
     }
 });
 
+// Data akun pengguna
 let users = [
-    {
-        name: 'Gusty Kukuh Indriyan M', email: 'gustykukuhindriyanmurty@gmail.com', password: 'gaktau',
-        phone: '08978010123', birthdate: '2000-01-25', position: 'Manager', cabang: 'MPM MADIUN'
-    },
+    { name: 'Gusty Kukuh Indriyan M', email: 'gustykukuhindriyanmurty@gmail.com', password: 'gaktau', phone: '08978010123', birthdate: '2000-01-25', position: 'Manager', cabang: 'MPM MADIUN';}
 ];
 
 function getUserByEmail(email) {
-    return users.find(user => user.email === email);
+    return users.find((user) => user.email === email);
 }
-// Initialize CAPTCHA on page load
+
+// Inisialisasi CAPTCHA saat halaman dimuat
 refreshCaptcha();
