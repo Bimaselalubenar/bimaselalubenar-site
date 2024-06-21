@@ -347,90 +347,11 @@
   ></head>
   <body
     ><link rel="stylesheet" href="./style.css" /><div
-      ><link href="./dashboard.css" rel="stylesheet" /><div
-        class="dashboard-container"
-        ><div
-          id="popup1"
-          class="popupbuatsayang-container popupbuatsayang-root-class-name"
-          ><div class="popupbuatsayang-container1"
-            ><div class="popupbuatsayang-header"
-              ><div class="popupbuatsayang-container2"
-                ><video
-                  src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Nonik/nonik.mp4?updatedAt=1703506364286"
-                  loop="true"
-                  autoplay="true"
-                  controls="true"
-                  class="popupbuatsayang-video"
-                ></video></div
-              ><img class="popupbuatsayang-image" /><div
-                class="popupbuatsayang-container3"
-                ><span id="greeting" class="popupbuatsayang-text greeting"
-                  >****</span
-                ><span id="message" class="popupbuatsayang-text1"
-                  >***********</span
-                ><div class="popupbuatsayang-container4"
-                  ><h1 class="popupbuatsayang-text2"
-                    >Registrasi Sekarang!</h1
-                  ></div
-                ></div
-              ></div
-            ><button
-              type="button"
-              onclick="closeBanner('popup1')"
-              aria-label="Close"
-              class="popupbuatsayang-close-button"
-              ><svg
-                viewBox="0 0 804.5714285714286 1024"
-                class="popupbuatsayang-icon"
-              >
-                <path
-                  d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
-                ></path></svg></button></div
-          ><div
-            ><div class="popupbuatsayang-container6"
-              ><script>
-                function showBanners() {
-                    document.getElementById('popup1').style.display = 'block';
-                }
-
-                function closeBanner(bannerId) {
-                    var banner = document.getElementById(bannerId);
-                    banner.style.display = 'none';
-                }
-              </script></div
-            ></div
-          ><div
-            ><div class="popupbuatsayang-container8"
-              ><script>
-                function getGreetingAndMessage() {
-                    const now = new Date();
-                    const hours = now.getHours();
-                    let greeting;
-                    let message;
-
-                    if (hours >= 5 && hours < 12) {
-                        greeting = 'Selamat Pagi Sayang';
-                        message = 'Semoga pagi ini membawa sinar kebahagiaan yang sama seperti senyummu yang selalu menerangi hariku.';
-                    } else if (hours >= 12 && hours < 15) {
-                        greeting = 'Selamat Siang Sayang';
-                        message = 'Di tengah kesibukan hari, ingatlah bahwa ada seseorang yang selalu memikirkanmu dengan penuh kasih.';
-                    } else if (hours >= 15 && hours < 18) {
-                        greeting = 'Selamat Sore Sayang';
-                        message = 'Saat matahari mulai terbenam, semoga kehangatan cintaku bisa menjadi peluk yang menemanimu hingga malam tiba.';
-                    } else {
-                        greeting = 'Selamat Malam Sayang';
-                        message = 'Sebelum kamu terlelap, ingatlah bahwa kamu adalah bintang terakhir yang kupikirkan sebelum aku tertidur.';
-                    }
-
-                    return { greeting, message };
-                }
-
-                const { greeting, message } = getGreetingAndMessage();
-                document.getElementById('greeting').innerText = greeting;
-                document.getElementById('message').innerText = message;
-              </script></div
-            ></div
-          ></div
+      ><link href="./dashboard.css" rel="stylesheet" /><script
+        type="text/javascript"
+        src="https://github.com/teleporthq/date-time-primitive/blob/main/dist/default/lib.umd.js"
+      ></script
+      ><div class="dashboard-container"
         ><div class="dashboard-container01"
           ><div id="menuList" class="dashboard-container02"
             ><div id="notifMenu" href="#" class="dashboard-container03"
@@ -466,11 +387,11 @@
             ><div class="dashboard-container08 removescsroll"
               ><div class="dashboard-container09"
                 ><img
-                  id="profile3"
+                  id="profile2"
                   alt="Profile 3"
                   src="https://play.teleporthq.io/static/svg/default-img.svg"
                   class="dashboard-image profile-pic" /><img
-                  id="profile4"
+                  id="profile1"
                   alt="Profile 4"
                   src="https://play.teleporthq.io/static/svg/default-img.svg"
                   class="dashboard-image1 profile-pic" /></div
@@ -484,13 +405,13 @@
                   ><div id="userInfo" class="dashboard-container14"
                     ><div class="dashboard-container15"
                       ><span class="dashboard-text01"
-                        >Name&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span
+                        >Name&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
                       ><span id="userName" class="dashboard-text02"
                         >-</span
                       ></div
                     ><div class="dashboard-container16"
                       ><span class="dashboard-text03"
-                        >Email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+                        >Email&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span
                       ><span id="userEmail" class="dashboard-text04"
                         >-</span
                       ></div
@@ -502,7 +423,7 @@
                     ><div class="dashboard-container18"
                       ><span class="dashboard-text07"
                         ><span>Number</span><br /><span
-                          >Phone&nbsp; &nbsp; &nbsp; &nbsp;</span
+                          >Phone&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span
                         ><br /></span
                       ><span id="userPhone" class="dashboard-text12"
                         >-</span
@@ -510,12 +431,12 @@
                     ><div class="dashboard-container19"
                       ><span class="dashboard-text13"
                         ><span>Date of</span><br /><span
-                          >Birth&nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
+                          >Birth&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</span
                         ><br /></span
                       ><span id="userDob" class="dashboard-text18">-</span></div
                     ><div class="dashboard-container20"
                       ><span class="dashboard-text19"
-                        ><span>Zodiac&nbsp; &nbsp; &nbsp;&nbsp;</span
+                        ><span>Zodiac&nbsp; &nbsp; &nbsp; &nbsp;</span
                         ><br /></span
                       ><span id="userZodiac" class="dashboard-text22"
                         >-</span
@@ -650,18 +571,21 @@
               ><div class="dashboard-container33"
                 ><span id="note1" class="dashboard-text27">Hai Sayang!</span
                 ><span id="note2" class="dashboard-text28">Hai Sayang!</span
-                ><div class="dashboard-container34"></div></div
+                ><div class="dashboard-container34"></div
+                ><div class="dashboard-container35"
+                  ><div class="dashboard-container36"
+                    ><script src="sayang/pesan.js"></script></div></div></div
               ><div
                 id="notes"
-                class="dashboard-container35 removescsroll"
+                class="dashboard-container37 removescsroll"
               ></div></div
-            ><div class="dashboard-container36"
+            ><div class="dashboard-container38"
               ><form id="noteForm" class="dashboard-form1"
                 ><div
                   id="addNoteButton"
                   type="button"
                   onclick="addNote()"
-                  class="dashboard-container37"
+                  class="dashboard-container39"
                   ><svg viewBox="0 0 1024 1024" class="dashboard-icon10">
                     <path
                       d="M992 384h-352v-352c0-17.672-14.328-32-32-32h-192c-17.672 0-32 14.328-32 32v352h-352c-17.672 0-32 14.328-32 32v192c0 17.672 14.328 32 32 32h352v352c0 17.672 14.328 32 32 32h192c17.672 0 32-14.328 32-32v-352h352c17.672 0 32-14.328 32-32v-192c0-17.672-14.328-32-32-32z"
@@ -680,34 +604,128 @@
                   placeholder="Punya unek unek?"
                   class="dashboard-textinput2 input" /></form></div
             ><div
-              ><div class="dashboard-container39"
+              ><div class="dashboard-container41"
                 ><script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script></div></div
             ><div
-              ><div class="dashboard-container41"
+              ><div class="dashboard-container43"
                 ><script src="sayang/noted.js"></script></div></div></div
-          ><div id="notif" class="dashboard-container42 removescsroll content"
-            ><div class="dashboard-container43"
-              ><span class="dashboard-text29">Notifikasi</span></div
-            ><div class="dashboard-container44"
-              ><animate-on-reveal
-                animation="bounceIn"
-                duration="2s"
-                delay="0s"
-                direction="reverse"
-                easing="ease"
-                iteration="99"
-                ><div
-                  data-thq-animate-on-reveal="true"
-                  class="dashboard-container45"
-                  ><svg viewBox="0 0 1024 1024" class="dashboard-icon12">
+          ><div id="notif" class="dashboard-container44 removescsroll content"
+            ><div class="dashboard-container45"
+              ><span class="dashboard-text29">Pengingat</span></div
+            ><div class="dashboard-container46"
+              ><div class="dashboard-container47"
+                ><span class="dashboard-text30">Nonik</span
+                ><div class="dashboard-container48"
+                  ><div class="dashboard-container49"></div
+                  ><span class="dashboard-text31"
+                    ><span
+                      >Jangan pernah sekalipun bahagiain aku pake kebohongan ya
+                      🤗 sesulit apapun jalan kedepannya, se-menyebalkan
+                      gimanapun sikap aku ke kamu nanti, janji sama aku kamu
+                      akan selalu jujur ya 🤗❤</span
+                    ><br /><br /><span
+                      >Aku lebih baik disakitin oleh kejujuran kamu, daripada
+                      dibahagiain pake kebohongan yg semuanya palsu ❤🤗 </span
+                    ><br /><br /><span
+                      >Note : aku gak suka dibohongin, jangan berdalih "demi
+                      kebaikan kamu, aku ga mau nyakitin hati kamu, jadi aku
+                      terpaksa bohong", jangan ya sayang yaa, jujurlah apa
+                      adanya, walaupun itu bakal nyakitin perasaan aku. Aku
+                      benci banget diboongin, itu bikin aku bakal susah percaya
+                      lagi. Jadi, promise me, kamu bakal selalu jujur apapun yg
+                      terjadi.</span
+                    ></span
+                  ></div
+                ><div class="dashboard-container50"
+                  ><span class="dashboard-text39">Post</span
+                  ><span class="dashboard-date-time"
+                    ><date-time-primitive
+                      format="MMM D, YYYY h:mm A"
+                      date="Thu Jun 20 2024 22:36:48 GMT+0700 (Western Indonesia Time)"
+                    ></date-time-primitive></span></div></div></div
+            ><div
+              id="popup1"
+              class="popupbuatsayang-container removescsroll popupbuatsayang-root-class-name"
+              ><div class="popupbuatsayang-container1"
+                ><div class="popupbuatsayang-header"
+                  ><div class="popupbuatsayang-container2"
+                    ><img
+                      src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Nonik/04e2f95b-d7a2-4c84-9dea-8537d55be7ee.jpg?updatedAt=1718575919998"
+                      alt="image"
+                      class="popupbuatsayang-image" /></div
+                  ><img class="popupbuatsayang-image1" /><div
+                    class="popupbuatsayang-container3"
+                    ><span id="greeting" class="popupbuatsayang-text greeting"
+                      ><span>Sudah di pertemukan dia</span></span
+                    ><span id="message" class="popupbuatsayang-text1"
+                      ><span
+                        >sosok yang selama ini hanya ada dalam mimpi dan doa.
+                        Seperti mentari yang muncul setelah hujan, dia hadir
+                        membawa sinar baru dalam hidup yang sebelumnya kelam.
+                        Pertemuan ini bukan kebetulan,</span
+                      ></span
+                    ><div class="popupbuatsayang-container4"
+                      ><h1 class="popupbuatsayang-text2"
+                        >Registrasi Sekarang!</h1
+                      ></div
+                    ></div
+                  ></div
+                ><button
+                  type="button"
+                  onclick="closeBanner('popup1')"
+                  aria-label="Close"
+                  class="popupbuatsayang-close-button"
+                  ><svg
+                    viewBox="0 0 804.5714285714286 1024"
+                    class="popupbuatsayang-icon"
+                  >
                     <path
-                      d="M889.68 166.32c-93.608-102.216-228.154-166.32-377.68-166.32-282.77 0-512 229.23-512 512h96c0-229.75 186.25-416 416-416 123.020 0 233.542 53.418 309.696 138.306l-149.696 149.694h352v-352l-134.32 134.32z"
-                    ></path>
-                    <path
-                      d="M928 512c0 229.75-186.25 416-416 416-123.020 0-233.542-53.418-309.694-138.306l149.694-149.694h-352v352l134.32-134.32c93.608 102.216 228.154 166.32 377.68 166.32 282.77 0 512-229.23 512-512h-96z"
-                    ></path></svg
-                  ><span class="dashboard-text30">Update</span></div
-                ></animate-on-reveal
+                      d="M741.714 755.429c0 14.286-5.714 28.571-16 38.857l-77.714 77.714c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-168-168-168 168c-10.286 10.286-24.571 16-38.857 16s-28.571-5.714-38.857-16l-77.714-77.714c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l168-168-168-168c-10.286-10.286-16-24.571-16-38.857s5.714-28.571 16-38.857l77.714-77.714c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l168 168 168-168c10.286-10.286 24.571-16 38.857-16s28.571 5.714 38.857 16l77.714 77.714c10.286 10.286 16 24.571 16 38.857s-5.714 28.571-16 38.857l-168 168 168 168c10.286 10.286 16 24.571 16 38.857z"
+                    ></path></svg></button></div
+              ><div
+                ><div class="popupbuatsayang-container6"
+                  ><script>
+                    function showBanners() {
+                        document.getElementById('popup1').style.display = 'block';
+                    }
+
+                    function closeBanner(bannerId) {
+                        var banner = document.getElementById(bannerId);
+                        banner.style.display = 'none';
+                    }
+                  </script></div
+                ></div
+              ><div
+                ><div class="popupbuatsayang-container8"
+                  ><script>
+                    function getGreetingAndMessage() {
+                        const now = new Date();
+                        const hours = now.getHours();
+                        let greeting;
+                        let message;
+
+                        if (hours >= 5 && hours < 12) {
+                            greeting = 'Selamat Pagi Sayang';
+                            message = 'Semoga pagi ini membawa sinar kebahagiaan yang sama seperti senyummu yang selalu menerangi hariku.';
+                        } else if (hours >= 12 && hours < 15) {
+                            greeting = 'Selamat Siang Sayang';
+                            message = 'Di tengah kesibukan hari, ingatlah bahwa ada seseorang yang selalu memikirkanmu dengan penuh kasih.';
+                        } else if (hours >= 15 && hours < 18) {
+                            greeting = 'Selamat Sore Sayang';
+                            message = 'Saat matahari mulai terbenam, semoga kehangatan cintaku bisa menjadi peluk yang menemanimu hingga malam tiba.';
+                        } else {
+                            greeting = 'Selamat Malam Sayang';
+                            message = 'Sebelum kamu terlelap, ingatlah bahwa kamu adalah bintang terakhir yang kupikirkan sebelum aku tertidur.';
+                        }
+
+                        return { greeting, message };
+                    }
+
+                    const { greeting, message } = getGreetingAndMessage();
+                    document.getElementById('greeting').innerText = greeting;
+                    document.getElementById('message').innerText = message;
+                  </script></div
+                ></div
               ></div
             ></div
           ></div
@@ -791,8 +809,8 @@
               </script></div
             ></div
           ></div
-        ><div
-          ><div class="dashboard-container47"
+        ><div class="dashboard-container51"
+          ><div class="dashboard-container52"
             ><script>
               document.getElementById('profileMenu').addEventListener('click', function () {
                 showContent('profile');
@@ -829,17 +847,17 @@
               }
             </script>
           </div></div
-        ><div
-          ><div class="dashboard-container49"
+        ><div class="dashboard-container53"
+          ><div class="dashboard-container54"
             ><script src="sayang/dashboard.js"></script></div></div
-        ><div
-          ><div class="dashboard-container51"
+        ><div class="dashboard-container55"
+          ><div class="dashboard-container56"
             ><script src="sayang/chache.js"></script></div></div
-        ><div
-          ><div class="dashboard-container53"
+        ><div class="dashboard-container57"
+          ><div class="dashboard-container58"
             ><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script></div></div
-        ><div
-          ><div class="dashboard-container55"
+        ><div class="dashboard-container59"
+          ><div class="dashboard-container60"
             ><script
               src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js"
               defer=""
@@ -858,8 +876,8 @@
               });
             </script></div
           ></div
-        ><div
-          ><div class="dashboard-container57"
+        ><div class="dashboard-container61"
+          ><div class="dashboard-container62"
             ><script>
               document.addEventListener('DOMContentLoaded', function() {
                   const timeActiveDiv = document.getElementById('timeActive');
@@ -946,6 +964,13 @@
       });</script
     ><script src="https://unpkg.com/typeit@@{TYPEIT_VERSION}/dist/index.umd.js"></script
     ><script src="https://cdn.auth0.com/js/auth0-spa-js/2.0/auth0-spa-js.production.js"></script
+    ><script
+      async=""
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+      crossorigin="anonymous"
+    ></script
+    ><script>
+      (adsbygoogle = window.adsbygoogle || []).push({});</script
     ><script
       defer=""
       src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
