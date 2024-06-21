@@ -43,9 +43,17 @@ let users = [
     {
         name: 'Gusty Kukuh Indriyan M',
         email: 'gustykukuhindriyanmurty@gmail.com',
-        password: 'gaktau',
+        password: 'pacarku3',
         phone: '08978010123',
         dob: '2000-01-25'
+    },
+
+    {
+        name: 'Bima ardianto pramana',
+        email: 'bimaardiantopramana@gmail.com',
+        password: 'pacarku3',
+        phone: '083845781063',
+        dob: '2002-03-23'
     },
 ];
 
