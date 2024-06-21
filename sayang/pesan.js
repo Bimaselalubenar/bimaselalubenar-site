@@ -1,3 +1,3 @@
 // pesan
-document.getElementById('note1').innerText = 'astaga';
-document.getElementById('note2').innerText = 'Teks Baru untuk Catatan 2';
+document.getElementById('note1').innerText = 'Sayang?';
+document.getElementById('note2').innerText = 'Kapan terakhir kamu bilang kangen? tanpa ribut dulu?';
