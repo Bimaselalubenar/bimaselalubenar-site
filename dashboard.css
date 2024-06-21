@@ -1405,10 +1405,10 @@
 }
 .dashboard-text39 {
   font-size: 12px;
+  font-weight: bold;
 }
-.dashboard-date-time {
+.dashboard-text40 {
   font-size: 12px;
-  align-self: flex-end;
 }
 .dashboard-container51 {
   display: none;
