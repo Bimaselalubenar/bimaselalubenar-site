@@ -14,6 +14,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
+  z-index: 5;
   position: relative;
   overflow-y: scroll;
   align-items: center;
@@ -41,7 +42,7 @@
   padding-bottom: var(--dl-space-space-twounits);
   backdrop-filter: blur(5px);
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(29, 27, 27, 0.08);
 }
 .cek-khodam-container03 {
   gap: var(--dl-space-space-unit);
@@ -52,15 +53,15 @@
   justify-content: center;
 }
 .cek-khodam-text {
-  color: #000000;
-  font-size: 20px;
+  color: #aee225;
+  font-size: 30px;
   font-style: normal;
-  font-family: "Inter";
+  font-family: "Tahoma";
   font-weight: 800;
   text-transform: uppercase;
 }
 .cek-khodam-text01 {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
 }
 .cek-khodam-text03 {
@@ -77,6 +78,8 @@
   color: #181818;
   width: 100%;
   height: 45px;
+  border-color: rgb(64, 71, 194);
+  border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 20px;
   padding-right: var(--dl-space-space-unit);
@@ -90,6 +93,8 @@
   font-style: normal;
   transition: 0.3s;
   font-weight: 500;
+  border-color: rgb(64, 71, 194);
+  border-width: 2px;
   padding-left: var(--dl-space-space-unit);
   border-radius: 20px;
   padding-right: var(--dl-space-space-unit);
@@ -99,39 +104,6 @@
   background-color: #5057dc;
 }
 .cek-khodam-container04 {
-  gap: var(--dl-space-space-halfunit);
-  flex: 0 0 auto;
-  width: 100%;
-  display: flex;
-  padding: var(--dl-space-space-halfunit);
-  align-items: center;
-  justify-content: center;
-}
-.cek-khodam-image {
-  width: auto;
-  height: 20px;
-  object-fit: cover;
-}
-.cek-khodam-container05 {
-  gap: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.cek-khodam-text04 {
-  color: rgb(0, 0, 0);
-  font-size: 12px;
-}
-.cek-khodam-link {
-  fill: #114782;
-  color: #114782;
-  cursor: pointer;
-  font-size: 12px;
-  font-style: normal;
-  font-weight: 600;
-  text-decoration: none;
-}
-.cek-khodam-container06 {
   flex: 0 0 auto;
   width: auto;
   height: auto;
@@ -139,7 +111,7 @@
   align-items: flex-start;
   justify-content: center;
 }
-.cek-khodam-container07 {
+.cek-khodam-container05 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   margin-top: var(--dl-space-space-twounits);
@@ -147,19 +119,36 @@
   flex-direction: column;
   justify-content: center;
 }
-.cek-khodam-text05 {
-  color: #000000;
+.cek-khodam-text04 {
+  color: #ffffff;
   font-size: 12px;
 }
-.cek-khodam-container08 {
+.cek-khodam-container06 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
+.cek-khodam-link {
+  color: #ffffff;
+  font-size: 12px;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  text-decoration: none;
+}
+.cek-khodam-link:hover {
+  color: #2856c3;
+  font-style: normal;
+  font-weight: 600;
+}
+.cek-khodam-text05 {
+  color: #ffffff;
+  font-size: 12px;
+}
 .cek-khodam-link1 {
-  color: #1a1a1a;
+  color: #ffffff;
   font-size: 12px;
   font-style: normal;
   transition: 0.3s;
@@ -171,24 +160,7 @@
   font-style: normal;
   font-weight: 600;
 }
-.cek-khodam-text06 {
-  color: #000000;
-  font-size: 12px;
-}
-.cek-khodam-link2 {
-  color: #1a1a1a;
-  font-size: 12px;
-  font-style: normal;
-  transition: 0.3s;
-  font-weight: 500;
-  text-decoration: none;
-}
-.cek-khodam-link2:hover {
-  color: #2856c3;
-  font-style: normal;
-  font-weight: 600;
-}
-.cek-khodam-container09 {
+.cek-khodam-container07 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -206,9 +178,9 @@
   padding-bottom: var(--dl-space-space-twounits);
   backdrop-filter: blur(5px);
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(29, 27, 27, 0.08);
 }
-.cek-khodam-container10 {
+.cek-khodam-container08 {
   width: 100%;
   height: 100%;
   display: flex;
@@ -220,7 +192,7 @@
   width: 160px;
   height: 160px;
 }
-.cek-khodam-container11 {
+.cek-khodam-container09 {
   gap: var(--dl-space-space-unit);
   flex: 0 0 auto;
   width: 100%;
@@ -237,49 +209,50 @@
   flex-direction: column;
   padding-bottom: var(--dl-space-space-twounits);
   backdrop-filter: blur(5px);
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(29, 27, 27, 0.08);
 }
-.cek-khodam-container12 {
+.cek-khodam-container10 {
   gap: var(--dl-space-space-unit);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.cek-khodam-text07 {
-  color: rgb(0, 0, 0);
-  font-size: 20px;
+.cek-khodam-text06 {
+  fill: #aee225;
+  color: #aee225;
+  font-size: 30px;
   font-style: normal;
   text-align: center;
   font-weight: 800;
   text-transform: uppercase;
 }
-.cek-khodam-container13 {
+.cek-khodam-container11 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.cek-khodam-container14 {
+.cek-khodam-container12 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   flex-direction: row;
 }
-.cek-khodam-text08 {
-  color: rgb(0, 0, 0);
+.cek-khodam-text07 {
+  color: #f9f9f9;
 }
-.cek-khodam-text09 {
-  color: #081280;
+.cek-khodam-text08 {
+  color: #feff00;
   font-style: normal;
   font-weight: 700;
 }
-.cek-khodam-text10 {
-  color: #000000;
+.cek-khodam-text09 {
+  color: #f9f9f9;
   text-align: center;
 }
-.cek-khodam-container15 {
+.cek-khodam-container13 {
   gap: var(--dl-space-space-unit);
   display: flex;
   padding: var(--dl-space-space-unit);
@@ -290,7 +263,7 @@
   border-radius: 20px;
   flex-direction: column;
 }
-.cek-khodam-text11 {
+.cek-khodam-text10 {
   cursor: pointer;
   padding: var(--dl-space-space-halfunit);
   font-size: 16px;
@@ -302,14 +275,14 @@
   text-transform: uppercase;
   background-color: rgb(217, 217, 217);
 }
-.cek-khodam-container16 {
+.cek-khodam-container14 {
   width: 100%;
   display: flex;
   align-items: center;
   flex-direction: column;
 }
-.cek-khodam-text12 {
-  color: #000000;
+.cek-khodam-text11 {
+  color: #ffffff;
   font-size: 14px;
   font-style: normal;
   text-align: center;
@@ -320,19 +293,19 @@
   padding-right: 0px;
   padding-bottom: 0px;
 }
-.cek-khodam-container17 {
+.cek-khodam-container15 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   flex-direction: column;
   justify-content: center;
 }
-.cek-khodam-text13 {
-  color: rgb(0, 0, 0);
+.cek-khodam-text12 {
+  color: #f9f9f9;
   font-size: 10px;
   text-align: center;
 }
-.cek-khodam-container18 {
+.cek-khodam-container16 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
@@ -360,7 +333,7 @@
   padding-right: 8px;
   background-color: rgb(217, 217, 217);
 }
-.cek-khodam-container19 {
+.cek-khodam-container17 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   margin-top: var(--dl-space-space-twounits);
@@ -368,20 +341,37 @@
   flex-direction: column;
   justify-content: center;
 }
-.cek-khodam-text14 {
-  color: #000000;
+.cek-khodam-text13 {
+  color: #f9f9f9;
   font-size: 12px;
   text-align: center;
 }
-.cek-khodam-container20 {
+.cek-khodam-container18 {
   gap: var(--dl-space-space-halfunit);
   display: flex;
   align-items: center;
   flex-direction: row;
   justify-content: center;
 }
+.cek-khodam-link2 {
+  color: #f9f9f9;
+  font-size: 12px;
+  font-style: normal;
+  transition: 0.3s;
+  font-weight: 500;
+  text-decoration: none;
+}
+.cek-khodam-link2:hover {
+  color: #2856c3;
+  font-style: normal;
+  font-weight: 600;
+}
+.cek-khodam-text14 {
+  color: #f9f9f9;
+  font-size: 12px;
+}
 .cek-khodam-link3 {
-  color: #1a1a1a;
+  color: #f9f9f9;
   font-size: 12px;
   font-style: normal;
   transition: 0.3s;
@@ -393,39 +383,10 @@
   font-style: normal;
   font-weight: 600;
 }
-.cek-khodam-text15 {
-  color: #000000;
-  font-size: 12px;
-}
-.cek-khodam-link4 {
-  color: #1a1a1a;
-  font-size: 12px;
-  font-style: normal;
-  transition: 0.3s;
-  font-weight: 500;
-  text-decoration: none;
-}
-.cek-khodam-link4:hover {
-  color: #2856c3;
-  font-style: normal;
-  font-weight: 600;
-}
-.cek-khodam-text16 {
-  left: 0px;
-  color: rgb(0, 0, 0);
-  right: 0px;
-  bottom: 0px;
-  margin: auto;
-  z-index: 5;
-  position: absolute;
-  font-size: 12px;
-  text-align: center;
-  padding-bottom: var(--dl-space-space-unit);
-}
-.cek-khodam-container22 {
+.cek-khodam-container20 {
   display: contents;
 }
-.cek-khodam-container24 {
+.cek-khodam-container22 {
   display: contents;
 }
 .cek-khodam-lottie-node1 {
@@ -437,8 +398,22 @@
   margin: auto;
   position: absolute;
 }
-.cek-khodam-container26 {
+.cek-khodam-container24 {
   display: contents;
+}
+.cek-khodam-container25 {
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  position: absolute;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.74) 0.00%,rgba(0, 0, 0, 0.74) 100.00%),url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/th_id=OIG1.p4_3h9Pb5QH7y6aYfS5n&pid=ImgGn?updatedAt=1719099906114');
+  background-position: center;
 }
 @media(max-width: 1600px) {
   .cek-khodam-lottie-node1 {
@@ -477,17 +452,6 @@
   }
 }
 @media(max-width: 479px) {
-  .cek-khodam-image {
-    height: 20px;
-  }
-  .cek-khodam-text04 {
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-  }
-  .cek-khodam-text16 {
-    color: rgb(0, 0, 0);
-    font-size: 12px;
-  }
   .cek-khodam-lottie-node1 {
     top: 0px;
     left: 0px;
