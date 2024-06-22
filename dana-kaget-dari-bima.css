@@ -294,13 +294,13 @@
   max-width: auto;
   overflow-y: scroll;
   align-items: center;
-  padding-top: var(--dl-space-space-twounits);
+  padding-top: var(--dl-space-space-threeunits);
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
   flex-direction: column;
-  padding-bottom: var(--dl-space-space-twounits);
+  padding-bottom: var(--dl-space-space-threeunits);
   backdrop-filter: blur(10px);
-  justify-content: center;
+  justify-content: flex-start;
   background-color: rgba(0, 0, 0, 0.45);
 }
 .popupcomers-container01 {
