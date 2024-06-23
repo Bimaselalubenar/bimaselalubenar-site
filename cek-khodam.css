@@ -383,20 +383,20 @@
   font-style: normal;
   font-weight: 600;
 }
+.cek-khodam-container19 {
+  display: none;
+}
 .cek-khodam-container20 {
   display: contents;
+}
+.cek-khodam-container21 {
+  display: none;
 }
 .cek-khodam-container22 {
   display: contents;
 }
-.cek-khodam-lottie-node1 {
-  left: 0px;
-  right: 0px;
-  width: 100%;
-  bottom: 0px;
-  height: 100vh;
-  margin: auto;
-  position: absolute;
+.cek-khodam-container23 {
+  display: none;
 }
 .cek-khodam-container24 {
   display: contents;
@@ -404,8 +404,11 @@
 .cek-khodam-container25 {
   top: 0px;
   left: 0px;
+  right: 0px;
   width: 100%;
-  height: 100%;
+  bottom: 0px;
+  height: 100vh;
+  margin: auto;
   display: flex;
   position: absolute;
   align-items: center;
@@ -415,48 +418,8 @@
   background-image: linear-gradient(90deg, rgba(0, 0, 0, 0.74) 0.00%,rgba(0, 0, 0, 0.74) 100.00%),url('https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/th_id=OIG1.p4_3h9Pb5QH7y6aYfS5n&pid=ImgGn?updatedAt=1719099906114');
   background-position: center;
 }
-@media(max-width: 1600px) {
-  .cek-khodam-lottie-node1 {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-  }
-}
-@media(max-width: 1200px) {
-  .cek-khodam-lottie-node1 {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-  }
-}
-@media(max-width: 991px) {
-  .cek-khodam-lottie-node1 {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-  }
-}
-@media(max-width: 767px) {
-  .cek-khodam-lottie-node1 {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
-  }
-}
 @media(max-width: 479px) {
-  .cek-khodam-lottie-node1 {
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    bottom: 0px;
-    margin: auto;
+  .cek-khodam-container19 {
+    display: flex;
   }
 }
