@@ -38,7 +38,7 @@ function getLovePercentage(dob1, dob2) {
 
     if ((dob1.getTime() === specialDob1.getTime() && dob2.getTime() === specialDob2.getTime()) ||
         (dob1.getTime() === specialDob2.getTime() && dob2.getTime() === specialDob1.getTime())) {
-        return '99,9';
+        return 'Unlimited';
     }
 
     const diffTime = Math.abs(dob2 - dob1);
