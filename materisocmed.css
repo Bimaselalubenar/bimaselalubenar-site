@@ -6471,6 +6471,12 @@
 .materisocmed-container232 {
   display: contents;
 }
+.materisocmed-container233 {
+  display: none;
+}
+.materisocmed-container234 {
+  display: contents;
+}
 @media(max-width: 1600px) {
   .materisocmed-container017 {
     flex-direction: column;
