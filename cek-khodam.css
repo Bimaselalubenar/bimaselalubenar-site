@@ -16,7 +16,6 @@
   display: flex;
   z-index: 5;
   position: relative;
-  overflow-y: scroll;
   align-items: center;
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
@@ -354,6 +353,7 @@
 }
 .cek-khodam-container21 {
   display: none;
+  z-index: 100;
 }
 .cek-khodam-container22 {
   display: contents;

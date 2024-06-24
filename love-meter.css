@@ -16,7 +16,6 @@
   display: flex;
   z-index: 5;
   position: relative;
-  overflow-y: scroll;
   align-items: center;
   padding-left: var(--dl-space-space-unit);
   padding-right: var(--dl-space-space-unit);
@@ -60,7 +59,7 @@
   font-style: normal;
   font-family: "Spectral";
   font-weight: 800;
-  margin-bottom: var(--dl-space-space-twounits);
+  margin-bottom: var(--dl-space-space-unit);
 }
 .love-meter-form {
   gap: var(--dl-space-space-halfunit);
@@ -513,6 +512,7 @@
 }
 .love-meter-container27 {
   display: none;
+  z-index: 100;
 }
 .love-meter-container28 {
   display: contents;

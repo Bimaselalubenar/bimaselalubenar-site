@@ -1,7 +1,7 @@
 .btn-banner-container {
   gap: var(--dl-space-space-unit);
   width: 100%;
-  height: 100vh;
+  height: 100%;
   display: flex;
   z-index: 100;
   position: fixed;
@@ -16,6 +16,14 @@
   background-color: rgba(142, 142, 142, 0.35);
 }
 .btn-banner-container1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.btn-banner-container2 {
   gap: var(--dl-space-space-unit);
   width: 100%;
   height: 100%;
@@ -46,7 +54,7 @@
   height: 24px;
   align-self: center;
 }
-.btn-banner-container2 {
+.btn-banner-container3 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   height: 100%;
@@ -69,14 +77,14 @@
   padding-bottom: 0px;
   justify-content: space-between;
 }
-.btn-banner-container3 {
+.btn-banner-container4 {
   width: 100%;
   height: 100%;
 }
-.btn-banner-container4 {
+.btn-banner-container5 {
   display: contents;
 }
-.btn-banner-container5 {
+.btn-banner-container6 {
   gap: var(--dl-space-space-halfunit);
   width: 100%;
   cursor: pointer;
@@ -92,7 +100,7 @@
   padding-bottom: var(--dl-space-space-halfunit);
   justify-content: flex-start;
 }
-.btn-banner-container5:hover {
+.btn-banner-container6:hover {
   background-color: #ececec;
 }
 .btn-banner-icon2 {
