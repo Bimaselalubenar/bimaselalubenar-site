@@ -143,23 +143,6 @@
   font-style: normal;
   font-weight: 600;
 }
-.cek-khodam-text05 {
-  color: #ffffff;
-  font-size: 12px;
-}
-.cek-khodam-link1 {
-  color: #ffffff;
-  font-size: 12px;
-  font-style: normal;
-  transition: 0.3s;
-  font-weight: 500;
-  text-decoration: none;
-}
-.cek-khodam-link1:hover {
-  color: #2856c3;
-  font-style: normal;
-  font-weight: 600;
-}
 .cek-khodam-container08 {
   display: contents;
 }
@@ -221,7 +204,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.cek-khodam-text06 {
+.cek-khodam-text05 {
   fill: #aee225;
   color: #aee225;
   font-size: 30px;
@@ -243,15 +226,15 @@
   align-items: center;
   flex-direction: row;
 }
-.cek-khodam-text07 {
+.cek-khodam-text06 {
   color: #f9f9f9;
 }
-.cek-khodam-text08 {
+.cek-khodam-text07 {
   color: #feff00;
   font-style: normal;
   font-weight: 700;
 }
-.cek-khodam-text09 {
+.cek-khodam-text08 {
   color: #f9f9f9;
   text-align: center;
 }
@@ -266,7 +249,7 @@
   border-radius: 20px;
   flex-direction: column;
 }
-.cek-khodam-text10 {
+.cek-khodam-text09 {
   cursor: pointer;
   padding: var(--dl-space-space-halfunit);
   font-size: 16px;
@@ -284,7 +267,7 @@
   align-items: center;
   flex-direction: column;
 }
-.cek-khodam-text11 {
+.cek-khodam-text10 {
   color: #ffffff;
   font-size: 14px;
   font-style: normal;
@@ -303,7 +286,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.cek-khodam-text12 {
+.cek-khodam-text11 {
   color: #f9f9f9;
   font-size: 10px;
   text-align: center;
@@ -344,7 +327,7 @@
   flex-direction: column;
   justify-content: center;
 }
-.cek-khodam-text13 {
+.cek-khodam-text12 {
   color: #f9f9f9;
   font-size: 12px;
   text-align: center;
@@ -356,7 +339,7 @@
   flex-direction: row;
   justify-content: center;
 }
-.cek-khodam-link2 {
+.cek-khodam-link1 {
   color: #f9f9f9;
   font-size: 12px;
   font-style: normal;
@@ -364,24 +347,7 @@
   font-weight: 500;
   text-decoration: none;
 }
-.cek-khodam-link2:hover {
-  color: #2856c3;
-  font-style: normal;
-  font-weight: 600;
-}
-.cek-khodam-text14 {
-  color: #f9f9f9;
-  font-size: 12px;
-}
-.cek-khodam-link3 {
-  color: #f9f9f9;
-  font-size: 12px;
-  font-style: normal;
-  transition: 0.3s;
-  font-weight: 500;
-  text-decoration: none;
-}
-.cek-khodam-link3:hover {
+.cek-khodam-link1:hover {
   color: #2856c3;
   font-style: normal;
   font-weight: 600;
