@@ -1292,7 +1292,9 @@
   display: contents;
 }
 
-
+.popupcomers-root-class-name1 {
+  display: none;
+}
 
 @media(max-width: 991px) {
   .popupcomers-text17 {
