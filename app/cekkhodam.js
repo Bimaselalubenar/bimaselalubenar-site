@@ -81,14 +81,31 @@ document.getElementById('khodam-form').addEventListener('submit', function(event
 
     setTimeout(() => {
         loadingContainer.style.display = 'none';
-        const randomKhodam = khodams[Math.floor(Math.random() * khodams.length)];
+
+        // Get today's date in YYYY-MM-DD format
+        const today = new Date().toISOString().split('T')[0];
+
+        // Simple hash function
+        const hashCode = (str) => {
+            let hash = 0;
+            for (let i = 0; i < str.length; i++) {
+                const char = str.charCodeAt(i);
+                hash = ((hash << 5) - hash) + char;
+                hash |= 0; // Convert to 32bit integer
+            }
+            return hash;
+        };
+
+        const index = Math.abs(hashCode(name + today)) % khodams.length;
+        const selectedKhodam = khodams[index];
+
         resultNameElement.textContent = `${name}`;
-        resultKhodamNameElement.textContent = `${randomKhodam.name}`;
-        resultKhodamMeaningElement.textContent = `${randomKhodam.meaning}`;
+        resultKhodamNameElement.textContent = `${selectedKhodam.name}`;
+        resultKhodamMeaningElement.textContent = `${selectedKhodam.meaning}`;
         resultContainer.style.display = 'block';
 
         shareButton.onclick = () => {
-            const shareText = `Isi khodam dalam diriku (${name}): ${randomKhodam.name} - ${randomKhodam.meaning}`;
+            const shareText = `Isi khodam dalam diriku (${name}): ${selectedKhodam.name} - ${selectedKhodam.meaning}`;
             if (navigator.share) {
                 navigator.share({
                     title: 'Khodam Finder',
