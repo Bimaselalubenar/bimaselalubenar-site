@@ -518,8 +518,8 @@
 
 
 .overlay-content {
+  display-none: display: none;
   overlay-content: -ms-overflow-style: none; scrollbar-width: none;
-  overlay-content-webkit-scrollbar: display: none;
 }
 
 .removescsroll {
