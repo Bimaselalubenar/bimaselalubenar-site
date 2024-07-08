@@ -2563,6 +2563,8 @@ h5 {
 }
 
 .backgrounddealer {
+  flex-direction: column;
+  align-items: flex-start;
   border-radius: 20px;
   height: auto;
   background-color: #e6e4e45d;
@@ -2587,15 +2589,18 @@ body::-webkit-scrollbar {
   font-style: normal;
   font-family: sans-serif;
   font-size: small;
+  text-align: center;
 }
 
 .tunggu {
+  opacity: 90%;
+  color: white;
   border-radius: 8px;
-  background-color: yellow;
+  background-color: rgb(78, 78, 72);
   padding-right: 10px;
   padding-left: 10px;
-  padding-top: 10px;
-  padding-bottom: 10px;
+  padding-top: 1px;
+  padding-bottom: 1px;
   display: flex;
   gap: 5px;
 }
