@@ -149,6 +149,26 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 </script>
 <!-- Selesai -->
+
+<!-- Browser -->
+<script type="text/javascript">
+        window.onload = function() {
+            // Mendapatkan user agent browser
+            var userAgent = navigator.userAgent;
+
+            // Cek apakah browser adalah Chrome atau Edge
+            if (!userAgent.includes("Chrome") && !userAgent.includes("Edg")) {
+                // Tampilkan popup jika bukan Chrome atau Edge
+                alert("Anda tidak dapat mengakses halaman ini. Gunakan browser Chrome atau Microsoft Edge.");
+                
+                // Redirect pengguna ke halaman error atau halaman lain
+                window.location.href = "https://bimaselalubenar.my.id/404.html"; // Ganti URL dengan halaman yang diinginkan
+
+                // Atau jika ingin menutup tab
+                // window.close(); // Hanya berfungsi jika halaman dibuka dengan JavaScript
+            }
+        };
+    </script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Melepaskan untuk Memperbaiki, dan kembali?</title>
     <meta name="theme-color" content="#7d7878">
