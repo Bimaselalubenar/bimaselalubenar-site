@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="id" style="display: grid;">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HHF3VHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+        function copyTextById(id) {
+            // Mendapatkan elemen berdasarkan ID
+            var textElement = document.getElementById(id);
+
+            // Membuat elemen input sementara untuk menyalin teks
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textElement.textContent;
+
+            // Menambahkan elemen input sementara ke body
+            document.body.appendChild(tempInput);
+
+            // Menyorot dan menyalin teks dari elemen input sementara
+            tempInput.select();
+            document.execCommand("copy");
+
+            // Menghapus elemen input sementara setelah menyalin teks
+            document.body.removeChild(tempInput);
+
+            // Memberikan umpan balik menggunakan SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Teks berhasil disalin ke clipboard!',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        // Menangkap kejadian keydown untuk mendeteksi Ctrl + C
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'c') {
+                // Menampilkan SweetAlert ketika Ctrl + C ditekan
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copy Sukses!',
+                    text: 'Text berhasil di salin!',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+
+<!-- app -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- selesai -->
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<!-- onesignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+<!-- selesai -->
+
+<!-- FireBase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGIm8fs-R4WuUMomDnaklskRsXg-82BfA",
+    authDomain: "bimaselalubenar-boostrap.firebaseapp.com",
+    databaseURL: "https://bimaselalubenar-boostrap-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "bimaselalubenar-boostrap",
+    storageBucket: "bimaselalubenar-boostrap.appspot.com",
+    messagingSenderId: "903484306924",
+    appId: "1:903484306924:web:8b0f8344d12a46fb20bcc9",
+    measurementId: "G-KSFJWG3HM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- selesai -->
+
+<!-- Offline -->
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+
+<!-- Selesai -->
+
+
+<!-- 404 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {  
+    // Mendapatkan URL saat ini  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    // Memeriksa apakah halaman saat ini valid  
+    if (!currentPage || currentPage === "404.html") {  
+        return; // Jika halaman adalah 404, tidak perlu melakukan apa-apa  
+    }  
+
+    // Menggunakan fetch untuk memeriksa keberadaan halaman  
+    fetch(currentPage)  
+        .then(response => {  
+            if (!response.ok) {  
+                // Jika halaman tidak ditemukan, arahkan ke halaman 404  
+                window.location.href = "404.html";  
+            }  
+        })  
+        .catch(() => {  
+            // Jika terjadi kesalahan dalam fetch, arahkan ke halaman 404  
+            window.location.href = "404.html";  
+        });  
+});
+</script>
+<!-- Selesai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>GUSTY KUKUH INDRIYANMURTY</title>
+    <meta name="theme-color" content="#7d7878">
+    <link rel="canonical" href="https://bimaselalubenar.my.id/Portofolio/Indri/Index.html">
+    <meta property="og:url" content="https://bimaselalubenar.my.id/Portofolio/Indri/Index.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/ceo/Portofolio/CEO indri.webp">
+    <meta property="og:description" content="Saya adalah seorang profesional dengan latar belakang akuntansi yang berdedikasi dan berpengalaman dalam manajemen penjualan dan administrasi gudang.">
+    <meta name="description" content="Saya adalah seorang profesional dengan latar belakang akuntansi yang berdedikasi dan berpengalaman dalam manajemen penjualan dan administrasi gudang.">
+    <meta property="og:title" content="GUSTY KUKUH INDRIYANMURTY">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/ceo/Portofolio/CEO indri.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../../assets/img/Logo/logo2.webp">
+    <link rel="stylesheet" href="../../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="../../manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../../assets/css/Good%20Times%20Rg.css">
+    <link rel="stylesheet" href="../../assets/css/oblong.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="../../assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="../../assets/css/background.css">
+    <link rel="stylesheet" href="../../assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="../../assets/css/chat.css">
+    <link rel="stylesheet" href="../../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../../assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="../../assets/css/menu-dashboard.css">
+    <link rel="stylesheet" href="../../assets/css/One-Liner-Code-Editor.css">
+    <link rel="stylesheet" href="../../assets/css/PRE.css">
+    <link rel="stylesheet" href="../../assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="../../assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="../../assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="../../assets/css/Simple-Slider.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HHF3VHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZTM564QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNZTM564QN');
+</script>
+<!-- Selelsai -->
+
+<!-- Google ADS -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account" content="ca-pub-8913081554574910">
+<!-- Selesai -->
+
+<!-- OneSignal 1 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+
+<!-- OneSignal 2 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "7b65d3f2-e57a-4938-a97d-e7e358e2a721",
+    });
+  });
+</script>
+
+<!-- Subscribe YT -->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<!-- Fire Base -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<!-- Selesai -->
+
+
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8913081554574910" data-ad-slot="5303068928"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+</amp-ad>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
+</head>
+
+<body class="scrollbarnone" style="display: inline-grid;height: auto;">
+    <div class="container py-4 py-xl-5">
+        <div class="row gy-4 gy-md-0">
+            <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-center">
+                <div style="max-width: 350px;">
+                    <h2 class="text-uppercase fw-bold" style="font-family: Poppins, sans-serif;">GUSTY KUKUH <span style="font-weight: normal !important;">INDRIYANMURTY</span></h2>
+                    <p class="my-3" style="font-family: Poppins, sans-serif;">Saya adalah seorang profesional dengan latar belakang akuntansi yang berdedikasi dan berpengalaman dalam manajemen penjualan dan administrasi gudang.</p><a class="btn btn-outline-primary btn-lg" role="button" href="https://drive.google.com/uc?export=download&amp;id=1WGCMrLLA05FXw_k9_gtVB8rEbDahJYhV" style="font-size: 16px;line-height: 16px;font-family: Poppins, sans-serif;">Unduh CV</a>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="p-xl-5 m-xl-5"><img class="rounded img-fluid w-100 fit-cover" style="min-height: 300px;" src="../../assets/img/Galery/indri/indri.jpg"></div>
+            </div>
+        </div>
+    </div>
+    <div class="container py-4 py-xl-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col h-auto">
+                <div class="d-flex flex-column align-items-center align-items-md-start" style="padding: 16px;--bs-body-bg: #745d5d;background: #efefef;border-radius: 10px;display: flex;font-family: Poppins, sans-serif;margin-bottom: 0px;"><img class="rounded w-100 fit-cover" style="min-height: 300px;height: 400px;" src="https://i.pinimg.com/564x/60/17/cf/6017cf3a415187aca647e9e323fa76d7.jpg">
+                    <div>
+                        <div class="list-cv">
+                            <p style="font-family: Poppins, sans-serif;margin-bottom: 0px;margin-top: 10px;">Admin Penjualan dan Admin Gudang</p>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="col d-flex flex-column justify-content-center p-4">
+                <div class="d-flex flex-column align-items-center align-items-md-start mb-5" style="padding: 16px;--bs-body-bg: #745d5d;background: #efefef;border-radius: 10px;margin-bottom: 6px;display: flex;font-family: Poppins, sans-serif;">
+                    <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon md"><i class="bi bi-person-workspace"></i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+  <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+  <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+</svg></div>
+                    <div>
+                        <h5 style="font-family: Poppins, sans-serif;font-weight: bold;">Pengalaman Kerja</h5>
+                        <div class="list-cv">
+                            <p style="font-family: Poppins, sans-serif;color: rgb(91,91,91);margin-bottom: 0px;"><strong>CV. Gema Jadi</strong></p>
+                            <p style="font-family: Poppins, sans-serif;margin-bottom: 0px;">Admin Penjualan dan Admin Gudang</p>
+                            <p style="font-family: Poppins, sans-serif;margin-bottom: 30px;"><em>2020 - 2024</em></p>
+                        </div>
+                    </div>
+                    <div>
+                        <h5 style="font-family: Poppins, sans-serif;font-weight: bold;margin-bottom: 16px;">Tanggung jawab dan pencapaian</h5>
+                        <div class="accordion" role="tablist" id="accordion-2">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-1" aria-expanded="true" aria-controls="accordion-2 .item-1" style="background: rgb(241,241,241);"><br><strong><span style="color: rgb(0, 0, 0); background-color: rgb(239, 239, 239);">Administrasi Penjualan</span></strong></button></h2>
+                                <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-2" style="background: #e4e4e4;">
+                                    <div class="accordion-body">
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Mengelola dan memproses pesanan pelanggan dengan akurasi dan efisiensi tinggi</p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;"><span style="background-color: rgba(239, 239, 239, 0);">Menyiapkan faktur dan dokumen penjualan, memastikan kepatuhan terhadap prosedur perusahaan.</span></p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;"><span style="background-color: rgba(255, 255, 255, 0);">Berinteraksi dengan pelanggan untuk memastikan kepuasan mereka dan menangani keluhan secara profesional.</span></p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;"><span style="background-color: rgba(239, 239, 239, 0);">Mengelola dan memproses pesanan pelanggan dengan akurasi dan efisiensi tinggi.&nbsp;</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-2 .item-2" aria-expanded="false" aria-controls="accordion-2 .item-2" style="background: rgb(241,241,241);"><br><strong><span style="color: rgb(0, 0, 0); background-color: rgb(239, 239, 239);">Administrasi Gudang</span></strong></button></h2>
+                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-2" style="background: #e4e4e4;">
+                                    <div class="accordion-body">
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;"><span style="background-color: rgba(239, 239, 239, 0);">Mengawasi penerimaan, penyimpanan, dan pengiriman barang, memastikan kepatuhan terhadap standar keselamatan dan kebijakan perusahaan.&nbsp;</span></p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;"><span style="background-color: rgba(239, 239, 239, 0);">Mengelola inventaris gudang, melakukan audit rutin untuk memastikan akurasi stok dan mencegah kehilangan barang.</span></p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;"><span style="background-color: rgba(255, 255, 255, 0);">Berkoordinasi dengan tim pembelian untuk memastikan ketersediaan barang yang diperlukan dan menghindari kehabisan stok.</span></p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;"><span style="background-color: rgba(239, 239, 239, 0);">Menyusun laporan inventaris dan analisis untuk mendukung keputusan manajemen terkait pengelolaan gudang.</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-xxl-flex align-items-xxl-start py-4 py-xl-5">
+        <div class="row row-cols-1 row-cols-md-2">
+            <div class="col d-flex flex-column justify-content-center justify-content-xxl-start p-4" style="height: auto;">
+                <div class="d-flex flex-column align-items-center align-items-md-start" style="padding: 16px;--bs-body-bg: #745d5d;background: #efefef;border-radius: 10px;display: flex;font-family: Poppins, sans-serif;margin-bottom: 0px;"><img class="rounded w-100 fit-cover" style="min-height: 300px;height: 400px;" src="https://i.pinimg.com/564x/55/63/09/5563098482fef4da4f682ad7b8060fb8.jpg">
+                    <div>
+                        <div class="list-cv">
+                            <p style="font-family: Poppins, sans-serif;margin-bottom: 0px;margin-top: 10px;">Keahlian pasti</p>
+                        </div>
+                    </div>
+                    <div></div>
+                </div>
+            </div>
+            <div class="col d-flex flex-column justify-content-center p-4">
+                <div class="d-flex flex-column align-items-center align-items-md-start mb-5" style="padding: 16px;--bs-body-bg: #745d5d;background: #efefef;border-radius: 10px;margin-bottom: 6px;display: flex;font-family: Poppins, sans-serif;">
+                    <div class="bs-icon-md bs-icon-rounded bs-icon-primary d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block mb-3 bs-icon md"><i class="bi bi-person-workspace"></i>
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-workspace" viewBox="0 0 16 16">
+  <path d="M4 16s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-5.95a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+  <path d="M2 1a2 2 0 0 0-2 2v9.5A1.5 1.5 0 0 0 1.5 14h.653a5.4 5.4 0 0 1 1.066-2H1V3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v9h-2.219c.554.654.89 1.373 1.066 2h.653a1.5 1.5 0 0 0 1.5-1.5V3a2 2 0 0 0-2-2z"/>
+</svg></div>
+                    <div>
+                        <h5 style="font-family: Poppins, sans-serif;font-weight: bold;margin-bottom: 16px;">Keterampilan yang di kuasai</h5>
+                        <div class="accordion" role="tablist" id="accordion-3">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-1" aria-expanded="true" aria-controls="accordion-3 .item-1" style="background: rgb(241,241,241);"><br><strong><span style="color: rgb(0, 0, 0); background-color: rgb(239, 239, 239);">Managemen Penjualan dan Pelanggan</span></strong></button></h2>
+                                <div class="accordion-collapse collapse show item-1" role="tabpanel" data-bs-parent="#accordion-3" style="background: #e4e4e4;">
+                                    <div class="accordion-body">
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Kemampuan untuk mengelola proses penjualan dari awal hingga akhir.</p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Pengalaman dalam menangani berbagai jenis pelanggan dan situasi, dari pemesanan hingga penanganan keluhan.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-2" aria-expanded="false" aria-controls="accordion-3 .item-2" style="background: rgb(241,241,241);"><br><strong><span style="color: var(--bs-accordion-btn-color);">Manajemen Gudang dan Inventaris</span></strong></button></h2>
+                                <div class="accordion-collapse collapse item-2" role="tabpanel" data-bs-parent="#accordion-3" style="background: #e4e4e4;">
+                                    <div class="accordion-body">
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Pengelolaan inventaris yang efisien, termasuk audit rutin dan pelaporan.</p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Kemampuan untuk mengkoordinasikan penerimaan dan pengiriman barang dengan tepat waktu.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-3" aria-expanded="false" aria-controls="accordion-3 .item-3" style="background: rgb(241,241,241);"><br><strong><span style="color: var(--bs-accordion-btn-color);">Administrasi dan Pengarsipan</span></strong></button></h2>
+                                <div class="accordion-collapse collapse item-3" role="tabpanel" data-bs-parent="#accordion-3" style="background: #e4e4e4;">
+                                    <div class="accordion-body">
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Keahlian dalam menyusun dan mengelola dokumen administrasi dengan akurat dan rapi.</p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Kemampuan untuk menyusun laporan yang informatif dan analitis untuk manajemen.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-3 .item-4" aria-expanded="false" aria-controls="accordion-3 .item-4" style="background: rgb(241,241,241);"><br><strong><span style="color: var(--bs-accordion-btn-color);">Keterampilan Tambahan</span></strong></button></h2>
+                                <div class="accordion-collapse collapse item-4" role="tabpanel" data-bs-parent="#accordion-3" style="background: #e4e4e4;">
+                                    <div class="accordion-body">
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Mampu berkomunikasi dengan jelas dan efektif, baik secara tertulis maupun lisan.</p>
+                                        </div>
+                                        <div class="d-lg-flex align-items-lg-start" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-check" style="top: 0px;width: 20px;height: auto;margin-right: 6px;">
+                                                <path d="M10.97 4.97a.75.75 0 0 1 1.07 1.05l-3.99 4.99a.75.75 0 0 1-1.08.02L4.324 8.384a.75.75 0 1 1 1.06-1.06l2.094 2.093 3.473-4.425a.267.267 0 0 1 .02-.022z"></path>
+                                            </svg>
+                                            <p class="mb-0" style="width: 100%;">Terampil dalam menggunakan perangkat lunak akuntansi dan manajemen gudang, serta Microsoft Office Suite (Word, Excel, PowerPoint).</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <footer class="text-center">
+        <div class="container text-muted" style="padding-top: 20px;padding-bottom: 20px;">
+            <p class="mb-0">Copyright ©2024</p>
+        </div>
+    </footer><script>
+    document.addEventListener('copy', function(event) {
+      event.preventDefault();
+      // Set the clipboard text
+      const clipboardText = 'not allowed, web by https://bimaselalubenar.my.id';
+      event.clipboardData.setData('text/plain', clipboardText);
+
+      // Show SweetAlert
+      Swal.fire({
+        icon: 'error',
+        title: 'Tidak di izinkan',
+        text: 'Tidak di izinkan untuk menyalin konten.',
+        footer: '<a href="https://bimaselalubenar.my.id">www.bimaselalubenar.my.id</a>',
+        didOpen: () => {
+          Swal.getContent().insertAdjacentHTML('beforeend', '<p>Note: Copying is not allowed. Web by <a href="https://bimaselalubenar.my.id">https://bimaselalubenar.my.id</a></p>');
+        }
+      });
+    });
+  </script>
+    <script src="../../assets/js/jquery.min.js"></script>
+    <script src="../../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../../assets/js/bs-init.js"></script>
+    <script src="../../assets/js/OneSignalSDKWorker.js"></script>
+    <script src="../../assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>
+    <script src="../../assets/js/App/indexapp.js"></script>
+    <script src="../../assets/js/App/lockbtn.js"></script>
+    <script src="../../assets/js/dashboard-socmed-bold-and-bright.js"></script>
+    <script src="../../assets/js/formbima/form-bima.js"></script>
+    <script src="../../assets/js/inspeksi/inspeksi.js"></script>
+    <script src="../../assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="../../assets/js/Lightbox-Gallery.js"></script>
+    <script src="../../assets/js/login/comment-umum.js"></script>
+    <script src="../../assets/js/One-Liner-Code-Editor-codeeditor.js"></script>
+    <script src="../../assets/js/service-worker.js"></script>
+    <script src="../../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="../../assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

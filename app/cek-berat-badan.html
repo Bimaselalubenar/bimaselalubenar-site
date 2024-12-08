@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="id">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HHF3VHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+        function copyTextById(id) {
+            // Mendapatkan elemen berdasarkan ID
+            var textElement = document.getElementById(id);
+
+            // Membuat elemen input sementara untuk menyalin teks
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textElement.textContent;
+
+            // Menambahkan elemen input sementara ke body
+            document.body.appendChild(tempInput);
+
+            // Menyorot dan menyalin teks dari elemen input sementara
+            tempInput.select();
+            document.execCommand("copy");
+
+            // Menghapus elemen input sementara setelah menyalin teks
+            document.body.removeChild(tempInput);
+
+            // Memberikan umpan balik menggunakan SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Teks berhasil disalin ke clipboard!',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        // Menangkap kejadian keydown untuk mendeteksi Ctrl + C
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'c') {
+                // Menampilkan SweetAlert ketika Ctrl + C ditekan
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copy Sukses!',
+                    text: 'Text berhasil di salin!',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+
+<!-- app -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- selesai -->
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<!-- onesignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+<!-- selesai -->
+
+<!-- FireBase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGIm8fs-R4WuUMomDnaklskRsXg-82BfA",
+    authDomain: "bimaselalubenar-boostrap.firebaseapp.com",
+    databaseURL: "https://bimaselalubenar-boostrap-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "bimaselalubenar-boostrap",
+    storageBucket: "bimaselalubenar-boostrap.appspot.com",
+    messagingSenderId: "903484306924",
+    appId: "1:903484306924:web:8b0f8344d12a46fb20bcc9",
+    measurementId: "G-KSFJWG3HM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- selesai -->
+
+<!-- Offline -->
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+
+<!-- Selesai -->
+
+
+<!-- 404 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {  
+    // Mendapatkan URL saat ini  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    // Memeriksa apakah halaman saat ini valid  
+    if (!currentPage || currentPage === "404.html") {  
+        return; // Jika halaman adalah 404, tidak perlu melakukan apa-apa  
+    }  
+
+    // Menggunakan fetch untuk memeriksa keberadaan halaman  
+    fetch(currentPage)  
+        .then(response => {  
+            if (!response.ok) {  
+                // Jika halaman tidak ditemukan, arahkan ke halaman 404  
+                window.location.href = "404.html";  
+            }  
+        })  
+        .catch(() => {  
+            // Jika terjadi kesalahan dalam fetch, arahkan ke halaman 404  
+            window.location.href = "404.html";  
+        });  
+});
+</script>
+<!-- Selesai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cek Berat Badan Sekarang! v.1.0</title>
+    <meta name="theme-color" content="#7d7878">
+    <link rel="canonical" href="https://bimaselalubenar.my.id/app/cek-berat-badan.html">
+    <meta property="og:url" content="https://bimaselalubenar.my.id/app/cek-berat-badan.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/App/cek-berat-badan/cek-berat-badan.webp">
+    <meta property="og:title" content="Cek Berat Badan Sekarang! v.1.0">
+    <meta name="description" content="Cek berat badan kamu sekarang! diet.. diet..">
+    <meta property="og:description" content="Cek berat badan kamu sekarang! diet.. diet..">
+    <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/App/cek-berat-badan/cek-berat-badan.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/Good%20Times%20Rg.css">
+    <link rel="stylesheet" href="../assets/css/oblong.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="../assets/css/background.css">
+    <link rel="stylesheet" href="../assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="../assets/css/chat.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/menu-dashboard.css">
+    <link rel="stylesheet" href="../assets/css/One-Liner-Code-Editor.css">
+    <link rel="stylesheet" href="../assets/css/PRE.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HHF3VHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZTM564QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNZTM564QN');
+</script>
+<!-- Selelsai -->
+
+<!-- Google ADS -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account" content="ca-pub-8913081554574910">
+<!-- Selesai -->
+
+<!-- OneSignal 1 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+
+<!-- OneSignal 2 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "7b65d3f2-e57a-4938-a97d-e7e358e2a721",
+    });
+  });
+</script>
+
+<!-- Subscribe YT -->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<!-- Fire Base -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<!-- Selesai -->
+
+
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8913081554574910" data-ad-slot="5303068928"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+</amp-ad>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+</head>
+
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;font-size: 16px;">
+    <div class="d-inline-flex flex-column justify-content-center align-items-center" style="background: rgba(227,218,218,0.75);width: 100%;height: auto;padding-right: 10px;padding-left: 10px;padding-top: 30px;">
+        <div id="input-container" style="width: 100%;max-width: 600px;text-align: center;height: auto;">
+            <div style="text-align: center;background: rgb(197,217,217);" class="b-cekberatbadan">
+                <div style="margin-bottom: 12px;"><img src="../assets/img/App/cek-berat-badan/cek%20bb.webp" style="width: 100%;"><span style="color: var(--bs-emphasis-color);margin-bottom: 0px;">Versi 1.3</span></div>
+                <form id="bmiForm" style="gap: 10px;margin-bottom: 23px;" onsubmit="cekBeratBadan(event)">
+                    <div style="text-align: left;"><label class="form-label" style="font-size: 16px;">Nama</label><input class="form-control" type="text" id="nama" name="nama" placeholder="Nama kamu" required="" style="padding-left: 10px;padding-right: 10px;margin-bottom: 9px;padding-bottom: 5px;padding-top: 5px;border-radius: 0px;background: rgba(255,255,255,0);color: var(--bs-emphasis-color);border-width: 1px;border-bottom-width: 2px;border-bottom-color: rgb(0,0,0);"></div>
+                    <div style="text-align: left;"><label class="form-label" style="font-size: 16px;">Usia</label><input class="form-control" type="number" id="usia" name="usia" placeholder="Usia kamu" required="" style="padding-left: 10px;padding-right: 10px;margin-bottom: 9px;padding-bottom: 5px;padding-top: 5px;border-radius: 0px;background: rgba(255,255,255,0);color: var(--bs-emphasis-color);border-width: 1px;border-bottom-width: 2px;border-bottom-color: rgb(0,0,0);"></div>
+                    <div class="d-flex gap-2" style="margin-bottom: 9px;">
+                        <div style="width: 100%;text-align: left;"><label class="form-label" style="font-size: 16px;">Tinggi badan</label><input class="form-control" type="number" id="tinggi" name="tinggi" placeholder="Tinggi badan" required="" style="padding-left: 10px;padding-right: 10px;padding-bottom: 5px;padding-top: 5px;border-radius: 0px;background: rgba(255,255,255,0);color: var(--bs-emphasis-color);border-width: 1px;border-bottom-width: 2px;border-bottom-color: rgb(0,0,0);"></div>
+                        <div style="width: 100%;text-align: left;"><label class="form-label" style="font-size: 16px;">Jenis kelamin</label><select class="form-select" id="jenisKelamin" name="jenisKelamin" placeholder="Jenis kelamin" required="" style="padding-left: 10px;padding-right: 10px;padding-bottom: 5px;padding-top: 5px;border-radius: 0px;background: rgba(255,255,255,0);color: var(--bs-emphasis-color);border-width: 1px;border-bottom-width: 2px;border-bottom-color: rgb(0,0,0);">
+                                <option value="male">Pria</option>
+                                <option value="female">Wanita</option>
+                            </select></div>
+                    </div>
+                    <div style="text-align: left;"><label class="form-label" style="font-size: 16px;text-align: left;">Berat badan</label><input class="form-control" type="number" id="berat" name="berat" placeholder="Berat badan" required="" style="padding-left: 10px;padding-right: 10px;margin-bottom: 9px;padding-bottom: 5px;padding-top: 5px;border-radius: 0px;text-align: left;background: rgba(255,255,255,0);color: var(--bs-emphasis-color);border-width: 1px;border-bottom-width: 2px;border-bottom-color: rgb(0,0,0);"></div>
+                    <div class="form-check" style="text-align: left;"><input class="form-check-input" type="checkbox" id="formCheck-1" required=""><label class="form-check-label" for="formCheck-1">Menyetujui setelah data terisi ingin melakukan perubahan terhadap pola hidup mu?</label></div>
+                    <div class="form-check" style="text-align: left;"><input class="form-check-input" type="checkbox" id="formCheck-2" required=""><label class="form-check-label" for="formCheck-2">Menyetujui bahwa hasil yang di tampilkan nanti, tidak menyakiti hati kecil anda.</label></div><button class="btn btn-cektinggibadan" type="submit" style="width: 100%;" value="Cek Berat Badan">Lihat hasil&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-square-fill">
+                            <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zm6.5 4.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3a.5.5 0 0 1 1 0"></path>
+                        </svg></button>
+                </form>
+                <div class="justify-content-sm-center align-items-sm-center loading" id="loading"><span>Loading...</span>
+                    <lottie-player id="lottie-animation-1" src="https://ik.imagekit.io/3ij6aly19/bankdata-bimaselalubenar/Loading_ori.json?updatedAt=1719062977344" mode="bounce" loop="" autoplay="" style="height: 16px;width: auto;" speed="3.6"></lottie-player>
+                </div>
+                <div style="height: 2px;background: #ffffff;margin-bottom: 16px;margin-right: 16px;margin-left: 16px;"></div>
+                <div id="result" class="result" style="padding-right: 10px;padding-left: 10px;padding-top: 10px;padding-bottom: 10px;border-radius: 13px;box-shadow: 0px 0px 9px 1px rgba(135,135,135,0.81);margin-bottom: 16px;background: #c5d9d9;">
+                    <div class="row"><strong>Informasi Detail</strong><span style="font-size: 12px;margin-bottom: 16px;"><em>source : www.alodokter.com</em></span></div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: left;padding: 6px;border-bottom: 0px solid rgb(255,255,255);background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;"><span>Nama :&nbsp;</span><span class="text-uppercase" id="outputNama" style="font-style: italic;font-weight: bold;color: #003874;">user</span></div>
+                        </div>
+                        <div class="row" style="gap: 6px;">
+                            <div class="col" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;width: 100%;margin-left: 0px;"><span>Usia :&nbsp;</span><span id="outputUsia" style="font-style: italic;font-weight: bold;color: #003874;">age</span></div>
+                            <div class="col" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;width: 100%;"><span>Tinggi :&nbsp;</span><span id="outputTinggi" style="font-style: italic;font-weight: bold;color: #003874;">Tinggi</span><span style="font-style: italic;">&nbsp;cm</span></div>
+                        </div>
+                        <div class="row" style="gap: 6px;">
+                            <div class="col" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;width: 100%;"><span>Gender :&nbsp;</span><span id="outputJenisKelamin" style="font-style: italic;font-weight: bold;color: rgb(57,56,116);">G</span></div>
+                            <div class="col" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;width: 100%;"><span>Berat badan :&nbsp;</span><span id="outputBerat" style="font-style: italic;font-weight: bold;color: #003874;">berat</span><span style="font-style: italic;">&nbsp;Kg</span></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row" style="gap: 6px;">
+                            <div class="col d-flex flex-column d-block" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;"><span>BMI :&nbsp;</span><span id="outputBMI" style="font-style: italic;font-weight: bold;color: #003874;">B</span></div>
+                            <div class="col d-flex flex-column d-block" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;"><span>Status BB :&nbsp;</span><span id="outputStatus" style="font-style: italic;font-weight: bold;color: #003874;">0<span style="font-style: italic;font-weight: bold;color: #003874;">&nbsp;<span style="font-weight: normal !important;">Kg</span></span></span></div>
+                            <div class="col d-flex flex-column d-block" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;"><span>BB ideal :&nbsp;</span><span id="outputBeratIdeal" style="font-style: italic;font-weight: bold;color: #003874;">Ideal<span style="font-style: italic;">&nbsp;<span style="font-weight: normal !important;">Kg</span></span></span></div>
+                        </div>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;"><span>Perlu menurunkan/menaikan :&nbsp;</span><span id="outputPerubahanBerat" style="font-style: italic;font-weight: bold;color: #003874;">0</span><span style="font-style: italic;">&nbsp;Kg</span></div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;"><span>Estimasi waktu diet :&nbsp;</span><span id="outputEstimasiWaktu" style="font-style: italic;font-weight: bold;color: #003874;">-</span></div>
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;"><span>Kebutuhan kalori harian :&nbsp;</span><span id="outputKalori" style="font-style: italic;font-weight: bold;color: #003874;">-</span><span style="font-style: italic;">&nbsp;Kalori</span></div>
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-right: 16px;padding-left: 16px;"><span>Kebutuhan protein harian :&nbsp;</span><span id="outputProtein" style="font-style: italic;font-weight: bold;color: #003874;">-</span><span style="font-style: italic;">&nbsp;Gram</span></div>
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-left: 12px;padding-right: 12px;"><span>Kebutuhan cairan harian :&nbsp;</span><span id="outputCairan" style="font-style: italic;font-weight: bold;color: #003874;">-</span><span style="font-style: italic;">&nbsp;Milii Liter</span></div>
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-left: 12px;padding-right: 12px;"><span>Kebutuhan lemak harian :&nbsp;</span><span id="outputLemak" style="font-style: italic;font-weight: bold;color: #003874;">-</span><span style="font-style: italic;">&nbsp;Gram</span></div>
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-left: 12px;padding-right: 12px;"><span>Kebutuhan karbohidrat harian :&nbsp;</span><span id="outputKarbo" style="font-style: italic;font-weight: bold;color: #003874;">-</span><span style="font-style: italic;">&nbsp;Gram</span></div>
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-left: 12px;padding-right: 12px;"><span>Rekomendasi makanan :&nbsp;</span><span id="outputRekomendasiMakanan" style="font-style: italic;font-weight: bold;color: #003874;">-</span></div>
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-left: 12px;padding-right: 12px;"><span>Makanan yang harus di hindari :&nbsp;</span><span id="outputMakananHindari" style="font-style: italic;font-weight: bold;color: #003874;">-</span></div>
+                            <div class="col-md-12" style="text-align: left;padding: 6px;background: #fefefe;border-radius: 10px;margin: 0px;margin-bottom: 6px;padding-left: 12px;padding-right: 12px;"><span>Buah yang cocok :&nbsp;</span><span id="outputBuahCocok" style="font-style: italic;font-weight: bold;color: #003874;">-</span></div>
+                        </div>
+                    </div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+<!-- materisocmed -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8913081554574910"
+     data-ad-slot="5303068928"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                </div><label class="form-label" style="color: var(--bs-emphasis-color);">&nbsp; &nbsp;Update?</label>
+                <div class="accordion" role="tablist" id="accordion-1" style="margin-bottom: 16px;">
+                    <div class="accordion-item" style="border-radius: 10px;">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1" name="name" placeholder="Nama kamu" required="" style="padding-left: 15px;padding-right: 15px;padding-top: 10px;padding-bottom: 10px;border-radius: 6px;">Apa yang baru? 1.3</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <div class="text-start scrollbarnone" style="height: 200px;overflow: scroll;overflow-x: hidden;">
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 1.3</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Memperbarui tampilan</p>
+                                    </div>
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 1.2</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Menambahkan rekomendasi makanan<br>2. Menambahkan rekomendasi buah</p>
+                                    </div>
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 1.1</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Menambahkan kebutuhan kalori, protein</p>
+                                    </div>
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 1.0</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Menambahkan fitur informasi detail (perlu menurunkan + menaikan)</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div><label class="form-label" style="color: var(--bs-emphasis-color);font-size: 16px;margin-bottom: 20px;">Support Developer dengan donasi dan jangan lupa komentar, bisa mutualan juga loh ✨</label>
+                <div class="text-center d-flex justify-content-center align-items-center align-content-center justify-content-xl-center" style="margin-bottom: 20px;"><button class="btn text-nowrap btn-outline-warning" type="submit" style="border-radius: 16px;padding-right: 14px;padding-left: 14px;margin-right: 16px;" data-bs-target="#offcanvas-trakter" data-bs-toggle="offcanvas">Donasi&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cash-coin" style="width: 16px;height: 16px;">
+                            <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"></path>
+                            <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"></path>
+                            <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"></path>
+                            <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"></path>
+                        </svg></button><button class="btn text-nowrap btn-outline-warning" data-bs-toggle="offcanvas" data-bss-tooltip="" data-bs-placement="bottom" type="submit" style="border-radius: 16px;padding-right: 14px;padding-left: 14px;" data-bs-target="#offcanvas-komentar" title="Sepertinya developer butuh masukan :)">Komentar&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-dots" style="width: 16px;height: 16px;">
+                            <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                            <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2"></path>
+                        </svg></button></div>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex flex-column" style="bottom: 0px;position: relative;width: 100%;text-align: center;background: rgba(0,0,0,0.87);color: var(--bs-body-bg);margin-bottom: 0px;padding-bottom: 16px;padding-top: 16px;"><span style="font-size: 12px;">Development by <a href="https://www.instagram.com/bimaselalubenar" target="_blank"><span style="color: rgb(255, 245, 0);">@Bimaselalubenar</span></a></span><span style="font-size: 12px;">Made with ❤️ ©️2024</span></div><script src="../assets/js/App/cektubuh.js"></script>
+<script type="text/javascript" src="https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js"></script><script>sbBoW.draw("bimaselalubenar","RG9uYXNp","position-bottom-right","#ff0000","#FFFFFF")</script>
+    <div class="offcanvas offcanvas-start d-flex flex-column justify-content-start align-items-stretch align-content-stretch" tabindex="-1" data-bs-backdrop="false" id="offcanvas-komentar" style="overflow: hidden;height: 100%;">
+        <div class="offcanvas-header" style="height: auto;"><a class="link-body-emphasis d-flex align-items-center me-md-auto mb-3 mb-md-0 text-decoration-none" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-dash" style="font-size: 16px;margin-right: 9px;">
+                    <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"></path>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"></path>
+                </svg><span style="font-size: 16px;">Comment</span></a><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button></div>
+        <div class="offcanvas-body d-flex flex-column p-0 scrollbarnone">
+            <div class="container" style="height: 100%;">
+                <div class="row" style="height: 70%;">
+                    <div class="col-md-12" style="height: 100%;padding-left: 0px;padding-right: 0px;">
+                        <div class="d-flex flex-column justify-content-start align-items-start" id="messages" style="height: 100%;"></div>
+                    </div>
+                </div>
+                <div class="row" style="height: 30%;">
+                    <div class="col-md-12" style="height: auto;padding-left: 0px;padding-right: 0px;">
+                        <form id="komentar" method="post" target="_self">
+                            <div class="text-center gap-2" style="padding-right: 10px;padding-left: 10px;position: static;height: auto;padding-top: 10px;width: 100%;padding-bottom: 10px;"><label class="form-label" style="font-size: 16px;">Tulis komentar kamu</label>
+                                <div class="d-flex flex-row align-items-center align-items-xl-center" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-plus-fill text-light text-bg-primary" name="Akunsocmed" placeholder="Username Threads" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;width: 48px;height: 100%;background: var(--swiper-theme-color);border-top-right-radius: 0px;border-bottom-right-radius: 0px;">
+                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
+                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"></path>
+                                    </svg><input class="form-control" type="text" name="Nama" placeholder="Nama" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-width: 0px;" required=""></div>
+                                <div class="d-flex flex-row align-items-center align-items-xl-center" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-threads text-light text-bg-primary" name="Akunsocmed" placeholder="Username Threads" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;width: 48px;height: 100%;background: var(--swiper-theme-color);border-top-right-radius: 0px;border-bottom-right-radius: 0px;">
+                                        <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161"></path>
+                                    </svg><input class="form-control" type="text" data-bs-toggle="tooltip" data-bss-tooltip="" name="Akunsocmed" placeholder="Username Threads" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-width: 0px;" title="username saja, tidak menggunakan URL" required=""></div>
+                                <div class="d-flex flex-row align-items-center align-items-xl-center" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-left-text text-light text-bg-primary" name="Akunsocmed" placeholder="Username Threads" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;width: 48px;height: 100%;background: var(--swiper-theme-color);border-top-right-radius: 0px;border-bottom-right-radius: 0px;">
+                                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                                        <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"></path>
+                                    </svg><input class="form-control" type="text" name="Komentar" placeholder="Komentar" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-width: 0px;" required=""></div>
+                                <div class="d-flex flex-column d-flex"><label class="form-label" id="status-txt" style="font-size: 13px;color: var(--bs-success);"></label><button class="btn btn-primary link-light text-bg-primary" type="submit" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 6px;padding-bottom: 6px;padding-right: 10px;padding-left: 10px;border-radius: 8px;">Kirim</button></div><label class="form-label" style="font-size: 13px;color: var(--swiper-theme-color);margin-top: 14px;"><span style="color: rgb(0, 0, 0);">Create by</span> @bimaselalubenar</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><script src="../assets/js/login/comment-umum.js"></script>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" data-bs-backdrop="false" id="offcanvas-trakter" style="height: 100vh;">
+        <div class="offcanvas-header"><a class="link-body-emphasis d-flex align-items-center me-md-auto mb-3 mb-md-0 text-decoration-none" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-dash" style="font-size: 16px;margin-right: 9px;">
+                    <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"></path>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"></path>
+                </svg><span style="font-size: 16px;">TOP Donation ❤️</span></a><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button></div>
+        <div class="offcanvas-body d-flex flex-column p-0 scrollbarnone"><label class="form-label text-center gap-2" style="padding-right: 10px;padding-left: 10px;position: static;height: auto;padding-top: 10px;width: 100%;"><span style="color: rgb(68, 68, 68);">Nama mu akan muncul di sini sebagai donatur</span></label>
+            <div class="ratio ratio-16x9" style="height: 100%;"><iframe src="https://sociabuzz.com/pro/tribe/topleaderboard/v2/1908493599"></iframe></div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/lottie-player.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/App/cektubuh.js"></script>
+    <script src="../assets/js/App/indexapp.js"></script>
+    <script src="../assets/js/App/lockbtn.js"></script>
+    <script src="../assets/js/dashboard-socmed-bold-and-bright.js"></script>
+    <script src="../assets/js/formbima/form-bima.js"></script>
+    <script src="../assets/js/inspeksi/inspeksi.js"></script>
+    <script src="../assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="../assets/js/Lightbox-Gallery.js"></script>
+    <script src="../assets/js/login/comment-umum.js"></script>
+    <script src="../assets/js/One-Liner-Code-Editor-codeeditor.js"></script>
+    <script src="../assets/js/service-worker.js"></script>
+    <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="../assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

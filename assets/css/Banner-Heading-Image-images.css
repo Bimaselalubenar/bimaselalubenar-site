@@ -1,0 +1,44 @@
+.fit-cover {
+  object-fit: cover;
+}
+
+p {
+}
+
+.btn-animation {
+  color: var(--bs-gray-200);
+  border-width: 2px;
+  border-color: #ffffff;
+}
+
+.btn-animation:hover {
+  color: var(--bs-black);
+  background: var(--bs-white);
+  transition: ease-in;
+}
+
+.btn-default {
+  background: rgb(255,255,255);
+  color: rgb(0,0,0);
+  transition: ease-in;
+  border-width: 2px;
+  border-color: rgb(169,169,169);
+  padding-top: 5.6px;
+  padding-bottom: 5.6px;
+  padding-right: 20px;
+  padding-left: 20px;
+}
+
+.btn-default:hover {
+  color: #ffffff;
+  background: #3763f4;
+}
+
+#input-container, #loading-container, #result-container {
+  display: none;
+}
+
+#input-container {
+  display: block;
+}
+

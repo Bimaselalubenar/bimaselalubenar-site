@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'oblong';
+	src: url(../../assets/fonts/oblong-8f3faac56726665e6d28147e58448046.woff2) format('woff2'),
+	url(../../assets/fonts/oblong-e47a58d91260326435adee7e1c2e691d.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

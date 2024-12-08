@@ -1,0 +1,8 @@
+@font-face {
+	font-family: 'Good Times Rg';
+	src: url(../../assets/fonts/Good%20Times%20Rg-157192d8c2aa862cb6269b3bc7eeb461.woff2) format('woff2'),
+	url(../../assets/fonts/Good%20Times%20Rg-2999763f8f7ab8a25ddc202d844dd5a4.woff) format('woff');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}

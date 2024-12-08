@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="id">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HHF3VHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+        function copyTextById(id) {
+            // Mendapatkan elemen berdasarkan ID
+            var textElement = document.getElementById(id);
+
+            // Membuat elemen input sementara untuk menyalin teks
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textElement.textContent;
+
+            // Menambahkan elemen input sementara ke body
+            document.body.appendChild(tempInput);
+
+            // Menyorot dan menyalin teks dari elemen input sementara
+            tempInput.select();
+            document.execCommand("copy");
+
+            // Menghapus elemen input sementara setelah menyalin teks
+            document.body.removeChild(tempInput);
+
+            // Memberikan umpan balik menggunakan SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Teks berhasil disalin ke clipboard!',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        // Menangkap kejadian keydown untuk mendeteksi Ctrl + C
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'c') {
+                // Menampilkan SweetAlert ketika Ctrl + C ditekan
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copy Sukses!',
+                    text: 'Text berhasil di salin!',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+
+<!-- app -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- selesai -->
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<!-- onesignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+<!-- selesai -->
+
+<!-- FireBase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGIm8fs-R4WuUMomDnaklskRsXg-82BfA",
+    authDomain: "bimaselalubenar-boostrap.firebaseapp.com",
+    databaseURL: "https://bimaselalubenar-boostrap-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "bimaselalubenar-boostrap",
+    storageBucket: "bimaselalubenar-boostrap.appspot.com",
+    messagingSenderId: "903484306924",
+    appId: "1:903484306924:web:8b0f8344d12a46fb20bcc9",
+    measurementId: "G-KSFJWG3HM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- selesai -->
+
+<!-- Offline -->
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+
+<!-- Selesai -->
+
+
+<!-- 404 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {  
+    // Mendapatkan URL saat ini  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    // Memeriksa apakah halaman saat ini valid  
+    if (!currentPage || currentPage === "404.html") {  
+        return; // Jika halaman adalah 404, tidak perlu melakukan apa-apa  
+    }  
+
+    // Menggunakan fetch untuk memeriksa keberadaan halaman  
+    fetch(currentPage)  
+        .then(response => {  
+            if (!response.ok) {  
+                // Jika halaman tidak ditemukan, arahkan ke halaman 404  
+                window.location.href = "404.html";  
+            }  
+        })  
+        .catch(() => {  
+            // Jika terjadi kesalahan dalam fetch, arahkan ke halaman 404  
+            window.location.href = "404.html";  
+        });  
+});
+</script>
+<!-- Selesai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Tidak ada koneksi internet</title>
+    <meta name="theme-color" content="#7d7878">
+    <link rel="canonical" href="https://bimaselalubenar.my.id/offline.html">
+    <meta property="og:url" content="https://bimaselalubenar.my.id/offline.html">
+    <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Mainweb.webp">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Mainweb.webp">
+    <meta name="twitter:title" content="Tidak ada koneksi internet">
+    <meta property="og:title" content="Tidak ada koneksi internet">
+    <meta name="description" content="Tidak ada koneksi internet">
+    <meta property="og:description" content="Tidak ada koneksi internet">
+    <meta name="twitter:description" content="Tidak ada koneksi internet">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Good%20Times%20Rg.css">
+    <link rel="stylesheet" href="assets/css/oblong.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="assets/css/chat.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/menu-dashboard.css">
+    <link rel="stylesheet" href="assets/css/One-Liner-Code-Editor.css">
+    <link rel="stylesheet" href="assets/css/PRE.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HHF3VHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZTM564QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNZTM564QN');
+</script>
+<!-- Selelsai -->
+
+<!-- Google ADS -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account" content="ca-pub-8913081554574910">
+<!-- Selesai -->
+
+<!-- OneSignal 1 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+
+<!-- OneSignal 2 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "7b65d3f2-e57a-4938-a97d-e7e358e2a721",
+    });
+  });
+</script>
+
+<!-- Subscribe YT -->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<!-- Fire Base -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<!-- Selesai -->
+
+
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8913081554574910" data-ad-slot="5303068928"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+</amp-ad>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
+</head>
+
+<body class="text-center d-flex d-xxl-flex flex-column justify-content-xxl-center scrollbarnone">
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="loadingModalProses" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="z-index: 9999;">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-flex d-lg-flex justify-content-center align-items-center">
+                        <div class="container d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center align-items-lg-center" style="max-width: auto;">
+                            <div class="row d-inline-flex flex-column align-items-lg-center" data-aos="zoom-out-down" data-aos-duration="850" data-aos-once="true" style="width: auto;padding: 20px;border-radius: 16px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.06), inset 0px 0px 20px 0px rgba(45,45,45,0.57);border: 0px ridge rgb(0,122,255);">
+                                <div class="col d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                                    <lottie-player src="assets/js/animated/cyberterrorism.json" mode="normal" speed="1" autoplay="" loop="" style="width: 60px;"></lottie-player>
+                                </div>
+                                <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
+                                    <p style="margin-bottom: 0px;"><strong>Sedang memuat&nbsp;</strong></p><span class="spinner-border spinner-border-sm" role="status" style="color: #2d2d2d;"></span>
+                                </div>
+                                <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
+                                    <p style="margin-bottom: 0px;font-size: 12px;">Demi keamanan website dan data</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Directly manipulate the modal element to make it visible initially
+            const modalElement = document.getElementById('loadingModalProses');
+            modalElement.classList.add('show');
+            modalElement.style.display = 'block';
+            console.log('Modal manually displayed on DOMContentLoaded');
+
+            // Function to manually hide the modal
+            const hideLoadingModal = () => {
+                setTimeout(() => {
+                    modalElement.classList.remove('show');
+                    modalElement.style.display = 'none';
+                    console.log('Modal manually hidden');
+                }, 200);
+            };
+
+            // Check if the page is already fully loaded
+            if (document.readyState === 'complete') {
+                console.log('Page already fully loaded, hiding modal');
+                hideLoadingModal();
+            } else {
+                // Hide the modal when the page is fully loaded
+                window.addEventListener('load', () => {
+                    console.log('Page fully loaded, triggering hide');
+                    hideLoadingModal();
+                });
+            }
+        });
+    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="py-5">
+        <div class="container py-5">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2">Anda Sedang Offline</p>
+                    <h2 class="fw-bold">Cek koneksi internet</h2>
+                    <p class="text-muted">🚫 Tidak ada koneksi internet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/lottie-player.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/OneSignalSDKWorker.js"></script>
+    <script src="assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>
+    <script src="assets/js/App/indexapp.js"></script>
+    <script src="assets/js/App/lockbtn.js"></script>
+    <script src="assets/js/dashboard-socmed-bold-and-bright.js"></script>
+    <script src="assets/js/formbima/form-bima.js"></script>
+    <script src="assets/js/inspeksi/inspeksi.js"></script>
+    <script src="assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="assets/js/Lightbox-Gallery.js"></script>
+    <script src="assets/js/login/comment-umum.js"></script>
+    <script src="assets/js/One-Liner-Code-Editor-codeeditor.js"></script>
+    <script src="assets/js/service-worker.js"></script>
+    <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

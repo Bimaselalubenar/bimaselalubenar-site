@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="id" style="height: 0px;">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HHF3VHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+        function copyTextById(id) {
+            // Mendapatkan elemen berdasarkan ID
+            var textElement = document.getElementById(id);
+
+            // Membuat elemen input sementara untuk menyalin teks
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textElement.textContent;
+
+            // Menambahkan elemen input sementara ke body
+            document.body.appendChild(tempInput);
+
+            // Menyorot dan menyalin teks dari elemen input sementara
+            tempInput.select();
+            document.execCommand("copy");
+
+            // Menghapus elemen input sementara setelah menyalin teks
+            document.body.removeChild(tempInput);
+
+            // Memberikan umpan balik menggunakan SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Teks berhasil disalin ke clipboard!',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        // Menangkap kejadian keydown untuk mendeteksi Ctrl + C
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'c') {
+                // Menampilkan SweetAlert ketika Ctrl + C ditekan
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copy Sukses!',
+                    text: 'Text berhasil di salin!',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+
+<!-- app -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- selesai -->
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<!-- onesignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+<!-- selesai -->
+
+<!-- FireBase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGIm8fs-R4WuUMomDnaklskRsXg-82BfA",
+    authDomain: "bimaselalubenar-boostrap.firebaseapp.com",
+    databaseURL: "https://bimaselalubenar-boostrap-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "bimaselalubenar-boostrap",
+    storageBucket: "bimaselalubenar-boostrap.appspot.com",
+    messagingSenderId: "903484306924",
+    appId: "1:903484306924:web:8b0f8344d12a46fb20bcc9",
+    measurementId: "G-KSFJWG3HM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- selesai -->
+
+<!-- Offline -->
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+
+<!-- Selesai -->
+
+
+<!-- 404 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {  
+    // Mendapatkan URL saat ini  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    // Memeriksa apakah halaman saat ini valid  
+    if (!currentPage || currentPage === "404.html") {  
+        return; // Jika halaman adalah 404, tidak perlu melakukan apa-apa  
+    }  
+
+    // Menggunakan fetch untuk memeriksa keberadaan halaman  
+    fetch(currentPage)  
+        .then(response => {  
+            if (!response.ok) {  
+                // Jika halaman tidak ditemukan, arahkan ke halaman 404  
+                window.location.href = "404.html";  
+            }  
+        })  
+        .catch(() => {  
+            // Jika terjadi kesalahan dalam fetch, arahkan ke halaman 404  
+            window.location.href = "404.html";  
+        });  
+});
+</script>
+<!-- Selesai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Login Dashboard</title>
+    <meta name="theme-color" content="#7d7878">
+    <link rel="canonical" href="https://bimaselalubenar.my.id/materisocmed/daftar.html">
+    <meta property="og:url" content="https://bimaselalubenar.my.id/materisocmed/daftar.html">
+    <meta property="og:title" content="Bimaselalubenar">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Login.webp">
+    <meta property="og:description" content="Login untuk akses materi socmed MPM Motor">
+    <meta name="description" content="Login dashboard MPM Motor">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Login.webp">
+    <meta name="twitter:title" content="Login Dashboard">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/Good%20Times%20Rg.css">
+    <link rel="stylesheet" href="../assets/css/oblong.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="../assets/css/aos.min.css">
+    <link rel="stylesheet" href="../assets/css/background.css">
+    <link rel="stylesheet" href="../assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="../assets/css/chat.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/menu-dashboard.css">
+    <link rel="stylesheet" href="../assets/css/One-Liner-Code-Editor.css">
+    <link rel="stylesheet" href="../assets/css/PRE.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HHF3VHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZTM564QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNZTM564QN');
+</script>
+<!-- Selelsai -->
+
+<!-- Google ADS -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account" content="ca-pub-8913081554574910">
+<!-- Selesai -->
+
+<!-- OneSignal 1 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+
+<!-- OneSignal 2 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "7b65d3f2-e57a-4938-a97d-e7e358e2a721",
+    });
+  });
+</script>
+
+<!-- Subscribe YT -->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<!-- Fire Base -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<!-- Selesai -->
+
+
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8913081554574910" data-ad-slot="5303068928"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+</amp-ad>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
+</head>
+
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;background: rgb(230,230,230);">
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="loadingModalProses" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="z-index: 9999;">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-flex d-lg-flex justify-content-center align-items-center">
+                        <div class="container d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center align-items-lg-center" style="max-width: auto;">
+                            <div class="row d-inline-flex flex-column align-items-lg-center" data-aos="zoom-out-down" data-aos-duration="850" data-aos-once="true" style="width: auto;padding: 20px;border-radius: 16px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.06), inset 0px 0px 20px 0px rgba(45,45,45,0.57);border: 0px ridge rgb(0,122,255);">
+                                <div class="col d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                                    <lottie-player src="../assets/js/animated/cyberterrorism.json" mode="normal" speed="1" autoplay="" loop="" style="width: 60px;"></lottie-player>
+                                </div>
+                                <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
+                                    <p style="margin-bottom: 0px;"><strong>Sedang memuat&nbsp;</strong></p><span class="spinner-border spinner-border-sm" role="status" style="color: #2d2d2d;"></span>
+                                </div>
+                                <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
+                                    <p style="margin-bottom: 0px;font-size: 12px;">Demi keamanan website dan data</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Directly manipulate the modal element to make it visible initially
+            const modalElement = document.getElementById('loadingModalProses');
+            modalElement.classList.add('show');
+            modalElement.style.display = 'block';
+            console.log('Modal manually displayed on DOMContentLoaded');
+
+            // Function to manually hide the modal
+            const hideLoadingModal = () => {
+                setTimeout(() => {
+                    modalElement.classList.remove('show');
+                    modalElement.style.display = 'none';
+                    console.log('Modal manually hidden');
+                }, 200);
+            };
+
+            // Check if the page is already fully loaded
+            if (document.readyState === 'complete') {
+                console.log('Page already fully loaded, hiding modal');
+                hideLoadingModal();
+            } else {
+                // Hide the modal when the page is fully loaded
+                window.addEventListener('load', () => {
+                    console.log('Page fully loaded, triggering hide');
+                    hideLoadingModal();
+                });
+            }
+        });
+    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <section class="scrollbarnone" style="width: 100%;height: 100vh;background: #ef6f26;overflow: hidden;overflow-y: scroll;">
+        <div class="container" style="padding-top: 20px;padding-bottom: 60px;">
+            <div class="row" style="margin-bottom: 16px;">
+                <div class="col-md-12 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center">
+                    <div style="width: 100%;max-width: 660px;padding: 16px;border-radius: 16px;background: rgb(247,247,247);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);border: 3px solid rgba(255,255,255,0.54);border-right-style: solid;height: auto;" class="align-items-center flex-column justify-content-center d-flex"><img src="../assets/img/Page/qrmpmmotor/image1.webp" style="width: 100%;border-radius: 10px;"></div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center justify-content-xl-center justify-content-xxl-center">
+                    <div class="shadow d-xxl-flex justify-content-xxl-center align-items-xxl-center align-items-center flex-column justify-content-center d-flex" style="width: 100%;max-width: 660px;padding: 16px;border-radius: 16px;background: rgb(247,247,247);backdrop-filter: blur(10px);-webkit-backdrop-filter: blur(10px);border: 3px solid rgba(255,255,255,0.54);border-right-style: solid;"><img src="../assets/img/Logo/logo-mpm-favicon.webp" width="80" height="80" style="margin-bottom: 16px;">
+                        <p class="d-xxl-flex justify-content-xxl-center align-items-xxl-center" style="margin-bottom: 8px;color: var(--bs-emphasis-color);">Daftar account</p>
+                        <form id="daftarDulu" class="p-3 p-xl-4" data-bs-theme="light" style="height: auto;width: 100%;" target="_self" method="post">
+                            <div class="mb-3"><input class="form-control" type="text" id="nama" name="nama" placeholder="Nama" required=""></div>
+                            <div class="mb-3"><input class="form-control" type="email" id="email" name="email" placeholder="Email" required=""></div>
+                            <div class="mb-3"><input class="form-control" type="text" id="password" name="password" placeholder="Password" required=""></div>
+                            <div class="mb-3"><input class="form-control" type="text" id="kota" name="kota" placeholder="Asal Kota" required=""></div>
+                            <div class="mb-3"><select class="form-select d-lg-flex" id="jabatan" required="" name="jabatan">
+                                    <option value="SALES ONLINE">SALES ONLINE</option>
+                                    <option value="PDCA">PDCA</option>
+                                    <option value="KACAB">KACAB</option>
+                                    <option value="Pengunjung">Pengunjung</option>
+                                </select></div>
+                            <div class="mb-3"><select class="form-select d-lg-flex" id="cabang" required="" name="cabang">
+                                    <option value="MPM MOTOR SIMPANG">MPM MOTOR SIMPANG</option>
+                                    <option value="MPM MOTOR NGAGEL">MPM MOTOR NGAGEL</option>
+                                    <option value="MPM MOTOR MASTRIP">MPM MOTOR MASTRIP</option>
+                                    <option value="MPM MOTOR GATEWAY">MPM MOTOR GATEWAY</option>
+                                    <option value="MPM MOTOR LARANGAN">MPM MOTOR LARANGAN</option>
+                                    <option value="MPM MOTOR GRESIK">MPM MOTOR GRESIK</option>
+                                    <option value="MPM MOTOR TUBAN">MPM MOTOR TUBAN</option>
+                                    <option value="MPM MOTOR BABAT">MPM MOTOR BABAT</option>
+                                    <option value="MPM MOTOR PEKANBARU">MPM MOTOR PEKANBARU</option>
+                                    <option value="MPM MOTOR PRABUMULIH">MPM MOTOR PRABUMULIH</option>
+                                    <option value="MPM MOTOR MEDAN">MPM MOTOR MEDAN</option>
+                                    <option value="MPM MOTOR PARE">MPM MOTOR PARE</option>
+                                    <option value="MPM MOTOR TULUNGAGUNG">MPM MOTOR TULUNGAGUNG</option>
+                                    <option value="MPM MOTOR MADIUN">MPM MOTOR MADIUN</option>
+                                    <option value="MPM MOTOR PONOROGO">MPM MOTOR PONOROGO</option>
+                                    <option value="MPM MOTOR NGANJUK">MPM MOTOR NGANJUK</option>
+                                    <option value="MPM MOTOR NGAWI">MPM MOTOR NGAWI</option>
+                                    <option value="MPM MOTOR BASRA">MPM MOTOR BASRA</option>
+                                    <option value="MPM MOTOR SUKUN">MPM MOTOR SUKUN</option>
+                                    <option value="MPM MOTOR KEPANJEN">MPM MOTOR KEPANJEN</option>
+                                    <option value="MPM MOTOR BLITAR">MPM MOTOR BLITAR</option>
+                                    <option value="MPM MOTOR BOGOR">MPM MOTOR BOGOR</option>
+                                    <option value="MPM MOTOR TANGERANG">MPM MOTOR TANGERANG</option>
+                                    <option value="MPM MOTOR JEMBER DIPONEGORO">MPM MOTOR JEMBER DIPONEGORO</option>
+                                    <option value="MPM MOTOR JEMBER KEBONSARI">MPM MOTOR JEMBER KEBONSARI</option>
+                                    <option value="MPM MOTOR BANYUWANGI">MPM MOTOR BANYUWANGI</option>
+                                    <option value="MPM MOTOR BONDOWOSO">MPM MOTOR BONDOWOSO</option>
+                                    <option value="MPM MOTOR PASURUAN">MPM MOTOR PASURUAN</option>
+                                    <option value="MPM MOTOR SUKOREJO">MPM MOTOR SUKOREJO</option>
+                                    <option value="MPM MOTORJOMBANG">MPM MOTORJOMBANG</option>
+                                    <option value="MPM MOTOR MOJOKERTO">MPM MOTOR MOJOKERTO</option>
+                                    <option value="MPM MOTOR PONTIANAK">MPM MOTOR PONTIANAK</option>
+                                    <option value="MPM MOTOR MAKASSAR">MPM MOTOR MAKASSAR</option>
+                                    <option value="MPM MOTOR KUPANG">MPM MOTOR KUPANG</option>
+                                    <option value="MPM MOTOR LOTIM">MPM MOTOR LOTIM</option>
+                                    <option value="MPM MOTOR MATARAM">MPM MOTOR MATARAM</option>
+                                    <option value="MPM MOTOR PALU">MPM MOTOR PALU</option>
+                                    <option value="MPM MOTOR KEDIRI">MPM MOTOR KEDIRI</option>
+                                    <option value="MPM MOTOR BATAM">MPM MOTOR BATAM</option>
+                                    <option value="MPM MOTOR BOJONEGORO">MPM MOTOR BOJONEGORO</option>
+                                    <option value="Lainnya">Lainnya</option>
+                                </select></div><strong class="d-lg-flex d-xxl-flex justify-content-lg-center justify-content-xxl-center" id="status-txt" style="margin-bottom: 16px;padding: 6px;"></strong>
+                            <div><button class="btn btn-primary shadow d-block w-100" type="submit">Daftar</button></div><script src="../assets/js/formbima/daftar.js"></script>
+                        </form>
+                        <p style="margin-bottom: 8px;color: var(--bs-emphasis-color);">Sudah pernah masuk?&nbsp;&nbsp;<a class="btn btn-primary" role="button" style="padding: 3px;padding-right: 10px;padding-bottom: 3px;border-radius: 11px;padding-left: 10px;padding-top: 3px;" href="dashboard.html"><span style="font-weight: normal !important;">Masuk</span></a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section><script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+      document.addEventListener('contextmenu', function(event) {
+          event.preventDefault();
+      });
+  </script>
+  
+  <script>
+    document.addEventListener('keydown', function(event) {
+        // Disable F12
+        if (event.keyCode == 123) {
+            event.preventDefault();
+        }
+        // Disable Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+            event.preventDefault();
+        }
+        // Disable Ctrl+Shift+J
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+            event.preventDefault();
+        }
+        // Disable Ctrl+U
+        if (event.ctrlKey && event.keyCode == 85) {
+            event.preventDefault();
+        }
+    });
+</script>
+
+<script>
+  function detectDevTools() {
+      const element = new Image();
+      Object.defineProperty(element, 'id', {
+          get: function () {
+              window.location.href = 'w-w';
+          }
+      });
+      console.log(element);
+  }
+
+  setInterval(detectDevTools, 1000);
+</script><script>
+              const words = ['MASUK ATAU DAFTAR', 'ATAU BUAT AKUN'];
+              let index = 0;
+              let letterIndex = 0;
+              let isDeleting = false;
+              let typingText = '';
+
+              function type() {
+                  const currentWord = words[index % words.length];
+                  if (isDeleting) {
+                      typingText = currentWord.substring(0, letterIndex - 1);
+                      letterIndex--;
+                  } else {
+                      typingText = currentWord.substring(0, letterIndex + 1);
+                      letterIndex++;
+                  }
+
+                  document.getElementById('typing').textContent = typingText;
+
+                  let typingSpeed = 100;
+                  if (isDeleting) {
+                      typingSpeed /= 2;
+                  }
+
+                  if (!isDeleting && typingText === currentWord) {
+                      isDeleting = true;
+                      typingSpeed = 800;
+                  } else if (isDeleting && typingText === '') {
+                      isDeleting = false;
+                      index++;
+                      typingSpeed = 200;
+                  }
+
+                  setTimeout(type, typingSpeed);
+              }
+
+              type();
+            </script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/aos.min.js"></script>
+    <script src="../assets/js/lottie-player.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/App/indexapp.js"></script>
+    <script src="../assets/js/App/lockbtn.js"></script>
+    <script src="../assets/js/dashboard-socmed-bold-and-bright.js"></script>
+    <script src="../assets/js/formbima/berlangganan.js"></script>
+    <script src="../assets/js/formbima/daftar.js"></script>
+    <script src="../assets/js/formbima/form-bima.js"></script>
+    <script src="../assets/js/inspeksi/inspeksi.js"></script>
+    <script src="../assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="../assets/js/Lightbox-Gallery.js"></script>
+    <script src="../assets/js/login/comment-umum.js"></script>
+    <script src="../assets/js/login/comment.js"></script>
+    <script src="../assets/js/login/login.js"></script>
+    <script src="../assets/js/One-Liner-Code-Editor-codeeditor.js"></script>
+    <script src="../assets/js/service-worker.js"></script>
+    <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="../assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

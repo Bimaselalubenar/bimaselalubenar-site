@@ -1,0 +1,1192 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="id">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HHF3VHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+        function copyTextById(id) {
+            // Mendapatkan elemen berdasarkan ID
+            var textElement = document.getElementById(id);
+
+            // Membuat elemen input sementara untuk menyalin teks
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textElement.textContent;
+
+            // Menambahkan elemen input sementara ke body
+            document.body.appendChild(tempInput);
+
+            // Menyorot dan menyalin teks dari elemen input sementara
+            tempInput.select();
+            document.execCommand("copy");
+
+            // Menghapus elemen input sementara setelah menyalin teks
+            document.body.removeChild(tempInput);
+
+            // Memberikan umpan balik menggunakan SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Teks berhasil disalin ke clipboard!',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        // Menangkap kejadian keydown untuk mendeteksi Ctrl + C
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'c') {
+                // Menampilkan SweetAlert ketika Ctrl + C ditekan
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copy Sukses!',
+                    text: 'Text berhasil di salin!',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+
+<!-- app -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- selesai -->
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<!-- onesignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+<!-- selesai -->
+
+<!-- FireBase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGIm8fs-R4WuUMomDnaklskRsXg-82BfA",
+    authDomain: "bimaselalubenar-boostrap.firebaseapp.com",
+    databaseURL: "https://bimaselalubenar-boostrap-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "bimaselalubenar-boostrap",
+    storageBucket: "bimaselalubenar-boostrap.appspot.com",
+    messagingSenderId: "903484306924",
+    appId: "1:903484306924:web:8b0f8344d12a46fb20bcc9",
+    measurementId: "G-KSFJWG3HM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- selesai -->
+
+<!-- Offline -->
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+
+<!-- Selesai -->
+
+
+<!-- 404 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {  
+    // Mendapatkan URL saat ini  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    // Memeriksa apakah halaman saat ini valid  
+    if (!currentPage || currentPage === "404.html") {  
+        return; // Jika halaman adalah 404, tidak perlu melakukan apa-apa  
+    }  
+
+    // Menggunakan fetch untuk memeriksa keberadaan halaman  
+    fetch(currentPage)  
+        .then(response => {  
+            if (!response.ok) {  
+                // Jika halaman tidak ditemukan, arahkan ke halaman 404  
+                window.location.href = "404.html";  
+            }  
+        })  
+        .catch(() => {  
+            // Jika terjadi kesalahan dalam fetch, arahkan ke halaman 404  
+            window.location.href = "404.html";  
+        });  
+});
+</script>
+<!-- Selesai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bimaselalubenar</title>
+    <meta name="theme-color" content="#7d7878">
+    <link rel="canonical" href="https://bimaselalubenar.my.id/">
+    <meta property="og:url" content="https://bimaselalubenar.my.id/">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:description" content="Saya Fullstack developer dengan pengalaman dalam mengembangkan aplikasi web dari sisi frontend hingga backend.">
+    <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Mainweb.webp">
+    <meta property="og:title" content="Bimaselalubenar">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Mainweb.webp">
+    <meta name="description" content="Saya Fullstack developer dengan pengalaman dalam mengembangkan aplikasi web dari sisi frontend hingga backend.">
+    <script type="application/ld+json">
+        {
+            "@context": "http://schema.org",
+            "@type": "WebSite",
+            "name": "Bimaselalubenar",
+            "url": "https://bimaselalubenar.my.id"
+        }
+    </script>
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="assets/img/Logo/logo2.webp">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/Good%20Times%20Rg.css">
+    <link rel="stylesheet" href="assets/css/oblong.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="assets/css/aos.min.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/background.css">
+    <link rel="stylesheet" href="assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="assets/css/chat.css">
+    <link rel="stylesheet" href="assets/css/dashboard.css">
+    <link rel="stylesheet" href="assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="assets/css/menu-dashboard.css">
+    <link rel="stylesheet" href="assets/css/One-Liner-Code-Editor.css">
+    <link rel="stylesheet" href="assets/css/PRE.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="assets/css/Simple-Slider.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HHF3VHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZTM564QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNZTM564QN');
+</script>
+<!-- Selelsai -->
+
+<!-- Google ADS -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account" content="ca-pub-8913081554574910">
+<!-- Selesai -->
+
+<!-- OneSignal 1 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+
+<!-- OneSignal 2 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "7b65d3f2-e57a-4938-a97d-e7e358e2a721",
+    });
+  });
+</script>
+
+<!-- Subscribe YT -->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<!-- Fire Base -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<!-- Selesai -->
+
+
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8913081554574910" data-ad-slot="5303068928"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+</amp-ad>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
+</head>
+
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;">
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="loadingModalProses" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="z-index: 9999;">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-flex d-lg-flex justify-content-center align-items-center">
+                        <div class="container d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center align-items-lg-center" style="max-width: auto;">
+                            <div class="row d-inline-flex flex-column align-items-lg-center" data-aos="zoom-out-down" data-aos-duration="850" data-aos-once="true" style="width: auto;padding: 20px;border-radius: 16px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.06), inset 0px 0px 20px 0px rgba(45,45,45,0.57);border: 0px ridge rgb(0,122,255);">
+                                <div class="col d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                                    <lottie-player src="assets/js/animated/cyberterrorism.json" mode="normal" speed="1" autoplay="" loop="" style="width: 60px;"></lottie-player>
+                                </div>
+                                <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
+                                    <p style="margin-bottom: 0px;"><strong>Sedang memuat&nbsp;</strong></p><span class="spinner-border spinner-border-sm" role="status" style="color: #2d2d2d;"></span>
+                                </div>
+                                <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
+                                    <p style="margin-bottom: 0px;font-size: 12px;">Demi keamanan website dan data</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Directly manipulate the modal element to make it visible initially
+            const modalElement = document.getElementById('loadingModalProses');
+            modalElement.classList.add('show');
+            modalElement.style.display = 'block';
+            console.log('Modal manually displayed on DOMContentLoaded');
+
+            // Function to manually hide the modal
+            const hideLoadingModal = () => {
+                setTimeout(() => {
+                    modalElement.classList.remove('show');
+                    modalElement.style.display = 'none';
+                    console.log('Modal manually hidden');
+                }, 200);
+            };
+
+            // Check if the page is already fully loaded
+            if (document.readyState === 'complete') {
+                console.log('Page already fully loaded, hiding modal');
+                hideLoadingModal();
+            } else {
+                // Hide the modal when the page is fully loaded
+                window.addEventListener('load', () => {
+                    console.log('Page fully loaded, triggering hide');
+                    hideLoadingModal();
+                });
+            }
+        });
+    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-md sticky-top navbar-shrink py-3" id="mainNav" style="box-shadow: 0px 10px 20px rgba(45,45,45,0.07);">
+        <div class="container"><a class="navbar-brand d-flex align-items-center" href="../index.html"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center me-2 bs-icon" style="background: #00000000;width: auto;height: auto;border-radius: 5px;padding: 5px;"><img src="assets/img/Logo/logo2.webp" width="38" height="30"></span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Profil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Tentang.html">Tentang</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Keahlian.html">Keahlian</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../Kontak.html">Kontak</a></li>
+                    <li class="nav-item dropdown"><a class="dropdown-toggle nav-link" aria-expanded="false" data-bs-toggle="dropdown" href="#" data-toggle="dropdown">Lainnya&nbsp;&nbsp;</a>
+                        <div class="dropdown-menu" style="margin-bottom: 10px;margin-top: 10px;padding: 0px;width: auto;"><a class="dropdown-item" href="../web-service.html" style="background: rgba(25,90,220,0);color: rgb(105,105,105);width: auto;margin-bottom: 7px;padding-top: 10px;padding-bottom: 10px;">Web Service</a><a class="dropdown-item" href="../materisocmed/dashboard.html" style="background: rgba(25,90,220,0);color: rgb(105,105,105);width: auto;margin-bottom: 7px;padding-top: 10px;padding-bottom: 10px;">MPM Motor</a><a class="dropdown-item" style="background: rgba(25,90,220,0);color: rgb(105,105,105);width: auto;margin-bottom: 7px;padding-top: 10px;padding-bottom: 10px;" href="penaku/index.html">Penaku</a><a class="dropdown-item" href="artikel/index.html" style="background: rgba(25,90,220,0);color: rgb(105,105,105);width: auto;margin-bottom: 7px;padding-top: 10px;padding-bottom: 10px;">Artikel</a></div>
+                    </li>
+                </ul>
+                <div></div><a class="btn btn-primary shadow" role="button" style="padding: 10.6px 20px;padding-top: 6px;padding-bottom: 6px;padding-right: 16px;padding-left: 16px;border-radius: 25px;" data-target="#srch" data-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search" style="font-size: 21px;margin: 0;margin-right: 6px;">
+                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                    </svg>Cari</a>
+            </div>
+        </div>
+    </nav>
+    <header class="bg-primary-gradient">
+        <div class="container pt-4 pt-xl-5">
+            <div class="row pt-5" style="font-family: Poppins, sans-serif;">
+                <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto" style="height: auto;">
+                    <div class="text-center flex-wrap" style="height: auto;">
+                        <h1>Halo! Saya <strong>Bima</strong></h1>
+                        <p class="mb-2" style="height: auto;font-family: Poppins, sans-serif;">Menyukai kode kode &lt;/&gt; rumit yang ingin saya pecahkan.</p>
+                        <div style="display: inline-flex;position: static;transform: translate(0px);">
+                            <p class="fw-bold text-success mb-2" id="typing" style="height: 24.6px;">Random Text</p>
+                            <p class="fw-bold text-success flash animated infinite mb-2" style="height: 24.6px;">|</p><script>
+              const words = ['Web Dev', 'Web Design', '3D Artis', 'FrontEnd Dev', 'FullStack Dev'];
+              let index = 0;
+              let letterIndex = 0;
+              let isDeleting = false;
+              let typingText = '';
+
+              function type() {
+                  const currentWord = words[index % words.length];
+                  if (isDeleting) {
+                      typingText = currentWord.substring(0, letterIndex - 1);
+                      letterIndex--;
+                  } else {
+                      typingText = currentWord.substring(0, letterIndex + 1);
+                      letterIndex++;
+                  }
+
+                  document.getElementById('typing').textContent = typingText;
+
+                  let typingSpeed = 100;
+                  if (isDeleting) {
+                      typingSpeed /= 2;
+                  }
+
+                  if (!isDeleting && typingText === currentWord) {
+                      isDeleting = true;
+                      typingSpeed = 800;
+                  } else if (isDeleting && typingText === '') {
+                      isDeleting = false;
+                      index++;
+                      typingSpeed = 200;
+                  }
+
+                  setTimeout(type, typingSpeed);
+              }
+
+              type();
+            </script>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-10 mx-auto">
+                    <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;">
+                        <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"><img class="img-fluid shadow" data-bss-parallax="" data-bss-parallax-speed="0.8" src="assets/img/Page/Profile/1.webp" style="border-radius: 30px;"></div>
+                        <div style="position: relative;flex: 0 0 45%;transform: translate3d(-5%, 20%, 0);border-radius: 30px;overflow: hidden;"><img class="img-fluid shadow" data-bss-parallax="" data-bss-parallax-speed="0.4" style="border-radius: 30px;" src="assets/img/Page/Profile/3.webp"></div>
+                        <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);border-radius: 30px;"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.25" src="assets/img/Page/Profile/2.webp" style="border-radius: 30px;"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section class="py-5">
+        <div class="container text-center py-5">
+            <p class="mb-4" style="font-size: 1.6rem;">Pernah mengerjakan project&nbsp;<span class="text-dark bg-success-subtle bg-success-light p-1 counter" id="projectCounter1" style="font-weight: bold;" data-end-value="7" data-duration="3000"><strong>0</strong></span><span class="text-dark bg-success-subtle bg-success-light p-1"><strong>+</strong></span>&nbsp;secara individu. dan project team&nbsp;<span class="text-dark bg-success-subtle bg-success-light p-1 counter" id="projectCounter2" style="font-weight: bold;" data-end-value="39" data-duration="3000"><strong>0</strong></span><span class="text-dark bg-success-subtle bg-success-light p-1"><strong>+</strong></span>&nbsp;dari total project yang pernah saya terima dan kerjakan. dengan total&nbsp;<span class="text-dark bg-success-subtle bg-success-light p-1 counter" id="projectCounter3" style="font-weight: bold;" data-end-value="46" data-duration="4000"><strong>0</strong></span><span class="text-dark bg-success-subtle bg-success-light p-1"><strong>+</strong></span><script>
+    function animateCounter(id, start, end, duration) {
+        let obj = document.getElementById(id);
+        let range = end - start;
+        let stepTime = Math.abs(Math.floor(duration / range));
+        let startTime = new Date().getTime();
+        let endTime = startTime + duration;
+        let timer;
+
+        function run() {
+            let now = new Date().getTime();
+            let remaining = Math.max((endTime - now) / duration, 0);
+            let value = Math.round(end - (remaining * range));
+            obj.innerHTML = value;
+            if (value === end) {
+                clearInterval(timer);
+            }
+        }
+
+        timer = setInterval(run, stepTime);
+        run();
+    }
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                if (!entry.target.classList.contains('animated')) {
+                    let endValue = parseInt(entry.target.getAttribute('data-end-value'));
+                    let duration = parseInt(entry.target.getAttribute('data-duration'));
+                    animateCounter(entry.target.id, 0, endValue, duration);
+                    entry.target.classList.add('animated');
+                }
+            }
+        });
+    }
+
+    let options = {
+        threshold: 0.5 // Adjust this threshold value as needed
+    };
+
+    let observer = new IntersectionObserver(handleIntersection, options);
+
+    document.querySelectorAll('.counter').forEach(counter => {
+        observer.observe(counter);
+    });
+</script></p><a href="https://livingleafstudio.com/"> <img class="m-3" src="assets/img/startup/Logo-edusupe-3.png" style="height: 60px;width: auto;backdrop-filter: opacity(1) invert(0%) saturate(0%);-webkit-backdrop-filter: opacity(1) invert(0%) saturate(0%);transition: none;filter: brightness(100%) grayscale(100%) saturate(0%);padding: 0px;" width="100" height="40"></a>
+        </div>
+    </section>
+    <section>
+        <div><amp-ad width="100vw" height="320"
+     type="adsense"
+     data-ad-client="ca-pub-8913081554574910"
+     data-ad-slot="5303068928"
+     data-auto-format="rspv"
+     data-full-width="">
+  <div overflow=""></div>
+</amp-ad></div>
+    </section>
+    <section>
+        <div class="container bg-primary-gradient py-5">
+            <div class="row">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2">Layanan saya</p>
+                    <h3 class="fw-bold">Apa yang dapat saya lakukan untuk anda</h3>
+                </div>
+            </div>
+            <div class="py-5 p-lg-5">
+                <div class="row row-cols-1 row-cols-md-2 mx-auto" style="max-width: 900px;">
+                    <div class="col-xxl-6 mb-5">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;border-radius: 50%;box-shadow: 0px 0px 16px 2px rgb(228,228,228);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-brush text-success">
+                                        <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                        <path d="M3 21v-4a4 4 0 1 1 4 4h-4"></path>
+                                        <path d="M21 3a16 16 0 0 0 -12.8 10.2"></path>
+                                        <path d="M21 3a16 16 0 0 1 -10.2 12.8"></path>
+                                        <path d="M10.6 9a9 9 0 0 1 4.4 4.4"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title" style="margin-top: 46px;">Pengembangan Website</h5>
+                                <p class="text-muted card-text mb-4" style="display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;">Kami menawarkan layanan pengembangan website kustom yang sesuai dengan kebutuhan bisnis Anda. Mulai dari desain hingga implementasi.</p><a class="btn btn-default" role="button">Baca artikel &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-5 bet">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;border-radius: 50%;box-shadow: 0px 0px 16px 2px rgb(228,228,228);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search text-success">
+                                        <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title" style="margin-top: 46px;">Optimasi SEO</h5>
+                                <p class="text-muted card-text mb-4" style="display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;">Meningkatkan visibilitas website Anda di mesin pencari dengan layanan optimasi SEO kami. Kami akan membantu Anda mendapatkan peringkat yang lebih baik.</p><a class="btn btn-default" role="button">Baca artikel &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;border-radius: 50%;box-shadow: 0px 0px 16px 2px rgb(228,228,228);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cart3 text-success">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .49.598l-1 5a.5.5 0 0 1-.465.401l-9.397.472L4.415 11H13a.5.5 0 0 1 0 1H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l.84 4.479 9.144-.459L13.89 4H3.102zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title" style="margin-top: 46px;">Pengembangan E-commerce</h5>
+                                <p class="text-muted card-text mb-4" style="display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;">Jadikan bisnis online Anda sukses dengan layanan pengembangan e-commerce kami. Kami akan membangun toko online yang aman, mudah digunakan, dan menarik bagi pelanggan Anda.</p><a class="btn btn-default" role="button">Baca artikel &gt;</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="card shadow-sm">
+                            <div class="card-body px-4 py-5 px-md-5">
+                                <div class="bs-icon-lg d-flex justify-content-center align-items-center mb-3 bs-icon" style="top: 1rem;right: 1rem;position: absolute;border-radius: 50%;box-shadow: 0px 0px 16px 2px rgb(228,228,228);"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-raised-hand text-success">
+                                        <path d="M6 6.207v9.043a.75.75 0 0 0 1.5 0V10.5a.5.5 0 0 1 1 0v4.75a.75.75 0 0 0 1.5 0v-8.5a.25.25 0 1 1 .5 0v2.5a.75.75 0 0 0 1.5 0V6.5a3 3 0 0 0-3-3H6.236a.998.998 0 0 1-.447-.106l-.33-.165A.83.83 0 0 1 5 2.488V.75a.75.75 0 0 0-1.5 0v2.083c0 .715.404 1.37 1.044 1.689L5.5 5c.32.32.5.754.5 1.207"></path>
+                                        <path d="M8 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3"></path>
+                                    </svg></div>
+                                <h5 class="fw-bold card-title" style="margin-top: 46px;">Pemeliharaan dan Dukungan</h5>
+                                <p class="text-muted card-text mb-4" style="display: -webkit-box;-webkit-line-clamp: 4;-webkit-box-orient: vertical;overflow: hidden;text-overflow: ellipsis;">Kami menawarkan layanan pemeliharaan dan dukungan untuk memastikan website Anda selalu berjalan dengan lancar. Dari pembaruan rutin hingga pemecahan masalah, kami siap membantu Anda.</p><a class="btn btn-default" role="button">Baca artikel &gt;</a>
+                            </div>
+                        </div>
+                    </div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-format="fluid"
+     data-ad-layout-key="-ev-29-28-av+12e"
+     data-ad-client="ca-pub-8913081554574910"
+     data-ad-slot="1413636203"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-5">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-md-8 col-xl-6 text-center mx-auto">
+                    <p class="fw-bold text-success mb-2">Kontak</p>
+                    <h2 class="fw-bold">Anda dapat menghubungi saya atau meninggalkan pesan</h2>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center">
+                <div class="col-md-6 col-xl-4">
+                    <div>
+                        <form id="form-bima" class="p-3 p-xl-4" method="post" data-bs-theme="light" style="height: auto;" target="_self">
+                            <div class="mb-3"><input class="form-control" type="text" id="nama" name="nama" placeholder="Nama" required=""></div>
+                            <div class="mb-3"><input class="form-control" type="email" id="email" name="email" placeholder="Email" required=""></div>
+                            <div class="mb-3"><input class="form-control" type="number" id="nomorWhatsapp" name="nomorWhatsapp" placeholder="No WhatsApp" required=""></div>
+                            <div class="mb-3"><textarea class="form-control" id="message" name="message" rows="6" placeholder="Pesan" required=""></textarea></div><strong class="d-xxl-flex justify-content-xxl-center" id="status-message" style="margin-bottom: 10px;padding: 6px;text-align: center;font-family: Poppins, sans-serif;"></strong>
+                            <div><button class="btn btn-primary shadow d-block w-100" type="submit">Send </button></div><script src=".\assets\js\formbima\form-bima.js"></script>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-4 col-xl-4 d-flex justify-content-center justify-content-xl-start">
+                    <div class="d-flex flex-wrap flex-md-column justify-content-md-start align-items-md-start h-100">
+                        <div class="d-flex align-items-center p-3">
+                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-telephone">
+                                    <path d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.568 17.568 0 0 0 4.168 6.608 17.569 17.569 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.678.678 0 0 0-.58-.122l-2.19.547a1.745 1.745 0 0 1-1.657-.459L5.482 8.062a1.745 1.745 0 0 1-.46-1.657l.548-2.19a.678.678 0 0 0-.122-.58L3.654 1.328zM1.884.511a1.745 1.745 0 0 1 2.612.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.678.678 0 0 0 .178.643l2.457 2.457a.678.678 0 0 0 .644.178l2.189-.547a1.745 1.745 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.634 18.634 0 0 1-7.01-4.42 18.634 18.634 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877L1.885.511z"></path>
+                                </svg></div>
+                            <div class="px-2">
+                                <h6 class="fw-bold mb-0">WhatsApp</h6>
+                                <p class="text-muted mb-0">+6283845781063</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-envelope">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"></path>
+                                </svg></div>
+                            <div class="px-2">
+                                <h6 class="fw-bold mb-0">Email</h6>
+                                <p class="text-muted mb-0">Bimaselalubenar.id@gmail.com</p>
+                            </div>
+                        </div>
+                        <div class="d-flex align-items-center p-3">
+                            <div class="bs-icon-md bs-icon-circle bs-icon-primary shadow d-flex flex-shrink-0 justify-content-center align-items-center d-inline-block bs-icon bs-icon-md"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pin">
+                                    <path d="M4.146.146A.5.5 0 0 1 4.5 0h7a.5.5 0 0 1 .5.5c0 .68-.342 1.174-.646 1.479-.126.125-.25.224-.354.298v4.431l.078.048c.203.127.476.314.751.555C12.36 7.775 13 8.527 13 9.5a.5.5 0 0 1-.5.5h-4v4.5c0 .276-.224 1.5-.5 1.5s-.5-1.224-.5-1.5V10h-4a.5.5 0 0 1-.5-.5c0-.973.64-1.725 1.17-2.189A5.921 5.921 0 0 1 5 6.708V2.277a2.77 2.77 0 0 1-.354-.298C4.342 1.674 4 1.179 4 .5a.5.5 0 0 1 .146-.354zm1.58 1.408-.002-.001.002.001m-.002-.001.002.001A.5.5 0 0 1 6 2v5a.5.5 0 0 1-.276.447h-.002l-.012.007-.054.03a4.922 4.922 0 0 0-.827.58c-.318.278-.585.596-.725.936h7.792c-.14-.34-.407-.658-.725-.936a4.915 4.915 0 0 0-.881-.61l-.012-.006h-.002A.5.5 0 0 1 10 7V2a.5.5 0 0 1 .295-.458 1.775 1.775 0 0 0 .351-.271c.08-.08.155-.17.214-.271H5.14c.06.1.133.191.214.271a1.78 1.78 0 0 0 .37.282"></path>
+                                </svg></div>
+                            <div class="px-2">
+                                <h6 class="fw-bold mb-0">Lokasi</h6>
+                                <p class="text-muted mb-0">-7.631212727124931, 111.52313735468863</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-primary-gradient" style="box-shadow: 0px -33px 20px 2px rgba(45,45,45,0.08);border-radius: 0px;">
+        <div class="modal fade" role="dialog" tabindex="-1" id="srch">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header d-flex justify-content-between" style="background: linear-gradient(180deg, #a4a9d7, #1637a9);">
+                        <h4 class="modal-title" style="color: rgb(255,255,255);">Cari sesuatu di sini</h4><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-circle-fill" type="button" aria-label="Close" data-dismiss="modal" style="color: rgb(255,255,255);width: 32px;height: 32px;">
+                            <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
+                        </svg>
+                    </div>
+                    <div class="modal-body scrollbarnone" style="background: rgba(255,255,255,0);height: auto;max-height: 600px;">
+                        <p>Cari produk, kode produk atau lainnya.</p>
+                        <form class="input-group" style="margin-bottom: 16px;position: relative;"><input class="form-control" type="text" id="searchInput" placeholder="Cari di sini ..."><button class="btn btn-success d-xxl-flex align-items-xxl-center" id="searchButton" type="button" style="color: rgb(255,255,255);border-top-right-radius: 16px;border-bottom-right-radius: 16px;padding-right: 15px;padding-left: 15px;">&nbsp;Cari&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search">
+                                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                                </svg></button></form>
+                        <ol class="flex-column-reverse list-group" id="searchResults" style="display: none;">
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Gambar motor honda transparan | Google drive</strong></span>
+                                        <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Download gambar motor Honda transparan. dari Honda matic, sport dan cub. download semua unit dengan klik di sini.&nbsp;<a href="https://drive.google.com/drive/folders/1NmGcOpHaxG1NsGl_QgDOhOoWi-U1v2lr?usp=sharing" style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Honda</span><span class="shadow tagsearch">#Transparan</span><span class="shadow tagsearch">#Motor</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Materi socmed MPM Motor |</strong></span>
+                                        <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Unduh materi socmed all MSO untuk social media cabang, dapatkan materi video reels, TikTok, status Whatsapp, Feed Instagram. dengan format .zip.&nbsp;<a href="Jadwal.html" style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Jadwal</span><span class="shadow tagsearch">#Socmed</span><span class="shadow tagsearch">#Materi</span><span class="shadow tagsearch">#Honda</span><span class="shadow tagsearch">#Download</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Template canva gratis dan berbayar |</strong></span>
+                                        <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Gunakan template digital dengan sesuai kebutuhan mu.&nbsp;<a id="srcTemplate" href="../materisocmed/Jadwal.html" style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Template</span><span class="shadow tagsearch">#Motor</span><span class="shadow tagsearch">#Honda</span>&nbsp;</span>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Paket Berlangganan Bulanan - Rp 30.000&nbsp;| materi</strong></span>
+                                        <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Dapatkan akses ke seluruh materi pelajaran yang tersedia, Materi dan konten diperbarui secara berkala untuk memastikan relevansi dan kualitas.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent" href="subscription.html">(Klik disini)</a></span>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Berlangganan</span><span class="shadow tagsearch">#Berbayar</span><span class="shadow tagsearch">#Template</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Paket Berlangganan Bulanan - Rp 370.000&nbsp;| materi</strong></span>
+                                        <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Dapatkan akses ke seluruh materi pelajaran yang tersedia, Semua pembaruan dan tambahan materi akan tersedia tanpa biaya tambahan.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent" href="subscription.html">(Klik disini)</a></span>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Berlangganan</span><span class="shadow tagsearch">#Berbayar</span><span class="shadow tagsearch">#Template</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="container">
+                                        <div class="row" style="gap: 10px;">
+                                            <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="assets/img/ceo/17292968639655477202.png"></div>
+                                            <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Giveaway Receh DANA Kaget! Siap-Siap Dapet Rejeki Nomplok!</strong></span>
+                                                    <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);">Yuk buruan ikutan giveaway receh dari DANA Kaget! Siapa tahu kamu yang beruntung dapet saldo gratis buat jajan. Gampang banget, tinggal klik link dan rebut hadiahnya sebelum habis. Jangan sampai ketinggalan, ya!.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent" href="assets/img/App/cek-khodam/UPDATE%20SETIAP%20HARI.webp">(Klik disini)</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#GiveawayReceh</span><span class="shadow tagsearch">#DanaKaget</span><span class="shadow tagsearch">#SaldoGratis</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="container">
+                                        <div class="row" style="gap: 10px;">
+                                            <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="assets/img/Template/Berbayar/Promo-Gajian-1.webp"></div>
+                                            <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Promo Gajian Spesial untuk Motor Honda!</strong></span>
+                                                    <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);">Manfaatkan promo gajian ini untuk memiliki motor Honda impianmu! Dengan DP mulai dari 100 ribu dan potongan hingga 1 juta rupiah, jadikan perjalananmu semakin nyaman dan gaya. Segera klik untuk mendapatkan detail promo eksklusif ini sebelum kehabisan!.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent" href="../materisocmed/template-digital.html">(Klik disini)</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#PromoGajian</span><span class="shadow tagsearch">#MotorHonda</span><span class="shadow tagsearch">#PromoTerbaik</span><span class="shadow tagsearch">#PromoTerbaik</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="container">
+                                        <div class="row" style="gap: 10px;">
+                                            <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="https://down-bs-id.img.susercontent.com/id-11134207-7qula-lha38ysxjxvnd7.webp"></div>
+                                            <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Luxus Yura Sepatu Sneakers Wanita Quality - Lx3081 - P0001</strong></span>
+                                                    <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);"><strong>Rp134.999</strong></span><span style="color: rgb(255,255,255);">Klik lihat produk untuk melhat detail produk.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_blank" href="https://s.shopee.co.id/BD1OBVCMG">(Lihat Produk)</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Shopee</span><span class="shadow tagsearch">#P0001</span><span class="shadow tagsearch">#Sepatu</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="container">
+                                        <div class="row" style="gap: 10px;">
+                                            <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="https://down-spe-id.img.susercontent.com/id-11134207-7r98z-lw4qcafqpvgta3.webp"></div>
+                                            <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Beli 1 Dapat 3 Ballerina Perfume - Parfum Wanita Aroma Pink Romance - amber Grace - Garden Of Mirror&nbsp;- P0002</strong></span>
+                                                    <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);"><strong>Rp19.800</strong></span><span style="color: rgb(255,255,255);">Klik lihat produk untuk melhat detail produk.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_blank" href="https://s.shopee.co.id/10mCmpTXoT">(Lihat Produk)</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Shopee</span><span class="shadow tagsearch">#P0002</span><span class="shadow tagsearch">#Parfum</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="container">
+                                        <div class="row" style="gap: 10px;">
+                                            <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="assets/img/Gopay/qris.png"></div>
+                                            <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>.... |</strong></span>
+                                                    <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);">.. .&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Tag</span><span class="shadow tagsearch">#Tag</span>&nbsp;</span>
+                                </div>
+                            </li>
+                            <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                <div class="d-flex flex-column resultsrc">
+                                    <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>... |</strong></span>
+                                        <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">.. .&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span>
+                                    </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Tag</span><span class="shadow tagsearch">#Tag</span>&nbsp;</span>
+                                </div>
+                            </li>
+                        </ol><span id="noResultsMessage" style="padding-top: 7px;display: none;color: rgb(255,255,255);background: linear-gradient(-172deg, #ff0000, #230000);padding-bottom: 7px;margin-top: 0px;padding-right: 16px;padding-left: 16px;border-radius: 10px;">Maaf, data tidak di temukan</span><script>
+    function searchItems() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let items = document.querySelectorAll('#searchResults li');
+      let found = false;
+
+      // Reset hasil sebelumnya
+      items.forEach(function(item) {
+        item.style.display = 'none';
+      });
+      document.getElementById('noResultsMessage').style.display = 'none';
+
+      // Jika input kosong, jangan tampilkan apa pun
+      if (input.trim() === "") {
+        document.getElementById('searchResults').style.display = 'none';
+        document.getElementById('noResultsMessage').style.display = 'none';
+        return;
+      }
+
+      // Pecahkan input menjadi array kata
+      let searchTerms = input.split(" ");
+
+      // Lakukan pencarian berdasarkan beberapa kata
+      items.forEach(function(item) {
+        let itemText = item.innerHTML.toLowerCase();
+        let match = searchTerms.every(function(term) {
+          return itemText.indexOf(term) !== -1;  // Cek semua kata ada di item
+        });
+        if (match) {
+          item.style.display = 'block';
+          found = true;
+        }
+      });
+
+      // Tampilkan hasil atau pesan 'data tidak ditemukan'
+      if (found) {
+        document.getElementById('searchResults').style.display = 'block';
+        document.getElementById('noResultsMessage').style.display = 'none';
+      } else {
+        document.getElementById('searchResults').style.display = 'none';
+        document.getElementById('noResultsMessage').style.display = 'block';
+      }
+    }
+
+    // Event listener untuk tombol Search
+    document.getElementById('searchButton').addEventListener('click', searchItems);
+
+    // Event listener untuk tombol Enter pada input
+    document.getElementById('searchInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        searchItems();
+      }
+    });
+  </script>
+                    </div>
+                </div>
+            </div>
+        </div><!-- untuk screen capture -->
+<script>
+    function showAlert(message) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Akses Dilarang!',
+            text: message,
+            confirmButtonText: 'OK'
+        });
+    }
+
+    // Fungsi untuk menampilkan SweetAlert khusus untuk screenshot
+    function showScreenshotAlert() {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Screenshot Dilarang!',
+            text: 'Anda tidak diperbolehkan mengambil screenshot atau mencetak konten ini.',
+            confirmButtonText: 'OK'
+        });
+    }
+
+    document.addEventListener('keydown', function(event) {
+        // Disable F12
+        if (event.keyCode == 123) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+J
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+C
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+U
+        if (event.ctrlKey && event.keyCode == 85) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+K (Mozilla Firefox Web Console)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 75) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+S (Windows Snipping Tool)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 83) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+K or Ctrl+F (Search in Developer Tools)
+        if (event.ctrlKey && (event.keyCode == 75 || event.keyCode == 70)) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable F1 (Help in Developer Tools)
+        if (event.keyCode == 112) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+P (File search in Developer Tools)
+        if (event.ctrlKey && event.keyCode == 80) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable PrintScreen and other screenshot combinations
+        if (event.key === 'PrintScreen' ||
+            (event.ctrlKey && event.key === 'p') ||
+            (event.shiftKey && (event.metaKey || event.keyCode === 91 || event.keyCode === 92) && event.key === 'S') ||
+            (event.key === 'PrintScreen' && (event.metaKey || event.keyCode === 91 || event.keyCode === 92)) ||
+            event.key === 'Meta') {
+            event.preventDefault();
+            showScreenshotAlert();
+        }
+    });
+
+    // Deteksi tombol PrintScreen dan Windows + Print Screen
+    document.addEventListener('keyup', function (event) {
+        if (event.key === 'PrintScreen' || (event.key === 'PrintScreen' && (event.metaKey || event.keyCode === 91 || event.keyCode === 92))) {
+            navigator.clipboard.writeText('');
+            showScreenshotAlert();
+        }
+    });
+
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah tindakan ketika 3 jari menyentuh layar
+    document.addEventListener('touchstart', function (event) {
+        if (event.touches.length === 3) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan tindakan ini');
+        }
+    });
+</script>
+<!-- Selesai -->
+<!-- drag off -->
+<script>
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+    });
+</script>
+<!-- selesai -->
+
+<!-- mematikan inspection -->
+<script>
+    function showAlert(message) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Akses Dilarang!',
+            text: message,
+            confirmButtonText: 'OK'
+        });
+    }
+
+    document.addEventListener('keydown', function (event) {
+        // Disable F12
+        if (event.keyCode == 123) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+J
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+C
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+U
+        if (event.ctrlKey && event.keyCode == 85) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+K (Mozilla Firefox Web Console)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 75) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+S (Windows Snipping Tool)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 83) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+K or Ctrl+F (Search in Developer Tools)
+        if (event.ctrlKey && (event.keyCode == 75 || event.keyCode == 70)) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable F1 (Help in Developer Tools)
+        if (event.keyCode == 112) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+P (File search in Developer Tools)
+        if (event.ctrlKey && event.keyCode == 80) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+    });
+
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah tindakan ketika 3 jari menyentuh layar
+    document.addEventListener('touchstart', function (event) {
+        if (event.touches.length === 3) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan tindakan ini');
+        }
+    });
+</script>
+<!-- selesai -->
+<script>
+        // contoh HTML
+        // <div class="copy-container">
+        // <span class="copy-text" id="text1">Ini adalah teks yang dapat disalin.</span>
+        // <button class="copy-button" id="copyButton1" onclick="copyText('text1')">Salin</button>
+        // </div>
+        function copyText(elementId) {
+            // Ambil elemen teks berdasarkan ID yang diberikan
+            var copyText = document.getElementById(elementId);
+
+            // Pilih teks di dalam elemen
+            var range = document.createRange();
+            range.selectNode(copyText);
+            window.getSelection().removeAllRanges(); // Hilangkan seleksi sebelumnya
+            window.getSelection().addRange(range);
+
+            try {
+                // Salin teks ke clipboard
+                document.execCommand('copy');
+                
+                // Menampilkan SweetAlert ketika teks berhasil disalin
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Berhasil Disalin!',
+                    text: '' + copyText.textContent + ' telah berhasil disalin.',
+                    confirmButtonText: 'Terima',
+                    confirmButtonColor: '#4CAF50'
+                });
+            } catch (err) {
+                // Menampilkan SweetAlert jika terjadi error
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Gagal Menyalin!',
+                    text: 'Teks tidak dapat disalin. Silakan coba lagi.',
+                    confirmButtonText: 'Terima',
+                    confirmButtonColor: '#f44336'
+                });
+            }
+
+            // Hapus seleksi setelah salinan
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+        <div class="modal fade" role="dialog" tabindex="-1" id="canvaprodashboard">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Canva Pro</h4><button class="btn-close" type="button" aria-label="Close" data-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <p style="font-weight: bold;"><span style="color: rgb(1, 1, 1);">By Groupy Pro</span>&nbsp;<img src="https://groupy.id/assets/images/logo/groupy_mobile_black.png" width="auto" height="16" style="width: auto;"></p>
+                        <p>Join dengan tim Canva Pro Groupy jika belum join:<br>Login menggunakan akun Canva kamu.<br><br>Enjoy Canva Pro!<br><br><strong>Important Notes:</strong><br>Tidak perlu join berkali-kali, cukup join sekali, nanti langsung akses melalui https://www.canva.com jika sudah join.<br><br>Dimohon untuk tidak membagikan link tim Canva Pro Groupy.<br><br><em>Last Updated: 07/11/2024 (10:10 WIB)</em></p><a class="btn btn-primary" role="button" href="https://www.canva.com/brand/join?token=X8QsWkNlNjMj_NkkGefRTQ" target="_blank">Gabung Canva Team Pro</a>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade scrollbarnone" role="dialog" tabindex="-1" id="Forumsocmed" style="z-index: 9999;height: 100vh;width: 100vw;">
+            <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title"><strong>Forum chat</strong></h5><button class="btn-close" type="button" aria-label="Close" data-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body text-nowrap text-break" style="overflow: visible;overflow-x: hidden;overflow-y: hidden;padding-bottom: 30px;">
+                        <div class="container">
+                            <div class="row flex-column-reverse flex-sm-column-reverse flex-md-column-reverse flex-lg-column-reverse flex-xl-row flex-xxl-row">
+                                <div class="col-md-12 col-xl-6 col-xxl-6 d-flex flex-column"><script>
+  const container = document.querySelector('.containeroniontop');
+  
+  // Ambil semua item dari container
+  const items = Array.from(container.children);
+
+  // Bersihkan container sebelum menambahkan data terbalik
+  container.innerHTML = '';
+
+  // Tambahkan item secara terbalik ke dalam container
+  items.reverse().forEach(item => {
+    container.appendChild(item);
+  });
+
+  // Posisikan scroll bar di atas saat halaman pertama kali dimuat
+  container.scrollTop = 0;
+</script><label class="form-label">Pesan terbaru ada paling teratas</label>
+                                    <div class="text-bg-success d-flex flex-column-reverse justify-content-start order-last .containeroniontop" id="messages" style="justify-content: flex-start;flex-direction: column-reverse;display: flex;padding-top: 20px;padding-bottom: 20px;font-family: Poppins, sans-serif;height: 100%;max-height: none;overflow: auto;overflow-y: auto;width: 100%;"></div>
+                                </div>
+                                <div class="col-md-12 col-xl-6 col-xxl-6" style="word-wrap: break-word;"><label class="form-label">Tulis pesan kamu</label>
+                                    <form id="chat" style="width: 100%;" method="post" target="_self">
+                                        <div class="mb-3" style="padding: 15px;margin-bottom: 0px;">
+                                            <div class="d-flex d-lg-flex d-xl-flex d-xxl-flex flex-column gap-2"><input class="form-control" type="text" id="name" name="Nama" placeholder="Nama" style="margin: 0px;margin-bottom: 8px;" readonly=""><textarea class="form-control" required="" name="Pesan" placeholder="Pesan"></textarea><button class="btn btn-primary" type="submit" style="margin: 0px;margin-bottom: 8px;">Kirim</button></div>
+                                            <div style="text-align: center;padding-bottom: 2px;"><label class="form-label" id="status-txt" style="color: var(--bs-success);margin-top: 8px;">Pesan apa yang ingin kamu kirim?</label></div>
+                                        </div>
+                                    </form>
+                                    <div class="d-none d-print-none d-sm-none d-md-none d-lg-flex d-xl-flex d-xxl-flex flex-column" style="word-wrap: break-word;overflow-wrap: break-word;height: auto;background: var(--swiper-theme-color);border-radius: 16px;padding-top: 16px;padding-bottom: 16px;padding-right: 16px;padding-left: 16px;overflow: visible;max-height: none;">
+                                        <p class="text-wrap" style="word-wrap: break-word;color: rgb(255,255,255);font-size: 20px;filter: blur(0px);margin-bottom: 12px;text-align: center;"><strong>Pengumuman give away</strong></p>
+                                        <div class="scrollbarnone" style="overflow: hidden;overflow-y: scroll;height: 270.125px;">
+                                            <div class="d-flex flex-column" style="margin-bottom: 18px;background: var(--bs-body-bg);padding: 10px;border-radius: 16px;"><label class="form-label text-wrap" style="color: var(--bs-body-bg);margin-bottom: 0px;padding: 10px;background: var(--bs-emphasis-color);border-radius: 12px;">Canva pro 1 bulan - November 2024 | 4 user</label>
+                                                <div class="d-flex flex-column" style="padding: 10px;"><label class="form-label text-wrap" style="color: var(--bs-emphasis-color);margin-bottom: 0px;border-color: var(--bs-emphasis-color);">1. Ferdy - MPM Motor Kediri<br>2. Silverster Dimas Db - MPM Motor Basra<br>3. Ahmad Khoirun - MPM Motor Tuban<br>4. Putri Parwitasari - MPM Motor Madiun</label><label class="form-label text-wrap" style="color: var(--bs-emphasis-color);margin-bottom: 0px;border-color: var(--bs-emphasis-color);text-align: right;font-style: italic;font-size: 12px;">November 2024</label></div>
+                                            </div>
+                                            <div class="d-flex flex-column" style="margin-bottom: 18px;background: var(--bs-body-bg);padding: 10px;border-radius: 16px;"><label class="form-label text-wrap" style="color: var(--bs-body-bg);margin-bottom: 0px;padding: 10px;background: var(--bs-emphasis-color);border-radius: 12px;">Canva pro 1 bulan - September 2024 | 3 user</label>
+                                                <div class="d-flex flex-column" style="padding: 10px;"><label class="form-label text-wrap" style="color: var(--bs-emphasis-color);margin-bottom: 0px;border-color: var(--bs-emphasis-color);">1. Ferdy - MPM Motor Kediri<br>2. Tossy - MPM Motor Pare<br>3. Enny - MPM Motor Sukun</label><label class="form-label text-wrap" style="color: var(--bs-emphasis-color);margin-bottom: 0px;border-color: var(--bs-emphasis-color);text-align: right;font-style: italic;font-size: 12px;">September 2024</label></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+            if (currentUser) {
+                document.getElementById("name").value = currentUser.name;
+            }
+        });
+    </script>
+<script src="../assets/js/login/comment.js"></script>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container py-4 py-lg-5">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Menu</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="index.html" target="_parent">Profile</a></li>
+                        <li><a href="Tentang.html" target="_parent">Tentang</a></li>
+                        <li><a href="Keahlian.html" target="_parent">Keahlian</a></li>
+                        <li><a href="Kontak.html" target="_parent">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Pembayaran</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="payment.html">Payment</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Layanan</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="materisocmed/dashboard.html" target="_parent">Dashboard MPM</a></li>
+                        <li><a href="web-service.html" target="_parent">Web Service</a></li>
+                        <li><a href="artikel/index.html" target="_parent">Artikel</a></li>
+                        <li><a class="d-flex justify-content-center align-items-center" href="penaku/index.html" target="_parent"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen-fill" style="height: 16px;margin-right: 6px;">
+                                    <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"></path>
+                                </svg>Penaku</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
+                    <h3 class="fs-6 fw-bold">Hiburan</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="app/index.html" target="_parent">App</a></li>
+                        <li><a href="app/cek-khodam.html" target="_parent">Cek Khodam</a></li>
+                        <li><a href="app/cek-berat-badan.html" target="_parent">Cek Ideal Badan</a></li>
+                        <li><a href="app/cek-pengeluaran-bulanan.html" target="_parent">Cek Pengeluaran Bulanan</a></li>
+                        <li><a href="app/whatsapp-generator.html" target="_parent">WhatsApp Generator</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="height: auto;">
+                    <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2" style="padding: 6px;background: var(--bs-body-bg);box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.14);"><img src="assets/img/Logo/logo2.webp" style="width: 100%;height: auto;"></span><span>Bimaselalubenar</span></div>
+                    <div class="d-sm-flex d-lg-flex d-xxl-flex justify-content-sm-center justify-content-lg-center justify-content-xxl-center" style="width: 100%;height: auto;margin-top: 16px;margin-bottom: 20px;"> <a href='http://www.freevisitorcounters.com'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cad89751e6666070c63c7bf9989960eeef49b85d'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1269423/t/1"></script></div>
+                </div>
+            </div>
+            <hr>
+            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+                <p class="mb-0">Copyright ©2024 | 32 Tech</p>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                        </svg></li>
+                    <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-threads-fill">
+                            <path d="M6.81 9.204c0-.41.197-1.062 1.727-1.062.469 0 .758.034 1.146.121-.124 1.606-.91 1.818-1.674 1.818-.418 0-1.2-.218-1.2-.877Z"></path>
+                            <path d="M2.59 16h10.82A2.59 2.59 0 0 0 16 13.41V2.59A2.59 2.59 0 0 0 13.41 0H2.59A2.59 2.59 0 0 0 0 2.59v10.82A2.59 2.59 0 0 0 2.59 16M5.866 5.91c.567-.81 1.315-1.126 2.35-1.126.73 0 1.351.246 1.795.711.443.466.696 1.132.754 1.983.245.103.472.224.678.363.832.559 1.29 1.395 1.29 2.353 0 2.037-1.67 3.806-4.692 3.806-2.595 0-5.291-1.51-5.291-6.004C2.75 3.526 5.361 2 8.033 2c1.234 0 4.129.182 5.217 3.777l-1.02.264c-.842-2.56-2.607-2.968-4.224-2.968-2.675 0-4.187 1.628-4.187 5.093 0 3.107 1.69 4.757 4.222 4.757 2.083 0 3.636-1.082 3.636-2.667 0-1.079-.906-1.595-.953-1.595-.177.925-.651 2.482-2.733 2.482-1.213 0-2.26-.838-2.26-1.936 0-1.568 1.488-2.136 2.663-2.136.44 0 .97.03 1.247.086 0-.478-.404-1.296-1.426-1.296-.911 0-1.16.288-1.45.624l-.024.027c-.202-.135-.875-.601-.875-.601Z"></path>
+                        </svg></li>
+                </ul>
+            </div>
+        </div><script src="OneSignalSDKWorker.js"></script>
+    </footer>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/aos.min.js"></script>
+    <script src="assets/js/lottie-player.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="assets/js/OneSignalSDKWorker.js"></script>
+    <script src="assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>
+    <script src="assets/js/App/indexapp.js"></script>
+    <script src="assets/js/App/lockbtn.js"></script>
+    <script src="assets/js/dashboard-socmed-bold-and-bright.js"></script>
+    <script src="assets/js/formbima/form-bima.js"></script>
+    <script src="assets/js/inspeksi/inspeksi.js"></script>
+    <script src="assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="assets/js/Lightbox-Gallery.js"></script>
+    <script src="assets/js/login/comment-umum.js"></script>
+    <script src="assets/js/One-Liner-Code-Editor-codeeditor.js"></script>
+    <script src="assets/js/service-worker.js"></script>
+    <script src="assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

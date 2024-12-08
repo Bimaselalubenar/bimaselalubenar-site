@@ -1,0 +1,1622 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="id">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HHF3VHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+        function copyTextById(id) {
+            // Mendapatkan elemen berdasarkan ID
+            var textElement = document.getElementById(id);
+
+            // Membuat elemen input sementara untuk menyalin teks
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textElement.textContent;
+
+            // Menambahkan elemen input sementara ke body
+            document.body.appendChild(tempInput);
+
+            // Menyorot dan menyalin teks dari elemen input sementara
+            tempInput.select();
+            document.execCommand("copy");
+
+            // Menghapus elemen input sementara setelah menyalin teks
+            document.body.removeChild(tempInput);
+
+            // Memberikan umpan balik menggunakan SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Teks berhasil disalin ke clipboard!',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        // Menangkap kejadian keydown untuk mendeteksi Ctrl + C
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'c') {
+                // Menampilkan SweetAlert ketika Ctrl + C ditekan
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copy Sukses!',
+                    text: 'Text berhasil di salin!',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+
+<!-- app -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- selesai -->
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<!-- onesignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+<!-- selesai -->
+
+<!-- FireBase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGIm8fs-R4WuUMomDnaklskRsXg-82BfA",
+    authDomain: "bimaselalubenar-boostrap.firebaseapp.com",
+    databaseURL: "https://bimaselalubenar-boostrap-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "bimaselalubenar-boostrap",
+    storageBucket: "bimaselalubenar-boostrap.appspot.com",
+    messagingSenderId: "903484306924",
+    appId: "1:903484306924:web:8b0f8344d12a46fb20bcc9",
+    measurementId: "G-KSFJWG3HM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- selesai -->
+
+<!-- Offline -->
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+
+<!-- Selesai -->
+
+
+<!-- 404 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {  
+    // Mendapatkan URL saat ini  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    // Memeriksa apakah halaman saat ini valid  
+    if (!currentPage || currentPage === "404.html") {  
+        return; // Jika halaman adalah 404, tidak perlu melakukan apa-apa  
+    }  
+
+    // Menggunakan fetch untuk memeriksa keberadaan halaman  
+    fetch(currentPage)  
+        .then(response => {  
+            if (!response.ok) {  
+                // Jika halaman tidak ditemukan, arahkan ke halaman 404  
+                window.location.href = "404.html";  
+            }  
+        })  
+        .catch(() => {  
+            // Jika terjadi kesalahan dalam fetch, arahkan ke halaman 404  
+            window.location.href = "404.html";  
+        });  
+});
+</script>
+<!-- Selesai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Dashboard MPM Motor HO🔐</title>
+    <meta name="theme-color" content="#7d7878">
+    <link rel="canonical" href="https://bimaselalubenar.my.id/materisocmed/Absensi-token1864839bfra6d91h37df7hdnb701nnx79345hfncvjdfoh.html">
+    <meta property="og:url" content="https://bimaselalubenar.my.id/materisocmed/Absensi-token1864839bfra6d91h37df7hdnb701nnx79345hfncvjdfoh.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:title" content="MATERI SOCMED MPM">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Dashboard.webp">
+    <meta name="twitter:title" content="Dashboard MPM Motor">
+    <meta name="description" content="Dashboard MPM Motor">
+    <meta name="twitter:description" content="Materi socmed MPM Motor">
+    <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Dashboard.webp">
+    <meta property="og:description" content="Masuk dan dapatkan akses penuh materi">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/Good%20Times%20Rg.css">
+    <link rel="stylesheet" href="../assets/css/oblong.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="../assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="../assets/css/aos.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
+    <link rel="stylesheet" href="../assets/css/background.css">
+    <link rel="stylesheet" href="../assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="../assets/css/chat.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/menu-dashboard.css">
+    <link rel="stylesheet" href="../assets/css/One-Liner-Code-Editor.css">
+    <link rel="stylesheet" href="../assets/css/PRE.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HHF3VHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZTM564QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNZTM564QN');
+</script>
+<!-- Selelsai -->
+
+<!-- Google ADS -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account" content="ca-pub-8913081554574910">
+<!-- Selesai -->
+
+<!-- OneSignal 1 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+
+<!-- OneSignal 2 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "7b65d3f2-e57a-4938-a97d-e7e358e2a721",
+    });
+  });
+</script>
+
+<!-- Subscribe YT -->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<!-- Fire Base -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<!-- Selesai -->
+
+
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8913081554574910" data-ad-slot="5303068928"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+</amp-ad>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
+</head>
+
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;background: rgb(230,230,230);">
+    <div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="loadingModalProses" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="z-index: 9999;">
+            <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen" role="document">
+                <div class="modal-content">
+                    <div class="modal-body d-flex d-lg-flex justify-content-center align-items-center">
+                        <div class="container d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center align-items-lg-center" style="max-width: auto;">
+                            <div class="row d-inline-flex flex-column align-items-lg-center" data-aos="zoom-out-down" data-aos-duration="850" data-aos-once="true" style="width: auto;padding: 20px;border-radius: 16px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.06), inset 0px 0px 20px 0px rgba(45,45,45,0.57);border: 0px ridge rgb(0,122,255);">
+                                <div class="col d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
+                                    <lottie-player src="../assets/js/animated/cyberterrorism.json" mode="normal" speed="1" autoplay="" loop="" style="width: 60px;"></lottie-player>
+                                </div>
+                                <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
+                                    <p style="margin-bottom: 0px;"><strong>Sedang memuat&nbsp;</strong></p><span class="spinner-border spinner-border-sm" role="status" style="color: #2d2d2d;"></span>
+                                </div>
+                                <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
+                                    <p style="margin-bottom: 0px;font-size: 12px;">Demi keamanan website dan data</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Directly manipulate the modal element to make it visible initially
+            const modalElement = document.getElementById('loadingModalProses');
+            modalElement.classList.add('show');
+            modalElement.style.display = 'block';
+            console.log('Modal manually displayed on DOMContentLoaded');
+
+            // Function to manually hide the modal
+            const hideLoadingModal = () => {
+                setTimeout(() => {
+                    modalElement.classList.remove('show');
+                    modalElement.style.display = 'none';
+                    console.log('Modal manually hidden');
+                }, 200);
+            };
+
+            // Check if the page is already fully loaded
+            if (document.readyState === 'complete') {
+                console.log('Page already fully loaded, hiding modal');
+                hideLoadingModal();
+            } else {
+                // Hide the modal when the page is fully loaded
+                window.addEventListener('load', () => {
+                    console.log('Page fully loaded, triggering hide');
+                    hideLoadingModal();
+                });
+            }
+        });
+    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" role="dialog" tabindex="-1" id="mPengumuman" style="backdrop-filter: blur(11px);-webkit-backdrop-filter: blur(11px);position: absolute;padding: 0px;">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center justify-content-center align-content-center" style="width: 100%;height: 100%;">
+                        <p style="background: var(--bs-emphasis-color);color: var(--bs-success);padding: 11px;border-radius: 10px;"><strong><span style="color: rgb(255, 255, 255);">FORM REPORT SALES ONLINE (UPDATE)</span></strong></p>
+                        <ul>
+                            <li style="text-align: left;"><span style="color: rgb(64, 64, 64);">Di mohon untuk teman teman PDCA untuk mengunduh form report terbaru khusus bulan Desember 2024</span></li>
+                            <li style="text-align: left;"><span style="color: rgb(64, 64, 64);">Kirim report tepat waktu, paling lambat setiap hari senin</span></li>
+                            <li style="text-align: left;"><span style="color: rgb(64, 64, 64);">Jika ada pertanyaan atau masukan, bisa kirim ke forum diskusi atau group whatsapp PIC Socmed</span></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-warning" style="padding-right: 16px;padding-left: 16px;padding-top: 8px;padding-bottom: 8px;border-radius: 15px;" data-bs-dismiss="modal" type="button">Tutup</button></div><script>
+    $(document).ready(function(){
+      // Timer untuk menampilkan modal setelah 3 detik
+      setTimeout(function(){
+        $("#mPengumuman").modal('show');
+      }, 4000); // 1000 milidetik = 1 detik
+    });
+  </script>
+            </div>
+        </div>
+    </div>
+    <div class="d-flex d-sm-flex d-md-flex d-lg-flex d-xl-flex d-xxl-flex align-items-xxl-start" style="height: 100vh;">
+        <div class="modal fade" role="dialog" tabindex="-1" id="profileSetting">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h4 class="modal-title">Profil anda</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="container" style="margin-bottom: 16px;">
+                            <div class="row">
+                                <div class="col-md-6 col-lg-4 col-xl-4 col-xxl-4 text-center d-lg-flex justify-content-lg-center align-items-lg-center" style="height: 100%;"><img class="profile-pic" alt="Profile Picture 1" style="object-fit: cover;width: 187px;height: 187px;border-radius: 50%;position: relative;overflow: auto;" src="https://cdn3d.iconscout.com/3d/premium/thumb/account-9683453-7837779.png" loading="eager"></div>
+                                <div class="col-md-6 col-lg-8 col-xl-8 col-xxl-8">
+                                    <div class="table-responsive">
+                                        <table class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Profile</th>
+                                                    <th style="color: rgba(0,0,0,0);">Column 2</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Nama</td>
+                                                    <td id="userNameprofile">x</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Email</td>
+                                                    <td id="userEmailprofile">x</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Lokasi</td>
+                                                    <td id="userBranchprofile">x</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jabatan</td>
+                                                    <td id="userPositionprofile">x</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Cabang</td>
+                                                    <td id="userCabangprofile">x</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Status</td>
+                                                    <td class="subscriptionNote">x</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="margin-bottom: 10px;">Ganti foto profile</p>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-4 col-xxl-4" style="margin-bottom: 10px;"><button class="btn btn-danger btn-sm" id="uploadButton" style="border-radius: 16px;padding-right: 16px;padding-left: 16px;background: #ff0000;width: 100%;" for="#upload">Upload&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-plus-circle-dotted" style="height: 16px;width: 16px;">
+                                            <path d="M8 0c-.176 0-.35.006-.523.017l.064.998a7.117 7.117 0 0 1 .918 0l.064-.998A8.113 8.113 0 0 0 8 0M6.44.152c-.346.069-.684.16-1.012.27l.321.948c.287-.098.582-.177.884-.237L6.44.153zm4.132.271a7.946 7.946 0 0 0-1.011-.27l-.194.98c.302.06.597.14.884.237l.321-.947zm1.873.925a8 8 0 0 0-.906-.524l-.443.896c.275.136.54.29.793.459l.556-.831zM4.46.824c-.314.155-.616.33-.905.524l.556.83a7.07 7.07 0 0 1 .793-.458zM2.725 1.985c-.262.23-.51.478-.74.74l.752.66c.202-.23.418-.446.648-.648l-.66-.752zm11.29.74a8.058 8.058 0 0 0-.74-.74l-.66.752c.23.202.447.418.648.648l.752-.66m1.161 1.735a7.98 7.98 0 0 0-.524-.905l-.83.556c.169.253.322.518.458.793l.896-.443zM1.348 3.555c-.194.289-.37.591-.524.906l.896.443c.136-.275.29-.54.459-.793l-.831-.556zM.423 5.428a7.945 7.945 0 0 0-.27 1.011l.98.194c.06-.302.14-.597.237-.884l-.947-.321zM15.848 6.44a7.943 7.943 0 0 0-.27-1.012l-.948.321c.098.287.177.582.237.884l.98-.194zM.017 7.477a8.113 8.113 0 0 0 0 1.046l.998-.064a7.117 7.117 0 0 1 0-.918l-.998-.064zM16 8a8.1 8.1 0 0 0-.017-.523l-.998.064a7.11 7.11 0 0 1 0 .918l.998.064A8.1 8.1 0 0 0 16 8M.152 9.56c.069.346.16.684.27 1.012l.948-.321a6.944 6.944 0 0 1-.237-.884l-.98.194zm15.425 1.012c.112-.328.202-.666.27-1.011l-.98-.194c-.06.302-.14.597-.237.884l.947.321zM.824 11.54a8 8 0 0 0 .524.905l.83-.556a6.999 6.999 0 0 1-.458-.793l-.896.443zm13.828.905c.194-.289.37-.591.524-.906l-.896-.443c-.136.275-.29.54-.459.793l.831.556zm-12.667.83c.23.262.478.51.74.74l.66-.752a7.047 7.047 0 0 1-.648-.648l-.752.66zm11.29.74c.262-.23.51-.478.74-.74l-.752-.66c-.201.23-.418.447-.648.648l.66.752m-1.735 1.161c.314-.155.616-.33.905-.524l-.556-.83a7.07 7.07 0 0 1-.793.458l.443.896zm-7.985-.524c.289.194.591.37.906.524l.443-.896a6.998 6.998 0 0 1-.793-.459l-.556.831zm1.873.925c.328.112.666.202 1.011.27l.194-.98a6.953 6.953 0 0 1-.884-.237l-.321.947zm4.132.271a7.944 7.944 0 0 0 1.012-.27l-.321-.948a6.954 6.954 0 0 1-.884.237l.194.98zm-2.083.135a8.1 8.1 0 0 0 1.046 0l-.064-.998a7.11 7.11 0 0 1-.918 0l-.064.998zM8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"></path>
+                                        </svg></button></div>
+                                <div class="col-md-4" style="margin-bottom: 10px;"><button class="btn btn-danger btn-sm" id="deleteButton" type="button" style="border-radius: 16px;padding-right: 16px;padding-left: 16px;background: #ff0000;width: 100%;">Hapus&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-trash-fill" style="height: 16px;width: 16px;">
+                                            <path d="M2.5 1a1 1 0 0 0-1 1v1a1 1 0 0 0 1 1H3v9a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V4h.5a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1H10a1 1 0 0 0-1-1H7a1 1 0 0 0-1 1zm3 4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 .5-.5M8 5a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-1 0v-7A.5.5 0 0 1 8 5m3 .5v7a.5.5 0 0 1-1 0v-7a.5.5 0 0 1 1 0"></path>
+                                        </svg></button></div>
+                                <div class="col-md-4" style="margin-bottom: 10px;"><button class="btn btn-danger btn-sm" id="saveButton" type="button" style="border-radius: 16px;padding-right: 16px;padding-left: 16px;background: var(--bs-success);width: 100%;color: rgb(0,0,0);border-color: var(--bs-success);">Simpan&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-save2-fill" style="height: 16px;width: 16px;">
+                                            <path d="M8.5 1.5A1.5 1.5 0 0 1 10 0h4a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h6c-.314.418-.5.937-.5 1.5v6h-2a.5.5 0 0 0-.354.854l2.5 2.5a.5.5 0 0 0 .708 0l2.5-2.5A.5.5 0 0 0 10.5 7.5h-2z"></path>
+                                        </svg></button><input type="file" data-bs-toggle="tooltip" data-bss-tooltip="" id="upload" class="input" style="display:none;" accept="&quot;image/*&quot;"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<script>
+    $(document).ready(function() {
+        // Handle file upload button
+        $('#uploadButton').on('click', function() {
+            $('#upload').click(); // Buka dialog pilih file
+        });
+
+        // Handle file selection
+        $('#upload').on('change', function() {
+            if (this.files && this.files[0]) {
+                var reader = new FileReader();
+                reader.onload = function(e) {
+                    // Terapkan gambar yang sama ke semua elemen dengan class 'profile-pic'
+                    $('.profile-pic').attr('src', e.target.result);
+                }
+                reader.readAsDataURL(this.files[0]);
+            }
+        });
+
+        // Save all images to local storage
+        $('#saveButton').on('click', function() {
+            var images = [];
+            $('.profile-pic').each(function() {
+                var src = $(this).attr('src');
+                if (src) {
+                    images.push(src);
+                }
+            });
+            if (images.length > 0) {
+                localStorage.setItem('profileImages', JSON.stringify(images));
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Saved!',
+                    text: 'Semua gambar profil telah disimpan.'
+                });
+            } else {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Oops...',
+                    text: 'Tidak ada gambar untuk disimpan.'
+                });
+            }
+        });
+
+        // Delete all images from local storage and page
+        $('#deleteButton').on('click', function() {
+            $('.profile-pic').attr('src', '');
+            localStorage.removeItem('profileImages');
+            Swal.fire({
+                icon: 'success',
+                title: 'Deleted!',
+                text: 'Semua gambar profil telah dihapus.'
+            });
+        });
+
+        // Load saved images from local storage on page load
+        var savedImages = JSON.parse(localStorage.getItem('profileImages'));
+        if (savedImages && savedImages.length > 0) {
+            $('.profile-pic').each(function(index) {
+                if (index < savedImages.length) {
+                    $(this).attr('src', savedImages[index]);
+                }
+            });
+        }
+    });
+    </script></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer"><button class="btn btn-danger" id="logoutButton" type="button" data-bs-dismiss="modal">Logout Akun</button><button class="btn btn-light" type="button" data-bs-dismiss="modal">Close</button></div>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-start bg-body" tabindex="-1" data-bs-scroll="true" data-bs-backdrop="false" id="offcanvas-menu" style="z-index: 10;box-shadow: 16px 0px 20px rgba(45,45,45,0.5);border-top-right-radius: 16px;border-bottom-right-radius: 16px;" data-backdrop="false">
+            <div class="offcanvas-header"><a class="link-body-emphasis d-flex align-items-center me-md-auto mb-3 mb-md-0 text-decoration-none" href="/"><img style="height: 25px;width: auto;margin-right: 16px;" src="../assets/img/Logo/logo2.webp"></a><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button></div>
+            <div class="offcanvas-body d-flex flex-column justify-content-between pt-0 scrollbarnone">
+                <div>
+                    <div class="container" style="border-radius: 16px;padding-top: 0px;padding-bottom: 0px;margin-bottom: 16px;">
+                        <div class="row d-lg-flex justify-content-lg-start align-items-lg-center" style="background: linear-gradient(#e1881f, #ab5e17), var(--bs-dark-text-emphasis);border-radius: 16px;padding-top: 12px;padding-bottom: 12px;">
+                            <div class="col-4 col-sm-3 col-md-3 col-lg-3" style="overflow-x: hidden;overflow-y: hidden;border-radius: 50%;padding-right: 0px;padding-left: 0px;width: auto;margin-left: 16px;">
+                                <div style="padding-right: 0px;width: 60px;"><img class="justify-content-xxl-center align-items-xxl-center profile-pic" alt="Profile Picture 1" style="object-fit: cover;transform: scale(1.20);width: 60px;height: 60px;border-radius: 0%;" src="https://cdn3d.iconscout.com/3d/premium/thumb/account-9683453-7837779.png"></div>
+                            </div>
+                            <div class="col-8 col-sm-9 col-md-9 d-flex d-lg-flex flex-column justify-content-center align-items-start justify-content-sm-center align-items-sm-start justify-content-md-center align-items-lg-start"><span style="color: var(--bs-body-bg);">Halo!&nbsp;</span><span id="userNameslide" style="color: var(--bs-body-bg);font-weight: bold;"></span></div>
+                            <div class="col subscriptionNote" style="margin-top: 10px;"><span class="subscriptionNote" style="color: var(--bs-body-bg);font-weight: bold;"></span></div>
+                        </div>
+                    </div><button class="btn btn-primary d-flex justify-content-center align-items-center button-smooth" type="button" style="width: 100%;text-align: center;padding-top: 8px;padding-bottom: 8px;padding-right: 20px;padding-left: 20px;margin-bottom: 16px;background: linear-gradient(#e1881f, #ab5e17), var(--bs-dark-text-emphasis);border-width: 0px;" data-target="#srch" data-toggle="modal"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search" style="font-size: 21px;">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                        </svg>&nbsp; Pencarian</button>
+                    <ul class="nav nav-pills flex-column mb-auto" id="menuButton">
+                        <li class="nav-item menu-access"><a class="nav-link menu-button" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" title="Khusus akun premium" style="border-radius: 16px;color: #ac5f17;border-width: 4px;border-color: var(--bs-nav-pills-link-active-bg);background: var(--bs-body-bg);box-shadow: 0px 5px 0px 0px, 0px 6px 7px 2px rgba(0,0,0,0.34);transform: translateX(0px) translateY(-4px);transition: ease 0.5s;cursor: pointer;padding-top: 10px;padding-bottom: 10px;margin: 0px;margin-bottom: 16px;" data-target="#canvapro" data-toggle="modal"> <img style="margin-right: 16px;height: 30px;" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSIzMCIgdmlld0JveD0iMCAwIDgwIDMwIj48ZGVmcz48cmFkaWFsR3JhZGllbnQgaWQ9Il8yMDAyMDQ2NTA4X19hIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJtYXRyaXgoMTYuODAwMDIgLTE3LjI4IDExLjQ4NDAzIDExLjE2NTA0IDQwLjk2IDI5KSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJfMjAwMjA0NjUwOF9fYiIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDQ2LjcxOTk2IDQuMTYgLTMuMzE1NjEgMzcuMjM2ODggMS45MiAxNy42NCkiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBvZmZzZXQ9Ii4yNSIgc3RvcC1jb2xvcj0iIzAwQzRDQyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwQzRDQyIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48cmFkaWFsR3JhZGllbnQgaWQ9Il8yMDAyMDQ2NTA4X19jIiBjeD0iMCIgY3k9IjAiIHI9IjEiIGdyYWRpZW50VHJhbnNmb3JtPSJyb3RhdGUoLTM4Ljg1IDU0LjIyIC0zNS4zKSBzY2FsZSgzMC4yMjYgMjAuNjY3NikiIGdyYWRpZW50VW5pdHM9InVzZXJTcGFjZU9uVXNlIj48c3RvcCBzdG9wLWNvbG9yPSIjNjQyMEZGIi8+PHN0b3Agb2Zmc2V0PSIxIiBzdG9wLWNvbG9yPSIjNjQyMEZGIiBzdG9wLW9wYWNpdHk9IjAiLz48L3JhZGlhbEdyYWRpZW50PjxyYWRpYWxHcmFkaWVudCBpZD0iXzIwMDIwNDY1MDhfX2QiIGN4PSIwIiBjeT0iMCIgcj0iMSIgZ3JhZGllbnRUcmFuc2Zvcm09Im1hdHJpeCgzMS4zMjAwMSAtMTUuMzYgMTAuNTAyNjkgMjEuNDE1NjYgMi4yOCAyNi4yKSIgZ3JhZGllbnRVbml0cz0idXNlclNwYWNlT25Vc2UiPjxzdG9wIHN0b3AtY29sb3I9IiM2NDIwRkYiLz48c3RvcCBvZmZzZXQ9IjEiIHN0b3AtY29sb3I9IiM2NDIwRkYiIHN0b3Atb3BhY2l0eT0iMCIvPjwvcmFkaWFsR3JhZGllbnQ+PHJhZGlhbEdyYWRpZW50IGlkPSJfMjAwMjA0NjUwOF9fZSIgY3g9IjAiIGN5PSIwIiByPSIxIiBncmFkaWVudFRyYW5zZm9ybT0ibWF0cml4KDY3Ljk5OTgyIDE1LjAzOTk2IC0xOC40NDU5NiA4My4zOTkyNSA3LjY4IDIuOTIpIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSI+PHN0b3Agc3RvcC1jb2xvcj0iIzAwQzRDQyIvPjxzdG9wIG9mZnNldD0iMSIgc3RvcC1jb2xvcj0iIzAwQzRDQyIgc3RvcC1vcGFjaXR5PSIwIi8+PC9yYWRpYWxHcmFkaWVudD48cGF0dGVybiBpZD0iXzIwMDIwNDY1MDhfX2YiIHdpZHRoPSIxIiBoZWlnaHQ9IjEiPjxwYXRoIGZpbGw9IiM3RDJBRTciIGQ9Ik0wIDBoMTAwdjEwMEgweiIvPjxwYXRoIGZpbGw9InVybCgjXzIwMDIwNDY1MDhfX2EpIiBkPSJNMCAwaDEwMHYxMDBIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19iKSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PHBhdGggZmlsbD0idXJsKCNfMjAwMjA0NjUwOF9fYykiIGQ9Ik0wIDBoMTAwdjEwMEgweiIvPjxwYXRoIGZpbGw9InVybCgjXzIwMDIwNDY1MDhfX2QpIiBkPSJNMCAwaDEwMHYxMDBIMHoiLz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19lKSIgZD0iTTAgMGgxMDB2MTAwSDB6Ii8+PC9wYXR0ZXJuPjwvZGVmcz48cGF0aCBmaWxsPSJ1cmwoI18yMDAyMDQ2NTA4X19mKSIgZD0iTTc5LjQ0NCAxOC4wOTZjLS4xMzYgMC0uMjYuMDg4LS4zMjQuMjcyLS44MiAyLjM0LTEuOTI4IDMuNzMyLTIuODQgMy43MzItLjUyNCAwLS43MzYtLjU4NC0uNzM2LTEuNSAwLTIuMjkyIDEuMzcyLTcuMTUyIDIuMDY0LTkuMzY4LjA4LS4yNjguMTMyLS41MDguMTMyLS43MTIgMC0uNjQ0LS4zNTItLjk2LTEuMjI0LS45Ni0uOTQgMC0xLjk1Mi4zNjgtMi45MzYgMi4wOTItLjM0LTEuNTItMS4zNjgtMi4xODQtMi44MDQtMi4xODQtMS42NiAwLTMuMjY0IDEuMDY4LTQuNTg0IDIuOC0xLjMyIDEuNzMyLTIuODcyIDIuMy00LjA0IDIuMDIuODQtMi4wNTYgMS4xNTItMy41OTIgMS4xNTItNC43MzIgMC0xLjc4OC0uODg0LTIuODY4LTIuMzEyLTIuODY4LTIuMTcyIDAtMy40MjQgMi4wNzItMy40MjQgNC4yNTIgMCAxLjY4NC43NjQgMy40MTYgMi40NDQgNC4yNTYtMS40MDggMy4xODQtMy40NjQgNi4wNjQtNC4yNDQgNi4wNjQtMS4wMDggMC0xLjMwNC00LjkzMi0xLjI0OC04LjQ2LjAzNi0yLjAyNC4yMDQtMi4xMjguMjA0LTIuNzQgMC0uMzUyLS4yMjgtLjU5Mi0xLjE0NC0uNTkyLTIuMTM2IDAtMi43OTYgMS44MDgtMi44OTYgMy44ODRhMTAuMjMzIDEwLjIzMyAwIDAgMS0uMzY4IDIuMzMyYy0uODkyIDMuMTg0LTIuNzMyIDUuNi0zLjkzMiA1LjYtLjU1NiAwLS43MDgtLjU1Ni0uNzA4LTEuMjg0IDAtMi4yOTIgMS4yODQtNS4xNTYgMS4yODQtNy42IDAtMS43OTYtLjc4OC0yLjkzMi0yLjI3Mi0yLjkzMi0xLjc0OCAwLTQuMDYgMi4wOC02LjI0OCA1Ljk3Ni43Mi0yLjk4NCAxLjAxNi01Ljg3Mi0xLjExNi01Ljg3MkEyLjg4NiAyLjg4NiAwIDAgMCAzNiA5LjkxNmEuNzUyLjc1MiAwIDAgMC0uNDMyLjcyOGMuMjA0IDMuMTc2LTIuNTYgMTEuMzEyLTUuMTggMTEuMzEyLS40NzYgMC0uNzA4LS41MTYtLjcwOC0xLjM0OCAwLTIuMjk2IDEuMzY4LTcuMTQ0IDIuMDU2LTkuMzY0LjA4OC0uMjg4LjEzNi0uNTM2LjEzNi0uNzUyIDAtLjYwOC0uMzc2LS45Mi0xLjIyOC0uOTItLjkzNiAwLTEuOTUyLjM1Ni0yLjkzMiAyLjA4LS4zNDQtMS41Mi0xLjM3Mi0yLjE4NC0yLjgwOC0yLjE4NC0yLjM1NiAwLTQuOTg4IDIuNDkyLTYuMTQ0IDUuNzQtMS41NDggNC4zMzYtNC42NjggOC41MjQtOC44NjggOC41MjQtMy44MTIgMC01LjgyNC0zLjE3Mi01LjgyNC04LjE4NEM0LjA2OCA4LjMxMiA5LjM4IDIuNCAxMy4zMiAyLjRjMS44ODQgMCAyLjc4NCAxLjIgMi43ODQgMy4wNCAwIDIuMjI4LTEuMjQ0IDMuMjY0LTEuMjQ0IDQuMTEyIDAgLjI2LjIxNi41MTYuNjQ0LjUxNiAxLjcxMiAwIDMuNzI4LTIuMDEyIDMuNzI4LTQuNzU2UzE3LjAwNC41NiAxMy4wNjQuNTZDNi41NTIuNTYgMCA3LjExMiAwIDE1LjUwOGMwIDYuNjggMy4yOTYgMTAuNzA4IDguOTk2IDEwLjcwOCAzLjg4OCAwIDcuMjg0LTMuMDI0IDkuMTE2LTYuNTUyLjIwOCAyLjkyNCAxLjUzNiA0LjQ1MiAzLjU2IDQuNDUyIDEuOCAwIDMuMjU2LTEuMDcyIDQuMzY4LTIuOTU2LjQyOCAxLjk3MiAxLjU2NCAyLjkzNiAzLjA0IDIuOTM2IDEuNjkyIDAgMy4xMDgtMS4wNzIgNC40NTYtMy4wNjQtLjAyIDEuNTY0LjMzNiAzLjAzNiAxLjY5MiAzLjAzNi42NCAwIDEuNDA0LS4xNDggMS41NC0uNzA4IDEuNDI4LTUuOTA0IDQuOTU2LTEwLjcyNCA2LjAzNi0xMC43MjQuMzIgMCAuNDA4LjMwOC40MDguNjcyIDAgMS42MDQtMS4xMzIgNC44OTItMS4xMzIgNi45OTIgMCAyLjI2OC45NjQgMy43NjggMi45NTYgMy43NjggMi4yMDggMCA0LjQ1Mi0yLjcwNCA1Ljk0OC02LjY1Ni40NjggMy42OTIgMS40OCA2LjY3MiAzLjA2NCA2LjY3MiAxLjk0NCAwIDUuMzk2LTQuMDkyIDcuNDg4LTguNDI0LjgyLjEwNCAyLjA1Mi4wNzYgMy4yMzYtLjc2LS41MDQgMS4yNzYtLjggMi42NzItLjggNC4wNjggMCA0LjAyIDEuOTIgNS4xNDggMy41NzIgNS4xNDggMS43OTYgMCAzLjI1Mi0xLjA3MiA0LjM2OC0yLjk1Ni4zNjggMS43IDEuMzA4IDIuOTMyIDMuMDM2IDIuOTMyIDIuNzA0IDAgNS4wNTItMi43NjQgNS4wNTItNS4wMzIgMC0uNi0uMjU2LS45NjQtLjU1Ni0uOTY0ek0yMy4zMiAyMS44ODhjLTEuMDkyIDAtMS41Mi0xLjEtMS41Mi0yLjc0IDAtMi44NDggMS45NDgtNy42MDQgNC4wMDgtNy42MDQuOSAwIDEuMjQgMS4wNiAxLjI0IDIuMzU2IDAgMi44OTItMS44NTIgNy45ODgtMy43MjggNy45ODh6bTM3LjQwNC04LjVjLS42NTItLjc3Ni0uODg4LTEuODMyLS44ODgtMi43NzIgMC0xLjE2LjQyNC0yLjE0LjkzMi0yLjE0cy42NjQuNS42NjQgMS4xOTZjMCAxLjE2NC0uNDE2IDIuODY0LS43MDggMy43MTZ6bTguNDY4IDguNWMtMS4wOTIgMC0xLjUyLTEuMjY0LTEuNTItMi43NCAwLTIuNzQ4IDEuOTQ4LTcuNjA0IDQuMDI0LTcuNjA0LjkgMCAxLjIyIDEuMDUyIDEuMjIgMi4zNTYgMCAyLjg5Mi0xLjgyIDcuOTg4LTMuNzI0IDcuOTg4eiIvPjwvc3ZnPg==">&nbsp;Akses Canva Pro<p class="access-message can-access no-access" style="margin-bottom: 0px;font-size: 11px;"><span style="color: rgb(26, 26, 26);">status</span></p></a></li>
+                        <li class="nav-item"><a class="nav-link btnmenu1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" href="dashboard.html" title="Dashboard" style="padding-top: 10px;padding-bottom: 10px;"><i class="fa fa-dashboard" style="width: 21px;height: 21px;font-size: 21px;margin-right: 16px;"></i> Dashboard</a></li>
+                        <li class="nav-item" id="menujadwal"><a class="nav-link btnmenu1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" href="Jadwal.html" title="Jadwal" style="padding-top: 10px;padding-bottom: 10px;"><i class="fa fa-calendar" style="width: 21px;height: 21px;font-size: 21px;margin-right: 16px;"></i> Jadwal</a></li>
+                        <li class="nav-item"><a class="nav-link btnmenu1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" href="agenda.html" title="Segera hadir" style="padding-top: 10px;padding-bottom: 10px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-calendar3" style="width: 21px;height: 21px;font-size: 21px;margin-right: 16px;">
+                                    <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2M1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"></path>
+                                    <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2m3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                                </svg> Agenda aktifitas socmed</a></li>
+                        <li class="nav-item" id="menutemplate"><a class="nav-link btnmenu1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" href="template-digital.html" title="Template Canva" style="padding-top: 10px;padding-bottom: 10px;"><i class="fa fa-paint-brush" style="width: 21px;height: 21px;font-size: 21px;margin-right: 16px;"></i> Template Digital</a></li>
+                        <li class="nav-item"><a class="nav-link btnmenu1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" href="editor.html" title="Template Canva" style="padding-top: 10px;padding-bottom: 10px;"><i class="fa fa-object-ungroup" style="width: 21px;height: 21px;font-size: 21px;margin-right: 16px;"></i> Editor</a></li>
+                        <li class="nav-item"><a class="nav-link btnmenu1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" href="Tutorial.html" title="Tips &amp; Aticle" style="padding-top: 10px;padding-bottom: 10px;"><i class="fa fa-lightbulb-o" style="width: 21px;height: 21px;font-size: 21px;margin-right: 16px;"></i>Tutorial</a></li>
+                        <li class="nav-item"><a class="nav-link btnmenu1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" type="button" data-toggle="modal" data-target="#Forumsocmed"><i class="fa fa-wechat" style="width: 21px;height: 21px;font-size: 21px;margin-right: 16px;"></i> Forum</a></li>
+                        <li class="nav-item" id="menuabsen"><a class="nav-link btnmenu1" data-bs-toggle="tooltip" data-bss-tooltip="" data-bs-placement="right" href="Absensi-token1864839bfra6d91h37df7hdnb701nnx79345hfncvjdfoh.html" title="Tips &amp; Aticle" style="padding-top: 10px;padding-bottom: 10px;"><i class="fa fa-clock-o" style="width: 21px;height: 21px;font-size: 21px;margin-right: 16px;"></i>Absensi</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <hr>
+                    <div style="color: var(--bs-btn-disabled-color);background: #ff0000;padding-top: 8px;padding-bottom: 8px;padding-right: 16px;padding-left: 16px;border-radius: 16px;margin-bottom: 0px;border-bottom-left-radius: 0px;border-bottom-right-radius: 0px;border-color: var(--bs-btn-active-border-color);"><span style="color: var(--bs-body-bg);"><strong>Halo!👋&nbsp;</strong><span id="userName0" style="color: var(--bs-warning-border-subtle);font-weight: bold;"><strong>Halo!&nbsp;</strong></span><strong>&nbsp;</strong></span></div>
+                    <div class="d-flex flex-column" style="color: var(--bs-btn-disabled-color);background: #e6e6e6;padding-top: 8px;padding-bottom: 8px;padding-right: 8px;padding-left: 8px;border-radius: 16px;margin-bottom: 0px;border-top-left-radius: 0px;border-top-right-radius: 0px;"><button class="btn btn-danger btn-sm d-lg-flex justify-content-lg-center align-items-lg-center" type="button" data-bs-target="#profileSetting" data-bs-toggle="modal" style="background: #ff0000;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-circle swing animated infinite" style="font-size: 20px;">
+                                <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                                <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
+                            </svg>&nbsp;Dashboard Profile</button></div>
+                </div>
+            </div><script>
+    const menuButton = document.getElementById('menuButton');
+
+    // Toggle 'active' class when button is clicked
+    menuButton.addEventListener('click', function() {
+        this.classList.toggle('active');
+    });
+
+    // Remove 'active' class when dropdown menu is closed
+    document.addEventListener('click', function(event) {
+        if (!menuButton.contains(event.target) && !menuButton.nextElementSibling.contains(event.target)) {
+            menuButton.classList.remove('active');
+        }
+    });
+</script>
+        </div>
+        <section class="flex-grow-1 flex-xxl-grow-1 pagesocmed scrollbarnone" style="width: 100%;height: 100vh;overflow: hidden;overflow-y: scroll;padding-top: 2%;padding-right: 2%;padding-left: 2%;">
+            <div class="shadow" style="background: #ffffff;padding: 16px;border-radius: 16px;width: 100%;height: auto;margin-right: 15px;margin-bottom: 15px;"><button class="btn btn-primary pulse animated infinite" type="button" style="right: 0px;z-index: 3;position: relative;/*bottom: 0px;*/margin-left: 0px;margin-bottom: 10px;padding-right: 12px;padding-left: 12px;padding-top: 6.6px;padding-bottom: 6.6px;border-radius: 9px;background: rgb(0,38,238);" data-bs-toggle="offcanvas" data-bs-target="#offcanvas-menu"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-grid" style="font-size: 22px;margin-right: 10px;">
+                        <path d="M1 2.5A1.5 1.5 0 0 1 2.5 1h3A1.5 1.5 0 0 1 7 2.5v3A1.5 1.5 0 0 1 5.5 7h-3A1.5 1.5 0 0 1 1 5.5zM2.5 2a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 1h3A1.5 1.5 0 0 1 15 2.5v3A1.5 1.5 0 0 1 13.5 7h-3A1.5 1.5 0 0 1 9 5.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zM1 10.5A1.5 1.5 0 0 1 2.5 9h3A1.5 1.5 0 0 1 7 10.5v3A1.5 1.5 0 0 1 5.5 15h-3A1.5 1.5 0 0 1 1 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5zm6.5.5A1.5 1.5 0 0 1 10.5 9h3a1.5 1.5 0 0 1 1.5 1.5v3a1.5 1.5 0 0 1-1.5 1.5h-3A1.5 1.5 0 0 1 9 13.5zm1.5-.5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5z"></path>
+                    </svg>Menu</button>
+                <h5 style="width: 100%;max-width: 400px;padding: 0px;"><strong>Microsoft Word</strong></h5>
+                <div class="text-truncate d-flex justify-content-xxl-start align-items-xxl-center scrollbarnone" style="overflow: visible;overflow-x: scroll;overflow-y: visible;gap: 10px;"><a href="editor.html" style="color: var(--bs-emphasis-color);">Absensi Word Online</a>
+                    <h6 class="text-nowrap" style="width: auto;max-width: 400px;padding: 0px;margin-bottom: 0px;">&gt;&nbsp;</h6>
+                </div>
+            </div>
+            <div class="d-flex justify-content-xxl-start align-items-xxl-center" style="padding: 16px;margin-bottom: 16px;background: #d3d3d3;border-radius: 16px;padding-top: 8px;padding-bottom: 6px;gap: 8px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" class="icon icon-tabler icon-tabler-caret-left-right" style="font-size: 20px;">
+                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M14 18l6 -6l-6 -6v12"></path>
+                    <path d="M10 18l-6 -6l6 -6v12"></path>
+                </svg>
+                <h6 class="text-nowrap" style="width: auto;max-width: 400px;padding: 0px;margin-bottom: 0px;">Notification</h6>
+                <div class="modal fade modal-lg" role="dialog" tabindex="-1" id="AbsenBima" style="height: 100vh;width: 100vw;">
+                    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="width: 100%;">
+                                <h5 class="modal-title"><strong>Absensi manual harian</strong></h5><button class="btn-close" type="button" aria-label="Close" data-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body scrollbarnone" style="width: 100%;height: 400px;overflow: hidden;overflow-y: scroll;">
+                                <div class="ratio ratio-16x9"><iframe src="https://docs.google.com/document/d/1B_fGDrKl7suaf4GP8t4oDCw7uBYiqM4L/edit?usp=sharing&amp;ouid=104291239118174074571&amp;rtpof=true&amp;sd=true"></iframe></div>
+                            </div>
+                            <div class="modal-footer" style="width: 100%;"><button class="btn btn-light" type="button" data-dismiss="modal" style="border-radius: 16px;">Tutup</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade modal-lg" role="dialog" tabindex="-1" id="AbsenReni" style="height: 100vh;width: 100vw;">
+                    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="width: 100%;">
+                                <h5 class="modal-title"><strong>Absensi manual harian</strong></h5><button class="btn-close" type="button" aria-label="Close" data-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body scrollbarnone" style="width: 100%;height: 400px;overflow: hidden;overflow-y: scroll;">
+                                <div class="ratio ratio-16x9"><iframe src="https://docs.google.com/document/d/1i9U8kEHUZk-XPZ8EiCZK1y8Qe1Ab3h21/edit?usp=sharing&amp;ouid=104291239118174074571&amp;rtpof=true&amp;sd=true"></iframe></div>
+                            </div>
+                            <div class="modal-footer" style="width: 100%;"><button class="btn btn-light" type="button" data-dismiss="modal" style="border-radius: 16px;">Tutup</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade modal-lg" role="dialog" tabindex="-1" id="AbsenDita" style="height: 100vh;width: 100vw;">
+                    <div class="modal-dialog modal-dialog-scrollable modal-fullscreen" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header" style="width: 100%;">
+                                <h5 class="modal-title"><strong>Absensi manual harian</strong></h5><button class="btn-close" type="button" aria-label="Close" data-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body scrollbarnone" style="width: 100%;height: 400px;overflow: hidden;overflow-y: scroll;">
+                                <div class="ratio ratio-16x9"><iframe src="https://docs.google.com/document/d/1Blq4Fz4OqNtrC0TYhbY-hVcQnLnNnHjE/edit?usp=sharing&amp;ouid=104291239118174074571&amp;rtpof=true&amp;sd=true"></iframe></div>
+                            </div>
+                            <div class="modal-footer" style="width: 100%;"><button class="btn btn-light" type="button" data-dismiss="modal" style="border-radius: 16px;">Tutup</button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow" style="background: #ffffff;padding: 16px;border-radius: 16px;width: 100%;height: auto;margin-right: 15px;margin-bottom: 15px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-4" id="absenbima">
+                            <div class="card shadow-sm" style="background: #efefef;border-width: 2px;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Bima Ardianto Pramana</h4>
+                                    <h6 class="text-muted card-subtitle mb-2">Absensi MPM</h6>
+                                    <p class="card-text">Akses absensi manual di link berikut</p><button class="btn btn-primary" type="button" data-target="#AbsenBima" data-toggle="modal" style="padding-right: 16px;padding-left: 16px;padding-bottom: 5.6px;padding-top: 5.6px;border-radius: 9px;">Buka Absensi</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" id="absenreni">
+                            <div class="card shadow-sm" style="background: #efefef;border-width: 2px;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Reny Kusumawati</h4>
+                                    <h6 class="text-muted card-subtitle mb-2">Absensi MPM</h6>
+                                    <p class="card-text">Akses absensi manual di link berikut</p><button class="btn btn-primary" type="button" data-target="#AbsenReni" data-toggle="modal" style="padding-right: 16px;padding-left: 16px;padding-bottom: 5.6px;padding-top: 5.6px;border-radius: 9px;">Buka Absensi</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-4" id="absendita">
+                            <div class="card shadow-sm" style="background: #efefef;border-width: 2px;">
+                                <div class="card-body">
+                                    <h4 class="card-title">Dita susanti</h4>
+                                    <h6 class="text-muted card-subtitle mb-2">Absensi MPM</h6>
+                                    <p class="card-text">Akses absensi manual di link berikut</p><button class="btn btn-primary" type="button" data-target="#AbsenDita" data-toggle="modal" style="padding-right: 16px;padding-left: 16px;padding-bottom: 5.6px;padding-top: 5.6px;border-radius: 9px;">Buka Absensi</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="bg-primary-gradient" style="box-shadow: 0px -33px 20px 2px rgba(45,45,45,0.08);border-radius: 0px;">
+                <div class="modal fade" role="dialog" tabindex="-1" id="srch">
+                    <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header d-flex justify-content-between" style="background: linear-gradient(180deg, #a4a9d7, #1637a9);">
+                                <h4 class="modal-title" style="color: rgb(255,255,255);">Cari sesuatu di sini</h4><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-circle-fill" type="button" aria-label="Close" data-dismiss="modal" style="color: rgb(255,255,255);width: 32px;height: 32px;">
+                                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
+                                </svg>
+                            </div>
+                            <div class="modal-body scrollbarnone" style="background: rgba(255,255,255,0);height: auto;max-height: 600px;">
+                                <p>Cari produk, kode produk atau lainnya.</p>
+                                <form class="input-group" style="margin-bottom: 16px;position: relative;"><input class="form-control" type="text" id="searchInput" placeholder="Cari di sini ..."><button class="btn btn-success d-xxl-flex align-items-xxl-center" id="searchButton" type="button" style="color: rgb(255,255,255);border-top-right-radius: 16px;border-bottom-right-radius: 16px;padding-right: 15px;padding-left: 15px;">&nbsp;Cari&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search">
+                                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                                        </svg></button></form>
+                                <ol class="flex-column-reverse list-group" id="searchResults" style="display: none;">
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Gambar motor honda transparan | Google drive</strong></span>
+                                                <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Download gambar motor Honda transparan. dari Honda matic, sport dan cub. download semua unit dengan klik di sini.&nbsp;<a href="https://drive.google.com/drive/folders/1NmGcOpHaxG1NsGl_QgDOhOoWi-U1v2lr?usp=sharing" style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Honda</span><span class="shadow tagsearch">#Transparan</span><span class="shadow tagsearch">#Motor</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Materi socmed MPM Motor |</strong></span>
+                                                <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Unduh materi socmed all MSO untuk social media cabang, dapatkan materi video reels, TikTok, status Whatsapp, Feed Instagram. dengan format .zip.&nbsp;<a href="Jadwal.html" style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Jadwal</span><span class="shadow tagsearch">#Socmed</span><span class="shadow tagsearch">#Materi</span><span class="shadow tagsearch">#Honda</span><span class="shadow tagsearch">#Download</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Template canva gratis dan berbayar |</strong></span>
+                                                <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Gunakan template digital dengan sesuai kebutuhan mu.&nbsp;<a id="srcTemplate" href="../materisocmed/Jadwal.html" style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Template</span><span class="shadow tagsearch">#Motor</span><span class="shadow tagsearch">#Honda</span>&nbsp;</span>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Paket Berlangganan Bulanan - Rp 30.000&nbsp;| materi</strong></span>
+                                                <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Dapatkan akses ke seluruh materi pelajaran yang tersedia, Materi dan konten diperbarui secara berkala untuk memastikan relevansi dan kualitas.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent" href="subscription.html">(Klik disini)</a></span>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Berlangganan</span><span class="shadow tagsearch">#Berbayar</span><span class="shadow tagsearch">#Template</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Paket Berlangganan Bulanan - Rp 370.000&nbsp;| materi</strong></span>
+                                                <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">Dapatkan akses ke seluruh materi pelajaran yang tersedia, Semua pembaruan dan tambahan materi akan tersedia tanpa biaya tambahan.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent" href="subscription.html">(Klik disini)</a></span>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Berlangganan</span><span class="shadow tagsearch">#Berbayar</span><span class="shadow tagsearch">#Template</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="container">
+                                                <div class="row" style="gap: 10px;">
+                                                    <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="../assets/img/ceo/17292968639655477202.png"></div>
+                                                    <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                        <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Giveaway Receh DANA Kaget! Siap-Siap Dapet Rejeki Nomplok!</strong></span>
+                                                            <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);">Yuk buruan ikutan giveaway receh dari DANA Kaget! Siapa tahu kamu yang beruntung dapet saldo gratis buat jajan. Gampang banget, tinggal klik link dan rebut hadiahnya sebelum habis. Jangan sampai ketinggalan, ya!.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent" href="../assets/img/App/cek-khodam/UPDATE%20SETIAP%20HARI.webp">(Klik disini)</a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#GiveawayReceh</span><span class="shadow tagsearch">#DanaKaget</span><span class="shadow tagsearch">#SaldoGratis</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="container">
+                                                <div class="row" style="gap: 10px;">
+                                                    <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="../assets/img/Template/Berbayar/Promo-Gajian-1.webp"></div>
+                                                    <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                        <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Promo Gajian Spesial untuk Motor Honda!</strong></span>
+                                                            <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);">Manfaatkan promo gajian ini untuk memiliki motor Honda impianmu! Dengan DP mulai dari 100 ribu dan potongan hingga 1 juta rupiah, jadikan perjalananmu semakin nyaman dan gaya. Segera klik untuk mendapatkan detail promo eksklusif ini sebelum kehabisan!.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent" href="../materisocmed/template-digital.html">(Klik disini)</a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#PromoGajian</span><span class="shadow tagsearch">#MotorHonda</span><span class="shadow tagsearch">#PromoTerbaik</span><span class="shadow tagsearch">#PromoTerbaik</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="container">
+                                                <div class="row" style="gap: 10px;">
+                                                    <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="https://down-bs-id.img.susercontent.com/id-11134207-7qula-lha38ysxjxvnd7.webp"></div>
+                                                    <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                        <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Luxus Yura Sepatu Sneakers Wanita Quality - Lx3081 - P0001</strong></span>
+                                                            <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);"><strong>Rp134.999</strong></span><span style="color: rgb(255,255,255);">Klik lihat produk untuk melhat detail produk.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_blank" href="https://s.shopee.co.id/BD1OBVCMG">(Lihat Produk)</a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Shopee</span><span class="shadow tagsearch">#P0001</span><span class="shadow tagsearch">#Sepatu</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="container">
+                                                <div class="row" style="gap: 10px;">
+                                                    <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="https://down-spe-id.img.susercontent.com/id-11134207-7r98z-lw4qcafqpvgta3.webp"></div>
+                                                    <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                        <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>Beli 1 Dapat 3 Ballerina Perfume - Parfum Wanita Aroma Pink Romance - amber Grace - Garden Of Mirror&nbsp;- P0002</strong></span>
+                                                            <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);"><strong>Rp19.800</strong></span><span style="color: rgb(255,255,255);">Klik lihat produk untuk melhat detail produk.&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_blank" href="https://s.shopee.co.id/10mCmpTXoT">(Lihat Produk)</a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Shopee</span><span class="shadow tagsearch">#P0002</span><span class="shadow tagsearch">#Parfum</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="container">
+                                                <div class="row" style="gap: 10px;">
+                                                    <div class="col-12 col-sm-3 col-md-4 col-lg-3 col-xl-3 col-xxl-3" style="padding-right: 0px;padding-left: 0px;"><img style="margin-right: 0px;height: auto;width: 100%;margin-bottom: 0px;margin-top: 0px;border-radius: 13px;" src="../assets/img/Gopay/qris.png"></div>
+                                                    <div class="col-sm-8 col-md-7 col-lg-8 col-xl-8 col-xxl-8" style="padding-right: 0px;padding-left: 0px;max-width: 100%;">
+                                                        <div class="d-flex flex-column" style="width: 100%;max-width: 100%;"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>.... |</strong></span>
+                                                            <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;width: 100%;"></div><span style="color: rgb(255,255,255);">.. .&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Tag</span><span class="shadow tagsearch">#Tag</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                    <li class="list-group-item" style="padding-left: 8px;padding-right: 8px;border-width: 0px;background: rgba(255,255,255,0);">
+                                        <div class="d-flex flex-column resultsrc">
+                                            <div class="d-flex flex-column"><span style="color: rgb(255,255,255);font-size: 20px;"><strong>... |</strong></span>
+                                                <div style="height: 2px;background: #ffffff;padding-top: 0px;margin-top: 7px;margin-bottom: 4px;"></div><span style="color: rgb(255,255,255);">.. .&nbsp;<a style="font-weight: bold;color: #ffe28b;" target="_parent">(Klik disini)</a></span>
+                                            </div><span class="text-break shadow" style="padding-top: 16px;"><span class="shadow tagsearch">#Tag</span><span class="shadow tagsearch">#Tag</span>&nbsp;</span>
+                                        </div>
+                                    </li>
+                                </ol><span id="noResultsMessage" style="padding-top: 7px;display: none;color: rgb(255,255,255);background: linear-gradient(-172deg, #ff0000, #230000);padding-bottom: 7px;margin-top: 0px;padding-right: 16px;padding-left: 16px;border-radius: 10px;">Maaf, data tidak di temukan</span><script>
+    function searchItems() {
+      let input = document.getElementById('searchInput').value.toLowerCase();
+      let items = document.querySelectorAll('#searchResults li');
+      let found = false;
+
+      // Reset hasil sebelumnya
+      items.forEach(function(item) {
+        item.style.display = 'none';
+      });
+      document.getElementById('noResultsMessage').style.display = 'none';
+
+      // Jika input kosong, jangan tampilkan apa pun
+      if (input.trim() === "") {
+        document.getElementById('searchResults').style.display = 'none';
+        document.getElementById('noResultsMessage').style.display = 'none';
+        return;
+      }
+
+      // Pecahkan input menjadi array kata
+      let searchTerms = input.split(" ");
+
+      // Lakukan pencarian berdasarkan beberapa kata
+      items.forEach(function(item) {
+        let itemText = item.innerHTML.toLowerCase();
+        let match = searchTerms.every(function(term) {
+          return itemText.indexOf(term) !== -1;  // Cek semua kata ada di item
+        });
+        if (match) {
+          item.style.display = 'block';
+          found = true;
+        }
+      });
+
+      // Tampilkan hasil atau pesan 'data tidak ditemukan'
+      if (found) {
+        document.getElementById('searchResults').style.display = 'block';
+        document.getElementById('noResultsMessage').style.display = 'none';
+      } else {
+        document.getElementById('searchResults').style.display = 'none';
+        document.getElementById('noResultsMessage').style.display = 'block';
+      }
+    }
+
+    // Event listener untuk tombol Search
+    document.getElementById('searchButton').addEventListener('click', searchItems);
+
+    // Event listener untuk tombol Enter pada input
+    document.getElementById('searchInput').addEventListener('keypress', function(event) {
+      if (event.key === 'Enter') {
+        searchItems();
+      }
+    });
+  </script>
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- untuk screen capture -->
+<script>
+    function showAlert(message) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Akses Dilarang!',
+            text: message,
+            confirmButtonText: 'OK'
+        });
+    }
+
+    // Fungsi untuk menampilkan SweetAlert khusus untuk screenshot
+    function showScreenshotAlert() {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Screenshot Dilarang!',
+            text: 'Anda tidak diperbolehkan mengambil screenshot atau mencetak konten ini.',
+            confirmButtonText: 'OK'
+        });
+    }
+
+    document.addEventListener('keydown', function(event) {
+        // Disable F12
+        if (event.keyCode == 123) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+J
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+C
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+U
+        if (event.ctrlKey && event.keyCode == 85) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+K (Mozilla Firefox Web Console)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 75) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+S (Windows Snipping Tool)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 83) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+K or Ctrl+F (Search in Developer Tools)
+        if (event.ctrlKey && (event.keyCode == 75 || event.keyCode == 70)) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable F1 (Help in Developer Tools)
+        if (event.keyCode == 112) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+P (File search in Developer Tools)
+        if (event.ctrlKey && event.keyCode == 80) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable PrintScreen and other screenshot combinations
+        if (event.key === 'PrintScreen' ||
+            (event.ctrlKey && event.key === 'p') ||
+            (event.shiftKey && (event.metaKey || event.keyCode === 91 || event.keyCode === 92) && event.key === 'S') ||
+            (event.key === 'PrintScreen' && (event.metaKey || event.keyCode === 91 || event.keyCode === 92)) ||
+            event.key === 'Meta') {
+            event.preventDefault();
+            showScreenshotAlert();
+        }
+    });
+
+    // Deteksi tombol PrintScreen dan Windows + Print Screen
+    document.addEventListener('keyup', function (event) {
+        if (event.key === 'PrintScreen' || (event.key === 'PrintScreen' && (event.metaKey || event.keyCode === 91 || event.keyCode === 92))) {
+            navigator.clipboard.writeText('');
+            showScreenshotAlert();
+        }
+    });
+
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah tindakan ketika 3 jari menyentuh layar
+    document.addEventListener('touchstart', function (event) {
+        if (event.touches.length === 3) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan tindakan ini');
+        }
+    });
+</script>
+<!-- Selesai -->
+<!-- drag off -->
+<script>
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+    });
+</script>
+<!-- selesai -->
+
+<!-- mematikan inspection -->
+<script>
+    function showAlert(message) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Akses Dilarang!',
+            text: message,
+            confirmButtonText: 'OK'
+        });
+    }
+
+    document.addEventListener('keydown', function (event) {
+        // Disable F12
+        if (event.keyCode == 123) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+J
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+C
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+U
+        if (event.ctrlKey && event.keyCode == 85) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+K (Mozilla Firefox Web Console)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 75) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+S (Windows Snipping Tool)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 83) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+K or Ctrl+F (Search in Developer Tools)
+        if (event.ctrlKey && (event.keyCode == 75 || event.keyCode == 70)) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable F1 (Help in Developer Tools)
+        if (event.keyCode == 112) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+P (File search in Developer Tools)
+        if (event.ctrlKey && event.keyCode == 80) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+    });
+
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah tindakan ketika 3 jari menyentuh layar
+    document.addEventListener('touchstart', function (event) {
+        if (event.touches.length === 3) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan tindakan ini');
+        }
+    });
+</script>
+<!-- selesai -->
+<script>
+        // contoh HTML
+        // <div class="copy-container">
+        // <span class="copy-text" id="text1">Ini adalah teks yang dapat disalin.</span>
+        // <button class="copy-button" id="copyButton1" onclick="copyText('text1')">Salin</button>
+        // </div>
+        function copyText(elementId) {
+            // Ambil elemen teks berdasarkan ID yang diberikan
+            var copyText = document.getElementById(elementId);
+
+            // Pilih teks di dalam elemen
+            var range = document.createRange();
+            range.selectNode(copyText);
+            window.getSelection().removeAllRanges(); // Hilangkan seleksi sebelumnya
+            window.getSelection().addRange(range);
+
+            try {
+                // Salin teks ke clipboard
+                document.execCommand('copy');
+                
+                // Menampilkan SweetAlert ketika teks berhasil disalin
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Berhasil Disalin!',
+                    text: '' + copyText.textContent + ' telah berhasil disalin.',
+                    confirmButtonText: 'Terima',
+                    confirmButtonColor: '#4CAF50'
+                });
+            } catch (err) {
+                // Menampilkan SweetAlert jika terjadi error
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Gagal Menyalin!',
+                    text: 'Teks tidak dapat disalin. Silakan coba lagi.',
+                    confirmButtonText: 'Terima',
+                    confirmButtonColor: '#f44336'
+                });
+            }
+
+            // Hapus seleksi setelah salinan
+            window.getSelection().removeAllRanges();
+        }
+    </script>
+                <div class="modal fade" role="dialog" tabindex="-1" id="canvaprodashboard">
+                    <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Canva Pro</h4><button class="btn-close" type="button" aria-label="Close" data-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p style="font-weight: bold;"><span style="color: rgb(1, 1, 1);">By Groupy Pro</span>&nbsp;<img src="https://groupy.id/assets/images/logo/groupy_mobile_black.png" width="auto" height="16" style="width: auto;"></p>
+                                <p>Join dengan tim Canva Pro Groupy jika belum join:<br>Login menggunakan akun Canva kamu.<br><br>Enjoy Canva Pro!<br><br><strong>Important Notes:</strong><br>Tidak perlu join berkali-kali, cukup join sekali, nanti langsung akses melalui https://www.canva.com jika sudah join.<br><br>Dimohon untuk tidak membagikan link tim Canva Pro Groupy.<br><br><em>Last Updated: 07/11/2024 (10:10 WIB)</em></p><a class="btn btn-primary" role="button" href="https://www.canva.com/brand/join?token=X8QsWkNlNjMj_NkkGefRTQ" target="_blank">Gabung Canva Team Pro</a>
+                            </div>
+                            <div class="modal-footer"><button class="btn btn-light" type="button" data-dismiss="modal">Close</button></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal fade scrollbarnone" role="dialog" tabindex="-1" id="Forumsocmed" style="z-index: 9999;height: 100vh;width: 100vw;">
+                    <div class="modal-dialog modal-xl modal-dialog-centered" role="document">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title"><strong>Forum chat</strong></h5><button class="btn-close" type="button" aria-label="Close" data-dismiss="modal"></button>
+                            </div>
+                            <div class="modal-body text-nowrap text-break" style="overflow: visible;overflow-x: hidden;overflow-y: hidden;padding-bottom: 30px;">
+                                <div class="container">
+                                    <div class="row flex-column-reverse flex-sm-column-reverse flex-md-column-reverse flex-lg-column-reverse flex-xl-row flex-xxl-row">
+                                        <div class="col-md-12 col-xl-6 col-xxl-6 d-flex flex-column"><script>
+  const container = document.querySelector('.containeroniontop');
+  
+  // Ambil semua item dari container
+  const items = Array.from(container.children);
+
+  // Bersihkan container sebelum menambahkan data terbalik
+  container.innerHTML = '';
+
+  // Tambahkan item secara terbalik ke dalam container
+  items.reverse().forEach(item => {
+    container.appendChild(item);
+  });
+
+  // Posisikan scroll bar di atas saat halaman pertama kali dimuat
+  container.scrollTop = 0;
+</script><label class="form-label">Pesan terbaru ada paling teratas</label>
+                                            <div class="text-bg-success d-flex flex-column-reverse justify-content-start order-last .containeroniontop" id="messages" style="justify-content: flex-start;flex-direction: column-reverse;display: flex;padding-top: 20px;padding-bottom: 20px;font-family: Poppins, sans-serif;height: 100%;max-height: none;overflow: auto;overflow-y: auto;width: 100%;"></div>
+                                        </div>
+                                        <div class="col-md-12 col-xl-6 col-xxl-6" style="word-wrap: break-word;"><label class="form-label">Tulis pesan kamu</label>
+                                            <form id="chat" style="width: 100%;" method="post" target="_self">
+                                                <div class="mb-3" style="padding: 15px;margin-bottom: 0px;">
+                                                    <div class="d-flex d-lg-flex d-xl-flex d-xxl-flex flex-column gap-2"><input class="form-control" type="text" id="name" name="Nama" placeholder="Nama" style="margin: 0px;margin-bottom: 8px;" readonly=""><textarea class="form-control" required="" name="Pesan" placeholder="Pesan"></textarea><button class="btn btn-primary" type="submit" style="margin: 0px;margin-bottom: 8px;">Kirim</button></div>
+                                                    <div style="text-align: center;padding-bottom: 2px;"><label class="form-label" id="status-txt" style="color: var(--bs-success);margin-top: 8px;">Pesan apa yang ingin kamu kirim?</label></div>
+                                                </div>
+                                            </form>
+                                            <div class="d-none d-print-none d-sm-none d-md-none d-lg-flex d-xl-flex d-xxl-flex flex-column" style="word-wrap: break-word;overflow-wrap: break-word;height: auto;background: var(--swiper-theme-color);border-radius: 16px;padding-top: 16px;padding-bottom: 16px;padding-right: 16px;padding-left: 16px;overflow: visible;max-height: none;">
+                                                <p class="text-wrap" style="word-wrap: break-word;color: rgb(255,255,255);font-size: 20px;filter: blur(0px);margin-bottom: 12px;text-align: center;"><strong>Pengumuman give away</strong></p>
+                                                <div class="scrollbarnone" style="overflow: hidden;overflow-y: scroll;height: 270.125px;">
+                                                    <div class="d-flex flex-column" style="margin-bottom: 18px;background: var(--bs-body-bg);padding: 10px;border-radius: 16px;"><label class="form-label text-wrap" style="color: var(--bs-body-bg);margin-bottom: 0px;padding: 10px;background: var(--bs-emphasis-color);border-radius: 12px;">Canva pro 1 bulan - November 2024 | 4 user</label>
+                                                        <div class="d-flex flex-column" style="padding: 10px;"><label class="form-label text-wrap" style="color: var(--bs-emphasis-color);margin-bottom: 0px;border-color: var(--bs-emphasis-color);">1. Ferdy - MPM Motor Kediri<br>2. Silverster Dimas Db - MPM Motor Basra<br>3. Ahmad Khoirun - MPM Motor Tuban<br>4. Putri Parwitasari - MPM Motor Madiun</label><label class="form-label text-wrap" style="color: var(--bs-emphasis-color);margin-bottom: 0px;border-color: var(--bs-emphasis-color);text-align: right;font-style: italic;font-size: 12px;">November 2024</label></div>
+                                                    </div>
+                                                    <div class="d-flex flex-column" style="margin-bottom: 18px;background: var(--bs-body-bg);padding: 10px;border-radius: 16px;"><label class="form-label text-wrap" style="color: var(--bs-body-bg);margin-bottom: 0px;padding: 10px;background: var(--bs-emphasis-color);border-radius: 12px;">Canva pro 1 bulan - September 2024 | 3 user</label>
+                                                        <div class="d-flex flex-column" style="padding: 10px;"><label class="form-label text-wrap" style="color: var(--bs-emphasis-color);margin-bottom: 0px;border-color: var(--bs-emphasis-color);">1. Ferdy - MPM Motor Kediri<br>2. Tossy - MPM Motor Pare<br>3. Enny - MPM Motor Sukun</label><label class="form-label text-wrap" style="color: var(--bs-emphasis-color);margin-bottom: 0px;border-color: var(--bs-emphasis-color);text-align: right;font-style: italic;font-size: 12px;">September 2024</label></div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div><script>
+        document.addEventListener("DOMContentLoaded", () => {
+            const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+            if (currentUser) {
+                document.getElementById("name").value = currentUser.name;
+            }
+        });
+    </script>
+<script src="../assets/js/login/comment.js"></script>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container py-4 py-lg-5">
+                    <div class="row justify-content-center">
+                        <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
+                            <h3 class="fs-6 fw-bold">Menu</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="../index.html" target="_parent">Profile</a></li>
+                                <li><a href="../Tentang.html" target="_parent">Tentang</a></li>
+                                <li><a href="../Keahlian.html" target="_parent">Keahlian</a></li>
+                                <li><a href="../Kontak.html" target="_parent">Kontak</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
+                            <h3 class="fs-6 fw-bold">Pembayaran</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="payment.html">Payment</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
+                            <h3 class="fs-6 fw-bold">Layanan</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="../materisocmed/dashboard.html" target="_parent">Dashboard MPM</a></li>
+                                <li><a href="../web-service.html" target="_parent">Web Service</a></li>
+                                <li><a href="../artikel/index.html" target="_parent">Artikel</a></li>
+                                <li><a class="d-flex justify-content-center align-items-center" href="../penaku/index.html" target="_parent"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-pen-fill" style="height: 16px;margin-right: 6px;">
+                                            <path d="m13.498.795.149-.149a1.207 1.207 0 1 1 1.707 1.708l-.149.148a1.5 1.5 0 0 1-.059 2.059L4.854 14.854a.5.5 0 0 1-.233.131l-4 1a.5.5 0 0 1-.606-.606l1-4a.5.5 0 0 1 .131-.232l9.642-9.642a.5.5 0 0 0-.642.056L6.854 4.854a.5.5 0 1 1-.708-.708L9.44.854A1.5 1.5 0 0 1 11.5.796a1.5 1.5 0 0 1 1.998-.001"></path>
+                                        </svg>Penaku</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
+                            <h3 class="fs-6 fw-bold">Hiburan</h3>
+                            <ul class="list-unstyled">
+                                <li><a href="../app/index.html" target="_parent">App</a></li>
+                                <li><a href="../app/cek-khodam.html" target="_parent">Cek Khodam</a></li>
+                                <li><a href="../app/cek-berat-badan.html" target="_parent">Cek Ideal Badan</a></li>
+                                <li><a href="../app/cek-pengeluaran-bulanan.html" target="_parent">Cek Pengeluaran Bulanan</a></li>
+                                <li><a href="../app/whatsapp-generator.html" target="_parent">WhatsApp Generator</a></li>
+                            </ul>
+                        </div>
+                        <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="height: auto;">
+                            <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2" style="padding: 6px;background: var(--bs-body-bg);box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.14);"><img src="../assets/img/Logo/logo2.webp" style="width: 100%;height: auto;"></span><span>Bimaselalubenar</span></div>
+                            <div class="d-sm-flex d-lg-flex d-xxl-flex justify-content-sm-center justify-content-lg-center justify-content-xxl-center" style="width: 100%;height: auto;margin-top: 16px;margin-bottom: 20px;"> <a href='http://www.freevisitorcounters.com'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cad89751e6666070c63c7bf9989960eeef49b85d'></script>
+<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1269423/t/1"></script></div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="text-muted d-flex justify-content-between align-items-center pt-3">
+                        <p class="mb-0">Copyright ©2024 | 32 Tech</p>
+                        <ul class="list-inline mb-0">
+                            <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-instagram">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"></path>
+                                </svg></li>
+                            <li class="list-inline-item"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-threads-fill">
+                                    <path d="M6.81 9.204c0-.41.197-1.062 1.727-1.062.469 0 .758.034 1.146.121-.124 1.606-.91 1.818-1.674 1.818-.418 0-1.2-.218-1.2-.877Z"></path>
+                                    <path d="M2.59 16h10.82A2.59 2.59 0 0 0 16 13.41V2.59A2.59 2.59 0 0 0 13.41 0H2.59A2.59 2.59 0 0 0 0 2.59v10.82A2.59 2.59 0 0 0 2.59 16M5.866 5.91c.567-.81 1.315-1.126 2.35-1.126.73 0 1.351.246 1.795.711.443.466.696 1.132.754 1.983.245.103.472.224.678.363.832.559 1.29 1.395 1.29 2.353 0 2.037-1.67 3.806-4.692 3.806-2.595 0-5.291-1.51-5.291-6.004C2.75 3.526 5.361 2 8.033 2c1.234 0 4.129.182 5.217 3.777l-1.02.264c-.842-2.56-2.607-2.968-4.224-2.968-2.675 0-4.187 1.628-4.187 5.093 0 3.107 1.69 4.757 4.222 4.757 2.083 0 3.636-1.082 3.636-2.667 0-1.079-.906-1.595-.953-1.595-.177.925-.651 2.482-2.733 2.482-1.213 0-2.26-.838-2.26-1.936 0-1.568 1.488-2.136 2.663-2.136.44 0 .97.03 1.247.086 0-.478-.404-1.296-1.426-1.296-.911 0-1.16.288-1.45.624l-.024.027c-.202-.135-.875-.601-.875-.601Z"></path>
+                                </svg></li>
+                        </ul>
+                    </div>
+                </div><script src="OneSignalSDKWorker.js"></script>
+            </footer>
+        </section>
+    </div><script> document.addEventListener('DOMContentLoaded', function() { document.querySelector('.content').style.display = 'block'; }); </script>
+
+<script>
+    const userInfo = document.getElementById('userInfo');
+    const user = JSON.parse(localStorage.getItem('currentUser'));
+
+    // Function to shuffle an array
+    function shuffle(array) {
+        for (let i = array.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [array[i], array[j]] = [array[j], array[i]];
+        }
+        return array;
+    }
+
+    // Get all elements with id starting with 'user'
+    const userElements = [
+        'userName0',
+        'userName1',
+        'userName2',
+        'userEmail',
+        'userEmail0',
+        'userBranch',
+        'userPosition',
+        'userCabang0',
+        'userCabang',
+        //profile
+        'userNameprofile',
+        'userEmailprofile',
+        'userBranchprofile',
+        'userPositionprofile',
+        'userCabangprofile',
+        //slidemenu
+        'userNameslide',
+    ];
+
+    if (user) {
+        // Shuffle the order of ids
+        const shuffledUserElements = shuffle(userElements);
+
+        // Iterate over shuffled elements and fill the content
+        shuffledUserElements.forEach((id) => {
+            const element = document.getElementById(id);
+            if (element) {
+                switch (id) {
+                    case 'userName0':
+                    case 'userName1':
+                    case 'userName2':
+                    case 'userNameprofile':
+                    case 'userNameslide':
+                        element.textContent = user.name;
+                        break;
+                    case 'userEmail':
+                    case 'userEmail0':
+                    case 'userEmailprofile':
+                        element.textContent = user.email;
+                        break;
+                    case 'userBranch':
+                    case 'userBranchprofile':
+                        element.textContent = user.branch;
+                        break;
+                    case 'userPosition':
+                    case 'userPositionprofile':
+                        element.textContent = user.position;
+                        break;
+                    case 'userCabang0':
+                    case 'userCabang':
+                    case 'userCabangprofile':
+                        element.textContent = user.cabang;
+                        break;
+                }
+            }
+        });
+
+        // Logout functionality with SweetAlert confirmation
+        document.getElementById('logoutButton').addEventListener('click', function () {
+            Swal.fire({
+                title: 'Apakah Anda ingin keluar?',
+                text: "Anda tidak akan bisa mengakses kembali jika keluar!",
+                icon: 'warning',
+                showCancelButton: true,
+                confirmButtonColor: '#3085d6',
+                cancelButtonColor: '#d33',
+                confirmButtonText: 'Iya, keluar',
+                cancelButtonText: 'Tidak'
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    // If confirmed, log out and redirect
+                    localStorage.removeItem('currentUser');
+                    Swal.fire({
+                        title: 'Berhasil!',
+                        text: 'Anda berhasil keluar.',
+                        icon: 'success',
+                        timer: 2000,
+                        showConfirmButton: false
+                    }).then(() => {
+                        // Redirect to login page after the success alert
+                        window.location.href = '../materisocmed/index.html';
+                    });
+                }
+            });
+        });
+    } else {
+        // Redirect to login page if user is not logged in
+        window.location.href = '../materisocmed/index.html';
+    }
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+<script>
+    const Toast = Swal.mixin({
+        toast: true,
+        position: "top-end",
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+        didOpen: (toast) => {
+            toast.onmouseenter = Swal.stopTimer;
+            toast.onmouseleave = Swal.resumeTimer;
+        }
+    });
+
+    window.onload = function() {
+        Toast.fire({
+            icon: "success",
+            title: "Anda berhasil masuk!",
+        });
+    };
+</script>
+
+<script>
+    function calculateRemainingDays(expiryDate) {
+        const currentDate = new Date();
+        const expiry = new Date(expiryDate);
+        const timeDiff = expiry - currentDate;
+        return Math.ceil(timeDiff / (1000 * 3600 * 24));
+    }
+
+    function formatCountdown(expiryDate) {
+        const currentDate = new Date();
+        const expiry = new Date(expiryDate);
+        const timeDiff = expiry - currentDate;
+
+        if (timeDiff <= 0) return "Expired";
+
+        const days = Math.floor(timeDiff / (1000 * 3600 * 24));
+        const hours = Math.floor((timeDiff % (1000 * 3600 * 24)) / (1000 * 3600));
+        const minutes = Math.floor((timeDiff % (1000 * 3600)) / (1000 * 60));
+        const seconds = Math.floor((timeDiff % (1000 * 60)) / 1000);
+
+        return `${days}d ${hours}h ${minutes}m ${seconds}s`;
+    }
+
+    function manageMenuAccessibility() {
+    const currentUser = JSON.parse(localStorage.getItem("currentUser"));
+    const subscriptionNotes = document.querySelectorAll(".subscriptionNote"); // Ganti id dengan class
+    const countdowns = document.querySelectorAll(".countdown");
+    const menuItems = document.querySelectorAll(".menu-item");
+    const subscribeButton = document.getElementById("subscribeButton");
+
+    if (!currentUser) return;
+
+    subscriptionNotes.forEach((subscriptionNote, index) => {
+        const countdown = countdowns[index];
+        if (currentUser.subscribed) {
+            if (currentUser.expiryDate === "lifetime") {
+                subscriptionNote.textContent = "Anda memiliki akses berlangganan seumur hidup.";
+                countdown.textContent = "Lifetime access";
+                menuItems.forEach(item => {
+                    item.classList.remove("disabled");
+                    item.addEventListener("click", handleMenuClick);
+                });
+            } else {
+                const remainingDays = calculateRemainingDays(currentUser.expiryDate);
+                if (remainingDays > 0) {
+                    subscriptionNote.textContent = `Anda sudah berlangganan. ${remainingDays} hari.`;
+                    countdown.textContent = `Sisa waktu: ${formatCountdown(currentUser.expiryDate)}`;
+                    menuItems.forEach(item => {
+                        item.classList.remove("disabled");
+                        item.addEventListener("click", handleMenuClick);
+                    });
+
+                    // Update countdown every second
+                    setInterval(() => {
+                        countdown.textContent = `Akan selesai : ${formatCountdown(currentUser.expiryDate)}`;
+                    }, 1000);
+                } else {
+                    subscriptionNote.textContent = "Masa berlangganan Anda telah berakhir.";
+                    countdown.textContent = "Expired";
+                    menuItems.forEach(item => {
+                        item.classList.add("disabled");
+                        item.removeEventListener("click", handleMenuClick);
+                    });
+                }
+            }
+        } else {
+            subscriptionNote.textContent = "Anda belum berlangganan.";
+            countdown.textContent = "";
+            menuItems.forEach(item => {
+                item.classList.add("disabled");
+                item.removeEventListener("click", handleMenuClick);
+            });
+        }
+    });
+
+    subscribeButton.addEventListener("click", () => {
+        window.location.href = "subscription.html";
+    });
+}
+
+    function handleMenuClick(event) {
+        if (event.target.classList.contains("disabled")) {
+            event.preventDefault();
+            alert("Anda tidak memiliki akses untuk menu ini.");
+        }
+    }
+
+    document.addEventListener("DOMContentLoaded", manageMenuAccessibility);
+</script>
+
+
+
+<script>
+    // Mendapatkan user yang sedang login dari localStorage
+    const currentUser = JSON.parse(localStorage.getItem("currentUser")) || {};
+
+    // Daftar pengguna dan posisi yang memiliki akses ke masing-masing div
+    const accessControl = {
+        
+        //Absensi MPM
+        absenbima: {
+            users: ['Bimaselalubenar'],
+            positions: ['','']
+        },
+        absenreni: {
+            users: ['Reni Kusumawati'],
+            positions: ['','']
+        },
+        absendita: {
+            users: ['Dita Susanti'],
+            positions: ['','']
+        },
+        //
+        // Menu
+        menutemplate: {
+            users: ['Bimaselalubenar'],
+            positions: ['PDCA','SALES ONLINE']
+        },
+        menujadwal: {
+            users: ['Bimaselalubenar','',''],
+            positions: ['PDCA','']
+        },
+        menuabsen: {
+            users: ['Bimaselalubenar','Dita Susanti','Reni Kusumawati'],
+            positions: ['','']
+        },
+        //
+        privatadmin: {
+            users: ['Bimaselalubenar'],
+            positions: ['KACAB','PDCA']
+        },
+        privatadmin2: {
+            users: ['Bimaselalubenar'],
+            positions: ['PDCA']
+        },
+        // New divs
+        menuTemplate1: {
+            users: ['Bimaselalubenar'],
+            positions: ['PDCA','SALES ONLINE']
+        },
+        berlangganan: {
+            users: ['Bimaselalubenar', ''],
+            positions: ['PDCA','SALES ONLINE']
+        },
+        srcTemplate: {
+            users: ['Bimaselalubenar', ''],
+            positions: ['PDCA','SALES ONLINE']
+        }
+        // Tambahkan jika ending hapus tanda ,
+    };
+
+    // Fungsi untuk menonaktifkan tombol dalam div
+    function disableButtonsInDiv(div) {
+        const buttons = div.querySelectorAll("button");
+        buttons.forEach(button => {
+            button.disabled = true;  // Disable tombol, tetapi masih bisa mendeteksi klik
+        });
+    }
+
+    // Fungsi untuk menangani interaksi komponen di dalam div yang dibatasi
+    function setupDisabledInteraction(div) {
+        const elements = div.querySelectorAll("button, input, select, textarea");
+        elements.forEach(element => {
+            element.addEventListener("click", function(event) {
+                event.preventDefault();
+                Swal.fire({
+                    icon: 'error',
+                    title: 'Akses Ditolak',
+                    text: 'Anda tidak memiliki izin untuk mengakses bagian ini!',
+                });
+            });
+        });
+    }
+
+    // Fungsi untuk menangani klik pada div yang dibatasi
+    function setupDivClickAlert(div) {
+        div.addEventListener("click", function(event) {
+            event.preventDefault();
+            Swal.fire({
+                icon: 'error',
+                title: 'Akses Ditolak',
+                text: 'Anda tidak memiliki izin untuk mengakses bagian ini!',
+            });
+        });
+    }
+
+    // Fungsi untuk memeriksa apakah user yang sedang login memiliki akses berdasarkan nama atau posisi
+    function hasAccess(user, allowedUsers, allowedPositions) {
+        return allowedUsers.includes(user.name) || allowedPositions.includes(user.position);
+    }
+
+    // Fungsi untuk mengatur akses div berdasarkan currentUser
+    function checkAccessForDiv(divId, allowedUsers, allowedPositions) {
+        const div = document.getElementById(divId);
+        if (div && !hasAccess(currentUser, allowedUsers, allowedPositions)) {
+            div.classList.add("disabled");  // Menambahkan kelas 'disabled'
+            disableButtonsInDiv(div);       // Menonaktifkan tombol di dalam div
+            setupDisabledInteraction(div);  // Menampilkan alert ketika ada interaksi dengan elemen dalam div
+            setupDivClickAlert(div);        // Menampilkan alert ketika div di-klik
+        }
+    }
+
+    // Menu
+    checkAccessForDiv('menutemplate', accessControl.menutemplate.users, accessControl.menutemplate.positions);
+    checkAccessForDiv('privatadmin', accessControl.privatadmin.users, accessControl.privatadmin.positions);
+    checkAccessForDiv('privatadmin2', accessControl.privatadmin2.users, accessControl.privatadmin2.positions);
+    checkAccessForDiv('menuabsen', accessControl.menuabsen.users, accessControl.menuabsen.positions);
+    checkAccessForDiv('menujadwal', accessControl.menujadwal.users, accessControl.menujadwal.positions);
+    // Halaman Template Digital
+    checkAccessForDiv('menuTemplate1', accessControl.menuTemplate1.users, accessControl.menuTemplate1.positions);
+    // srch engine
+    checkAccessForDiv('srcTemplate', accessControl.srcTemplate.users, accessControl.srcTemplate.positions);
+    // Halaman Berlangganan
+    checkAccessForDiv('berlangganan', accessControl.berlangganan.users, accessControl.berlangganan.positions);
+    // Halaman Berlangganan
+    checkAccessForDiv('absenbima', accessControl.absenbima.users, accessControl.absenbima.positions);
+    checkAccessForDiv('absenreni', accessControl.absenreni.users, accessControl.absenreni.positions);
+    checkAccessForDiv('absendita', accessControl.absendita.users, accessControl.absendita.positions);
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script>
+    // Fungsi untuk mengambil data user dari local storage
+        function getCurrentUser() {
+            return JSON.parse(localStorage.getItem('currentUser'));
+        }
+
+        // Fungsi untuk mengecek status langganan pengguna
+        function checkSubscriptionStatus() {
+            const user = getCurrentUser();
+            const menus = document.querySelectorAll('.menu-access');
+            const messages = document.getElementsByClassName('access-message'); // Ambil elemen pesan akses
+
+            // Jika pengguna berlangganan atau memiliki lifetime
+            if (user && user.subscribed && (user.expiryDate === 'lifetime' || new Date(user.expiryDate) > new Date())) {
+                menus.forEach((menu, index) => {
+                    menu.querySelector('.menu-button').classList.remove('disabled');
+                    messages[index].textContent = 'Dapat diakses';  // Tampilkan pesan "Dapat diakses"
+                    messages[index].classList.add('can-access');
+                });
+            } else {
+                // Jika pengguna tidak berlangganan, aktifkan pesan "Tidak dapat diakses"
+                menus.forEach((menu, index) => {
+                    const button = menu.querySelector('.menu-button');
+                    
+                    // Berikan tampilan nonaktif pada tombol
+                    button.classList.add('disabled');
+
+                    // Tampilkan pesan "Tidak dapat diakses" pada <span>
+                    messages[index].textContent = 'Tidak dapat diakses';
+                    messages[index].classList.add('no-access');
+
+                    // Tetap tangkap klik tombol untuk menampilkan pesan teks
+                    button.addEventListener('click', function(event) {
+                        event.preventDefault(); // Mencegah event apapun (misalnya buka modal atau link)
+                    });
+                });
+            }
+        }
+
+        // Jalankan pengecekan status langganan saat halaman dimuat
+        window.onload = checkSubscriptionStatus;
+</script>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/aos.min.js"></script>
+    <script src="../assets/js/lottie-player.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/App/indexapp.js"></script>
+    <script src="../assets/js/App/lockbtn.js"></script>
+    <script src="../assets/js/dashboard-socmed-bold-and-bright.js"></script>
+    <script src="../assets/js/formbima/berlangganan.js"></script>
+    <script src="../assets/js/formbima/form-bima.js"></script>
+    <script src="../assets/js/inspeksi/inspeksi.js"></script>
+    <script src="../assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="../assets/js/Lightbox-Gallery.js"></script>
+    <script src="../assets/js/login/comment-umum.js"></script>
+    <script src="../assets/js/login/comment.js"></script>
+    <script src="../assets/js/login/login.js"></script>
+    <script src="../assets/js/One-Liner-Code-Editor-codeeditor.js"></script>
+    <script src="../assets/js/service-worker.js"></script>
+    <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="../assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

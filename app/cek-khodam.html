@@ -1,0 +1,438 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="id">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HHF3VHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+        function copyTextById(id) {
+            // Mendapatkan elemen berdasarkan ID
+            var textElement = document.getElementById(id);
+
+            // Membuat elemen input sementara untuk menyalin teks
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textElement.textContent;
+
+            // Menambahkan elemen input sementara ke body
+            document.body.appendChild(tempInput);
+
+            // Menyorot dan menyalin teks dari elemen input sementara
+            tempInput.select();
+            document.execCommand("copy");
+
+            // Menghapus elemen input sementara setelah menyalin teks
+            document.body.removeChild(tempInput);
+
+            // Memberikan umpan balik menggunakan SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Teks berhasil disalin ke clipboard!',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        // Menangkap kejadian keydown untuk mendeteksi Ctrl + C
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'c') {
+                // Menampilkan SweetAlert ketika Ctrl + C ditekan
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copy Sukses!',
+                    text: 'Text berhasil di salin!',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+
+<!-- app -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- selesai -->
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<!-- onesignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+<!-- selesai -->
+
+<!-- FireBase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGIm8fs-R4WuUMomDnaklskRsXg-82BfA",
+    authDomain: "bimaselalubenar-boostrap.firebaseapp.com",
+    databaseURL: "https://bimaselalubenar-boostrap-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "bimaselalubenar-boostrap",
+    storageBucket: "bimaselalubenar-boostrap.appspot.com",
+    messagingSenderId: "903484306924",
+    appId: "1:903484306924:web:8b0f8344d12a46fb20bcc9",
+    measurementId: "G-KSFJWG3HM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- selesai -->
+
+<!-- Offline -->
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+
+<!-- Selesai -->
+
+
+<!-- 404 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {  
+    // Mendapatkan URL saat ini  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    // Memeriksa apakah halaman saat ini valid  
+    if (!currentPage || currentPage === "404.html") {  
+        return; // Jika halaman adalah 404, tidak perlu melakukan apa-apa  
+    }  
+
+    // Menggunakan fetch untuk memeriksa keberadaan halaman  
+    fetch(currentPage)  
+        .then(response => {  
+            if (!response.ok) {  
+                // Jika halaman tidak ditemukan, arahkan ke halaman 404  
+                window.location.href = "404.html";  
+            }  
+        })  
+        .catch(() => {  
+            // Jika terjadi kesalahan dalam fetch, arahkan ke halaman 404  
+            window.location.href = "404.html";  
+        });  
+});
+</script>
+<!-- Selesai -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Cek Khodam sekarang! v.4.4</title>
+    <meta name="theme-color" content="#7d7878">
+    <link rel="canonical" href="https://bimaselalubenar.my.id/app/cek-khodam.html">
+    <meta property="og:url" content="https://bimaselalubenar.my.id/app/cek-khodam.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="description" content="Cek khodam-mu apakah sesakti itu? ">
+    <meta property="og:description" content="Cek khodam-mu apa sesakti itu? ">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Khodam.webp">
+    <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Khodam.webp">
+    <meta property="og:title" content="Cek Khodam sekarang!">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/Good%20Times%20Rg.css">
+    <link rel="stylesheet" href="../assets/css/oblong.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="../assets/css/background.css">
+    <link rel="stylesheet" href="../assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="../assets/css/chat.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/menu-dashboard.css">
+    <link rel="stylesheet" href="../assets/css/One-Liner-Code-Editor.css">
+    <link rel="stylesheet" href="../assets/css/PRE.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HHF3VHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZTM564QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNZTM564QN');
+</script>
+<!-- Selelsai -->
+
+<!-- Google ADS -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account" content="ca-pub-8913081554574910">
+<!-- Selesai -->
+
+<!-- OneSignal 1 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+
+<!-- OneSignal 2 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "7b65d3f2-e57a-4938-a97d-e7e358e2a721",
+    });
+  });
+</script>
+
+<!-- Subscribe YT -->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<!-- Fire Base -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<!-- Selesai -->
+
+
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8913081554574910" data-ad-slot="5303068928"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+</amp-ad>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css"><script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.8/lottie.min.js"></script>
+</head>
+
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;font-size: 16px;background: url(&quot;../assets/img/App/cek-khodam/backgroundkhodam.webp&quot;) top / cover no-repeat;">
+    <div class="d-inline-flex flex-column justify-content-center align-items-center" style="background: rgba(0,0,0,0.75);width: 100%;height: 100vh;padding-right: 10px;padding-left: 10px;">
+        <div id="input-container" style="width: 100%;max-width: 600px;text-align: center;">
+            <div style="text-align: center;">
+                <div style="margin-bottom: 25px;"><img src="../assets/img/App/cek-khodam/UPDATE%20SETIAP%20HARI.webp" style="width: 100%;"><span style="color: var(--bs-body-bg);margin-bottom: 0px;">Versi 4.4</span></div>
+                <form id="khodam-form" class="d-flex" style="gap: 10px;margin-bottom: 23px;"><input class="form-control" type="text" id="name" name="name" placeholder="Nama kamu" required="" style="padding-left: 14px;padding-right: 14px;"><button class="btn text-nowrap btn-outline-warning" type="submit" style="border-radius: 16px;padding-right: 14px;padding-left: 14px;margin-top: 0px;" onclick="gtag(&#39;event&#39;, &#39;click&#39;, { &#39;event_category&#39;: &#39;Button&#39;, &#39;event_label&#39;: &#39;Cek_Khodam&#39; })">Cek Khodam&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-search">
+                            <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"></path>
+                        </svg></button></form><label class="form-label" style="color: var(--bs-body-bg);">&nbsp; &nbsp;Update?</label>
+                <div class="accordion" role="tablist" id="accordion-1" style="margin-bottom: 16px;">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" role="tab"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#accordion-1 .item-1" aria-expanded="false" aria-controls="accordion-1 .item-1" name="name" placeholder="Nama kamu" required="" style="padding-left: 15px;padding-right: 15px;padding-top: 10px;padding-bottom: 10px;">Apa yang baru? 4.4</button></h2>
+                        <div class="accordion-collapse collapse item-1" role="tabpanel" data-bs-parent="#accordion-1">
+                            <div class="accordion-body">
+                                <div class="text-start scrollbarnone" style="height: 200px;overflow: scroll;overflow-x: hidden;">
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 4.4</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Memperbaiki bug eror kolom komentar</p>
+                                    </div>
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 4.3</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Menambahkan fitur link username pada social media, khususnya pengguna threads. agar saling berteman ketika menjumpai di 1 forum.</p>
+                                    </div>
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 4.2</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Menambahkan fitur trakteer untuk donasi developer.<br>2. Memperbaiki bug komentar dengan delay terlalu lama</p>
+                                    </div>
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 4.1</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Menampilkan halaman dengan 3x lebih cepat dari pada versi sebelumnya</p>
+                                    </div>
+                                    <div style="padding: 10px;background: #e3e3e3;border-radius: 12px;margin-bottom: 11px;">
+                                        <p class="mb-0" style="font-size: 12px;"><strong>Version 4.0</strong></p>
+                                        <p class="mb-0" style="font-size: 12px;">1. Update tampilan halaman awal yang menarik</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="height: 2px;background: #ffffff;margin-bottom: 16px;"></div><label class="form-label" style="color: var(--bs-body-bg);font-size: 16px;">Support Developer dengan donasi dan jangan lupa komentar, bisa mutualan juga loh ✨</label>
+            <div class="text-center d-flex justify-content-center align-items-center align-content-center justify-content-xl-center"><button class="btn text-nowrap btn-outline-warning" type="submit" style="border-radius: 16px;padding-right: 14px;padding-left: 14px;margin-right: 16px;" data-bs-target="#offcanvas-trakter" data-bs-toggle="offcanvas">Donasi&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-cash-coin" style="width: 16px;height: 16px;">
+                        <path fill-rule="evenodd" d="M11 15a4 4 0 1 0 0-8 4 4 0 0 0 0 8m5-4a5 5 0 1 1-10 0 5 5 0 0 1 10 0"></path>
+                        <path d="M9.438 11.944c.047.596.518 1.06 1.363 1.116v.44h.375v-.443c.875-.061 1.386-.529 1.386-1.207 0-.618-.39-.936-1.09-1.1l-.296-.07v-1.2c.376.043.614.248.671.532h.658c-.047-.575-.54-1.024-1.329-1.073V8.5h-.375v.45c-.747.073-1.255.522-1.255 1.158 0 .562.378.92 1.007 1.066l.248.061v1.272c-.384-.058-.639-.27-.696-.563h-.668zm1.36-1.354c-.369-.085-.569-.26-.569-.522 0-.294.216-.514.572-.578v1.1h-.003zm.432.746c.449.104.655.272.655.569 0 .339-.257.571-.709.614v-1.195l.054.012z"></path>
+                        <path d="M1 0a1 1 0 0 0-1 1v8a1 1 0 0 0 1 1h4.083c.058-.344.145-.678.258-1H3a2 2 0 0 0-2-2V3a2 2 0 0 0 2-2h10a2 2 0 0 0 2 2v3.528c.38.34.717.728 1 1.154V1a1 1 0 0 0-1-1z"></path>
+                        <path d="M9.998 5.083 10 5a2 2 0 1 0-3.132 1.65 5.982 5.982 0 0 1 3.13-1.567z"></path>
+                    </svg></button><button class="btn text-nowrap btn-outline-warning" data-bs-toggle="offcanvas" data-bss-tooltip="" data-bs-placement="bottom" type="submit" style="border-radius: 16px;padding-right: 14px;padding-left: 14px;" data-bs-target="#offcanvas-komentar" title="Sepertinya developer butuh masukan :)">Komentar&nbsp;&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-dots" style="width: 16px;height: 16px;">
+                        <path d="M5 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0m4 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0m3 1a1 1 0 1 0 0-2 1 1 0 0 0 0 2"></path>
+                        <path d="m2.165 15.803.02-.004c1.83-.363 2.948-.842 3.468-1.105A9.06 9.06 0 0 0 8 15c4.418 0 8-3.134 8-7s-3.582-7-8-7-8 3.134-8 7c0 1.76.743 3.37 1.97 4.6a10.437 10.437 0 0 1-.524 2.318l-.003.011a10.722 10.722 0 0 1-.244.637c-.079.186.074.394.273.362a21.673 21.673 0 0 0 .693-.125zm.8-3.108a1 1 0 0 0-.287-.801C1.618 10.83 1 9.468 1 8c0-3.192 3.004-6 7-6s7 2.808 7 6c0 3.193-3.004 6-7 6a8.06 8.06 0 0 1-2.088-.272 1 1 0 0 0-.711.074c-.387.196-1.24.57-2.634.893a10.97 10.97 0 0 0 .398-2"></path>
+                    </svg></button></div>
+        </div>
+        <div id="loading-container" style="width: 100%;max-width: 600px;">
+            <div class="d-flex flex-column justify-content-center align-items-center"><label class="form-label" style="color: var(--bs-body-bg);">Loading...</label>
+                <lottie-player id="lottie-animation" mode="bounce" loop="" autoplay="" style="height: auto;width: 150px;" speed="0.8" src="../assets/js/loading.json"></lottie-player>
+            </div>
+        </div>
+        <div class="flex-column" id="result-container" style="width: 100%;max-width: 600px;">
+            <div class="d-flex flex-column justify-content-center align-items-center" style="padding: 16px;background: rgba(34,34,34,0.15);backdrop-filter: blur(23px);-webkit-backdrop-filter: blur(23px);border-radius: 16px;border-style: groove;border-color: rgba(255,255,255,0.32);"><img src="../assets/img/App/cek-khodam/UPDATE%20SETIAP%20HARI.webp" style="width: 100%;">
+                <div style="margin-bottom: 5px;"><span style="color: var(--bs-body-bg);">Halo,&nbsp;</span><span id="result-name" style="font-weight: bold;color: var(--bs-yellow);"><strong>Nama</strong></span></div><span style="color: var(--bs-body-bg);text-align: center;margin-bottom: 12px;">Ternyata khodam mu sangat sakit!. eh.. SAKTI!</span>
+                <div class="d-flex flex-column justify-content-center align-items-center" style="padding: 12px;background: rgba(41,40,40,0.54);border: 3px dashed rgb(255,255,255);border-radius: 16px;margin-bottom: 16px;"><span style="font-weight: bold;color: var(--bs-yellow);background: rgba(28,28,28,0.8);padding-top: 3px;padding-bottom: 3px;padding-right: 10px;padding-left: 10px;backdrop-filter: blur(24px);-webkit-backdrop-filter: blur(24px);border-top-left-radius: 12px;border-bottom-right-radius: 12px;border: 2px solid rgba(255,255,255,0.41);margin-bottom: 9px;text-align: center;" id="result-khodam-name">Nama Khodam</span><span id="result-khodam-meaning" style="color: var(--bs-body-bg);font-size: 12px;text-align: center;">Arti Khodam</span></div>
+                <div class="alert alert-success d-flex justify-content-center" role="alert" style="padding: 0px;padding-top: 3px;padding-right: 5px;border-radius: 6px;padding-bottom: 3px;padding-left: 5px;background: linear-gradient(-51deg, #410000, #700000);color: rgb(253,255,131);font-style: italic;border-style: none;"><span style="font-size: 11px;">Anda dapat cek kembali setelah <strong>1 hari</strong>, Jenis khodam akan update setiap hari</span></div><span style="color: var(--bs-body-bg);text-align: center;margin-bottom: 12px;font-size: 10px;">Jangan lupa share ke teman terdekatmu ya ❤️</span>
+                <div class="d-flex">
+                    <div class="container d-flex">
+                        <div class="row">
+                            <div class="col-6 col-sm-6 col-md-6 offset-0" style="padding-right: 5px;padding-left: 5px;"><button class="btn btn-primary text-nowrap" id="share-button" type="button" style="border-radius: 5px;padding: 0px;padding-top: 3px;padding-bottom: 3px;padding-right: 10px;padding-left: 10px;font-size: 12px;">Share&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-share-fill" style="width: 12px;height: 12px;">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"></path>
+                                    </svg></button></div>
+                            <div class="col-6 col-sm-6 col-md-6" style="padding-right: 5px;padding-left: 5px;"><button class="btn btn-primary text-nowrap" id="retry-button" type="button" style="border-radius: 5px;padding: 0px;padding-top: 3px;padding-bottom: 3px;padding-right: 10px;padding-left: 10px;font-size: 12px;">Ulangi&nbsp;<svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-arrow-repeat" style="width: 12px;height: 12px;">
+                                        <path d="M11.534 7h3.932a.25.25 0 0 1 .192.41l-1.966 2.36a.25.25 0 0 1-.384 0l-1.966-2.36a.25.25 0 0 1 .192-.41zm-11 2h3.932a.25.25 0 0 0 .192-.41L2.692 6.23a.25.25 0 0 0-.384 0L.342 8.59A.25.25 0 0 0 .534 9z"></path>
+                                        <path fill-rule="evenodd" d="M8 3c-1.552 0-2.94.707-3.857 1.818a.5.5 0 1 1-.771-.636A6.002 6.002 0 0 1 13.917 7H12.9A5.002 5.002 0 0 0 8 3M3.1 9a5.002 5.002 0 0 0 8.757 2.182.5.5 0 1 1 .771.636A6.002 6.002 0 0 1 2.083 9z"></path>
+                                    </svg></button></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+<!-- materisocmed -->
+<ins class="adsbygoogle"
+     style="display:block"
+     data-ad-client="ca-pub-8913081554574910"
+     data-ad-slot="5303068928"
+     data-ad-format="auto"
+     data-full-width-responsive="true"></ins>
+<script>
+     (adsbygoogle = window.adsbygoogle || []).push({});
+</script>
+    </div>
+    <div class="d-flex flex-column" style="bottom: 0px;width: 100%;text-align: center;background: rgba(0,0,0,0.87);color: var(--bs-body-bg);margin-bottom: 0px;padding-bottom: 16px;padding-top: 16px;position: relative;"><span style="font-size: 12px;">Development by <a href="https://www.instagram.com/bimaselalubenar" target="_blank"><span style="color: rgb(255, 245, 0);">@Bimaselalubenar</span></a></span><span style="font-size: 12px;">Made with ❤️ ©️2024</span></div><script src="../assets/js/App/cekkhodam.js">
+</script>
+
+<style>
+    #input-container, #loading-container, #result-container {
+    display: none;
+}
+#input-container {
+    display: block;
+}
+</style>
+
+<script type="text/javascript" src="https://storage.sociabuzz.com/storage/js/main/buttononwebsite/index.min.js"></script><script>sbBoW.draw("bimaselalubenar","RG9uYXNp","position-bottom-right","#ff0000","#FFFFFF")</script>
+    <div class="offcanvas offcanvas-start d-flex flex-column justify-content-start align-items-stretch align-content-stretch" tabindex="-1" data-bs-backdrop="false" id="offcanvas-komentar" style="overflow: hidden;height: 100%;">
+        <div class="offcanvas-header" style="height: auto;"><a class="link-body-emphasis d-flex align-items-center me-md-auto mb-3 mb-md-0 text-decoration-none" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-dash" style="font-size: 16px;margin-right: 9px;">
+                    <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"></path>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"></path>
+                </svg><span style="font-size: 16px;">Comment</span></a><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button></div>
+        <div class="offcanvas-body d-flex flex-column p-0 scrollbarnone">
+            <div class="container" style="height: 100%;">
+                <div class="row" style="height: 70%;">
+                    <div class="col-md-12" style="height: 100%;padding-left: 0px;padding-right: 0px;">
+                        <div class="d-flex flex-column justify-content-start align-items-start" id="messages" style="height: 100%;"></div>
+                    </div>
+                </div>
+                <div class="row" style="height: 30%;">
+                    <div class="col-md-12" style="height: auto;padding-left: 0px;padding-right: 0px;">
+                        <form id="komentar" method="post" target="_self">
+                            <div class="text-center gap-2" style="padding-right: 10px;padding-left: 10px;position: static;height: auto;padding-top: 10px;width: 100%;padding-bottom: 10px;"><label class="form-label" style="font-size: 16px;">Tulis komentar kamu</label>
+                                <div class="d-flex flex-row align-items-center align-items-xl-center" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-plus-fill text-light text-bg-primary" name="Akunsocmed" placeholder="Username Threads" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;width: 48px;height: 100%;background: var(--swiper-theme-color);border-top-right-radius: 0px;border-bottom-right-radius: 0px;">
+                                        <path d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6"></path>
+                                        <path fill-rule="evenodd" d="M13.5 5a.5.5 0 0 1 .5.5V7h1.5a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0V8h-1.5a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5"></path>
+                                    </svg><input class="form-control" type="text" name="Nama" placeholder="Nama" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-width: 0px;" required=""></div>
+                                <div class="d-flex flex-row align-items-center align-items-xl-center" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-threads text-light text-bg-primary" name="Akunsocmed" placeholder="Username Threads" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;width: 48px;height: 100%;background: var(--swiper-theme-color);border-top-right-radius: 0px;border-bottom-right-radius: 0px;">
+                                        <path d="M6.321 6.016c-.27-.18-1.166-.802-1.166-.802.756-1.081 1.753-1.502 3.132-1.502.975 0 1.803.327 2.394.948.591.621.928 1.509 1.005 2.644.328.138.63.299.905.484 1.109.745 1.719 1.86 1.719 3.137 0 2.716-2.226 5.075-6.256 5.075C4.594 16 1 13.987 1 7.994 1 2.034 4.482 0 8.044 0 9.69 0 13.55.243 15 5.036l-1.36.353C12.516 1.974 10.163 1.43 8.006 1.43c-3.565 0-5.582 2.171-5.582 6.79 0 4.143 2.254 6.343 5.63 6.343 2.777 0 4.847-1.443 4.847-3.556 0-1.438-1.208-2.127-1.27-2.127-.236 1.234-.868 3.31-3.644 3.31-1.618 0-3.013-1.118-3.013-2.582 0-2.09 1.984-2.847 3.55-2.847.586 0 1.294.04 1.663.114 0-.637-.54-1.728-1.9-1.728-1.25 0-1.566.405-1.967.868ZM8.716 8.19c-2.04 0-2.304.87-2.304 1.416 0 .878 1.043 1.168 1.6 1.168 1.02 0 2.067-.282 2.232-2.423a6.217 6.217 0 0 0-1.528-.161"></path>
+                                    </svg><input class="form-control" type="text" data-bs-toggle="tooltip" data-bss-tooltip="" name="Akunsocmed" placeholder="Username Threads" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-width: 0px;" title="username saja, tidak menggunakan URL" required=""></div>
+                                <div class="d-flex flex-row align-items-center align-items-xl-center" style="margin-bottom: 6px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-chat-left-text text-light text-bg-primary" name="Akunsocmed" placeholder="Username Threads" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;width: 48px;height: 100%;background: var(--swiper-theme-color);border-top-right-radius: 0px;border-bottom-right-radius: 0px;">
+                                        <path d="M14 1a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H4.414A2 2 0 0 0 3 11.586l-2 2V2a1 1 0 0 1 1-1zM2 0a2 2 0 0 0-2 2v12.793a.5.5 0 0 0 .854.353l2.853-2.853A1 1 0 0 1 4.414 12H14a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z"></path>
+                                        <path d="M3 3.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5M3 6a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9A.5.5 0 0 1 3 6m0 2.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5"></path>
+                                    </svg><input class="form-control" type="text" name="Komentar" placeholder="Komentar" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 4px;padding-bottom: 4px;padding-right: 10px;padding-left: 10px;border-radius: 8px;border-top-left-radius: 0px;border-bottom-left-radius: 0px;border-width: 0px;" required=""></div>
+                                <div class="d-flex flex-column d-flex"><label class="form-label" id="status-txt" style="font-size: 13px;color: var(--bs-success);"></label><button class="btn btn-primary link-light text-bg-primary" type="submit" style="margin: 0px;margin-bottom: 0px;padding: 0px;padding-top: 6px;padding-bottom: 6px;padding-right: 10px;padding-left: 10px;border-radius: 8px;">Kirim</button></div><label class="form-label" style="font-size: 13px;color: var(--swiper-theme-color);margin-top: 14px;"><span style="color: rgb(0, 0, 0);">Create by</span> @bimaselalubenar</label>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div><script src="../assets/js/login/comment-umum.js"></script>
+        </div>
+    </div>
+    <div class="offcanvas offcanvas-start" tabindex="-1" data-bs-backdrop="false" id="offcanvas-trakter" style="height: 100vh;">
+        <div class="offcanvas-header"><a class="link-body-emphasis d-flex align-items-center me-md-auto mb-3 mb-md-0 text-decoration-none" href="/"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-bookmark-dash" style="font-size: 16px;margin-right: 9px;">
+                    <path fill-rule="evenodd" d="M5.5 6.5A.5.5 0 0 1 6 6h4a.5.5 0 0 1 0 1H6a.5.5 0 0 1-.5-.5"></path>
+                    <path d="M2 2a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v13.5a.5.5 0 0 1-.777.416L8 13.101l-5.223 2.815A.5.5 0 0 1 2 15.5zm2-1a1 1 0 0 0-1 1v12.566l4.723-2.482a.5.5 0 0 1 .554 0L13 14.566V2a1 1 0 0 0-1-1z"></path>
+                </svg><span style="font-size: 16px;">TOP Donation ❤️</span></a><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="offcanvas"></button></div>
+        <div class="offcanvas-body d-flex flex-column p-0 scrollbarnone"><label class="form-label text-center gap-2" style="padding-right: 10px;padding-left: 10px;position: static;height: auto;padding-top: 10px;width: 100%;"><span style="color: rgb(68, 68, 68);">Nama mu akan muncul di sini sebagai donatur</span></label>
+            <div class="ratio ratio-16x9" style="height: 100%;"><iframe src="https://sociabuzz.com/pro/tribe/topleaderboard/v2/1908493599"></iframe></div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/lottie-player.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/App/cekkhodam.js"></script>
+    <script src="../assets/js/App/indexapp.js"></script>
+    <script src="../assets/js/App/lockbtn.js"></script>
+    <script src="../assets/js/dashboard-socmed-bold-and-bright.js"></script>
+    <script src="../assets/js/formbima/form-bima.js"></script>
+    <script src="../assets/js/inspeksi/inspeksi.js"></script>
+    <script src="../assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="../assets/js/Lightbox-Gallery.js"></script>
+    <script src="../assets/js/login/comment-umum.js"></script>
+    <script src="../assets/js/One-Liner-Code-Editor-codeeditor.js"></script>
+    <script src="../assets/js/service-worker.js"></script>
+    <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="../assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>
