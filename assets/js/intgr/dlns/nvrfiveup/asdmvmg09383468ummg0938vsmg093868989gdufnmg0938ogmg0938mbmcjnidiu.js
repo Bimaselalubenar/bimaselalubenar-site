@@ -49,7 +49,7 @@ affiliateButton.addEventListener("click", function () {
         setTimeout(function () {
             modal.show();
             affiliateButton.disabled = true; // Disable tombol setelah modal muncul
-            clickStatus.textContent = "Batas klik tercapai! Terima kasih.";
+            clickStatus.textContent = "Anda sudah mengikuti rules, silahkan ambil Dana kaget!.";
         }, 100); // Beri sedikit waktu agar klik terakhir terhitung sebelum modal muncul
     }
 });
@@ -74,7 +74,7 @@ resetButtons.forEach(resetButton => {
 // Fungsi untuk memperbarui status klik
 function updateClickStatus() {
     if (clickCount < affiliateLinks.length) {
-        clickStatus.textContent = `Anda sudah mengklik ${clickCount}x, sisa ${affiliateLinks.length - clickCount} untuk membuka kunci!`;
+        clickStatus.textContent = `Sudah membuka kunci ${clickCount}x, sisa ${affiliateLinks.length - clickCount} untuk membuka kunci!`;
     } else {
         clickStatus.textContent = `Anda sudah mengklik ${affiliateLinks.length}x! Klik lagi untuk membuka hadiah!`;
     }
