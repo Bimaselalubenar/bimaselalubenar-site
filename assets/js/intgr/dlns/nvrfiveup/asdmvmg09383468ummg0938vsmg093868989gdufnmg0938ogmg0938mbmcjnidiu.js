@@ -83,18 +83,18 @@ function updateClickStatus() {
 
 // Data untuk countdown
 // Menambahkan teks ke elemen dengan ID 'note1'
-document.getElementById('note1').innerText = 'Siapa cepat dia dapat!';
+document.getElementById('note1').innerText = '30 Slot';
 
 // Menambahkan teks ke elemen dengan ID 'note2'
-document.getElementById('note2').innerText = 'Siapa cepat dia dapat!';
+document.getElementById('note2').innerText = '30 Slot';
 
 // Menambahkan teks ke elemen dengan ID 'note3Sabar ya!
-document.getElementById('note3').innerText = 'Siapa cepat dia dapat!';
+document.getElementById('note3').innerText = '30 Slot';
 
 // Menambahkan teks ke elemen dengan ID 'note4Sabar ya!
-document.getElementById('note4').innerText = 'Siapa cepat dia dapat!';
-document.getElementById('note5').innerText = 'Siapa cepat dia dapat!';
-document.getElementById('note6').innerText = 'Siapa cepat dia dapat!';
+document.getElementById('note4').innerText = '30 Slot';
+document.getElementById('note5').innerText = '30 Slot';
+document.getElementById('note6').innerText = '30 Slot';
 
 
 
