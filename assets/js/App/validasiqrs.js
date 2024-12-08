@@ -1,8 +1,6 @@
 // Daftar kode valid dan halaman terkait
 const validCodes = {
-    '991190823': 'https://example.com/halaman-1', // URL untuk kode valid
-    '123456789': 'https://example.com/halaman-2', // URL untuk kode valid lainnya
-    'test123abc': 'https://example.com/halaman-3', // Menambahkan contoh dengan kombinasi huruf dan angka
+    'DANA50': 'https://link.dana.id/kaget?c=s93hm9t5y&r=bgpBS5', // URL untuk kode valid
 };
 
 const video = document.getElementById('video-namaid-qr');

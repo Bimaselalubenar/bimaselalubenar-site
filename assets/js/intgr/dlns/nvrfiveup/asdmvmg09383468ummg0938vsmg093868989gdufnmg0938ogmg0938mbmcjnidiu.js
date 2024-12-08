@@ -9,11 +9,14 @@ const clickStatus = document.getElementById("clickStatus");
 
 // Link afiliasi yang akan digunakan untuk klik 1 hingga seterusnya, cukup tambah link aja
 const affiliateLinks = [
-    "https://s.shopee.co.id/2LHcqadEok",
-    "https://s.shopee.co.id/AKJsjqWUaq",
-    "https://s.shopee.co.id/5fY3BLHmfs",
-    "https://s.shopee.co.id/5prTNphVJr",
-    "https://s.shopee.co.id/5fY4o9nYS4",
+    "https://s.shopee.co.id/6fQgDxICvy",
+    "https://s.shopee.co.id/7KgN1DsfJ5",
+    "https://s.shopee.co.id/6AUPdEAaZC",
+    "https://s.shopee.co.id/5fY92PwjyF",
+    "https://s.shopee.co.id/3LAEGB91A2",
+    "https://s.shopee.co.id/9pNi0JaXnL",
+    "https://s.shopee.co.id/6V7G2FYtry",
+    "https://s.shopee.co.id/6V7G2FYtry",
 ];
 
 // "https://s.shopee.co.id/20ekoY29lj",
@@ -80,24 +83,28 @@ function updateClickStatus() {
 
 // Data untuk countdown
 // Menambahkan teks ke elemen dengan ID 'note1'
-document.getElementById('note1').innerText = 'Sabar ya!';
+document.getElementById('note1').innerText = 'Siapa cepat dia dapat!';
 
 // Menambahkan teks ke elemen dengan ID 'note2'
-document.getElementById('note2').innerText = 'Sabar ya!';
+document.getElementById('note2').innerText = 'Siapa cepat dia dapat!';
 
 // Menambahkan teks ke elemen dengan ID 'note3Sabar ya!
-document.getElementById('note3').innerText = 'Sabar ya!';
+document.getElementById('note3').innerText = 'Siapa cepat dia dapat!';
 
 // Menambahkan teks ke elemen dengan ID 'note4Sabar ya!
-document.getElementById('note4').innerText = 'Sabar ya!';
+document.getElementById('note4').innerText = 'Siapa cepat dia dapat!';
+document.getElementById('note5').innerText = 'Siapa cepat dia dapat!';
+document.getElementById('note6').innerText = 'Siapa cepat dia dapat!';
 
 
 
 const countdownData = [
-    { id: "countdown1", buttonId: "button1", remindButtonId: "remind-button-1", date: "2024-12-05T20:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zdGx5emU3M3Emcj1iZ3BCUzU=" },
-    { id: "countdown2", buttonId: "button2", remindButtonId: "remind-button-2", date: "2024-12-05T21:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zZHNldnV0ZWUmcj1iZ3BCUzU=" },
-    { id: "countdown3", buttonId: "button3", remindButtonId: "remind-button-3", date: "2024-12-05T22:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zeGp0a3c2bmwmcj1iZ3BCUzU=" },
-    { id: "countdown4", buttonId: "button4", remindButtonId: "remind-button-4", date: "2024-12-05T23:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zZ2ZhYnhoZjQmcj1iZ3BCUzU=" }
+    { id: "countdown1", buttonId: "button1", remindButtonId: "remind-button-1", date: "2024-12-08T13:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zbjRtazl5bmomcj1iZ3BCUzU=" },
+    { id: "countdown2", buttonId: "button2", remindButtonId: "remind-button-2", date: "2024-12-08T14:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1za2VueDk3Zmwmcj1iZ3BCUzU=" },
+    { id: "countdown3", buttonId: "button3", remindButtonId: "remind-button-3", date: "2024-12-08T15:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zd3psc3BtOWwmcj1iZ3BCUzU=" },
+    { id: "countdown4", buttonId: "button4", remindButtonId: "remind-button-4", date: "2024-12-08T16:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zdzhrbDQ4YWgmcj1iZ3BCUzU=" },
+    { id: "countdown5", buttonId: "button5", remindButtonId: "remind-button-5", date: "2024-12-08T17:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zY2w3dDc5cHgmcj1iZ3BCUzU=" },
+    { id: "countdown6", buttonId: "button6", remindButtonId: "remind-button-6", date: "2024-12-08T18:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zdHI3dnU5dGImcj1iZ3BCUzU=" }
 ];
 
 // Fungsi untuk mendekripsi URL Base64
