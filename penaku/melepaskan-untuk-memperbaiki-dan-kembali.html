@@ -472,11 +472,52 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                         <h2 style="font-weight: bold;margin-bottom: 20px;">Melepaskan untuk Memperbaiki, dan kembali?</h2>
                         <p class="card-text" style="/*display: -webkit-box;*//*-webkit-line-clamp: 3;*//*-webkit-box-orient: vertical;*//*overflow: hidden;*//*text-overflow: ellipsis;*//*max-height: 10em;*/margin-bottom: 16px;" title="HTML, atau HyperText Markup Language, adalah bahasa dasar yang digunakan untuk membuat dan menyusun halaman web.">Aku pergi bukan karena aku ingin, tapi karena terlalu banyak janji yang nggak bisa aku tepati. Mungkin dengan jarak ini, aku bisa belajar untuk memperbaiki diri, supaya suatu hari nanti, aku layak kembali. Atau mungkin, aku harus belajar untuk melepaskan, karena cinta itu bukan cuma soal janji, tapi tentang keberanian untuk terus memperjuangkan.</p>
-                        <div class="d-flex" style="margin-top: 60px;padding-top: 0px;"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="../assets/img/Galery/IMG20240609113204.webp">
-                            <div>
-                                <p class="fw-bold mb-0">Bima</p>
-                                <p class="text-muted mb-0">Fullstack Dev.</p>
+                        <div class="d-flex" style="margin-top: 60px;padding-top: 0px;grid-template: 1fr / 1fr 1fr;justify-content: space-between;">
+                            <div class="d-flex"><img class="rounded-circle flex-shrink-0 me-3 fit-cover" width="50" height="50" src="../assets/img/Galery/IMG20240609113204.webp">
+                                <div>
+                                    <p class="fw-bold mb-0">Bima</p>
+                                    <p class="text-muted mb-0">Fullstack Dev.</p>
+                                </div>
                             </div>
+                            <div class="d-flex align-items-center"><a class="d-flex d-xl-flex align-items-center justify-content-xl-center align-items-xl-center mb-0 d-inline d-flex" id="shareBtn" style="background: #3763f4;color: rgb(255,255,255);padding-right: 8px;padding-left: 8px;padding-bottom: 6px;padding-top: 6px;border-radius: 6px;height: auto;" type="button"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-share-fill" style="margin-right: 7px;">
+                                        <path d="M11 2.5a2.5 2.5 0 1 1 .603 1.628l-6.718 3.12a2.499 2.499 0 0 1 0 1.504l6.718 3.12a2.5 2.5 0 1 1-.488.876l-6.718-3.12a2.5 2.5 0 1 1 0-3.256l6.718-3.12A2.5 2.5 0 0 1 11 2.5"></path>
+                                    </svg>Share</a><script>
+        // Mendapatkan elemen tombol dengan ID 'shareBtn'
+        const shareBtn = document.getElementById('shareBtn');
+
+        // Fungsi berbagi
+        const shareLink = () => {
+            // Ambil judul halaman dan URL secara otomatis
+            const pageTitle = document.title; // Judul halaman
+            const pageURL = window.location.href; // URL halaman saat ini
+
+            // Pesan kustom yang akan digabungkan dengan URL
+            let customMessage = "Lihat halaman menarik ini: "; // Pesan kustom default
+
+            // Menambahkan link ke pesan kustom
+            customMessage += `\n${pageURL}\n`;  // \n untuk baris baru di dalam pesan
+
+            // Menambahkan lebih banyak pesan (contoh tambahan, bisa diubah)
+            customMessage += "\nJangan lupa untuk melihat artikel lainnya!";
+
+            // Cek jika fitur berbagi didukung
+            if (navigator.share) {
+                navigator.share({
+                    title: pageTitle,
+                    text: customMessage, // Pesan kustom + URL
+                    url: pageURL
+                })
+                .then(() => console.log('Berhasil dibagikan!'))
+                .catch((error) => console.log('Gagal membagikan:', error));
+            } else {
+                // Jika tidak mendukung, fallback ke membuka dialog berbagi default
+                alert('Fitur berbagi tidak didukung di browser ini.');
+            }
+        };
+
+        // Event listener untuk tombol berbagi
+        shareBtn.addEventListener('click', shareLink);
+    </script></div>
                         </div>
                     </div>
                     <div class="card-body p-4" style="height: auto;margin-top: 0px;">
