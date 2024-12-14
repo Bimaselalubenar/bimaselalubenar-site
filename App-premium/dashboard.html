@@ -1,0 +1,731 @@
+<!DOCTYPE html>
+<html data-bs-theme="light" lang="id">
+
+<head>
+    <meta charset="utf-8">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5HHF3VHW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<script>
+        function copyTextById(id) {
+            // Mendapatkan elemen berdasarkan ID
+            var textElement = document.getElementById(id);
+
+            // Membuat elemen input sementara untuk menyalin teks
+            var tempInput = document.createElement("textarea");
+            tempInput.value = textElement.textContent;
+
+            // Menambahkan elemen input sementara ke body
+            document.body.appendChild(tempInput);
+
+            // Menyorot dan menyalin teks dari elemen input sementara
+            tempInput.select();
+            document.execCommand("copy");
+
+            // Menghapus elemen input sementara setelah menyalin teks
+            document.body.removeChild(tempInput);
+
+            // Memberikan umpan balik menggunakan SweetAlert
+            Swal.fire({
+                icon: 'success',
+                title: 'Berhasil!',
+                text: 'Teks berhasil disalin ke clipboard!',
+                confirmButtonText: 'OK'
+            });
+        }
+
+        // Menangkap kejadian keydown untuk mendeteksi Ctrl + C
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'c') {
+                // Menampilkan SweetAlert ketika Ctrl + C ditekan
+                Swal.fire({
+                    icon: 'success',
+                    title: 'Copy Sukses!',
+                    text: 'Text berhasil di salin!',
+                    confirmButtonText: 'OK'
+                });
+            }
+        });
+    </script>
+
+<!-- app -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<!-- selesai -->
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<!-- onesignal -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+<!-- selesai -->
+
+<!-- FireBase -->
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.12.5/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyAGIm8fs-R4WuUMomDnaklskRsXg-82BfA",
+    authDomain: "bimaselalubenar-boostrap.firebaseapp.com",
+    databaseURL: "https://bimaselalubenar-boostrap-default-rtdb.asia-southeast1.firebasedatabase.app",
+    projectId: "bimaselalubenar-boostrap",
+    storageBucket: "bimaselalubenar-boostrap.appspot.com",
+    messagingSenderId: "903484306924",
+    appId: "1:903484306924:web:8b0f8344d12a46fb20bcc9",
+    measurementId: "G-KSFJWG3HM5"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+<!-- selesai -->
+
+<!-- Offline -->
+<script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function () {
+                navigator.serviceWorker.register('/service-worker.js')
+                .then(function (registration) {
+                    console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                }, function (error) {
+                    console.log('ServiceWorker registration failed: ', error);
+                });
+            });
+        }
+    </script>
+
+<!-- Selesai -->
+
+
+<!-- 404 -->
+<script>
+document.addEventListener("DOMContentLoaded", function() {  
+    // Mendapatkan URL saat ini  
+    const currentPage = window.location.pathname.split("/").pop();  
+
+    // Memeriksa apakah halaman saat ini valid  
+    if (!currentPage || currentPage === "404.html") {  
+        return; // Jika halaman adalah 404, tidak perlu melakukan apa-apa  
+    }  
+
+    // Menggunakan fetch untuk memeriksa keberadaan halaman  
+    fetch(currentPage)  
+        .then(response => {  
+            if (!response.ok) {  
+                // Jika halaman tidak ditemukan, arahkan ke halaman 404  
+                window.location.href = "404.html";  
+            }  
+        })  
+        .catch(() => {  
+            // Jika terjadi kesalahan dalam fetch, arahkan ke halaman 404  
+            window.location.href = "404.html";  
+        });  
+});
+</script>
+<!-- Selesai -->
+
+<!-- Browser -->
+<script type="text/javascript">
+        window.onload = function() {
+            // Mendapatkan user agent browser
+            var userAgent = navigator.userAgent;
+
+            // Cek apakah browser adalah Chrome atau Edge
+            if (!userAgent.includes("Chrome") && !userAgent.includes("Edg")) {
+                // Tampilkan popup jika bukan Chrome atau Edge
+                alert("Anda tidak dapat mengakses halaman ini. Gunakan browser Chrome atau Microsoft Edge.");
+                
+                // Redirect pengguna ke halaman error atau halaman lain
+                window.location.href = "https://bimaselalubenar.my.id/404.html"; // Ganti URL dengan halaman yang diinginkan
+
+                // Atau jika ingin menutup tab
+                // window.close(); // Hanya berfungsi jika halaman dibuka dengan JavaScript
+            }
+        };
+    </script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Bimaselalubenar</title>
+    <meta name="theme-color" content="#7d7878">
+    <link rel="canonical" href="https://bimaselalubenar.my.id/App-premium/dashboard.html">
+    <meta property="og:url" content="https://bimaselalubenar.my.id/App-premium/dashboard.html">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Mainweb.webp">
+    <meta property="og:title" content="Bimaselalubenar">
+    <meta property="og:description" content="Seorang fullstack developer dengan pengalaman dalam mengembangkan aplikasi web dari sisi frontend hingga backend.">
+    <meta property="og:type" content="website">
+    <meta name="description" content="Saya Fullstack developer dengan pengalaman dalam mengembangkan aplikasi web dari sisi frontend hingga backend.">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/ceo/materisocmed/CEO Mainweb.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
+    <link rel="stylesheet" href="../assets/bootstrap/css/bootstrap.min.css">
+    <link rel="manifest" href="../manifest.json" crossorigin="use-credentials">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/Good%20Times%20Rg.css">
+    <link rel="stylesheet" href="../assets/css/oblong.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
+    <link rel="stylesheet" href="../assets/css/swiper-icons.css">
+    <link rel="stylesheet" href="../assets/css/app-premium.css">
+    <link rel="stylesheet" href="../assets/css/background.css">
+    <link rel="stylesheet" href="../assets/css/Banner-Heading-Image-images.css">
+    <link rel="stylesheet" href="../assets/css/chat.css">
+    <link rel="stylesheet" href="../assets/css/dashboard.css">
+    <link rel="stylesheet" href="../assets/css/Lightbox-Gallery-baguetteBox.min.css">
+    <link rel="stylesheet" href="../assets/css/menu-dashboard.css">
+    <link rel="stylesheet" href="../assets/css/One-Liner-Code-Editor.css">
+    <link rel="stylesheet" href="../assets/css/PRE.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-badges.css">
+    <link rel="stylesheet" href="../assets/css/Pricing-Yearly--Monthly-icons.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider-swiper-bundle.min.css">
+    <link rel="stylesheet" href="../assets/css/Simple-Slider.css">
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5HHF3VHW');</script>
+<!-- End Google Tag Manager -->
+
+<!-- Google Analytic -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-PNZTM564QN"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-PNZTM564QN');
+</script>
+<!-- Selelsai -->
+
+<!-- Google ADS -->
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8913081554574910"
+     crossorigin="anonymous"></script>
+
+<meta name="google-adsense-account" content="ca-pub-8913081554574910">
+<!-- Selesai -->
+
+<!-- OneSignal 1 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "6ae2ed3c-f763-465d-8648-0538e5f7e40c",
+    });
+  });
+</script>
+
+<!-- OneSignal 2 -->
+<script src="https://cdn.onesignal.com/sdks/web/v16/OneSignalSDK.page.js" defer></script>
+<script>
+  window.OneSignalDeferred = window.OneSignalDeferred || [];
+  OneSignalDeferred.push(async function(OneSignal) {
+    await OneSignal.init({
+      appId: "7b65d3f2-e57a-4938-a97d-e7e358e2a721",
+    });
+  });
+</script>
+
+<!-- Subscribe YT -->
+<script src="https://apis.google.com/js/platform.js"></script>
+
+<script async custom-element="amp-ad" src="https://cdn.ampproject.org/v0/amp-ad-0.1.js"></script>
+
+<!-- Fire Base -->
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database.js"></script>
+<!-- Selesai -->
+
+
+
+<!-- animasi AOS -->
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script>
+    AOS.init({
+        duration: 1200
+    });</script>
+<!-- Selesai -->
+
+<amp-ad width="100vw" height="320" type="adsense" data-ad-client="ca-pub-8913081554574910" data-ad-slot="5303068928"
+    data-auto-format="rspv" data-full-width="">
+    <div overflow=""></div>
+</amp-ad>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
+</head>
+
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;">
+    <div class="offcanvas offcanvas-end bg-body" tabindex="-1" id="offcanvas-menu" style="background: linear-gradient(145deg, black, #232323);">
+        <div class="offcanvas-header d-flex justify-content-between" style="display: grid;grid-template: 1fr / 1fr 1fr 1fr;justify-content: space-evenly;justify-items: stretch;gap: 0px;align-items: center;"><a class="text-decoration-none link-body-emphasis d-flex align-items-center me-md-auto mb-md-0" href="/" style="margin-bottom: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-circle me-3" style="font-size: 25px;color: rgb(255,255,255);">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
+                </svg><span class="fs-5" style="color: rgb(255,255,255);">Dashboard</span></a><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-circle-fill" type="button" aria-label="Close" data-bs-dismiss="offcanvas" style="color: rgb(255,255,255);font-size: 25px;">
+                <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
+            </svg></div>
+        <div class="offcanvas-body d-flex flex-column justify-content-between pt-0">
+            <div>
+                <hr class="mt-0">
+                <ul class="nav nav-pills flex-column mb-auto">
+                    <li class="nav-item" style="cursor: pointer;margin-bottom: 10px;"><a class="nav-link active link-light d-flex d-md-flex justify-content-start align-items-center justify-content-md-start align-items-md-center" href="/App-premium/dashboard.html" aria-current="page" style="padding-top: 16px;padding-bottom: 16px;background: linear-gradient(139deg, black, #1f1f1f);box-shadow: 0px 4px rgb(255,255,255);border-width: 2px;border-style: solid;font-weight: bold;margin-bottom: 0px;" target="_parent"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-app-indicator me-2" style="width: 22px;height: 22px;">
+                                <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1z"></path>
+                                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                            </svg>Dashboard</a></li>
+                    <li class="nav-item" style="cursor: pointer;margin-bottom: 10px;"><a class="nav-link active link-light d-flex d-md-flex justify-content-start align-items-center justify-content-md-start align-items-md-center" href="#" aria-current="page" style="padding-top: 16px;padding-bottom: 16px;background: linear-gradient(139deg, black, #1f1f1f);box-shadow: 0px 4px rgb(255,255,255);border-width: 2px;border-style: solid;font-weight: bold;margin-bottom: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-app-indicator me-2" style="width: 22px;height: 22px;">
+                                <path d="M5.5 2A3.5 3.5 0 0 0 2 5.5v5A3.5 3.5 0 0 0 5.5 14h5a3.5 3.5 0 0 0 3.5-3.5V8a.5.5 0 0 1 1 0v2.5a4.5 4.5 0 0 1-4.5 4.5h-5A4.5 4.5 0 0 1 1 10.5v-5A4.5 4.5 0 0 1 5.5 1H8a.5.5 0 0 1 0 1z"></path>
+                                <path d="M16 3a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                            </svg>Upgrade Premium</a></li>
+                    <li class="nav-item" style="cursor: pointer;margin-bottom: 10px;"><a class="nav-link active link-light d-flex d-md-flex justify-content-start align-items-center justify-content-md-start align-items-md-center" aria-current="page" style="padding-top: 16px;padding-bottom: 16px;background: linear-gradient(139deg, black, #1f1f1f);box-shadow: 0px 4px rgb(255,255,255);border-width: 2px;border-style: solid;font-weight: bold;margin-bottom: 0px;" onclick="logout()"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-box-arrow-in-right me-2" style="width: 22px;height: 22px;">
+                                <path fill-rule="evenodd" d="M6 3.5a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v9a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-2a.5.5 0 0 0-1 0v2A1.5 1.5 0 0 0 6.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-9A1.5 1.5 0 0 0 14.5 2h-8A1.5 1.5 0 0 0 5 3.5v2a.5.5 0 0 0 1 0z"></path>
+                                <path fill-rule="evenodd" d="M11.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H1.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"></path>
+                            </svg>Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex d-xxl-flex flex-column justify-content-start align-items-center align-items-xl-center justify-content-xxl-start align-items-xxl-center scrollbarnone" style="gap: 10px;width: 100%;max-width: initial;height: 100vh;padding-top: 16px;padding-bottom: 16px;background: #151515;">
+        <div class="rotateGradient" style="transition: background 0.1s ease;animation: rotateGradient 0.6s infinite linear;background: linear-gradient(-136deg, #ffffff, #111111);width: 100%;max-width: 600px;padding: 0.8px;border-radius: 20px;">
+            <div class="d-flex align-items-start align-items-xxl-start" style="background: linear-gradient(145deg, black, #232323);width: 100%;max-width: 600px;padding: 15px;border-radius: 20px;">
+                <div class="d-flex align-items-center" style="margin-right: 16px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-person-circle" style="font-size: 68px;color: rgb(255,255,255);width: 100%;">
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"></path>
+                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"></path>
+                    </svg></div>
+                <div class="d-flex flex-column align-items-start align-items-xxl-start" style="width: 100%;color: rgb(255,255,255);"><span style="font-size: 16px;">Halo&nbsp;<span class="username">User</span>!</span><span style="font-size: 10px;margin-bottom: 5px;">Status akun anda</span><span class="flex-nowrap status" style="font-size: 10px;border-radius: 12px;padding: 5px;background: linear-gradient(153deg, #fff975, #dbff49);border: 0px solid rgba(255,255,255,0.14);box-shadow: 0px 2px 5px rgba(0,0,0,0.54);padding-right: 11px;padding-left: 11px;width: auto;color: rgb(0,0,0);font-weight: bold;">N/A</span></div>
+                <div class="d-flex flex-column justify-content-xxl-start align-items-xxl-start" style="width: auto;color: rgb(255,255,255);padding: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 20 20" fill="none" href="#" data-bs-target="#offcanvas-menu" data-bs-toggle="offcanvas" style="cursor: pointer;font-size: 25px;">
+
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 5C3 4.44772 3.44772 4 4 4H16C16.5523 4 17 4.44772 17 5C17 5.55228 16.5523 6 16 6H4C3.44772 6 3 5.55228 3 5Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 10C3 9.44772 3.44772 9 4 9H16C16.5523 9 17 9.44772 17 10C17 10.5523 16.5523 11 16 11H4C3.44772 11 3 10.5523 3 10Z" fill="currentColor"></path>
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M3 15C3 14.4477 3.44772 14 4 14H16C16.5523 14 17 14.4477 17 15C17 15.5523 16.5523 16 16 16H4C3.44772 16 3 15.5523 3 15Z" fill="currentColor"></path>
+                    </svg></div>
+            </div>
+        </div>
+        <div class="d-flex flex-column align-items-center align-items-xxl-center" style="background: linear-gradient(145deg, black, #232323);width: 100%;max-width: 600px;padding: 15px;border-radius: 20px;height: auto;"><span class="rotateGradient" style="background: linear-gradient(-2deg, #aad500 33%, rgb(239,255,174) 52%, #faff35 80%);font-size: 16px;-webkit-background-clip: text;color: rgba(45,45,45,0);font-weight: bold;margin-bottom: 7px;">Akun Aplikasi Premium</span>
+            <div id="premium-only" class="naddekstop" style="display: grid;grid-template: 1fr / 1fr 1fr 1fr;justify-content: space-evenly;justify-items: stretch;width: 100%;gap: 11px;"><a class="d-flex flex-column justify-content-center align-items-center produk-app premium-link" href="app/capcut-1.html" target="_parent"><img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxtHdRB6xk71KqOPxE23.XPiUcBp9_h5.Va3lapJy.K9tACxvjL4_WF3lJCLozay.Kx6V1mfBFaOOF4V5Rx4RHLY-&amp;format=source" style="width: 100%;border-radius: 16px;margin-bottom: 5px;height: auto;" width="60" height="60"><span style="font-size: 9px;margin-bottom: 2px;">CapCut Pro 1</span></a></div>
+        </div>
+    </div>
+    <footer class="bg-primary-gradient" style="box-shadow: 0px -33px 20px 2px rgba(45,45,45,0.08);border-radius: 0px;margin-top: 0px;"><!-- untuk screen capture -->
+<script>
+    function showAlert(message) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Akses Dilarang!',
+            text: message,
+            confirmButtonText: 'OK'
+        });
+    }
+
+    // Fungsi untuk menampilkan SweetAlert khusus untuk screenshot
+    function showScreenshotAlert() {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Screenshot Dilarang!',
+            text: 'Anda tidak diperbolehkan mengambil screenshot atau mencetak konten ini.',
+            confirmButtonText: 'OK'
+        });
+    }
+
+    document.addEventListener('keydown', function(event) {
+        // Disable F12
+        if (event.keyCode == 123) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+J
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+C
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+U
+        if (event.ctrlKey && event.keyCode == 85) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+K (Mozilla Firefox Web Console)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 75) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+S (Windows Snipping Tool)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 83) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+K or Ctrl+F (Search in Developer Tools)
+        if (event.ctrlKey && (event.keyCode == 75 || event.keyCode == 70)) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable F1 (Help in Developer Tools)
+        if (event.keyCode == 112) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+P (File search in Developer Tools)
+        if (event.ctrlKey && event.keyCode == 80) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable PrintScreen and other screenshot combinations
+        if (event.key === 'PrintScreen' ||
+            (event.ctrlKey && event.key === 'p') ||
+            (event.shiftKey && (event.metaKey || event.keyCode === 91 || event.keyCode === 92) && event.key === 'S') ||
+            (event.key === 'PrintScreen' && (event.metaKey || event.keyCode === 91 || event.keyCode === 92)) ||
+            event.key === 'Meta') {
+            event.preventDefault();
+            showScreenshotAlert();
+        }
+    });
+
+    // Deteksi tombol PrintScreen dan Windows + Print Screen
+    document.addEventListener('keyup', function (event) {
+        if (event.key === 'PrintScreen' || (event.key === 'PrintScreen' && (event.metaKey || event.keyCode === 91 || event.keyCode === 92))) {
+            navigator.clipboard.writeText('');
+            showScreenshotAlert();
+        }
+    });
+
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah tindakan ketika 3 jari menyentuh layar
+    document.addEventListener('touchstart', function (event) {
+        if (event.touches.length === 3) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan tindakan ini');
+        }
+    });
+</script>
+<!-- Selesai -->
+<!-- drag off -->
+<script>
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+    });
+</script>
+<!-- selesai -->
+
+<!-- mematikan inspection -->
+<script>
+    function showAlert(message) {
+        Swal.fire({
+            icon: 'warning',
+            title: 'Akses Dilarang!',
+            text: message,
+            confirmButtonText: 'OK'
+        });
+    }
+
+    document.addEventListener('keydown', function (event) {
+        // Disable F12
+        if (event.keyCode == 123) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+J
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+C
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+U
+        if (event.ctrlKey && event.keyCode == 85) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+K (Mozilla Firefox Web Console)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 75) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+Shift+S (Windows Snipping Tool)
+        if (event.ctrlKey && event.shiftKey && event.keyCode == 83) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+K or Ctrl+F (Search in Developer Tools)
+        if (event.ctrlKey && (event.keyCode == 75 || event.keyCode == 70)) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable F1 (Help in Developer Tools)
+        if (event.keyCode == 112) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+        // Disable Ctrl+P (File search in Developer Tools)
+        if (event.ctrlKey && event.keyCode == 80) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+        }
+    });
+
+    document.addEventListener('contextmenu', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah drag pada semua elemen
+    document.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
+    });
+
+    // Mencegah tindakan ketika 3 jari menyentuh layar
+    document.addEventListener('touchstart', function (event) {
+        if (event.touches.length === 3) {
+            event.preventDefault();
+            showAlert('Anda tidak dapat melakukan tindakan ini');
+        }
+    });
+</script>
+<!-- selesai -->
+<script>
+function copyText(elementId) {
+    // Ambil elemen teks berdasarkan ID yang diberikan
+    var copyText = document.getElementById(elementId);
+
+    // Pilih teks di dalam elemen
+    var range = document.createRange();
+    range.selectNode(copyText);
+    window.getSelection().removeAllRanges(); // Hilangkan seleksi sebelumnya
+    window.getSelection().addRange(range);
+
+    try {
+        // Salin teks ke clipboard
+        document.execCommand('copy');
+        
+        // Menampilkan SweetAlert ketika teks berhasil disalin
+        Swal.fire({
+            icon: 'success',
+            title: 'Berhasil Disalin!',
+            text: '"' + copyText.textContent + '" telah berhasil disalin.',
+            confirmButtonText: 'Terima',
+            confirmButtonColor: '#4CAF50'
+        });
+    } catch (err) {
+        // Menampilkan SweetAlert jika terjadi error
+        Swal.fire({
+            icon: 'error',
+            title: 'Gagal Menyalin!',
+            text: 'Teks tidak dapat disalin. Silakan coba lagi.',
+            confirmButtonText: 'Terima',
+            confirmButtonColor: '#f44336'
+        });
+    }
+
+    // Hapus seleksi setelah salinan
+    window.getSelection().removeAllRanges();
+}
+</script><script src="OneSignalSDKWorker.js"></script></footer><script>
+    window.onload = function () {
+      var username = sessionStorage.getItem("username");
+      var name = sessionStorage.getItem("name");
+      var email = sessionStorage.getItem("email");
+      var isPremium = sessionStorage.getItem("isPremium");
+
+      // Periksa apakah pengguna sudah login
+      if (!username) {
+        alert("You are not logged in. Redirecting to login page.");
+        window.location.href = "../App-premium/login.html";
+        return;
+      }
+
+      // Update all elements with class 'username' to show the logged-in username
+      var usernameElements = document.querySelectorAll('.username');
+      usernameElements.forEach(function(element) {
+        element.textContent = username;
+      });
+
+      // Update all elements with class 'name' to show the logged-in name
+      var nameElements = document.querySelectorAll('.name');
+      nameElements.forEach(function(element) {
+        element.textContent = name;
+      });
+
+      // Update all elements with class 'email' to show the logged-in email
+      var emailElements = document.querySelectorAll('.email');
+      emailElements.forEach(function(element) {
+        element.textContent = email;
+      });
+
+      // Update all elements with class 'status' to show the account status
+      var statusElements = document.querySelectorAll('.status');
+      statusElements.forEach(function(element) {
+        element.textContent = isPremium === "Premium" ? "Premium" : "Standard";
+      });
+
+      // Sesuaikan tampilan elemen berdasarkan status premium
+      var premiumElements = document.querySelectorAll('.premium-only');
+
+      premiumElements.forEach(function(element) {
+        var button = element.querySelector('button');
+        var link = element.querySelector('a');
+
+        if (isPremium !== "Premium") {
+          // Nonaktifkan tombol premium untuk pengguna standard
+          if (button) {
+            button.disabled = true; // Disable the button
+          }
+          if (link) {
+            link.classList.add('disabled'); // Add a 'disabled' class to style it
+            link.href = "#"; // Disable the link by pointing to a non-functional URL
+          }
+        } else {
+          // Aktifkan tombol premium untuk pengguna premium
+          if (button) {
+            button.disabled = false; // Enable the button
+          }
+          if (link) {
+            link.classList.remove('disabled'); // Remove the 'disabled' class
+            link.href = "/premium-feature.html"; // Actual link for premium users
+          }
+        }
+      });
+    };
+
+    // Fungsi untuk logout
+    function logout() {
+      sessionStorage.clear();
+      window.location.href = "../App-premium/login.html";
+    }
+
+    // Fungsi untuk mencoba mengakses fitur premium
+    function accessPremiumFeature() {
+      var isPremium = sessionStorage.getItem("isPremium");
+
+      if (isPremium !== "Premium") {
+        // Jika akun bukan premium, tampilkan SweetAlert
+        Swal.fire({
+          title: 'You are not subscribed!',
+          text: 'You need to upgrade to Premium to access this feature.',
+          icon: 'error',
+          confirmButtonText: 'Upgrade Now'
+        }).then((result) => {
+          if (result.isConfirmed) {
+            // Arahkan ke halaman berlangganan atau halaman upgrade
+            window.location.href = 'berlangganan.html';
+          }
+        });
+      } else {
+        // Akses ke fitur premium
+        alert("Access granted to premium feature.");
+      }
+    }
+  </script>
+<style>
+    /* Optional: style the disabled link */
+    a.disabled {
+      pointer-events: none; /* Disable clicking */
+      color: gray; /* Change color to indicate it's disabled */
+      text-decoration: none;
+    }
+
+.marquee {
+  width: 100%; /* Menentukan lebar area tempat teks berjalan */
+  overflow: hidden; /* Menyembunyikan bagian teks yang keluar dari area */
+  white-space: nowrap; /* Menjaga teks tetap dalam satu baris */
+}
+
+.marquee span {
+  display: inline-block;
+  padding-left: 100%; /* Mulai teks dari luar area */
+  animation: scroll-left 10s linear infinite; /* Menjalankan animasi scroll ke kiri secara terus-menerus */
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(100%); /* Mulai teks dari kanan */
+  }
+  100% {
+    transform: translateX(-100%); /* Pindahkan teks ke kiri hingga keluar dari area */
+  }
+}
+
+  </style>
+    <script src="../assets/js/jquery.min.js"></script>
+    <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/bs-init.js"></script>
+    <script src="../assets/js/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>
+    <script src="../assets/js/App/indexapp.js"></script>
+    <script src="../assets/js/App/lockbtn.js"></script>
+    <script src="../assets/js/dashboard-socmed-bold-and-bright.js"></script>
+    <script src="../assets/js/formbima/form-bima.js"></script>
+    <script src="../assets/js/inspeksi/inspeksi.js"></script>
+    <script src="../assets/js/Lightbox-Gallery-baguetteBox.min.js"></script>
+    <script src="../assets/js/Lightbox-Gallery.js"></script>
+    <script src="../assets/js/login/comment-umum.js"></script>
+    <script src="../assets/js/One-Liner-Code-Editor-codeeditor.js"></script>
+    <script src="../assets/js/service-worker.js"></script>
+    <script src="../assets/js/Simple-Slider-swiper-bundle.min.js"></script>
+    <script src="../assets/js/Simple-Slider.js"></script>
+</body>
+
+</html>

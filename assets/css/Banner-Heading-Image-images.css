@@ -2,9 +2,6 @@
   object-fit: cover;
 }
 
-p {
-}
-
 .btn-animation {
   color: var(--bs-gray-200);
   border-width: 2px;

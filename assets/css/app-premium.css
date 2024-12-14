@@ -1,0 +1,47 @@
+.btn-default-premium-apps {
+  color: var(--bs-light);
+  background: linear-gradient(166deg, rgba(33,30,30,0.96) 47%, rgba(0,0,0,0.95)), #1f1d1d;
+  border-width: 0px;
+  transition: ease-out;
+}
+
+.btn-default-premium-apps:hover, .btn-default-premium-apps:active {
+  background: #000000;
+  border-width: 0px;
+  color: #ffffff;
+  transition: ease-in-out;
+}
+
+.btn-check:checked + .btn, :not(.btn-check) + .btn:active, .btn:first-child:active, .btn.active, .btn.show {
+  color: var(--bs-light);
+  background: linear-gradient(-178deg, black, #212020);
+  transition: ease-in-out;
+}
+
+@keyframes rotateGradient {
+  0% {
+    background: linear-gradient(0deg, #ebff00, #111111);
+  }
+  25% {
+    background: linear-gradient(90deg, #ffffff, #111111);
+  }
+  50% {
+    background: linear-gradient(180deg, #ffe500, #111111);
+  }
+  75% {
+    background: linear-gradient(270deg, #ffffff, #111111);
+  }
+  100% {
+    background: linear-gradient(360deg, #e4db00, #111111);
+  }
+}
+
+.produk-app {
+  background: linear-gradient(black 0%, #3d3d3d);
+  border-radius: 16px;
+  padding: 5px;
+  box-shadow: 0px 6px 6px rgba(0,0,0,0.75);
+  color: rgba(255,255,255,0.75);
+  text-align: center;
+}
+
