@@ -354,331 +354,81 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     </svg>&nbsp;Kembali</a></div>
         </div>
         <div class="d-flex flex-column align-items-center align-items-xxl-center" style="background: linear-gradient(145deg, black, #232323);width: 100%;max-width: 600px;padding: 15px;border-radius: 20px;height: auto;"><span class="rotateGradient" style="background: linear-gradient(-2deg, #aad500 33%, rgb(239,255,174) 52%, #faff35 80%);font-size: 16px;-webkit-background-clip: text;color: rgba(45,45,45,0);font-weight: bold;margin-bottom: 7px;">Mulai berlangganan</span><span style="font-size: 12px;margin-bottom: 16px;color: rgb(255,255,255);">Cukup bayar 45.000K sudah dapat menggunakan lebih dari 10 layanan kami</span>
-            <form id="subscription-form" style="width: 100%;"><input class="form-control" type="text" id="username" style="margin-bottom: 16px;" required=""><input class="form-control" type="text" id="name" style="margin-bottom: 16px;" required=""><input class="form-control" type="email" id="email" style="margin-bottom: 16px;" required=""><select class="form-select" id="subscription" required="" style="margin-bottom: 16px;">
-                    <option value="1 Bulan" selected="">1 Bulan | 45.000 IDR</option>
-                    <option value="2 Bulan">2 Bulan | 70.000 IDR</option>
-                    <option value="6 Bulan">6 Bulan | 120.000 IDR + ChatGPT Plus</option>
-                </select><button class="btn" type="button" style="width: 100%;border-radius: 20px;color: rgb(255,255,255);border: 2px solid #ffffff ;" data-target="#paymentModal" data-toggle="modal" data-bs-target="#paymentModal" data-bs-toggle="modal">Lanjut ke pembayaran</button>
-                <div class="modal fade" role="dialog" tabindex="-1" id="paymentModal" aria-labelledby="paymentModalLabel">
-                    <div class="modal-dialog" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h4 class="modal-title">Payment</h4><button class="btn-close" type="button" aria-label="Close" data-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body d-flex flex-column justify-content-center align-items-center">
-                                <p style="padding: 16px;background: #ff0000;color: rgb(255,255,255);">Lakukan pembayaran sesuai jumlah yang di tentukan, apabila tidak sesuai, tidak akan kami proses. proses akan berjalan 10 menit. ketika sudah melakukan pembayaran. lakukan konfirmasi dengan klik <strong>(Konfirmasi Pembayaran)</strong></p><img style="width: 80%;height: auto;" src="../assets/img/premium-account/Qris.png">
-                            </div>
-                            <div class="modal-footer"><button class="btn btn-primary" type="button" onclick="confirmPayment()" style="width: 100%;">Konfirmasi Pembayaran</button></div>
+            <form id="subscription-form" style="width: 100%;">
+                <div style="padding-bottom: 6px;"><label class="form-label" style="font-size: 12px;color: rgb(255,255,255);" for="username">Username</label><input class="form-control" type="text" id="username" required=""></div>
+                <div style="padding-bottom: 6px;"><label class="form-label" style="font-size: 12px;color: rgb(255,255,255);" for="name">Name</label><input class="form-control" type="text" id="name" required=""></div>
+                <div style="padding-bottom: 6px;"><label class="form-label" style="font-size: 12px;color: rgb(255,255,255);" for="email">Email</label><input class="form-control" type="email" id="email" required=""></div>
+                <div style="padding-bottom: 6px;"><label class="form-label" style="font-size: 12px;color: rgb(255,255,255);" for="subscription">Subscribe plan</label><label class="form-label" style="font-size: 12px;color: rgb(255,255,255);" for="subscription">Subscribe plan</label><select class="form-select" id="subscription" required="">
+                        <option value="">Select Duration</option>
+                        <option value="1 Month">1 Month</option>
+                        <option value="2 Months">2 Months</option>
+                        <option value="6 Months">6 Months</option>
+                    </select></div>
+                <div class="text-center" style="padding-bottom: 6px;"><label class="form-label" style="font-size: 12px;color: rgb(255,255,255);" for="subscription-">Pastikan data anda benar</label><button class="btn btn-primary" type="button" style="width: 100%;" onclick="openModal()" data-bs-target="#paymentModal" data-bs-toggle="modal">Konfirmasi</button></div>
+            </form>
+            <div class="modal fade" role="dialog" tabindex="-1" id="paymentModal">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" id="paymentModalLabel">
+                            <h4 class="modal-title">Payment</h4><button class="btn-close" type="button" aria-label="Close" data-bs-dismiss="modal"></button>
                         </div>
+                        <div class="modal-body d-flex flex-column justify-content-center align-items-center">
+                            <p style="padding: 16px;background: #ff0000;color: rgb(255,255,255);border-radius: 16px;">Lakukan pembayaran sesuai jumlah yang di tentukan, apabila tidak sesuai, tidak akan kami proses. proses akan berjalan 10 menit. ketika sudah melakukan pembayaran. lakukan konfirmasi dengan klik <strong>(Konfirmasi Pembayaran)</strong></p><img style="width: 80%;height: auto;" src="../assets/img/premium-account/Qris.png">
+                        </div>
+                        <div class="modal-footer"><button class="btn btn-primary" type="button" onclick="confirmPayment()" style="width: 100%;">Konfirmasi Pembayaran</button></div>
                     </div>
                 </div>
-            </form><script>
-    window.onload = function() {
-      // Ambil data dari sessionStorage dan isi form secara otomatis
-      var username = sessionStorage.getItem("username");
-      var name = sessionStorage.getItem("name");
-      var email = sessionStorage.getItem("email");
+            </div><script>
+  window.onload = function() {
+    // Ambil data dari sessionStorage dan isi form secara otomatis
+    var username = sessionStorage.getItem("username") || '';
+    var name = sessionStorage.getItem("name") || '';
+    var email = sessionStorage.getItem("email") || '';
 
-      // Isi data pengguna otomatis ke form
-      document.getElementById("username").value = username;
-      document.getElementById("name").value = name;
-      document.getElementById("email").value = email;
+    // Isi data pengguna otomatis ke form
+    document.getElementById("username").value = username;
+    document.getElementById("name").value = name;
+    document.getElementById("email").value = email;
 
-      // Nonaktifkan field nama dan email agar tidak dapat diedit
-      document.getElementById("username").disabled = true;
-      document.getElementById("name").disabled = true;
-      document.getElementById("email").disabled = true;
-    };
+    // Nonaktifkan field nama dan email agar tidak dapat diedit
+    document.getElementById("username").disabled = true;
+    document.getElementById("name").disabled = true;
+    document.getElementById("email").disabled = true;
+  };
 
-    // Fungsi untuk mengonfirmasi pembayaran dan mengarahkan ke WhatsApp
-    function confirmPayment() {
-      var username = document.getElementById("username").value;
-      var email = document.getElementById("email").value;
-      var subscription = document.getElementById("subscription").value;
+  // Fungsi untuk mengonfirmasi pembayaran dan mengarahkan ke WhatsApp
+  function confirmPayment() {
+    var username = document.getElementById("username").value;
+    var email = document.getElementById("email").value;
+    var subscription = document.getElementById("subscription").value;
 
-      var message = `*Halo kak*\n\nSaya ingin mengkonfirmasi pembayaran, dengan profile saya\nUsername: ${username}\nEmail: ${email}\nBerlangganan: ${subscription}\nBahwa pembayaran telah berhasil.`;
-
-      // Arahkan ke WhatsApp dengan pesan konfirmasi
-      window.location.href = `https://wa.me/6281917304951?text=${encodeURIComponent(message)}`;
+    // Validasi form: Pastikan subscription dipilih
+    if (!subscription) {
+      alert('Please select a subscription duration.');
+      return;
     }
-  </script>
+
+    var message = `*Halo kak*\n\nSaya ingin mengkonfirmasi pembayaran, dengan profile saya\nUsername: ${username}\nEmail: ${email}\nBerlangganan: ${subscription}\nBahwa pembayaran telah berhasil.`;
+
+    // Arahkan ke WhatsApp dengan pesan konfirmasi
+    window.location.href = `https://wa.me/6281917304951?text=${encodeURIComponent(message)}`;
+
+    // Menutup modal setelah konfirmasi pembayaran
+    document.getElementById('paymentModal').style.display = 'none';
+  }
+
+  // Fungsi untuk membuka modal
+  function openModal() {
+    document.getElementById('paymentModal').style.display = 'flex';
+  }
+
+  // Fungsi untuk menutup modal
+  function closeModal() {
+    document.getElementById('paymentModal').style.display = 'none';
+  }
+</script>
         </div>
     </div>
-    <footer class="bg-primary-gradient" style="box-shadow: 0px -33px 20px 2px rgba(45,45,45,0.08);border-radius: 0px;margin-top: 0px;background: #000000;color: rgb(255,255,255);"><!-- untuk screen capture -->
-<script>
-    function showAlert(message) {
-        Swal.fire({
-            icon: 'warning',
-            title: 'Akses Dilarang!',
-            text: message,
-            confirmButtonText: 'OK'
-        });
-    }
-
-    // Fungsi untuk menampilkan SweetAlert khusus untuk screenshot
-    function showScreenshotAlert() {
-        Swal.fire({
-            icon: 'warning',
-            title: 'Screenshot Dilarang!',
-            text: 'Anda tidak diperbolehkan mengambil screenshot atau mencetak konten ini.',
-            confirmButtonText: 'OK'
-        });
-    }
-
-    document.addEventListener('keydown', function(event) {
-        // Disable F12
-        if (event.keyCode == 123) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+I
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+J
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+C
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+U
-        if (event.ctrlKey && event.keyCode == 85) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+K (Mozilla Firefox Web Console)
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 75) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+S (Windows Snipping Tool)
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 83) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+K or Ctrl+F (Search in Developer Tools)
-        if (event.ctrlKey && (event.keyCode == 75 || event.keyCode == 70)) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable F1 (Help in Developer Tools)
-        if (event.keyCode == 112) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+P (File search in Developer Tools)
-        if (event.ctrlKey && event.keyCode == 80) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable PrintScreen and other screenshot combinations
-        if (event.key === 'PrintScreen' ||
-            (event.ctrlKey && event.key === 'p') ||
-            (event.shiftKey && (event.metaKey || event.keyCode === 91 || event.keyCode === 92) && event.key === 'S') ||
-            (event.key === 'PrintScreen' && (event.metaKey || event.keyCode === 91 || event.keyCode === 92)) ||
-            event.key === 'Meta') {
-            event.preventDefault();
-            showScreenshotAlert();
-        }
-    });
-
-    // Deteksi tombol PrintScreen dan Windows + Print Screen
-    document.addEventListener('keyup', function (event) {
-        if (event.key === 'PrintScreen' || (event.key === 'PrintScreen' && (event.metaKey || event.keyCode === 91 || event.keyCode === 92))) {
-            navigator.clipboard.writeText('');
-            showScreenshotAlert();
-        }
-    });
-
-    document.addEventListener('contextmenu', function (event) {
-        event.preventDefault();
-        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-    });
-
-    // Mencegah drag pada semua elemen
-    document.addEventListener('dragstart', function (event) {
-        event.preventDefault();
-        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-    });
-
-    // Mencegah tindakan ketika 3 jari menyentuh layar
-    document.addEventListener('touchstart', function (event) {
-        if (event.touches.length === 3) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan tindakan ini');
-        }
-    });
-</script>
-<!-- Selesai -->
-<!-- drag off -->
-<script>
-    document.addEventListener('contextmenu', function (event) {
-        event.preventDefault();
-    });
-
-    // Mencegah drag pada semua elemen
-    document.addEventListener('dragstart', function (event) {
-        event.preventDefault();
-    });
-</script>
-<!-- selesai -->
-
-<!-- mematikan inspection -->
-<script>
-    function showAlert(message) {
-        Swal.fire({
-            icon: 'warning',
-            title: 'Akses Dilarang!',
-            text: message,
-            confirmButtonText: 'OK'
-        });
-    }
-
-    document.addEventListener('keydown', function (event) {
-        // Disable F12
-        if (event.keyCode == 123) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+I
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 73) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+J
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 74) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+C
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 67) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+U
-        if (event.ctrlKey && event.keyCode == 85) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+K (Mozilla Firefox Web Console)
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 75) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+Shift+S (Windows Snipping Tool)
-        if (event.ctrlKey && event.shiftKey && event.keyCode == 83) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+K or Ctrl+F (Search in Developer Tools)
-        if (event.ctrlKey && (event.keyCode == 75 || event.keyCode == 70)) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable F1 (Help in Developer Tools)
-        if (event.keyCode == 112) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-        // Disable Ctrl+P (File search in Developer Tools)
-        if (event.ctrlKey && event.keyCode == 80) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-        }
-    });
-
-    document.addEventListener('contextmenu', function (event) {
-        event.preventDefault();
-        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-    });
-
-    // Mencegah drag pada semua elemen
-    document.addEventListener('dragstart', function (event) {
-        event.preventDefault();
-        showAlert('Anda tidak dapat melakukan inspeksi ilegal');
-    });
-
-    // Mencegah tindakan ketika 3 jari menyentuh layar
-    document.addEventListener('touchstart', function (event) {
-        if (event.touches.length === 3) {
-            event.preventDefault();
-            showAlert('Anda tidak dapat melakukan tindakan ini');
-        }
-    });
-</script>
-<!-- selesai -->
-<script>
-function copyText(elementId) {
-    // Ambil elemen teks berdasarkan ID yang diberikan
-    var copyText = document.getElementById(elementId);
-
-    // Pilih teks di dalam elemen
-    var range = document.createRange();
-    range.selectNode(copyText);
-    window.getSelection().removeAllRanges(); // Hilangkan seleksi sebelumnya
-    window.getSelection().addRange(range);
-
-    try {
-        // Salin teks ke clipboard
-        document.execCommand('copy');
-        
-        // Menampilkan SweetAlert ketika teks berhasil disalin
-        Swal.fire({
-            icon: 'success',
-            title: 'Berhasil Disalin!',
-            text: 'data telah berhasil disalin.',
-            confirmButtonText: 'Terima',
-            confirmButtonColor: '#4CAF50'
-        });
-    } catch (err) {
-        // Menampilkan SweetAlert jika terjadi error
-        Swal.fire({
-            icon: 'error',
-            title: 'Gagal Menyalin!',
-            text: 'Teks tidak dapat disalin. Silakan coba lagi.',
-            confirmButtonText: 'Terima',
-            confirmButtonColor: '#f44336'
-        });
-    }
-
-    // Hapus seleksi setelah salinan
-    window.getSelection().removeAllRanges();
-}
-</script>
-        <div class="container py-4 py-lg-5">
-            <div class="row justify-content-center">
-                <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
-                    <h3 class="fs-6 fw-bold">Menu</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="../index.html" target="_parent" style="color: #ffffff;">Halaman utama</a></li>
-                        <li><a href="../index.html" target="_parent" style="color: #ffffff;">Masuk Dashboard</a></li>
-                        <li style="color: #ffffff;"><a href="../index.html" target="_parent" style="color: rgba(255,255,255,0.75);">Daftar akun</a></li>
-                    </ul>
-                </div>
-                <div class="col-sm-4 col-md-3 col-xl-2 text-center text-lg-start d-flex flex-column">
-                    <h3 class="fs-6 fw-bold">Layanan</h3>
-                    <ul class="list-unstyled">
-                        <li><a href="../materisocmed/dashboard.html" target="_parent" style="color: #ffffff;">Download Extension</a></li>
-                        <li><a href="../materisocmed/dashboard.html" target="_parent" style="color: #ffffff;">Harga</a></li>
-                    </ul>
-                </div>
-                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="height: auto;">
-                    <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2" style="padding: 6px;background: var(--bs-body-bg);box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.14);"><img src="../assets/img/Logo/logo2.webp" style="width: 100%;height: auto;"></span><span>Akun Premium</span></div>
-                    <div class="d-sm-flex d-lg-flex d-xxl-flex justify-content-sm-center justify-content-lg-center justify-content-xxl-center" style="width: 100%;height: auto;margin-top: 16px;margin-bottom: 20px;"> <a href='http://www.freevisitorcounters.com'></a> <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=cad89751e6666070c63c7bf9989960eeef49b85d'></script>
-<script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/1269423/t/1"></script></div>
-                </div>
-            </div>
-            <hr>
-            <div class="text-muted d-flex justify-content-between align-items-center pt-3">
-                <p class="mb-0" style="color: #ffffff;">Transaksi aman &amp; amanah</p>
-            </div>
-        </div><script src="OneSignalSDKWorker.js"></script>
-    </footer>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/bs-init.js"></script>
