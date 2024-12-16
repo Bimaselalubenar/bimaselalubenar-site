@@ -388,7 +388,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   let basePrices = {
     "1 Month": 45000,
     "2 Months": 75000,
-    "6 Months": 99000,
+    "6 Months": 99000
   };
 
   let discounts = {
@@ -446,7 +446,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 
     // Tentukan pesan konfirmasi
-    let message = `*Halo kak*\n\nSaya ingin mengkonfirmasi pembayaran, dengan profile saya\nUsername: ${username}\nEmail: ${email}\nBerlangganan: ${subscription}\nHarga yang harus dibayar: Rp ${formatCurrency(currentPrice)}\nBahwa pembayaran telah berhasil.`;
+    let message = `*Halo kak*\n\nSaya ingin mengkonfirmasi pembayaran, dengan profile saya\nUsername: ${username}\nEmail: ${email}\nBerlangganan: ${subscription}\nHarga yang harus dibayar: Rp ${formatCurrency(currentPrice)}\n`;
+
+    // Jika ada promo code, tambahkan informasi kode promo
+    if (promoCode) {
+      message += `Kode Promo: ${promoCode}\n`;
+    }
+
+    message += `Bahwa pembayaran telah berhasil.`;
 
     // Arahkan ke WhatsApp dengan pesan konfirmasi
     window.location.href = `https://wa.me/6281917304951?text=${encodeURIComponent(message)}`;
