@@ -297,27 +297,24 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 window.onload = function () {
   var username = sessionStorage.getItem("username");
   var name = sessionStorage.getItem("name");
-  var email = sessionStorage.getItem("email");
-  var isPremium = sessionStorage.getItem("isPremium");
 
   // Periksa apakah pengguna sudah login
   var nameElements = document.querySelectorAll('.name');
   
-  if (!username) {
-    // Jika belum login, ganti elemen dengan class 'name' menjadi span dengan teks asli
-    nameElements.forEach(function(element) {
-      var span = document.createElement('span');
-      span.textContent = "Please login";  // Teks default jika belum login
-      element.replaceWith(span);  // Ganti elemen .name dengan <span>
-    });
-  } else {
+  if (username) {
     // Jika sudah login, tampilkan nama pengguna
     nameElements.forEach(function(element) {
       element.textContent = name;
     });
+  } else {
+    // Jika belum login, tidak tampilkan apapun (biarkan elemen kosong)
+    nameElements.forEach(function(element) {
+      element.textContent = "";  // Kosongkan teks elemen .name
+    });
   }
 };
 </script>
+
     <div>
         <div class="modal fade" role="dialog" tabindex="-1" id="loadingModalProses" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="z-index: 9999;background: var(--bs-info);">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen" role="document">
@@ -447,9 +444,9 @@ createSnowflakes();
                 <div class="collapse navbar-collapse" id="navcol-1">
                     <ul class="navbar-nav mx-auto">
                         <li class="nav-item"><a class="nav-link" href="projects.html">Halaman Utama</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Produk</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Harga</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacts.html">Kontak</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#tentang">Layanan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#layanankami">Layanan</a></li>
+                        <li class="nav-item"><a class="nav-link" href="berlangganan.html" target="_parent">Berlangganan</a></li>
                     </ul><a class="name" style="color: rgb(255,255,255);margin-right: 16px;" href="dashboard.html" target="_parent">Masuk</a><a class="btn btn-light shadow" role="button" href="register.html" target="_parent">Daftar</a>
                 </div>
             </div>
@@ -473,7 +470,7 @@ createSnowflakes();
                 </div>
             </div>
         </header>
-        <header class="bg-primary-gradient py-5">
+        <header id="tentang" class="bg-primary-gradient py-5">
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-end mb-4">
@@ -489,7 +486,7 @@ createSnowflakes();
                 </div>
             </div>
         </header>
-        <section class="py-5" style="background: #1f1d1d;">
+        <section id="layanankami" class="py-5" style="background: #1f1d1d;">
             <div class="container py-5">
                 <div class="row mb-4 mb-lg-5">
                     <div class="col-md-8 col-xl-6 text-center mx-auto">
