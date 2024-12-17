@@ -304,36 +304,25 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center" style="width: auto;height: auto;"><img style="width: 169px;height: auto;" src="../assets/img/premium-account/Logo/LogoProlink-loading.webp"></div>
                             </div>
                         </div>
-                    </div>
-<script>
-        document.addEventListener('DOMContentLoaded', () => {
-            // Directly manipulate the modal element to make it visible initially
-            const modalElement = document.getElementById('loadingModalProses');
-            modalElement.classList.add('show');
-            modalElement.style.display = 'block';
-            console.log('Modal manually displayed on DOMContentLoaded');
+                    </div><script>
+document.addEventListener('DOMContentLoaded', () => {
+    // Directly manipulate the modal element to make it visible initially
+    const modalElement = document.getElementById('loadingModalProses');
+    modalElement.classList.add('show');
+    modalElement.style.display = 'block';
+    console.log('Modal manually displayed on DOMContentLoaded');
 
-            // Function to manually hide the modal
-            const hideLoadingModal = () => {
-                setTimeout(() => {
-                    modalElement.classList.remove('show');
-                    modalElement.style.display = 'none';
-                    console.log('Modal manually hidden');
-                }, 200);
-            };
+    // Function to manually hide the modal after a delay (for example)
+    function hideModal() {
+        modalElement.classList.remove('show');
+        modalElement.style.display = 'none';
+        console.log('Modal manually hidden');
+    }
 
-            // Check if the page is already fully loaded
-            if (document.readyState === 'complete') {
-                console.log('Page already fully loaded, hiding modal');
-                hideLoadingModal();
-            } else {
-                // Hide the modal when the page is fully loaded
-                window.addEventListener('load', () => {
-                    console.log('Page fully loaded, triggering hide');
-                    hideLoadingModal();
-                });
-            }
-        });
+    // Hide the modal after 3 seconds (you can adjust this time as needed)
+    setTimeout(hideModal, 3000);
+});
+
     </script>
                 </div>
             </div>
