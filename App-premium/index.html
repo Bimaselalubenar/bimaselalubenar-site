@@ -293,7 +293,31 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
 </head>
 
-<body class="scrollbarnone" style="font-family: Poppins, sans-serif;background: rgb(230,230,230);">
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;background: rgb(230,230,230);"><script>
+window.onload = function () {
+  var username = sessionStorage.getItem("username");
+  var name = sessionStorage.getItem("name");
+  var email = sessionStorage.getItem("email");
+  var isPremium = sessionStorage.getItem("isPremium");
+
+  // Periksa apakah pengguna sudah login
+  var nameElements = document.querySelectorAll('.name');
+  
+  if (!username) {
+    // Jika belum login, ganti elemen dengan class 'name' menjadi span dengan teks asli
+    nameElements.forEach(function(element) {
+      var span = document.createElement('span');
+      span.textContent = "Please login";  // Teks default jika belum login
+      element.replaceWith(span);  // Ganti elemen .name dengan <span>
+    });
+  } else {
+    // Jika sudah login, tampilkan nama pengguna
+    nameElements.forEach(function(element) {
+      element.textContent = name;
+    });
+  }
+};
+</script>
     <div>
         <div class="modal fade" role="dialog" tabindex="-1" id="loadingModalProses" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="z-index: 9999;background: var(--bs-info);">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen" role="document">
@@ -304,120 +328,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center" style="width: auto;height: auto;"><img style="width: 169px;height: auto;" src="../assets/img/premium-account/Logo/LogoProlink-loading.webp"></div>
                             </div>
                         </div>
-                    </div><script>
-document.addEventListener('DOMContentLoaded', () => {
-    // Directly manipulate the modal element to make it visible initially
-    const modalElement = document.getElementById('loadingModalProses');
-    modalElement.classList.add('show');
-    modalElement.style.display = 'block';
-    console.log('Modal manually displayed on DOMContentLoaded');
-
-    // Function to manually hide the modal after a delay (for example)
-    function hideModal() {
-        modalElement.classList.remove('show');
-        modalElement.style.display = 'none';
-        console.log('Modal manually hidden');
-    }
-
-    // Hide the modal after 3 seconds (you can adjust this time as needed)
-    setTimeout(hideModal, 3000);
-});
-
-    </script>
-                </div>
-            </div>
-        </div>
-    </div><style>
-    body {
-      margin: 0;
-      overflow-x: hidden;
-      overflow-y: scroll;
-      height: 100vh;
-      background-color: #2c3e50;
-    }
-
-    .snowflake {
-      position: absolute;
-      top: -10px;
-      background-color: white;
-      border-radius: 50%;
-      opacity: 0.8;
-      pointer-events: none;
-      animation: fall linear infinite;
-    }
-
-    @keyframes fall {
-      to {
-        transform: translateY(100vh);
-      }
-    }
-
-    /* Optional: Additional styles for visual improvement */
-    .snowflake {
-      width: 5px;
-      height: 5px;
-      animation-duration: 10s;
-    }
-  </style>
-<script>
-  function createSnowflakes() {
-    const snowflakes = 100; // Jumlah salju
-    const body = document.body;
-
-    for (let i = 0; i < snowflakes; i++) {
-      const snowflake = document.createElement("div");
-      snowflake.classList.add("snowflake");
-
-      // Mengatur posisi acak untuk setiap salju
-      snowflake.style.left = Math.random() * 180 + "vw";
-      snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";  // Durasi animasi acak (5-10 detik)
-      snowflake.style.animationDelay = Math.random() * 10 + "s"; // Delay acak untuk setiap salju
-
-      // Ukuran acak
-      snowflake.style.width = Math.random() * 5 + 5 + "px";
-      snowflake.style.height = snowflake.style.width;
-
-      // Menambahkan elemen salju ke dalam body
-      body.appendChild(snowflake);
-    }
-  }
-
-  // Membuat hujan salju saat halaman dimuat
-  createSnowflakes();
-</script>
-
-    <div class="container" style="width: 100%;max-width: none;padding: 0px;height: auto;">
-        <nav class="navbar navbar-expand-md sticky-top bg-black navbar-shrink py-3 navbar-dark" id="mainNav" style="background: linear-gradient(black, #171717), var(--bs-dark);">
-            <div class="container"><a class="navbar-brand d-flex align-items-center" href="/"><span class="bs-icon-sm bs-icon-circle bs-icon-white shadow d-flex justify-content-center align-items-center me-2 bs-icon"><img src="../assets/img/Logo/logo2.webp" style="width: 60%;height: auto;"></span><span>ProLink+</span></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
-                <div class="collapse navbar-collapse" id="navcol-1">
-                    <ul class="navbar-nav mx-auto">
-                        <li class="nav-item"><a class="nav-link" href="projects.html">Halaman Utama</a></li>
-                        <li class="nav-item"><a class="nav-link" href="services.html">Produk</a></li>
-                        <li class="nav-item"><a class="nav-link" href="pricing.html">Harga</a></li>
-                        <li class="nav-item"><a class="nav-link" href="contacts.html">Kontak</a></li>
-                    </ul><a class="btn btn-light shadow" role="button" href="register.html" target="_parent">Daftar</a>
-                </div>
-            </div>
-        </nav>
-        <div>
-            <div class="modal fade" role="dialog" tabindex="-1" id="loadingModalProses" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="z-index: 9999;">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen" role="document">
-                    <div class="modal-content">
-                        <div class="modal-body d-flex d-lg-flex justify-content-center align-items-center">
-                            <div class="container d-flex d-sm-flex d-md-flex d-lg-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center align-items-lg-center" style="max-width: auto;">
-                                <div class="row d-inline-flex flex-column align-items-lg-center" data-aos="zoom-out-down" data-aos-duration="850" data-aos-once="true" style="width: auto;padding: 20px;border-radius: 16px;box-shadow: 0px 0px 20px 20px rgba(0,0,0,0.06), inset 0px 0px 20px 0px rgba(45,45,45,0.57);border: 0px ridge rgb(0,122,255);">
-                                    <div class="col d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center">
-                                        <lottie-player src="../assets/js/animated/cyberterrorism.json" mode="normal" speed="1" autoplay="" loop="" style="width: 60px;"></lottie-player>
-                                    </div>
-                                    <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
-                                        <p style="margin-bottom: 0px;"><strong>Sedang memuat&nbsp;</strong></p><span class="spinner-border spinner-border-sm" role="status" style="color: #2d2d2d;"></span>
-                                    </div>
-                                    <div class="col-md-12 text-center d-flex justify-content-center align-items-center justify-content-lg-center align-items-lg-center" style="width: auto;">
-                                        <p style="margin-bottom: 0px;font-size: 12px;">Demi keamanan website dan data</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                    </div>
 <script>
         document.addEventListener('DOMContentLoaded', () => {
             // Directly manipulate the modal element to make it visible initially
@@ -448,29 +359,214 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     </script>
-                    </div>
                 </div>
             </div>
         </div>
+    </div><style>
+    body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2c3e50;
+  position: relative; /* Agar salju bisa ditambahkan di atas body */
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.snowflake {
+  /* Ukuran salju responsif */
+  width: 2vw;
+  height: 2vw;
+  animation-duration: 10s;
+}
+
+/* Jika layar lebih kecil, kecilkan ukuran salju */
+@media (max-width: 768px) {
+  .snowflake {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+/* Jika layar lebih kecil, buat animasi sedikit lebih cepat */
+@media (max-width: 480px) {
+  .snowflake {
+    width: 4vw;
+    height: 4vw;
+    animation-duration: 8s;
+  }
+}
+</style>
+
+<script>
+  function createSnowflakes() {
+  const snowflakes = 100; // Jumlah salju
+  const body = document.body;
+
+  for (let i = 0; i < snowflakes; i++) {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+
+    // Mengatur posisi acak untuk setiap salju
+    snowflake.style.left = Math.random() * 300 + "vw";  // Menggunakan 100vw agar salju bisa muncul di seluruh lebar layar
+    snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";  // Durasi animasi acak (5-10 detik)
+    snowflake.style.animationDelay = Math.random() * 10 + "s"; // Delay acak untuk setiap salju
+
+    // Ukuran acak tetap mengikuti pengaturan di CSS
+    snowflake.style.width = Math.random() * 5 + 5 + "px";
+    snowflake.style.height = snowflake.style.width;
+
+    // Menambahkan elemen salju ke dalam body
+    body.appendChild(snowflake);
+  }
+}
+
+// Membuat hujan salju saat halaman dimuat
+createSnowflakes();
+</script>
+
+    <div class="container scrollbarnone" style="width: 100%;max-width: none;padding: 0px;height: auto;">
+        <nav class="navbar navbar-expand-md sticky-top bg-black navbar-shrink py-3 navbar-dark" id="mainNav" style="background: linear-gradient(black, #171717), var(--bs-dark);">
+            <div class="container"><a class="navbar-brand d-flex align-items-center" href="index.html" style="width: auto;" target="_parent"><img src="../assets/img/premium-account/Logo/icon.png" style="width: 112px;height: auto;" width="19" height="19"></a><button data-bs-toggle="collapse" class="navbar-toggler" data-bs-target="#navcol-1"><span class="visually-hidden">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navcol-1">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item"><a class="nav-link" href="projects.html">Halaman Utama</a></li>
+                        <li class="nav-item"><a class="nav-link" href="services.html">Produk</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Harga</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contacts.html">Kontak</a></li>
+                    </ul><a class="name" style="color: rgb(255,255,255);margin-right: 16px;" href="dashboard.html" target="_parent">Masuk</a><a class="btn btn-light shadow" role="button" href="register.html" target="_parent">Daftar</a>
+                </div>
+            </div>
+        </nav>
         <header class="bg-primary-gradient pt-5" style="background: linear-gradient(black, #171717), var(--bs-dark);">
             <div class="container pt-4 pt-xl-5">
                 <div class="row pt-5">
                     <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                         <div class="text-center">
-                            <p class="fw-bold text-success mb-2">1 Genggaman</p>
-                            <h1 class="fw-bold" style="color: rgb(255,255,255);">10 ProLink+</h1>
+                            <p class="fw-bold text-success mb-2">ProLink+</p>
+                            <h1 class="fw-bold" style="color: rgb(255,255,255);">Miliki Akun Premium<br>Cukup Sekali Bayar</h1>
                         </div>
                     </div>
                     <div class="col-12 col-lg-10 mx-auto">
                         <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;">
-                            <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.8" style="border-radius: 20px;"></div>
-                            <div style="position: relative;flex: 0 0 45%;transform: translate3d(-5%, 20%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.4" style="border-radius: 20px;"></div>
-                            <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.25" style="border-radius: 20px;"></div>
+                            <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.8" style="border-radius: 20px;" src="../assets/img/premium-account/page/1.webp"></div>
+                            <div style="position: relative;flex: 0 0 45%;transform: translate3d(-5%, 20%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.4" style="border-radius: 20px;" src="../assets/img/premium-account/page/3.webp"></div>
+                            <div style="position: relative;flex: 0 0 60%;transform: translate3d(0, 0%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.25" style="border-radius: 20px;" src="../assets/img/premium-account/page/2.webp"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </header>
+        <header class="bg-primary-gradient py-5">
+            <div class="container py-5">
+                <div class="row py-5">
+                    <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-end mb-4">
+                        <div style="max-width: 450px;">
+                            <p class="fw-bold text-success mb-2"><span style="color: rgb(34, 34, 34);">Tentang </span><img src="../assets/img/premium-account/Logo/icon2.png" style="width: auto;height: 24px;padding: 4px;background: #000000;border-top-right-radius: 10px;border-bottom-left-radius: 10px;padding-right: 6px;padding-left: 6px;"></p>
+                            <h2 class="fw-bold">Cara cerdas dan terjangkau untuk mengakses akun premium.</h2>
+                            <p class="my-3"><strong>Di ProLink+</strong>, kami percaya bahwa pengalaman premium harus dapat diakses oleh semua orang, dan kami telah menjadikan misi kami untuk mewujudkannya. Dengan sekali klik kami adalah kunci Anda untuk membuka kunci akun premium di berbagai platform.<br><br>Bayangkan memiliki akses instan ke dunia konten dan layanan premium hanya dengan satu klik. Apakah Anda seorang penggemar film, penggemar desain, atau pencari pengetahuan, <strong>ProLink+</strong> siap membantu Anda. Ucapkan selamat tinggal pada hambatan berlangganan dan nikmati yang terbaik yang ditawarkan dunia digital tanpa menguras kantong.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="p-5 mx-lg-5" style="background: url(&quot;../assets/img/blob.svg&quot;) center / contain no-repeat;"><img class="rounded img-fluid shadow w-100 fit-cover" style="min-height: 300px;" src="../assets/img/premium-account/page/ProLink+1.png"></div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="py-5" style="background: #1f1d1d;">
+            <div class="container py-5">
+                <div class="row mb-4 mb-lg-5">
+                    <div class="col-md-8 col-xl-6 text-center mx-auto">
+                        <p class="fw-bold mb-2" style="color: #ffffff;">Layanan kami</p><img src="../assets/img/premium-account/Logo/icon2.png" style="width: 162px;margin-left: 0px;padding: 10px;background: #000000;border-top-right-radius: 16px;border-bottom-left-radius: 16px;margin-bottom: 6px;">
+                        <p style="color: #ffffff;">10+ Aplikasi premium</p>
+                    </div>
+                </div>
+                <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4 mx-auto" style="max-width: 700px;">
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://play-lh.googleusercontent.com/JC3HW-ps59VAEU3vuJoi3I5XB_IQ9ISuILLudUY9uLSW7eKfqtXitrB-fF865rV4TQ">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>John Smith</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxtHdRB6xk71KqOPxE23.XPiUcBp9_h5.Va3lapJy.K9tACxvjL4_WF3lJCLozay.Kx6V1mfBFaOOF4V5Rx4RHLY-&amp;format=source">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>CapCut</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://exafunction.github.io/public/icons/codeium_logo.png">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Codeium</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRweoQJzl9iPGJqBYN-uOcjxdcH72RA9W1PKiCmAisHjg&amp;s">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Consensus</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://yt3.googleusercontent.com/3BpMBkjIt4MuvjShoU4euSb3_YSZFubH6KZ_HvtRxbU5-BuuNHc9ck-SumUEsLsDsUGzSoFIHg=s900-c-k-c0x00ffffff-no-rj">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Gamma</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://assets.wheelhouse.com/media/_solution_logo_04162024_61721611.png">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Jasper Ai</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://play-lh.googleusercontent.com/1JMJ518jogwPeaD0pYn2mBu1cRLD0xRi45wNbtTIRvam1_xx-y3KJOjRAx-W9P4Lf0U=s256-rw">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Picsart</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTZtqcA6rvxqQHSb14wu157jMKqBtXRNJ5-1lcBbxf4JzQt7vwDhlmbpnnH&amp;s=10">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>QuillBot</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSIrf73LGu_mACI2Mc_jdghOV02eXRocoXKo0o3qZHFjGgJMUr5M_v8uwap&amp;s=10">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Turnitin</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://groupy.id/assets/images/services/viu.png">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Viu</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT663diE2hz6pnmg2QRXYzvIoF8My8SzCTFFQ&amp;s">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Zero GPT</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
     <footer class="bg-primary-gradient" style="box-shadow: 0px -33px 20px 2px rgba(45,45,45,0.08);border-radius: 0px;margin-top: 0px;background: #000000;color: rgb(255,255,255);"><!-- untuk screen capture -->
 <script>
@@ -743,12 +839,11 @@ function copyText(elementId) {
             <div class="text-muted d-flex justify-content-center align-items-center justify-content-xxl-center" style="padding-top: 0px;">
                 <p class="mb-0" style="color: #ffffff;">Made with love ❤️</p>
             </div>
-        </div><script src="OneSignalSDKWorker.js"></script>
+        </div>
     </footer>
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/aos.min.js"></script>
-    <script src="../assets/js/lottie-player.min.js"></script>
     <script src="../assets/js/bs-init.js"></script>
     <script src="../assets/js/OneSignalSDKWorker.js"></script>
     <script src="../assets/js/SDK%20OneSignal/OneSignalSDKWorker.js"></script>

@@ -293,7 +293,85 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
 </head>
 
-<body class="scrollbarnone" style="font-family: Poppins, sans-serif;">
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;"><style>
+    body {
+  margin: 0;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  width: 100vw;
+  height: 100vh;
+  background-color: #2c3e50;
+  position: relative; /* Agar salju bisa ditambahkan di atas body */
+}
+
+.snowflake {
+  position: absolute;
+  top: -10px;
+  background-color: white;
+  border-radius: 50%;
+  opacity: 0.8;
+  pointer-events: none;
+  animation: fall linear infinite;
+}
+
+@keyframes fall {
+  to {
+    transform: translateY(100vh);
+  }
+}
+
+.snowflake {
+  /* Ukuran salju responsif */
+  width: 2vw;
+  height: 2vw;
+  animation-duration: 10s;
+}
+
+/* Jika layar lebih kecil, kecilkan ukuran salju */
+@media (max-width: 768px) {
+  .snowflake {
+    width: 3vw;
+    height: 3vw;
+  }
+}
+
+/* Jika layar lebih kecil, buat animasi sedikit lebih cepat */
+@media (max-width: 480px) {
+  .snowflake {
+    width: 4vw;
+    height: 4vw;
+    animation-duration: 8s;
+  }
+}
+</style>
+
+<script>
+  function createSnowflakes() {
+  const snowflakes = 100; // Jumlah salju
+  const body = document.body;
+
+  for (let i = 0; i < snowflakes; i++) {
+    const snowflake = document.createElement("div");
+    snowflake.classList.add("snowflake");
+
+    // Mengatur posisi acak untuk setiap salju
+    snowflake.style.left = Math.random() * 300 + "vw";  // Menggunakan 100vw agar salju bisa muncul di seluruh lebar layar
+    snowflake.style.animationDuration = Math.random() * 5 + 5 + "s";  // Durasi animasi acak (5-10 detik)
+    snowflake.style.animationDelay = Math.random() * 10 + "s"; // Delay acak untuk setiap salju
+
+    // Ukuran acak tetap mengikuti pengaturan di CSS
+    snowflake.style.width = Math.random() * 5 + 5 + "px";
+    snowflake.style.height = snowflake.style.width;
+
+    // Menambahkan elemen salju ke dalam body
+    body.appendChild(snowflake);
+  }
+}
+
+// Membuat hujan salju saat halaman dimuat
+createSnowflakes();
+</script>
+
     <div>
         <div class="modal fade" role="dialog" tabindex="-1" id="loadingModalProses" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false" style="z-index: 9999;background: var(--bs-info);">
             <div class="modal-dialog modal-xl modal-dialog-centered modal-fullscreen" role="document">
@@ -304,25 +382,36 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                                 <div class="col d-flex justify-content-center justify-content-sm-center justify-content-md-center justify-content-lg-center" style="width: auto;height: auto;"><img style="width: 169px;height: auto;" src="../assets/img/premium-account/Logo/LogoProlink-loading.webp"></div>
                             </div>
                         </div>
-                    </div><script>
-document.addEventListener('DOMContentLoaded', () => {
-    // Directly manipulate the modal element to make it visible initially
-    const modalElement = document.getElementById('loadingModalProses');
-    modalElement.classList.add('show');
-    modalElement.style.display = 'block';
-    console.log('Modal manually displayed on DOMContentLoaded');
+                    </div>
+<script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Directly manipulate the modal element to make it visible initially
+            const modalElement = document.getElementById('loadingModalProses');
+            modalElement.classList.add('show');
+            modalElement.style.display = 'block';
+            console.log('Modal manually displayed on DOMContentLoaded');
 
-    // Function to manually hide the modal after a delay (for example)
-    function hideModal() {
-        modalElement.classList.remove('show');
-        modalElement.style.display = 'none';
-        console.log('Modal manually hidden');
-    }
+            // Function to manually hide the modal
+            const hideLoadingModal = () => {
+                setTimeout(() => {
+                    modalElement.classList.remove('show');
+                    modalElement.style.display = 'none';
+                    console.log('Modal manually hidden');
+                }, 200);
+            };
 
-    // Hide the modal after 3 seconds (you can adjust this time as needed)
-    setTimeout(hideModal, 3000);
-});
-
+            // Check if the page is already fully loaded
+            if (document.readyState === 'complete') {
+                console.log('Page already fully loaded, hiding modal');
+                hideLoadingModal();
+            } else {
+                // Hide the modal when the page is fully loaded
+                window.addEventListener('load', () => {
+                    console.log('Page fully loaded, triggering hide');
+                    hideLoadingModal();
+                });
+            }
+        });
     </script>
                 </div>
             </div>
@@ -663,7 +752,7 @@ function copyText(elementId) {
             <div class="text-muted d-flex justify-content-center align-items-center justify-content-xxl-center" style="padding-top: 0px;">
                 <p class="mb-0" style="color: #ffffff;">Made with love ❤️</p>
             </div>
-        </div><script src="OneSignalSDKWorker.js"></script>
+        </div>
     </footer><script>
     window.onload = function () {
       var username = sessionStorage.getItem("username");
@@ -755,11 +844,17 @@ function copyText(elementId) {
           }
         });
       } else {
-        // Akses ke fitur premium
-        alert("Access granted to premium feature.");
+        // Akses ke fitur premium dengan SweetAlert
+        Swal.fire({
+          title: 'Access Granted!',
+          text: 'You have access to this premium feature.',
+          icon: 'success',
+          confirmButtonText: 'Okay'
+        });
       }
     }
-  </script>
+</script>
+
     <script src="../assets/js/jquery.min.js"></script>
     <script src="../assets/bootstrap/js/bootstrap.min.js"></script>
     <script src="../assets/js/aos.min.js"></script>
