@@ -198,6 +198,7 @@ document.addEventListener("DOMContentLoaded", function() {
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins&amp;display=swap">
     <link rel="stylesheet" href="../assets/css/swiper-icons.css">
     <link rel="stylesheet" href="../assets/css/aos.min.css">
+    <link rel="stylesheet" href="../assets/css/animate.min.css">
     <link rel="stylesheet" href="../assets/css/app-premium.css">
     <link rel="stylesheet" href="../assets/css/background.css">
     <link rel="stylesheet" href="../assets/css/Banner-Heading-Image-images.css">
@@ -457,7 +458,44 @@ createSnowflakes();
                     <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                         <div class="text-center">
                             <p class="fw-bold text-success mb-2">ProLink+</p>
-                            <h1 class="fw-bold" style="color: rgb(255,255,255);">Miliki Akun Premium<br>Cukup Sekali Bayar</h1>
+                            <h1 class="fw-bold" style="color: rgb(255,255,255);">Miliki Akun Premium<br>Cukup&nbsp;<span id="typing" style="color: rgb(250,255,0);"><span style="color: rgb(250, 255, 0);">49.000</span></span><span class="flash animated infinite" id="typing-1">|</span>&nbsp;/Bulan</h1><script>
+              const words = ['45.000', '75.000', '99.000'];
+              let index = 0;
+              let letterIndex = 0;
+              let isDeleting = false;
+              let typingText = '';
+
+              function type() {
+                  const currentWord = words[index % words.length];
+                  if (isDeleting) {
+                      typingText = currentWord.substring(0, letterIndex - 1);
+                      letterIndex--;
+                  } else {
+                      typingText = currentWord.substring(0, letterIndex + 1);
+                      letterIndex++;
+                  }
+
+                  document.getElementById('typing').textContent = typingText;
+
+                  let typingSpeed = 100;
+                  if (isDeleting) {
+                      typingSpeed /= 2;
+                  }
+
+                  if (!isDeleting && typingText === currentWord) {
+                      isDeleting = true;
+                      typingSpeed = 2000;
+                  } else if (isDeleting && typingText === '') {
+                      isDeleting = false;
+                      index++;
+                      typingSpeed = 2000;
+                  }
+
+                  setTimeout(type, typingSpeed);
+              }
+
+              type();
+            </script>
                         </div>
                     </div>
                     <div class="col-12 col-lg-10 mx-auto">
