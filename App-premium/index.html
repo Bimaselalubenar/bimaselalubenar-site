@@ -380,6 +380,48 @@ window.onload = function () {
                 </div>
             </div>
         </div>
+        <div class="modal fade" role="dialog" tabindex="-1" id="mPengumuman" style="backdrop-filter: blur(11px);-webkit-backdrop-filter: blur(11px);position: absolute;padding: 0px;">
+            <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+                <div class="modal-content">
+                    <div style="transition: background 0.1s ease;animation: rotateGradient 0.6s infinite linear;background: linear-gradient(-136deg, #ffffff, #111111);width: 100%;/*max-width: 600px;*/padding: 1.9px;overflow: hidden;" class="rotateGradient">
+                        <div class="modal-body d-flex flex-column" style="gap: 10px;background: #000000;">
+                            <div class="text-center justify-content-center align-content-center" style="width: 100%;height: 100%;background: rgba(42,42,42,0);border-radius: 12px;padding-top: 0px;padding-bottom: 0px;"></div>
+                            <div style="background: #ffffff;color: rgb(255,255,255);padding: 11px;margin-bottom: 0px;border-radius: 13px;">
+                                <h6 style="color: rgb(0,0,0);font-weight: bold;margin-bottom: 5px;text-align: center;">Perhatian</h6>
+                                <p style="color: rgb(0,0,0);font-size: 12px;margin-bottom: 5px;">Dimohon untuk di baca agar mengerti tujuan layanan ini</p>
+                            </div>
+                            <div style="background: #ffffff;color: rgb(255,255,255);padding: 11px;margin-bottom: 0px;border-radius: 13px;">
+                                <ul style="padding-left: 20px;">
+                                    <li style="color: rgb(0,0,0);font-size: 12px;">Layanan ini dapat di gunakan bagi yang suaah berlangganan, dan untuk tipe berlangganan ada 3 pilihan. Untuk informasi lebih lengkap klik <a href="https://bimaselalubenar.my.id/app-premium/berlangganan" target="_parent"><span style="color: rgb(55, 99, 244);">disini</span></a></li>
+                                    <li style="color: rgb(0,0,0);font-size: 12px;">Bagi yang sudah berlangganan saya ucapkan terima kasih, kalian dapat mengakses semua akun tanpa terkecuali. semua update terbaru hanya di sini.</li>
+                                    <li style="color: rgb(0,0,0);font-size: 12px;">Untuk yang sudah berlangganan, pastikan menyalin akun dari email dan password aplikasi yang di pilih untuk di simpan di catatan masing masing.</li>
+                                    <li style="color: rgb(0,0,0);font-size: 12px;">Enjoy! 🥰</li>
+                                </ul>
+                            </div><button class="btn btn-warning" style="padding-right: 16px;padding-left: 16px;padding-top: 8px;padding-bottom: 8px;border-radius: 15px;" data-bs-dismiss="modal" type="button">Tutup</button>
+                        </div>
+                    </div><script>
+    $(document).ready(function(){
+      // Timer untuk menampilkan modal setelah 3 detik
+      setTimeout(function(){
+        $("#mPengumuman").modal('show');
+      }, 8000); // 1000 milidetik = 1 detik
+    });
+  </script>
+                </div>
+            </div>
+        </div>
+        <div class="offcanvas offcanvas-end bg-body" tabindex="-1" id="updateterbaru" style="background: linear-gradient(145deg, black, #232323);height: 100%;">
+            <div class="offcanvas-header d-flex justify-content-between" style="display: grid;grid-template: 1fr / 1fr 1fr 1fr;justify-content: space-evenly;justify-items: stretch;gap: 0px;align-items: center;"><a class="text-decoration-none link-body-emphasis d-flex align-items-center me-md-auto mb-md-0" href="/" style="margin-bottom: 0px;"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-nut-fill me-3" style="font-size: 25px;color: rgb(255,255,255);">
+                        <path d="M4.58 1a1 1 0 0 0-.868.504l-3.428 6a1 1 0 0 0 0 .992l3.428 6A1 1 0 0 0 4.58 15h6.84a1 1 0 0 0 .868-.504l3.429-6a1 1 0 0 0 0-.992l-3.429-6A1 1 0 0 0 11.42 1zm5.018 9.696a3 3 0 1 1-3-5.196 3 3 0 0 1 3 5.196"></path>
+                    </svg><span class="fs-5" style="color: rgb(255,255,255);">Update</span></a><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 16 16" class="bi bi-x-circle-fill" type="button" aria-label="Close" data-bs-dismiss="offcanvas" style="color: rgb(255,255,255);font-size: 25px;">
+                    <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M5.354 4.646a.5.5 0 1 0-.708.708L7.293 8l-2.647 2.646a.5.5 0 0 0 .708.708L8 8.707l2.646 2.647a.5.5 0 0 0 .708-.708L8.707 8l2.647-2.646a.5.5 0 0 0-.708-.708L8 7.293z"></path>
+                </svg></div>
+            <div class="offcanvas-body d-flex flex-column-reverse justify-content-end scrollbarnone" style="gap: 10px;overflow-y: scroll;padding-top: 16px;">
+                <div class="d-flex flex-column background-update"><span class="text-update">Update</span><span style="font-size: 12px;color: rgb(255,255,255);">Akun premium <strong>HBO 2</strong></span><span style="font-size: 12px;color: rgb(255,255,255);text-align: right;">17 Desember 2024</span></div>
+                <div class="d-flex flex-column background-update"><span class="text-update">Update</span><span style="font-size: 12px;color: rgb(255,255,255);">Akun premium <strong>HBO</strong></span><span style="font-size: 12px;color: rgb(255,255,255);text-align: right;">16 Desember 2024</span></div>
+                <div class="d-flex flex-column background-update"><span class="text-update">Update</span><span style="font-size: 12px;color: rgb(255,255,255);">Perbaikan bug login yang tidak bisa masuk</span><span style="font-size: 12px;color: rgb(255,255,255);text-align: right;">19 Desember 2024</span></div>
+            </div>
+        </div>
     </div>
     <div class="container scrollbarnone" style="width: 100%;max-width: none;padding: 0px;height: auto;">
         <nav class="navbar navbar-expand-md sticky-top bg-black navbar-shrink py-3 navbar-dark" id="mainNav" style="background: linear-gradient(black, #171717), var(--bs-dark);">
@@ -396,7 +438,7 @@ window.onload = function () {
         </nav>
         <header class="bg-primary-gradient pt-5" style="background: linear-gradient(black, #171717), var(--bs-dark);">
             <div class="container pt-4 pt-xl-5">
-                <div class="row pt-5">
+                <div class="row d-flex flex-column pt-5">
                     <div class="col-md-8 col-xl-6 text-center text-md-start mx-auto">
                         <div class="text-center">
                             <p class="fw-bold text-success mb-2">ProLink+</p>
@@ -440,6 +482,7 @@ window.onload = function () {
             </script>
                         </div>
                     </div>
+                    <div class="col d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center align-items-xxl-center" style="gap: 10px;margin-top: 16px;"><a class="btn btn-light shadow" role="button" href="dashboard.html" target="_parent" style="padding-right: 18px;padding-left: 18px;padding-bottom: 8.6px;padding-top: 8.6px;">Masuk</a><span style="color: rgb(255,255,255);">Atau</span><a class="btn btn-light shadow" role="button" href="register.html" target="_parent" style="padding-right: 18px;padding-left: 18px;padding-bottom: 8.6px;padding-top: 8.6px;">Daftar</a></div>
                     <div class="col-12 col-lg-10 mx-auto">
                         <div class="position-relative" style="display: flex;flex-wrap: wrap;justify-content: flex-end;">
                             <div style="position: relative;flex: 0 0 45%;transform: translate3d(-15%, 35%, 0);"><img class="img-fluid" data-bss-parallax="" data-bss-parallax-speed="0.8" style="border-radius: 20px;" src="../assets/img/premium-account/page/1.webp"></div>
@@ -450,7 +493,7 @@ window.onload = function () {
                 </div>
             </div>
         </header>
-        <header id="tentang" class="bg-primary-gradient py-5">
+        <header id="tentang" class="bg-primary-gradient py-5" style="border-top-left-radius: 0px;">
             <div class="container py-5">
                 <div class="row py-5">
                     <div class="col-md-6 text-center text-md-start d-flex d-sm-flex d-md-flex justify-content-center align-items-center justify-content-md-start align-items-md-center justify-content-xl-end mb-4">
