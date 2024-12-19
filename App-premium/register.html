@@ -366,10 +366,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                     <div class="mb-3"><input class="form-control" type="text" id="name" name="name" placeholder="Name" required="" style="border-radius: 20px;"></div>
                     <div class="mb-3"><input class="form-control" type="email" id="email" name="email" placeholder="Email" required="" style="border-radius: 20px;"></div>
                     <div class="mb-3"><input class="form-control" type="password" id="password" name="password" placeholder="Password" required="" style="border-radius: 20px;" oninput="validatePassword()"></div>
-                    <p id="password-feedback" style="color: #ffffff;">Validasi Password</p>
+                    <p id="password-feedback" style="color: #ffffff;">Validasi Password</p><span id="loading" style="display: none;color: #bdff00;"><span class="spinner-grow spinner-grow-sm" role="status" style="margin-right: 7px;"></span>Data sedang di validasi...<br><br></span>
                     <div class="mb-3"><button class="btn btn-default-premium-apps" type="submit" style="width: 100%;border-radius: 20px;">Daftar Akun</button></div>
-                </form><span style="margin: 0px;margin-bottom: 16px;color: #ffffff;">Sudah memiliki akun?&nbsp;<a href="login.html" style="color: var(--bs-info);" target="_parent">Masuk</a>&nbsp;</span>
-                <p id="loading" style="display: none;color: #ffffff;">Data sedang di validasi...</p><script>
+                </form><span style="margin: 0px;margin-bottom: 16px;color: #ffffff;">Sudah memiliki akun?&nbsp;<a href="login.html" style="color: var(--bs-info);" target="_parent">Masuk</a>&nbsp;</span><script>
     function register() {
       var username = document.getElementById("username").value;
       var name = document.getElementById("name").value;
@@ -434,10 +433,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
       if (passwordRegex.test(password)) {
         passwordFeedback.textContent = "Password tersedia!.";
-        passwordFeedback.style.color = "green";
+        passwordFeedback.style.color = "yellow";
       } else {
         passwordFeedback.textContent = "Password minimal 8 karakter, Meliputi huruf besar, huruf kecil, angka dan scpesial karakter - !@#$";
-        passwordFeedback.style.color = "red";
+        passwordFeedback.style.color = "yellow";
       }
     }
   </script>
@@ -707,8 +706,9 @@ function copyText(elementId) {
                         <li><a href="../berlangganan.html" target="_parent" style="color: #ffffff;">Harga</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="height: auto;">
-                    <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2" style="padding: 6px;background: var(--bs-body-bg);box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.14);"><img src="../assets/img/Logo/logo2.webp" style="width: 100%;height: auto;"></span><span>Akun Premium</span></div>
+                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="height: auto;margin-bottom: 28px;">
+                    <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2" style="padding: 6px;background: var(--bs-body-bg);box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.14);"><img src="../assets/img/Logo/logo2.webp" style="width: 100%;height: auto;"></span><span>Akun Premium</span></div><span style="margin-bottom: 8px;">Payment</span>
+                    <div style="display: grid;grid-template: 1fr / 1fr 1fr;gap: 10px;justify-items: center;"><img src="https://gopay.co.id/assets/img/logo/gopay.webp" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://a.m.dana.id/danaweb/v3/DANA-Logo-white.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://www.shopeepay.co.id/src/pages/home/assets/images/new-homepage/new-spp-logo.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://www.jago.com/images/brand/logo-jago.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"></div>
                 </div>
             </div>
             <hr>

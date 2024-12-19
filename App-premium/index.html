@@ -294,7 +294,27 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11.4.1/dist/sweetalert2.min.css">
 </head>
 
-<body class="scrollbarnone" style="font-family: Poppins, sans-serif;background: rgb(230,230,230);"><script>
+<body class="scrollbarnone" style="font-family: Poppins, sans-serif;background: rgb(230,230,230);">
+    <div class="modal fade" role="dialog" tabindex="-1" id="mPengumuman" style="backdrop-filter: blur(11px);-webkit-backdrop-filter: blur(11px);position: absolute;padding: 0px;">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="text-center justify-content-center align-content-center" style="width: 100%;height: 100%;background: rgba(42,42,42,0);border-radius: 12px;padding-top: 0px;padding-bottom: 0px;">
+                        <h4><strong><span style="color: rgb(0, 0, 0);">Pemberitahuan</span></strong></h4>
+                        <p class="text-center" style="background: #d2d2d2;color: rgb(255,255,255);padding: 11px;margin-bottom: 0px;"><span style="color: rgb(64, 64, 64);">Gunakan promo&nbsp;</span><strong><span style="color: rgb(64, 64, 64);">NATAL25&nbsp;</span></strong><span style="color: rgb(64, 64, 64);">untuk mendapat diskon 10%</span></p>
+                    </div>
+                </div>
+                <div class="modal-footer"><button class="btn btn-warning" style="padding-right: 16px;padding-left: 16px;padding-top: 8px;padding-bottom: 8px;border-radius: 15px;" data-bs-dismiss="modal" type="button">Tutup</button></div><script>
+    $(document).ready(function(){
+      // Timer untuk menampilkan modal setelah 3 detik
+      setTimeout(function(){
+        $("#mPengumuman").modal('show');
+      }, 6000); // 1000 milidetik = 1 detik
+    });
+  </script>
+            </div>
+        </div>
+    </div><script>
 window.onload = function () {
   var username = sessionStorage.getItem("username");
   var name = sessionStorage.getItem("name");
@@ -441,7 +461,9 @@ window.onload = function () {
                         </div>
                     </div>
                     <div class="col-md-6 mb-4">
-                        <div class="p-5 mx-lg-5" style="background: url(&quot;../assets/img/blob.svg&quot;) center / contain no-repeat;"><img class="rounded img-fluid shadow w-100 fit-cover" style="min-height: 300px;" src="../assets/img/premium-account/page/ProLink+1.png"></div>
+                        <div class="p-5 mx-lg-5" style="height: 100%;width: auto;"><video width="100%" height="auto" style="width: 100%;height: auto;border-radius: 16px;box-shadow: 3px 3px 14px rgba(45,45,45,0.37);" autoplay="" loop="" preload="auto">
+                                <source src="https://ik.imagekit.io/3ij6aly19/source%20video%20bima/ProLinkPlus.mp4?updatedAt=1734567705643" type="video/mp4">
+                            </video></div>
                     </div>
                 </div>
             </div>
@@ -788,8 +810,9 @@ function copyText(elementId) {
                         <li><a href="../berlangganan.html" target="_parent" style="color: #ffffff;">Harga</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="height: auto;">
-                    <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2" style="padding: 6px;background: var(--bs-body-bg);box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.14);"><img src="../assets/img/Logo/logo2.webp" style="width: 100%;height: auto;"></span><span>Akun Premium</span></div>
+                <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="height: auto;margin-bottom: 28px;">
+                    <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2" style="padding: 6px;background: var(--bs-body-bg);box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.14);"><img src="../assets/img/Logo/logo2.webp" style="width: 100%;height: auto;"></span><span>Akun Premium</span></div><span style="margin-bottom: 8px;">Payment</span>
+                    <div style="display: grid;grid-template: 1fr / 1fr 1fr;gap: 10px;justify-items: center;"><img src="https://gopay.co.id/assets/img/logo/gopay.webp" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://a.m.dana.id/danaweb/v3/DANA-Logo-white.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://www.shopeepay.co.id/src/pages/home/assets/images/new-homepage/new-spp-logo.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://www.jago.com/images/brand/logo-jago.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"></div>
                 </div>
             </div>
             <hr>
