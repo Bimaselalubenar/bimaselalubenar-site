@@ -99,12 +99,12 @@ document.getElementById('note6').innerText = '30 Slot';
 
 
 const countdownData = [
-    { id: "countdown1", buttonId: "button1", remindButtonId: "remind-button-1", date: "2024-12-22T13:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zcjhndnRlYjgmcj1iZ3BCUzU=" },
-    { id: "countdown2", buttonId: "button2", remindButtonId: "remind-button-2", date: "2024-12-22T14:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zOWpzZjRkdmomcj1iZ3BCUzU=" },
-    { id: "countdown3", buttonId: "button3", remindButtonId: "remind-button-3", date: "2024-12-22T15:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zbHM0YXV4ZmYmcj1iZ3BCUzU=" },
-    { id: "countdown4", buttonId: "button4", remindButtonId: "remind-button-4", date: "2024-12-22T16:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zdzNuanAydTUmcj1iZ3BCUzU=" },
-    { id: "countdown5", buttonId: "button5", remindButtonId: "remind-button-5", date: "2024-12-22T17:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zdHplenlsMnEmcj1iZ3BCUzU=" },
-    { id: "countdown6", buttonId: "button6", remindButtonId: "remind-button-6", date: "2024-12-22T18:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zcjY5dTg4Zmwmcj1iZ3BCUzU=" }
+    { id: "countdown1", buttonId: "button1", remindButtonId: "remind-button-1", date: "2024-12-21T13:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zcjhndnRlYjgmcj1iZ3BCUzU=" },
+    { id: "countdown2", buttonId: "button2", remindButtonId: "remind-button-2", date: "2024-12-21T14:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zOWpzZjRkdmomcj1iZ3BCUzU=" },
+    { id: "countdown3", buttonId: "button3", remindButtonId: "remind-button-3", date: "2024-12-21T15:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zbHM0YXV4ZmYmcj1iZ3BCUzU=" },
+    { id: "countdown4", buttonId: "button4", remindButtonId: "remind-button-4", date: "2024-12-21T16:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zdzNuanAydTUmcj1iZ3BCUzU=" },
+    { id: "countdown5", buttonId: "button5", remindButtonId: "remind-button-5", date: "2024-12-21T17:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zdHplenlsMnEmcj1iZ3BCUzU=" },
+    { id: "countdown6", buttonId: "button6", remindButtonId: "remind-button-6", date: "2024-12-21T18:00:00", link: "aHR0cHM6Ly9saW5rLmRhbmEuaWQva2FnZXQ/Yz1zcjY5dTg4Zmwmcj1iZ3BCUzU=" }
 ];
 
 // Fungsi untuk mendekripsi URL Base64
