@@ -175,14 +175,14 @@ document.addEventListener("DOMContentLoaded", function() {
     <link rel="canonical" href="https://bimaselalubenar.my.id/App-premium/">
     <meta property="og:url" content="https://bimaselalubenar.my.id/App-premium/">
     <meta name="twitter:card" content="summary_large_image">
-    <meta property="og:description" content="Seorang fullstack developer dengan pengalaman dalam mengembangkan aplikasi web dari sisi frontend hingga backend.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/premium-account/SEO/Premium-akun.png">
-    <meta property="og:title" content="Account Premium | Akses Canva, CapCut, Jasper AI, Turnitin, QuillBot &amp; Lebih Banyak Lagi">
-    <meta name="description" content="Dapatkan layanan akun pro dengan harga terjangkau! Nikmati akses penuh ke berbagai platform premium seperti Canva, CapCut, Jasper AI (OTP dapat di-embed), Gamma, PicArt, Pacdora (Mockup), Turnitin, Zero GPT, QuillBot, Scite, dan Viu. Solusi lengkap untuk kebutuhan desain, editing, AI writing, pengecekan plagiarisme, dan riset akademis. Bergabunglah sekarang dan optimalkan produktivitas Anda dengan alat-alat terbaik!">
-    <meta name="twitter:description" content="Dapatkan layanan akun pro dengan harga terjangkau! Nikmati akses penuh ke berbagai platform premium seperti Canva, CapCut, Jasper AI (OTP dapat di-embed), Gamma, PicArt, Pacdora (Mockup), Turnitin, Zero GPT, QuillBot, Scite, dan Viu. Solusi lengkap untuk kebutuhan desain, editing, AI writing, pengecekan plagiarisme, dan riset akademis. Bergabunglah sekarang dan optimalkan produktivitas Anda dengan alat-alat terbaik!">
-    <meta name="twitter:title" content="Account Premium | Akses Canva, CapCut, Jasper AI, Turnitin, QuillBot &amp; Lebih Banyak Lagi">
     <meta name="twitter:image" content="https://bimaselalubenar.my.id/assets/img/premium-account/SEO/Premium-akun.png">
+    <meta name="twitter:title" content="Account Premium | Akses Canva, CapCut, Jasper AI, Turnitin, QuillBot &amp; Lebih Banyak Lagi">
+    <meta name="twitter:description" content="Dapatkan layanan akun pro dengan harga terjangkau! Nikmati akses penuh ke berbagai platform premium seperti Canva, CapCut, Jasper AI (OTP dapat di-embed), Gamma, PicArt, Pacdora (Mockup), Turnitin, Zero GPT, QuillBot, Scite, dan Viu. Solusi lengkap untuk kebutuhan desain, editing, AI writing, pengecekan plagiarisme, dan riset akademis. Bergabunglah sekarang dan optimalkan produktivitas Anda dengan alat-alat terbaik!">
+    <meta name="description" content="Dapatkan layanan akun pro dengan harga terjangkau! Nikmati akses penuh ke berbagai platform premium seperti Canva, CapCut, Jasper AI (OTP dapat di-embed), Gamma, PicArt, Pacdora (Mockup), Turnitin, Zero GPT, QuillBot, Scite, dan Viu. Solusi lengkap untuk kebutuhan desain, editing, AI writing, pengecekan plagiarisme, dan riset akademis. Bergabunglah sekarang dan optimalkan produktivitas Anda dengan alat-alat terbaik!">
+    <meta property="og:title" content="Account Premium | Akses Canva, CapCut, Jasper AI, Turnitin, QuillBot &amp; Lebih Banyak Lagi">
+    <meta property="og:image" content="https://bimaselalubenar.my.id/assets/img/premium-account/SEO/Premium-akun.png">
+    <meta property="og:description" content="Dapatkan layanan akun pro dengan harga terjangkau! Nikmati akses penuh ke berbagai platform premium seperti Canva, CapCut, Jasper AI (OTP dapat di-embed), Gamma, PicArt, Pacdora (Mockup), Turnitin, Zero GPT, QuillBot, Scite, dan Viu. Solusi lengkap untuk kebutuhan desain, editing, AI writing, pengecekan plagiarisme, dan riset akademis. Bergabunglah sekarang dan optimalkan produktivitas Anda dengan alat-alat terbaik!">
     <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
     <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp" media="(prefers-color-scheme: dark)">
     <link rel="icon" type="image/png" sizes="137x109" href="../assets/img/Logo/logo2.webp">
@@ -401,12 +401,29 @@ window.onload = function () {
                         </div>
                     </div><script>
     $(document).ready(function(){
-      // Timer untuk menampilkan modal setelah 3 detik
-      setTimeout(function(){
-        $("#mPengumuman").modal('show');
-      }, 8000); // 1000 milidetik = 1 detik
+        // Fungsi untuk memeriksa apakah modal harus ditampilkan
+        function shouldShowModal() {
+            const lastShown = localStorage.getItem('lastModalTime');
+            const now = new Date().getTime();
+
+            // Jika belum pernah disimpan atau sudah lebih dari 3 jam
+            if (!lastShown || (now - parseInt(lastShown, 10)) >= 3 * 60 * 60 * 1000) {
+                return true;
+            }
+            return false;
+        }
+
+        // Tampilkan modal jika syarat terpenuhi
+        if (shouldShowModal()) {
+            setTimeout(function(){
+                $("#mPengumuman").modal('show');
+                // Simpan waktu saat modal terakhir kali ditampilkan
+                localStorage.setItem('lastModalTime', new Date().getTime());
+            }, 5000); // 8000 milidetik = 8 detik
+        }
     });
-  </script>
+</script>
+
                 </div>
             </div>
         </div>
@@ -522,7 +539,7 @@ window.onload = function () {
                 <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-4 row-cols-xl-4 row-cols-xxl-4 mx-auto" style="max-width: 700px;">
                     <div class="col mb-4">
                         <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://play-lh.googleusercontent.com/JC3HW-ps59VAEU3vuJoi3I5XB_IQ9ISuILLudUY9uLSW7eKfqtXitrB-fF865rV4TQ">
-                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>John Smith</strong></h5>
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Canva</strong></h5>
                             <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
                         </div>
                     </div>
@@ -577,6 +594,12 @@ window.onload = function () {
                     <div class="col mb-4">
                         <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://groupy.id/assets/images/services/viu.png">
                             <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Viu</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://play-lh.googleusercontent.com/bvyVXgpxu65YO3PNeVhNM9Y7ao7g7FnnKdoNXcwqO48aOlVvnH_b2O9rcZzgEFHzHtI">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>HBO Max</strong></h5>
                             <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
                         </div>
                     </div>

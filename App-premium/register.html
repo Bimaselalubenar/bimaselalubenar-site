@@ -359,12 +359,29 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
                         </div>
                     </div><script>
     $(document).ready(function(){
-      // Timer untuk menampilkan modal setelah 3 detik
-      setTimeout(function(){
-        $("#mPengumuman").modal('show');
-      }, 8000); // 1000 milidetik = 1 detik
+        // Fungsi untuk memeriksa apakah modal harus ditampilkan
+        function shouldShowModal() {
+            const lastShown = localStorage.getItem('lastModalTime');
+            const now = new Date().getTime();
+
+            // Jika belum pernah disimpan atau sudah lebih dari 3 jam
+            if (!lastShown || (now - parseInt(lastShown, 10)) >= 3 * 60 * 60 * 1000) {
+                return true;
+            }
+            return false;
+        }
+
+        // Tampilkan modal jika syarat terpenuhi
+        if (shouldShowModal()) {
+            setTimeout(function(){
+                $("#mPengumuman").modal('show');
+                // Simpan waktu saat modal terakhir kali ditampilkan
+                localStorage.setItem('lastModalTime', new Date().getTime());
+            }, 5000); // 8000 milidetik = 8 detik
+        }
     });
-  </script>
+</script>
+
                 </div>
             </div>
         </div>
