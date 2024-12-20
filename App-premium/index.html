@@ -419,7 +419,7 @@ window.onload = function () {
                 $("#mPengumuman").modal('show');
                 // Simpan waktu saat modal terakhir kali ditampilkan
                 localStorage.setItem('lastModalTime', new Date().getTime());
-            }, 5000); // 8000 milidetik = 8 detik
+            }, 8000); // 8000 milidetik = 8 detik
         }
     });
 </script>
@@ -437,6 +437,7 @@ window.onload = function () {
                 <div class="d-flex flex-column background-update"><span class="text-update">Update</span><span style="font-size: 12px;color: rgb(255,255,255);">Akun premium <strong>HBO 2</strong></span><span style="font-size: 12px;color: rgb(255,255,255);text-align: right;">17 Desember 2024</span></div>
                 <div class="d-flex flex-column background-update"><span class="text-update">Update</span><span style="font-size: 12px;color: rgb(255,255,255);">Akun premium <strong>HBO</strong></span><span style="font-size: 12px;color: rgb(255,255,255);text-align: right;">16 Desember 2024</span></div>
                 <div class="d-flex flex-column background-update"><span class="text-update">Update</span><span style="font-size: 12px;color: rgb(255,255,255);">Perbaikan bug login yang tidak bisa masuk</span><span style="font-size: 12px;color: rgb(255,255,255);text-align: right;">19 Desember 2024</span></div>
+                <div class="d-flex flex-column background-update"><span class="text-update">Update</span><span style="font-size: 12px;color: rgb(255,255,255);">Akun Mimo</span><span style="font-size: 12px;color: rgb(255,255,255);text-align: right;">20 Desember 2024</span></div>
             </div>
         </div>
     </div>
@@ -485,11 +486,11 @@ window.onload = function () {
 
                   if (!isDeleting && typingText === currentWord) {
                       isDeleting = true;
-                      typingSpeed = 2000;
+                      typingSpeed = 1000;
                   } else if (isDeleting && typingText === '') {
                       isDeleting = false;
                       index++;
-                      typingSpeed = 2000;
+                      typingSpeed = 1000;
                   }
 
                   setTimeout(type, typingSpeed);
@@ -510,6 +511,57 @@ window.onload = function () {
                 </div>
             </div>
         </header>
+        <section class="d-flex d-xxl-flex justify-content-center align-items-center justify-content-xxl-center bg-primary-gradient py-5" style="border-top-left-radius: 0px;text-align: center;padding-right: 16px;padding-left: 16px;">
+            <div>
+                <p style="font-size: 1.6rem;margin-bottom: 0px;max-width: 600px;width: 100%;">User terdaftar&nbsp;<span class="text-dark bg-success-subtle bg-success-light p-1 counter" id="projectCounter1" style="font-weight: bold;" data-end-value="108" data-duration="4000"><strong>0</strong></span><span class="text-dark bg-success-subtle bg-success-light p-1"><strong>+</strong></span>&nbsp;. sudah berlangganan&nbsp;<span class="text-dark bg-success-subtle bg-success-light p-1 counter" id="projectCounter2" style="font-weight: bold;" data-end-value="89" data-duration="4000"><strong>0</strong></span><span class="text-dark bg-success-subtle bg-success-light p-1"><strong>+</strong></span>&nbsp;lebih. sebagian&nbsp;<span class="text-dark bg-success-subtle bg-success-light p-1 counter" id="projectCounter3" style="font-weight: bold;" data-end-value="107" data-duration="5000"><strong>0</strong></span><span class="text-dark bg-success-subtle bg-success-light p-1"><strong>+</strong></span>&nbsp;aktif<script>
+    function animateCounter(id, start, end, duration) {
+        let obj = document.getElementById(id);
+        let range = end - start;
+        let stepTime = Math.abs(Math.floor(duration / range));
+        let startTime = new Date().getTime();
+        let endTime = startTime + duration;
+        let timer;
+
+        function run() {
+            let now = new Date().getTime();
+            let remaining = Math.max((endTime - now) / duration, 0);
+            let value = Math.round(end - (remaining * range));
+            obj.innerHTML = value;
+            if (value === end) {
+                clearInterval(timer);
+            }
+        }
+
+        timer = setInterval(run, stepTime);
+        run();
+    }
+
+    function handleIntersection(entries, observer) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.style.opacity = 1;
+                if (!entry.target.classList.contains('animated')) {
+                    let endValue = parseInt(entry.target.getAttribute('data-end-value'));
+                    let duration = parseInt(entry.target.getAttribute('data-duration'));
+                    animateCounter(entry.target.id, 0, endValue, duration);
+                    entry.target.classList.add('animated');
+                }
+            }
+        });
+    }
+
+    let options = {
+        threshold: 0.5 // Adjust this threshold value as needed
+    };
+
+    let observer = new IntersectionObserver(handleIntersection, options);
+
+    document.querySelectorAll('.counter').forEach(counter => {
+        observer.observe(counter);
+    });
+</script></p>
+            </div>
+        </section>
         <header id="tentang" class="bg-primary-gradient py-5" style="border-top-left-radius: 0px;">
             <div class="container py-5">
                 <div class="row py-5">
@@ -606,6 +658,12 @@ window.onload = function () {
                     <div class="col mb-4">
                         <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT663diE2hz6pnmg2QRXYzvIoF8My8SzCTFFQ&amp;s">
                             <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Zero GPT</strong></h5>
+                            <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
+                        </div>
+                    </div>
+                    <div class="col mb-4">
+                        <div class="text-center"><img class="rounded mb-3 fit-cover" width="150" height="150" src="https://play-lh.googleusercontent.com/qPfmmEDFhGVmIXIKpmfbQeH6vXygXotzj6ied-j2el0YIB36fApN32XoVDrGoMQZ11Q">
+                            <h5 class="fw-bold mb-0" style="color: #ffffff;"><strong>Mimo</strong></h5>
                             <p class="mb-2" style="color: #ffffff;">Siap Digunakan</p>
                         </div>
                     </div>
@@ -878,7 +936,7 @@ function copyText(elementId) {
                 </div>
                 <div class="col-lg-3 text-center text-lg-start d-flex flex-column align-items-center order-first align-items-lg-start order-lg-last" style="height: auto;margin-bottom: 28px;">
                     <div class="fw-bold d-flex align-items-center mb-2"><span class="bs-icon-sm bs-icon-circle bs-icon-primary d-flex justify-content-center align-items-center bs-icon me-2" style="padding: 6px;background: var(--bs-body-bg);box-shadow: 1px 1px 8px 1px rgba(0,0,0,0.14);"><img src="../assets/img/Logo/logo2.webp" style="width: 100%;height: auto;"></span><span>Akun Premium</span></div><span style="margin-bottom: 8px;">Payment</span>
-                    <div style="display: grid;grid-template: 1fr / 1fr 1fr;gap: 10px;justify-items: center;"><img src="https://gopay.co.id/assets/img/logo/gopay.webp" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://a.m.dana.id/danaweb/v3/DANA-Logo-white.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://www.shopeepay.co.id/src/pages/home/assets/images/new-homepage/new-spp-logo.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://www.jago.com/images/brand/logo-jago.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"></div>
+                    <div style="display: grid;grid-template: 1fr / 1fr 1fr;gap: 10px;justify-items: start;"><img src="https://gopay.co.id/assets/img/logo/gopay.webp" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://a.m.dana.id/danaweb/v3/DANA-Logo-white.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://www.shopeepay.co.id/src/pages/home/assets/images/new-homepage/new-spp-logo.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"><img src="https://www.jago.com/images/brand/logo-jago.svg" style="-webkit-filter: brightness(0) contrast(100) invert(1);/*filter: brightness(0%) contrast(100%) invert(1%);*/height: 20px;width: auto;"></div>
                 </div>
             </div>
             <hr>
