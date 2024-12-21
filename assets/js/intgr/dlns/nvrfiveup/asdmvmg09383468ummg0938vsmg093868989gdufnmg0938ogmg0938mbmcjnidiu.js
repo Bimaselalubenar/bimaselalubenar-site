@@ -14,15 +14,16 @@ const affiliateLinks = [
     "https://s.shopee.co.id/6AUPdEAaZC",
     "https://s.shopee.co.id/6V7aBFDwQc",
     "https://s.shopee.co.id/3LAEGB91A2",
-    "https://s.shopee.co.id/9pNi0JaXnL",
-    "https://s.shopee.co.id/6V7G2FYtry",
-    "https://s.shopee.co.id/6V7G2FYtry",
 ];
 
 // "https://s.shopee.co.id/20ekoY29lj",
 // "https://s.shopee.co.id/5VEcz0SES5",
 // "https://s.shopee.co.id/2LHcqadEok",
 // "https://s.shopee.co.id/7UzhMR4gD3",
+// "https://s.shopee.co.id/9pNi0JaXnL",
+// "https://s.shopee.co.id/6V7G2FYtry",
+// "https://s.shopee.co.id/6V7G2FYtry",
+
 
 // Inisialisasi status klik berdasarkan nilai yang ada di localStorage
 updateClickStatus();
